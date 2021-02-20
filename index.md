@@ -26,7 +26,7 @@
 
 ## *ML & DS Papers On The Go* Podcast 🎧
 A passion project of mine: an attempt to bring the most recent and fascinating machine learning and data science advancements straight to your ears.
-More detailed information can be found **[here](https://andre-ye.github.io/podcast/home)**. Or, **[give it a listen]([Anchor](https://anchor.fm/andre-ye){:target="_blank"}){:target=_"blank"}**!
+Visit the podcast website **[here](https://papers-on-the-go.ml)**. Or, **[give it a listen]([Anchor](https://anchor.fm/andre-ye){:target="_blank"}){:target=_"blank"}**!
 
 <br>
 
