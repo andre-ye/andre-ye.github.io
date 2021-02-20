@@ -21,7 +21,7 @@ Andre Ye, 2/20/21
 - [Out of Prisons, Kitchens, and Closets](#out-of-prisons-kitchens-and-closets)
 - [Shaking the Empire](#shaking-the-empire)
 - [Worker Militancy](#worker-militancy)
-- [1969: IMplosion or Fadeout?](#1969-implosion-or-fadeout)
+- [1969: Implosion or Fadeout?](#1969-implosion-or-fadeout)
 - [A Broad Base of Revolutionary Sentiment](#a-broad-base-of-revolutionary-sentiment)
 - [More Complex Challenges on the Agenda](#more-complex-challenges-on-the-agenda)
 
@@ -280,7 +280,7 @@ Andre Ye, 2/20/21
 
 <br>
 
-### 1969: IMplosion or Fadeout?
+### 1969: Implosion or Fadeout?
 - Tremendous ferment boiled among the dispossessed.
 - These movements focused almost exclusively on the ebb and flow of activism among white radicals in and around SDS.
   - The turn taken by prominent figures out of the New Left to apocalyptic rhetoric and small-group violence is taken as a central development and the destroyer of the New Left.
