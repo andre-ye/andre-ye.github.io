@@ -43,7 +43,9 @@ Jump Down to a Section: [Lecture Notes](#lecture-notes), [Study Guides](#study-g
 - Weekly Reading Response 6 (Due 2/11)
   - [Notes on *Wartime Shipyard: A Study in Social Disunity* by Katherine Archibald](https://andre-ye.github.io/history/winter/reading-responses/rr6/wartime-shipyard)
 - Weekly Reading Response 7 (Due 2/18)
-  - [Notes on *Notes on American Empire: The Realities and Consequences of U.S. Diplomacy; Chapter 1: “The Myth of the Reluctant Superpower”* by Andrew Bacevich](https://andre-ye.github.io/history/winter/reading-responses/rr7/myth-of-reluctant-superpower)
+  - [Notes on *Notes on American Empire: The Realities and Consequences of U.S. Diplomacy* by Andrew Bacevich](https://andre-ye.github.io/history/winter/reading-responses/rr7/myth-of-reluctant-superpower)
+- Weekly Reading Response 8 (Due 2/25)
+ - [Notes on *Revolution in the Air: Sixties Radicals Turn to Lenin, Mao, and Che* by Max Elbaum](https://andre-ye.github.io/history/winter/reading-responses/rr8/revolution-in-the-air)
 
 #### Course Mechanics
 - [Week 5 Course Logistics](https://andre-ye.github.io/history/winter/course-logistics/week-5) - Essay 1 Feedback, Rubric for Advanced Papers, Historical Hierarchy
