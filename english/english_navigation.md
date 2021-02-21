@@ -21,6 +21,7 @@ Taught by Dr. Zink, Fall, Winter, and Spring Quarters.
 
 #### Essay Notes
 - [Notes on "The Narrative Creation of Self" by Jerome Bruner](https://andre-ye.github.io/english/winter/essay-notes/the-narrative-creation-of-self), 2/15/21.
+- [Notes on *From Discipline and Punish* by Michel Foucalt](https://andre-ye.github.io/english/winter/essay-notes/from-discipline-and-punish), 2/21/21.
 
 #### Textbook Chapter Notes
 - Part 1: "Introducing Literary Analysis"
