@@ -14,6 +14,7 @@ Taught by Dr. Reagan, Fall and Winter Quarters.
 Jump Down to a Section: [Lecture Notes](#lecture-notes), [Study Guides](#study-guides), [Weekly Reading Responses](#weekly-reading-responses), [Course Mechanics & Feedback](#course-mechanics)
 
 #### Lecture Notes
+- [Book Launch: *African American Political Thought - A Collected History*](https://andre-ye.github.io/history/lecture-notes/african-american-political-thought)
 - ["Class Conflict in the Gilded Age"](https://andre-ye.github.io/history/winter/lectures/class-conflict-in-the-gilded-age), 1/11-1/15
 - ["Advent of Empire: Race and Conquest in 1900"](https://andre-ye.github.io/history/winter/lectures/advent-of-empire), 1/19-1/22
 - ["The Progressive Era: Race, Class, and Gender in the 20th Century"](https://andre-ye.github.io/history/winter/lectures/the-progressive-era), 1/25-1/29
