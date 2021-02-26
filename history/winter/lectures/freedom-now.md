@@ -10,6 +10,27 @@ Andre Ye, 2/23/21
 <br>
 
 ### Navigate
+- [Introduction](#introduction)
+- [The New Industrial Relations System](#the-new-industrial-relations-system)
+- [Two Labor Markets](#two-labor-markets)
+  * [Breadwinner Liberalism](#breadwinner-liberalism)
+  * [White Affirmative Action](#white-affirmative-action)
+- [Creating White America: Consumer Society](#creating-white-america--consumer-society)
+- [Black America](#black-america)
+  * [Expanding Wealth Gap](#expanding-wealth-gap)
+- [Birth of the Civil Rights Movement](#birth-of-the-civil-rights-movement)
+  * [Brown v. Board of Education](#brown-v-board-of-education)
+  * [The Little Rock Nine and School Desegregation](#the-little-rock-nine-and-school-desegregation)
+  * [Montgomery Bus Boycott](#montgomery-bus-boycott)
+- [Southern Christian Leadership Council and Martin Luther King](#southern-christian-leadership-council-and-martin-luther-king)
+  * [The Greensboro NC Sit-In](#the-greensboro-nc-sit-in)
+  * [SNCC and Ella Baker](#sncc-and-ella-baker)
+- [Birmingham Alabama](#birmingham-alabama)
+- [March on Washington](#march-on-washington)
+- [Black Power and a New Critique](#black-power-and-a-new-critique)
+  * [Watts Riots](#watts-riots)
+  * [Black Panthers](#black-panthers)
+- [Black Culture](#black-culture)
 
 <br>
 
@@ -21,10 +42,10 @@ Andre Ye, 2/23/21
 - Last Week: Pablo Picasso, *Guernica*, 1937.
 - This week: *The Liberation of Aunt Jemima*, Betye Saar, 1972.
 - **Why did Civil Rights become the dominant domestic political issue in the post-war period?**
-- Wartime labor mobilization brought increaasing bureaucratiziation to labor management issues.
-- Organized labor developed an ambiguous relationship to workers.
+- Wartime labor mobilization brought increasing bureaucratization to labor-management issues.
+- Organized labor developed an ambiguous relationship with workers.
 - Huge benefits for white workers - economic protections and government action.
-- Women, African Americans, racialized minorities cotinued to face exclusion.
+- Women, African Americans, racialized minorities continued to face exclusion.
 - Freedom and democracy: what do political rights mean without economic security?
 
 <br>
@@ -34,11 +55,11 @@ Andre Ye, 2/23/21
 <br>
 
 ### The New Industrial Relations System
-- Codified coming out of WWII with an almost consensus support for the Keynsian economic policies and approach to economic management.
+- Codified coming out of WWII with an almost consensus support for the Keynesian economic policies and approach to economic management.
 - For the most part, acceptance of Keynesian policies as a way to stabilize and grow economic development "won the day".
 - The greatest period of US economic growth in a long time - through 1969.
   - Enormously stable; because of Keynesian policies and rising wages.
-- A third of the workforce are involved in unions - this has spillover impacts.
+- A third of the workforce is involved in unions - this has spillover impacts.
 - 1964 Voting Rights Act - many remaining unfinished aspects.
 
 <br>
@@ -63,18 +84,18 @@ Andre Ye, 2/23/21
   - If you are laid off, you get payments from the unemployment insurance.
 - If you are a home-maker, you don't get those benefits - you don't get access to unemployment insurance.
   - No national healthcare program; has all sorts of spillover effects.
-  - If a housewife was in an abusive relationship, there were no ecnomic resources for her to have eeconomic independence to get out of that relationship.
-  - It left huge gaps and a social reinforcement in patriarchal relationships.
+  - If a housewife was in an abusive relationship, there were no economic resources for her to have economic independence to get out of that relationship.
+  - It left huge gaps and social reinforcement in patriarchal relationships.
 
 #### White Affirmative Action
-- The colorblind, race-neutral policies of the New Deal - social security, for instance - in a society of racial hierarchies falls disproportionately.
+- The colorblind, race-neutral policies of the New Deal - social security, for instance - in a society of racial hierarchies fall disproportionately.
 - GI Bill - economic bill of rights that meant the federal government provided particular sets of protections for veterans: home loans, education, preferential hiring.
   - You enter the housing market as a veteran.
-  - If you are white, you can purchase a home and develop in affluent suburbs of the city.
-  - If you are black, you face racial convenants; federal insurance would not support certain investments and redline areas.
-- When you come into racially segregated society, whites can operate better in the system than blacks.
-- Federal highway program - something as inocuous as the freeway system being developed in the 50s and 60s allows for the process of establishing white communities to happen.
-  - White families can get out of poorer neighborhoods and into the surburbs to accumulate their wealth agglomeration.
+  - If you are white, you can purchase a home and develop in the affluent suburbs of the city.
+  - If you are black, you face racial covenants; federal insurance would not support certain investments and redline areas.
+- When you come into a racially segregated society, whites can operate better in the system than blacks.
+- Federal highway program - something as innocuous as the freeway system being developed in the 50s and 60s allows for the process of establishing white communities to happen.
+  - White families can get out of poorer neighborhoods and into the suburbs to accumulate their wealth agglomeration.
 
 <br>
 
@@ -83,7 +104,7 @@ Andre Ye, 2/23/21
 <br>
 
 ### Creating White America: Consumer Society
-- Workers as consumers could be the economic engine of growth in the postwar period, facilitaitng ht eprocess of federal spending.
+- Workers as consumers could be the economic engine of growth in the postwar period, facilitating ht process of federal spending.
 - Creates the American middle class for the first time.
 
 <br>
@@ -102,15 +123,15 @@ Andre Ye, 2/23/21
 - *Tiered labor*: if there are more people than there are jobs, they compete. 
   - A market equilibrium gets worked out in which the price of the jobs is set at the wages under the assumption that everyone is competing for the same jobs.
   - Tiered labor market - **access to different levels of jobs**.
-    - Partially set by federal policy, which is choosing to provide protections for industrail workers but not agricultural workers.
+    - Partially set by federal policy, which is choosing to provide protections for industrial workers but not agricultural workers.
     - These jobs are disproportionately going to white workers, which are using unions to keep out black workers.
   - All sorts of social mechanisms and filters - some set by social practice, custom, or policy - maintain the tiered labor market.
-- Not only is there social segregation and exclusion, but economically too.
+- Not only is there social segregation and exclusion but economically too.
 - Prevented through legal segregation and economic inequalities as well.
 
 #### Expanding Wealth Gap
-- When the American is transformed and much oft he labor conflict is being smoothed over; black people are almost entirely being left out through filters and exclusions.
-- Even though wealth inequality overall is decreasing - enormous wealth gap emerging in the Progressive era is being reduced through unions, redistribution; yet, gap between white and black families is increasing.
+- When the American is transformed and much of the labor conflict is being smoothed over; black people are almost entirely being left out through filters and exclusions.
+- Even though wealth inequality overall is decreasing - the enormous wealth gap emerging in the Progressive era is being reduced through unions, redistribution; yet, the gap between white and black families is increasing.
 
 <br>
 
@@ -121,10 +142,10 @@ Andre Ye, 2/23/21
 ### Birth of the Civil Rights Movement
 - "Birth" is not entirely accurate - black people's struggle for equality, etc. continuing in a long tradition.
 - Very clearly, there were antecedents in WWII itself that contribute to the time of this Civil Rights movement.
-  - A. Philip Randolph's explicit civil rights struggles happening in the 40s - march on Washington.
+  - A. Philip Randolph's explicit civil rights struggle happening in the 40s - march on Washington.
   - The Double V Victory - democracy abroad and at home.
 - The use of racial segregation by the Nazis to justify their system gave a serious political blow to those that continue to defend racial hierarchy in the US.
-- Returning black veterans that fought in the Pacific or Atlantic Theatre - returnng to a system that practically discriminates against them in all facets of life.
+- Returning black veterans that fought in the Pacific or Atlantic Theatre - returning to a system that practically discriminates against them in all facets of life.
 - The growth of the NAACP from returning black veterans - experiences double-digit growth throughout this period.
   - Robert F. Williams - a black WWII who became the president of the NAACP chapter in his hometown of Munroe.
   - In the 1950s, attempted to desegregate the public swimming pool - to put pressure on white supremacist oligarchs in his town.
@@ -132,18 +153,18 @@ Andre Ye, 2/23/21
 - **Militancy** - an aggressive political agenda.
 
 #### Brown v. Board of Education
-- NAACP emerges as the 1950s premiere civil rights organization by W. E. B. du Bois and Ida B. Wells; ideological approach is for the possibility of racial integration and fighting for equality under the law within the political system.
+- NAACP emerges as the 1950s premier civil rights organization by W. E. B. du Bois and Ida B. Wells; the ideological approach is for the possibility of racial integration and fighting for equality under the law within the political system.
 - To develop this strategy, they pursue a series of legal cases in the 1940s and 1950s to try to test racial segregation everywhere they possibly can.
 - Intentionally select individual plaintiffs and cases they think have the best shot of being able to challenge a system of legal segregation.
 - Do it on public spending, business discrimination, and a whole array of other issues they attempt to force through.
 - Most famous: 1954 Brown v. Board of Education case.
   - Uses sociological evidence to argue to challenge the impacts of segregation.
-    - Assuming it is equal, the mere fact of having social segregation has pyschological and sociological impacts that are deleterious.
+    - Assuming it is equal, the mere fact of having social segregation has psychological and sociological impacts that are deleterious.
     - The Doll Case/Study - young black girls were shown different skin color dolls and asked to tell which ones they identified with or found more beautiful and desirable.
       - Overwhelming numbers, black girls are choosing white dolls and devaluing themselves.
     - The Court recognizes this in the schools.
   - Brandeis Brief - no legal case based on precedent could be made, so Brandeis brings forth sociological evidence.
-- Attorneys were strategically selective in their cases - found the most "sqeaky-clean" plantiffs in which nothing could tarnish the case.
+- Attorneys were strategically selective in their cases - found the most "squeaky-clean" plaintiffs in which nothing could tarnish the case.
   - Sociological case was used and won.
 
 #### The Little Rock Nine and School Desegregation
@@ -151,7 +172,7 @@ Andre Ye, 2/23/21
 - Popular activism - militancy - of regular people - to force the question of school districts.
 - 1957 Little Rock Nine case for desegregation in schools, Little Rock, Arkansas.
   - Central High - had big, beautiful New Deal buildings, textbooks, resources, and so on.
-  - Governor of the state of Arkansas refused to integrate theschools and called in the state guard to block the entrance to the black students.
+  - Governor of the state of Arkansas refused to integrate the schools and called in the state guard to block the entrance to the black students.
   - Created an international incident - in the context of the Cold War, these flaws of the United States created a media incident.
   - Eisenhower federalizes the national guard, reverses their orders - the guards are now escorting them into the school.
   - State guard provides continual protection for the students in the first year.
@@ -178,26 +199,26 @@ Andre Ye, 2/23/21
 - Other black leading community figures don't want to undergo the risk of being the spokesperson - his career transforms from being a preacher into a political organizer.
 - Political activism takes a significant part of his time.
 - The SCLC emerges as one of the leading movement organizations and a significant shift from the NAACP legal strategy to a movement strategy based on passive resistance.
-  - Disrupt as much of the system and politics of the South adn the United States as necessary until some change is made on the question of segregation and Jim Crow.
+  - Disrupt as much of the system and politics of the South and the United States as necessary until some change is made on the question of segregation and Jim Crow.
 
-#### The Greensboro NC Sit In
+#### The Greensboro NC Sit-In
 - Massification of the movement that is happening until the 1960s.
 - Lunch-Counter sit-in movement.
-- College students in Greensboro, North Carolina are sitting in at a public lunch counter that had been segregated.
+- College students in Greensboro, North Carolina are sitting at a public lunch counter that had been segregated.
 - Lunch counters - access to symbols of a consumer society; the freedom of being a middle-class American consumer without restrictions because of race.
   - A demand around these sets of concerns.
-- Every day, they come, demand service - sometimes attacked by white mobs, etc. Spread into the press; other college students somewhat spontaneously decided to sit in on the local department store, diner, lunch counter, soda fountain, etc. and demanded service to be the tens of thouands of people.
+- Every day, they come, demand service - sometimes attacked by white mobs, etc. Spread into the press; other college students somewhat spontaneously decided to sit in on the local department store, diner, lunch counter, soda fountain, etc. and demanded service to be the tens of thousands of people.
 - Like the Occupy movement in 2011.
-- Are in conversation for what to do - develop national relationships around sitins. Was that it, what happens from here?
+- Are in the conversation about what to do - develop national relationships around sit-ins. Was that it, what happens from here?
 
 #### SNCC and Ella Baker
 - A field organizer for the SNCC and SCLC.
 - Both organizations wanted to begin a youth organization to help direct and control these young people's activism.
-- Ella Baker obstensibly argued *not* to join others' organizer; for the students to form their own autonomous society: forms the SNCC.
+- Ella Baker ostensibly argued *not* to join others' organizers; for the students to form their autonomous society: forms the SNCC.
 - Most important civil rights organization that no one has heard about.
 - Facilitated this style of massive disruptive activity all across the country; hardly any other organization is thinking about it on this style.
-- Facilitate white students; look for indigenious black leadership in the South willing to step up, etc.; begin a massive nationwide organizing campaign to disrupt the legal and political system of segregation.
-- Focus on the South but are alsoa ctive in other Northern cities.
+- Facilitate white students; look for indigenous black leadership in the South willing to step up, etc.; begin a massive nationwide organizing campaign to disrupt the legal and political system of segregation.
+- Focus on the South but are also active in other Northern cities.
 
 <br>
 
@@ -209,12 +230,12 @@ Andre Ye, 2/23/21
 - Police riots in Birmingham, Alabama.
 - Militancy of the movement is very widespread; mass demonstrations, sit-ins, protests, forcing the question of desegregation.
 - Birmingham Alabama - King and SNCC do a test campaign in which they attempt to overwhelm and flood the system - legal and court system - to force the question of desegregation.
-- Sherriff - Bull Conner - is a well-known white supremacist.
+- Sheriff - Bull Conner - is a well-known white supremacist.
 - They develop a strategy of using high school students, which could get arrested repeatedly.
 - Develop a strategy to challenge the system.
 - Bull Conner is vicious in his response - police of Birmingham run riot on the protestors, attacking with police dogs, water cannons, etc.
   - A high degree of violence.
-- All filmed, photographed, recorded by the national media that puts pressure on the Kennedy amdministration to pass civil rights legislation.
+- All filmed, photographed, recorded by the national media that puts pressure on the Kennedy administration to pass civil rights legislation.
 - This news gets carried internationally, especially to the Soviet Unions.
 - Puts pressure on Kennedy - a Democrat.
 
@@ -227,9 +248,9 @@ Andre Ye, 2/23/21
 ### March on Washington
 - No civil rights bill happens; implement A. Philip Randolph's plan for a march on Washington.
 - Main thrust of the political agenda: freedom and jobs.
-- King delivers his "I Have A Dream" speech.
+- King delivers him "I Have A Dream" speech.
 - This national movement and the international strategy of shaming the US, and continual activity for years across the country forced political change.
-- Kennedy is assassinated in 1963; Lyndon Johnson, vice president of Kennedy - who is a virulent racist - becomes president in this moment and is attempting to pacify the disruptions, making the US look better in the eyes of the Cold War.
+- Kennedy is assassinated in 1963; Lyndon Johnson, vice president of Kennedy - who is a virulent racist - becomes president at this moment and is attempting to pacify the disruptions, making the US look better in the eyes of the Cold War.
 - Johnson passes the 1964 Civil Rights Act.
 - Further legislation is passed to continue to attempt to pacify and disruptive the movement in the 1965 voting rights act.
 
@@ -240,30 +261,30 @@ Andre Ye, 2/23/21
 <br>
 
 ### Black Power and a New Critique
-- Significant political victories for the movmeent - the Civil Rights Act and the Voting Rights Act are significant.
-- The federal government is committing itself to enforcement of the laws.
+- Significant political victories for the movement - the Civil Rights Act and the Voting Rights Act are significant.
+- The federal government is committing itself to the enforcement of the laws.
 - What about the economic demands and the job guarantees, access to the primary labor market? These are not addressed in the law.
 - Another wing of the movement emerges - the Black Power or Black Nationalist wing.
-  - It's not enough to have "parchment rights" in an unequal system - the balance of power needs to be radically redistributed so that black people are actually empowered socially, economically, culturally.
-- New figures - Malcolm X, a figure of black nationalism and comes from a Garveyite tradition, and Stokley Carmichael, who becomes president of SNCC and is increasing radicalized.
-- Carmichael argues that political gains cannot change and advance their economic position in the society.
+  - It's not enough to have "parchment rights" in an unequal system - the balance of power needs to be radically redistributed so that black people are empowered socially, economically, culturally.
+- New figures - Malcolm X, a figure of black nationalism and comes from a Garveyite tradition, and Stokley Carmichael, who becomes president of SNCC and is increasingly radicalized.
+- Carmichael argues that political gains cannot change and advance their economic position in society.
 - Black Power - not just around desegregation or political rights, but empowerment.
 
 #### Watts Riots
 - Seen as a significant turning point.
-- "Good 60s/Bad 60s" - seen as a turning point between the pacifist movement towards a more violence one.
+- "Good 60s/Bad 60s" - seen as a turning point between the pacifist movement towards a more violent one.
 - In 1965, after the passage of all these laws, is a black riot.
 - When there are race riots, it is white people attacking and killing black people.
 - In this case, a major riot that causes damage is being led and run by black people.
-  - Watts is a neighborhood in Los Angeles; a motorist is severely beaten in front of everyone in the neighborhood before being arrested and taken to the jail.
+  - Watts is a neighborhood in Los Angeles; a motorist is severely beaten in front of everyone in the neighborhood before being arrested and taken to jail.
 - Attacks on the police turn into wide-scale riots in this ethnic community of black residents.
 - Lasts several days and several people are killed.
 
 #### Black Panthers
 - Not a question of integration or Jim Crow, but more fundamental questions around housing stock and access to wealth, jobs, job training, police brutality.
 - Other organizations emerged in 1965 and 66 to address those sets of questions around black equality.
-- 1966 Black Panther party emerges in Oakland, California (next chapter was in Seattle), becomes a nationwide party soon.
-- The Black Panther Party for Armed Self-Defense; are carrying public weapons in public spaces to protect themselves from police violence.
+- 1966 Black Panther party emerges in Oakland, California (the next chapter was in Seattle), becomes a nationwide party soon.
+- The Black Panther Party for Armed Self-Defense; is carrying public weapons in public spaces to protect themselves from police violence.
 - Patrols to police the police - a visibly militant shift and part of a broader cultural shift in black militancy.
 
 <br>
@@ -273,7 +294,7 @@ Andre Ye, 2/23/21
 <br>
 
 ### Black Culture
-- Adaption of naturally worn hair, of the black is beautiful movement not just for black physical features but for black arts, creative genius, etc.
+- Adaption of naturally worn hair, of the black, is beautiful movement not just for black physical features but for black arts, creative genius, etc.
 - Emphasis on cultural and intellectual traditions as being important cultural contributions.
 
 <br>
@@ -283,59 +304,3 @@ Andre Ye, 2/23/21
 <br>
 
 [Back to top](#)
-
-grammarly, post to class
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
