@@ -21,6 +21,7 @@ Jump Down to a Section: [Lecture Notes](#lecture-notes), [Study Guides](#study-g
 - ["New Deals: Ideas and Governance"](https://andre-ye.github.io/history/winter/lectures/new-deals), 2/2/21-2/5/21
 - ["World War II: Meanings of Freedom and Popular Ideas"](https://andre-ye.github.io/history/winter/lectures/world-war-ii), 2/9/21-2/13/21
 - ["World War II and the Cold War: Warfare and Statecraft"](https://andre-ye.github.io/history/winter/lectures/the-cold-war), 2/16/21-2/20/21
+- ["Freedom Now: Political Economy and Black Movements"](https://andre-ye.github.io/history/winter/lectures/freedom-now), 2/22/21 - 2/26/21.
  
 #### Weekly Reading Responses
 *Reading response notes do not include narratives or shorter texts.*
