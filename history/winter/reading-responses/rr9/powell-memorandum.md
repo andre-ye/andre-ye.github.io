@@ -124,7 +124,7 @@ Andre Ye, 2/27/21
 - Assault on the enterprise system has gradually evolved over the past two decades.
 - Social science faculties are generally liberally oriented.
 
-< "Yale, like every other major college, is graduating scores' of bright young men... who despise the American political and economic system."
+> "Yale, like every other major college, is graduating scores' of bright young men... who despise the American political and economic system."
 > Stewart Alsop
 
 - These "bright young men" have been taught to distrust the system, and hence seek to influence the country via:
