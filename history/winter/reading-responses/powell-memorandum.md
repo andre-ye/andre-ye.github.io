@@ -10,6 +10,27 @@ Andre Ye, 2/27/21
 <br>
 
 ### Navigation
+- [Dimensions of the Attack](#dimensions-of-the-attack)
+- [Sources of the Attack](#sources-of-the-attack)
+- [Tone of Attack](#tone-of-attack)
+- [The Apathy and Default of Business](#the-apathy-and-default-of-business)
+- [Responsibility of Business Executives](#responsibility-of-business-executives)
+- [Possible Role of the Chamber of Commerce](#possible-role-of-the-chamber-of-commerce)
+- [The Campus](#the-campus)
+  * [What Can Be Done About the Campus](#what-can-be-done-about-the-campus)
+- [Equal Time on the Campus](#equal-time-on-the-campus)
+- [Balancing of Faculties](#balancing-of-faculties)
+- [Graduate Schools of Business](#graduate-schools-of-business)
+- [Secondary Education](#secondary-education)
+- [What Can Be Done About the Public?](#what-can-be-done-about-the-public-)
+- [The Neglected Political Arena](#the-neglected-political-arena)
+- [Neglected Opportunity in the Courts](#neglected-opportunity-in-the-courts)
+- [Neglected Stockholder Power](#neglected-stockholder-power)
+- [A More Aggressive Attitude](#a-more-aggressive-attitude)
+- [The Cost](#the-cost)
+- [Quality Control is Essential](#quality-control-is-essential)
+- [Relationship to Freedom](#relationship-to-freedom)
+- [Conclusion](#conclusion)
 
 <br>
 
