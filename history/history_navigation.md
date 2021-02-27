@@ -49,6 +49,8 @@ Jump Down to a Section: [Lecture Notes](#lecture-notes), [Study Guides](#study-g
 - Weekly Reading Response 8 (Due 2/25)
   - [Notes on *Revolution in the Air: Sixties Radicals Turn to Lenin, Mao, and Che* by Max Elbaum](https://andre-ye.github.io/history/winter/reading-responses/rr8/revolution-in-the-air)
   - [Notes on *Beyond Vietnam* by Martin Luther King, Jr.](https://andre-ye.github.io/history/winter/reading-responses/rr8/beyond-vietnam)
+- Weekly Reading Response 9 (Due 3/4)
+ - [Notes on the Powell Memorandum: *Attack on American Free Enterprise System*](https://andre-ye.github.io/history/winter/reading-responses/powell-memorandum)
 
 #### Course Mechanics
 - [Week 5 Course Logistics](https://andre-ye.github.io/history/winter/course-logistics/week-5) - Essay 1 Feedback, Rubric for Advanced Papers, Historical Hierarchy
