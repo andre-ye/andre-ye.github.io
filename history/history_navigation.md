@@ -15,13 +15,14 @@ Jump Down to a Section: [Lecture Notes](#lecture-notes), [Study Guides](#study-g
 
 #### Lecture Notes
 - [Book Launch: *African American Political Thought - A Collected History*](https://andre-ye.github.io/history/lecture-notes/african-american-political-thought)
-- ["Class Conflict in the Gilded Age"](https://andre-ye.github.io/history/winter/lectures/class-conflict-in-the-gilded-age), 1/11-1/15
-- ["Advent of Empire: Race and Conquest in 1900"](https://andre-ye.github.io/history/winter/lectures/advent-of-empire), 1/19-1/22
+- ["Class Conflict in the Gilded Age"](https://andre-ye.github.io/history/winter/lectures/class-conflict-in-the-gilded-age), 1/11-1/15.
+- ["Advent of Empire: Race and Conquest in 1900"](https://andre-ye.github.io/history/winter/lectures/advent-of-empire), 1/19-1/22.
 - ["The Progressive Era: Race, Class, and Gender in the 20th Century"](https://andre-ye.github.io/history/winter/lectures/the-progressive-era), 1/25-1/29
 - ["New Deals: Ideas and Governance"](https://andre-ye.github.io/history/winter/lectures/new-deals), 2/2/21-2/5/21
 - ["World War II: Meanings of Freedom and Popular Ideas"](https://andre-ye.github.io/history/winter/lectures/world-war-ii), 2/9/21-2/13/21
 - ["World War II and the Cold War: Warfare and Statecraft"](https://andre-ye.github.io/history/winter/lectures/the-cold-war), 2/16/21-2/20/21
 - ["Freedom Now: Political Economy and Black Movements"](https://andre-ye.github.io/history/winter/lectures/freedom-now), 2/22/21 - 2/26/21.
+- ["Neoliberalism: A Changing Political Economy"](https://andre-ye.github.io/history/winter/lectures/neoliberalism), 3/2/21-3/6/21.
  
 #### Weekly Reading Responses
 *Reading response notes do not include narratives or shorter texts.*
