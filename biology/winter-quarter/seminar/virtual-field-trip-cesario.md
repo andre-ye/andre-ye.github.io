@@ -1,7 +1,7 @@
 [Home](https://andre-ye.github.io) > [Biology Navigation](https://andre-ye.github.io/biology/biology_navigation) > [Seminars](https://andre-ye.github.io/biology/biology_navigation#seminars) > Amina Cesario: Principles of Community Ecology and Virtual Field Trip
 
 ## Seminar - Amina Cesario: Principles of Community Ecology and Virtual Field Trip
-Andre Ye, 1/22/2021
+Andre Ye, 3/2/21
 
 <br>
 
