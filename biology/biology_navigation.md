@@ -17,6 +17,7 @@ Taught by Dr. Valensisi, Fall and Winter Quarters.
 - [Julie Mathieu: Pluripotent Stem Cells, Regenerative Medicine, and Genome Editing](https://andre-ye.github.io/biology/winter-quarter/seminar/mathieu-crispr-and-stem-cells)
 - [Hope St. John: Odegaard Writing & Research Center, Peer Review](https://andre-ye.github.io/biology/winter-quarter/seminar/hope-st-john)
 - [Amina Cesario: Principles of Community Ecology and Virtual Field Trip](https://andre-ye.github.io/biology/winter-quarter/seminar/virtual-field-trip-cesario)
+- [UW Undergraduate Research](https://andre-ye.github.io/biology/winter-quarter/seminar/undergraduate-research)
 
 #### Biology Content
 - Module 1: Gene Expression, Development, Technologies
