@@ -56,6 +56,7 @@ Jump Down to a Section: [Lecture Notes](#lecture-notes), [Study Guides](#study-g
 - Weekly Reading Response 10 (Due 3/11)
   - [Notes on "Global Warming's Terrifying New Math" by Bill McKibben](https://andre-ye.github.io/history/winter/reading-responses/rr10/gw-new-math)
   - [Notes on "How Wealth Inequality Has Changed in the US since the Great Recession, by Race, Ethnicity, and Income" by Rakesh Kochhar](https://andre-ye.github.io/history/winter/reading-responses/rr10/wealth-inequality)
+  - [Notes on *From #BlackLivesMatter to Black Liberation* by Keeanga-Yamahtta Taylor](https://andre-ye.github.io/history/winter/reading-responses/rr10/black-liberation)
 
 #### Course Mechanics
 - [Week 5 Course Logistics](https://andre-ye.github.io/history/winter/course-logistics/week-5) - Essay 1 Feedback, Rubric for Advanced Papers, Historical Hierarchy
