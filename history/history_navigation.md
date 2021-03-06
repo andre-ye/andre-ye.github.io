@@ -53,6 +53,8 @@ Jump Down to a Section: [Lecture Notes](#lecture-notes), [Study Guides](#study-g
 - Weekly Reading Response 9 (Due 3/4)
   - [Notes on the Powell Memorandum: *Attack on American Free Enterprise System*](https://andre-ye.github.io/history/winter/reading-responses/rr9/powell-memorandum)
   - [Notes on *Guns and Butter: The Welfare State, the Carceral State, and the Politics of Exclusion in the Postwar United States* by Julilly Johler-Hausmann](https://andre-ye.github.io/history/winter/reading-responses/rr9/guns-and-butter)
+- Weekly Reading Response 10 (Due 3/11)
+  - [Notes on "Global Warming's Terrifying New Math" by Bill McKibben](https://andre-ye.github.io/history/winter/reading-responses/rr10/gw-new-math)
 
 #### Course Mechanics
 - [Week 5 Course Logistics](https://andre-ye.github.io/history/winter/course-logistics/week-5) - Essay 1 Feedback, Rubric for Advanced Papers, Historical Hierarchy
