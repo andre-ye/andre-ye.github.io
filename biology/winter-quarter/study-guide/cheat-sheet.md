@@ -39,7 +39,7 @@ From [Textbook Notes: Chapter 18, “Control of Gene Expression in Bacteria”](
 |	constitutive | A gene is transcribed *constitutively* if it is done so without regards for gene expression control, like enzymes required for glycolysis. |
 |	constitutive mutants | Cells that produce a product consistently at all times, instead of regulating its expressions. |
 |	disaccharide | A sugar with two monosaccharide residues. For instance, lactose is a disaccharide, consisting of galactose and glucose. |
-|	galactose | The monosaccharide sugar that, with lactose, forms lactose. |
+|	galactose | The monosaccharide sugar that, with glucose, forms lactose. |
 |	gene expression | The "expression" of genes, or the transfer of information into the genotype into physical qualities of the phenotype. |
 |	genetic screen | A technique used to identify and select individuals with a particular phenotype in a population with mutants. (Rephrased: Any technique that identifies individuals with a particular type of mutation.) |
 |	global gene regulation | Bacteria may need to coordinate change globally instead of individual genes or operons. Global gene regulation is the coordinated regulation of many genes, across operons. |
