@@ -90,7 +90,7 @@ From [Textbook Notes: Chapter 19, “Control of Gene Expression in Eukaryotes”
 | mediator | The mediator is a bridge between regulatory transcription factors, general transcription factors, and RNA polymerase II. It integrates regulatory transcription factors and delivers a signal to RNA polymerase for transcription initiation. |
 | methylation | See DNA methylation. In general, methylation is the addition of a methyl group to a substrate. |
 | phosphorylation | Phosphorylation is a post-translational step. In general, it is the addition of a phosphate group to a substrate. |
-| post-translational regulation | Regulation of activated proteins, for instance by preventing protein activation steps like the addition of a phosphate group. This is an energetically cheap action, but inefficient because the entire protein needs to be constructed. |
+| post-translational regulation | Regulation of activated proteins, for instance by preventing protein activation steps like the addition of a phosphate group. This is fast, but inefficient because the entire protein needs to be constructed. |
 | regulatory sequences | In eukaryotes, regulatory sequences are DNA sequences that allow control over the initiation of transcription *other than* the core promoter. Regulatory seuqences are like the operator and CAP binding sites in prokaryotes. |
 | repressors | A regulatory protein that binds to DNA at the operator and stops transcription. |
 | RNA processing | A step that occurs in the Central Dogma for eukaryotes, in which introns are spliced out, among other changes. |
