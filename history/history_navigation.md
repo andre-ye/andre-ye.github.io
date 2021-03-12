@@ -23,6 +23,7 @@ Jump Down to a Section: [Lecture Notes](#lecture-notes), [Study Guides](#study-g
 - ["World War II and the Cold War: Warfare and Statecraft"](https://andre-ye.github.io/history/winter/lectures/the-cold-war), 2/16/21-2/20/21
 - ["Freedom Now: Political Economy and Black Movements"](https://andre-ye.github.io/history/winter/lectures/freedom-now), 2/22/21 - 2/26/21.
 - ["Neoliberalism: A Changing Political Economy"](https://andre-ye.github.io/history/winter/lectures/neoliberalism), 3/2/21-3/6/21.
+- ["American History Now: Understanding Our Current Moment"](https://andre-ye.github.io/history/winter/lectures/american-history-now), 3/8/21-3/11/21.
  
 #### Weekly Reading Responses
 *Reading response notes do not include narratives or shorter texts.*
