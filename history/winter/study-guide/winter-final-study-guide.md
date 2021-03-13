@@ -174,7 +174,7 @@ Relevant lecture: ["Freedom Now: Political Economy and Black Movements"](https:/
 <br>
 
 ### Neoliberalism
-Relevant lecture: [Neoliberalism: A Changing Political Economy](https://andre-ye.github.io/history/winter/lectures/neoliberalism){:target="_blank"}
+Relevant lecture: ["Neoliberalism: A Changing Political Economy"](https://andre-ye.github.io/history/winter/lectures/neoliberalism){:target="_blank"}
 
 *Bottom line*: Free market economics re-emerged as an answer to stagflation that Keynesian economics could not answer. Hence, free-market solutions were applied to emerging structural problems that resulted from deindustrialization. By the 1980s, a significant neoliberal shift had emerged, marked by the era of Reagan.
 
