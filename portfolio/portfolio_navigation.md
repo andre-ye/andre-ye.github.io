@@ -1,7 +1,7 @@
 [Home](https://andre-ye.github.io) > Portfolio Navigation
 ## TS Portfolio
 
-A compilation of essays and projects I've produced at the Transition School.
+A compilation of essays and projects I've produced at the Transition School. [Unupdated]
 
 Jump down to a section: [English](#english), [Math](#mathematics), [History](#history).
 
@@ -22,7 +22,7 @@ Jump down to a section: [English](#english), [Math](#mathematics), [History](#hi
 
 ### Mathematics
 - [Fall Quarter Project 1 - Math Paper](https://andre-ye.github.io/precalc/portfolio/Project_1_Final_Draft.pdf){:target="_blank"}.
-  > Title: "Intersections of Constricted Lines Within a Unit Circle"
+
 
 <br>
 
@@ -49,8 +49,10 @@ Jump down to a section: [English](#english), [Math](#mathematics), [History](#hi
 #### Fall Quarter
 - Essays
   - [Fall Midterm Essay](https://andre-ye.github.io/history/portfolio/Fall Midterm Essay.pdf){:target="_blank"}.
+  - [Fall Final Essay](https://andre-ye.github.io/history/portfolio/History Final.pdf){:target="_blank"}
   - [Fall Quarter Essay 1](https://andre-ye.github.io/history/portfolio/Essay%201.pdf){:target="_blank"}
   - [Fall Quarter Essay 2](https://andre-ye.github.io/history/portfolio/Essay%202%20Revised.pdf){:target="_blank"}
+  - [Fall Quarter Essay 3](https://andre-ye.github.io/history/portfolio/Essay Draft 1.pdf))
 - Reading Responses
   - [Week 1 Reading Response](https://andre-ye.github.io/history/portfolio/Week 2 Reading Response.pdf){:target="_blank"}
   - [Week 2 Reading Response](https://andre-ye.github.io/history/portfolio/Week 2 Reading Response.pdf){:target="_blank"}
