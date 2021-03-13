@@ -3,7 +3,7 @@
 
 A compilation of essays and projects I've produced at the Transition School. [Unupdated]
 
-Jump down to a section: [English](#english), [Math](#mathematics), [History](#history).
+Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#biology), [History](#history).
 
 <br>
 
@@ -13,9 +13,9 @@ Jump down to a section: [English](#english), [Math](#mathematics), [History](#hi
 
 ### English
 - [Fall Midterm Essay](https://andre-ye.github.io/english/portfolio/English Fall Midterm Essay.pdf){:target="_blank"}.
-- [Fall Final Essay - "Title"]
-- [Fall English Portfolio]
-- [Winter Midterm]
+- [Fall Final Research Paper - "In Defense of Section 230: How Misguided Revisions Will Trample the Internet"](https://andre-ye.github.io/english/portfolio/English Paper Draft Final.pdf){:target="_blank"}.
+- [Fall English Portfolio](https://andre-ye.github.io/english/portfolio/English Portfolio.pdf){:target="_blank"}.
+- [Winter Midterm Essay - "Human Masks and Hunting in 'Antlers'"](https://andre-ye.github.io/english/portfolio/Antlers Draft 3.pdf){:target="_blank"}.
 - [Winter Final Essay]
 
 <br>
@@ -35,10 +35,22 @@ Jump down to a section: [English](#english), [Math](#mathematics), [History](#hi
 
 <br>
 
+### Biology
+- [Winter Quarter Policy Paper - "Proposal Regulation for Invasive Brain_Computer Interface Testing on the Able-Bodied"](http://andre-ye.github.io/biology/winter-quarter/portfolio/biology-policy-paper-winter.pdf){:target="_blank"}.
+
+<br>
+
+---
+
+<br>
+
 ### History
 
 #### Winter Quarter
 - Essays
+  - [Winter Quarter Essay 1 - "Clashing Notions of Liberty in the Gilded Age"](https://andre-ye.github.io/history/winter/portfolio/Essay 1 Draft.pdf){:target="_blank"}
+  - [Winter Quarter Essay 2 - "The Hesitancy of Progressivism"](https://andre-ye.github.io/history/winter/portfolio/Essay 2 Draft 2.pdf){:target="_blank"}
+  - [Final Culminating Project - "The Immolation"](https://andre-ye.github.io/history/winter/portfolio/Final Draft for Cumulative Project.pdf){:target="_blank"}, a short story on unionization in the 1930s.
 - Reading Responses
   - [Week 1 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 1.pdf){:target="_blank"}
   - [Week 2 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 2.pdf){:target="_blank"}
@@ -53,13 +65,13 @@ Jump down to a section: [English](#english), [Math](#mathematics), [History](#hi
 
 #### Fall Quarter
 - Essays
-  - [Fall Midterm Essay](https://andre-ye.github.io/history/portfolio/Fall Midterm Essay.pdf){:target="_blank"}.
-  - [Fall Final Essay](https://andre-ye.github.io/history/portfolio/History Final.pdf){:target="_blank"}
-  - [Fall Quarter Essay 1](https://andre-ye.github.io/history/portfolio/Essay%201.pdf){:target="_blank"}
-  - [Fall Quarter Essay 2](https://andre-ye.github.io/history/portfolio/Essay%202%20Revised.pdf){:target="_blank"}
-  - [Fall Quarter Essay 3](https://andre-ye.github.io/history/portfolio/Essay Draft 1.pdf))
+  - [Fall Midterm Essay](https://andre-ye.github.io/history/portfolio/Fall Midterm Essay.pdf){:target="_blank"}, on the pyschological reinforcement of slavery.
+  - [Fall Final Essay](https://andre-ye.github.io/history/portfolio/History Final.pdf){:target="_blank"}, on the South's aggression and the Free Soil Dream in the Civil War.
+  - [Fall Quarter Essay 1](https://andre-ye.github.io/history/portfolio/Essay%201.pdf){:target="_blank"}, on the role of religion in conquest.
+  - [Fall Quarter Essay 2](https://andre-ye.github.io/history/portfolio/Essay%202%20Revised.pdf){:target="_blank"}, on immigrant inclusion and race dynamics.
+  - [Fall Quarter Essay 3](https://andre-ye.github.io/history/portfolio/Essay Draft 1.pdf){:target="_blank"}, on the relationship between emancipation and the women's movement.
 - Reading Responses
-  - [Week 1 Reading Response](https://andre-ye.github.io/history/portfolio/Week 2 Reading Response.pdf){:target="_blank"}
+  - [Week 1 Reading Response](https://andre-ye.github.io/history/portfolio/Week 1 Reading Response.pdf){:target="_blank"}, on conquest.
   - [Week 2 Reading Response](https://andre-ye.github.io/history/portfolio/Week 2 Reading Response.pdf){:target="_blank"}
   - [Week 3 Reading Response](https://andre-ye.github.io/history/portfolio/Week 3 Reading Response.pdf){:target="_blank"}
   - [Week 4 Reading Response](https://andre-ye.github.io/history/portfolio/Week 4 Reading Response.pdf){:target="_blank"}
