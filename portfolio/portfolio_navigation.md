@@ -13,6 +13,10 @@ Jump down to a section: [English](#english), [Math](#mathematics), [History](#hi
 
 ### English
 - [Fall Midterm Essay](https://andre-ye.github.io/english/portfolio/English Fall Midterm Essay.pdf){:target="_blank"}.
+- [Fall Final Essay - "Title"]
+- [Fall English Portfolio]
+- [Winter Midterm]
+- [Winter Final Essay]
 
 <br>
 
@@ -21,8 +25,9 @@ Jump down to a section: [English](#english), [Math](#mathematics), [History](#hi
 <br>
 
 ### Mathematics
-- [Fall Quarter Project 1 - Math Paper](https://andre-ye.github.io/precalc/portfolio/Project_1_Final_Draft.pdf){:target="_blank"}.
-
+- [Fall Quarter Project 1 - "Intersections of Constrained Lines Within the Unit Circle"](https://andre-ye.github.io/precalc/portfolio/Project_1_Final_Draft.pdf){:target="_blank"}.
+- [Winter Quarter Project 2 - "The Continued Fraction Problem"](https://andre-ye.github.io/precalc/portfolio/annotated-Project_2-1.pdf){:target="_blank"}.
+- [Winter Quarter Project 3 - "Optimum and Convergence Patterns in Power Towers"](https://andre-ye.github.io/precalc/portfolio/annotated-Project_3%20%284%29.pdf){:target="_blank"}.
 
 <br>
 
@@ -64,7 +69,3 @@ Jump down to a section: [English](#english), [Math](#mathematics), [History](#hi
   - [Week 8 Reading Response](https://andre-ye.github.io/history/portfolio/Week 8 Reading Response.pdf){:target="_blank"}
   - [Week 9 Reading Response](https://andre-ye.github.io/history/portfolio/Week 9 Reading Response.pdf){:target="_blank"}
   - [Week 10 Reading Response](https://andre-ye.github.io/history/portfolio/Week 10 Reading Response.pdf){:target="_blank"}
-
-
-
-
