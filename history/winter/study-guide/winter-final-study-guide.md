@@ -1,4 +1,4 @@
-[Home](https://andre-ye.github.io) > [History Navigation](https://andre-ye.github.io/history/history_navigation) > [Lecture Notes](https://andre-ye.github.io/history/history_navigation#lecture-notes) > Winter Final Study Guide / Course Overview
+[Home](https://andre-ye.github.io) > [History Navigation](https://andre-ye.github.io/history/history_navigation) > Winter Final Study Guide / Course Overview
 
 ## Winter Final Study Guide / Course Overview
 
