@@ -12,7 +12,7 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 <br>
 
 ### English
-- [Fall Midterm Essay](https://andre-ye.github.io/english/portfolio/English Fall Midterm Essay.pdf){:target="_blank"}.
+- [Fall Midterm Essay](https://andre-ye.github.io/english/portfolio/English Fall Midterm Essay.pdf){:target="_blank"}, on perspectives on education.
 - [Fall Final Research Paper - "In Defense of Section 230: How Misguided Revisions Will Trample the Internet"](https://andre-ye.github.io/english/portfolio/English Paper Draft Final.pdf){:target="_blank"}.
 - [Fall English Portfolio](https://andre-ye.github.io/english/portfolio/English Portfolio.pdf){:target="_blank"}.
 - [Winter Midterm Essay - "Human Masks and Hunting in 'Antlers'"](https://andre-ye.github.io/english/portfolio/Antlers Draft 3.pdf){:target="_blank"}.
@@ -52,16 +52,16 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
   - [Winter Quarter Essay 2 - "The Hesitancy of Progressivism"](https://andre-ye.github.io/history/winter/portfolio/Essay 2 Draft 2.pdf){:target="_blank"}
   - [Final Culminating Project - "The Immolation"](https://andre-ye.github.io/history/winter/portfolio/Final Draft for Cumulative Project.pdf){:target="_blank"}, a short story on unionization in the 1930s.
 - Reading Responses
-  - [Week 1 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 1.pdf){:target="_blank"}
-  - [Week 2 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 2.pdf){:target="_blank"}
-  - [Week 3 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 3.pdf){:target="_blank"}
-  - [Week 4 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 4.pdf){:target="_blank"}
-  - [Week 5 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 5.pdf){:target="_blank"}
-  - [Week 6 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 6.pdf){:target="_blank"}
-  - [Week 7 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 7.pdf){:target="_blank"}
-  - [Week 8 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 8.pdf){:target="_blank"}
-  - [Week 9 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 9.pdf){:target="_blank"}
-  - [Week 10 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 10.pdf){:target="_blank"}
+  - [Week 1 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 1.pdf){:target="_blank"}, on agency in history.
+  - [Week 2 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 2.pdf){:target="_blank"}, on class conflict in the Gilded Age.
+  - [Week 3 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 3.pdf){:target="_blank"}, on American imperialism and empire.
+  - [Week 4 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 4.pdf){:target="_blank"}, on the Progressive Era.
+  - [Week 5 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 5.pdf){:target="_blank"}, on labor struggles.
+  - [Week 6 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 6.pdf){:target="_blank"}, on domestic impacts of World War II.
+  - [Week 7 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 7.pdf){:target="_blank"}, on transformation of American foreign policy post-WWII.
+  - [Week 8 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 8.pdf){:target="_blank"}, on the Vietnam War, Civil Rights, and radicalism in the 1960s.
+  - [Week 9 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 9.pdf){:target="_blank"}, on neoliberalism and the modern revival of conservatism.
+  - [Week 10 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 10.pdf){:target="_blank"}, on climate change and modern inequality.
 
 #### Fall Quarter
 - Essays
@@ -71,13 +71,13 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
   - [Fall Quarter Essay 2](https://andre-ye.github.io/history/portfolio/Essay%202%20Revised.pdf){:target="_blank"}, on immigrant inclusion and race dynamics.
   - [Fall Quarter Essay 3](https://andre-ye.github.io/history/portfolio/Essay Draft 1.pdf){:target="_blank"}, on the relationship between emancipation and the women's movement.
 - Reading Responses
-  - [Week 1 Reading Response](https://andre-ye.github.io/history/portfolio/Week 1 Reading Response.pdf){:target="_blank"}, on conquest.
-  - [Week 2 Reading Response](https://andre-ye.github.io/history/portfolio/Week 2 Reading Response.pdf){:target="_blank"}
-  - [Week 3 Reading Response](https://andre-ye.github.io/history/portfolio/Week 3 Reading Response.pdf){:target="_blank"}
-  - [Week 4 Reading Response](https://andre-ye.github.io/history/portfolio/Week 4 Reading Response.pdf){:target="_blank"}
-  - [Week 5 Reading Response](https://andre-ye.github.io/history/portfolio/Week 5 Reading Response.pdf){:target="_blank"}
-  - [Week 6 Reading Response](https://andre-ye.github.io/history/portfolio/Week 6 Reading Response.pdf){:target="_blank"}
-  - [Week 7 Reading Response](https://andre-ye.github.io/history/portfolio/Week 7 Reading Response.pdf){:target="_blank"}
-  - [Week 8 Reading Response](https://andre-ye.github.io/history/portfolio/Week 8 Reading Response.pdf){:target="_blank"}
-  - [Week 9 Reading Response](https://andre-ye.github.io/history/portfolio/Week 9 Reading Response.pdf){:target="_blank"}
-  - [Week 10 Reading Response](https://andre-ye.github.io/history/portfolio/Week 10 Reading Response.pdf){:target="_blank"}
+  - [Week 1 Reading Response](https://andre-ye.github.io/history/portfolio/Week 1 Reading Response.pdf){:target="_blank"}, on how to read history.
+  - [Week 2 Reading Response](https://andre-ye.github.io/history/portfolio/Week 2 Reading Response.pdf){:target="_blank"}, on conquest.
+  - [Week 3 Reading Response](https://andre-ye.github.io/history/portfolio/Week 3 Reading Response.pdf){:target="_blank"}, on early racialized chattel slavery.
+  - [Week 4 Reading Response](https://andre-ye.github.io/history/portfolio/Week 4 Reading Response.pdf){:target="_blank"}, on the American Revolution.
+  - [Week 5 Reading Response](https://andre-ye.github.io/history/portfolio/Week 5 Reading Response.pdf){:target="_blank"}, on gender in the first industrial revolution.
+  - [Week 6 Reading Response](https://andre-ye.github.io/history/portfolio/Week 6 Reading Response.pdf){:target="_blank"}, on race and immigration.
+  - [Week 7 Reading Response](https://andre-ye.github.io/history/portfolio/Week 7 Reading Response.pdf){:target="_blank"}, on the capitalism of slavery.
+  - [Week 8 Reading Response](https://andre-ye.github.io/history/portfolio/Week 8 Reading Response.pdf){:target="_blank"}, on slave narratives.
+  - [Week 9 Reading Response](https://andre-ye.github.io/history/portfolio/Week 9 Reading Response.pdf){:target="_blank"}, on emancipation.
+  - [Week 10 Reading Response](https://andre-ye.github.io/history/portfolio/Week 10 Reading Response.pdf){:target="_blank"}, on the failure of Reconstruction.
