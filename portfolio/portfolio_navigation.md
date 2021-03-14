@@ -12,7 +12,7 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 <br>
 
 ### English
-*See textbook and essay notes [here](https://andre-ye.github.io/english/english_navigation){:target="_blank"}
+*See textbook and essay notes [here](https://andre-ye.github.io/english/english_navigation){:target="_blank"}*.
 - [Fall Midterm Essay](https://andre-ye.github.io/english/portfolio/English Fall Midterm Essay.pdf){:target="_blank"}, on perspectives on education.
 - [Fall Final Research Paper - "In Defense of Section 230: How Misguided Revisions Will Trample the Internet"](https://andre-ye.github.io/english/portfolio/English Paper Draft Final.pdf){:target="_blank"}, on the Section 230 of the Communications Decency Act.
 - [Fall English Portfolio](https://andre-ye.github.io/english/portfolio/English Portfolio.pdf){:target="_blank"}, English fall quarter work compilation.
@@ -39,6 +39,8 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 
 ### Biology
 *See notes for biology readings and seminars [here](https://andre-ye.github.io/biology/biology_navigation){:target="_blank"}.*
+- [Fall Quarter Journal Club](https://andre-ye.github.io/biology/winter-quarter/portfolio/fall-bio-jc.pdf){:target="_blank"} - presentation on the paper "A Neural Algorithm for a Fundamental Computing Problem" by Dasgupta et al.
+- [Winter Quarter Journal Club](https://andre-ye.github.io/biology/winter-quarter/portfolio/winter-bio-jc.pdf){:target="_blank"} - presentation on the paper "Improved Protein Structure Prediction Using Potentials from Deep Learning" by Senior et al. @ DeepMind.
 - [Winter Quarter Policy Paper - "Proposal Regulation for Invasive Brain-Computer Interface Testing on the Able-Bodied"](http://andre-ye.github.io/biology/winter-quarter/portfolio/biology-policy-paper-winter.pdf){:target="_blank"}.
 
 <br>
