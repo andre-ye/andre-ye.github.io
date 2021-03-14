@@ -59,11 +59,11 @@ Taught by Dr. Johnston, 2020-2021 Fall, Winter, and Spring Quarters.
   - [Collingwood 39](https://andre-ye.github.io/precalc/collingwoods/Collingwood_39.pdf){:target="_blank"}
 - Chapter 8: "Composition." Working with composited functions. [Collingwood 44](https://andre-ye.github.io/precalc/collingwoods/Collingwood_44.pdf){:target="_blank"}
 - Chapter 9: "Inverse functions." Finding inverse functions and inverted domains and ranges. [Collingwood 45](https://andre-ye.github.io/precalc/collingwoods/Collingwood_45.pdf){:target="_blank"}
-- Chapter 10: "Exponential Functions." Manipulating exponentials with exponent rules. [Collingwood 46](https://andre-ye.github.io/precalc/collingwoods/Collingwood_46.pdf)
-- Chapter 11: "Exponential Modeling." Constructing exponential models. [Collingwood 47](https://andre-ye.github.io/precalc/collingwoods/Collingwood_47.pdf)
-- Chapter 12: "Logarithmic Functions." Working with logarithms. [Collingwood 48](https://andre-ye.github.io/precalc/collingwoods/Collingwood_48.pdf)
-- Chapter 13: "Three Construction Tools." Reflections, dilations, and translations. [Collingwood 49](https://andre-ye.github.io/precalc/collingwoods/Collingwood_49.pdf)
-- Chapter 14: "Rational Functions." Constructing and modeling rational functions. [Collingwood 50](https://andre-ye.github.io/precalc/collingwoods/Collingwood_50.pdf)
+- Chapter 10: "Exponential Functions." Manipulating exponentials with exponent rules. [Collingwood 46](https://andre-ye.github.io/precalc/collingwoods/Collingwood_46.pdf){:target="_blank"}
+- Chapter 11: "Exponential Modeling." Constructing exponential models. [Collingwood 47](https://andre-ye.github.io/precalc/collingwoods/Collingwood_47.pdf){:target="_blank"}
+- Chapter 12: "Logarithmic Functions." Working with logarithms. [Collingwood 48](https://andre-ye.github.io/precalc/collingwoods/Collingwood_48.pdf){:target="_blank"}
+- Chapter 13: "Three Construction Tools." Reflections, dilations, and translations. [Collingwood 49](https://andre-ye.github.io/precalc/collingwoods/Collingwood_49.pdf){:target="_blank"}
+- Chapter 14: "Rational Functions." Constructing and modeling rational functions. [Collingwood 50](https://andre-ye.github.io/precalc/collingwoods/Collingwood_50.pdf){:target="_blank"}
 
 
 <br>
