@@ -29,7 +29,7 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 *See daily Collingwood homework [here](https://andre-ye.github.io/precalc/precalculus_navigation){:target="_blank"}.*
 - [Fall Quarter Project 1 - "Intersections of Constrained Lines Within the Unit Circle"](https://andre-ye.github.io/precalc/portfolio/Project_1_Final_Draft.pdf){:target="_blank"}.
 - [Winter Quarter Project 2 - "The Continued Fraction Problem"](https://andre-ye.github.io/precalc/portfolio/annotated-Project_2-1.pdf){:target="_blank"}.
-- [Winter Quarter Project 3 - "Optimum and Convergence Patterns in Power Towers"](https://andre-ye.github.io/precalc/portfolio/annotated-Project_3%20%284%29.pdf){:target="_blank"}.
+- [Winter Quarter Project 3 - "Optimum and Convergence Patterns in Power Towers"](https://andre-ye.github.io/precalc/portfolio/project-3.pdf){:target="_blank"}.
 
 <br>
 
