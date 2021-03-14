@@ -39,7 +39,7 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 
 ### Biology
 *See notes for biology readings and seminars [here](https://andre-ye.github.io/biology/biology_navigation){:target="_blank"}.*
-- [Winter Quarter Policy Paper - "Proposal Regulation for Invasive Brain_Computer Interface Testing on the Able-Bodied"](http://andre-ye.github.io/biology/winter-quarter/portfolio/biology-policy-paper-winter.pdf){:target="_blank"}.
+- [Winter Quarter Policy Paper - "Proposal Regulation for Invasive Brain-Computer Interface Testing on the Able-Bodied"](http://andre-ye.github.io/biology/winter-quarter/portfolio/biology-policy-paper-winter.pdf){:target="_blank"}.
 
 <br>
 
