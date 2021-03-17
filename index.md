@@ -49,4 +49,4 @@ I write articles about machine learning, data science, and occasionally mathemat
 
 Feel free to reach out to me via email and/or socials below!
 
-<div>Favicon made by <a href="" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+*<div>Favicon made by <a href="" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
