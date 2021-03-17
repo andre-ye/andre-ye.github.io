@@ -15,7 +15,7 @@
 <br>
 
 # Hey!👋
-**I'm Andre.** Check out more about me [here](andre-ye.github.io/about).
+**I'm Andre.** Check out more about me [here](andre-ye.github.io/about). Updated
 
 <br>
 
