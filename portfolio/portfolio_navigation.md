@@ -17,7 +17,7 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 - [Fall Final Research Paper - "In Defense of Section 230: How Misguided Revisions Will Trample the Internet"](https://andre-ye.github.io/english/portfolio/English Paper Draft Final.pdf){:target="_blank"}, on the Section 230 of the Communications Decency Act.
 - [Fall English Portfolio](https://andre-ye.github.io/english/portfolio/English Portfolio.pdf){:target="_blank"}, English fall quarter work compilation.
 - [Winter Midterm Essay - "Human Masks and Hunting in 'Antlers'"](https://andre-ye.github.io/english/portfolio/Antlers Draft 3.pdf){:target="_blank"}, on the blurred relationship between human and animal in Rick Bass's short story "Antlers".
-- [Winter Final Essay - "Self as Interconnected Story in 'Song of Myself'"](https://andre-ye.github.io/english/portfolio/Draft 4.pdf):target="_blank"}, on the application of the narrative creation of self to William Wordsworth's poem, "Song of Myself".
+- [Winter Final Essay - "Self as Interconnected Story in 'Song of Myself'"](https://andre-ye.github.io/english/portfolio/Draft 4.pdf){:target="_blank"}, on the application of the narrative creation of self to William Wordsworth's poem, "Song of Myself".
 
 <br>
 
