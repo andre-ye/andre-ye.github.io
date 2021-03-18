@@ -1,7 +1,7 @@
 [Home](https://andre-ye.github.io) > Portfolio Navigation
 ## TS Portfolio 📂
 
-A compilation of essays and projects I've produced at the Transition School. [Unupdated]
+A compilation of essays and projects I've produced at the Transition School. *This work is part of my past and may not reflect my current views and work.*
 
 Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#biology), [History](#history).
 
