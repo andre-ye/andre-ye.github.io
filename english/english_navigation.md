@@ -1,13 +1,15 @@
-<html>
-  <head>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
-  </head>
-</html>
-
 [Home](https://andre-ye.github.io) > English Navigation
 ## TS English ✍️
 
-Taught by Dr. Zink, Fall, Winter, and Spring Quarters.
+Taught by Dr. Zink, [Fall](#fall-quarter), [Winter](#winter-quarter), and [Spring Quarters](spring-quarter).
+
+<br>
+
+---
+
+<br>
+
+### Spring Quarter
 
 <br>
 
@@ -84,3 +86,11 @@ Taught by Dr. Zink, Fall, Winter, and Spring Quarters.
   - [*"Mindful Schools"* by Ronald E. Purser](https://andre-ye.github.io/english/essay-notes/mindful-schools), 11/9/20.
   - [*"Making Our Lives Count"* by Paul Rogat Loeb](https://andre-ye.github.io/english/essay-notes/making_our_lives_count), 11/27/20.
   - [*"Citizen Brand: ABC and the Do Good Turn in US Television"* by Laurie Ouellette](https://andre-ye.github.io/english/essay-notes/citizen-brand), 11/27/20.
+
+<br>
+
+---
+
+<br>
+
+[Back to top](#)
