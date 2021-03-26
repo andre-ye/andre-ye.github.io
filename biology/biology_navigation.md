@@ -1,6 +1,6 @@
 [Home](https://andre-ye.github.io) > Biology Navigation 
 ## TS Biology 🧬
-Taught by Dr. Valensisi, [Fall](#fall-quarter) and [Winter](#winter-quarter) Quarters.
+Taught by Dr. Valensisi, [Fall](#fall-quarter) and [Winter](#winter-quarter) Quarters. (Click to jump to a section.)
 
 <br>
 
