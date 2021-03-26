@@ -1,7 +1,15 @@
 [Home](https://andre-ye.github.io) > History Navigation
 
 ## TS History 🌎
-Taught by Dr. Reagan, Fall and Winter Quarters.
+Taught by Dr. Reagan, [Fall](#fall-quarter-american-history-to-1877), [Winter](#winter-quarter-american-history-since-1877-historys-questions-on-agency-and-structure), and Spring Quarters. (Click to jump to a section.)
+
+<br>
+
+---
+
+<br>
+
+### Spring Quarter:
 
 <br>
 
@@ -122,3 +130,11 @@ Notes on essay feedback, workshops, etc. given in class.
 - [Week 8 Course Mechanics](https://andre-ye.github.io/history/course-mechanics/week-8). *Discussion on steps of argumention, They Say I Say (framing arguments in opposition to others.*
 - [Week 9 Course Mechanics](https://andre-ye.github.io/history/course-mechanics/week-9). *Discussion on evidence-claim instead of claim-evidence, analysis to argumentation.*
 - [Week 11 Course Mechanics](https://andre-ye.github.io/history/course-mechanics/week_11). *Tips on how to revise.*
+
+<br>
+
+---
+
+<br>
+
+[Back to top](#)
