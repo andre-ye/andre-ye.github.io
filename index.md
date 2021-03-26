@@ -31,7 +31,7 @@
 
 <br>
 
-## University of Washington Course Notes 💜
+## University of Washington Course Notes 💜💛
 - [ECON 200 - Introduction to Microeconomics](https://andre-ye.github.io/uw/econ-200/navigation) w/ Melissa Knox
 
 <br>
