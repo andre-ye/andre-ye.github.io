@@ -2,9 +2,9 @@
 
 ## About 🤙
 
-**Hey 👋 - I'm Andre.** I'm passionate about machine learning and better understanding the "black box" that is the neural network. By better understanding implicit biases and the thinking processes of deep learning models, I believe we will better be able to use it in our society.
+**Hey 👋 - I'm Andre.** I'm passionate about machine learning and better understanding the "black box" that is the neural network. By better understanding the thinking processes of deep learning models, I believe we will better be able to use it in our society.
 
-📑 My resume is [here](https://andre-ye.github.io/scripts/andre-ye-resume.pdf){:target="_blank"}.
+📑 My resume is [here](https://andre-ye.github.io/scripts/CV.pdf){:target="_blank"}.
 
 🔗 Connect with me on LinkedIn [here](https://linkedin.com/in/andre-ye){:target="_blank"}.
 
@@ -38,6 +38,13 @@ I've also guest-written on other platforms, including [KDnuggets](https://www.kd
 
 <a href="https://www.kdnuggets.com/2020/12/top-stories-2020-nov.html"><img src="https://www.kdnuggets.com/images/tkb-2011-s.png" width=96 alt="Silver Blog" align="right"></a><a href="https://www.kdnuggets.com/2021/02/top-news-week-0125-0131.html"><img src="https://www.kdnuggets.com/images/tkb-2101-g.png" width=96 alt="Gold Blog" align="right"></a>
 Two of my articles on KDnuggets, an organization that awards the "Nobel Prize of Data Science" - the SIGKDD award - with 700+ visitors, recieved silver and gold badges for being top-viewed and top-shared on the platform.
+
+- One of my articles was cited as a reference for a [Wikipedia page](https://en.wikipedia.org/wiki/LightGBM){:target="_blank"} on the LGM gradient boosting framework.
+- A few of my articles have been translated into other languages, like [this one](https://www.infoq.cn/article/qUhqVdHxC0uxPFyDbt7h){:target="_blank"} on adversarial attacks using input perbutations to convolutional neural networks.
+- The University of Delaware Masters in Data Science Program [listed](https://www.msds.udel.edu/resources/data-resources/){:target="_blank"} an article I wrote on built-in datasets in APIs as a data resource.
+
+
+
 
 *Fun fact:* One of my articles was cited as a reference for a [Wikipedia page](https://en.wikipedia.org/wiki/LightGBM){:target="_blank"} on the LGM gradient boosting framework.
 
