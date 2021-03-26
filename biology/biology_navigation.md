@@ -1,6 +1,14 @@
 [Home](https://andre-ye.github.io) > Biology Navigation 
 ## TS Biology 🧬
-Taught by Cristina Valensisi, [Fall](#fall-quarter) and [Winter](#winter-quarter) Quarters. (Click to jump to a section.)
+Taught by Cristina Valensisi, [Fall](#fall-quarter) and [Winter](#winter-quarter) Quarters. Seminar-based biology taught in Spring Quarter. (Click to jump to a section.)
+
+<br>
+
+--- 
+
+<br>
+
+### Spring Quarter - Seminar-Based
 
 <br>
 
