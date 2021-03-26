@@ -1,7 +1,7 @@
 [Home](https://andre-ye.github.io) > Precalculus Navigation
 
 ## TS Precalculus 📐
-Taught by Dr. Johnston, 2020-2021 Fall, Winter, and Spring Quarters.
+Taught by Reese Johnston, 2020-2021 Fall, Winter, and Spring Quarters.
 
 <br>
 
