@@ -44,7 +44,7 @@
 - [TS Biology 🧬](https://andre-ye.github.io/biology/biology_navigation) w/ Cristina Valensisi
 - [TS History 🌎](https://andre-ye.github.io/history/history_navigation) w/ Michael Reagan
 - [TS English ✍️](https://andre-ye.github.io/english/english_navigation) w/ Amanda Zink
-- [TS Precalculus ](https://andre-ye.github.io/precalc/precalculus_navigation) w/ Reese Johnston
+- [TS Precalculus 📐](https://andre-ye.github.io/precalc/precalculus_navigation) w/ Reese Johnston
 - [TS Portfolio 📂](https://andre-ye.github.io/portfolio/portfolio_navigation) - collection of my work at TS.
 
 <br>
