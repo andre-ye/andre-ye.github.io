@@ -1,7 +1,8 @@
-[Home](https://andre-ye.github.io) > English Navigation
-## TS English ✍️
+[Home](https://andre-ye.github.io) > ECON 200 Navigation
 
-Taught by Dr. Zink, [Fall](#fall-quarter), [Winter](#winter-quarter), and [Spring Quarters](spring-quarter). (Click to jump to a section.)
+## ECON 200 - Introduction to Microeconomics 🤝
+
+Taught by Melissa Knox
 
 <br>
 
@@ -9,6 +10,9 @@ Taught by Dr. Zink, [Fall](#fall-quarter), [Winter](#winter-quarter), and [Sprin
 
 <br>
 
+### Textbook Notes
+
+### Lecture Notes
 
 <br>
 
