@@ -1,7 +1,7 @@
 [Home](https://andre-ye.github.io) > History Navigation
 
 ## TS History 🌎
-Taught by Dr. Reagan, [Fall](#fall-quarter-american-history-to-1877), [Winter](#winter-quarter-american-history-since-1877-historys-questions-on-agency-and-structure), and Spring Quarters. (Click to jump to a section.)
+Taught by Michael Reagan, [Fall](#fall-quarter-american-history-to-1877), [Winter](#winter-quarter-american-history-since-1877-historys-questions-on-agency-and-structure), and Spring Quarters. (Click to jump to a section.)
 
 <br>
 
