@@ -31,11 +31,8 @@
 
 <br>
 
-## Robinson Center Transition School Notes 📚
-- [TS Biology 🧬](https://andre-ye.github.io/biology/biology_navigation) w/ Cristina Valensisi
-- [TS History 🌎](https://andre-ye.github.io/history/history_navigation) w/ Michael Reagan
-- [TS English ✍️](https://andre-ye.github.io/english/english_navigation) w/ Amanda Zink
-- [TS Portfolio 📂](https://andre-ye.github.io/portfolio/portfolio_navigation) - collection of my work at TS.
+## University of Washington Course Notes 💜
+- [ECON 200 - Introduction to Microeconomics](https://andre-ye.github.io/uw/econ-200/navigation) w/ Melissa Knox
 
 <br>
 
@@ -43,8 +40,12 @@
 
 <br>
 
-## University of Washington Course Notes 💜
-- [ECON 200 - Introduction to Microeconomics](https://andre-ye.github.io/uw/econ-200/navigation) w/ Melissa Knox
+## Robinson Center Transition School Notes 📚
+- [TS Biology 🧬](https://andre-ye.github.io/biology/biology_navigation) w/ Cristina Valensisi
+- [TS History 🌎](https://andre-ye.github.io/history/history_navigation) w/ Michael Reagan
+- [TS English ✍️](https://andre-ye.github.io/english/english_navigation) w/ Amanda Zink
+- [TS Precalculus ](https://andre-ye.github.io/precalc/precalculus_navigation) w/ Reese Johnston
+- [TS Portfolio 📂](https://andre-ye.github.io/portfolio/portfolio_navigation) - collection of my work at TS.
 
 <br>
 
