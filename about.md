@@ -10,12 +10,10 @@
 
 🖨️ Some of my favorite papers:
 - [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](https://arxiv.org/abs/1803.03635v1){:target="_blank"}.
-- [What’s Hidden in a Randomly Weighted Neural Network?](https://arxiv.org/pdf/1911.13299.pdf){:target="_blank"}.
-- [Scaling description of generalization with number of parameters in deep learning](https://arxiv.org/pdf/1901.01608.pdf){:target="_blank"}.
-- [Reconciling modern machine learning practice and the bias-variance trade-off](https://arxiv.org/pdf/1812.11118.pdf){:target="_blank"}.
-- [Understanding deep learning requires rethinking generalization](https://arxiv.org/abs/1611.03530){:target="_blank"}.
+- [What's Hidden in a Randomly Weighted Neural Network?](https://arxiv.org/pdf/1911.13299.pdf){:target="_blank"}.
+- [Generative Minimization Networks: Training GANs Without Competition](https://arxiv.org/pdf/2103.12685.pdf){:target="_blank"}.
 
-In the mean-time, I like to swim 🏊‍, read 📚, and play piano 🎹.
+In the meantime, I like to swim 🏊‍, read 📚, and play piano 🎹.
 
 <br>
 
@@ -54,7 +52,10 @@ Some fun facts:
 
 ⌨️ Check out [Critiq](https://critiq.tech){:target="_blank"}, a site [Carter Chan-Nui](https://www.linkedin.com/in/carterchannui/){:target="_blank"}, [Om Shah](https://www.linkedin.com/in/om-shah-5a0b571ab/){:target="_blank"}, and I coded to reimagine what peer revision for essays can be and do.
 
+🎧 *ML & DS Papers On The Go* Podcast: a passion project of mine: an attempt to bring the most recent and fascinating machine learning and data science advancements straight to your ears.
+Visit the podcast website **[here](http://papers-on-the-go.ml){:target="_blank"}**, or **[give it a listen](https://anchor.fm/andre-ye){:target="_blank"}**. This project has been discontinued for now.
 
+Please see the complete list of projects and experience on my resume (as linked above), or on my [LinkedIn](https://www.linkedin.com/in/andre-ye/){:target="_blank"}.
 
 <br>
 
@@ -62,4 +63,4 @@ Some fun facts:
 
 <br>
 
-[This page is still a work in progress.]
+[Back to top](#)
