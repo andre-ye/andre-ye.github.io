@@ -1,6 +1,6 @@
 [Home](https://andre-ye.github.io) > Biology Navigation 
 ## TS Biology 🧬
-Taught by Dr. Valensisi, Fall and Winter Quarters.
+Taught by Dr. Valensisi, [Fall](#fall-quarter) and [Winter](#winter-quarter) Quarters.
 
 <br>
 
@@ -40,9 +40,6 @@ Taught by Dr. Valensisi, Fall and Winter Quarters.
   - [Introduction to Evolution Textbook Notes: Chapter 1.4-1.5, BioSkills 13 (Phylogenetic Trees)](https://andre-ye.github.io/biology/winter-quarter/notes/module-3/introduction-to-evolution-textbook-notes)
   - [Textbook Notes: Chapter 22, "Evolution by Natural Selection"](https://andre-ye.github.io/biology/winter-quarter/notes/module-3/chapter-22)
   - [Textbook Notes: Chapter 23, "Evolutionary Processes"](https://andre-ye.github.io/biology/winter-quarter/notes/module-3/chapter-23)
-
-
-#### Lab Background and Notes
 
 <br>
 
@@ -87,3 +84,11 @@ Jump down to a section: [Study Guides](#study-guides-1), [Biology Content](#biol
 #### Lab Background and Notes
 - [Introduction to Biotechnology Lab Notes](https://andre-ye.github.io/biology/labs/introduction-to-biotechnology-methods), 11/12/20
 - [Cellular Respiration Lab](https://andre-ye.github.io/biology/cellular_respiration/general_notes#cellular-respiration-lab-background), 11/21/20
+
+<br>
+
+---
+
+<br>
+
+[Back to top](#)
