@@ -3,6 +3,8 @@
 ## TS Sociology 🏛️
 Taught by Michael Reagan.
 
+Notes reflect ideas of the texts, not necessarily my own.
+
 <br>
 
 --- 
