@@ -82,8 +82,47 @@ Themes in standpoint accounts to understand "illicit" research practice:
   - The researched are allotted little say in this process.
   - The research process belongs entirely to the researcher, and could not be sufficiently objective.
 - Emancipatory movements have **two reasons** to criticize researcher control of research.
-  - *Political*: behaviors of the powerful fund social research. Reflection on disempowerment
+  - *Political*: behaviors of the powerful fund social research.
+  - *Scientific*: disempowerment of the researched nourishes distorted accounts of their beliefs and behaviors.
+- Disempowerment of research subjects further disempowers them and produced "bad science" considered to be "good science".
 
+<br>
+
+---
+
+<br>
+
+### Futile Strategies
+- Futility of many widespread strategies requires recognition.
+  - Social statuses the researcher and researched bring to research processes are immutable.
+  - Fundamental economic, political, and social structural inequalities that position the researcher and the researched will not be changed by the research process alone.
+- Researchers "confessing" their high social status to the reader is another unsuccessful strategy.
+  - The reader still must figure out how the researcher's location shaped their work.
+  - Furthermore, assumes individualistic liberalism: individuals can identify all relevant cultural assumptions.
+- Forgoing theoretical or conceptual input is also futile.
+  - Researchers often attempt to "record the voices" of their subjects.
+  - This restricts the researcher to a transcription machine.
+- How does standpoint theory block colonial relations of social research? In three sites of research:
+  1. Selection and design of the research project: "context of discovery".
+  2. Conduct of research.
+  3. Communication, interpretation, theorization of data.
+
+<br>
+
+---
+
+<br>
+
+### The Context of Discovery: Whose Questions?
+- Standpoint approaches recommend that the "context of discovery" be brought under *methodological controls*.
+- Dominant group's values and interests shape research projects at this stage of inquiry.
+- What are politically and scientifically valuable problems to pursue in research?
+- By seeking out standpoints from the lives of oppressed people, views of funders and sponsors of research can be balanced.
+  - For example, feminist researchers are both trained in professional communities and are membvers of an oppressed group - thus, they must be in a particularly good position to locate critical standpoints.
+
+
+> pass through grammarly
+> add summary section
 
 
 [^1]: relating to the theory of knowledge, especially with regard to its methods, validity, and scope, and the distinction between justified belief and opinion.
