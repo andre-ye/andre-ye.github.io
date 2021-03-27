@@ -2,7 +2,7 @@
 
 ## ECON 200 - Introduction to Microeconomics 🤝
 
-Taught by Melissa Knox
+Taught by Melissa Knox.
 
 <br>
 
