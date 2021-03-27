@@ -76,7 +76,7 @@ Jump Down to a Section: [Lecture Notes](#lecture-notes), [Study Guides](#study-g
 
 Jump Down to a Section: [Lecture Notes](#lecture-notes-1), [Study Guides](#study-guides-1), [Weekly Reading Responses](#weekly-reading-responses-1), [Course Mechanics & Feedback](#course-mechanics-1)
 
-Formatting may be off for some Fall Quarter notes due to a site-wide shift in formatting beginning Winter Quarter.
+*Formatting may be odd for some Fall Quarter notes due to a site-wide shift in formatting beginning Winter Quarter.*
 
 #### Lecture Notes
 - ["Slavery: Race and Unfree Labor"](https://andre-ye.github.io/history/lecture-notes/slavery-race-and-unfree-labor), 10/15/20
