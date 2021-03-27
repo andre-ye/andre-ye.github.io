@@ -4,20 +4,6 @@
 
 </head>
 
-<html>
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<!--   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YK1XBSN5XR"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-YK1XBSN5XR');
-  </script> -->
-  
-</html>
-
 ---
 
 <br>
@@ -43,6 +29,7 @@
 ## Robinson Center Transition School Notes 📚
 - [TS Biology 🧬](https://andre-ye.github.io/biology/biology_navigation) w/ Cristina Valensisi
 - [TS History 🌎](https://andre-ye.github.io/history/history_navigation) w/ Michael Reagan
+- [TS Sociology 🏛️](https://andre-ye.github.io/ts/sociology/sociology_navigation) w/ Michael Reagan
 - [TS English ✍️](https://andre-ye.github.io/english/english_navigation) w/ Amanda Zink
 - [TS Precalculus 📐](https://andre-ye.github.io/precalc/precalculus_navigation) w/ Reese Johnston
 - [TS Portfolio 📂](https://andre-ye.github.io/portfolio/portfolio_navigation) - collection of my work at TS.
