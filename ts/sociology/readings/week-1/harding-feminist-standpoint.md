@@ -9,6 +9,39 @@ Andre Ye, 3/26/21
 
 <br>
 
+### Navigate
+- [Summary and Key Points](#summary-and-key-points)
+- [Origins](#origins)
+- [A Standpoint Logic of Inquiry](#a-standpoint-logic-of-inquiry)
+- [Against Intrinsically Colonial Research Processes](#against-intrinsically-colonial-research-processes)
+- [Futile Strategies](#futile-strategies)
+- [The Context of Discovery: Whose Questions?](#the-context-of-discovery--whose-questions-)
+- [Strong Objectivity](#strong-objectivity)
+- [Responses to Criticism](#responses-to-criticism)
+- [Transformations](#transformations)
+- [Conclusion](#conclusion)
+
+<br>
+
+---
+
+<br>
+
+### Summary and Key Points
+- **Standpoint theory** argues that research should begin with and place control in the *researched* subject, rather than the *researcher*.
+- When researchers choose which hypotheses are interesting to the discipline and test them in discipline-immersed methods, they leave the values and interests of the field untouched.
+- A core tenet of the scientific ideology is to be value-neutral and "objective".
+  - Researchers immersed in an institution cannot recognize the values that institution propagates.
+  - *The standpoint of those outside the institution is required in order to critically examine the objectivity of that institution.*
+  - Certain "good" values are beneficial for research; thus, standpoint theory attempts to make the standard of objectivity stronger. Politics is required to identify values and interests in institutions.
+- The colonial character of the research process - in "conquering" the researched and painting a certain portrait of them - can be diminished by imposing stronger, standpoint theory-based standards of objectivity.
+
+<br>
+
+---
+
+<br>
+
 ### Origins
 - Feminist standpoint theories originated with women's political movements in the 1960s-1970s.
 - Dorothy Smith and Nancy Hartsock argue that *existing relationships between politics and knowledge were far from the socially implemented and acceptable progressive ideas*.
