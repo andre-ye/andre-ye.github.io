@@ -11,6 +11,8 @@ minima:
 
 theme: minima #jekyll-theme-cayman
 markdown: kramdown
+kramdown:
+    math_engine: katex
 
 header_pages:
   - about.md
