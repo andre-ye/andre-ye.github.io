@@ -13,10 +13,6 @@
 
 <br>
 
-i
-
-$$\sum_{i=0}\frac{1}{i}$$
-
 # Hey!👋
 **I'm Andre.** This website serves primarily to host notes on my classes. Find out a bit more about me [here](https://andre-ye.github.io/about){:target="_blank"}.
 
