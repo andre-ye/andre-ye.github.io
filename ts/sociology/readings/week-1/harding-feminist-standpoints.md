@@ -119,6 +119,21 @@ Themes in standpoint accounts to understand "illicit" research practice:
 - What are politically and scientifically valuable problems to pursue in research?
 - By seeking out standpoints from the lives of oppressed people, views of funders and sponsors of research can be balanced.
   - For example, feminist researchers are both trained in professional communities and are membvers of an oppressed group - thus, they must be in a particularly good position to locate critical standpoints.
+- **How to identify useful standpoints?** Standpoint methods are *politically engaged* - they are not "value-free".
+  - Standpoint methods recognize that some values advance the growth of knowledge, and others block it.
+
+<br>
+
+---
+
+<br>
+
+### Strong Objectivity
+- There is no single, fixed meaning of "objectivity".
+- Objectivity is attributed to methods of research.
+- Maximizing objectivity is equated with maximizing social/value neutralkity.
+  - Good methods identify social values and interests behind the research process.
+  - When social values and interests are held by all the researchers in a field, they cannot be identified.
 
 
 > pass through grammarly
