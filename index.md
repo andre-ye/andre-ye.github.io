@@ -1,12 +1,13 @@
 <head>
   
   <link rel="shortcut icon" type="image/png" href="/favicon.png">
-  
+
+</head>
+<html>
   <script type="text/javascript" async
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
-
-</head>
+</html>
 
 ---
 
