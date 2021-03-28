@@ -15,7 +15,7 @@ Andre Ye, 3/26/21
 - [A Standpoint Logic of Inquiry](#a-standpoint-logic-of-inquiry)
 - [Against Intrinsically Colonial Research Processes](#against-intrinsically-colonial-research-processes)
 - [Futile Strategies](#futile-strategies)
-- [The Context of Discovery: Whose Questions?](#the-context-of-discovery--whose-questions-)
+- [The Context of Discovery: Whose Questions?](#the-context-of-discovery-whose-questions)
 - [Strong Objectivity](#strong-objectivity)
 - [Responses to Criticism](#responses-to-criticism)
 - [Transformations](#transformations)
