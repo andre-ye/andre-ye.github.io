@@ -3,13 +3,12 @@
   <link rel="shortcut icon" type="image/png" href="/favicon.png">
 
 </head>
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
 
 ---
 
 <br>
+
+<iframe src="https://math.embed.fun/embed/hcmQ4oAEhPMvVhbWsJRpUa" frameborder="0" width="200" height="162"></iframe>
 
 # Hey!👋
 **I'm Andre.** This website serves primarily to host notes on my classes. Find out a bit more about me [here](https://andre-ye.github.io/about){:target="_blank"}.
