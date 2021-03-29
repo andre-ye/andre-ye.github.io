@@ -1,4 +1,4 @@
-[Home](https://andre-ye.github.io) > [Sociology Navigation](https://andre-ye.github.io/ts/sociology/sociology_navigation) > [Notes on Readings](https://andre-ye.github.io/ts/sociology/sociology_navigation#notes-on-readings) > Week 1 > Notes on "Feminist Standpoints" from *Handbook of Feminist Research: Theory and Praxis*
+[Home](https://andre-ye.github.io) > [Sociology Navigation](https://andre-ye.github.io/ts/sociology/sociology_navigation) > [Readings](https://andre-ye.github.io/ts/sociology/sociology_navigation#readings) > Week 1 > Notes on "Feminist Standpoints" from *Handbook of Feminist Research: Theory and Praxis*
 
 ## Notes on "Feminist Standpoints" from *Handbook of Feminist Research: Theory and Praxis* by Sandra Harding
 Andre Ye, 3/26/21
