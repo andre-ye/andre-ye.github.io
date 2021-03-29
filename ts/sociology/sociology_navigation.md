@@ -12,6 +12,7 @@ Notes reflect ideas of the texts, not necessarily my own.
 <br>
 
 ### Lecture Notes
+- [Introduction to Course](https://andre-ye.github.io/ts/sociology/lectures/introduction-to-course)
 
 ### Readings
 - Week 1 Readings
