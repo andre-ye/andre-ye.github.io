@@ -9,7 +9,7 @@ Andre Ye, 3/26/21
 
 <br>
 
-- **Firstly,** find a researchq eustion worth investigating that will lead to a research question worth investigating.
+- **Firstly,** find a research question worth investigating that will lead to a research question worth investigating.
   1. Find a topic specific enough to let you master a reasonable amount of information on it in the time you have.
   2. Question that topic until you find questions that interest you.
   3. Deduce what evidence you need to support your answer.
