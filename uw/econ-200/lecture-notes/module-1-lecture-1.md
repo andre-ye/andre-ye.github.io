@@ -21,7 +21,7 @@ Andre Ye, 3/29/2021
   * [Concave PPFs](#concave-ppfs)
   * [Economic Growth on the PPF](#economic-growth-on-the-ppf)
   * [Technological Change in One Industry](#technological-change-in-one-industry)
-- [Who Produces Which Goods and Why?](#who-produces-which-goods-and-why)
+  - [Who Produces Which Goods and Why?](#who-produces-which-goods-and-why)
 - [Absolute and Comparative Advantage](#absolute-and-comparative-advantage)
   * [Why Specialize?](#why-specialize)
   
@@ -137,7 +137,7 @@ People respond to incentives.
 - Some sort of technological advancement allows for the amount of output to increase for a particular input.
 - One axis remains unchanged, while the other expands.
 
-### Who Produces Which Goods and Why?
+#### Who Produces Which Goods and Why?
 - People around the globe coordinate production activities to sell to consumers what they want.
 - Figuring out how these decisions are made.
 - Global production is a natural outcome of people acting in their self-interest to improve their own lives.
