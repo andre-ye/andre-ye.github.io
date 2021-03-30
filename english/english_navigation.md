@@ -11,6 +11,9 @@ Taught by Amanda Zink, [Fall](#fall-quarter), [Winter](#winter-quarter), and [Sp
 
 ### Spring Quarter
 
+#### Lecture Notes
+- ["Navigating a Post Truth World" by Charles Sykes](https://andre-ye.github.io/english/spring/lecture-notes/navigating-a-post-truth-world)
+
 <br>
 
 ---
