@@ -13,6 +13,11 @@ Taught by Melissa Knox.
 ### Lecture Notes
 - Module 1: Tradeoffs and Choices
   - [Module 1 Lecture 1](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-1-lecture-1) - What is Economics?, PPFs, Comparative and Absolute Advantage
+- Module 2: Supply and Demand
+- Module 3: Market Interventions
+- Module 4: Production and Costs
+- Module 5: Perfectly Competitive Markets
+- Module 6: Monopoly and Imperfect Competition
 
 ### Textbook Notes
 
