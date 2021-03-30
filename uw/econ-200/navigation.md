@@ -10,9 +10,12 @@ Taught by Melissa Knox.
 
 <br>
 
+### Lecture Notes
+- Module 1: Tradeoffs and Choices
+  - [Module 1 Lecture 1](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-1-lecture-1) - What is Economics?, PPFs, Comparative and Absolute Advantage
+
 ### Textbook Notes
 
-### Lecture Notes
 
 <br>
 
