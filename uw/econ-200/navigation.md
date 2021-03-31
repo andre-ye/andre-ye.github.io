@@ -20,7 +20,8 @@ Taught by Melissa Knox.
 - Module 6: Monopoly and Imperfect Competition
 
 ### Textbook Notes
-- [Chapter 1: "Economics and Life](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-1)
+- [Chapter 1: "Economics and Life"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-1)
+- [Chapter 2: "Specialization and Exchange"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-2)
 
 
 <br>
