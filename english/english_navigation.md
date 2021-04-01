@@ -15,6 +15,9 @@ Taught by Amanda Zink, [Fall](#fall-quarter), [Winter](#winter-quarter), and [Sp
 - ["Navigating a Post Truth World" by Charles Sykes](https://andre-ye.github.io/english/spring/lecture-notes/navigating-a-post-truth-world)
 - ["The Politics of Fiction" by Elif Shafak](https://andre-ye.github.io/english/spring/lecture-notes/politics-of-fiction)
 
+#### Reading Notes
+- [*Pale Horse Pale Rider* by Katherine Anne Porter](https://andre-ye.github.io/english/spring/reading-notes/pale-horse-pale-rider/pale-horse-pale-rider-notes)
+
 <br>
 
 ---
