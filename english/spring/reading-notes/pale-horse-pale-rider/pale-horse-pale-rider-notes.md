@@ -113,10 +113,50 @@ Begins page 205 (PDF: 214)
 - Towney and CHuck Rouncivale (sports reporter) are talking.  Towney finds it ridiculous that many believe the disease was caused by diseases brought from a German ship to Boston.
 - Miranda wished to stop hearing or talking, and only to think about Adam, but there was no time.
 - Miranda had first seen Adam ten days ago; they had been to many places together.
+- Towney offers in a patriotic voice to volunteer; Miranda rebukes that she would just "stay at home"; Chuck argues "women should keep out of it".
+- Chuck would often pay for hooch (alcohol); Bill is "raging about... like a stag".
+- Miranda is told about a hoofer looking to get in a physical altercation with the writer of a critical piece on a production (Miranda), who expresses hope that they have gone.
+- Miranda meets a "little drab man in a derby hat" (Danny Dickerson) that gives Miranda newspaper clippingsfor her to reconsider her critical article.
+  - Danny is concerned that shows in the far East will equate the word of a "tanktown" (unimportant/small town) critic with that of a metropolis.
+  > "They don't know that the more high class an act is the more the hick critics pan it."
+  > Page 213 (PDF: 222)
+- Miranda internalizes this sharp altercation but is comforted by Chuck.
 
-go back to 215-220
+<br>
 
-- Miranda meets a "little drab man in a derby hat" that gives 
+---
+
+<br>
+
+### Section 5
+Begins page 215 (PDF: 223)
+
+- Miranda has invited Chuck to a show for a newspaper entry; internally, she begins thinking about the end of *something*.
+- Miranda laments that she wishes the war were over.
+- Chuck begins writing the review; meanwhile, he responds that he does not care how the war starts or when it ends, as he will not be there.
+- Miranda begins to think about women and men in the war; bread will win the war. Housewives make themselves busy and feel useful by believing silence and quiet will win the war.
+- After the show is over, Miranda looks at Chuck's writing, agreeing to sign it under her name, but insists that Bill know Chuck wrote it.
+- Does anybody here believe the things we say to each other?
+
+<br>
+
+---
+
+<br>
+
+### Section 6
+Begins page 219 (PDF: 227)
+
+- Miranda waits for time to pass.
+- Time proceeded with a certain eccentricity; hard flashes of light, twilights.
+- Miranda felt a wish to see him again and a threat of not seeing hima gain.
+- Miranda rushes to Adam who is standing on the sidewalk; her head was like a feather.
+- The play the two watched was long and dreary; after the third act was a Liberty Bond salesman making a pitch for Liberty Bonds, to the chagrin of Miranda.
+- In the street, Miranda and Adam lit cigarettes and walked slowly.
+- Miranda claims that the salesman was another "nasty old man who would like to see the young ones killed"; "potbellied baldheads" that know they are safe but are sending off Adam.
+- Adam responds that they cannot do anything but talk, and that it is not their fault.
+
+left on PDF page 232
 
 
 
