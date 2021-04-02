@@ -8,7 +8,12 @@ Taught by Cristina Valensisi, [Fall](#fall-quarter) and [Winter](#winter-quarter
 
 <br>
 
-### Spring Quarter - Seminar-Based
+### Spring Quarter
+Seminar-based.
+
+#### Reading Notes
+- Pandemics
+  - [The Evolving Nature of Disease](https://andre-ye.github.io/biology/spring/module-1/evolving-nature-of-disease-notes)
 
 <br>
 
