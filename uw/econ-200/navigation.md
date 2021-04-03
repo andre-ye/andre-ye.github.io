@@ -22,6 +22,7 @@ Taught by Melissa Knox.
 ### Textbook Notes
 - [Chapter 1: "Economics and Life"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-1)
 - [Chapter 2: "Specialization and Exchange"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-2)
+- [Chapter 3: "Markets"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-3)
 
 
 <br>
