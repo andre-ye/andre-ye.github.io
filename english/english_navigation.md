@@ -16,7 +16,10 @@ Taught by Amanda Zink, [Fall](#fall-quarter), [Winter](#winter-quarter), and [Sp
 - ["The Politics of Fiction" by Elif Shafak](https://andre-ye.github.io/english/spring/lecture-notes/politics-of-fiction)
 
 #### Reading Notes
-- [*Pale Horse Pale Rider* by Katherine Anne Porter](https://andre-ye.github.io/english/spring/reading-notes/pale-horse-pale-rider/pale-horse-pale-rider-notes)
+- Theoretical Literature
+  - [Introduction to *Pandemic Education and Viral Politics* by Michael Peters and Tina Besley](https://andre-ye.github.io/english/spring/reading-notes/theory/pandemic-education-and-viral-politics)
+- Books / Novels
+  - [*Pale Horse Pale Rider* by Katherine Anne Porter](https://andre-ye.github.io/english/spring/reading-notes/pale-horse-pale-rider/pale-horse-pale-rider-notes)
 
 <br>
 
