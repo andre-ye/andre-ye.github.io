@@ -45,7 +45,7 @@ Andre Ye, 4/2/2021
 - *Price taker* - a buyer or seller who cannot affect the market price.
 - *Standardized good* - a good or service for which all units have the same features and are interchangeable.
 - *Transaction costs* - costs incurred by the buyer and seller agreeing to the sale of goods or services. Competitive markets assume no transaction costs.
-- Few markets are perfectly competitive; however, the assumption of competitive markets leads to useful insights.n 
+- Few markets are perfectly competitive; however, the assumption of competitive markets leads to useful insights.
 
 <br>
 
@@ -77,7 +77,7 @@ Andre Ye, 4/2/2021
   - Expectations of future prices: when prices are expected to drop in the future, demand decreases, and vice versa.
   - Number of buyers in the market: an increase in the number of potential buyers increases demand, and vice versa.
   
-  #### Shifts in the Demand Curve
+#### Shifts in the Demand Curve
   - When one of the nonprice determinants of demand changes, *the entire demand curve shifts* left or right.
     - Horizontal (rather than vertical) shift: nonprice determinants affect the quantity demanded at each price.
     - "increase in demand" or "decrease in demand". A *shift* of the entire demand curve.
