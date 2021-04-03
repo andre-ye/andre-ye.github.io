@@ -10,6 +10,20 @@ Andre Ye, 4/2/2021
 <br>
 
 ### Navigate
+- [Markets](#markets)
+  * [What is a Market?](#what-is-a-market-=)
+  * [What is a Competitive Market?](#what-is-a-competitive-market)
+- [Demand](#demand)
+  * [The Demand Curve](#the-demand-curve)
+  * [Determinants of Demand](#determinants-of-demand)
+  * [Shifts in the Demand Curve](#shifts-in-the-demand-curve)
+- [Supply](#supply)
+  * [The Supply Curve](#the-supply-curve)
+  * [Determinants of Supply](#determinants-of-supply)
+  * [Shifts in the Supply Curve](#shifts-in-the-supply-curve)
+- [Market Equilibrium](#market-equilibrium)
+  * [Reaching Equilibrium](#reaching-equilibrium)
+  * [Changes in Equilibrium](#changes-in-equilibrium)
 
 <br>
 
@@ -29,8 +43,8 @@ Andre Ye, 4/2/2021
 - Assumption: markets are competitive.
 - *Competitive market* - fully informed, price-taking buyers and sellers easily trade a standardized good or service.
 - *Price taker* - a buyer or seller who cannot affect the market price.
-- *Standardized good* - a good or service for which all units have the smae features and are interchangeable.
-- *Transaction costs* - costs incurred by the buyer and selloer agreeing to the sale of goods or services. Competitive markets assume no transaction costs.
+- *Standardized good* - a good or service for which all units have the same features and are interchangeable.
+- *Transaction costs* - costs incurred by the buyer and seller agreeing to the sale of goods or services. Competitive markets assume no transaction costs.
 - Few markets are perfectly competitive; however, the assumption of competitive markets leads to useful insights.n 
 
 <br>
@@ -41,10 +55,10 @@ Andre Ye, 4/2/2021
 
 ### Demand
 - *Demand* - how much of something people are willing or able to buy under certain circumstances.
-- Different people by their cell phones at different prices; individual choices summed up form the *market demand*.
-- Amount of good that buyers in the market purchase at a specific moment is the *quantity demanded*.
-- *Law of Demand*: The lower the price goes, the higher the quantity demanded; inverse relationship between price and quantity.
-  - *Ceteris paribus* - all other things being the same. WHen all else is held equal, the inverse relationship is true.
+- Different people buy their cell phones at different prices; individual choices summed up to form the *market demand*.
+- Amount of goods that buyers in the market purchase at a specific moment are the *quantity demanded*.
+- *Law of Demand*: The lower the price goes, the higher the quantity demanded; the inverse relationship between price and quantity.
+  - *Ceteris paribus* - all other things being the same. When all else is held equal, the inverse relationship is true.
 - *Ceteris paribus* is used to isolate the expected effect of a change in the economy.
 
 #### The Demand Curve
@@ -55,13 +69,13 @@ Andre Ye, 4/2/2021
 - The demand curve represents the relationship between price and quantity if everything else is held constant.
 - If *ceteris paribus* is not true, nonprice factors can influence demand changes and shift the curve.
 - Nonprice determinants of demand:
-  - Consumer preferences: personal likes or dlslikes that make buyers more/less inclined to purchase a good.
+  - Consumer preferences: personal likes or dislikes that make buyers more/less inclined to purchase a good.
   - Price of related goods: substitutes (similar-purpose) and complements (goods consumed together).
-  - Income of customers: the amount of income people earn affects demand for goods and services.
+  - Income of customers: the amount of income people earn affects the demand for goods and services.
     - *Normal goods* - an increase in income causes an increase in demand.
     - *Inferior goods* - an increase in income causes a decrease in demand.
   - Expectations of future prices: when prices are expected to drop in the future, demand decreases, and vice versa.
-  - Number of buyers in the market: an increase in number of potential buyers inceases demand, and vice versa.
+  - Number of buyers in the market: an increase in the number of potential buyers increases demand, and vice versa.
   
   #### Shifts in the Demand Curve
   - When one of the nonprice determinants of demand changes, *the entire demand curve shifts* left or right.
@@ -77,7 +91,7 @@ Andre Ye, 4/2/2021
 
 ### Supply
 - *Supply* - describes how much of a good or service producers will offer.
-- *Quantity supplied* - amount of a good that producers will offer for sale at a specific price.
+- *Quantity supplied* - the amount of a good that producers will offer for sale at a specific price.
 - Market supply can be found by adding individual decisions of each producer.
 - Each producer has a different price point at which they decide it is worthwhile to supply cell phones.
 - *Law of Supply* - ceteris paribus, quantity supplied increases as price increases.
@@ -85,13 +99,13 @@ Andre Ye, 4/2/2021
 
 #### The Supply Curve
 - Supply Schedule - table that shows quantities of a good or service that producers supply.
-- Supply curve shows graph of information in the supply schedule.
+- Supply curve shows a graph of information in the supply schedule.
 
 #### Determinants of Supply
-- A number of nonprice factors determins the opportunity cost of production.
+- Several nonprice factors determine the opportunity cost of production.
 - When a nonprice determinant of supply changes, the entire supply curve shifts.
 - Five major categories of nonprice determinants of supply:
-  - *Prices of related goods*. The price of related goods determins supply because it affects the opportunity cost of production.
+  - *Prices of related goods*. The price of related goods determines supply because it affects the opportunity cost of production.
   - *Technology.* Improved technology enables firms to produce more efficiently.
   - *Prices of inputs.* Prices of the inputs used to produce a good are important to its cost.
   - *Expectations.* Suppliers' expectations in the future affect quantity supplied.
@@ -100,7 +114,7 @@ Andre Ye, 4/2/2021
 #### Shifts in the Supply Curve
 - Changes in price cause suppliers to move to a different point on the same supply curve.
 - A change in nonprice determinant increases or decreases supply.
-- Change in nonprice determinant of supply: "Increase in supply"
+- Change in the nonprice determinant of supply: "Increase in supply"
 - Movement along the supply curve: "Increase in quantity supplied"
 
 <br>
@@ -110,24 +124,42 @@ Andre Ye, 4/2/2021
 <br>
 
 ### Market Equilibrium
-- To find what actually happens in the market, we need to combine supply and demand.
+- To find what happens in the market, we need to combine supply and demand.
 - Convergence of supply with demand happens at a point when the demand curve intersects the supply curve, called the **Market equilibrium**.
   - Price at this point: **equilibrium price**
   - Quantity at this point: **equilibrium quantity**.
 - There is no sale without a purchase; when markets work well, the quantity supplied exactly equals the quantity demanded.
 
 #### Reaching Equilibrium
-- Sellers set prices by trial and error; incentives buyers and sellers face naturally drive the market towards equilibrium price and quantity.
-- **Excess supply / surplus**: when quantity supplied is higher than the quantity demanded.
-- **Excess demand / shortage**: when the quantity demanded is higher than the quantity supplied.
+- Sellers set prices by trial and error; incentives buyers and sellers face naturally drive the market towards an equilibrium price and quantity.
+- **Excess supply/surplus**: when quantity supplied is higher than the quantity demanded.
+- **Excess demand/shortage**: when the quantity demanded is higher than the quantity supplied.
 - At any price above or below the equilibrium price, sellers face an incentive to raise or lower prices.
 
 #### Changes in Equilibrium
 - Some changes affect both supply and demand curves.
-- *To determine the effecton market equilibrium of a change in a nonprice factor*:
+- *To determine the effect on market equilibrium of a change in a nonprice factor*:
   1. Does the change affect demand? Does demand increase or decrease?
   2. Does the change affect supply? If so, does supply increase or decrease?
-  3. How deos the combination of changes in supply and demand affect equilibrium price and quantity?
+  3. How does the combination of changes in supply and demand affect equilibrium price and quantity?
+- In the case where both demand and supply shift, we need to know if demand or supply increases *more*.
+- When supply and demand shift together, it is possible to predict either the direction of the change in quantity or the direction of the change in price without knowing how much the curves shift.
+  - When supply and demand shift in the same direction, we can predict the direction in a change in quantity, but not in a price change.
+  - When supply and demand shift in opposite directions, the price change is predictable, but not the change in quantity.
   
+| Supply Change | Demand Change | Price Change | Quantity Change |
+| --- | --- | --- | --- |
+| Down | Down | ? | Down |
+| Down | Up | Up | ? |
+| Up | Up | ? | Up |
+| Up | Down | Down | ? |
+
+- Remember: *what do buyers and sellers agree on*?
+
+<br>
+
+---
+
+<br>
 
 [Back to top](#)
