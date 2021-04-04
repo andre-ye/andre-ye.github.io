@@ -20,7 +20,7 @@ Notes reflect ideas of the texts, not necessarily my own.
   - [Notes on "Feminist Standpoints" from *Handbook of Feminist Research: Theory and Praxis* by Sandra Harding](https://andre-ye.github.io/ts/sociology/readings/week-1/harding-feminist-standpoint)
 - Week 2 Readings
   - [Notes on "From Questions to a Problem" from *The Craft of Research* by Wayne Booth](https://andre-ye.github.io/ts/sociology/readings/week-2/from-questions-to-a-problem)
-  - [Notes on "Leprosy and PLague Riot in Their Blood" from *The Germination of a Thesis* by Sarah Wallace](https://http://andre-ye.github.io/ts/sociology/readings/week-2/leprosy-and-plague-riot-in-their-blood)
+  - [Notes on "Leprosy and Plague Riot in Their Blood" from *The Germination of a Thesis* by Sarah Wallace](https://http://andre-ye.github.io/ts/sociology/readings/week-2/leprosy-and-plague-riot-in-their-blood)
 
 <br>
 
