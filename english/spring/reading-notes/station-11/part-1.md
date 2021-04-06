@@ -1,6 +1,6 @@
 [Home](https://andre-ye.github.io) > [English Navigation](https://andre-ye.github.io/english/english_navigation) > [Reading Notes](https://andre-ye.github.io/english/english_navigation#reading-notes) > Notes on *Station Eleven* by Emily St. John Mandel > Part 1, "The Theater" (Chapters 1-6)
 
-## Notes on *Station Eleven* by Emily St. John Mande: Part 1, "The Theater" (Chapters 1-6)
+## Notes on *Station Eleven* by Emily St. John Mandel: Part 1, "The Theater" (Chapters 1-6)
 Andre Ye, 4/4/21
 
 <br>
