@@ -20,6 +20,8 @@ Taught by Amanda Zink, [Fall](#fall-quarter), [Winter](#winter-quarter), and [Sp
   - [Introduction to *Pandemic Education and Viral Politics* by Michael Peters and Tina Besley](https://andre-ye.github.io/english/spring/reading-notes/theory/pandemic-education-and-viral-politics)
 - Books / Novels
   - [*Pale Horse Pale Rider* by Katherine Anne Porter](https://andre-ye.github.io/english/spring/reading-notes/pale-horse-pale-rider/pale-horse-pale-rider-notes)
+  - *Station Eleven* by Emily St. John Mandel
+    - [Part 1: "The Theater" (Chapters 1-6)](https://andre-ye.github.io/english/spring/reading-notes/station-11/part-1)
 
 <br>
 
