@@ -23,6 +23,7 @@ Novels/Books
 - [*Pale Horse Pale Rider* by Katherine Anne Porter](https://andre-ye.github.io/english/spring/reading-notes/pale-horse-pale-rider/pale-horse-pale-rider-notes)
 - *Station Eleven* by Emily St. John Mandel
   - [Part 1: "The Theater" (Chapters 1-6)](https://andre-ye.github.io/english/spring/reading-notes/station-11/part-1)
+  - [Part 2: "A Midsummer Night's Dream" (Chapters 7-12)](https://andre-ye.github.io/english/spring/reading-notes/station-11/part-2)
 
 <br>
 
