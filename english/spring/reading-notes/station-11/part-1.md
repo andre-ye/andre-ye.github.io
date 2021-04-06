@@ -9,11 +9,25 @@ Andre Ye, 4/4/21
 
 <br>
 
+### Navigate
+- [Chapter 1](#chapter-1)
+- [Chapter 2](#chapter-2)
+- [Chapter 3](#chapter-3)
+- [Chapter 4](#chapter-4)
+- [Chapter 5](#chapter-5)
+- [Chapter 6](#chapter-6)
+
+<br>
+
+---
+
+<br>
+
 ### Chapter 1
 - Begins with act 4 of *King Lear* in the Elgin Theatre, Toronto.
   - Something has gone wrong with the actor.
   - Jeevan, who has been training to be a paramedic, begins to run onstage.
-  - Jeevan caught Arthur (the actor) as he lost conciousness.
+  - Jeevan caught Arthur (the actor) as he lost consciousness.
 - Arthur's heart wasn't beating; Jeevan began CPR.
 - Jeevan had a brief career as an entertainment journalist.
   - Laura: his girlfriend.
@@ -24,11 +38,11 @@ Andre Ye, 4/4/21
 - Kirsten notes she loves to act; she is picked up by a woman and led away.
 - Jeevan was waiting for Laura, but her coat was gone.
 - Snow was falling outside.
-- Jeevan had been a papparazi himself prior.
+- Jeevan had been a paparazzi himself prior.
 - Jeevan attempts to call Laura; her phone was still off.
 - Jeevan lives in Cabbagetown; he could have called a cab but he liked being outside, away from people.
 - Now, Jeevan was even more sure he wanted to be a paramedic.
-- Suddenly, Jeevan recieves a text message from Laura; while the theater tickets had been intended as something romantic, Laura had abandoned him and wanted him now to buy milk.
+- Suddenly, Jeevan receives a text message from Laura; while the theater tickets had been intended as something romantic, Laura had abandoned him and wanted him now to buy milk.
   - Prior, Laura and Jeevan had been fighting a lot.
   - Jeevan was cold; his toes were numb.
 - He stepped into the park silently.
@@ -46,7 +60,7 @@ Andre Ye, 4/4/21
 - Goneril asks the bartender about Arthur's children; he has one, 7 or 8, living in Israel.
 - Arthur had been carrying an affair with Tanya; everyone knew except for the producer.
 - Arthur had gone through three divorces.
-- In the children's dressing room, Tanya gave Kirsten a paperweight - a lump of glass with a storm cloud trapped inside, which Kirsten thoguht was beautiful.
+- In the children's dressing room, Tanya gave Kirsten a paperweight - a lump of glass with a storm cloud trapped inside, which Kirsten thought was beautiful.
 - Of all them there that night, the bartender was the one who survived the longest - dying three weeks later.
 
 <br>
@@ -58,7 +72,7 @@ Andre Ye, 4/4/21
 ### Chapter 3
 - Jeevan wandered alone in Allan Gardens.
 - Jeevan had been many things before - bartender, paparazzi, entertainment journalist, etc.
-- Jeevan planned to go see Frank, his brother, and tell him about Arthur's death and his future as a paramedic.
+- Jeevan planned to go see Frank, his brother and tell him about Arthur's death and his future as a paramedic.
 - As he was riding the streetcar, Hua - his closest friend - called.
   - Hua worked long hours at Toronto General (hospital).
 - Hua informs Jeevan that Georgia Flu had broken out.
@@ -71,26 +85,8 @@ Andre Ye, 4/4/21
 - Who would he call? His parents were dead, he didn't want to talk to Laura.
 - He begins to load supplies and plans to leave soon.
 - When Jeevan calls Laura, she is indifferent to the Georgia Flu.
-- Interestingly, Jeevan grabs a bouqet of daffodils on the way out.
+- Interestingly, Jeevan grabs a bouquet of daffodils on the way out.
 - The clerk at the grocery comments that the flu will be just like SARS.
-
-Left off chapter 4 page 26
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <br>
 
@@ -98,30 +94,44 @@ Left off chapter 4 page 26
 
 <br>
 
-### CHapter 2
-- Few people were left in teh theater.
+### Chapter 4
+- The Elgin Theatre was empty.
+- The executive producer called Arthur's lawyer.
+- The lawyer called Arthur's closest friend, who began calling Arthur's ex-wives.
 
+<br>
 
+---
 
+<br>
 
+### Chapter 5
+- Miranda - south coast of Malaysia. An executive at a shipping company sent to observe conditions on the ground.
+- Leon had worked with Miranda for a long time.
+- 12% of the world's shipping fleet lay at anchor off the coast of Malaysia.
+- The men were serious and afraid of privates.
+- Miranda was seized by loneliness she could not explain.
+- Clark Thompson, Arthur's friend, calls Miranda Carroll.
+- Miranda is informed that Arthur has died of a heart attack.
+- Soon after, it would not be possible to press buttons on a telephone and call someone else.
 
+<br>
 
+---
 
+<br>
 
+### Chapter 6
+- No more diving into pools; no more cities.
+- No more pharmaceuticals; no more flight.
+- No more fire departments, no more police.
+- No more countries, no more borders.
+- No more Internet, no more social media.
 
+<br>
 
+---
 
+<br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+[Back to top](#)
