@@ -42,15 +42,19 @@ If France specializes in wine, it will produce 4 bottles of wine. If Germany spe
 | 3 | 15 | 8 | 90 | |
 
 *At a price of $5, the quantity demanded in the market would be?*
+
 At five dollars, the combined demand is $$9 + 3 + 51 = 63$$ pounds.
 
 *If the price of loose-leaf tea rises from $3 to $4, the market quantity demanded would?*
+
 The market quantity would decreased, according to the law of demand.
 
-*Graph the equation* $$P = -8Q + 10$$*. Is this the supply curve or demand curve?*
+*Graph the equation* $$P = -8Q + 10$$ *. Is this the supply curve or demand curve?*
+
 The equation has a negative slope, meaning it is a demand curve for which a greater quantity is demanded at a lower price.
 
-*Rearrange the equation* $$Q = 5 –0.25P$$* and sketch the graph. Is this a supply curve or a demand curve?*
+*Rearrange the equation* $$Q = 5 –0.25P$$ *and sketch the graph. Is this a supply curve or a demand curve?*
+
 The equation is the same; quantity demanded is higher when price is lower.
 
 *Explain what happens to the demand curve for iPhones under the following conditions:*
@@ -66,10 +70,27 @@ The equation is the same; quantity demanded is higher when price is lower.
 - *Layoffs increase as the economy sheds millions of jobs*. Incomes.
 - *An oil shortage causes the price of gasoline to soar*. Prices of related goods.
 - *The government offers tax rebates in return for the purchase of commuter rail tickets*. Prices of related goods.
-- * The government announces a massive plan to bail out the auto industry and subsidize production costs*. Expectations.
+- *The government announces a massive plan to bail out the auto industry and subsidize production costs*. Expectations.
 
+<br>
 
+---
 
+<br>
 
+### Market Equilibrum
+*Until recently, world oil prices were quite high. Then, as alternative technologies and world-wide recession drove down the demand for oil, prices fell. ▪Saudi Arabia then relaxed its quantity controls and prices fell further. ▪As a result, investment in developing alternative oil sources, such as fracking, have fallen.” Eventually we expect this to have what effect on equilibrium price and quantity oil?*
 
+Demand has been driven down, so the demand curve has shifted leftward. The supply curve for oil will stay the same, since there is not development into alternative oil sources. The equilibrium price and quantity hence both decrease.
 
+*What will the final effect be on the market for Priuses?*
+
+Oil is a complementary good with respect to Priuses. As a result, we can expect demand for Priuses to decrease.
+
+<br>
+
+---
+
+<br>
+
+[Back to top](#)
