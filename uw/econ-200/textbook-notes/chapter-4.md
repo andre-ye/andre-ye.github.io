@@ -37,7 +37,7 @@ Several measures of elasticity.
 
 #### Calculating price elasticity of demand
 
-$$\text{Price elasticity of demand} = \frac{\text{% change in quantity demanded}}{\text{% change in price}}$$
+$$\text{Price elasticity of demand} = \frac{\text{\% change in quantity demanded}}{\text{\% change in price}}$$
 
 
 
