@@ -37,10 +37,15 @@ Several measures of elasticity.
 
 #### Calculating price elasticity of demand
 
-$$\text{Price elasticity of demand} = \frac{\text{\% change in qty demanded}}{\text{\% change in price}} = \frac{\frac{Q_2 - Q_1}{\left(\frac{Q_2 + Q_1}{2}\right)}}{\frac{P_2 - P_1}{\left(\frac{P_2 + P_1}{2}\right)}}$$
+$$\text{Price elasticity of demand} = \frac{\text{\% change in qty demanded}}{\text{\% change in price}} = \frac{\left(Q_2\:-\:Q_1\right)\left(\frac{P_2\:+\:P_1}{2}\right)}{\left(\frac{Q_2\:+\:Q_1}{2}\right)\left(P_2\:-\:P_1\right)}$$
 
 $$\text{\% change in qty demanded} = \frac{Q_2 - Q_1}{\left(\frac{Q_2 + Q_1}{2}\right)}$$
 
 $$\text{\% change in price} = \frac{P_2 - P_1}{\left(\frac{P_2 + P_1}{2}\right)}$$
 
+In this context, percent change uses the average rather than an endpoint because using endpoints would make the direction relevant. This poses problems when calculating elasticity.
 
+To interpret the elasticity:
+- Elasticity describes the size of change in the quantity demanded of a good when the price changes.
+  - -1.38 price elasticity of demand for iPhones means that a 1% decrease in the price of iPhones will lead to a 1.38% increase in the quantity of iPhones demanded. Or, a 1% increase in the price of iPhones will lead to a 1.38% decrease in the quantity of iPhones demanded.
+  - Price elaasticity of demand will always be a negative number because price and quantity demanded move in opposite directions.
