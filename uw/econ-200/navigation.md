@@ -10,6 +10,12 @@ Taught by Melissa Knox.
 
 <br>
 
+### Textbook Notes
+- [Chapter 1: "Economics and Life"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-1)
+- [Chapter 2: "Specialization and Exchange"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-2)
+- [Chapter 3: "Markets"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-3)
+- [Chapter 4: "Elasticity"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-4)
+
 ### Lecture Notes
 - Module 1: Tradeoffs and Choices
   - [Module 1 Lecture 1](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-1-lecture-1) - What is Economics?, PPFs, Comparative and Absolute Advantage
@@ -20,11 +26,6 @@ Taught by Melissa Knox.
 - Module 4: Production and Costs
 - Module 5: Perfectly Competitive Markets
 - Module 6: Monopoly and Imperfect Competition
-
-### Textbook Notes
-- [Chapter 1: "Economics and Life"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-1)
-- [Chapter 2: "Specialization and Exchange"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-2)
-- [Chapter 3: "Markets"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-3)
 
 ### Quiz Section Questions
 - [Week 2](https://andre-ye.github.io/uw/econ-200/quiz-section-questions/week-2)
