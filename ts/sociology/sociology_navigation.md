@@ -24,6 +24,7 @@ Notes reflect ideas of the texts, not necessarily my own.
   - ["Leprosy and Plague Riot in Their Blood: The Germination of  Thesis" from *Not Fit to Stay* by Sarah Wallace](https://andre-ye.github.io/ts/sociology/readings/week-2/leprosy-and-plague-riot-in-their-blood)
 - Week 3 Readings
   - [Notes on "From Problems to Sources" from *The Craft of Research* by Wayne Booth](https://andre-ye.github.io/ts/sociology/readings/week-3/from-problems-to-sources)
+  - [Notes on "Alone Against the Virus" by Amy Kapczynski and Gregg Gonsalves](https://andre-ye.github.io/ts/sociology/readings/week-3/alone-against-the-virus)
 
 <br>
 
