@@ -1,4 +1,4 @@
-[Home](https://andre-ye.github.io) > [Sociology Navigation](https://andre-ye.github.io/ts/sociology/sociology_navigation) > [Readings](https://andre-ye.github.io/ts/sociology/sociology_navigation#readings) > Week 2 > Notes on "From Problems to Sources" from *The Craft of Research*
+[Home](https://andre-ye.github.io) > [Sociology Navigation](https://andre-ye.github.io/ts/sociology/sociology_navigation) > [Readings](https://andre-ye.github.io/ts/sociology/sociology_navigation#readings) > Week 3 > Notes on "From Problems to Sources" from *The Craft of Research*
 
 ## Notes on "From Problems to Sources" from *The Craft of Research* by Wayne Booth
 Andre Ye, 4/10/21
