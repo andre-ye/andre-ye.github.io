@@ -84,6 +84,37 @@ Andre Ye, 3/29/21
 - Gives context for the intervention
 - Go big or go home; vagaries banished to the ether! Greater specificity allows for greater success.
 
+#### Preliminary Research Question
+- Not the central question for the finished essay; just a step into the field.
+- Should express curiosity.
+- Follow what is the most interesting for you.
+- Initial question can be both factual and conceptual, but there needs to be a conceptual component at least.
+- Ground it in a specific text - source of interest? Newspapers, theories, readings from last quarter.
+
+#### Framework
+- How will you look at your topic?
+- A way to simplify and abstract your topic/question
+ - Economic or ideological? Gender or class?
+- Theory is a specific method, analysis, insight to be applied to your topic.
+ - Not expected to have theory yet
+ - Must be appropriate to topic
+
+<br>
+
+---
+
+<br>
+
+### Elements
+#### Hypothesis
+- More like expectations: what do you think is likely here? What do you expect to find? Why?
+
+#### Literature
+- Research as much as possible. Point to specific articles, authors, and ideas to use.
+- Point to a broad field and possible avenues.
+ - Want to use feminist literature on economics.
+ - Explore how political scientists talk about the great crash.
+
 <br>
 
 ---
