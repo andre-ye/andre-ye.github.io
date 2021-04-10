@@ -9,7 +9,7 @@ Andre Ye, 4/3/21
 
 <br>
 
-### Navigtate
+### Navigate
 - [First Phase of South Asian Immigration](#first-phase-of-south-asian-immigration)
 - [Perceptions and Actions](#perceptions-and-actions)
 - [Incident and Outcry](#incident-and-outcry)
