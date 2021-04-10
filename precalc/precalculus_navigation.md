@@ -25,6 +25,9 @@ Taught by Reese Johnston, 2020-2021 Fall, Winter, and Spring Quarters.
 - Chapter 12: "Logarithmic Functions." Working with logarithms. [Collingwood 48](https://andre-ye.github.io/precalc/collingwoods/Collingwood_48.pdf){:target="_blank"}
 - Chapter 13: "Three Construction Tools." Reflections, dilations, and translations. [Collingwood 49](https://andre-ye.github.io/precalc/collingwoods/Collingwood_49.pdf){:target="_blank"}
 - Chapter 14: "Rational Functions." Constructing and modeling rational functions. [Collingwood 50](https://andre-ye.github.io/precalc/collingwoods/Collingwood_50.pdf){:target="_blank"}
+- Statistics unit.
+  - [Homework 1](https://andre-ye.github.io/precalc/collingwoods/Homework_1.pdf){:target="_blank"}. Means, quartiles, standard deviation, and confidence intervals.
+  - [Homework 2](https://getjinxed.com){:target="_blank"}. Linear regression, RMSE, R2, F-tests.
 
 
 <br>
