@@ -1,0 +1,98 @@
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+</head>
+
+[Home](https://andre-ye.github.io) > [ECON 200 Navigation](https://andre-ye.github.io/uw/econ-200/navigation) > [Textbook Notes](https://andre-ye.github.io/uw/econ-200/navigation#textbook-notes) > Chapter 5: "Efficiency"
+
+## Chapter 5: "Efficiency"
+Andre Ye, 4/11/2021
+
+<br>
+
+---
+
+<br>
+
+### Introduction
+- How do we know that people are better off when they bull and sell things?
+- *Surplus* - measure the benefit people recieve when they buy something for less than they would have been willing to pay.
+- Surplus shows how important equilibrium price and quantity are: maximize the total well-being of those involved.
+- Maximizing total surplus - efficiency - is a powerful feature of a market system.
+  - It can be achieved without centralized coordination.
+
+<br>
+
+---
+
+<br>
+
+### Willingness to Pay and Sell
+- Potential buyers want to pay as little as possible, and each buyer has a maximum price theya re willing to paay.
+  - Maximum price: **willingness to pay**, or **reservation price**.
+- **Willingness to sell** - minimum price a seller is willing to accept in exchange for a good or service.
+
+#### Willingness to pay and the demand curve
+- We can conduct an exercise in a large market and plot out the willingness of millions of people to pay; we get a smooth demand curve.
+- Each buyer's willingness to pay is driven by different factors.
+- Willingness to pay is the point where the benefit a person will get from teh camera is equal to the benefit of spending the money on another alternative (the opportunity cost).
+
+#### Willingness to sell and the supply cruve
+- The shape of the supply curve is driven by potential sellers' willingness to sell.
+- Sellers' willingness to sell is determined by the trade-offs they face, and the opportunity cost of the sale.
+- In a amrket where manufacturers are producing and selling products, the minimum price must be high enough to make it worth it to continue making products.
+
+<br>
+
+---
+
+<br>
+
+### Measuring Surplus
+- **Surplus** - measuring who benefits from transactions and by how much.
+  - If you get something for less than you were willing to pay or sell for more than minimum you were willing to sell for, this is a good thing.
+- Surplus - difference betweent he price at which a buyer or seller would be willing to trade and the actual price.
+  - Surplus is a better measure of the value that buyers and sellers get from the market than price itself.
+- *Consumer surplus* - maximum extra amount you would pay over the current price to maintain the ability to buy something. Difference between willingness to pay and actual price.
+  - Consumer surplus better represents how much you value a good.
+  
+#### Consumer Surplus
+- **Consumer surplus** - net benefit that a consumer receives from purchasing a good or service.
+
+$$\text{Consumer surplus} = \text{Willingness to pay} - \text{Actual price}$$
+
+- Total consumer surplus can be found by summing all the individual consumer surpluses.
+- Consumer surplus is the area underneath the demand curve and above the horizontal line of the equilibrium price.
+- How does a change in the market price affect buyers?
+  - A decrease in price makes buyers better off
+  - An increasein price makes buyers worse off.
+- Some people do not buy at all when prices rise - their surplus becomes 0.
+- Measuring consumer surplus tells us how much better or worse off buyers are when the price changes.
+
+#### Producer Surplus
+- **Producer surplus** - net benefit a producer receives from a sale of a good or service.
+
+$$\text{Producer surplus} = \text{Willingness to sell} - \text{Actual price}$$
+
+- Total producer surplus can be found by summing individual producer surpluses.
+- Sellers prefer prices to be higher:
+  - an increase in price makes them better off
+  - a decrease in price makes them worse off.
+- Measuring producer surplus tell us how much better or worse off sellers are when the price changes.
+
+#### Total surplus
+- What will the actual market price be?
+- Put demand and supply curves together, and locate the point where they intersect.
+- Consumer surplus: find the area under the curve but above the equilibrium price.
+- Producer surplus: find the area above the curve but under the equilibrium price.
+- **Total surplus** - measure of combined benefits everyone receives from participating in the exchange of goods and services.
+  - ALso can be thougth of as the value created by the existence of the market.
+- The economy is not a fixed quantity of money, a zero-sum game.
+- Surplus shows that both the buyer and the seller are winners since each gains surplus.
+
+<br>
+
+---
+
+<br>
