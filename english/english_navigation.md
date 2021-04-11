@@ -25,6 +25,7 @@ Novels/Books
   - [Part 1: "The Theater" (Chapters 1-6)](https://andre-ye.github.io/english/spring/reading-notes/station-11/part-1)
   - [Part 2: "A Midsummer Night's Dream" (Chapters 7-12)](https://andre-ye.github.io/english/spring/reading-notes/station-11/part-2)
   - [Part 3: "I Prefer You With a Crown" (Chaptes 13-18)](https://andre-ye.github.io/english/spring/reading-notes/station-11/part-3)
+  - [Part 4: "The Starship" (Chapters 19-26)](https://http://andre-ye.github.io/english/spring/reading-notes/station-11/part-4)
 
 <br>
 
