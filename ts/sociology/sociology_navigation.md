@@ -12,8 +12,9 @@ Notes reflect ideas of the texts, not necessarily my own.
 <br>
 
 ### Lecture Notes
-- [Introduction to Course](https://andre-ye.github.io/ts/sociology/lectures/introduction-to-course), 3/29-3/31.
-- [Introduction to Research](https://andre-ye.github.io/ts/sociology/lectures/introduction-to-research), 4/7.
+- [Week 1: Introduction to Course](https://andre-ye.github.io/ts/sociology/lectures/introduction-to-course), 3/29-3/31.
+- [Week 2: Introduction to Research](https://andre-ye.github.io/ts/sociology/lectures/introduction-to-research), 4/7.
+- [Week 3: Choosing Questions, Annotated Bibliography](https://andre-ye.github.io/ts/sociology/lectures/week-3), 4/12.
 
 ### Readings
 - Week 1 Readings
