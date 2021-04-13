@@ -1,6 +1,6 @@
 [Home](https://andre-ye.github.io) > [English Navigation](https://andre-ye.github.io/english/english_navigation) > [Reading Notes](https://andre-ye.github.io/english/english_navigation#reading-notes) > Notes on *Station Eleven* by Emily St. John Mandel > Part 2, "A Midsummer Night's Dream" (Chapters 7-12)
 
-## Notes on *Station Eleven* by Emily St. John Mande: Part 2, "A Midsummer Night's Dream" (Chapters 7-12)
+## Notes on *Station Eleven* by Emily St. John Mandel: Part 2, "A Midsummer Night's Dream" (Chapters 7-12)
 Andre Ye, 4/5/21
 
 <br>
