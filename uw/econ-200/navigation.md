@@ -23,7 +23,7 @@ Taught by Melissa Knox.
 - Module 2: Supply and Demand
   - [Module 2 Lecture 2](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-2) - Trade, Change in Quantity Demanded, Shift in Demand
   - [Module 2 Lecture 3](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-3) - Supply, Market Equilibrium
-  - [Module 2 Lecture 4](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-4) - Elasticity
+  - [Module 2 Lecture 4](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-4) - Elasticity 
 - Module 3: Market Interventions
 - Module 4: Production and Costs
 - Module 5: Perfectly Competitive Markets
