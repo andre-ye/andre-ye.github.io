@@ -10,6 +10,11 @@ Andre Ye, 4/14/21
 <br>
 
 ### Navigate
+- [Chapter 48](#chapter-48)
+- [Chapter 49](#chapter-49)
+- [Chapter 50](#chapter-50)
+- [Chapter 51](#chapter-51)
+- [Chapter 52](#chapter-52)
 
 <br>
 
@@ -34,7 +39,7 @@ Andre Ye, 4/14/21
 
 ### Chapter 49
 - The clarinet hated Shakespeare.
-- She was sitting by hserself in Mackinaw City; she had been thinking of writing her own play.
+- She was sitting by herself in Mackinaw City; she had been thinking of writing her play.
 - The clarinet let her play in the backpack; the Symphony wondered if they were looking at a suicide note.
 - The men are planning a route to the Severn City Airport.
 - The men want to trade the two for the bride.
@@ -52,8 +57,8 @@ Andre Ye, 4/14/21
   - A man came at her in her first year with the Symphony.
   - Mackinaw City; met brigands.
 - They walked with Sayid, listening for the dog.
-- They walk in the forst and hear the prophet and his dog.
-- They discover Kirsten; Kirsten says that hte archer killed Sayid and August.
+- They walk in the forest and hear the prophet and his dog.
+- They discover Kirsten; Kirsten says that the archer killed Sayid and August.
 - The prophet says that the world is an ocean of darkness.
 - The boy had shot the prophet in the head; August's arrows shot the other two; the boy committed suicide.
 - Inside the prophet was a copy of the New Testament and a page torn from Dr. Eleven.
@@ -65,27 +70,28 @@ Andre Ye, 4/14/21
 <br>
 
 ### Chapter 51
-- Kirsten, August, and Sayid move towards the airport. Luli, the dog, runs wit them.
--
+- Kirsten, August, and Sayid move towards the airport. Luli, the dog, runs with them.
+- The terminal emerges; someone is roasting dear.
+- 320 people were living in the Severn City Airport; they meet Charlie.
+- The prophet was the only other person Kirsten had met that had *Station Eleven*.
+- Shakespeare's life was defined by plague.
+- They meet Clark.
+- Through a telescope, they see a town whose streets were lit up with electricity.
 
+<br>
 
+---
 
+<br>
 
+### Chapter 52
+- Jeevan is baking bread in an outdoor oven he has a son.
+- The caravans of the Traveling Symphony are arriving at the Severn City Airport.
 
+<br>
 
+---
 
+<br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[Back to top](#)
