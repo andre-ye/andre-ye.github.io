@@ -19,11 +19,12 @@ Taught by Melissa Knox.
 
 ### Lecture Notes
 - Module 1: Tradeoffs and Choices
-  - [Module 1 Lecture 1](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-1-lecture-1) - What is Economics?, PPFs, Comparative and Absolute Advantage
+  - [Lecture 1](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-1-lecture-1) - What is Economics?, PPFs, Comparative and Absolute Advantage
 - Module 2: Supply and Demand
-  - [Module 2 Lecture 2](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-2) - Trade, Change in Quantity Demanded, Shift in Demand
-  - [Module 2 Lecture 3](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-3) - Supply, Market Equilibrium
-  - [Module 2 Lecture 4](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-4) - Elasticity 
+  - [Lecture 2](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-2) - Trade, Change in Quantity Demanded, Shift in Demand
+  - [Lecture 3](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-3) - Supply, Market Equilibrium
+  - [Lecture 4](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-4) - Elasticity 
+  - [Lecture 5](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-5) - Consumer and Producer Surplus, Market Efficiency
 - Module 3: Market Interventions
 - Module 4: Production and Costs
 - Module 5: Perfectly Competitive Markets
