@@ -142,7 +142,7 @@ $$\text{\% change in price} = \frac{P_2 - P_1}{\left(\frac{P_2 + P_1}{2}\right)}
 - Price elasticities are affected by the availability of alternative options.
 - **Cross-price elasticity of demand**: describes how much demand changes when the price of different goods changes.
 
-$$\text{Cross-price elasticity of demand between A and B} = \frac{\% change in quantity of A demanded}{\% change in price of B}$$
+$$\text{Cross-price elasticity of demand between A and B} = \frac{\text{\% change in quantity of A demanded}}{\test{\% change in price of B}}$$
 
 - *The initial quantity demanded is on one demand curve and the final quantity demanded is on another demand curve* because nonprice determinants shift a demand curve.
 - *When goods are substitutes*, the cross-price elasticity of demand is positive. The increase in the price of one will cause an increase in the quantity demanded of the other.
@@ -153,7 +153,7 @@ $$\text{Cross-price elasticity of demand between A and B} = \frac{\% change in q
 - **Income elasticity of demand**: describes how much demand changes in response to a change in consumers' incomes.
 - Change in income causes the demand curve to shift; measure change by observing the change in quantity demanded.
 
-$$\text{Income elasticity of demand} = \frac{\% change in quantity demanded}{\% change in income}$$
+$$\text{Income elasticity of demand} = \frac{\text{\% change in quantity demanded}}{\% change in income}$$
 
 - For *normal goods*, the income elasticity is positive. As income rises, demand increases.
 - For *inferior goods*, the income elasticity is negative. As income rises, demand decreases.
