@@ -19,18 +19,38 @@ Andre Ye, 4/15/2021
 *Draw the following:*
 - *Perfectly elastic demand*. A horizontal line.
 - *Perfectly inelastic demand*. A vertical line.
-- *More elastic than $$P = -Q + P_0$$*. A line with a slope $<\|Q\|$ (smaller in magnitude).
-- *Less elastic than $$P = -Q + P_0$$*. A line with a slope $>\|Q\|$ (larger in magnitude).
+- *More elastic than $$P = -Q + P_0$$*. A line with a slope $$<\|Q\|$$ (smaller in magnitude).
+- *Less elastic than $$P = -Q + P_0$$*. A line with a slope $$>\|Q\|$$ (larger in magnitude).
 
 *Calculate the elasticity (using the midpoint formula) for movement from:*
-- *$(\$40, 2)$ to $(\$30, 5)$*. The percent change in quantity is
+
+*From $$(40, 2)$$ to $$(30, 5)$$ (in the form `(price, quantity)`)*. 
+ 
+The percent change in quantity is
 
 $$\frac{2-5}{3.5} \approx -0.8571$$
 
+The percent change in price is
 
+$$\frac{40-30}{35} \approx 0.2857$$
 
+Dividing yields $$\frac{-0.8571}{0.2857} \approx -3$$. Therefore, the price elasticity of demand is $$-3$$. Demand is elastic.
 
+*From $$(10,8)$$ to $$(7,20)$$ (in the form `(price, quantity)`)*. 
 
+The percent change in quantity is $$\frac{8-7}{7.5}$$.
+
+The percent change in price is
+
+$$\frac{\left(10-20\right)}{15}$$
+
+Dividing yields $$\frac{\left(10-20\right)}{15} = -0.2$$. Therefore, the price elasticity of demand when moving from the first point to the second point is $$0.2$$. Demand is inelastic.
+
+*When the price of a bar of chocolate is $1.00, the quantity demanded is 
+100,000 bars. When the price rises to $1.50, the quantity demanded falls to 
+60,000 bars.*
+
+*alculate the price elasticity of demand using the mid-point method.*
 
 
 
