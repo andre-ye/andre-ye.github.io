@@ -32,6 +32,7 @@ Taught by Melissa Knox.
 
 ### Quiz Section Questions
 - [Week 2](https://andre-ye.github.io/uw/econ-200/quiz-section-questions/week-2)
+- [Week 3](https://andre-ye.github.io/uw/econ-200/quiz-section-questions/week-3)
 
 
 <br>
