@@ -15,6 +15,8 @@ Andre Ye, 4/15/2021
 
 <br>
 
+*Some answers are incorrect.*
+
 ### Price Elasticity of Demand
 
 #### Problem 1
