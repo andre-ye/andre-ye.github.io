@@ -96,7 +96,7 @@ Cereal is a large scope of good; there are not many substitutes for cereal. Howe
 
 *Speedboats or gourmet chocolate?*
 
-Even though both products seem to be luxuries, gourmet chocolate occupies less of the buyer's income than speedboats. Thus, gourmet chocolate will have more elasitc demand in the short run.
+Even though both products seem to be luxuries, gourmet chocolate occupies less of the buyer's income than speedboats. Thus, speedboats will have more elastic demand in the short run.
 
 <br>
 
