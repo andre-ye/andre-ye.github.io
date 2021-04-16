@@ -19,11 +19,13 @@ Andre Ye, 4/15/2021
 *Draw the following:*
 - *Perfectly elastic demand*. A horizontal line.
 - *Perfectly inelastic demand*. A vertical line.
-- *More elastic than $$P = -Q + P_0$$*. A line with a slope $< |Q|$ (smaller in magnitude).
-- *Less elastic than $$P = -Q + P_0$$*. A line with a slope $> |Q|$ (larger in magnitude).
+- *More elastic than $$P = -Q + P_0$$*. A line with a slope $<\|Q\|$ (smaller in magnitude).
+- *Less elastic than $$P = -Q + P_0$$*. A line with a slope $>\|Q\|$ (larger in magnitude).
 
 *Calculate the elasticity (using the midpoint formula) for movement from:*
-- $$
+- *$(\$40, 2)$ to $(\$30, 5)$*. The percent change in quantity is
+
+$$\frac{2-5}{3.5} \approx -0.8571$$
 
 
 
