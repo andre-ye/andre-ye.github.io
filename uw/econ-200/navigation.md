@@ -34,6 +34,8 @@ Taught by Melissa Knox.
 - [Week 2](https://andre-ye.github.io/uw/econ-200/quiz-section-questions/week-2)
 - [Week 3](https://andre-ye.github.io/uw/econ-200/quiz-section-questions/week-3)
 
+### Misc
+[Notes to Self](https://andre-ye.github.io/uw/econ-200/notes-to-self), a collection of small reminders and strategies I have found useful.
 
 <br>
 
