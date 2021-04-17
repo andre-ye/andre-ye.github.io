@@ -28,6 +28,7 @@ Notes reflect ideas of the texts, not necessarily my own.
   - [Notes on "Alone Against the Virus" by Amy Kapczynski and Gregg Gonsalves](https://andre-ye.github.io/ts/sociology/readings/week-3/alone-against-the-virus)
 - Week 3 Readings
   - [Notes on "Ideology and the Ideological State Apparatuses" by Louis Althusser](https://andre-ye.github.io/ts/sociology/readings/week-4/ideology-and-the-ideological-state-apparatuses)
+  - [Notes on "Woman as Other" from *The Second Sex* by Simone de Beauvoir](https://andre-ye.github.io/ts/sociology/readings/week-4/woman-as-other)
 
 <br>
 
