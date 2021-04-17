@@ -26,6 +26,8 @@ Notes reflect ideas of the texts, not necessarily my own.
 - Week 3 Readings
   - [Notes on "From Problems to Sources" from *The Craft of Research* by Wayne Booth](https://andre-ye.github.io/ts/sociology/readings/week-3/from-problems-to-sources)
   - [Notes on "Alone Against the Virus" by Amy Kapczynski and Gregg Gonsalves](https://andre-ye.github.io/ts/sociology/readings/week-3/alone-against-the-virus)
+- Week 3 Readings
+  - [Notes on "Ideology and the Ideological State Apparatuses" by Louis Althusser](https://andre-ye.github.io/ts/sociology/readings/week-4/ideology-and-the-ideological-state-apparatuses)
 
 <br>
 
