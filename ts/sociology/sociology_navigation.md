@@ -30,6 +30,7 @@ Notes reflect ideas of the texts, not necessarily my own.
   - [Notes on "Ideology and the Ideological State Apparatuses" by Louis Althusser](https://andre-ye.github.io/ts/sociology/readings/week-4/ideology-and-the-ideological-state-apparatuses)
   - [Notes on "Woman as Other" from *The Second Sex* by Simone de Beauvoir](https://andre-ye.github.io/ts/sociology/readings/week-4/woman-as-other)
   - [Notes on "The Black Plague" by Keeanga-Yamahtta Taylor](https://andre-ye.github.io/ts/sociology/readings/week-4/the-black-plague)
+  - [Notes on "Black Reconstruction and the Racial Wage" from *Black Reconstruction in America* by W.E.B. Du Bois](https://andre-ye.github.io/ts/sociology/readings/week-4/black-reconstruction-and-the-racial-wage)
 
 <br>
 
