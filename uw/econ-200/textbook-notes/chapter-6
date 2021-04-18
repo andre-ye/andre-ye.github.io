@@ -67,17 +67,75 @@ Andre Ye, 4/17/2021
 <br>
 
 ### Taxes and Subsidies
+- Taxes are the main ways governments raise revenue to pay for public programs.
+- Taxes and subsidies can be used to correct market failures.
 
+#### Taxes
+- When a good is taxed, either the buyer or seller must pay some extra amount to the government on top of the sale price.
+- Taxes have two effects:
+  - Discourage production and consumption of the good being taxed.
+  - Raise government revenue.
+- **Tax wedge** - difference in price paid by buyers and price received by sellers.
+- **Tax revenue** - tax wedge multiplied by quantity of whizbangs bought and sold.
+- Tax causes deadweight loss and redistributes surplus.
+- Under a tax, both producers and consumers lose surplus.
+  - Consumers pay more for the same quantity of good, and producers receive less for the same good.
+  - Lost surplus in taxes doesn't disappear like deadweight loss, though, but becomes government revenue.
+- If the tax is imposed on buyers rather than sellers, the outcome is exactly the same. 
+- Tax causes some deadweight loss; the value the of the revenue the government collects is less than the reduction in total surplus caused by the tax.
+- Weigh the goal against the loss of surplus in the market when evaluating a tax.
 
+| Does the tax on | affect... ? | Answer |
+| --- | --- | --- |
+| sellers | supply | Yes, supply decreases. Sellers will behave as if the price they are receiving is actually [tax amount] lower. |
+| sellers | demand | No, demand stays the same (quantity demanded does change, though). |
+| sellers | market equilibrium | Equilibrium price rises and quantity demanded falls. |
+| buyers | supply | No, supply stays the same. |
+| buyers | demand | Yes, demand increases. |
+| buyers | market equilibrium | Equilibrium price and quantity fall. |
 
+- **Who bears the burden of a tax?**
+  - Relative tax burden carried by buyers and sellers: **tax incidence**.
+  - Often, tax incidence is not split equally.
 
+| When demand is ... elastic than supply, | ... shoulder more of the tax burden. |
+| --- | --- |
+| more | sellers |
+| less | buyers |
+| just as | no one; equally shared |
 
+- Tax changes the price of a good to both buyers and sellers.
+- Relative responsiveness of supply and demand will determine the tax burden.
+- **The market that is more price elastic will be able to adjust to price changes and will shoulder less of the tax burden.**
+- Market outcome of a tax (new equilibrium quantity and price) is the same regardless if the tax is imposed upon buyers or on sellers.
+  - Tax burden will be thes ame no matter which side of the market is taxed.
+- There can be a difference between *economic incidence* and *statutory incidence*.
+  - *Economic incidence*: economic effect of a tax on buyers or sellers
+  - *Statutory incidence*: person legally responsible for paying the tax
 
+### Subsidies
+- A **subsidy** is the reverse of a tax - the government pays an extra amount to producers or consumers of a good.
+- Governments use subsidies to encourage production and consumption of a good or service; it can be an alternative to price controls without generating a shortage.
 
+| Intervention Method | Qty Supplied | Qty Demanded | Government... |
+| --- | --- | --- | --- |
+| tax | decrease | decrease | collects revenue |
+| subsidy | increase | increase | spends money |
 
+$$\text{Government subsidy expenditure} = \text{Subsidy} \times Q_\text{post-subsidy}$$
 
+| Does the tax on | affect... ? | Answer |
+| --- | --- | --- |
+| sellers | supply | Yes, supply increases |
+| sellers | demand | No, demand stays the same |
+| market equilibrium | Equilibrium price decreases and equilibrium quantity increases. |
 
-
+- Subsidies cause deadweight loss and redistribute surplus.
+- The subsidy lowers the cost to the producer, causing producers and consumers to exchange more goods than is efficient, leading to deadweight loss.
+- The government expenditure is less than the increase in total surplus; this expenditure is passed onto taxpayers in the form of taxes.
+- **The side of the market that is more price inelastic receives more of the benefit.**
+- The share of the benefit does not depend on who receives the subsidy.
+- 
 
 
 
