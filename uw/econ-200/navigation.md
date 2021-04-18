@@ -16,6 +16,7 @@ Taught by Melissa Knox.
 - [Chapter 3: "Markets"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-3)
 - [Chapter 4: "Elasticity"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-4)
 - [Chapter 5: "Efficiency"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-5)
+- [Chapter 6: "Government Intervention"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-6)
 
 ### Lecture Notes
 - Module 1: Tradeoffs and Choices
