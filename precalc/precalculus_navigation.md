@@ -9,6 +9,15 @@ Taught by Reese Johnston, 2020-2021 Fall, Winter, and Spring Quarters.
 
 <br>
 
+### Notes
+- [Notes on Game Theory](https://andre-ye.github.io/precalc/notes/game-theory)
+
+<br>
+
+---
+
+<br>
+
 ### Collingwoods
 *Collingwood textbook is available [here](https://sites.math.washington.edu/~colling/HSMath120/TB201112.pdf){:target="_blank"}. Solutions may or may not be correct. In Winter and Spring quarters (chapter 8 and onward) there is only one Collingwood per chapter.*
 - Chapter 1: "Warming Up". Rates, times, and distances; the modeling process. [Collingwood 1](https://andre-ye.github.io/precalc/collingwoods/Collingwood_1.pdf){:target="_blank"}, [Collingwood 2](https://andre-ye.github.io/precalc/collingwoods/Collingwood_2.pdf){:target="_blank"}. [Collingwood 3](https://andre-ye.github.io/precalc/collingwoods/Collingwood_3.pdf){:target="_blank"}, [Collingwood 4](https://andre-ye.github.io/precalc/collingwoods/Collingwood_4.pdf){:target="_blank"}
