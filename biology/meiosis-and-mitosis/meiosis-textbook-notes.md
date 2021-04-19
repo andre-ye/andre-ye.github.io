@@ -3,7 +3,11 @@
 # Textbook Notes - 13.1 and 13.2: Meiosis
 Andre Ye, 11/27/20
 
+<br>
+
 ---
+
+<br>
 
 ## Navigate
 - [Introduction](#introduction)
