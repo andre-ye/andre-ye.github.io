@@ -26,6 +26,7 @@ Taught by Melissa Knox.
   - [Lecture 3](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-3) - Supply, Market Equilibrium
   - [Lecture 4](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-4) - Elasticity 
   - [Lecture 5](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-5) - Consumer and Producer Surplus, Market Efficiency
+  - [Lecture 6](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-6) - Equilibrium and Efficiency, Changing Surplus Distribution
 - Module 3: Market Interventions
 - Module 4: Production and Costs
 - Module 5: Perfectly Competitive Markets
