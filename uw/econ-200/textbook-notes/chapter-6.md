@@ -15,15 +15,36 @@ Andre Ye, 4/17/2021
 
 <br>
 
+### Navigate
+- [Why Intervene?](#why-intervene)
+  * [Changing the Distribution of Surplus](#changing-the-distribution-of-surplus)
+  * [Encouraging or Discouraging Consumption](#encouraging-or-discouraging-consumption)
+  * [Correcting Market Failures](#correcting-market-failures)
+- [Price Controls](#price-controls)
+  * [Price Ceilings](#price-ceilings)
+  * [Price Floors](#price-floors)
+- [Taxes and Subsidies](#taxes-and-subsidies)
+  * [Taxes](#taxes)
+- [Subsidies](#subsidies)
+- [Evaluating Government Interventions](#evaluating-government-interventions)
+  * [The Magnitude of the Effect of a Tax or Subsidy](#the-magnitude-of-the-effect-of-a-tax-or-subsidy)
+  * [Short-run Versus Long-run Impact](#short-run-versus-long-run-impact)
+
+<br>
+
+---
+
+<br>
+
 ### Why Intervene?
 - Markets gravitate towards equilibrium.
 - At equilibrium, **there is no way to make some people better off without harming others**.
 - Why intervene?
 
 #### Changing the Distribution of Surplus
-- Efficienc markets maximize total surplus, but an efficient outcome may still be seen as unfiar.
+- Efficient markets maximize total surplus, but an efficient outcome may still be seen as unfair.
 - Even if a job market is efficient, wages can drop.
-- The government can respond by intervenin gin the labor market to impose a minimum wage, changing the distribution of surplus.
+- The government can respond by intervening in the labor market to impose a minimum wage, changing the distribution of surplus.
 
 #### Encouraging or Discouraging Consumption
 - Governments can use taxes to discourage people from consuming "bad" products.
@@ -32,7 +53,7 @@ Andre Ye, 4/17/2021
 #### Correcting Market Failures
 - Markets do not always work efficiently.
 - Situations in which the assumption of efficient, competitive markets fails to hold: **market failures**.
-- Intervention can actually increase total surplus.
+- Intervention can increase total surplus.
 
 <br>
 
@@ -42,13 +63,13 @@ Andre Ye, 4/17/2021
 
 ### Price Controls
 - One policy tool: **price control**; regulate the maximum or minimum legal price for a good.
-  - Hold the price of a good up or down when the market shifts, preventing th emarket from reaching a new equilibrium.
+  - Hold the price of a good up or down when the market shifts, preventing the market from reaching a new equilibrium.
 
 #### Price Ceilings
 - **Price ceiling** - maximum legal price a good can be sold.
 - Many countries have price ceilings on necessities.
 - Assess the full effect of the price ceiling but looking at what happened to consumer and producer surplus.
-- Changes in economic well-being of market participants are **welfare effects**.
+- Changes in the economic well-being of market participants are **welfare effects**.
 - When the price ceiling is below the equilibrium price, there is a shortage.
 - **Nonbinding price ceiling** - if the ceiling is set above the equilibrium price in a market, it is nonbinding, and the equilibrium price and quantity will prevail.
   - Price ceilings are usually binding when implemented, and shifts in the market can render ceilings nonbinding.
@@ -58,7 +79,7 @@ Andre Ye, 4/17/2021
 - A price floor can allow supplies a minimum income in face of difficulties, keeping them in business.
 - When the price floor is above the equilibrium price, there is an excess.
 - Producers win at the expense of consumers.
-- **Nonbinding price floor** - price floors are not always binding. A price floor can become binding in response to change sin the market.
+- **Nonbinding price floor** - price floors are not always binding. A price floor can become binding in response to change in the market.
 
 <br>
 
@@ -75,14 +96,14 @@ Andre Ye, 4/17/2021
 - Taxes have two effects:
   - Discourage production and consumption of the good being taxed.
   - Raise government revenue.
-- **Tax wedge** - difference in price paid by buyers and price received by sellers.
-- **Tax revenue** - tax wedge multiplied by quantity of whizbangs bought and sold.
+- **Tax wedge** - the difference in price paid by buyers and price received by sellers.
+- **Tax revenue** - tax wedge multiplied by the quantity of goods bought and sold.
 - Tax causes deadweight loss and redistributes surplus.
 - Under a tax, both producers and consumers lose surplus.
   - Consumers pay more for the same quantity of good, and producers receive less for the same good.
   - Lost surplus in taxes doesn't disappear like deadweight loss, though, but becomes government revenue.
-- If the tax is imposed on buyers rather than sellers, the outcome is exactly the same. 
-- Tax causes some deadweight loss; the value the of the revenue the government collects is less than the reduction in total surplus caused by the tax.
+- If the tax is imposed on buyers rather than sellers, the outcome is the same. 
+- Tax causes some deadweight loss; the value of the revenue the government collects is less than the reduction in total surplus caused by the tax.
 - Weigh the goal against the loss of surplus in the market when evaluating a tax.
 
 | Does the tax on | affect... ? | Answer |
@@ -107,8 +128,8 @@ Andre Ye, 4/17/2021
 - Tax changes the price of a good to both buyers and sellers.
 - Relative responsiveness of supply and demand will determine the tax burden.
 - **The market that is more price elastic will be able to adjust to price changes and will shoulder less of the tax burden.**
-- Market outcome of a tax (new equilibrium quantity and price) is the same regardless if the tax is imposed upon buyers or on sellers.
-  - Tax burden will be thes ame no matter which side of the market is taxed.
+- Market outcome of a tax (new equilibrium quantity and price) is the same regardless of the tax is imposed upon buyers or on sellers.
+  - Tax burden will be the same no matter which side of the market is taxed.
 - There can be a difference between *economic incidence* and *statutory incidence*.
   - *Economic incidence*: economic effect of a tax on buyers or sellers
   - *Statutory incidence*: person legally responsible for paying the tax
@@ -135,23 +156,35 @@ $$\text{Government subsidy expenditure} = \text{Subsidy} \times Q_\text{post-sub
 - The government expenditure is less than the increase in total surplus; this expenditure is passed onto taxpayers in the form of taxes.
 - **The side of the market that is more price inelastic receives more of the benefit.**
 - The share of the benefit does not depend on who receives the subsidy.
-- 
 
+<br>
 
+---
 
+<br>
 
+### Evaluating Government Interventions
+- We need to assess the effects of each intervention and unintended consequences.
+- Key rules:
+  - Price controls have opposing impacts on the quantities supplied and demanded, causing a shortage or excess supply.
+  - Taxes and subsidies move the quantities supplied and demanded in the same direction.
 
+![](https://andre-ye.github.io/uw/econ-200/textbook-notes/images/government-intervention-img.png)
 
+#### The Magnitude of the Effect of a Tax or Subsidy
+- It's important to know how much a policy will change equilibrium quantity and price.
+- **The more elastic supply or demand, the greater the change in quantity.**
+- To predict the size of the effect of a tax or subsidy, policy-makers need to know the price elasticity of supply and demand.
 
+#### Short-run Versus Long-run Impact
+- Price controls cause shortages or excess supply.
+- Sometimes, the full effect of price controls becomes clear only in the long run.
+- In the short run, demand and supply are not very elastic, so the price floor may result in only a small supply excess.
 
+<br>
 
+---
 
+<br>
 
-
-
-
-
-
-
-
-
+[Back to top](#)
