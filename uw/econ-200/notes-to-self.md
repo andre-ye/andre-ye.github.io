@@ -11,6 +11,7 @@ Andre Ye
 
 ### Strategy
 - Do your homework after the quiz section.
+- Remember units (e.g. "thousands of cars") when calculating and giving answers.
 
 <br>
 
