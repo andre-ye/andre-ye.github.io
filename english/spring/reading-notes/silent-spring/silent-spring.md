@@ -152,18 +152,25 @@ Page 29 in PDF.
 - In a river, chemicals mingle in a way no chemist can predict.
   - Reactions between multiple chemicals can be very dangerous
 - Insecticides that kill the target of the population may also kill other life.
+- Insecticides do not leave the lake, even if they cannot be found in the water; they are abosrbed into life and passed from generation to generation.
+- Is it wise to use substances that strongly affect physiological processes to control insects in water?
+  - Even when applied in low concentrations, its progress explodes.
+- Polluted waterways may carry a cancer hazard.
+- **In nature, nothing exists alone.**
 
+<br>
 
+---
 
+<br>
 
+### Chapter 5: Realms of the Soil
+Page 36 in PDF.
 
+<br>
 
+---
 
+<br>
 
-
-
-
-
-
-
-
+[Back to top](#)
