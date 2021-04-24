@@ -10,6 +10,9 @@ Taught by Melissa Knox.
 
 <br>
 
+### Study Guides
+- [Midterm Study Guide (Chapters 1-6)](https://andre-ye.github.io/uw/econ-200/study-guides/midterm-study-guide)
+
 ### Textbook Notes
 - [Chapter 1: "Economics and Life"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-1)
 - [Chapter 2: "Specialization and Exchange"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-2)
@@ -32,13 +35,6 @@ Taught by Melissa Knox.
 - Module 4: Production and Costs
 - Module 5: Perfectly Competitive Markets
 - Module 6: Monopoly and Imperfect Competition
-
-### Quiz Section Questions
-- [Week 2](https://andre-ye.github.io/uw/econ-200/quiz-section-questions/week-2)
-- [Week 3](https://andre-ye.github.io/uw/econ-200/quiz-section-questions/week-3)
-
-### Misc
-[Notes to Self](https://andre-ye.github.io/uw/econ-200/notes-to-self), a collection of small reminders and strategies I have found useful.
 
 <br>
 
