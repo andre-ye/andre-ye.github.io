@@ -35,6 +35,9 @@ Andre Ye
 - Remember units (e.g. "thousands of cars") when calculating and giving answers.
 - When calculating price effect and quantity effect, one is positive and negative. That is, do not measure effect by its absolute value but its change.
 - Read closely; do not confuse price elasticity of demand with percent change in quantity demanded, for instance.
+- Take time to show your work - you get points for it.
+- Always draw a graph, both so you can get credit and to get a solid understanding of the situation.
+- When calculating something, always write out the full formula - you will get points for it.
 
 <br>
 
