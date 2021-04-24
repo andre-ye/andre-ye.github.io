@@ -37,6 +37,9 @@ Taught by Reese Johnston, 2020-2021 Fall, Winter, and Spring Quarters.
 - Statistics unit.
   - [Homework 1](https://andre-ye.github.io/precalc/collingwoods/Homework_1.pdf){:target="_blank"}. Means, quartiles, standard deviation, and confidence intervals.
   - [Homework 2](https://andre-ye.github.io/precalc/collingwoods/Homework_2.pdf){:target="_blank"}. Linear regression, RMSE, R2 and Adjusted R2, F-tests.
+  - [Homework 3](https://https://andre-ye.github.io/precalc/collingwoods/Homework%203.pdf){:target="_blank"}. Pearson correlation, linear modeling, confidence intervals, F-tests.
+- Game Theory unit.
+  - [Homework 4](https://sike.com){:target="_blank"}. Game theory frameworks, strategies, Nash equilibria.
 
 
 <br>
