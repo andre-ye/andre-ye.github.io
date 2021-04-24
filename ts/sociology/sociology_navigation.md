@@ -27,11 +27,13 @@ Notes reflect ideas of the texts, not necessarily my own.
 - Week 3 Readings
   - [Notes on "From Problems to Sources" from *The Craft of Research* by Wayne Booth](https://andre-ye.github.io/ts/sociology/readings/week-3/from-problems-to-sources)
   - [Notes on "Alone Against the Virus" by Amy Kapczynski and Gregg Gonsalves](https://andre-ye.github.io/ts/sociology/readings/week-3/alone-against-the-virus)
-- Week 3 Readings
+- Week 4 Readings
   - [Notes on "Ideology and the Ideological State Apparatuses" by Louis Althusser](https://andre-ye.github.io/ts/sociology/readings/week-4/ideology-and-the-ideological-state-apparatuses)
   - [Notes on "Woman as Other" from *The Second Sex* by Simone de Beauvoir](https://andre-ye.github.io/ts/sociology/readings/week-4/woman-as-other)
   - [Notes on "The Black Plague" by Keeanga-Yamahtta Taylor](https://andre-ye.github.io/ts/sociology/readings/week-4/the-black-plague)
   - [Notes on "Black Reconstruction and the Racial Wage" from *Black Reconstruction in America* by W.E.B. Du Bois](https://andre-ye.github.io/ts/sociology/readings/week-4/black-reconstruction-and-the-racial-wage)
+- Week 5 Readings
+  - [Notes on "The Pristine Myth: The Landscape of the Americas in 1492" by William M. Denevan](https://andre-ye.github.io/ts/sociology/readings/week-5/pristine-myth)
 
 <br>
 
