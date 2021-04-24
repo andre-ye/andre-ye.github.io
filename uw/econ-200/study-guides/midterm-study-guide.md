@@ -4,7 +4,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 </head>
 
-[Home](https://andre-ye.github.io) > [ECON 200 Navigation](https://andre-ye.github.io/uw/econ-200/navigation) > [Lecture Notes](https://andre-ye.github.io/uw/econ-200/navigation#lecture-notes) > Midterm Study Guide
+[Home](https://andre-ye.github.io) > [ECON 200 Navigation](https://andre-ye.github.io/uw/econ-200/navigation) > [Study Guides](https://andre-ye.github.io/uw/econ-200/navigation#study-guides) > Midterm Study Guide
 
 ## Midterm Study Guide
 Andre Ye
