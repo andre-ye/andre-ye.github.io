@@ -166,6 +166,61 @@ Page 29 in PDF.
 
 ### Chapter 5: Realms of the Soil
 Page 36 in PDF.
+- Soil controls our existence; without soil, land plants could not grow. Without plants, no animals could survive.
+- Soil equally depends on life.
+- Life formed the soil, and many living things exist wihthin soil.
+- Chemical changes are consistently in progress.
+  - Fungi and bacteria are essential organisms to the soil; in addition to algae, the three make up the principal agents of decay.
+  - Springtails break down residues of plants.
+  - Earthworms are fundamental geologic agents in transporting soil.
+- What happens when these vitally necessary inhabitants of soil are destroyed by chemicals?
+- The ecology of the soil is often neglected.
+- The soil cannot sustain any amount of chemical injection.
+- Insecticides last for years in the soil; moderate applications of insecticides can accumulate to large quantities in the soil.
+- **To what extent are insecticides absorbed into soils and introduced into plant tissues?**
+- We are heading for trouble; the ecology of soil is essential.
+
+<br>
+
+---
+
+<br>
+
+### Chapter 6: Earth's Green Mantle
+Page 41 in PDF.
+- The green mantle of plants makes up the world that supports animal life.
+- Man cannot exist without plants to harness the sun's energy.
+- We seek to destroy many plants with a categorization of good and bad too narrow.
+- We should disturb relationships as thoughtfully as is possible.
+- Sages can grow in the mountain slopes and on the plains, whereas no other plant could grow. **An act of experimentation by nature.** Animals feed on it. Yet there is an effort to fight against it.
+- Chemical campaigns always eliminate many plants taht are not the intended target.
+- Animal life evolves in harmony with requirements of the land.
+- Chemical weed killers are a "bright new toy".
+- Vacationing tourists, which bring money, no longer visit shrivelled and chemically affected regions.
+- Aesthetic appeal to plants we may consdier to be weeds.
+- Herbicides perpetuate the problem it seeks to correct (blanket application of herbicides to not permanently constrol roadside "brush").
+- Selective spraying: eliminate tall woody plants by direct treatment; preserve all other vegetation.
+  - Often requires no respraying for 20 years.
+  - Chemicals are applied only at the base of trees.
+- Poisonous weeds can be attractive after spraying, leading to animal deaths.
+  - Wilting apparently makes the plant attractive.
+  - Chemicals change the plant's metabolism, and it produces more sugar.
+- Animals feeding on vegetation with a high level of nitrates can die from anoxia.
+- What is the relationship between the weed and the soil? A weed takes something from the soil, ubt it also contributes to it.
+- Weeds also serve as an indicator of the condition of the soil.
+- Chemical manufacturers manipulate suburbanites into using astonishing amounts of lawn herbicide killers.
+- Successful and economic weed control can be carried out by insects.
+- **Effective control of unwanted vegetation should focus more on plant-eating insects.**
+
+<br>
+
+---
+
+<br>
+
+### Chapter 7: "Needless Havoc"
+
+
 
 <br>
 
