@@ -22,7 +22,7 @@
 
 <br>
 
-## University of Washington Courses/Lab Notes
+## University of Washington Courses/Lab Notes 🟡🟣
 - [Research - Najafian Lab: Pathobiology of Kidney Diseases 🦠](https://andre-ye.github.io/research/najafian-lab/navigation)
 - [ECON 200 - Introduction to Microeconomics 🤝](https://andre-ye.github.io/uw/econ-200/navigation) w/ Melissa Knox
 
