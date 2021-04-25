@@ -1,6 +1,6 @@
-[Home](https://andre-ye.github.io) > [Najafian Lab Navigation](https://andre-ye.github.io/research/najafian-lab/navigation) > Notes > Introduction Classes
+[Home](https://andre-ye.github.io) > [Najafian Lab Navigation](https://andre-ye.github.io/research/najafian-lab/navigation) > Notes > Dr. Najafian Introduction Class: Quantifying Podocyte Injury
 
-## Notes on Dr. Najafian Introduction Class
+## Notes on Dr. Najafian Introduction Class: Quantifying Podocyte Injury
 Andre Ye, 4/24/2021
 
 <br>
