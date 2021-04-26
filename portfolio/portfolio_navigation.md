@@ -3,7 +3,7 @@
 
 A compilation of some essays and projects I've produced at the Transition School. ***This work is part of my past and may not reflect my current views and work.***
 
-Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#biology), [History](#history).
+Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#biology), [Sociology](#sociology), [History](#history).
 
 <br>
 
