@@ -15,6 +15,7 @@ Led by Behzad Najafian, M.D., Principal Investigator.
 
 ### Notes
 - [Dr. Najafian Introduction Class - Quantifying Podocyte Injury](https://andre-ye.github.io/research/najafian-lab/notes/introduction-class)
+- [David Smerkous Introduction Class - Modeling Process and Segmentation & Prediction Utilities](https://andre-ye.github.io/research/najafian-lab/notes/david-smerkous-introduction-class)
 
 <br>
 
