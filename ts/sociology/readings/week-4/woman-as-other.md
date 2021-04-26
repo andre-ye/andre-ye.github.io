@@ -1,6 +1,6 @@
 [Home](https://andre-ye.github.io) > [Sociology Navigation](https://andre-ye.github.io/ts/sociology/sociology_navigation) > [Readings](https://andre-ye.github.io/ts/sociology/sociology_navigation#readings) > Week 4 > Notes on "Woman as Other" from *The Second Sex* by Simone de Beauvoir
 
-## Notes on "Woman as Other" from *The Second Sex by Simone de Beauvoir
+## Notes on "Woman as Other" from *The Second Sex* by Simone de Beauvoir
 Andre Ye, 4/17/21
 
 <br>
