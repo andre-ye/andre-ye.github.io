@@ -18,6 +18,7 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 - [Fall English Portfolio](https://andre-ye.github.io/english/portfolio/English Portfolio.pdf){:target="_blank"}, English fall quarter work compilation.
 - [Winter Midterm Essay - "Human Masks and Hunting in 'Antlers'"](https://andre-ye.github.io/english/portfolio/Antlers Draft 3.pdf){:target="_blank"}, on the blurred relationship between human and animal in Rick Bass's short story "Antlers".
 - [Winter Final Essay - "Self as Interconnected Story in 'Song of Myself'"](https://andre-ye.github.io/english/portfolio/Draft 4.pdf){:target="_blank"}, on the application of the narrative creation of self to Walt Whitman's poem, "Song of Myself".
+- [Spring Midterm Essay - "The Cigarette and the Tragic Pursuit of Death in *Pale Horse, Pale Rider*"](https://andre-ye.github.io/english/portfolio/Draft 3.pdf){:target="_blank"}, on the symbolism of the cigarette and tragic love amidst death in Katherine Anne Porter's novel, *Pale Horse, Pale Rider*.
 
 <br>
 
@@ -30,6 +31,7 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 - [Fall Quarter Project 1 - "Intersections of Constrained Lines Within the Unit Circle"](https://andre-ye.github.io/precalc/portfolio/Project_1_Final_Draft.pdf){:target="_blank"}.
 - [Winter Quarter Project 2 - "The Continued Fraction Problem"](https://andre-ye.github.io/precalc/portfolio/annotated-Project_2-1.pdf){:target="_blank"}.
 - [Winter Quarter Project 3 - "Optimum and Convergence Patterns in Power Towers"](https://andre-ye.github.io/precalc/portfolio/project-3.pdf){:target="_blank"}.
+- [Spring Quarter Project 4 - "Analyzing Latent Space in Autoencoders of Varied Bottleneck Size"](https://andre-ye.github.io/precalc/portfolio/Project 4 Draft 3.pdf){:target="_blank"}.
 
 <br>
 
