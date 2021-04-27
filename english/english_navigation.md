@@ -14,6 +14,7 @@ Taught by Amanda Zink, [Fall](#fall-quarter), [Winter](#winter-quarter), and [Sp
 #### Lecture Notes
 - ["Navigating a Post Truth World" by Charles Sykes](https://andre-ye.github.io/english/spring/lecture-notes/navigating-a-post-truth-world)
 - ["The Politics of Fiction" by Elif Shafak](https://andre-ye.github.io/english/spring/lecture-notes/politics-of-fiction)
+- [Remembering Rachel Carson with Kaiulani Lee](https://andre-ye.github.io/english/spring/lecture-notes/remembering-rachel-carson)
 
 #### Reading Notes
 Theoretical Texts
