@@ -11,6 +11,8 @@ Taught by Amanda Zink, [Fall](#fall-quarter), [Winter](#winter-quarter), and [Sp
 
 ### Spring Quarter
 
+[Random Ideas](https://andre-ye.github.io/english/spring/random-ideas). Spontaneous thoughts I write down for live discussions, parts of tentative outlines for drafts, and other unstructured but original morsels of ideas.
+
 #### Lecture Notes
 - ["Navigating a Post Truth World" by Charles Sykes](https://andre-ye.github.io/english/spring/lecture-notes/navigating-a-post-truth-world)
 - ["The Politics of Fiction" by Elif Shafak](https://andre-ye.github.io/english/spring/lecture-notes/politics-of-fiction)
