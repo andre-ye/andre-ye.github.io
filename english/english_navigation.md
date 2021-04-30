@@ -21,6 +21,7 @@ Taught by Amanda Zink, [Fall](#fall-quarter), [Winter](#winter-quarter), and [Sp
 #### Reading Notes
 Theoretical Texts
 - [Introduction to *Pandemic Education and Viral Politics* by Michael Peters and Tina Besley](https://andre-ye.github.io/english/spring/reading-notes/theory/pandemic-education-and-viral-politics)
+- ["Climate Theories" by Lauren LaFauci](https://andre-ye.github.io/english/spring/reading-notes/theory/climate-theories-lafauci)
 
 Novels/Books
 - [*Pale Horse Pale Rider* by Katherine Anne Porter](https://andre-ye.github.io/english/spring/reading-notes/pale-horse-pale-rider/pale-horse-pale-rider-notes)
