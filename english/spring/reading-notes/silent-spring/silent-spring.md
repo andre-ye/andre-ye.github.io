@@ -299,6 +299,24 @@ Page 41 in PDF.
 - The infiltration of pesticides into bodies of water threatens recreational and commercial fishing.
   - California, Louisiana, Pennsylvinia, Alabama, Oklahoma.
 - Conidiotns are no better than when insecticides were first used.
+- Farming in South-Asian countries is also impeded by spraying. 
+- Austin fish disaster the result of spraying DDT.
+- Growing impact of pesticides on life in salt marshes and quiet inlets. Salt marsh treated with dieldrin killed several million mish.
+  - Marsh fiddler crabs were killed, but they ply an essential role in the marsh ecosystem
+  - Shrimp, lobsters, and others are harmed and killed by the toxic chemicals.
+  - Shrimp are especially sensitive to toxic chemicals.
+  - Oysters and clams, which are eaten raw, concentrate the poisons in their digestive organs.
+- Fisheries are important, but they are being seriously threatened by chemicals.
+- **Finding less toxic methods is possible, given the investment.**
+
+<br>
+
+---
+
+<br>
+
+
+### Chapter 10: Indiscriminately from the Skies
 
 <br>
 
