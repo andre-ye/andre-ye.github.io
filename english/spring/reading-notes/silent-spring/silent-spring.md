@@ -371,12 +371,32 @@ Page 41 in PDF.
 <br>
 
 ### Chapter 12: The Human Price
+- A drastic change must come about in how we deal with health problems.
+- Before, mankind feared diseases; now we fear a hazard we ourselves have created.
+- It is impossible to predict the effects of a lifespan of exposure to chemical agents.
+- We are concerned about delayed effects of absorbing small amounts of pesticides.
+- Biological effects of chemicals are cumulative.
 
+> "It is human nature to shrug off what may seem to us a vague threat of future disaster."
 
+- There is a world of ecology in our bodies. A change in one point can reverberate throughout the entire human system.
+- One who handles chemicals is storing up toxic materials in their body.
+  - They become lodged in fatty tissues; when the fat reserves are drawn upon, the poison strikes quickly.
+- The liver operates many activities; any damage to the liver causes severe consequences.
+  - A liver damaged by pesticides cannot protect us from other poisons and other diseases.
+- Insecticides affect the nervous system directly.
+- Why doesn't everyone handling insecticides develop the same symptoms? Differnt people are more susceptible, but the threat is still very real.
+- The effect of a chemical can be made drastically worse by another chemical.
+- Echoes of these problems are often found in medical literature.
+- Confusion, delusion, loss of memory - "a heavy price to pay for the temporary destruction of a few insects."
 
+<br>
 
+---
 
+<br>
 
+### Chapter 13: Through a Narrow Window
 
 
 
