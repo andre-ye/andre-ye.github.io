@@ -60,11 +60,42 @@ Andre Ye, 4/30/21
 - Buyers and sellers are price takers if they are too small relative to the size of the market.
 - We need to add nuance and consider the supply and demand in world markets.
   - For instance, if the US joins the world market for computer software, both the supply and demand curves for the world market would shift rightwards.
-  - 
 
+<br>
 
+---
 
+<br>
 
+### Restrictions on Trade
+- Who wins and who loses from trade?
+
+#### Why restrict trade?
+- Trade is efficiency-enhancing: it always increases total surplus.
+- Some trade restrictions are the result of global politics.
+- However, often trade restrictions protect who lose surplus because of free trade.
+- Laws limiting trade are trade protection, part of *protectionism*.
+- Policies that promote free trade: *trade liberalization*.
+
+#### Tariffs
+- A **tariff**: tax on imported goods. Causes deadweight loss and is inefficient.
+  - Used to protect domestic producers.
+- Tariffs have the same effect on the U.S. steel market as an increase in world price; a higher price pushes domestic producers up the supply curve.
+- Less items are imported, and domestic producers supply more.
+- Domestic steel producers enjoy an increase in surplus.
+- However, domestic steel consumers can also lose surplus.
+
+#### Quotas
+- Multifiber Arrangement (MFA): regulated clothing items, used a quota.
+- **Import quota** - limit on how much of a particular good can be imported.
+- The effect of a quota is similar to that of a tariff.
+  - Domestic quantity demanded decreases.
+  - Domestic quantity supplied increases.
+  - Quantity of imports falls.
+- Domestic producers gain surplus from selling a higher quantity at a higher price, but domestic consumers lose surplus from buying a lower quantity at a higher price.
+- Difference in who benefits from the difference between the value of a good in the domestic market and the value of the good in a world market:
+  - *Tariff*: the domestic government collects tax revenue. $$\text{quantity of imports} \times \left| \text{domestic price} - \text{world price}|$$.
+  - *Quota*: value goes to whoever has the rights to import, or quota rent. The importing country/firm recieves surplus. This results in profits for foreign agents.
 
 
 
