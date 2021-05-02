@@ -397,15 +397,33 @@ Page 41 in PDF.
 <br>
 
 ### Chapter 13: Through a Narrow Window
-
-
-
-
-
-
-
-
-
+- A very narrow window through which one can only see a crack of light.
+- Only when we begin by focusing on the cells of the body can we comprehend serious effects of introduction chemicals into the environment.
+- Cellular oxidation is critical; the cell burns fuel to produce energy.
+- Oxidation is performed in the mitochondria; they are tiny packets of enzymes in which oxidation is completed.
+- ATP is the currency of energy.
+- Many chemicals can separate oxidation from the energy production, including insecitcides and weed killers.
+- Uncoupling extinguishes the little fires in our billions of cells.
+- When one of the enzymes is destroyed or weakened, oxidation halts; 
+- Various dinitro compounds can block cells from oxygen.
+- Normal cells can turn into cancer cells merely by withholding oxygen.
+- Many chemicals are partners of radiation.
+- Tomorrow's children will suffer defects and malformations from these chemicals.
+- The egg needs lots of ATP; if the ATP content is reduced then the egg stops dividing and dies.
+- DDT and other chlorinated hydrocarbons stop the energy-producing cycle.
+- Chemicals lodge into sex organs of birds and mammals; testes accumulate the highest concentration.
+- Our genetic heritage is very valuable; yet, radiation assaults the genes.
+- Many chemicals belong to a group of substances that can damage the chromosomes and interfere with normal cell division.
+- Mustard gas is known to alter the genetic material.
+- Anything that disturbs mitosis is a grave threat tot he welfare of an organism.
+- Genetic damage - the role of chemicals in general use has not been assessed, but is needed.
+- Radiomimetic chemicals may represent a greater danger than radiation.
+- Chemical mutagens were first used for scientific interests, which likely explains its neglect; but insecticides and weed killers are used generally.
+- Pesticides distrub a cell's vital processes. Mosquitoes exposed to DDT turn into gynandomorphs when exposd to DDT.
+- Plants treated with phenols suffer destruction of chromosomes.
+- There has been no study aimed at testing the mutagenic effects of pesticides.
+- The duplication of part of a chromosome can lead to serious impacts.
+- We are filling the environment with chemicals that can strike directly at the chromosomes. Chemical manufacturers do not need to test genetic effects of their chemicals.
 
 
 <br>
@@ -413,5 +431,7 @@ Page 41 in PDF.
 ---
 
 <br>
+
+### Chapter 14: One in Every Four
 
 [Back to top](#)
