@@ -425,7 +425,6 @@ Page 41 in PDF.
 - The duplication of part of a chromosome can lead to serious impacts.
 - We are filling the environment with chemicals that can strike directly at the chromosomes. Chemical manufacturers do not need to test genetic effects of their chemicals.
 
-
 <br>
 
 ---
@@ -433,5 +432,60 @@ Page 41 in PDF.
 <br>
 
 ### Chapter 14: One in Every Four
+- The battle of living things against cancer.
+- Some elemetns in our natural environment create hazards to life: ultraviolet radiation, rocks, arsenic.
+- Life nevertheless arose.
+- Man now creates cancer-producing substances - carcinogens.
+  - Soot, for instance.
+- Man has no protection against these carcinogens.
+- Sir Percivall Pott declared in 1775 that scrotal cancer was the result of soot accumulated within their bodies.
+- Recognition of malignancies come during the last quarter of the 19th century.
+- Pasteur was demonstrating the microbial origin of many infectious diseases.
+- Now, many sources of industrial carcinogens are known; the population is brought very closely to these carcinogens.
+- Malignant growths accounted for 15% of deaths; 45m Americans will develop cancer.
+- More children will die of cancer than any othyer disease.
+- Do these chemicals act as direct or indirect causes of cancer?
+- Arsenic leads to cancer in humans and in animals.
+- The public was to act as guinea pigs: the miticde was found to be a carcinogen.
+  - Legal procedures dealyed zero tolerance for carcinogens.
+- DDT produces suspicious liver tumors; it is likely a chemical carcinogen.
+- Weed-killer aminotriazole, IPC & CIPC carbamates: experiments suggest they cause cancers to form.
+- Diseases of blood-forming organs emerge from exposure to DDT, chlordane, benzene, lindane, etc.
+- Everyday people are caught in the "fallout" of their own spraying.
+- Professor Otto Warburg's explanation of malignancy: radiation or a chemical carcinogen destroys the respiration of normal cells, depriving them of energy. The struggle to survive by fermentation continues, forming cancer cells.
+  - Repeated small doses of a carcinogen are more dangerous in many circumstances than just one large dose.
+  - There is no safe dose of a carcinogen.
+- Path to cancer by chromosomes: any agent that causes mutation is a potentail cause of cancer.
+- Exposure to urethane can allow tumors to develop in infants via prenatal exposure.
+- The road to cancer can also be indirect; a non-carcinogen substance can still disturb normal functioning of some part of the body.
+- A "safe" dose can tip the scale of many accumulating "safe doses".
+- We tolerate cancer-causing agents.
+- Why have we been slow to adopt the approach to the cancer problem of stimying the causes?
+  - Curing the victims of cancer is more exciting and tangible than prevention.
+  - Preventing cancer from being formed in the first place is more humane and more effective.
+  - There is no magic pill we can take each morning.
+- There is a golden opportunity to prevent cancer.
+- Not all chemical carcinogens can be eliminated, but many are not necessities. They can be eliminated. Prevention is needed for those not invaded by cancer and not born for generations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
+---
+
+<br>
 
 [Back to top](#)
