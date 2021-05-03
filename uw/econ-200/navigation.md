@@ -34,6 +34,7 @@ Taught by Melissa Knox.
   - [Lecture 6](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-6) - Equilibrium and Efficiency, Changing Surplus Distribution
   - [Lecture 7](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-7) - Government Intervention: Price Controls, Taxes and Subsidies
 - Module 3: Market Interventions
+  - [Lecture 8](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-3-lecture-8) - Effects of Free Trade, Tariffs, Quotas
 - Module 4: Production and Costs
 - Module 5: Perfectly Competitive Markets
 - Module 6: Monopoly and Imperfect Competition
