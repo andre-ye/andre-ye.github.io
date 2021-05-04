@@ -23,8 +23,12 @@ Andre Ye
 - [Chapter 9: Rivers of Death](#chapter-9-rivers-of-death)
 - [Chapter 10: Indiscriminately from the Skies](#chapter-10-indiscriminately-from-the-skies)
 - [Chapter 11: Beyond the Dreams of the Borgias](#chapter-11-beyond-the-dreams-of-the-borgias)
-
-*To be continued.*
+- [Chapter 12: The Human Price](#chapter-12-the-human-price)
+- [Chapter 13: Through a Narrow Window](#chapter-13-through-a-narrow-window)
+- [Chapter 14: One in Every Four](#chapter-14-one-in-every-four)
+- [Chapter 15: Nature Fights Back](#chapter-15-nature-fights-back)
+- [Chapter 16: The Rumblings of an Avalanche](#chapter-16-the-rumblings-of-an-avalanche)
+- [Chapter 17: The Other Road](#chapter-17-the-other-road)
 
 <br>
 
@@ -372,9 +376,9 @@ Page 41 in PDF.
 
 ### Chapter 12: The Human Price
 - A drastic change must come about in how we deal with health problems.
-- Before, mankind feared diseases; now we fear a hazard we ourselves have created.
+- Before, mankind feared diseases; now we fear a hazard we have created.
 - It is impossible to predict the effects of a lifespan of exposure to chemical agents.
-- We are concerned about delayed effects of absorbing small amounts of pesticides.
+- We are concerned about the delayed effects of absorbing small amounts of pesticides.
 - Biological effects of chemicals are cumulative.
 
 > "It is human nature to shrug off what may seem to us a vague threat of future disaster."
@@ -385,9 +389,9 @@ Page 41 in PDF.
 - The liver operates many activities; any damage to the liver causes severe consequences.
   - A liver damaged by pesticides cannot protect us from other poisons and other diseases.
 - Insecticides affect the nervous system directly.
-- Why doesn't everyone handling insecticides develop the same symptoms? Differnt people are more susceptible, but the threat is still very real.
+- Why doesn't everyone handling insecticides develop the same symptoms? Different people are more susceptible, but the threat is still very real.
 - The effect of a chemical can be made drastically worse by another chemical.
-- Echoes of these problems are often found in medical literature.
+- Echoes of these problems are often found in the medical literature.
 - Confusion, delusion, loss of memory - "a heavy price to pay for the temporary destruction of a few insects."
 
 <br>
@@ -398,11 +402,11 @@ Page 41 in PDF.
 
 ### Chapter 13: Through a Narrow Window
 - A very narrow window through which one can only see a crack of light.
-- Only when we begin by focusing on the cells of the body can we comprehend serious effects of introduction chemicals into the environment.
+- Only when we begin by focusing on the cells of the body can we comprehend the serious effects of introducing chemicals into the environment.
 - Cellular oxidation is critical; the cell burns fuel to produce energy.
 - Oxidation is performed in the mitochondria; they are tiny packets of enzymes in which oxidation is completed.
 - ATP is the currency of energy.
-- Many chemicals can separate oxidation from the energy production, including insecitcides and weed killers.
+- Many chemicals can separate oxidation from energy production, including insecticides and weed killers.
 - Uncoupling extinguishes the little fires in our billions of cells.
 - When one of the enzymes is destroyed or weakened, oxidation halts; 
 - Various dinitro compounds can block cells from oxygen.
@@ -415,15 +419,15 @@ Page 41 in PDF.
 - Our genetic heritage is very valuable; yet, radiation assaults the genes.
 - Many chemicals belong to a group of substances that can damage the chromosomes and interfere with normal cell division.
 - Mustard gas is known to alter the genetic material.
-- Anything that disturbs mitosis is a grave threat tot he welfare of an organism.
-- Genetic damage - the role of chemicals in general use has not been assessed, but is needed.
+- Anything that disturbs mitosis is a grave threat to the welfare of an organism.
+- Genetic damage - the role of chemicals in general use has not been assessed but is needed.
 - Radiomimetic chemicals may represent a greater danger than radiation.
 - Chemical mutagens were first used for scientific interests, which likely explains its neglect; but insecticides and weed killers are used generally.
-- Pesticides distrub a cell's vital processes. Mosquitoes exposed to DDT turn into gynandomorphs when exposd to DDT.
-- Plants treated with phenols suffer destruction of chromosomes.
+- Pesticides disturb a cell's vital processes. Mosquitoes exposed to DDT turn into gynandromorphs when exposed to DDT.
+- Plants treated with phenols suffer the destruction of chromosomes.
 - There has been no study aimed at testing the mutagenic effects of pesticides.
 - The duplication of part of a chromosome can lead to serious impacts.
-- We are filling the environment with chemicals that can strike directly at the chromosomes. Chemical manufacturers do not need to test genetic effects of their chemicals.
+- We are filling the environment with chemicals that can strike directly at the chromosomes. Chemical manufacturers do not need to test the genetic effects of their chemicals.
 
 <br>
 
@@ -433,7 +437,7 @@ Page 41 in PDF.
 
 ### Chapter 14: One in Every Four
 - The battle of living things against cancer.
-- Some elemetns in our natural environment create hazards to life: ultraviolet radiation, rocks, arsenic.
+- Some elements in our natural environment create hazards to life: ultraviolet radiation, rocks, arsenic.
 - Life nevertheless arose.
 - Man now creates cancer-producing substances - carcinogens.
   - Soot, for instance.
@@ -441,23 +445,23 @@ Page 41 in PDF.
 - Sir Percivall Pott declared in 1775 that scrotal cancer was the result of soot accumulated within their bodies.
 - Recognition of malignancies come during the last quarter of the 19th century.
 - Pasteur was demonstrating the microbial origin of many infectious diseases.
-- Now, many sources of industrial carcinogens are known; the population is brought very closely to these carcinogens.
+- Now, many sources of industrial carcinogens are known; the population is brought very close to these carcinogens.
 - Malignant growths accounted for 15% of deaths; 45m Americans will develop cancer.
-- More children will die of cancer than any othyer disease.
+- More children will die of cancer than any other disease.
 - Do these chemicals act as direct or indirect causes of cancer?
-- Arsenic leads to cancer in humans and in animals.
-- The public was to act as guinea pigs: the miticde was found to be a carcinogen.
-  - Legal procedures dealyed zero tolerance for carcinogens.
+- Arsenic leads to cancer in humans and animals.
+- The public was to act as guinea pigs: the miticide was found to be a carcinogen.
+  - Legal procedures delayed zero tolerance for carcinogens.
 - DDT produces suspicious liver tumors; it is likely a chemical carcinogen.
 - Weed-killer aminotriazole, IPC & CIPC carbamates: experiments suggest they cause cancers to form.
 - Diseases of blood-forming organs emerge from exposure to DDT, chlordane, benzene, lindane, etc.
-- Everyday people are caught in the "fallout" of their own spraying.
+- Every day people are caught in the "fallout" of their spraying.
 - Professor Otto Warburg's explanation of malignancy: radiation or a chemical carcinogen destroys the respiration of normal cells, depriving them of energy. The struggle to survive by fermentation continues, forming cancer cells.
   - Repeated small doses of a carcinogen are more dangerous in many circumstances than just one large dose.
   - There is no safe dose of a carcinogen.
-- Path to cancer by chromosomes: any agent that causes mutation is a potentail cause of cancer.
+- Path to cancer by chromosomes: any agent that causes mutation is a potential cause of cancer.
 - Exposure to urethane can allow tumors to develop in infants via prenatal exposure.
-- The road to cancer can also be indirect; a non-carcinogen substance can still disturb normal functioning of some part of the body.
+- The road to cancer can also be indirect; a non-carcinogen substance can still disturb the normal functioning of some part of the body.
 - A "safe" dose can tip the scale of many accumulating "safe doses".
 - We tolerate cancer-causing agents.
 - Why have we been slow to adopt the approach to the cancer problem of stimying the causes?
@@ -467,20 +471,65 @@ Page 41 in PDF.
 - There is a golden opportunity to prevent cancer.
 - Not all chemical carcinogens can be eliminated, but many are not necessities. They can be eliminated. Prevention is needed for those not invaded by cancer and not born for generations.
 
+<br>
 
+---
 
+<br>
 
+### Chapter 15: Nature Fights Back
+- We have attempted to mold nature into our satisfaction, but fail to achieve our goal.
+- Insects are developing resistance to chemicals; our chemical attack weakens defenses from these insects in our environment itself.
+- Chemical controls are self-defeating.
+- Man is part of the balance of nature.
+- Effective control of insects is applied by *nature*, not by man.
+  - Chemicals kill friends and enemies alike.
+- Checks exist in nature.
+- Killing predatory insects sets the population of prey insects off.
+- We have not quite noticed the activities of insect predators and parasites.
 
+> "... nature controls her own."
 
+- Increasingly, species are becoming involved in violent imbalances of nature.
+- A Pandora's box of destructive pests.
+- Spider mites are relatively insensitive to insecticides and are kept in check by bugs extremely sensitive to insecticides.
+- This not only applies to insects that attack crops but also carriers of disease.
+- Only 2 percent of economic entomologists in the country are working on biological controls.
+  - Chemical companies pour money into universities.
+  - Research programs are supported by the chemical industry.
+- Special care and knowledge of parasites and predators need to be considered when selecting chemicals.
+  - This method gets as good production for a lower cost.
 
+<br>
 
+---
 
+<br>
 
+### Chapter 16: The Rumblings of an Avalanche
+- Weaker members of the insect populations are being weeded out.
+- Insects don't need to die under sprayings; insects possess a counter weapon to aggressive chemical attacks.
+- Insects may transmit disease and destroy agriculture and forestry.
+- Insect-borne disease should not be ignored; we have destroyed our means of fighting.
+- Resistance to insecticides has surged: lice, ticks, mosquitos, cockroaches
+- Spraying kills off weaklings.
+- Means of chemical resistance are not thoroughly understood.
+  - Some insects are aided by structural advantage.
+  - DDT-resistance flies possess enzymes that allow them to detoxify insecticides.
+  - Behavioral habits may place insects outside the reach of chemicals
+- Resistance does not develop in the individual, but over generations.
+- Spray as little as you can: life is a miracle, and we should hold it to the highest order of humility and respect.
 
+> "Humbleness is in order; there is no excuse for scientific 
+conceit here."
 
+<br>
 
+---
 
+<br>
 
+### Chapter 17: The Other Road
 
 <br>
 
