@@ -530,6 +530,22 @@ conceit here."
 <br>
 
 ### Chapter 17: The Other Road
+- We stand at a point where two roads diverge, but they are not made equal.
+- The road less traveled by is the one we must take to preserve Earth.
+- A wide variety of chemical alternatives are available.
+- We must have a right to know.
+- Any science is a river; it has quiet stretches and rapids, it gathers momentum, it evolves.
+- New methods turn the strength of species against itself.
+  - Sterilized male methods, and succeeded in experiments on Curacao.
+  - Sterilization by chemicals and radiation is successful; some act on the life processes of the cell and others act upon the chromosomes.
+  - Sex attractants.
+  - Ultrasonic sound.
+  - Microbial control.
+  - Predatory insects / biological control.
+- These methods suffer from a lack of government support.
+- Encouragement of a European view of "forest hygiene".
+- Chemical pest control brings no real condition; the chemical barrage has hurled itself against life.
+- "Control of nature" is arrogance; it is Neanderthal-like, where nature exists for the convenience of man.
 
 <br>
 
