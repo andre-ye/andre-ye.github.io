@@ -35,6 +35,7 @@ Taught by Melissa Knox.
   - [Lecture 7](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-2-lecture-7) - Government Intervention: Price Controls, Taxes and Subsidies
 - Module 3: Market Interventions
   - [Lecture 8](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-3-lecture-8) - Effects of Free Trade, Tariffs, Quotas
+  - [Lecture 9](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-3-lecture-9) - Externalities, Private and Public Solutions, Pigovian Taxes
 - Module 4: Production and Costs
 - Module 5: Perfectly Competitive Markets
 - Module 6: Monopoly and Imperfect Competition
