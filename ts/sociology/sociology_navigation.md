@@ -18,6 +18,7 @@ Notes reflect ideas of the texts, not necessarily my own.
 - [Week 4: Theoretical Frames, a History of Social Theory](https://andre-ye.github.io/ts/sociology/lectures/week-4), 4/19.
 - [Week 5: Planning and Drafting](https://andre-ye.github.io/ts/sociology/lectures/week-5), 4/30.
 - [Climate Change & Contested Knowledge: Historicizing the Anthropocene](https://andre-ye.github.io/ts/sociology/lectures/climate-change-and-contested-knowledge), 5/3.
+- [Week 6: Longform Analysis](https://andre-ye.github.io/ts/sociology/lectures/week-6)
 
 ### Readings
 - Week 1 Readings
