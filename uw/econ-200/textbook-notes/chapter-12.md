@@ -14,6 +14,26 @@ Andre Ye, 5/8/21
 
 <br>
 
+### Navigate
+- [The Building Blocks of Business: Revenue, Costs, and Profits](#the-building-blocks-of-business--revenue--costs--and-profits)
+  * [Profit is revenue minus costs](#profit-is-revenue-minus-costs)
+  * [Fixed and variable costs](#fixed-and-variable-costs)
+  * [Explicit and implicit costs](#explicit-and-implicit-costs)
+  * [Economic and accounting profit](#economic-and-accounting-profit)
+- [Production Functions](#production-functions)
+  * [Marginal Product](#marginal-product)
+- [Cost Curves](#cost-curves)
+  * [Total, average, and marginal costs](#total--average--and-marginal-costs)
+- [Production in the Short Run and the Long Run](#production-in-the-short-run-and-the-long-run)
+  * [Costs in the long run](#costs-in-the-long-run)
+  * [Economies and diseconomies of scale](#economies-and-diseconomies-of-scale)
+
+<br>
+
+---
+
+<br>
+
 ### The Building Blocks of Business: Revenue, Costs, and Profits
 - A firm's goal is to maximize profit.
 
@@ -33,13 +53,13 @@ Andre Ye, 5/8/21
 
 #### Explicit and implicit costs
 - True costs are *opportunity costs*.
-- A firm's opportunity cost of operations have explicit cost and implicit cost components.
+- A firm's opportunity cost of operations has an explicit cost and implicit cost components.
 - **Explicit costs**: require a firm to spend money. Rent, employee salaries, materials, etc.
 - **Implicit costs**: costs of forgone opportunities.
 
 #### Economic and accounting profit
 - When a company reports its profits, it usually reports *accounting profit*.
-- However, *economic profit* is a better measure of how well a business is really doing.
+- However, *economic profit* is a better measure of how well a business is doing.
 
 $$\text{accounting profit} = \text{total revenue} - \text{explicit costs}$$
 
@@ -53,12 +73,12 @@ $$\text{economic profit} = \text{total revenue} - \text{explicit costs} - \text{
 
 ### Production Functions
 - Firms create values by bringing together different ingredients to create a good or service consumers want.
-- Relationship between quantity of inputs and quantity of outptus: **production functino**.
+- Relationship between quantity of inputs and quantity of output: **production function**.
 
 #### Marginal Product
 - **Marginal product**: increase in the production that results from increasing the input.
 - **Principle of diminishing marginal product**: holding other inputs constant, the marginal product of a particular input decreases as its quantity increases.
-- **Average product**: number of goods produced by each owrker on average.
+- **Average product**: number of goods produced by each worker on average.
 
 <br>
 
@@ -69,11 +89,11 @@ $$\text{economic profit} = \text{total revenue} - \text{explicit costs} - \text{
 ### Cost Curves
 
 #### Total, average, and marginal costs
-- **Average fixed cost (AFC)**: fixed cost divided by quantity of output.
-- **Average variable cost (AVC)**: variable cost divided by quantity of output.
-- **Average total cost (ATC)**: total cost divided by quantity of output.
-- **Marginal cost**: variable cost of producing the next unit of output, or $\frac{\Delta \text{ total cost}}{\Delta \text{ quantity}}$$.
-- Marginal cost curve has teh inverse shape of the marginal product curve.
+- **Average fixed cost (AFC)**: fixed cost divided by the quantity of output.
+- **Average variable cost (AVC)**: variable cost divided by the quantity of output.
+- **Average total cost (ATC)**: total cost divided by the quantity of output.
+- **Marginal cost**: variable cost of producing the next unit of output, or $$\frac{\Delta \text{ total cost}}{\Delta \text{ quantity}}$$.
+- Marginal cost curve has the inverse shape of the marginal product curve.
 - The marginal cost curve intersects the lowest point of the average total cost curve.
 
 <br>
@@ -83,17 +103,17 @@ $$\text{economic profit} = \text{total revenue} - \text{explicit costs} - \text{
 <br>
 
 ### Production in the Short Run and the Long Run
-- Supply is more flexible over longer periods of time.
+- Supply is more flexible over longer periods.
 
 #### Costs in the long run
 - A cost that is "fixed" in the short run may not be so in the long run.
 - In the long run, all costs are considered variable.
 
 #### Economies and diseconomies of scale
-- ATC is U-shaped because additional inputs have an increasing marginal product, but the principle of diminishing reutrn kicks in and average total cost increases.
-- Economies of scale, diseconomies of scale, and constant returns to scale: describe relationship between quantity of output and average total cost.
-- Increasing quantity of output enables it to lower its average total cost; the firm is facing **economies of scale**.
-- Bigger isn't always better; increasing scale can, at a certain point, lead to higher average total cost; facing **diseconomies of sclae**.
+- ATC is U-shaped because additional inputs have an increasing marginal product, but the principle of diminishing return kicks in, and average total cost increases.
+- Economies of scale, diseconomies of scale, and constant returns to scale: describe the relationship between the quantity of output and average total cost.
+- Increasing the quantity of output enables it to lower its average total cost; the firm is facing **economies of scale**.
+- Bigger isn't always better; increasing scale can, at a certain point, lead to higher average total cost; facing **diseconomies of scale**.
 - In between economies of scale and diseconomies of scale, there are various quantities of output a firm can operate in without experiencing higher or lower average cost: **constant returns to scale**.
 - A firm's long-run ATC curve covers a greater range of output than its short-run ATC curve.
 - Long-run ATC curve is made up of points from the firm's short-run ATC curves.
