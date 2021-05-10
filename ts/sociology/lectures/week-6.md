@@ -32,20 +32,11 @@ Andre Ye, 5/7/21
   - Provide the evidence
   - Make your analysis
 - Don't just rush through the steps; help the reader move through each of them in a sustained way.
-- 
 
+<br>
 
+---
 
+<br>
 
-
-
-
-
-
-
-
-
-
-
-
-
+[Back to top](#)
