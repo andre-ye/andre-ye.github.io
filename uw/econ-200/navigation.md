@@ -39,6 +39,7 @@ Taught by Melissa Knox.
   - [Lecture 9](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-3-lecture-9) - Externalities, Private and Public Solutions, Pigovian Taxes
 - Module 4: Production and Costs
   - [Lecture 10](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-4-lecture-10) - Costs of Production, Production Metrics
+  - [Lecture 11](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-4-lecture-11) - Cost Curves, Economies of Scale
 - Module 5: Perfectly Competitive Markets
 - Module 6: Monopoly and Imperfect Competition
 
