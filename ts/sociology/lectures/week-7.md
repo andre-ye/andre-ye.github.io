@@ -52,13 +52,23 @@ Andre Ye, 5/7/21
 
 ### Baseline
 - Specifics of problem/issue/question
-  - Explain the "problem"
-  - Real world or practical problem, theoreitcla one, something else.
+  - Explain the "problem" - deserves further investigation.
+  - Real world or practical problem, theoreitcal one, something else.
   - Data that raises questions
   - Place to establish the stakes of your claim
 - Scope of literature on the question
+  - What have other scholars said on the question?
+    - Core ideas of the debate - why is it insufficient?
+  - What is being left out? What remaining problems emerge?
 - Usage of theory
+  - Is there a new way to look at the question?
+  - Is there a thinker, approach, or methodology that could provide new insights?
+    - Define the theory
+    - Explain its application to your work or problem
 - Your intervention
+  - How do you enter / contribute to this conversation?
+  - What is your claim? Explain in more detail your intervention
+  - Stakes of the claim - why your question or intervention is significant.
 
 <br>
 
@@ -66,11 +76,21 @@ Andre Ye, 5/7/21
 
 <br>
 
-### Signpost
+### Unraveling
+- How to unravel complex reality in writings?
+
+<br>
+
+---
+
+<br>
+
+### Signposting
 - Signposting: telling the reader exactly what is happening with the structure of the essay.
 - Leading into what else is needed.
 - Language may be clunky, but tells the reader what is changing.
-- Moving into [x new section].
+- Moving into [x new section].\
+
 
 <br>
 
