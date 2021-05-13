@@ -23,6 +23,7 @@ Theoretical Texts
 - [Introduction to *Pandemic Education and Viral Politics* by Michael Peters and Tina Besley](https://andre-ye.github.io/english/spring/reading-notes/theory/pandemic-education-and-viral-politics)
 - ["Climate Theories" by Lauren LaFauci](https://andre-ye.github.io/english/spring/reading-notes/theory/climate-theories-lafauci)
 - ["Climate and the Environmental Humanities" by Michael Ziser](https://andre-ye.github.io/english/spring/reading-notes/theory/climate-and-the-environmental-humanities)
+- ["A Cyborg Manifesto: Science, Technology, and Socialist-Feminism in the Late Twentieth Century" by Donna Haraway](https://andre-ye.github.io/english/spring/reading-notes/theory/cyborg-manifesto)
 
 Novels/Books
 - [*Pale Horse Pale Rider* by Katherine Anne Porter](https://andre-ye.github.io/english/spring/reading-notes/pale-horse-pale-rider/pale-horse-pale-rider-notes)
