@@ -21,6 +21,7 @@ Taught by Melissa Knox.
 - [Chapter 5: "Efficiency"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-5)
 - [Chapter 6: "Government Intervention"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-6)
 - [Chapter 12: "The Costs of Production"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-12)
+- [Chapter 13: "Perfect Competition"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-13)
 - [Chapter 17: "International Trade"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-17)
 - [Chapter 18: "Externalities"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-18)
 
