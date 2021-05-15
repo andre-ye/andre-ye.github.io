@@ -38,6 +38,8 @@ Notes reflect ideas of the texts, not necessarily my own.
   - [Notes on "Black Reconstruction and the Racial Wage" from *Black Reconstruction in America* by W.E.B. Du Bois](https://andre-ye.github.io/ts/sociology/readings/week-4/black-reconstruction-and-the-racial-wage)
 - Week 5 Readings
   - [Notes on "The Pristine Myth: The Landscape of the Americas in 1492" by William M. Denevan](https://andre-ye.github.io/ts/sociology/readings/week-5/pristine-myth)
+- Week 8 Readings
+  - [Notes on "The Moral Responsibilities of Scientists: Tensions Between Autonomy and Responsibility" by Heather E. Douglas](https://andre-ye.github.io/ts/sociology/readings/week-8/the-moral-responsibilities-of-scientists)
 
 <br>
 
