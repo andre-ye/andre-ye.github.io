@@ -11,7 +11,7 @@ Taught by Melissa Knox.
 <br>
 
 ### Study Guides
-- [Midterm Study Guide (Chapters 1-6)](https://andre-ye.github.io/uw/econ-200/study-guides/midterm-study-guide)
+- [Exam 1 Study Guide (Chapters 1-6)](https://andre-ye.github.io/uw/econ-200/study-guides/midterm-study-guide)
 
 ### Textbook Notes
 - [Chapter 1: "Economics and Life"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-1)
@@ -42,6 +42,8 @@ Taught by Melissa Knox.
   - [Lecture 10](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-4-lecture-10) - Costs of Production, Production Metrics
   - [Lecture 11](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-4-lecture-11) - Cost Curves, Economies of Scale
 - Module 5: Perfectly Competitive Markets
+  - [Lecture 12](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-5-lecture-12) - Short-run firm optimization
+  - [Lecture 13](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-5-lecture-13) - Long-run firm optimization
 - Module 6: Monopoly and Imperfect Competition
 
 <br>
