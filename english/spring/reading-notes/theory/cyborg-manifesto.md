@@ -12,6 +12,20 @@
 
 <br>
 
+### Navigate
+- [An Ironic Dream of a Common Language for Women in the Integrated Circuit](#an-ironic-dream-of-a-common-language-for-women-in-the-integrated-circuit)
+- [Fractured Identities](#fractured-identities)
+- [The Informations of Domination](#the-informations-of-domination)
+- [The Homework Economy Outside the Home](#the-homework-economy-outside-the-home)
+- [Women in the Integrated Circuit](#women-in-the-integrated-circuit)
+- [Cyborgs: A Myth of Political Identity](#cyborgs-a-myth-of-political-identity)
+
+<br>
+
+---
+
+<br>
+
 ### An Ironic Dream of a Common Language for Women in the Integrated Circuit
 Page 3
 - This essay: an effort to build an "ironic" political myth drawing upon feminism, socialism, and materialism.
@@ -24,7 +38,7 @@ Page 3
   - The boundary between fiction and social reality is illusory.
 - Cyborg replication is distinct from organic reproduction.
   - "And modern war is a cyborg orgy."
-  - A cyborg is a fiction mapping our social and bodilyu reality, and an imaginative resource.
+  - A cyborg is a fiction mapping our social and bodily reality, and an imaginative resource.
 - We were cyborgs by the late twentieth century - condensed images of imagination and material reality.
 - Relation between organism and machine has been a war.
   - The confusion of boundaries between the territories of production, reproduction, and imagination is *good*.
@@ -48,7 +62,7 @@ Page 3
     - Ubiquity and invisibility of cyborgs; hard to see politically as materially.
     - The science of the pure number and spirit
 - A need for unity in resisting intensification of domination.
-- A cyborg world is about the final imposition of ontrol, and perhaps of lived social and bodily realities where people are unafraid of partial identities and contradictions.
+- A cyborg world is about the final imposition of control, and perhaps of lived social and bodily realities where people are unafraid of partial identities and contradictions.
   - The political struggle is to accept and see from both at once, revealing dominations and unimaginable possibilities.
 
 <br>
@@ -60,29 +74,29 @@ Page 3
 ### Fractured Identities
 Page 16
 
-- One's feminism cannot be named bya  single adjective.
+- One's feminism cannot be named by a  single adjective.
 - Gender, race, and class cannot provide the basis for belief in essential unity.
 - Nothing about being "female" naturally binds women.
 - There is no state of "being" female.
-- Group conciousness is forced upon "us" by experiences of patriarhcy, colonialism, and capitalism.
+- Group consciousness is forced upon "us" by experiences of patriarchy, colonialism, and capitalism.
 - Fragmentation among feminists and women has made the notion of a "woman" elusive.
 - Response through coalition - affinity, not identity.
-- Chela Sandoval: oppositional conscioueness. Those that refuse stable membership into categorical lines of race, sex, or class.
+- Chela Sandoval: oppositional consciousness. Those that refuse stable membership into categorical lines of race, sex, or class.
   - Lack of essential criterion for identifying "woman of color".
-  - "Woman" negates all non-white women, "black" negates all nonblack people.
-  - Basis of concious coalition becomes affinity rather than identity.
+  - "Woman" negates all non-white women, "black" negates all non-black people.
+  - Basis of conscious coalition becomes affinity rather than identity.
 - Katie King: limits of identification and political/poetic mechanics of identification.
   - "Moments" or "conversations" in feminist practice create the appearance of feminist history as an ideological struggle.
 - **Crafting political unity without lying upon a logic of appropriation, incorporation, and taxonomic identification.**
-- Cyborg feminists must argue against innocence, "natural matrix of unity".
+- Cyborg feminists must argue against innocence, a "natural matrix of unity".
 - Socialist-feminism advances by allying itself with analytic strategies of Marxism.
-  - Expanding "labor" to accomodate what some women did.
-  - No naturalization of unity; instead based on a standpoint rooted in social relations.
+  - Expanding "labor" to accommodate what some women did.
+  - No naturalization of unity; instead of based on a standpoint rooted in social relations.
 - An epistemology and ontology erase or police difference.
 - Sexual objectification is the consequence of sex/gender structures.
-- Radical feminism in Haraway's caricature taxonomy can accomodate all activities of women as forms of labor if the activity can be sexualized.
+- Radical feminism in Haraway's caricature taxonomy can accommodate all activities of women as forms of labor if the activity can be sexualized.
 - The "end of man"; "woman disintegrates into women".
-- Unrefelctive participation in the logic of white humanism and a ground of domination to secure the revolutionary voice has led socialist feminists to produce essentialist theories suppressing women's contradictions and particularities.
+- Unreflective participation in the logic of white humanism and the ground of domination to secure the revolutionary voice has led socialist feminists to produce essentialist theories suppressing women's contradictions and particularities.
 - Epistemology: differentiating between "playful" differences and historical systems of domination.
 
 <br>
@@ -95,10 +109,10 @@ Page 16
 Page 28
 - Sketch a picture of possible unity.
 - Worldwide social relations tied to science and technology
-- Poltiics rooted in cliams about fundamental changes in the nature of class, race, and gender.
+- Politics is rooted in claims about fundamental changes like class, race, and gender.
 - Living through movement from an organic, industrial society into a polymorphous system of information.
 - **Transition from old hierarchal dominations ("organics of domination") to scary new networks ("informatics of domination").**
-- We must not think of essential properties, but design, logics, constraints.
+- We must not think of essential properties, but design, logic, constraints.
 - Sex is no longer organic.
 - Ideologies of human diversity must be formulated in frequencies of parameters.
 - Translations of racism and colonialism.
@@ -109,10 +123,10 @@ Page 28
 - The body can be dispersed. The cyborg is disassembled and reassembled.
 - Technologies and scientific discourse enforce meanings.
   - Myth and tool mutually constitute each other.
-- Translation of the world into a problem of coding - search for common language in which resistance to instrumental control disappears.
+- Translation of the world into a problem of coding - search for a common language in which resistance to instrumental control disappears.
   - Applying cybernetic (feedback-controlled) systems.
-- Information is a quantifiable element that allows for universal transaltion.
-- Interruption of communication causes constittues a threat to power.
+- Information is a quantifiable element that allows for universal translation.
+- Interruption of communication causes constitutes a threat to power.
 - Organisms cease to become objects of knowledge as they are amalgams of biotic components.
 - Microelectronics is the technical basis of simulacra (copies within originals).
   - Mediates translations.
@@ -125,12 +139,12 @@ Page 28
 
 ### The Homework Economy Outside the Home
 - "New Industrial Revolution" produces a new worldwide working class.
-- Extreme mobilities of capital, weakning of familiar groups, emergence of new collectives.
+- Extreme mobilities of capital, weakening of familiar groups, the emergence of new collectives.
 - White men are becoming more vulnerable to job loss, women are preferred for labor.
 - Richard Gordon: "the homework economy".
-  - Restructuring of work that has characteristics abscribed to women.
+  - Restructuring of work that has characteristics ascribed to women.
   - Work is being redefined as female and feminized.
-  - To be feminized: to be dissassembled, reassembeled, exploited, subjected to.
+  - To be feminized: to be disassembled, reassembled, exploited, subjected to.
   - Factory, home, and market are integrated.
 - Homework economy is made possible by new technologies.
   - Loss of the male family wage and in the character of female capital-intensive jobs.
@@ -138,16 +152,16 @@ Page 28
   - Feminization of poverty.
   - Integration of female daily life with capitalist economies.
 - Forms of families relate to forms of capital.
-  - patriarchal nuclear family; white bourgeois ideology, 19th century Anglo-American bourgeois feminism
+  - patriarchal nuclear family; white bourgeois ideology, 19th-century Anglo-American bourgeois feminism
   - modern family mediated by the welfare state
   - family of the homework economy - women-headed households, erosion of gender
 - Projections for worldwide structural unemployment.
 - Sexuality, reproduction, family are interwoven into economic structures.
 - Certain technologies are fundamental to eradicating "public life".
 - Reformulation of expectations, culture, work, and reproduction.
-- Formation of a bimodal social structure - masses of women and men of all ethnic groups confined to a homework economy, redundancy and impotence, controlled by repressive apparatuses.
+- Formation of a bimodal social structure - masses of women and men of all ethnic groups confined to a homework economy, redundancy, and impotence, controlled by repressive apparatuses.
 - What can tie women together across scientific-technical hierarchies?
-- Welding personal preferences and culture tendencies into progressive politics.
+- Welding personal preferences and cultural tendencies into progressive politics.
 
 <br>
 
@@ -157,7 +171,7 @@ Page 28
 
 ### Women in the Integrated Circuit
 Page 45
-- It is not possible to ideolgoically characterize women's lives by distinciton of public and private domains.
+- It is not possible to ideologically characterize women's lives by the distinction of public and private domains.
 - Network ideological image.
 - Informatics of domination: massive intensification of insecurity and culture impoverishment.
 - Structural rearrangements related to social relations of science and technology.
@@ -171,16 +185,16 @@ Page 45
 <br>
 
 ### Cyborgs: A Myth of Political Identity
-- Myth about identity and boundaries informs late 20th century imagination.
-- Many insist on the organic opposed to the technological.
+- Myth about identity and boundaries informs late 20th-century imagination.
+- Many insist on the organic as opposed to the technological.
 - Symbolic systems and positions of ecofeminism and feminist paganism can only be understood as oppositional ideologies.
 - Embrace the possibilities inherent in breaking distinctions between organism and machine.
   - Cracks the matrices of domination.
 - 'Woman of color' as a cyborg identity.
   - Literacy is a special mark; writing has significance for colonized groups.
-  - Cyborg writing is about the power to survive, not on the basis of original innocence but on seizing tools to mark the world that marked them as other.
+  - Cyborg writing is about the power to survive, not based on original innocence but on seizing tools to mark the world that marked them as others.
 - Cyborg authors subvert central myths of origin by retelling origin stories.
-  - Ability to live on the boundaries adn to write without an original wholeness.
+  - Ability to live on the boundaries and to write without an original wholeness.
 - Writing is the technology of cyborgs. Struggle for language and against perfect communication.
   - Cyborgs insist on noise and advocate pollution.
 - Subverting structure and modes of reproduction of the "Western" identity.
@@ -190,11 +204,19 @@ Page 45
   - The self is the ONe who is not dominated, autonomous, powerful, but the One is an illusion.
   - One is too few, but two is too many.
 - High-technology culture challenges dualisms.
-- Machines can be animated, organisms mechanized.
-- Pleasure in reading fictions is not based on identification.
+- Machines can be animated, organisms are mechanized.
+- Pleasure in reading fiction is not based on identification.
 - Monsters define the limits of community.
 - The cyborg body is not innocent and it does not seek unitary identity, does not generate antagonist dualisms.
 - Organisms and organismic, holistic politics depend on metaphors of rebirth, calling on resources of the reproductive sex.
+- We have all been profoundly injured.
+- Cyborg imagery allows us to realize that
+  - **Production of a universal theory is a mistake.**
+  - **Taking responsibility for social relations means refusing anti-science metaphysics and reconstructing partiality and boundaries.**
+- Building and destroying machines, identities, categories.
+
+> "Though both are bound in the spiral dance, I would rather be a cyborg than a goddess."
+> -Haraway
 
 <br>
 
@@ -203,9 +225,3 @@ Page 45
 <br>
 
 [Back to top](#)
-
-
-
-
-
-
