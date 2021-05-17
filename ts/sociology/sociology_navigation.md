@@ -20,6 +20,7 @@ Notes reflect ideas of the texts, not necessarily my own.
 - [Climate Change & Contested Knowledge: Historicizing the Anthropocene](https://andre-ye.github.io/ts/sociology/lectures/climate-change-and-contested-knowledge), 5/3.
 - [Week 6: Longform Analysis](https://andre-ye.github.io/ts/sociology/lectures/week-6)
 - [Week 7: Continued Longform Analysis, Paragraph Construction, Essay Components](https://andre-ye.github.io/ts/sociology/lectures/week-7)
+- [Technology & Identity: Alienation, Cyborgs, and the 21st Century](https://andre-ye.github.io/ts/sociology/lectures/technology-and-identity)
 
 ### Readings
 - Week 1 Readings
