@@ -44,24 +44,29 @@ Page 6
 - Argument for machine rights: WAIs and bots are equal to people.
 - Reliability ratings and truth in a digital age
 - The sparsity of time
-- 
+- Losing faith in religion, government - structures of society.
 
+<br>
 
+---
 
+<br>
 
+### Chapter 2
+Begins page 14
+- Attention and impression-powered economy
+- Probabilistic thinking
+- Performance and tips
+- Pills and artificial performance enhancement
+- Lack of privacy
+- Self-wounding in a gig economy
+- Lack of human agency - whatever that means.
+- Government intervention amidst innovation and technology
 
+<br>
 
+---
 
+<br>
 
-
-
-
-
-
-
-
-
-
-
-
-
+[Back to top](#)
