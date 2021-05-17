@@ -122,6 +122,11 @@ Andre Ye, 5/17/21
 - Sir Isaac Newton and gravity: the ghost in the machine of the physical world.
 - To think about how the physical universe works - mechanical and mathematical properties we can observe, test, and experiment, but there is a *thing* we know is there but cannot explain.
 - Human biology: conciosuness - how is our matter animated?, Newtonian physics: gravity.
+- This problem is less of a problem than it seems. A cyborg is a cybernetic organism, a hybrid of machine and organism, every entity as containing all language.
+
+#### Differences
+- Marx, on social constructions and relations as a technology of power
+- Haraway, a radically different notion of technology as the ability to connect, see bridges, and transgress boundaries. A path forward.
 
 <br>
 
