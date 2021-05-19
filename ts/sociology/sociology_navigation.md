@@ -21,6 +21,7 @@ Notes reflect ideas of the texts, not necessarily my own.
 - [Week 6: Longform Analysis](https://andre-ye.github.io/ts/sociology/lectures/week-6)
 - [Week 7: Continued Longform Analysis, Paragraph Construction, Essay Components](https://andre-ye.github.io/ts/sociology/lectures/week-7)
 - [Technology & Identity: Alienation, Cyborgs, and the 21st Century](https://andre-ye.github.io/ts/sociology/lectures/technology-and-identity)
+- [Week 8: Introductions and Conclusions](https://andre-ye.github.io/ts/sociology/lectures/week-8)
 
 ### Readings
 - Week 1 Readings
