@@ -10,6 +10,14 @@ Andre Ye, 5/17/21
 <br>
 
 ### Navigate
+- [Logistical Information](#logistical-information)
+- [Chapter 1](#chapter-1)
+- [Chapter 2](#chapter-2)
+- [Chapter 3](#chapter-3)
+- [Chapter 4](#chapter-4)
+- [Chapter 5](#chapter-5)
+- [Chapter 6](#chapter-6)
+- [Chapter 7](#chapter-7)
 
 <br>
 
@@ -36,9 +44,9 @@ These notes will be less concerned with specifics as they are about themes.
 Page 6
 - Contemplations in what it means to be "smart".
 - Weak Artificial Intelligence
-- Lack of privacy, microcameras and drones
+- Lack of privacy, micro-cameras and drones
 - Welga is an interesting mix of Russian and Mexican.
-- What does it mean to ahve a "real brain".
+- What does it mean to have a "real brain".
 - Personalized WAI agents.
 - Steady employment is rare; the gig economy is rampant.
 - Argument for machine rights: WAIs and bots are equal to people.
@@ -79,7 +87,7 @@ Begins page 26
 - Jobs and the workforce
   - People become "bot-nannies".
   - Competing with machinery.
-- Cynicism and optimism for the future, technology and innovation.
+- Cynicism and optimism for the future, technology, and innovation.
 - Hacking and modifications of innocuous objects for harm - weak intelligence machines as agents.
 - Money, capitalism, and financial interests.
 - Communication: subvocalization, efficiency
@@ -98,14 +106,14 @@ Begins page 36
 - Social networking
 - Communication: silent vs encrypted text
 - "ought to live" rather than "will live" or "can live".
-- Personhood and machinehood; sentience. What is true sentience?
+- Personhood and machine hood; sentience. What is true sentience?
 - Credibility in a post-truth culture, contradiction, information, reliability ratings.
 - Hacking, "rotaviruses", biology and software.
 - Pills: how humans compete with artificial intelligence.
 - Practicality and the future, the distribution of stress, care, concern, and responsibility.
 - Performance and livelihood
 - Abortion, human life.
-- Repair, rejuvination, zipping.
+- Repair, rejuvenation, zipping.
 
 <br>
 
@@ -115,6 +123,71 @@ Begins page 36
 
 ### Chapter 5
 Begins page 51
+- Consolidation of wealth, political correction
+- Deterioration of the corporation as a socioeconomic entity; the individual is paramount.
+- Death and life.
+- Human, humanoid, android.
+- An irony of acronyms.
+- Fooling humans in human vs machine.
+- Decisions and moral ease: human cloning vs thinking machines.
+- Shields vs soldiers
+- Neo-Buddhism - not about god or religion, but embracing a peaceful existence.
+- Stability and the gig economy.
+- Healing and injury, pain, internal vs superficial.
+- Consolidating humanity in the face of storms and the environment. 
+  - Surburban living: a rleic.
+- Home genetic engineering; individual enhancement and legislation.
+- Stabilization of economies.
+- Purity and funding, minimally invasive enhancements.
+- Absence of religion.
+- Human control: muscle spasms, agency over one's body.
+- Entertainment economy.
+- Digital and physical fingerprints, clearance, documentation - cameras.
+- Authorization and permission amidst agency and control.
+- Corruption and leadership
+
+<br>
+
+---
+
+<br>
+
+### Chapter 6
+Begins page 65
+- Slavery and work
+- Sentience
+- Digital connection
+- Payment for verification, expertise, the monetary value of partial knowledge.
+- Practical gods, permission, changing minds.
+
+<br>
+
+---
+
+<br>
+
+### Chapter 7
+Begins page 71
+- Evidence and fingerprints
+- The illusion of authorization and permission, trust.
+- Pills and addiction, the cycle of dependency.
+- Fear in the mind and corruption of the body.
+- Attack via the means of production - the infrastructure, rather than the people.
+- Authenticity and the weight of the natural world
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
