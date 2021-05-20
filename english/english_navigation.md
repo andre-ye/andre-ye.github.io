@@ -11,8 +11,6 @@ Taught by Amanda Zink, [Fall](#fall-quarter), [Winter](#winter-quarter), and [Sp
 
 ### Spring Quarter
 
-[Random Ideas](https://andre-ye.github.io/english/spring/random-ideas). Spontaneous thoughts I write down for live discussions, parts of tentative outlines for drafts, and other unstructured but original morsels of ideas.
-
 #### Lecture Notes
 - ["Navigating a Post Truth World" by Charles Sykes](https://andre-ye.github.io/english/spring/lecture-notes/navigating-a-post-truth-world)
 - ["The Politics of Fiction" by Elif Shafak](https://andre-ye.github.io/english/spring/lecture-notes/politics-of-fiction)
@@ -27,7 +25,7 @@ Theoretical Texts
 
 Novels/Books
 - [*Pale Horse Pale Rider* by Katherine Anne Porter](https://andre-ye.github.io/english/spring/reading-notes/pale-horse-pale-rider/pale-horse-pale-rider-notes)
-- [Station Eleven* by Emily St. John Mandel](https://andre-ye.github.io/english/spring/reading-notes/station-11/station-11)
+- [*Station Eleven* by Emily St. John Mandel](https://andre-ye.github.io/english/spring/reading-notes/station-11/station-11)
 - [*Silent Spring* by Rachel Carson](https://andre-ye.github.io/english/spring/reading-notes/silent-spring/silent-spring)
 - [*Machinehood* by S.B. Divya](https://andre-ye.github.io/english/spring/reading-notes/machinehood/machinehood)
 
