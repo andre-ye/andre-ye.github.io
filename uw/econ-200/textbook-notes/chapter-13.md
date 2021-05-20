@@ -61,7 +61,9 @@ Andre Ye, 5/15/21
   - When firms make decisions about the quantity they produce, they do not think about whether their actions will change the market price or if they will find buyers.
 
 $$\text{Total revenue} = P \times Q$$
+
 $$\text{Average revenue} = \frac{\text{Total revenue}}{\text{Quantity sold}} = \frac{P \times Q}{Q}} = P$$
+
 $$\text{Marginal revenue} = \frac{\text{Change in total revenue}}{\text{Change in quantity sold}}$$
 
 - Average revenue is equal to the price of the good for a firm selling one product.
