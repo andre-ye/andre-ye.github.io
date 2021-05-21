@@ -175,6 +175,20 @@ Begins page 71
 - Attack via the means of production - the infrastructure, rather than the people.
 - Authenticity and the weight of the natural world
 
+<br>
+
+---
+
+<br>
+
+### Chapter 8
+- Static vs dynamic
+- Time
+- The privacy and intimacy of human sexual intercourse
+- Neo-Buddhism
+- Communication and signaling, parsing
+- A world of design and creation, of multiplicity and continuity
+- Powerful search capability, managing information
 
 
 
