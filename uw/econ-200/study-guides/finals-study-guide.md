@@ -15,15 +15,7 @@ Andre Ye
 
 <br>
 
-### Chapter 17: International Trade
-
-<br>
-
----
-
-<br>
-
-### Chapter 18: Externalities
+### Navigate
 
 
 <br>
@@ -32,8 +24,8 @@ Andre Ye
 
 <br>
 
-### Chapter 12: The Costs of Production
-
+### Reminders
+- When looking at how many units a firm produces, check if the market price is below the shutdown price.
 
 <br>
 
@@ -41,7 +33,13 @@ Andre Ye
 
 <br>
 
-### Chapter 13: Perfect Competition
+#### Chapter 17: International Trade
+
+#### Chapter 18: Externalities
+
+#### Chapter 12: The Costs of Production
+
+#### Chapter 13: Perfect Competition
 
 <br>
 
