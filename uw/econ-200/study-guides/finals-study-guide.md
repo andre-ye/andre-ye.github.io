@@ -40,6 +40,13 @@ Andre Ye
 #### Chapter 12: The Costs of Production
 
 #### Chapter 13: Perfect Competition
+Equations:
+- Profit maximizing point occurs at $$\text{MR} = \text{MC}$$
+- Shut down point in short run is $$\text{Price} < \text{min} \text{AVC}$$
+- Short run supply curve is the the marignal cost curve above the shutdown point
+- Long run equilibrium price is $\text{Price} = \min \text{ATC}$$ (assuming identical firm cost structure)
+- Profit can be written as $$Q\left(P - \text{ATC}\right)$$.
+- In the long run, profit is zero.
 
 <br>
 
