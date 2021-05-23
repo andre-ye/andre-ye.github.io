@@ -191,7 +191,27 @@ Begins page 71
 - Powerful search capability, managing information
 
 
+<br>
 
+---
+
+<br>
+
+### Chapter 9
+- Knowledge and knowingness
+- Data publicity
+
+<br>
+
+---
+
+<br>
+
+### Chapter 10
+- Clothing and image, presentation
+- Expected vs unexpcted
+- Visibility
+- Evasion, capture, captivity
 
 
 
