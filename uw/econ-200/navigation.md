@@ -23,6 +23,7 @@ Taught by Melissa Knox.
 - [Chapter 12: "The Costs of Production"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-12)
 - [Chapter 13: "Perfect Competition"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-13)
 - [Chapter 14: "Monopoly"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-14)
+- [Chapter 15: "Monopolistic Competition and Oligopoly"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-15.)
 - [Chapter 17: "International Trade"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-17)
 - [Chapter 18: "Externalities"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-18)
 
