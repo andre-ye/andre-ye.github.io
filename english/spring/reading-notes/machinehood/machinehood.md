@@ -227,7 +227,31 @@ Begins page 71
 - God amidst a technological world
 - Smoke and the feeling of being, technology and artificiality.
 - Triumph and achievement in humanity's collective advances.
+- Explicit vs indirect violence
+- Human reasoning, WAI speed and data recall.
+- Help and aid
+- God and faith in something further
 
+<br>
+
+---
+
+<br>
+
+### Chapter 12
+- Neo-Buddhism: action and apathy.
+- Selection on genetics
+- Extraction of information
+- Genetic determinism, "bad genes"
+
+<br>
+
+---
+
+<br>
+
+### Chapter 13
+- 
 
 
 
