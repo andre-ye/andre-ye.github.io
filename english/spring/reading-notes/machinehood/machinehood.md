@@ -213,9 +213,20 @@ Begins page 71
 - Visibility
 - Evasion, capture, captivity
 
+<br>
 
+---
 
+<br>
 
+### Chapter 11
+- Generalization vs specificity
+- Speed of transaction and transportation
+- Childish joy and happiness
+- Knowledge and knowing transpiration
+- God amidst a technological world
+- Smoke and the feeling of being, technology and artificiality.
+- Triumph and achievement in humanity's collective advances.
 
 
 
