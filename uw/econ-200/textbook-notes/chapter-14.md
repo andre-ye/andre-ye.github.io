@@ -63,12 +63,12 @@ Andre Ye, 5/22/21
   - *Quantity effect*: increase in total revenue due to money brought in by the sale of more units.
   - *Price effect*: decrease in total revenue due to lower price of an increase in quantity.
 - Price effect works in the opposite direction of quantity effect, decreasing revenue.
-  - In a monpoly market, mareginal revenue is always less than price.
+  - In a monopoly market, mareginal revenue is always less than price.
 - Marginal revenue curve lies below the demand cruve because marginal revenue is always less than the price.
 - **Revenue maximizing-quantity: the point at which the MR curve crosses the $$x$$-axis.**
 - Marginal and average revenue slope downward for the monopolist.
 - Profit-optimizing quantity is when the marginal revenue intersect marginal cost.
-- In a competitive market, marginal revenue $$=$$ price. IN a monopoly market, $$\text{price} > \Delta\text{revenue}$$; price is greater than marginal cost at the optimal production point.
+- In a competitive market, marginal revenue $$=$$ price. In a monopoly market, $$\text{price} > \Delta\text{revenue}$$; price is greater than marginal cost at the optimal production point.
   - Monopolies can make positive economic profits in the long run.
   - In a monopoly market, other firms cannot enter the market. Monopolist is able to maintain a price higher than ATC.
   
@@ -79,8 +79,39 @@ Andre Ye, 5/22/21
 <br>
 
 ### Problems with Monopoly and Public Policy Solutions
+- Monopolies have welfare costs.
 
+### The Welfare Costs of Monopoly
+- Monopoly's ability to keep quantity low and prices high hurts society and consumrs.
+- Monopoly is inefficient.
 
+### Public Policy Responses
+- Policymakers have developed many policy responses to monopolies.
+
+**Antitrust laws**
+- Trusts - massive corporations that dominate entire industries.
+- Breaking up corporations percieved to be engaging in anti-competitive behavior.
+- Block mergers.
+- Antitrust action could break up a natural monopoly.
+
+**Public ownership**
+- Natural monopolies pose a problem for policymakers.
+- Monopolist can achieve lower costs of production than multiple competing producers would.
+- A natural monopoly still chooses to produce at the profit maximizing quantity, which is inefficient and causes deadweight loss.
+- Governments can run natural monopolies as public agencies.
+
+**Regulation**
+- Governments can allow private monopolies to exist but cap prices.
+- Firms have an incentive to avoid giving regulators useful information, though.
+
+**Vertical splits**
+- Split an industry "vertically" to introduce competitions into different parts of it.
+
+<br>
+
+---
+
+<br>
 
 
 
