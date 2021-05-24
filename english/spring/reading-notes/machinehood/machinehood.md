@@ -251,7 +251,8 @@ Begins page 71
 <br>
 
 ### Chapter 13
-- 
+- Peace, compassion, sacrifice, death, war.
+- Eko-Yi station.
 
 
 
