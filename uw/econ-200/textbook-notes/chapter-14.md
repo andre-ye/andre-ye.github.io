@@ -92,11 +92,11 @@ Andre Ye, 5/22/21
 ### Problems with Monopoly and Public Policy Solutions
 - Monopolies have welfare costs.
 
-### The Welfare Costs of Monopoly
+#### The Welfare Costs of Monopoly
 - Monopoly's ability to keep quantity low and prices high hurts society and consumers.
 - Monopoly is inefficient.
 
-### Public Policy Responses
+#### Public Policy Responses
 - Policymakers have developed many policy responses to monopolies.
 
 **Antitrust laws**
