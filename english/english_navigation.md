@@ -23,11 +23,12 @@ Theoretical Texts
 - ["Climate and the Environmental Humanities" by Michael Ziser](https://andre-ye.github.io/english/spring/reading-notes/theory/climate-and-the-environmental-humanities)
 - ["A Cyborg Manifesto: Science, Technology, and Socialist-Feminism in the Late Twentieth Century" by Donna Haraway](https://andre-ye.github.io/english/spring/reading-notes/theory/cyborg-manifesto)
 
-Novels/Books
+Short Stories, Novels, and Books
 - [*Pale Horse Pale Rider* by Katherine Anne Porter](https://andre-ye.github.io/english/spring/reading-notes/pale-horse-pale-rider/pale-horse-pale-rider-notes)
 - [*Station Eleven* by Emily St. John Mandel](https://andre-ye.github.io/english/spring/reading-notes/station-11/station-11)
 - [*Silent Spring* by Rachel Carson](https://andre-ye.github.io/english/spring/reading-notes/silent-spring/silent-spring)
 - [*Machinehood* by S.B. Divya](https://andre-ye.github.io/english/spring/reading-notes/machinehood/machinehood)
+- ["Emergency Skin" by N.K. Jemison](https://andre-ye.github.io/english/spring/reading-notes/emergency-skin)
 
 <br>
 
