@@ -253,8 +253,38 @@ Begins page 71
 ### Chapter 13
 - Peace, compassion, sacrifice, death, war.
 - Eko-Yi station.
+- Data and life
+- Exclusivity of machine rights and nonviolence
 
+<br>
 
+---
+
+<br>
+
+### Chapter 14
+- Protests
+- Protection of human labor
+- Violent protest - changing the means of violence in a life-abundant world.
+- Rushing science.
+
+<br>
+
+---
+
+<br>
+
+### Chapter 15
+- Distractible humans and focus-necessary tasks
+- Ethics and authorization
+
+<br>
+
+---
+
+<br>
+
+### Chapter 16
 
 
 
