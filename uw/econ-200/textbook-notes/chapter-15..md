@@ -93,7 +93,9 @@ Andre Ye, 5/24/21
 - Advertising can both be informative and inaccurate.
   - Decreases customers' willingness to substitute between similar products.
 - **Asymmetric information**: firms no more about the true quality of their products than consumers do.
--
+- **Advertising**: The more expensive advertising is, the more consumers assume the firm is confident i has a good product.
+- **Branding**.
+
 
 <br>
 
