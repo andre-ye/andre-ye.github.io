@@ -1,0 +1,105 @@
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+</head>
+
+[Home](https://andre-ye.github.io) > [ECON 200 Navigation](https://andre-ye.github.io/uw/econ-200/navigation) > [Textbook Notes](https://andre-ye.github.io/uw/econ-200/navigation#textbook-notes) > Chapter 15: "Monopolistic Competition and Oligopoly"
+
+## Chapter 15: "Monopolistic Competition and Oligopoly"
+Andre Ye, 5/23/21
+
+<br>
+
+---
+
+<br>
+
+### Navigate
+
+<br>
+
+---
+
+<br>
+
+### What Sort of Market?
+- Oligopoly and monopolistic competition market structures are common in the real world.
+
+#### Oligopoly and Monopolistic Competition
+- **Oligopoly** - a market with onnly a few firms.
+  - Products may/not be standardizedd but are similar enough such that the firms compete with each other.
+- Interactions between firms and rivals impacts success.
+- In oligopoly, it is important to keep your eye on competitors.
+- Oligopolies have existence of barriers to entry. There are not no barriers to entry, but not monopoly-level barriers.
+- **Monopolistic competition** - a market with many firms that sell goods & services that are similar but slightly different.
+- In monopoly, a product has no close substitutes. 
+- Monopolistic competition markets, between perfect competition (all products are standardized) and monopoly.
+- Products are slightly different; consumers can pay a little bit more, but if the price is too large, they will choose a substite.
+- A firm can have a monopoly, in a limited sense.
+- Oligopoly is about *number of firms*.
+  - Can exist when products are standardized.
+- Monopolistic competition is about *variety of products*.
+  - Can exist with many small firms.
+
+<br>
+
+---
+
+<br>
+
+### Monopolistic Competition
+- **Product differ estimation**: firms must offer goods that are similar to competitors' products, but are more attractive.
+
+#### Monopolistic Competition in the Short Run
+- Product differentiation allows firms in monopolisitc competitive markets to behave like a monopolist in the short run.
+- When monopolistically competitive firms behave like monopolists:
+  1. Firms face a downward-facing demand curve; a firm cannot adjust its price without changing quantity consumers demand.
+  2. Firms face a u-shaped ATC curve.
+  3. Profit-maximizing quantity is where $$MR = MC$$. Price is the corresponding point on the demand curve.
+
+#### Monopolistic Competition in the Long Run
+- Monopolistic competitive firms face a problem monopolists do not - other firms can enter the market.
+- The availability of substitute goods is a determinant of demand. Demand curve for original firm shifts leftwards.
+- In the long run, monopolistically competitive market firms face the same profit situation as in a perfectly competitive market.
+  - Profits go to zero.
+- Entry-exit continues to shift the demand curve left or right until ATC touches the demand curve at the point where $$MR = MC$$.
+
+| Characteristic | Perfect Competition | Monopoly | Monopolistic Competition |
+| --- | --- | --- | --- |
+| How many firms? | Many firms | One firm | Many firms |
+| Price taker or price maker? | Price taker | Price maker | Price maker |
+| Marginal revenue? | $$MR = \text{Price}$$ | $$MR < \text{Price | $$MR < \text{Price |
+| Profit-maximizing quantity occurs at | $$MR = MC$$ | $$MR = MC$$ | $$MR = MC$$ |
+| Can earn economic profits in short run? | Yes | Yes | Yes |
+| Can earn economic profits in the long run? | No | Yes | No |
+| Quantity is efficient? | Yes | No | No |
+
+- Monopolistically competitive firms operate at a smaller-than-efficient scale.
+  - Optimal production point in long run is when ATC curve touches demand curve.
+  - This will always be on the section of the ATC curve that is down-sloping
+  - *Efficient scale* - when firms produce a ATC-minimizing quantity.
+  - Monopolistically competitive firms maximize profits by operating at a smaller scale; it has excess capacity.
+
+<br>
+
+---
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
