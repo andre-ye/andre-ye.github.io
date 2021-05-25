@@ -286,7 +286,38 @@ Begins page 71
 
 ### Chapter 16
 
+<br>
 
+---
+
+<br>
+
+
+### Chapter 17
+
+<br>
+
+---
+
+<br>
+
+
+### Chapter 18
+
+<br>
+
+---
+
+<br>
+
+
+### Chapter 19
+
+<br>
+
+---
+
+<br>
 
 
 
