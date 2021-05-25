@@ -16,6 +16,19 @@ Andre Ye, 5/24/21
 <br>
 
 ### Navigate
+- [What Sort of Market?](#what-sort-of-market-)
+  * [Oligopoly and Monopolistic Competition](#oligopoly-and-monopolistic-competition)
+- [Monopolistic Competition](#monopolistic-competition)
+  * [Monopolistic Competition in the Short Run](#monopolistic-competition-in-the-short-run)
+  * [Monopolistic Competition in the Long Run](#monopolistic-competition-in-the-long-run)
+  * [The Welfare Costs of Monopolistic Competition](#the-welfare-costs-of-monopolistic-competition)
+  * [Product Differentiation, Advertising, and Branding](#product-differentiation--advertising--and-branding)
+- [Oligopoly](#oligopoly)
+  * [Oligopolies in Competition](#oligopolies-in-competition)
+  * [Duopoly](#duopoly)
+  * [Three or More Firms](#three-or-more-firms)
+  * [Compete or Collude](#compete-or-collude)
+  * [Oligopoly and Public Policy](#oligopoly-and-public-policy)
 
 <br>
 
@@ -27,15 +40,15 @@ Andre Ye, 5/24/21
 - Oligopoly and monopolistic competition market structures are common in the real world.
 
 #### Oligopoly and Monopolistic Competition
-- **Oligopoly** - a market with onnly a few firms.
-  - Products may/not be standardizedd but are similar enough such that the firms compete with each other.
-- Interactions between firms and rivals impacts success.
-- In oligopoly, it is important to keep your eye on competitors.
-- Oligopolies have existence of barriers to entry. There are not no barriers to entry, but not monopoly-level barriers.
+- **Oligopoly** - a market with only a few firms.
+  - Products may/not be standardized but are similar enough such that the firms compete with each other.
+- Interactions between firms and rivals impact success.
+- In an oligopoly, it is important to keep your eye on competitors.
+- Oligopolies have the existence of barriers to entry. There are not any barriers to entry, but not monopoly-level barriers.
 - **Monopolistic competition** - a market with many firms that sell goods & services that are similar but slightly different.
-- In monopoly, a product has no close substitutes. 
+- In a monopoly, a product has no close substitutes. 
 - Monopolistic competition markets, between perfect competition (all products are standardized) and monopoly.
-- Products are slightly different; consumers can pay a little bit more, but if the price is too large, they will choose a substite.
+- Products are slightly different; consumers can pay a little bit more, but if the price is too large, they will choose a substitute.
 - A firm can have a monopoly, in a limited sense.
 - Oligopoly is about *number of firms*.
   - Can exist when products are standardized.
@@ -49,18 +62,18 @@ Andre Ye, 5/24/21
 <br>
 
 ### Monopolistic Competition
-- **Product differ estimation**: firms must offer goods that are similar to competitors' products, but are more attractive.
+- **Product differ estimation**: firms must offer goods that are similar to competitors' products but are more attractive.
 
 #### Monopolistic Competition in the Short Run
-- Product differentiation allows firms in monopolisitc competitive markets to behave like a monopolist in the short run.
+- Product differentiation allows firms in monopolistic competitive markets to behave like a monopolist in the short run.
 - When monopolistically competitive firms behave like monopolists:
-  1. Firms face a downward-facing demand curve; a firm cannot adjust its price without changing quantity consumers demand.
+  1. Firms face a downward-facing demand curve; a firm cannot adjust its price without changing the quantity consumers demand.
   2. Firms face a u-shaped ATC curve.
   3. Profit-maximizing quantity is where $$MR = MC$$. Price is the corresponding point on the demand curve.
 
 #### Monopolistic Competition in the Long Run
 - Monopolistic competitive firms face a problem monopolists do not - other firms can enter the market.
-- The availability of substitute goods is a determinant of demand. Demand curve for original firm shifts leftwards.
+- The availability of substitute goods is a determinant of demand. The demand curve for the original firm shifts leftwards.
 - In the long run, monopolistically competitive market firms face the same profit situation as in a perfectly competitive market.
   - Profits go to zero.
 - Entry-exit continues to shift the demand curve left or right until ATC touches the demand curve at the point where $$MR = MC$$.
@@ -75,10 +88,10 @@ Andre Ye, 5/24/21
 | Can earn economic profits in the long run? | No | Yes | No |
 | Quantity is efficient? | Yes | No | No |
 
-- Monopolistically competitive firms operate at a smaller-than-efficient scale.
-  - Optimal production point in long run is when ATC curve touches demand curve.
+- monopolistically competitive firms operate at a smaller-than-efficient scale.
+  - Optimal production point in the long run is when the ATC curve touches the demand curve.
   - This will always be on the section of the ATC curve that is down-sloping
-  - *Efficient scale* - when firms produce a ATC-minimizing quantity.
+  - *Efficient scale* - when firms produce an ATC-minimizing quantity.
   - Monopolistically competitive firms maximize profits by operating at a smaller scale; it has excess capacity.
 
 - Firms need to respond to competitors entering the market with continual product differentiation.
@@ -93,7 +106,7 @@ Andre Ye, 5/24/21
 - Advertising can both be informative and inaccurate.
   - Decreases customers' willingness to substitute between similar products.
 - **Asymmetric information**: firms no more about the true quality of their products than consumers do.
-- **Advertising**: The more expensive advertising is, the more consumers assume the firm is confident i has a good product.
+- **Advertising**: The more expensive advertising is, the more consumers assume the firm is confident it has a good product.
 - **Branding**.
 
 
@@ -105,20 +118,20 @@ Andre Ye, 5/24/21
 
 ### Oligopoly
 - Firms in an oligopoly compete with a few identifiable competition firms.
-- Oligopolists make strategic deciisons about price and quantity.
+- Oligopolists make strategic decisions about price and quantity.
 
 #### Oligopolies in Competition
 - *Duopoly* - oligopoly with two firms.
 
 #### Duopoly
-- In a duopoly, the two firms could agree to act as a joint monopolist.
+- In a duopoly, the two firms could agree to act as joint monopolists.
 - Competition between oligopolists drives price and profits down to below the monopoly level.
 Oligopolistic competition does not necessarily drive profits down to the efficient level, as perfect competition does.
 - When $$\text{quantity effect} > \text{price effect}$$, an increase in output increases profit.
   - Otherwise, the firm has no incentive to increase output.
 
 #### Three or More Firms
-- Smaller increases in total increases in total quantity in a three+-firm mrket have a smaller downward effect on market price.
+- Smaller increases in total increases in total quantity in a three+-firm market have a smaller downward effect on market price.
 - An oligopolist will continue to increase output up to the point where $\text{quantity effect} = \text{price effect}$$.
 - Oligopolist production decisions affect the profits of other firms.
 
@@ -132,8 +145,8 @@ Oligopolistic competition does not necessarily drive profits down to the efficie
 
 #### Oligopoly and Public Policy
 - It is illegal for an oligopolist to offer to collude.
-- In a monopoly, there is adeadweight loss.
-  - Monopoly and collusion deadweight loss is identical.
+- In a monopoly, there is a deadweight loss.
+  - Monopoly and collusion deadweight loss are identical.
 
 <br>
 
