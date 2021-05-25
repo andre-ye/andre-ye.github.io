@@ -82,7 +82,7 @@ Andre Ye, 5/24/21
 | --- | --- | --- | --- |
 | How many firms? | Many firms | One firm | Many firms |
 | Price taker or price maker? | Price taker | Price maker | Price maker |
-| Marginal revenue? | $$MR = \text{Price}$$ | $$MR < \text{Price | $$MR < \text{Price |
+| Marginal revenue? | $$MR = \text{Price}$$ | $$MR < \text{Price}$$ | $$MR < \text{Price}$$ |
 | Profit-maximizing quantity occurs at | $$MR = MC$$ | $$MR = MC$$ | $$MR = MC$$ |
 | Can earn economic profits in short run? | Yes | Yes | Yes |
 | Can earn economic profits in the long run? | No | Yes | No |
