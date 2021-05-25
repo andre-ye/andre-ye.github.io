@@ -287,6 +287,7 @@ Begins page 71
 ### Chapter 16
 - Skimming and comprehending
 - Analysis
+- Institutional shut-down
 
 <br>
 
@@ -296,6 +297,10 @@ Begins page 71
 
 
 ### Chapter 17
+- Eko-Yi: One.
+- Exploitation and conciousness.
+- Animal conciousness and machine intelligence
+- Necessity of pills
 
 <br>
 
@@ -303,8 +308,11 @@ Begins page 71
 
 <br>
 
-
 ### Chapter 18
+- Consent and exploitation
+- Conceptions of harmony
+- Addiction
+- 
 
 <br>
 
@@ -314,6 +322,9 @@ Begins page 71
 
 
 ### Chapter 19
+- Information
+- Augmented mystery
+- Bread and circuses, food vs entertainment.
 
 <br>
 
