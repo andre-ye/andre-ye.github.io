@@ -285,6 +285,8 @@ Begins page 71
 <br>
 
 ### Chapter 16
+- Skimming and comprehending
+- Analysis
 
 <br>
 
