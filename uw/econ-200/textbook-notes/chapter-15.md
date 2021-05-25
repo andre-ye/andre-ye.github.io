@@ -103,19 +103,42 @@ Andre Ye, 5/24/21
 
 <br>
 
+### Oligopoly
+- Firms in an oligopoly compete with a few identifiable competition firms.
+- Oligopolists make strategic deciisons about price and quantity.
 
+#### Oligopolies in Competition
+- *Duopoly* - oligopoly with two firms.
 
+#### Duopoly
+- In a duopoly, the two firms could agree to act as a joint monopolist.
+- Competition between oligopolists drives price and profits down to below the monopoly level.
+Oligopolistic competition does not necessarily drive profits down to the efficient level, as perfect competition does.
+- When $$\text{quantity effect} > \text{price effect}$$, an increase in output increases profit.
+  - Otherwise, the firm has no incentive to increase output.
 
+#### Three or More Firms
+- Smaller increases in total increases in total quantity in a three+-firm mrket have a smaller downward effect on market price.
+- An oligopolist will continue to increase output up to the point where $\text{quantity effect} = \text{price effect}$$.
+- Oligopolist production decisions affect the profits of other firms.
 
+#### Compete or Collude
+- **Collusion**: the act of working together to make decisions about price and quantity.
+- The dominant strategy is to compete.
+- No player has an incentive to break the equilibrium.
+- **Cartel** - a number of firms that collude to make collective production decisions about quantities or prices.
+- It is in the long-term interest to collude rather than compete.
+- Cartels are usually illegal.
 
+#### Oligopoly and Public Policy
+- It is illegal for an oligopolist to offer to collude.
+- In a monopoly, there is adeadweight loss.
+  - Monopoly and collusion deadweight loss is identical.
 
+<br>
 
+---
 
+<br>
 
-
-
-
-
-
-
-
+[Back to top](#)
