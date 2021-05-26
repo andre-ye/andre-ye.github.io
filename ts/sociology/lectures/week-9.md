@@ -69,4 +69,57 @@ Andre Ye, 5/24/21
 
 <br>
 
+### Revision: The Heart of Writing
+
+#### What is it?
+- Process of strengthening a text
+  - Clarify ideas
+    - Claim
+    - Organization
+    - Transitions
+  - Clarifying writing
+    - Style / voice
+    - Diction
+    - Concision
+
+#### A multipart process
+- Macro revisions
+  - Thesis
+  - Section organization
+  - Paragraph order
+  - Transitions
+  - New writing
+- Micro revisions
+  - Sentence structure
+  - Diction
+  - Concision
+  - Style / voice
+  - Adjectives / adverbs
+- Editing
+  - Spelling
+  - Grammar
+  - Typographical errors
+  - Errata
+  - Footnotes
+
+#### Revise your thesis
+- For God's sake, **revise your thesis!!!**
+- Writing is thinking.
+  - Conclusions have the clearest articulation of claims.
+    - Make this claim your introduction.
+  - Revise your thesis to reflect the specificity of your analysis
+  - Think of the structure of your essay in your thesis
+  - Don't be afraid of a major reworking.
+  
+#### Micro Reworkings
+- Topic sentences
+- Sentence level corrections - clarity / flow / style / voicing
+- Paragraphs are mini-essays themselves
+
+<br>
+
+---
+
+<br>
+
 [Back to top](#)
