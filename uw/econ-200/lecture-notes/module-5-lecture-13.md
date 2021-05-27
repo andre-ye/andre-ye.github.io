@@ -27,4 +27,48 @@ Andre Ye, 5/18/21
 
 <br>
 
+### The Effects of Entry on Economic Profit
+- Firms can leave the market in the long run if they are not making a positive profit in the long run.
+- When firms make positive profits, other firms enter the market to benefit from positive profits. The supply curve shifts until the marginal firm makes no profit.
+
+<br>
+
+---
+
+<br>
+
+### The Effects of Economic Losses
+- Long run equilibrium price occurs at the minimum of the ATC curve.
+  - Intersection of demand and supply curves.
+- When demand decreases, economic profit becomes negative and firms exit.
+- Supply falls again; the price rises again back to the break-even equilibrium price.
+
+<br>
+
+---
+
+<br>
+
+### Long-Run Supply
+- Long-run market supply curve located at the minimum point on the ATC curve, is flat.
+- Firms will adjust; in the long run, the supply curve is flat.
+- Increasing cost industry: some factor of production cannot be replicated (e.g. natural resources)
+- Decreasing cost industry: additional firms generate profits for existing firms.
+
+<br>
+
+---
+
+<br>
+
+### Types of Efficiency
+- **Productive efficiency** - situation in which a good or service is produced at the lowest possible cost.
+- **Allocative efficiency** - every good or service is produced up to the point where the last unit provides a marginal benefit equal to the marginal cost.
+
+<br>
+
+---
+
+<br>
+
 [Back to top](#)
