@@ -332,9 +332,41 @@ Begins page 71
 
 <br>
 
+### Chapter 20
+- Truth and interests
+- Victimhood and infection as power
 
+<br>
 
+---
 
+<br>
 
+### Chapter 21
+- The Panopticon; surveillance as discipline.
+- Globalized culture; warring nations and nationality.
+
+<br>
+
+---
+
+<br>
+
+### Chapter 22
+- Drugs vs pills, enhancement vs addiction - where does the line get drawn?
+
+<br>
+
+---
+
+<br>
+
+### Chapter 23
+
+<br>
+
+---
+
+<br>
 
 [Back to top](#)
