@@ -34,8 +34,28 @@ Andre Ye
 <br>
 
 #### Chapter 17: International Trade
+- Comparative advantage comes from natural resources and climate, factor endowment, or technology.
+- *Autarky*: no trade, a self-contained economy.
+- If $$\text{autarky domestic price} > \text{world price}$$, the product is imported. Otherwise, it is exported.
+- *Tariff*: tax on imported goods. Causes deadweight loss and is inefficient. Used to protect domestic producers at the expense of consumer surplus. Government receives tax revenue.
+- *Import quota*: limit on how much of a particular good can be imported. Foreign agents benefit from the right to import the good (money that would have been tax revenue).
 
 #### Chapter 18: Externalities
+- Types of costs
+  - *Private costs*: costs that fall directly on the economic decision-maker.
+  - *External costs*: uncompensated costs imposed on someone other than the person who caused them.
+  - *Social cost*: sum of private costs and external costs.
+- Types of externalities
+  - *Negative externality*: an external cost. Problem of "too much" (externality results in more production/consumpiton than is efficient).
+  - *Positive externality*: an external benefit. Problem of "too little" (externality results in less production/consumption than is efficient).
+  - *Network externality*: the effect the user of a good has on the value of that good for others. People help or harm others simply by participating in a group.
+  - *Production externality*: externality that occurs when a good or service is being produced.
+  - *Consumption externality*: externality that occurs when a good or service is being consumed.
+- Externalities are one of the most common causes of market failure.
+- *Coase theorem*: individuals can reach an efficient equilibrium through private trades, even in the presence of an externality. The distribution of surplus may not be "fair", but the solution can be efficient in terms of maximizing total surplus.
+- *Pigovian tax/subsidy*: a tax/subsidy meant to counter/capture the effect of a negative/positive externality. Government receives tax revenue.
+- *Quota*: limit the consumption or production of a good to its socially optimal quantity. Not efficient if given to each individual/firm without tradable allowances.
+- *Tradable allowances*: the right to produce or consume a product under a quota, which can be bought and sold. This allows the market to "sort itself out". Moneyt hat would have gone to the governmnet in the form of tax revenue goes to private parties.
 
 #### Chapter 12: The Costs of Production
 
