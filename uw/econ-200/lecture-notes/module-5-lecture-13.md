@@ -9,14 +9,6 @@ Andre Ye, 5/18/21
 
 <br>
 
-### Navigate
-
-<br>
-
----
-
-<br>
-
 ### Short Run Responses to Perfectly Competitive Firms to Losses
 - A firm in a perfectly competitive market making a loss has two options:
   1. Continue to produce
@@ -35,10 +27,4 @@ Andre Ye, 5/18/21
 
 <br>
 
-
-
-
-
-
-
-
+[Back to top](#)
