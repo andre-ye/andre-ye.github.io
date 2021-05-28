@@ -48,6 +48,7 @@ Taught by Melissa Knox.
   - [Lecture 13](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-5-lecture-13) - Long-run firm optimization
 - Module 6: Monopoly and Imperfect Competition
   - [Lecture 14](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-6-lecture-14) - Monopolies
+  - [Lecture 15](https://andre-ye.github.io/uw/econ-200/lecture-notes/module-6-lecture-16) - Monopolistic Competition
 
 <br>
 
