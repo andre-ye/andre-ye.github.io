@@ -11,7 +11,8 @@ Taught by Melissa Knox.
 <br>
 
 ### Study Guides
-- [Exam 1 Study Guide (Chapters 1-6)](https://andre-ye.github.io/uw/econ-200/study-guides/midterm-study-guide)
+- [Exam 1 Study Guide (Modules 1-2)](https://andre-ye.github.io/uw/econ-200/study-guides/midterm-study-guide)
+- [Exam 2 Study Guide (Modules 3-6)](https://andre-ye.github.io/uw/econ-200/study-guides/finals-study-guide)
 
 ### Textbook Notes
 - [Chapter 1: "Economics and Life"](https://andre-ye.github.io/uw/econ-200/textbook-notes/chapter-1)
