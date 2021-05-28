@@ -26,6 +26,7 @@ Andre Ye
 
 ### Reminders
 - When looking at how many units a firm produces, check if the market price is below the shutdown price.
+- When calculating marginal [anything], make sure to consider the change in unit and divide by it - do not assume it is 1.
 
 <br>
 
