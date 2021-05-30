@@ -362,6 +362,69 @@ Begins page 71
 <br>
 
 ### Chapter 23
+- Scarcity
+- WAI/intelligence as friend
+
+<br>
+
+---
+
+<br>
+
+### Chapter 24
+- Truth as advantage
+- Erasing boundaries between different intelligences; spectrums rather than categories
+- Physical vs organic
+- Mind vs body
+
+<br>
+
+---
+
+<br>
+
+### Chapter 25
+- Forum
+- Communication
+- Pill dependency
+- Blurred lines between morality
+
+<br>
+
+---
+
+<br>
+
+### Chapter 26
+- Company and loneliness of the human mind
+- Some animals are more equal than others.
+- Annihilation and destruction.
+- Goodness and the path towards perfection
+- Ultimate control of the mind and body
+
+<br>
+
+---
+
+<br>
+
+### Chapter 27
+
+<br>
+
+---
+
+<br>
+
+### Chapter 28
+
+<br>
+
+---
+
+<br>
+
+### Chapter 29
 
 <br>
 
