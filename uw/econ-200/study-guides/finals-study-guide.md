@@ -78,8 +78,6 @@ $$P > MC \text{ at optimal production point}$$
 
 $$MR < P \text{ (always)}$$
 
-Monopolistic Competition
-
 Three Markets Table
 
 | Characteristic | Perfect Competition | Monopoly | Monopolistic Competition |
