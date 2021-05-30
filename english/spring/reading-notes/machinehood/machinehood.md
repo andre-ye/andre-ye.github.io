@@ -18,6 +18,28 @@ Andre Ye, 5/17/21
 - [Chapter 5](#chapter-5)
 - [Chapter 6](#chapter-6)
 - [Chapter 7](#chapter-7)
+- [Chapter 8](#chapter-8)
+- [Chapter 9](#chapter-9)
+- [Chapter 10](#chapter-10)
+- [Chapter 11](#chapter-11)
+- [Chapter 12](#chapter-12)
+- [Chapter 13](#chapter-13)
+- [Chapter 14](#chapter-14)
+- [Chapter 15](#chapter-15)
+- [Chapter 16](#chapter-16)
+- [Chapter 17](#chapter-17)
+- [Chapter 18](#chapter-18)
+- [Chapter 19](#chapter-19)
+- [Chapter 20](#chapter-20)
+- [Chapter 21](#chapter-21)
+- [Chapter 22](#chapter-22)
+- [Chapter 23](#chapter-23)
+- [Chapter 24](#chapter-24)
+- [Chapter 25](#chapter-25)
+- [Chapter 26](#chapter-26)
+- [Chapter 27](#chapter-27)
+- [Chapter 28](#chapter-28)
+- [Chapter 29](#chapter-29)
 
 <br>
 
@@ -44,7 +66,7 @@ These notes will be less concerned with specifics as they are about themes.
 Page 6
 - Contemplations in what it means to be "smart".
 - Weak Artificial Intelligence
-- Lack of privacy, micro-cameras and drones
+- Lack of privacy, micro-cameras, and drones
 - Welga is an interesting mix of Russian and Mexican.
 - What does it mean to have a "real brain".
 - Personalized WAI agents.
@@ -209,7 +231,7 @@ Begins page 71
 
 ### Chapter 10
 - Clothing and image, presentation
-- Expected vs unexpcted
+- Expected vs unexpected
 - Visibility
 - Evasion, capture, captivity
 
@@ -225,10 +247,10 @@ Begins page 71
 - Childish joy and happiness
 - Knowledge and knowing transpiration
 - God amidst a technological world
-- Smoke and the feeling of being, technology and artificiality.
+- Smoke and the feeling of being, technology, and artificiality.
 - Triumph and achievement in humanity's collective advances.
 - Explicit vs indirect violence
-- Human reasoning, WAI speed and data recall.
+- Human reasoning, WAI speed, and data recall.
 - Help and aid
 - God and faith in something further
 
@@ -298,8 +320,8 @@ Begins page 71
 
 ### Chapter 17
 - Eko-Yi: One.
-- Exploitation and conciousness.
-- Animal conciousness and machine intelligence
+- Exploitation and consciousness.
+- Animal consciousness and machine intelligence
 - Necessity of pills
 
 <br>
@@ -343,7 +365,7 @@ Begins page 71
 <br>
 
 ### Chapter 21
-- The Panopticon; surveillance as discipline.
+- The Panopticon; surveillance as a discipline.
 - Globalized culture; warring nations and nationality.
 
 <br>
@@ -372,8 +394,8 @@ Begins page 71
 <br>
 
 ### Chapter 24
-- Truth as advantage
-- Erasing boundaries between different intelligences; spectrums rather than categories
+- Truth as an advantage
+- Erasing boundaries between different bits of intelligence; spectrums rather than categories
 - Physical vs organic
 - Mind vs body
 
@@ -409,6 +431,13 @@ Begins page 71
 <br>
 
 ### Chapter 27
+- Deities and the divine
+- Nuances of violence and evil
+- Freeing from dependency
+- Fear as a rule
+- Teaching and compassion vs paternalism
+- Zealot and visionary
+- Spiritualism amidst technological advancement
 
 <br>
 
@@ -425,6 +454,10 @@ Begins page 71
 <br>
 
 ### Chapter 29
+- The permeability of nationality.
+- Augmentation
+- Terrorism
+- Ghosts and death
 
 <br>
 
