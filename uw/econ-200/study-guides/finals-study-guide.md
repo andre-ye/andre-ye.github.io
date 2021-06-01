@@ -35,6 +35,9 @@ Andre Ye
 ### Reminders
 - When looking at how many units a firm produces, check if the market price is below the shutdown price.
 - When calculating marginal [anything], make sure to consider the change in the unit and divide by it - do not assume it is 1.
+- Always check units (millions, thousands, etc.)
+- Take time to explain out the rules and formulas. Explain more than less to hit all the desired points.
+- Look at the textbook for key points in conceptual questions if time.
 
 <br>
 
