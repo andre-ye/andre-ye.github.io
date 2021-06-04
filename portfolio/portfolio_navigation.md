@@ -44,6 +44,7 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 - [Fall Quarter Journal Club](https://andre-ye.github.io/biology/winter-quarter/portfolio/fall-bio-jc.pdf){:target="_blank"} - slides from a presentation on the paper "A Neural Algorithm for a Fundamental Computing Problem" by Dasgupta et al.
 - [Winter Quarter Journal Club](https://andre-ye.github.io/biology/winter-quarter/portfolio/winter-bio-jc.pdf){:target="_blank"} - slides from a presentation on the paper "Improved Protein Structure Prediction Using Potentials from Deep Learning" by Senior et al. @ DeepMind.
 - [Winter Quarter Policy Paper - "Proposal Regulation for Invasive Brain-Computer Interface Testing on the Able-Bodied"](http://andre-ye.github.io/biology/winter-quarter/portfolio/biology-policy-paper-winter.pdf){:target="_blank"}.
+- [Spring Quarter Biology Seminar - "Rethinking Addiction in a Digital World"](https://andre-ye.github.io/biology/spring/portfolio/Biology%20Seminar.pdf)
 
 <br>
 
