@@ -32,6 +32,7 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 - [Winter Quarter Project 2 - "The Continued Fraction Problem"](https://andre-ye.github.io/precalc/portfolio/annotated-Project_2-1.pdf){:target="_blank"}.
 - [Winter Quarter Project 3 - "Optimum and Convergence Patterns in Power Towers"](https://andre-ye.github.io/precalc/portfolio/project-3.pdf){:target="_blank"}.
 - [Spring Quarter Project 4 - "Analyzing Latent Space in Autoencoders of Varied Bottleneck Size"](https://andre-ye.github.io/precalc/portfolio/Project 4 Draft 3.pdf){:target="_blank"}.
+- [Spring Quarter Project 5 - "Analying Sinusoidal Patterns in 2020 U.S. Presidential Election Tweets"](https://andre-ye.github.io/precalc/portfolio/Project_5_final.pdf){:target="_blank"}
 
 <br>
 
@@ -53,14 +54,7 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 <br>
 
 ### Sociology
-- Research Essay
-  - [Paper Prospectus](https://andre-ye.github.io/ts/sociology/portfolio/Paper Prospectus.pdf){:target="_blank"} - initial layout and proposal for paper.
-  - [Research Paper](#) - not completed yet.
-- Reading Responses
-  - [Week 1 Reading Response](https://andre-ye.github.io/ts/sociology/portfolio/Week 1 Reading Response.pdf){:target="_blank"}, on deriving research interests and feminist standpoint theory.
-  - [Week 2 Reading Response](https://andre-ye.github.io/ts/sociology/portfolio/Week 1 Reading Response.pdf){:target="_blank"}, on formulating research questions and racial exclusion of South Asians in 1900s Pacific Northwest.
-  - [Week 3 Reading Response](https://andre-ye.github.io/ts/sociology/portfolio/Week 1 Reading Response.pdf){:target="_blank"}, on finding research sources and the relationship between the coronavirus and neoliberal policies.
-  - [Week 4 Reading Response](https://andre-ye.github.io/ts/sociology/portfolio/Week 1 Reading Response.pdf){:target="_blank"}, on theoretical frameworks by Louis Althusser, Simone de Beauvoir, W.E.B. Du Bois, and Keeanga-Yamahtta Taylor.
+[Final Research Essay - "Collective Individualism in Black Conservatism"](#){:target="_blank"}
 
 <br>
 
@@ -72,37 +66,13 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 *See notes for lectures and reading response materials [here](https://andre-ye.github.io/history/history_navigation){:target="_blank"}.*
 
 #### Fall Quarter
-- Essays
-  - [Fall Midterm Essay](https://andre-ye.github.io/history/portfolio/Fall Midterm Essay.pdf){:target="_blank"}, on the pyschological reinforcement of slavery.
-  - [Fall Final Essay](https://andre-ye.github.io/history/portfolio/History Final.pdf){:target="_blank"}, on the South's aggression and the Free Soil Dream in the Civil War.
-  - [Fall Quarter Essay 1](https://andre-ye.github.io/history/portfolio/Essay%201.pdf){:target="_blank"}, on the role of religion in conquest.
-  - [Fall Quarter Essay 2](https://andre-ye.github.io/history/portfolio/Essay%202%20Revised.pdf){:target="_blank"}, on immigrant inclusion and race dynamics.
-  - [Fall Quarter Essay 3](https://andre-ye.github.io/history/portfolio/Essay Draft 1.pdf){:target="_blank"}, on the relationship between emancipation and the women's movement.
-- Reading Responses
-  - [Week 1 Reading Response](https://andre-ye.github.io/history/portfolio/Week 1 Reading Response.pdf){:target="_blank"}, on how to read history.
-  - [Week 2 Reading Response](https://andre-ye.github.io/history/portfolio/Week 2 Reading Response.pdf){:target="_blank"}, on conquest.
-  - [Week 3 Reading Response](https://andre-ye.github.io/history/portfolio/Week 3 Reading Response.pdf){:target="_blank"}, on early racialized chattel slavery.
-  - [Week 4 Reading Response](https://andre-ye.github.io/history/portfolio/Week 4 Reading Response.pdf){:target="_blank"}, on the American Revolution.
-  - [Week 5 Reading Response](https://andre-ye.github.io/history/portfolio/Week 5 Reading Response.pdf){:target="_blank"}, on gender in the first industrial revolution.
-  - [Week 6 Reading Response](https://andre-ye.github.io/history/portfolio/Week 6 Reading Response.pdf){:target="_blank"}, on race and immigration.
-  - [Week 7 Reading Response](https://andre-ye.github.io/history/portfolio/Week 7 Reading Response.pdf){:target="_blank"}, on the capitalism of slavery.
-  - [Week 8 Reading Response](https://andre-ye.github.io/history/portfolio/Week 8 Reading Response.pdf){:target="_blank"}, on slave narratives.
-  - [Week 9 Reading Response](https://andre-ye.github.io/history/portfolio/Week 9 Reading Response.pdf){:target="_blank"}, on emancipation.
-  - [Week 10 Reading Response](https://andre-ye.github.io/history/portfolio/Week 10 Reading Response.pdf){:target="_blank"}, on the failure of Reconstruction.
+- [Fall Midterm Essay](https://andre-ye.github.io/history/portfolio/Fall Midterm Essay.pdf){:target="_blank"}, on the pyschological reinforcement of slavery.
+- [Fall Final Essay](https://andre-ye.github.io/history/portfolio/History Final.pdf){:target="_blank"}, on the South's aggression and the Free Soil Dream in the Civil War.
+- [Fall Quarter Essay 1](https://andre-ye.github.io/history/portfolio/Essay%201.pdf){:target="_blank"}, on the role of religion in conquest.
+- [Fall Quarter Essay 2](https://andre-ye.github.io/history/portfolio/Essay%202%20Revised.pdf){:target="_blank"}, on immigrant inclusion and race dynamics.
+- [Fall Quarter Essay 3](https://andre-ye.github.io/history/portfolio/Essay Draft 1.pdf){:target="_blank"}, on the relationship between emancipation and the women's movement.
 
 #### Winter Quarter
-- Essays
-  - [Winter Quarter Essay 1 - "Clashing Notions of Liberty in the Gilded Age"](https://andre-ye.github.io/history/winter/portfolio/Essay 1 Draft.pdf){:target="_blank"}
-  - [Winter Quarter Essay 2 - "The Hesitancy of Progressivism"](https://andre-ye.github.io/history/winter/portfolio/Essay 2 Draft 2.pdf){:target="_blank"}
-  - [Final Culminating Project - "The Immolation"](https://andre-ye.github.io/history/winter/portfolio/Final Draft for Cumulative Project.pdf){:target="_blank"}, a short story on unionization in the 1930s.
-- Reading Responses
-  - [Week 1 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 1.pdf){:target="_blank"}, on agency in history.
-  - [Week 2 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 2.pdf){:target="_blank"}, on class conflict in the Gilded Age.
-  - [Week 3 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 3.pdf){:target="_blank"}, on American imperialism and empire.
-  - [Week 4 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 4.pdf){:target="_blank"}, on the Progressive Era.
-  - [Week 5 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 5.pdf){:target="_blank"}, on labor struggles.
-  - [Week 6 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 6.pdf){:target="_blank"}, on domestic impacts of World War II.
-  - [Week 7 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 7.pdf){:target="_blank"}, on transformation of American foreign policy post-WWII.
-  - [Week 8 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 8.pdf){:target="_blank"}, on the Vietnam War, Civil Rights, and radicalism in the 1960s.
-  - [Week 9 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 9.pdf){:target="_blank"}, on neoliberalism and the modern revival of conservatism.
-  - [Week 10 Reading Response](https://andre-ye.github.io/history/winter/portfolio/Reading Response 10.pdf){:target="_blank"}, on climate change and modern inequality.
+- [Winter Quarter Essay 1 - "Clashing Notions of Liberty in the Gilded Age"](https://andre-ye.github.io/history/winter/portfolio/Essay 1 Draft.pdf){:target="_blank"}
+- [Winter Quarter Essay 2 - "The Hesitancy of Progressivism"](https://andre-ye.github.io/history/winter/portfolio/Essay 2 Draft 2.pdf){:target="_blank"}
+- [Final Culminating Project - "The Immolation"](https://andre-ye.github.io/history/winter/portfolio/Final Draft for Cumulative Project.pdf){:target="_blank"}, a short story on unionization in the 1930s.
