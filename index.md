@@ -23,8 +23,8 @@
 <br>
 
 ## University of Washington Courses/Lab Notes 🟡🟣
-- [Research - Najafian Lab: Pathobiology of Kidney Diseases 🦠](https://andre-ye.github.io/research/najafian-lab/navigation)
 - [ECON 200 - Introduction to Microeconomics 🤝](https://andre-ye.github.io/uw/econ-200/navigation) w/ Melissa Knox
+- [Research - Najafian Lab: Pathobiology of Kidney Diseases 🦠](https://andre-ye.github.io/research/najafian-lab/navigation)
 
 <br>
 
@@ -32,14 +32,14 @@
 
 <br>
 
-## Robinson Center Transition School Notes 📚
+## Robinson Center Transition School Notes 📚\
 The [Transition School](https://robinsoncenter.uw.edu/programs/transition-school/){:target="_blank"} is a one-year college preparatory program offered through the Robinson Center for Young Scholars at the University of Washington via the Early Entrance Program (EEP). 
+- [TS Portfolio 📂](https://andre-ye.github.io/portfolio/portfolio_navigation) - collection of my work at TS, including a showcase
 - [TS Biology 🧬](https://andre-ye.github.io/biology/biology_navigation) w/ Cristina Valensisi
 - [TS History 🌎](https://andre-ye.github.io/history/history_navigation) w/ Michael Reagan
 - [TS Sociology 🏛️](https://andre-ye.github.io/ts/sociology/sociology_navigation) w/ Michael Reagan
 - [TS English ✍️](https://andre-ye.github.io/english/english_navigation) w/ Amanda Zink
 - [TS Precalculus 📐](https://andre-ye.github.io/precalc/precalculus_navigation) w/ Reese Johnston
-- [TS Portfolio 📂](https://andre-ye.github.io/portfolio/portfolio_navigation) - collection of my work at TS.
 
 <br>
 
