@@ -21,7 +21,7 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 | ["Analying Sinusoidal Patterns in 2020 U.S. Presidential Election Tweets"](https://andre-ye.github.io/precalc/portfolio/Project_5_final.pdf){:target="_blank"} | This mathematics class project explores trends in the frequency and sentiment of tweets in the 2020 U.S. Presidential Election. |
 | ["The Immolation"](https://andre-ye.github.io/history/winter/portfolio/Final Draft for Cumulative Project.pdf){:target="_blank"} | A short story written for history class seeking to reunderstand in both allegorical and literal paintings the dynamics of labor unionization in the 1930s. |
 | [Journal Club: "Improved Protein Structure Prediction Using Potentials from Deep Learning"](https://andre-ye.github.io/biology/winter-quarter/portfolio/winter-bio-jc.pdf){:target="_blank"} | Slides from a journal club presentation on a DeepMind paper for biology class. |
-
+| ["Understanding Understanding: The Relationship Between Human Understanding and Behavior"](https://andre-ye.github.io/portfolio/interdisp/Interdisciplinary Presentation.pdf){:target="_blank"} | Slides from the concluding interdisciplinary presentation of the year, on understanding how humans form knowledge and act upon it in the context of their environment. |
 
 <br>
 
