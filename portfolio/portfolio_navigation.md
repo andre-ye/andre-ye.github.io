@@ -73,7 +73,7 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 <br>
 
 ### Sociology
-[Final Research Essay - "Collective Individualism in Black Conservatism"](#){:target="_blank"}
+[Final Research Essay - "Collective Individualism in Black Conservatism"](https://andre-ye.github.io/ts/sociology/portfolio/Draft 4 - Final.pdf){:target="_blank"}
 
 <br>
 
