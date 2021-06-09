@@ -37,6 +37,7 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 - [Winter Midterm Essay - "Human Masks and Hunting in 'Antlers'"](https://andre-ye.github.io/english/portfolio/Antlers Draft 3.pdf){:target="_blank"}, on the blurred relationship between human and animal in Rick Bass's short story "Antlers".
 - [Winter Final Essay - "Self as Interconnected Story in 'Song of Myself'"](https://andre-ye.github.io/english/portfolio/Draft 4.pdf){:target="_blank"}, on the application of the narrative creation of self to Walt Whitman's poem, "Song of Myself".
 - [Spring Midterm Essay - "The Cigarette and the Tragic Pursuit of Death in *Pale Horse, Pale Rider*"](https://andre-ye.github.io/english/portfolio/Draft 3.pdf){:target="_blank"}, on the symbolism of the cigarette and tragic love amidst death in Katherine Anne Porter's novel, *Pale Horse, Pale Rider*.
+- [Spring Final Essay - "Socrates' Contradiction and Love Tragedy in 'The Birthmark'"](https://andre-ye.github.io/english/portfolio/Draft 4 (1).pdf), on romanticization, tragic love, and the application of Plato's *Symposium* to Nathaniel Hawthorne's short story "The Birthmark".
 
 <br>
 
