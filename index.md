@@ -32,7 +32,7 @@
 
 <br>
 
-## Robinson Center Transition School Notes 📚\
+## Robinson Center Transition School Notes 📚
 The [Transition School](https://robinsoncenter.uw.edu/programs/transition-school/){:target="_blank"} is a one-year college preparatory program offered through the Robinson Center for Young Scholars at the University of Washington via the Early Entrance Program (EEP). 
 - [TS Portfolio 📂](https://andre-ye.github.io/portfolio/portfolio_navigation) - collection of my work at TS, including a showcase
 - [TS Biology 🧬](https://andre-ye.github.io/biology/biology_navigation) w/ Cristina Valensisi
