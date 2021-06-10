@@ -39,7 +39,6 @@ The [Transition School](https://robinsoncenter.uw.edu/programs/transition-school
 - [TS History 🌎](https://andre-ye.github.io/history/history_navigation) w/ Michael Reagan
 - [TS Sociology 🏛️](https://andre-ye.github.io/ts/sociology/sociology_navigation) w/ Michael Reagan
 - [TS English ✍️](https://andre-ye.github.io/english/english_navigation) w/ Amanda Zink
-- [TS Precalculus 📐](https://andre-ye.github.io/precalc/precalculus_navigation) w/ Reese Johnston
 
 <br>
 
