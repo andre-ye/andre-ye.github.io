@@ -18,5 +18,8 @@ I think of TS as a small hammer that breaks and rebuilds its students stronger a
 
 Sincrerely,
 
+
+
 Andre Ye
+
 June 10th, 2021
