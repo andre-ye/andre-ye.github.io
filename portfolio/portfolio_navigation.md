@@ -3,7 +3,7 @@
 
 A compilation of some essays and projects I've produced at the Transition School. ***This work is part of my past and may not reflect my current views and work.***
 
-Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#biology), [Sociology](#sociology), [History](#history).
+Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#biology), [Sociology](#sociology), [History](#history), [Interdisciplinary Seminar](#interdisciplinary-seminar).
 
 <br>
 
@@ -21,7 +21,7 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 | ["Analying Sinusoidal Patterns in 2020 U.S. Presidential Election Tweets"](https://andre-ye.github.io/precalc/portfolio/Project_5_final.pdf){:target="_blank"} | This mathematics class project explores trends in the frequency and sentiment of tweets in the 2020 U.S. Presidential Election. |
 | ["The Immolation"](https://andre-ye.github.io/history/winter/portfolio/Final Draft for Cumulative Project.pdf){:target="_blank"} | A short story written for history class seeking to reunderstand in both allegorical and literal paintings the dynamics of labor unionization in the 1930s. |
 | [Journal Club: "Improved Protein Structure Prediction Using Potentials from Deep Learning"](https://andre-ye.github.io/biology/winter-quarter/portfolio/winter-bio-jc.pdf){:target="_blank"} | Slides from a journal club presentation on a DeepMind paper for biology class. |
-| ["Understanding Understanding: The Relationship Between Human Understanding and Behavior"](https://andre-ye.github.io/portfolio/interdisp/Interdisciplinary Presentation.pdf){:target="_blank"} | Slides from the concluding interdisciplinary presentation of the year, on understanding how humans form knowledge and act upon it in the context of their environment. |
+| [Interdisciplinary Seminar: "Knowledge and Behavior"](https://andre-ye.github.io/portfolio/interdisp/Formal Interdisciplinary Presentation Group 4.pdf){:target="_blank"} | Slides from the concluding interdisciplinary presentation of the year, on understanding how humans form knowledge and act upon it in the context of their environment. |
 
 <br>
 
@@ -96,3 +96,31 @@ Jump down to a section: [English](#english), [Math](#mathematics), [Biology](#bi
 - [Winter Quarter Essay 1 - "Clashing Notions of Liberty in the Gilded Age"](https://andre-ye.github.io/history/winter/portfolio/Essay 1 Draft.pdf){:target="_blank"}
 - [Winter Quarter Essay 2 - "The Hesitancy of Progressivism"](https://andre-ye.github.io/history/winter/portfolio/Essay 2 Draft 2.pdf){:target="_blank"}
 - [Final Culminating Project - "The Immolation"](https://andre-ye.github.io/history/winter/portfolio/Final Draft for Cumulative Project.pdf){:target="_blank"}, a short story on unionization in the 1930s.
+
+<br>
+
+---
+
+<br>
+
+### Interdisciplinary Seminar
+A major cross-discipline cross-unit seminar presented to the class as the last academic gathering of the school year on June 9th, 2021. The 2020-2021 school year was the first one to have interdisciplinary seminars.
+
+**Presentation Slides**:
+- [Formal Presentation Slides](https://andre-ye.github.io/portfolio/interdisp/Formal Interdisciplinary Presentation Group 4.pdf){:target="_blank"}[^1]
+- [Raw Presentation Slides](https://andre-ye.github.io/portfolio/interdisp/Interdisciplinary Presentation Group 4.pdf){:target="_blank"}[^2]
+
+**Behind the Scenes**:
+- [Seminar Planning Document](https://andre-ye.github.io/portfolio/interdisp/Interdisciplinary Group Project.pdf){:target="_blank"}
+- [Presentation Script](https://andre-ye.github.io/portfolio/interdisp/Group Script.pdf){:target="_blank"}
+
+[^1]: During the seminar, our group had planned some jokes and pranks. In the formal presentation, such slides are removed.
+[^2]: These are the raw slides that were presented during the seminar.
+
+<br>
+
+---
+
+<br>
+
+[Back to top](#)
