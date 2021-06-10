@@ -14,10 +14,9 @@ I have grown, through Transition School Biology, to appreciate biology and scien
 Indeed, classes at TS have changed not only my immediate understandings of subjects, but my understanding of meta-learning - of honing the processes of learning, of questioning and finding answers, of attempting to better understand one's condition and identity in a sea of ideas, identities, and institutions. I have much to thank Dr. Zink for; her teaching is both gentle and provocative, and it is in English where I began the process of shedding immediate visceral reactions to texts or ideas - in which I embraced each text as a vessel of ideas I could accept or augment, and in which I learned to embrace complexities and continuity over binaries.
 Dr. Reagan's classes especially evoke a certain nostalgia; analyzing works of art, thinking about history in new ways, discussing readings and ideas. Reese's math class, too, taught me a certain mathematical humility, curiosity, and courage to navigate mathematics as an inquisitive explorer, rather than forcefully handheld by a textbook. Transition School has shown me the value in asking 'why?'; while I admit I often cannot answer these questions, internalizing and understanding the value of the question is the necessary spirit upon which potential answers or developments will be found.
 
-
+I think of TS as a small hammer that breaks and rebuilds its students stronger and more resilient. It will sting, and perhaps it may be throbbingly painful, but out of the dedication and work will become transformation and great learning. Nassim Taleb developed the term 'antifragile' to fill the absence of a concept that described things that grow stronger as a result of stress, shock, volatility, mistakes, and faults. The Transition School fosters antifragility, for the greatest growth comes often from the pains and struggle.
 
 Sincrerely,
 
 Andre Ye
 June 10th, 2021
-
