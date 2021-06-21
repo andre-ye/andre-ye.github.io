@@ -16,10 +16,6 @@
 # Hey!👋
 **I'm Andre.** This website serves primarily to host notes on my classes. Find out a bit more about me [here](https://andre-ye.github.io/about){:target="_blank"}.
 
-<center>
-<img src="https://andre-ye.github.io/administrative/dark-blurred-background-june2021.png" alt="Profile Picture" width="200"/>
-</center>
-
 <br>
 
 ---
