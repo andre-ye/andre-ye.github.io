@@ -2,6 +2,10 @@
 
 ## About 🤙
 
+<center>
+<img src="https://andre-ye.github.io/administrative/dark-blurred-background-june2021.png" alt="Profile Picture" width="200"/>
+</center>
+
 **Hey 👋 - I'm Andre.** I'm passionate about machine learning and better understanding the "black box" that is the neural network. By better understanding the thinking processes of deep learning models, I believe we will better be able to use it in our society.
 
 📑 My resume is [here](https://andre-ye.github.io/scripts/CV.pdf){:target="_blank"}.
