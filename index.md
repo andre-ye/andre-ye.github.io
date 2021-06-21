@@ -13,9 +13,9 @@
 
 <br>
 
-<img style="float: right;" src="https://andre-ye.github.io/administrative/dark-blurred-background-june2021.png">
 # Hey!👋
 **I'm Andre.** This website serves primarily to host notes on my classes. Find out a bit more about me [here](https://andre-ye.github.io/about){:target="_blank"}.
+<img style="float: right;" src="https://andre-ye.github.io/administrative/dark-blurred-background-june2021.png">
 
 <br>
 
