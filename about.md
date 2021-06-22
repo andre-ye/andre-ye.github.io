@@ -2,13 +2,9 @@
 
 ## About 🤙
 
-<center>
-<img src="https://andre-ye.github.io/administrative/dark-blurred-background-june2021.png" alt="Profile Picture" width="200"/>
-</center>
+**Hey 👋 - I'm Andre.** I'm passionate about designing unique and creative deep learning systems to solve difficult problems.
 
-**Hey 👋 - I'm Andre.** I'm passionate about machine learning and better understanding the "black box" that is the neural network. By better understanding the thinking processes of deep learning models, I believe we will better be able to use it in our society.
-
-📑 My resume is [here](https://andre-ye.github.io/scripts/CV.pdf){:target="_blank"}.
+📑 My resume is [here](https://andre-ye.github.io/administrative/cv/Andre-Ye-CV.pdf){:target="_blank"}.
 
 🔗 Connect with me on LinkedIn [here](https://linkedin.com/in/andre-ye){:target="_blank"}.
 
@@ -58,8 +54,6 @@ Some fun facts:
 
 🎧 *ML & DS Papers On The Go* Podcast: a passion project of mine: an attempt to bring the most recent and fascinating machine learning and data science advancements straight to your ears.
 Visit the podcast website **[here](http://papers-on-the-go.ml){:target="_blank"}**, or **[give it a listen](https://anchor.fm/andre-ye){:target="_blank"}**. This project has been discontinued for now.
-
-Please see the complete list of projects and experience on my resume (as linked above), or on my [LinkedIn](https://www.linkedin.com/in/andre-ye/){:target="_blank"}.
 
 <br>
 
