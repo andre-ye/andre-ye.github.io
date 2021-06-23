@@ -1,7 +1,7 @@
 [Home](https://andre-ye.github.io) > TS > 2021 RC Group Advising Notes
 
 ## 2021 RC Group Advising Notes
-Based on a presentation presented by Kathryn Grubbs and Kim Anh Tran.
+Based on a presentation presented by Kathryn Grubbs and Kim Anh Tran. View [here](https://washington.zoom.us/rec/play/5G_1Y1CyCV6Yf6jqP9Okhs3LnerqenpRa3fDqE1gZAcvdj9uT7oSHRBP38Dx23JDM2hsbzOLcnzZ29GV.vkCzOTaG7bdJPnlB){:target="_blank"} (requires login).
 
 <br>
 
