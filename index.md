@@ -23,8 +23,11 @@
 <br>
 
 ## University of Washington Courses/Lab Notes 🟡🟣
+Advising and Administrative
+- [2021 RC Group Advising Presentation Notes](https://andre-ye.github.io/ts/advising/2021-rc-group-advising)
+
+Economics
 - [ECON 200 - Introduction to Microeconomics 🤝](https://andre-ye.github.io/uw/econ-200/navigation) w/ Melissa Knox
-- [Research - Najafian Lab: Pathobiology of Kidney Diseases 🦠](https://andre-ye.github.io/research/najafian-lab/navigation)
 
 <br>
 
