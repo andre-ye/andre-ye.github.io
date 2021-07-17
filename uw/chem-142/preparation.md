@@ -57,7 +57,7 @@ $$\left(a\cdot \frac{9}{5}\right)+31 = a^\circ C = a+273.15 K$$
 #### Calculating Specific Heat Capacity
 > The specific heat capacity of a substance is the amount of heat needed to raise the temperature of  gram of a substance by  kelvin. You can think of specific heat capacity as something like the "price" of a kelvin of temperature rise. It takes more heat to "buy" a kelvin when a substance demands a high "price" (has a high heat capacity) than when it demands a low "price" (has a low heat capacity).
 
-$$c \text{ (heat capacity)} = \frac{Q}{m \cdot \delta T}$$
+$$c \text{ (heat capacity)} = \frac{Q}{m \cdot \Delta T}$$
 
 $$Q := \text{total heat used}$$
 $$m := \text{mass of pure sample}$$
