@@ -26,11 +26,12 @@ Notes on prepatory content for CHEM 142. Can be used as reference for more basic
 <br>
 
 ### Conversions
+
 $$1 \text{ kcal} = 4.184 \text{ kJ}$$
 
 $$1 \text{ cm}^3 = 1 \text{ milliliter}$$
 
-$$\left(a\cdot \frac{9}{5}\right)+31 = a^\circ C = a+273.15 K$$
+$$\left(a\cdot \frac{9}{5}\right)+31^\circ \text{F} = a^\circ \text{C} = a+273.15 \text{K}$$
 
 <br>
 
@@ -60,7 +61,9 @@ $$\left(a\cdot \frac{9}{5}\right)+31 = a^\circ C = a+273.15 K$$
 $$c \text{ (heat capacity)} = \frac{Q}{m \cdot \Delta T}$$
 
 $$Q := \text{total heat used}$$
+
 $$m := \text{mass of pure sample}$$
+
 $$m := \text{change in temperature}$$
 
 
