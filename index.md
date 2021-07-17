@@ -26,9 +26,9 @@
 Unlinked classes are classes which will have notes soon (in the next few quarters).
 
 Advising, Administrative, FIGs
-- [2021 RC Group Advising Presentation Notes](https://andre-ye.github.io/ts/advising/2021-rc-group-advising)
+- [2021 RC Group Advising Presentation Notes](https://andre-ye.github.io/ts/advising/2021-rc-group-advising) w/ Kathryn Grubbs
 - [GEN ST 199 - The University Community FIG 🏫](https://andre-ye.github.io/uw/gen-st-199/navigation)
-- [GEN ST 297 - RC Undergraduate Seminar 🏫](https://andre-ye.github.io/uw/gen-st-297/navigation)
+- [GEN ST 297 - RC Undergraduate Seminar 🏫](https://andre-ye.github.io/uw/gen-st-297/navigation) w/ Kathryn Grubbs
 
 Computer Science
 - [CSE 142 - Computer Programming I 💻](https://andre-ye.github.io/uw/cse-142/navigation)
@@ -48,7 +48,7 @@ Philosophy
 - PHIL 322 - Modern Philosophy
 
 Chemistry
-- [CHEM 124 - General Chemistry 🧪](https://andre-ye.github.io/uw/chem-142/navigation)
+- [CHEM 124 - General Chemistry 🧪](https://andre-ye.github.io/uw/chem-142/navigation) w/ Xiaosong Li
 
 Economics
 - [ECON 200 - Introduction to Microeconomics 🤝](https://andre-ye.github.io/uw/econ-200/navigation) w/ Melissa Knox
