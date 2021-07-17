@@ -49,4 +49,22 @@ $$1 \text{ cm}^3 = 1 \text{ milliliter}$$
 
 <br>
 
+### Thermochemistry
+
+#### Calculating Specific Heat Capacity
+> The specific heat capacity of a substance is the amount of heat needed to raise the temperature of  gram of a substance by  kelvin. You can think of specific heat capacity as something like the "price" of a kelvin of temperature rise. It takes more heat to "buy" a kelvin when a substance demands a high "price" (has a high heat capacity) than when it demands a low "price" (has a low heat capacity).
+
+$$c \text{ (heat capacity)} = \frac{Q}{m \cdot \delta T}$$
+
+$$Q \stackrel{\mathclap{\normalfont\mbox{def}}}{=} \text{total heat used}$$
+$$m \stackrel{\mathclap{\normalfont\mbox{def}}}{=} \text{mass of pure sample}$$
+$$m \stackrel{\mathclap{\normalfont\mbox{def}}}{=} \text{change in temperature}$$
+
+
+<br>
+
+---
+
+<br>
+
 [Back to top](#)
