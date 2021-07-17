@@ -28,6 +28,7 @@ Notes on prepatory content for CHEM 142. Can be used as reference for more basic
 ### Conversions
 $$1 \text{ kcal} = 4.184 \text{ kJ}$$
 $$1 \text{ cm}^3 = 1 \text{ milliliter}$$
+$$\left(a\cdot \frac{9}{5}\right)+31 = a^\circ C = a+273.15 K$$
 
 <br>
 
