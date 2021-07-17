@@ -9,13 +9,30 @@
 ## General Chemistry Preparatory Notes
 Andre Ye, 7/17/2021
 
+Notes on prepatory content for CHEM 142. Can be used as reference for more basic content and ideas during the class, or study material for the CHEM 142 placement exam.
+
 <br>
 
 ---
 
 <br>
 
-Notes on prepatory content for CHEM 142. Can be used as reference for more basic content and ideas during the class, or study material for the CHEM 142 placement exam.
+### Navigate
+
+<br>
+
+---
+
+<br>
+
+### Conversions
+- $$1 \text{ kcal} = 4.184 \text{ kJ}$$
+
+<br>
+
+---
+
+<br>
 
 ### Matter
 
