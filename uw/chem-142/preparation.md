@@ -4,13 +4,25 @@
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 </head>
 
-[Home](https://andre-ye.github.io) > [ECON 200 Navigation](https://andre-ye.github.io/uw/econ-200/navigation) > [Lecture Notes](https://andre-ye.github.io/uw/econ-200/navigation#lecture-notes) > Quiz Section Questions > Week 2
+[Home](https://andre-ye.github.io) > [CHEM 142 Navigation](https://andre-ye.github.io/uw/chem-142/navigation) > General Chemistry Preparatory Notes
 
-## Quiz Section Questions, Week 2
-Andre Ye, 4/7/2021
+## General Chemistry Preparatory Notes
+Andre Ye, 7/17/2021
 
 <br>
 
 ---
 
 <br>
+
+Notes on prepatory content for CHEM 142. Can be used as reference for more basic content and ideas during the class, or study material for the CHEM 142 placement exam.
+
+
+
+<br>
+
+---
+
+<br>
+
+[Back to top](#)
