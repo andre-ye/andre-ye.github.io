@@ -26,7 +26,8 @@ Notes on prepatory content for CHEM 142. Can be used as reference for more basic
 <br>
 
 ### Conversions
-- $$1 \text{ kcal} = 4.184 \text{ kJ}$$
+$$1 \text{ kcal} = 4.184 \text{ kJ}$$
+$$1 \text{ cm}^3 = 1 \text{ milliliter}$$
 
 <br>
 
