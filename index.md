@@ -22,7 +22,9 @@
 
 <br>
 
-## University of Washington Courses/Lab Notes 🟡🟣
+## University of Washington General Education Notes 🟡🟣
+Unlinked classes are classes which will have notes soon (in the next few quarters).
+
 Advising, Administrative, FIGs
 - [2021 RC Group Advising Presentation Notes](https://andre-ye.github.io/ts/advising/2021-rc-group-advising)
 - [GEN ST 199 - The University Community FIG 🏫](https://andre-ye.github.io/uw/gen-st-199/navigation)
@@ -30,15 +32,27 @@ Advising, Administrative, FIGs
 
 Computer Science
 - [CSE 142 - Computer Programming I 💻](https://andre-ye.github.io/uw/cse-142/navigation)
+- CSE 143 - Computer Programming II
+- CSE 311 - Foundations of Computing I
+- CSE 332 - Data Structures and Parallelism
 
 Mathematics
 - [MATH 124 - Calculus with Analytic Geometry I 📐](https://andre-ye.github.io/uw/math-124/navigation)
+- MATH 125 - Calculus with Analytic Geometry II 📐
+- MATH 126 - Calculus with Analytic Geometry III 📐
+
+Philosophy
+- PHIL 100 - Introduction to Philosophy
+- PHIL 120 - Introduction to Logic
+- PHIL 240 - Introduction to Ethics
+- PHIL 322 - Modern Philosophy
 
 Chemistry
 - [CHEM 124 - General Chemistry 🧪](https://andre-ye.github.io/uw/chem-142/navigation)
 
 Economics
 - [ECON 200 - Introduction to Microeconomics 🤝](https://andre-ye.github.io/uw/econ-200/navigation) w/ Melissa Knox
+- ECON 201 - Introduction to Macroeconomics
 
 <br>
 
