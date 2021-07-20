@@ -47,6 +47,22 @@ $$\left(a\cdot \frac{9}{5}\right)+31^\circ \text{F} = a^\circ \text{C} = a+273.1
 - **Extraction**: putting a mixture in contact with a solvent in which only some of the components are soluble. The soluble components will be drawn out of the mixture by dissolving in the solvent. Extraction is most useful for separating solid or liquid mixtures in which some of the substances have significantly different physical properties, so that they are soluble in very different types of solvent.	
 - **Chromatography**: flowing a mixture of liquid or gaseous components through a porous material called an adsorbant. Because the molecules from which the substances are made will wiggle through the tiny pores in the adsorbant at different rates, the substances in a mixture will spread out as they travel through the adsorbant. Chromatography works well with even very small sample sizes, so it's a favored method for detecting trace ("very small") amounts of substances.
 
+#### Substances
+Hierarchy of compound classification:
+- Substances
+  - Pure Substance
+    - Element (iron, nitrogen)
+    - Compound (water, table salt)
+  - Mixture
+    - Homogenous Mixture (seawater, coffee, air)
+    - Heterogeneous Mixture (milk, smoke, butter)
+
+Determining compound classification:
+- *Heterogeneous mixture* if a substance is made up of chunks, strands, layers or blobs of different substances, *homogeneous mixture* otherwise.
+- *Element* if a substance is made of just one type of atom, *substance* if there are 2+ atoms but atoms appear in a particular combination, *heterogeneous mixture* if atoms or molecules appear in any combination.
+- Liquid homogenous mixtures are *solutions*.
+To determine if a substance is a heterogeneous mixture
+
 <br>
 
 ---
