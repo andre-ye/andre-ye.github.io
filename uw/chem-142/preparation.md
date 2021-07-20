@@ -41,8 +41,20 @@ $$\left(a\cdot \frac{9}{5}\right)+31^\circ \text{F} = a^\circ \text{C} = a+273.1
 
 ### Matter
 
-#### Laws
-- *Law of Constant Composition*: in a pure substance, chemical elemetns always appear in the same proportions.
+#### Laws and Equations
+*Law of Constant Composition*
+
+In a pure substance, chemical elemetns always appear in the same proportions.
+
+*Kinetic Energy Formula*
+
+$$E_k = \frac{1}{2}mv^2$$
+
+$$m := \text{ mass in }kg$$
+
+$$v := \text{ speed in }\frac{\text{m}}{\text{s}}$$
+
+$$E_k := \text{ kinet energy in Joules, or } \text{kg} \cdot \left(\frac{\text{m}}{\text{s}}\right)^2$$
 
 #### Common Laboratory Separation Techniques
 - **Filtration**: passing a mixture through a filter, which traps solid components and lets liquid or gaseous components pass through. Filtration is most useful for separating heterogeneous mixtures of solids and liquids, or solids and gases.
