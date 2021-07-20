@@ -80,11 +80,11 @@ To determine if a substance is a heterogeneous mixture
 
 $$E_k = \frac{1}{2}mv^2$$
 
+$$E_k := \text{ kinet energy in Joules, or } \text{kg} \cdot \left(\frac{\text{m}}{\text{s}}\right)^2$$
+
 $$m := \text{ mass in }kg$$
 
 $$v := \text{ speed in }\frac{\text{m}}{\text{s}}$$
-
-$$E_k := \text{ kinet energy in Joules, or } \text{kg} \cdot \left(\frac{\text{m}}{\text{s}}\right)^2$$
 
 
 #### Calculating Specific Heat Capacity
@@ -96,7 +96,7 @@ $$Q := \text{total heat used}$$
 
 $$m := \text{mass of pure sample}$$
 
-$$m := \text{change in temperature}$$
+$$\Delta T := \text{change in temperature}$$
 
 
 <br>
