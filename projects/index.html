@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>projects | Andre  Ye</title>
     <meta name="author" content="Andre  Ye">
-    <meta name="description" content="A growing collection of your cool projects.">
+    <meta name="description" content="My research and other work">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -41,6 +41,11 @@
     <link rel="canonical" href="https://andre-ye.github.io/projects/">
 
     <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
     
 
   </head>
@@ -86,12 +91,22 @@
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="/writing/ds_articles">Data Science Articles</a>
                   <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/writing/fiction">Stories / Fiction</a>
+                  <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="/writing/mdldna">Modern Deep Learning Design &amp; Applications</a>
                   <a class="dropdown-item" href="/writing/mdl4td">Modern Deep Learning for Tabular Data</a>
                 </div>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/reading/">reading</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
               </li>
             </ul>
           </div>
@@ -115,7 +130,7 @@
 
           <header class="post-header">
             <h1 class="post-title">projects</h1>
-            <p class="post-description">A growing collection of your cool projects.</p>
+            <p class="post-description">My research and other work</p>
           </header>
 
           <article>
@@ -242,6 +257,70 @@
 
         <div class="card-body">
           <h2 class="card-title text-lowercase">Transition School Notes</h2>
+          <p class="card-text">lorem ipsum</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/projects/uni_notes/">
+      <div class="card hoverable">
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/12-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/12-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/12-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/12.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+        <div class="card-body">
+          <h2 class="card-title text-lowercase">University of Washington Notes</h2>
+          <p class="card-text">lorem ipsum</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
+  </div>
+  <h2 class="category">experimental</h2>
+  <!-- Generate cards for each project -->
+  <div class="grid">
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/projects/tserk/">
+      <div class="card hoverable">
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/12-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/12-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/12-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/12.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+        <div class="card-body">
+          <h2 class="card-title text-lowercase">tserk</h2>
           <p class="card-text">lorem ipsum</p>
           <div class="row ml-1 mr-1 p-0">
           </div>

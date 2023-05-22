@@ -42,6 +42,11 @@
 
     <!-- Dark Mode -->
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
 
   </head>
 
@@ -86,12 +91,22 @@
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="/writing/ds_articles">Data Science Articles</a>
                   <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/writing/fiction">Stories / Fiction</a>
+                  <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="/writing/mdldna">Modern Deep Learning Design &amp; Applications</a>
                   <a class="dropdown-item" href="/writing/mdl4td">Modern Deep Learning for Tabular Data</a>
                 </div>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="/reading/">reading<span class="sr-only">(current)</span></a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
               </li>
             </ul>
           </div>

@@ -42,6 +42,11 @@
 
     <!-- Dark Mode -->
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
 
   </head>
 
@@ -86,12 +91,22 @@
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="/writing/ds_articles">Data Science Articles</a>
                   <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/writing/fiction">Stories / Fiction</a>
+                  <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="/writing/mdldna">Modern Deep Learning Design &amp; Applications</a>
                   <a class="dropdown-item" href="/writing/mdl4td">Modern Deep Learning for Tabular Data</a>
                 </div>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/reading/">reading</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
               </li>
             </ul>
           </div>
@@ -119,7 +134,12 @@
           </header>
 
           <article>
-            <p>For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to <code class="language-plaintext highlighter-rouge">_projects/</code> so that you can have a dedicated page for each course.</p>
+            <p>For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to <code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>_projects/
+</pre></td>
+</tr></tbody></table></code> so that you can have a dedicated page for each course.</p>
 
 <p>Organize your courses by years, topics, or universities, however you like!</p>
 
