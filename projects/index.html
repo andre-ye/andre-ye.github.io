@@ -395,6 +395,32 @@
 
         </div>
 
+        <style>
+          details {
+            user-select: none;
+          }
+
+          details>summary span.icon {
+            width: 24px;
+            height: 24px;
+            transition: all 0.3s;
+            margin-left: auto;
+          }
+
+          details[open] summary span.icon {
+            transform: rotate(180deg);
+          }
+
+          summary {
+            display: flex;
+            cursor: pointer;
+          }
+
+          summary::-webkit-details-marker {
+            display: none;
+          }
+        </style>
+
       
     </div>
 
@@ -402,7 +428,7 @@
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2023 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
-Last updated: May 24, 2023.
+Last updated: May 28, 2023.
       </div>
     </footer>
 
