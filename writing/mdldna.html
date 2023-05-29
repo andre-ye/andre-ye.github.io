@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>teaching | Andre  Ye</title>
+    <title>Modern Deep Learning Design and Applications | Andre  Ye</title>
     <meta name="author" content="Andre  Ye">
-    <meta name="description" content="Materials for courses you taught. Replace this text with your description.">
+    <meta name="description" content="Versatile Tools to Solve Deep Learning Problems">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -129,19 +129,487 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">teaching</h1>
-            <p class="post-description">Materials for courses you taught. Replace this text with your description.</p>
+            <h1 class="post-title">Modern Deep Learning Design and Applications</h1>
+            <p class="post-description">Versatile Tools to Solve Deep Learning Problems</p>
           </header>
 
           <article>
-            <p>For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to <code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+            <p><a href="https://link.springer.com/book/10.1007/978-1-4842-7413-2#toc" class="btn" rel="external nofollow noopener" target="_blank">Springer Link</a> 
+<a href="https://www.barnesandnoble.com/w/modern-deep-learning-design-and-application-development-andre-ye/1139992754" class="btn" rel="external nofollow noopener" target="_blank">Barnes &amp; Noble</a> 
+<a href="https://www.amazon.com/Modern-Learning-Design-Application-Development/dp/1484274121" class="btn" rel="external nofollow noopener" target="_blank">Amazon</a></p>
+
+<details open="">
+  <summary class="text-delta">
+    Table of contents
+  </summary>
+<ol id="markdown-toc">
+  <li><a href="#pitch-and-introduction" id="markdown-toc-pitch-and-introduction">Pitch and Introduction</a></li>
+  <li><a href="#chapters" id="markdown-toc-chapters">Chapters</a></li>
+  <li><a href="#case-study-papers" id="markdown-toc-case-study-papers">Case Study Papers</a></li>
+  <li><a href="#code" id="markdown-toc-code">Code</a></li>
+</ol>
+
+</details>
+
+<hr>
+
+<h2 id="pitch-and-introduction">Pitch and Introduction</h2>
+
+<p>In spring of 2020, I was approached by Celestin Suresh John, acquisition editor of machine learning topics at Apress/Springer Nature, with an offer to write a book. I wrote up a book proposal in about two weeks, which was approved by the Apress editorial board. I spent the summer working several hours a day on the book - writing content, running and organizing code, producing visualizations, emailing paper authors, responding to revisions and comments by reviewers. The result: a 7-chapter, 450-page book that - in my opinion, anyway - takes a novel, underrepresented perspective on modern deep learning developments.</p>
+
+<p>Much has been written about deep learning, most of it adhering to what I call a <em>code-centric framework</em>. These resources, which encompass all sorts of mediums from websites to books to online courses, center concepts around code. The reason, I suspect, is largely because software is one of the most accessible tools and hence computer science learners often expect ‘hands-on’ experience without too much theory. However, students that develop an understanding of deep learning through code-centric frameworks restrictively tie their understanding of deep learning <em>concepts</em> to <em>code</em>. While this makes sense from a software engineering perspective (think: data structures, memory management, etc. - tied inherently to implementation), deep learning is a combination of mathematics/statistics <em>and</em> computer science. There is an inherent abstraction to deep learning that code-centric frameworks often fail to explore fully, and thus limits learners’ innovative/creative capacities to engineer novel deep learning solutions.</p>
+
+<p>I think of this in terms of the bias/variance paradigm introduced early to machine learning students. Consider a simple curve-fitting model: if the model has high variance, it bases its understanding of the phenomena almost completely on the known data points. The curve passes through every point, but it doesn’t model the regions “in-between” (i.e. “unseen” values not in the dataset) well. This is the sort of learning I believe too strict a code-centric framework encourages. In my book, I attempt to encourage generalization in learning by emphasizing intuitive theory as a guiding framework for engineering deep learning solutions and demonstrating the versatility and freedom of deep learning implementation tools.</p>
+
+<p>Broadly, my book is a documentation and organization of more recent deep learning topics that have not made it yet into the bulk of “standard” deep learning literature. Topics include self-supervised learning, model compression (pruning, quantization, weight sharing, collaborative optimization), Bayesian optimization applications to neural network design, Neural Architecture Search, and architecture design motifs.</p>
+
+<p>Read the introduction to the book (pages <code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
 <td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td>
-<td class="rouge-code"><pre>_projects/
+<td class="rouge-code"><pre>I
 </pre></td>
-</tr></tbody></table></code> so that you can have a dedicated page for each course.</p>
+</tr></tbody></table></code> - <code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>XIX
+</pre></td>
+</tr></tbody></table></code>) <a href="https://link.springer.com/content/pdf/bfm%3A978-1-4842-7413-2%2F1.pdf" target="_blank" rel="external nofollow noopener">here</a>.</p>
 
-<p>Organize your courses by years, topics, or universities, however you like!</p>
+<hr>
+
+<h2 id="chapters">Chapters</h2>
+<p>Please email me (<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>andreye@uw.edu
+</pre></td>
+</tr></tbody></table></code>) for book, chapter, or page-range requests.</p>
+
+<p>The book is organized by the following outline of topics (subsections not listed):</p>
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>xvii
+</pre></td>
+</tr></tbody></table></code> Introduction</li>
+  <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>001
+</pre></td>
+</tr></tbody></table></code> Chapter 1: “A Deep Dive into Keras”
+    <ul>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>002
+</pre></td>
+</tr></tbody></table></code> Why Keras?</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>003
+</pre></td>
+</tr></tbody></table></code> Installing and Importing Keras</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>004
+</pre></td>
+</tr></tbody></table></code> The Simple Keras Workflow</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>030
+</pre></td>
+</tr></tbody></table></code> Visualizing Model Architectures</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>033
+</pre></td>
+</tr></tbody></table></code> Functional API</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>041
+</pre></td>
+</tr></tbody></table></code> Dealing with Data</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>047
+</pre></td>
+</tr></tbody></table></code> Key Points</li>
+    </ul>
+  </li>
+  <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>049
+</pre></td>
+</tr></tbody></table></code> Chapter 2: “Pretraining Strategies and Transfer Learning”
+    <ul>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>050
+</pre></td>
+</tr></tbody></table></code> Developing Creative Training Structures</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>065
+</pre></td>
+</tr></tbody></table></code> Transfer Learning Practical Theory</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>081
+</pre></td>
+</tr></tbody></table></code> Implementing Transfer Learning</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>091
+</pre></td>
+</tr></tbody></table></code> Implementing Simple Self-Supervised Learning</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>095
+</pre></td>
+</tr></tbody></table></code> Case Studies</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>112
+</pre></td>
+</tr></tbody></table></code> Key Points</li>
+    </ul>
+  </li>
+  <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>115
+</pre></td>
+</tr></tbody></table></code> Chapter 3: “The Versatility of Autoencoders”
+    <ul>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>116
+</pre></td>
+</tr></tbody></table></code> Autoencoder Intuition and Theory</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>121
+</pre></td>
+</tr></tbody></table></code> The Design of Autoencoder Implementation</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>145
+</pre></td>
+</tr></tbody></table></code> Autoencoder Applications (Denoising, Pretraining, VAE, etc.)</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>188
+</pre></td>
+</tr></tbody></table></code> Case Studies</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>201
+</pre></td>
+</tr></tbody></table></code> Key Points</li>
+    </ul>
+  </li>
+  <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>205
+</pre></td>
+</tr></tbody></table></code> Chapter 4: “Model Compression for Practical Deployment”
+    <ul>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>206
+</pre></td>
+</tr></tbody></table></code> Introduction to Model Compression</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>210
+</pre></td>
+</tr></tbody></table></code> Pruning</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>229
+</pre></td>
+</tr></tbody></table></code> Quantization</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>236
+</pre></td>
+</tr></tbody></table></code> Weight Clustering</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>240
+</pre></td>
+</tr></tbody></table></code> Collaborative Optimization</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>248
+</pre></td>
+</tr></tbody></table></code> Case Studies</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>257
+</pre></td>
+</tr></tbody></table></code> Key Points</li>
+    </ul>
+  </li>
+  <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>259
+</pre></td>
+</tr></tbody></table></code> Chapter 5: “Automating Model Design with Meta-Optimization”
+    <ul>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>260
+</pre></td>
+</tr></tbody></table></code> Introduction to Meta-Optimization</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>264
+</pre></td>
+</tr></tbody></table></code> General Hyperparameter Optimization</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>289
+</pre></td>
+</tr></tbody></table></code> Neural Architecture Search</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>311
+</pre></td>
+</tr></tbody></table></code> Case Studies</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>323
+</pre></td>
+</tr></tbody></table></code> Key Points</li>
+    </ul>
+  </li>
+  <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>327
+</pre></td>
+</tr></tbody></table></code> Chapter 6: “Successful Neural Network Architecture Design”
+    <ul>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>330
+</pre></td>
+</tr></tbody></table></code> Nonlinear and Parallel Representation</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>357
+</pre></td>
+</tr></tbody></table></code> Block/Cell Design</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>380
+</pre></td>
+</tr></tbody></table></code> Neural Network Scaling</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>399
+</pre></td>
+</tr></tbody></table></code> Key Points</li>
+    </ul>
+  </li>
+  <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>401
+</pre></td>
+</tr></tbody></table></code> Chapter 7: “Reframing Difficult Deep Learning Problems”
+    <ul>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>403
+</pre></td>
+</tr></tbody></table></code> Reframing Data Representation - DeepInsight</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>414
+</pre></td>
+</tr></tbody></table></code> Reframing Corrupted Data Usage - NLNL</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>427
+</pre></td>
+</tr></tbody></table></code> Reframing Limited Data Usage - Siamese Networks</li>
+      <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>438
+</pre></td>
+</tr></tbody></table></code> Key Points and Epilogue</li>
+    </ul>
+  </li>
+  <li>
+<code class="language-plaintext highlighter-rouge"><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>441
+</pre></td>
+</tr></tbody></table></code> Index</li>
+</ul>
+
+<hr>
+
+<h2 id="case-study-papers">Case Study Papers</h2>
+<p>In an effort to ground the book and to further illuminate the wide breadth of concept applications, from the second chapter onwards each chapter features three case studies. A case study centers around a paper relevant to the chapter discussion, and gives context, a summary of the paper contributions and concepts, presents reported results and diagrams, and offers code if applicable/feasible.</p>
+
+<p>Combined, the book explores 18 different papers. It was a great experience reaching out to the authors of each of these papers (even the ones that didn’t reply to my request - I’m looking at you, Vivek Ramanujan; it is a pity your fascinating paper was left out). I’ve organized and linked the discussed papers below for your reference and exploration.</p>
+
+<p>Chapter 2 - “Pretraining Strategies and Transfer Learning”</p>
+<ul>
+  <li>
+<a href="https://arxiv.org/abs/1904.04334" target="_blank" rel="external nofollow noopener">“A Target-Agnostic Attack on Deep Models: Exploiting Security Vulnerabilities of Transfer Learning”</a> by Shahbaz Rezaei and Xin Liu</li>
+  <li>
+<a href="https://arxiv.org/abs/1803.07728" target="_blank" rel="external nofollow noopener">“Unsupervised Representation Learning by Predicting Image Rotations”</a> by Spyros Gidaris, Praveer Singh, and Nikos Komodakis</li>
+  <li>
+<a href="https://arxiv.org/abs/1505.05192" target="_blank" rel="external nofollow noopener">“Unsupervised Visual Representation Learning by Context Prediction”</a> by Carl Doersch, Abhinav Gupta, and Alexei A. Efros</li>
+</ul>
+
+<p>Chapter 3 - “The Versatility of Autoencoders”</p>
+<ul>
+  <li>
+<a href="https://arxiv.org/abs/1908.07442" target="_blank" rel="external nofollow noopener">“TabNet: Attentive Interpretable Tabular Learning”</a> by Sercan O. Arik and Thomas Pfister</li>
+  <li>
+<a href="https://aclanthology.org/D19-5522/" target="_blank" rel="external nofollow noopener">“FASPell: A Fast, Adaptable, Simple, Powerful Chinese Spell Checker Based on DAE-Decoder Paradigm”</a> by Yuzhong Hong, Xianguo Yu, Neng He, Nan Liu, and Junhui Liu</li>
+  <li>
+<a href="https://arxiv.org/abs/1702.02390" target="_blank" rel="external nofollow noopener">“A Hybrid Convolutional Variational Autoencoder for Text Generation”</a> by Stanislau Semeniuta, Aliaksei Severyn, and Erhardt Barth</li>
+</ul>
+
+<p>Chapter 4 - “Model Compression for Practical Deployment”</p>
+<ul>
+  <li>
+<a href="https://arxiv.org/abs/1510.00149" target="_blank" rel="external nofollow noopener">“Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization, and Huffman Encoding”</a> by Song Han, Huizi Mao, and William J. Dally</li>
+  <li>
+<a href="https://arxiv.org/abs/2004.07320" target="_blank" rel="external nofollow noopener">“Training with Quantization Noise for Extreme Model Compression”</a> by Angela Fan, Pierre Stock, Benjamin Graham, Edouard Grave, Remi Gribonval, Herve Jegou, and Armand Joulin</li>
+  <li>
+<a href="https://arxiv.org/abs/1911.05248" target="_blank" rel="external nofollow noopener">“What Do Compressed Deep Neural Networks Forget?”</a> by Sarah Hooker, Aaron Courville, Gregory Clark, Yann Dauphin, and Andrea Frome</li>
+</ul>
+
+<p>Chapter 5 - “Automating Model Design with Meta-Optimization”</p>
+<ul>
+  <li>
+<a href="https://arxiv.org/abs/1707.07012" target="_blank" rel="external nofollow noopener">“Learning Transferable Architectures for Scalable Image Recognition”</a> by Barret Zoph, Vijay Vasudevan, Jonathon Shlens, and Quoc V. Le</li>
+  <li>
+<a href="https://arxiv.org/abs/1712.00559" target="_blank" rel="external nofollow noopener">“Progressive Neural Architecture Search”</a> by Chenxi Liu, Barret Zoph, Maxim Neumann, Jonathon Shlens, Wei Hua, Li-Jia Li, Li Fei-Fei, Alan Yuille, Jonathan Huang, and Kevin Murphy</li>
+  <li>
+<a href="https://arxiv.org/abs/1802.03268" target="_blank" rel="external nofollow noopener">“Efficient Neural Architecture Search via Parameter Sharing”</a> by Hieu Pham, Melody Y. Guan, Barret Zoph, Quoc V. Le, and Jeff Dean</li>
+</ul>
+
+<p>Chapter 6 - “Successful Neural Network Architecture Design”</p>
+<ul>
+  <li>
+<a href="https://arxiv.org/abs/1505.04597" target="_blank" rel="external nofollow noopener">“Convolutional Networks for Biomedical Image Segmentation”</a> by Olaf Ronneberger, Philipp Fischer, and Thomas Brox</li>
+  <li>
+<a href="https://arxiv.org/abs/1512.00567" target="_blank" rel="external nofollow noopener">“Rethinking the Inception Architecture for Computer Vision”</a> by Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens, and Zbigniew Wojna</li>
+  <li>
+<a href="https://arxiv.org/abs/1905.11946" target="_blank" rel="external nofollow noopener">“Rethinking Model Scaling for Convolutional Neural Networks”</a> by Mingxing Tan and Quoc V. Le</li>
+</ul>
+
+<p>Chapter 7 - “Reframing Difficult Deep Learning Problems</p>
+<ul>
+  <li>
+<a href="https://www.nature.com/articles/s41598-019-47765-6" target="_blank" rel="external nofollow noopener">“DeepInsight: A Methodology to Transform Non-Image Data to an Image for Convolution Neural Architecture”</a> by Alok Sharma, Edwin Vans, Daichi Shigemizu, Keith A. Boroevich, and Tatsuhiko Tsunoda</li>
+  <li>
+<a href="https://arxiv.org/abs/1908.07387" target="_blank" rel="external nofollow noopener">“Negative Learning for Noisy Labels”</a> by Youngdong Kim, Junho Yim, Juseung Yun, and Junmo Kim</li>
+  <li>
+<a href="https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf" target="_blank" rel="external nofollow noopener">“Siamese Neural Networks for One-shot Image Recognition”</a> by Gregory Koch, Richard Zemel, and Ruslan Salakhutdinov</li>
+</ul>
+
+<hr>
+
+<h2 id="code">Code</h2>
+<p>The code snippets within each chapter have been arranged into code notebooks for easy user viewing and access. The raw notebooks for each chapter are available on the <a href="https://github.com/Apress/Modern-Deep-Learning-Design-and-Application-Development-" target="_blank" rel="external nofollow noopener">Apress GitHub</a>.</p>
 
           </article>
 
