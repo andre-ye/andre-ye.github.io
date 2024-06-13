@@ -294,6 +294,56 @@ The orbit stabilizer theorem: \(|G| = |G_x| \cdot |O_x|\), where \(G_x\) is the 
 
 <h2 id="computability-theory">Computability Theory</h2>
 
+<p><em>Branching Programs.</em>
+Every function \(f : \{0, 1\}^n \to \{0, 1\}\) can be computed by a branching program of width 5 and length \(O(4^d)\).</p>
+
+<p><em>Circuits.</em>
+Every function can be computed by a circuit of size at most \(O(2^n / n)\).</p>
+
+<p><em>Time Hierarchy.</em>
+If \(r, t\) are time-constructible functions satisfying \(r(n) \log r(n) = o(t(n))\), then \(\text{DTIME}(r(n)) \subsetneq \text{DTIME}(t(n))\).</p>
+
+<p><em>Space Hierarchy.</em>
+If \(q, s\) are space-constructible functions satisfying \(q(n) = o(s(n))\), then \(\text{DSPACE}(q(n)) \subsetneq \text{DSPACE}(s(n))\).</p>
+
+<p><em>Circuit Hierarchy.</em>
+Every function \(f: \{0, 1\}^* \to \{0, 1\}\) is in \(\text{SIZE}(2^n / n)\).
+For every large enough \(n\), there is a function \(f : \{0, 1\}^n \to \{0, 1\}\) that cannot b ecomputed by a circuit of size \(2^n / 3n\).</p>
+
+<p><em>TQBF</em>.
+The \(\text{TQBF}\) function maps the set of totally quantified boolean formulas to 0 or 1.
+TQBF is \(\textbf{PSPACE}\)-complete, meaning that every function in \(\textbf{PSPACE}\) can be reduced in polynomial time to \(\text{TQBF}\).</p>
+
+<p><em>SAT</em>.
+There is no Turing machine computing circuit-satisfiability in \(O(n)\) time and \(O(\log n)\) space.</p>
+
+<p><em>Matrix product checking.</em>
+To check if \(A \times B = C\) for three \(n \times n\) matrices \(A, B, C\), randomly sample \(r \in \{0, 1\}^n\) and check if \(ABr = Cr\) repeatedly. This randomized algorithm takes only \(O(n^2)\) time and has exponentially decreasing error rate.</p>
+
+<p><em>A complication for proving \(P ?= NP\).</em>
+There exists an oracle \(A\) such that \(P^A = NP^A\), and an oracle \(B\) such that \(P^B \neq NP^B\).
+Therefore any proof on \(P ?= NP\) may not work in relativized worlds where access to both is permitted, whereas other familiar proofs to relativize.</p>
+
+<p><em>The true identity of \(\textbf{ZPP}\).</em>
+\(\mathbf{ZPP}\) is the class of boolean functions with an algorithm which never makes an error, but whose expected running time is polynomial in \(n\).
+\(\mathbf{RP}\) is the class of boolean functions which can be computed by a machine which is always correct when \(f(x) = 0\) and which is \(2/3\) correct when \(f(x) = 1\).
+\(\mathbf{ZPP} = \mathbf{RP} \cap co\mathbf{RP}\)</p>
+
+<p><em>The permanent</em> of an \(n \times n\) matrix \(M\) is \(\sum_\pi \Pi_{i=1}^n M_{i, \pi(i)}\) where the sum is taken over all permutations \(\pi : [n] \to [n]\).
+The class \(\#P\) contains the functions for which the number of satisfying assignments can be computed in polynomial time.
+The permanent is \(\#P\)-complete.</p>
+
+<p>\(\mathbf{IP} = \mathbf{PSPACE}\).
+That is, the set of functions computable with an interactive polynomial verifier with high probability is equal to the set of functions computable in polynomial space.</p>
+
+<p><em>The blind man.</em>
+A blind man is trying to buy a red rag and a blue rag.
+But he is not sure if the salesman is trying to trick him or not. The salesman could, for instance, give him two red rags or two blue rags.
+The blind man shuffles rags behind his back, but keeps track of the identities of each (so at first he doesn’t know the true colors, but he knows which rag is which).
+He randomly pulls out a rag and asks the salesman what color it is. Then, he puts it behind his back and shuffles again, repeating this several times.
+If the salesman gives two conflicting answers for the same rag (e.g., calling it red one time and blue another time), then the blind man knows that he is lying.
+If, on the other hand, the salesman consistently calls one rag blue and the other rag red, then the blind man is sure that he indeed has one blue and one red rag.
+The moral of this story is that even a “handicapped” verifier can compute powerful functions with randomness and interaction.</p>
 
           </article>
 
@@ -332,7 +382,7 @@ The orbit stabilizer theorem: \(|G| = |G_x| \cdot |O_x|\), where \(G_x\) is the 
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2024 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
-Last updated: June 06, 2024.
+Last updated: June 13, 2024.
       </div>
     </footer>
 
