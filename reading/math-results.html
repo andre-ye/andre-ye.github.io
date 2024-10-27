@@ -157,7 +157,8 @@
 
 <p><strong>Reals as a vector space over the rationals.</strong>
 The reals can be defined as the set of all Cauchy sequences of rationals, with addition and multiplication defined component-wise. This makes the reals a vector space (of infinite dimension) over the rationals.
-If the axiom of choice is true, then there exists a basis for this vector space.
+If the axiom of choice is true, then there exists a basis for this vector space.</p>
+
 <!-- 
 **Arc length.**
 The length of a curve given by the function $f(x)$ on the interval $[a, b]$ is given by the integral $$\int_a^b \sqrt{1 + (f'(x))^2} \, dx$$. -->
@@ -168,16 +169,17 @@ Every bounded sequence has a convergent subsequence. -->
 **Cauchy Sequences.**
 A sequence is Cauchy if for every $\epsilon > 0$, there exists an $N$ such that for all $n, m > N$, $$\| \mathbf{x}_n - \mathbf{x}_m \| < \epsilon$$.
 A sequence $$\{ \mathbf{x}_n \} \in \mathbb{R}^n$$ is convergent iff it is Cauchy. -->
-&lt;!– 
-<strong>Connectedness, Pathwise and Not.</strong>
+<!-- 
+**Connectedness, Pathwise and Not.**
 A set is connected iff it cannot be written as the union of two disjoint nonempty open sets.
 A set is path-wise connected iff for every pair of points in the set, there exists a continuous function that maps the interval $[0, 1]$ to the set and maps the endpoints to the given points.
-If a set is path connected, then it is connected. The converse is not true: consider the Topologist’s sine curve, defined as</p>
+If a set is path connected, then it is connected. The converse is not true: consider the Topologist's sine curve, defined as
 
-<p>\(S = \{ (x, \sin(1/x)) \mid 0 &lt; x \leq 1 \} \cup \{ (0, y) \mid -1 \leq y \leq 1 \}\) –&gt;</p>
+$$S = \{ (x, \sin(1/x)) \mid 0 < x \leq 1 \} \cup \{ (0, y) \mid -1 \leq y \leq 1 \}$$ -->
 
 <p><strong>Leibniz’s proof for the derivative of a quadratic.</strong>
-If \(x\) changes by \(\delta x\), then \(y = x^2\) should change by \(y + \delta y = (x + \delta x)^2 = x^2 + 2x\delta x + (\delta x)^2\). Relabel \(\delta x, \delta y\) as \(dx, dy\) and as they become ‘infinitely small’, then \((\delta x)^2\) gets infinitely smaller. Also subtract \(y = x^2\). So we get \(dy = 2x dx\), or \(dy/dx = 2x\).
+If \(x\) changes by \(\delta x\), then \(y = x^2\) should change by \(y + \delta y = (x + \delta x)^2 = x^2 + 2x\delta x + (\delta x)^2\). Relabel \(\delta x, \delta y\) as \(dx, dy\) and as they become ‘infinitely small’, then \((\delta x)^2\) gets infinitely smaller. Also subtract \(y = x^2\). So we get \(dy = 2x dx\), or \(dy/dx = 2x\).</p>
+
 <!-- 
 **Definition: Riemann integrability.**
 $$f$$ is integrable on $$[a, b]$$ if
@@ -187,7 +189,7 @@ where $$U(f, P)$$ is the upper sum and $$L(f, P)$$ is the lower sum. -->
 **Measurability, zero-content, and integrability.**
 A set has zero content if for every $$\epsilon > 0$$, there exists a finite collection of intervals such that the set is contained in the union of the intervals and the sum of the lengths of the intervals is less than $$\epsilon$$.
 A bounded set is integrable even if it has a subset of zero content.
-For instance, the Cantor set defined by removing the middle third of the interval $[0, 1]$ and then removing the middle third of the remaining intervals, and so on until infinity; a function defined on the Cantor set is integrable. --></p>
+For instance, the Cantor set defined by removing the middle third of the interval $[0, 1]$ and then removing the middle third of the remaining intervals, and so on until infinity; a function defined on the Cantor set is integrable. -->
 
 <!-- ## Linear Algebra
 
