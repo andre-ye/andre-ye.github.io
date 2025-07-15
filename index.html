@@ -49,6 +49,12 @@
     <script src="/assets/js/dark_mode.js"></script>
     
 
+    <!-- Random AI Image Script -->
+    <script src="/assets/js/random_ai_image.js"></script>
+    
+    <!-- Random Quote Script -->
+    <script src="/assets/js/random_quote.js"></script>
+
   </head>
 
   <!-- Body -->
@@ -112,15 +118,7 @@
                   <a class="dropdown-item" href="/reading/metaphilosophy">Metaphilosophy</a>
                 </div>
               </li>
-
-              <!-- Toogle theme mode -->
-              <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-                </button>
-              </li>
-            </ul>
+</ul>
           </div>
         </div>
       </nav>
@@ -141,7 +139,7 @@
       <div class="post">
         <header class="post-header">
           <h1 class="post-title">
-           <span class="font-weight-bold">Andre</span>  Ye
+           <span class="name-andre">Andre</span>  <span class="name-ye">Ye</span>
           </h1>
           <p class="desc"></p>
         </header>
@@ -189,10 +187,11 @@ My email is <code class="language-plaintext highlighter-rouge">andreye [at] uw [
 <br> -->
 
 <center>
-<img src="\assets\img\ghost-portraits.png" width="100%">
+<img id="random-ai-image" src="" width="100%">
 </center>
+<div style="height: 20px;"></div>
 <p><small>
-  Composite image of The Disintegration of the Persistence of Memory (Dali), Edward Bellamy (GAN), Guernica (Picasso), still from Battleship Potemkin (Eisenstein), Relativity (Escher).
+  This is a randomly chosen image from <a href="https://betterimagesofai.org/images" target="_blank" rel="external nofollow noopener">Better Images of AI</a>, an excellent project which seeks to supplement and challenge dominant visualization of AI as a Terminator-robot-agent by emphasizing how people, data, labor, resources, and ideas go into making AI.
 </small></p>
 
 <p><br></p>
@@ -322,11 +321,17 @@ This was covered in a <a href="https://www.washington.edu/uaa/2025/04/09/uw-unde
       
     </div>
 
+    <!-- Fixed Quote Box -->
+    <div class="fixed-quote-box">
+      <p id="random-quote" class="quote-text"></p>
+      <p id="random-quote-author" class="quote-author"></p>
+    </div>
+
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2025 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
-Last updated: July 03, 2025.
+Last updated: July 15, 2025.
       </div>
     </footer>
 

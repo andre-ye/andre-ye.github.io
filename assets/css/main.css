@@ -3,66 +3,29 @@
  * To adjust anything, simply edit the variables below and rebuild the theme.
  ******************************************************************************/
 /*******************************************************************************
- * Themes
+ * Dark Red Theme
  ******************************************************************************/
 :root {
-  --global-bg-color: #ffffff;
-  --global-code-bg-color: rgba(181, 9, 172, 0.05);
-  --global-text-color: #000000;
-  --global-text-color-light: #828282;
-  --global-theme-color: #B509AC;
-  --global-hover-color: #B509AC;
+  --global-bg-color: #1a0a0a;
+  --global-code-bg-color: #2d1010;
+  --global-text-color: #e0d0d0;
+  --global-text-color-light: #b89696;
+  --global-theme-color: #cc3333;
+  --global-hover-color: #ff6666;
   --global-hover-text-color: #ffffff;
-  --global-footer-bg-color: #1C1C1D;
-  --global-footer-text-color: #e8e8e8;
-  --global-footer-link-color: #ffffff;
-  --global-distill-app-color: #828282;
-  --global-divider-color: rgba(0,0,0,.1);
-  --global-card-bg-color: #ffffff;
+  --global-footer-bg-color: #0d0505;
+  --global-footer-text-color: #c89090;
+  --global-footer-link-color: #cc3333;
+  --global-distill-app-color: #b89696;
+  --global-divider-color: #4a2020;
+  --global-card-bg-color: #2d1515;
+  --global-bold-color: #ff4444;
 }
-:root .fa-sun {
-  display: none;
-}
-:root .fa-moon {
-  padding-left: 10px;
-  padding-top: 12px;
+:root .repo-img-dark {
   display: block;
 }
 :root .repo-img-light {
-  display: block;
-}
-:root .repo-img-dark {
   display: none;
-}
-
-html[data-theme=dark] {
-  --global-bg-color: #1C1C1D;
-  --global-code-bg-color: #2c3237;
-  --global-text-color: #e8e8e8;
-  --global-text-color-light: #e8e8e8;
-  --global-theme-color: #2698BA;
-  --global-hover-color: #2698BA;
-  --global-hover-text-color: #ffffff;
-  --global-footer-bg-color: #e8e8e8;
-  --global-footer-text-color: #1C1C1D;
-  --global-footer-link-color: #000000;
-  --global-distill-app-color: #e8e8e8;
-  --global-divider-color: #424246;
-  --global-card-bg-color: #212529;
-}
-html[data-theme=dark] .fa-sun {
-  padding-left: 10px;
-  padding-top: 12px;
-  display: block;
-}
-html[data-theme=dark] .fa-moon {
-  display: none;
-}
-html[data-theme=dark] .repo-img-light {
-  display: none;
-}
-html[data-theme=dark] .repo-img-dark {
-  display: block;
 }
 
 /******************************************************************************
@@ -117,6 +80,25 @@ strong {
   color: var(--global-text-color);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: var(--global-theme-color);
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 68, 68, 0.3);
+}
+
+strong, b {
+  color: var(--global-bold-color);
+  text-shadow: 0 0 8px rgba(255, 68, 68, 0.2);
+}
+
+img {
+  filter: drop-shadow(0 0 15px rgba(255, 68, 68, 0.4));
+  transition: filter 0.3s ease;
+}
+img:hover {
+  filter: drop-shadow(0 0 25px rgba(255, 68, 68, 0.6));
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -124,9 +106,72 @@ hr {
 table td,
 table th {
   font-size: 1rem;
+  color: var(--global-text-color);
 }
 table th {
   font-weight: bold;
+}
+
+.name-andre {
+  color: var(--global-theme-color) !important;
+  font-weight: bold;
+}
+
+.name-ye {
+  color: var(--global-text-color) !important;
+  font-weight: normal;
+}
+
+.fixed-quote-box {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 250px;
+  padding: 1rem;
+  background-color: var(--global-card-bg-color);
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+.fixed-quote-box:hover {
+  opacity: 1;
+}
+.fixed-quote-box .quote-text {
+  font-style: italic;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  color: var(--global-text-color);
+}
+.fixed-quote-box .quote-author {
+  font-size: 0.75rem;
+  color: var(--global-text-color-light);
+  margin: 0;
+  text-align: right;
+}
+
+@media (max-width: 1200px) {
+  .fixed-quote-box {
+    display: none;
+  }
+}
+.news table td, .news table th {
+  color: var(--global-text-color) !important;
+}
+.news table th {
+  width: 150px;
+  min-width: 150px;
+  white-space: nowrap;
+}
+.news table .news-title {
+  color: var(--global-theme-color) !important;
+}
+.news table .news-title:hover {
+  color: var(--global-hover-color) !important;
 }
 
 a,
