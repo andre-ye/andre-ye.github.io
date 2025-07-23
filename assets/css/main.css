@@ -331,13 +331,13 @@ table th {
 }
 .fixed-quote-box .quote-text {
   font-style: italic;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   line-height: 1.4;
   margin-bottom: 0.5rem;
   color: var(--global-text-color);
 }
 .fixed-quote-box .quote-author {
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   color: var(--global-text-color-light);
   margin: 0;
   text-align: right;
@@ -347,6 +347,7 @@ table th {
   color: var(--global-text-color-light);
   margin: 0.5rem 0 0 0;
   text-align: center;
+  flex-shrink: 0;
 }
 .fixed-quote-box .quote-source a {
   color: var(--global-theme-color);

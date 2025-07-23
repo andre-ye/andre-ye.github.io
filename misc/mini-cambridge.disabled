@@ -2,24 +2,22 @@
 <html lang="en">
 
   <!-- Head -->
-  <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
     
 
     <!-- Standard metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>articles | Andre  Ye</title>
-    <meta name="author" content="Andre  Ye">
-    <meta name="description" content="Webpage for Andre Ye
-">
-    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+    <title>Mini-Cambridge | Andre  Ye</title>
+    <meta name="author" content="Andre  Ye" />
+    <meta name="description" content="Full-screen Cambridge weather widget" />
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
 
 
     <!-- Bootstrap & MDB -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
 
     <!-- Bootstrap Table -->
     <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
@@ -30,20 +28,20 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 
     <!-- Code Syntax Highlighting -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light" />
 
     
 
     <!-- Styles -->
     
-    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A4%94&lt;/text&gt;&lt;/svg&gt;">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤔</text></svg>">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://andre-ye.github.io/me-like/articles/">
+    <link rel="canonical" href="https://andre-ye.github.io/misc/mini-cambridge">
 
     <!-- Dark Mode -->
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark" />
 
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/dark_mode.js"></script>
@@ -72,7 +70,7 @@
       <!-- Nav Bar -->
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
         <div class="container">
-          <a class="navbar-brand title font-weight-lighter" href="https://andre-ye.github.io/"><span class="name-andre">Andre</span> <span class="name-ye">Ye</span></a>
+          <a class="navbar-brand title font-weight-lighter" href="https://andre-ye.github.io/"><span class="name-andre">Andre</span>&nbsp;<span class="name-ye">Ye</span></a>
           <!-- Navbar Toggle -->
           <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -110,8 +108,7 @@
                   <a class="dropdown-item" href="/misc/history-listed">History, Listed</a>
                   <a class="dropdown-item" href="/misc/recmath">Recreational Math</a>
                 </div>
-              </li>
-</ul>
+              </li></ul>
           </div>
         </div>
       </nav>
@@ -128,57 +125,79 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- page.html -->
-        <div class="post">
+        <style>
+.mini-cambridge-container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(25, 25, 45, 1) 0%, rgba(15, 15, 35, 1) 100%);
+    margin: 20px 0;
+    border-radius: 12px;
+    position: relative;
+}
 
-          <header class="post-header">
-            <h1 class="post-title">articles</h1>
-            <p class="post-description"></p>
-          </header>
+/* Override the weather widget to be centered and large */
+.mini-cambridge-container .weather-widget {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    width: 90% !important;
+    max-width: 800px !important;
+    height: 70vh !important;
+    max-height: 600px !important;
+    min-width: 400px !important;
+    min-height: 300px !important;
+}
 
-          <article>
-            <p>A curated collection of academic papers and articles that influence my research and thinking across various domains.
-Click on a card for some thoughts.
-To maximize each item’s exposure, the order of categories and order of papers within each category are randomly reordered each day.
-(Currently working on porting.)</p>
+/* Hide other page elements for cleaner look */
+.fixed-quote-box,
+.fixed-image-box {
+    display: none !important;
+}
 
-<div id="articles-content">
-<!-- Content will be dynamically generated by JavaScript -->
+/* Scale up skyline for better visibility */
+.mini-cambridge-container .mit-skyline {
+    height: 200px !important;
+}
+
+@media (max-width: 768px) {
+    .mini-cambridge-container .weather-widget {
+        width: 95% !important;
+        height: 60vh !important;
+        min-width: 300px !important;
+        min-height: 250px !important;
+    }
+    
+    .mini-cambridge-container .mit-skyline {
+        height: 150px !important;
+    }
+}
+</style>
+
+<div class="mini-cambridge-container">
+    <div id="mini-cambridge-widget">
+        <!-- Weather widget will be injected here by the script -->
+    </div>
 </div>
 
-<script src="/assets/js/articles_nav.js"></script>
+<script>
+// Wait for DOM to load, then create the widget in the container
+document.addEventListener('DOMContentLoaded', function() {
+    // The weather widget script will run and create the widget
+    // We need to move it to our container after it's created
+    setTimeout(function() {
+        const widget = document.querySelector('.weather-widget');
+        const container = document.getElementById('mini-cambridge-widget');
+        if (widget && container) {
+            container.appendChild(widget);
+        }
+    }, 100);
+});
+</script>
 
-
-          </article>
-
-        </div>
-
-        <style>
-          details {
-            user-select: none;
-          }
-
-          details>summary span.icon {
-            width: 24px;
-            height: 10px;
-            transition: all 0.3s;
-            margin-left: auto;
-          }
-
-          details[open] summary span.icon {
-            transform: rotate(180deg);
-          }
-
-          summary {
-            display: flex;
-            cursor: pointer;
-          }
-
-          summary::-webkit-details-marker {
-            display: none;
-          }
-        </style>
-
+<script src="/assets/js/weather_widget.js"></script>
       
     </div>
 
@@ -193,15 +212,15 @@ To maximize each item’s exposure, the order of categories and order of papers 
     <!-- Fixed Image Box (exclude from about page) -->
     
     <div class="fixed-image-box">
-      <img id="fixed-ai-image" class="ai-image" src="" alt="Random AI image from Better Images of AI">
-      <p class="image-caption">from <a href="https://betterimagesofai.org/images" target="_blank" rel="external nofollow noopener">Better Images of AI</a></p>
+      <img id="fixed-ai-image" class="ai-image" src="" alt="Random AI image from Better Images of AI" />
+      <p class="image-caption">from <a href="https://betterimagesofai.org/images" target="_blank">Better Images of AI</a></p>
     </div>
     
 
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2025 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Words from <a href="https://www.thedictionaryofobscuresorrows.com/" target="_blank" rel="external nofollow noopener">Dictionary of Obscure Sorrows</a>.
+        &copy; Copyright 2025 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Words from <a href="https://www.thedictionaryofobscuresorrows.com/" target="_blank">Dictionary of Obscure Sorrows</a>.
 Last updated: July 23, 2025.
       </div>
     </footer>
