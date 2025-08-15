@@ -47,9 +47,6 @@
     <script src="/assets/js/dark_mode.js"></script>
     
 
-    <!-- Random AI Image Script -->
-    <script src="/assets/js/random_ai_image.js"></script>
-    
     <!-- Random Quote Script -->
     <script src="/assets/js/random_quote.js"></script>
     
@@ -105,6 +102,7 @@
               <li class="nav-item dropdown ">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">misc</a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/misc/season-3-episode-1">Season 3, Episode 1</a>
                   <a class="dropdown-item" href="/misc/history-listed">History, Listed</a>
                   <a class="dropdown-item" href="/misc/recmath">Recreational Math</a>
                 </div>
@@ -202,12 +200,14 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 
     <!-- Fixed Quote Box -->
+    
     <div class="fixed-quote-box">
       <p id="random-quote" class="quote-text"></p>
       <p id="random-quote-author" class="quote-author"></p>
       <p class="quote-source">from <a href="/me-like/quotes/">me like</a></p>
       <p class="bubble-instructions">press <kbd>e</kbd> to toggle word bubbles<br>press <kbd>m</kbd> to show meaning</p>
     </div>
+    
 
     <!-- Fixed Image Box (exclude from about page) -->
     
@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <footer class="fixed-bottom">
       <div class="container mt-0">
         &copy; Copyright 2025 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Words from <a href="https://www.thedictionaryofobscuresorrows.com/" target="_blank">Dictionary of Obscure Sorrows</a>.
-Last updated: July 29, 2025.
+Last updated: August 15, 2025.
       </div>
     </footer>
 
@@ -346,8 +346,17 @@ Last updated: July 29, 2025.
 </script>
 
     
+    <!-- Hourly AI Image System - loads first to provide synchronized images -->
+    <script src="/assets/js/hourly_ai_image.js"></script>
+    
+    <!-- Random AI Image selector - uses hourly synchronized system -->
+    <script src="/assets/js/random_ai_image.js"></script>
+    
     <!-- Custom cursor script -->
     <script src="/assets/js/custom_cursor.js"></script>
+    
+    <!-- Info button script -->
+    <script src="/assets/js/info_button.js"></script>
     
     <!-- Weather widget scripts -->
     <script src="/assets/js/weather_widget.js"></script>
