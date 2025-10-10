@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <footer class="fixed-bottom">
       <div class="container mt-0">
         &copy; Copyright 2025 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Words from <a href="https://www.thedictionaryofobscuresorrows.com/" target="_blank">Dictionary of Obscure Sorrows</a>.
-Last updated: September 23, 2025.
+Last updated: October 10, 2025.
       </div>
     </footer>
 
