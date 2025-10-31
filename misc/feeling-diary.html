@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Announcement_19 | Andre  Ye</title>
+    <title>Feeling Diary | Andre  Ye</title>
     <meta name="author" content="Andre  Ye">
     <meta name="description" content="Webpage for Andre Ye
 ">
@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A4%94&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://andre-ye.github.io/news/announcement_19/">
+    <link rel="canonical" href="https://andre-ye.github.io/misc/feeling-diary">
 
     <!-- Dark Mode -->
     
@@ -126,28 +126,194 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- _layouts/post.html -->
+        <!-- page.html -->
+        <div class="post">
 
-<div class="post">
+          <header class="post-header">
+            <h1 class="post-title">Feeling Diary</h1>
+            <p class="post-description"></p>
+          </header>
 
-  <header class="post-header">
-    <h1 class="post-title">Announcement_19</h1>
-    <p class="post-meta">June 6, 2025</p>
-    <p class="post-tags">
-      <a href="//blog/2025"> <i class="fas fa-calendar fa-sm"></i> 2025 </a>
+          <article>
+            <style>
+.feelings-wrapper {
+    background-color: var(--global-bg-color);
+    border: 3px solid #999;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
 
-    </p>
-  </header>
+.feeling-entry {
+    padding: 30px;
+    position: relative;
+    background-color: var(--global-bg-color);
+}
 
-  <article class="post-content">
-    
-    <div id="markdown-content">
-      <p>An <a href="https://www.washington.edu/uaa/undergrad-researcher-questions-the-ai-answer/" target="_blank" rel="external nofollow noopener">article</a> by the Undergraduate Academic Affairs office was written about my work!
-Also: articles on winning the <a href="https://www.washington.edu/uaa/2025/04/09/uw-undergraduate-earns-fellowship-for-graduate-study" target="_blank" rel="external nofollow noopener">PD Soros fellowship</a> and the <a href="https://artsci.washington.edu/news/2025-06/2025-deans-medalists-energized-inspiring" target="_blank" rel="external nofollow noopener">Dean’s Medal</a></p>
+.feeling-entry:not(:last-child) {
+    position: relative;
+    padding-bottom: 40px;
+}
 
+.feeling-entry:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,5 L5,0 L10,5 L15,0 L20,5 L25,0 L30,5 L35,0 L40,5 L45,0 L50,5 L55,0 L60,5 L65,0 L70,5 L75,0 L80,5 L85,0 L90,5 L95,0 L100,5' stroke='%23999' stroke-width='2' fill='none' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 100px 10px;
+    background-position: center;
+}
+
+.feeling-timestamp {
+    text-align: left;
+    font-size: 0.85em;
+    color: var(--global-text-color-light);
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.feeling-day {
+    display: inline;
+    font-weight: 600;
+    color: var(--global-theme-color);
+    margin-right: 8px;
+}
+
+.feeling-date-time {
+    display: inline;
+    opacity: 0.7;
+}
+
+.feeling-text {
+    font-size: 1.05em;
+    line-height: 1.8;
+    color: var(--global-text-color);
+    text-align: left;
+    font-style: normal;
+}
+
+.diary-container {
+    max-width: 650px;
+    margin: 60px auto;
+}
+
+.diary-header {
+    margin-bottom: 60px;
+    text-align: left;
+    font-style: normal;
+    color: var(--global-text-color-light);
+    font-size: 0.95em;
+}
+</style>
+
+<div class="diary-container">
+    <div class="diary-header">
+        A record of what I am feeling, following John Koenig's vision in <em>The Dictionary of Obscure Sorrows</em>: "Words never do us justice. But we have to try anyway. Luckily, the palette of language is infinitely expandable. If we wanted to, we could build a new linguistic framework to fill in the gaps, this time rooted in our common humanity, our shared vulnerability, and our complexity as individuals... We could catalog even the faintest quirks of the human condition, even things that were only ever felt by one person -- though it is the working hypothesis of this book that none of us is truly alone in how we feel."
     </div>
-  </article>
+
+    <div id="feelings-container">
+        Loading...
+    </div>
 </div>
+
+<script>
+fetch('/assets/json/feelings.jsonl')
+    .then(response => response.text())
+    .then(data => {
+        const lines = data.trim().split('\n');
+        const entries = lines.map(line => JSON.parse(line));
+
+        // Function to convert 12-hour time to 24-hour for sorting
+        function convertTo24Hour(time, amPm) {
+            const [hours, minutes] = time.split(':').map(num => parseInt(num));
+            let hour24 = hours;
+
+            if (amPm === 'PM' && hours !== 12) {
+                hour24 = hours + 12;
+            } else if (amPm === 'AM' && hours === 12) {
+                hour24 = 0;
+            }
+
+            return `${String(hour24).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+        }
+
+        // Sort by date and time, most recent first
+        entries.sort((a, b) => {
+            const time24A = convertTo24Hour(a.time, a.am_pm);
+            const time24B = convertTo24Hour(b.time, b.am_pm);
+            const dateTimeA = new Date(a.date + 'T' + time24A);
+            const dateTimeB = new Date(b.date + 'T' + time24B);
+            return dateTimeB - dateTimeA;
+        });
+
+        const container = document.getElementById('feelings-container');
+        container.innerHTML = '';
+
+        // Create wrapper for all entries
+        const wrapper = document.createElement('div');
+        wrapper.className = 'feelings-wrapper';
+
+        entries.forEach(entry => {
+            const entryDiv = document.createElement('div');
+            entryDiv.className = 'feeling-entry';
+
+            const dayOfWeek = entry.day_of_week || new Date(entry.date).toLocaleDateString('en-US', { weekday: 'long' });
+            const timeDisplay = `${entry.time} ${entry.am_pm}`;
+
+            entryDiv.innerHTML = `
+                <div class="feeling-timestamp">
+                    <span class="feeling-day">${dayOfWeek}</span>
+                    <span class="feeling-date-time">${entry.date} • ${timeDisplay}</span>
+                </div>
+                <div class="feeling-text">${entry.feeling}</div>
+            `;
+
+            wrapper.appendChild(entryDiv);
+        });
+
+        container.appendChild(wrapper);
+    })
+    .catch(error => {
+        document.getElementById('feelings-container').innerHTML =
+            '<p style="color: var(--global-text-color-light); text-align: center;">Unable to load feelings</p>';
+        console.error('Error loading feelings:', error);
+    });
+</script>
+
+
+          </article>
+
+        </div>
+
+        <style>
+          details {
+            user-select: none;
+          }
+
+          details>summary span.icon {
+            width: 24px;
+            height: 10px;
+            transition: all 0.3s;
+            margin-left: auto;
+          }
+
+          details[open] summary span.icon {
+            transform: rotate(180deg);
+          }
+
+          summary {
+            display: flex;
+            cursor: pointer;
+          }
+
+          summary::-webkit-details-marker {
+            display: none;
+          }
+        </style>
 
       
     </div>

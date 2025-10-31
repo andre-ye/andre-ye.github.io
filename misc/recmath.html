@@ -104,7 +104,7 @@
               <li class="nav-item dropdown ">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">misc</a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/misc/season-3-episode-1">Season 3, Episode 1</a>
+                  <a class="dropdown-item" href="/misc/feeling-diary">Feeling Diary</a>
                   <a class="dropdown-item" href="/misc/history-listed">History, Listed</a>
                   <a class="dropdown-item" href="/misc/recmath">Recreational Math</a>
                 </div>
@@ -240,6 +240,8 @@ There may be mistakes or simplifications in the following.
   <li>
 <strong>Gershgorin Disk Theorem.</strong> The eigenvalues of a matrix lie within the union of disks centered at the diagonal elements with radii equal to the sum of the absolute values of the off-diagonal elements in the corresponding row.</li>
   <li>
+<strong>Neumann series (geometric series for matrices).</strong> \((I - A)^{-1} = \sum_{k=0}^{\infty} A^k = I + A + A^2 + A^3 + \cdots\). Convergence condition: The spectral radius \(\rho(A) &lt; 1\), where \(\rho(A) = \max\{\vert\lambda\vert : \lambda \text{ is an eigenvalue of } A\}\).</li>
+  <li>
 <strong>Quotienting “inverses” in vector spaces.</strong> If \(V\) is a vector space and \(U\) is a subspace of \(V\), then \((V/U) \times U \cong V\). This is very nice since you can’t say the same thing about other algebraic structures like groups, rings, etc.</li>
   <li>
 <strong>Riesz Representation Theorem.</strong> Every linear functional on a Hilbert space behaves identically to the inner product with some fixed vector in the space. That is, for a space \(V\) on the field \(F\), every linear functional \(\phi : V \to F\), \(\forall v \in V, \phi(v) = \langle v, u \rangle\) for a fixed \(u \in V\). There are some interesting unexpected implications of this. Consider the vector space of \(n\)-degree polynomials with real coefficients (for some fixed \(n\)), with the inner product of \(p(x)\) and \(q(x)\) defined as \(\int_a^b p(x) q(x) dx\) for some lower and upper bounds \(a\) and \(b\). Consider the functional \(\phi(p) = p(c)\) for some fixed \(c \in [a, b]\) (i.e., fixed point evaluation of a polynomial). Then, by the Riesz representation theorme, there is a unique fixed polynomial \(q(x)\) such that for all polynomials \(p(x)\) in the space, \(p(c) = \int_a^b p(x) q(x) dx\). Somehow, \(q(x)\) is able to encode for ``selecting’’ the point evaluation at \(c\).</li>
@@ -257,6 +259,7 @@ There may be mistakes or simplifications in the following.
 <strong>Abelian groups and modules.</strong> A module is like a vector space but over rings rather than fields. There is a 1-1 correspondence between modules over the integer ring and abelian groups.</li>
   <li>
 <strong>Artin-Schreier Theorem (Ordered Fields and Formal Reality).</strong> A field \(F\) admits a total ordering compatible with its algebraic structure if and only if \(F\) is formally real. A field \(F\) is formally real if and only if \(-1\) cannot be expressed as a sum of squares of nonzero elements in \(F\). Equivalently, for any \(a_1, a_2, \ldots, a_n \in F\) with each \(a_i \neq 0\), we have \(\sum_{i=1}^n a_i^2 \neq -1\).</li>
+  <li><a href="https://www.lesswrong.com/posts/no5jDTut5Byjqb4j5/six-and-a-half-intuitions-for-kl-divergence" target="_blank" rel="external nofollow noopener"><strong>Six intuitions for KL-divergence</strong></a></li>
 </ul>
 
 <p>“Starting from the empty set, perform a few operations, like forming the set of all subsets. Before long you have a magnifi cent structure in which you can embed the real numbers, complex numbers, quaterions, Hilbert spaces, infi nite-dimensional differentiable manifolds, and anything else you like.” – Reuben Harsh</p>
@@ -325,7 +328,7 @@ There may be mistakes or simplifications in the following.
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2025 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Words from <a href="https://www.thedictionaryofobscuresorrows.com/" target="_blank" rel="external nofollow noopener">Dictionary of Obscure Sorrows</a>.
-Last updated: October 10, 2025.
+Last updated: October 31, 2025.
       </div>
     </footer>
 
