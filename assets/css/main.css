@@ -6,6 +6,7 @@
 /*******************************************************************************
  * Dark Red Theme
  ******************************************************************************/
+@import url("https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css");
 :root {
   --global-bg-color: #1a0a0a;
   --global-code-bg-color: #2d1010;
@@ -66,6 +67,44 @@ body.sticky-bottom-footer {
 /*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
+html.latex-font body, html.latex-font p, html.latex-font li, html.latex-font span, html.latex-font div, html.latex-font td, html.latex-font th, html.latex-font blockquote, html.latex-font a, html.latex-font label, html.latex-font input, html.latex-font textarea, html.latex-font select, html.latex-font button {
+  font-family: "Computer Modern Serif", "Latin Modern Roman", "CMU Serif", Georgia, serif !important;
+}
+html.latex-font h1, html.latex-font h2, html.latex-font h3, html.latex-font h4, html.latex-font h5, html.latex-font h6 {
+  font-family: "Computer Modern Serif", "Latin Modern Roman", "CMU Serif", Georgia, serif !important;
+}
+html.latex-font em, html.latex-font i:not(.fas):not(.fab):not(.far):not(.fal):not(.ai) {
+  font-family: "Computer Modern Serif", "Latin Modern Roman", "CMU Serif", Georgia, serif !important;
+  font-style: italic;
+}
+html.latex-font strong, html.latex-font b {
+  font-family: "Computer Modern Serif", "Latin Modern Roman", "CMU Serif", Georgia, serif !important;
+  font-weight: bold;
+}
+html.latex-font code, html.latex-font pre {
+  font-family: "Computer Modern Typewriter", "Latin Modern Mono", monospace !important;
+}
+html.latex-font p, html.latex-font li, html.latex-font blockquote, html.latex-font td, html.latex-font th {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+html.latex-font .post-content p, html.latex-font .post-content li, html.latex-font article p, html.latex-font article li, html.latex-font main p, html.latex-font main li {
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+html.latex-font nav, html.latex-font .navbar, html.latex-font .nav-link, html.latex-font .dropdown-item {
+  font-family: "Computer Modern Serif", "Latin Modern Roman", "CMU Serif", Georgia, serif !important;
+}
+html.latex-font .fas, html.latex-font .fab, html.latex-font .far, html.latex-font .fal, html.latex-font .fa {
+  font-family: "Font Awesome 6 Free", "Font Awesome 5 Free" !important;
+}
+html.latex-font .fab {
+  font-family: "Font Awesome 6 Brands", "Font Awesome 5 Brands" !important;
+}
+html.latex-font .ai {
+  font-family: "Academicons" !important;
+}
+
 * {
   cursor: none;
 }
