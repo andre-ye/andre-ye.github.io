@@ -97,6 +97,7 @@
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="/me-like/quotes/">quotes</a>
                   <a class="dropdown-item" href="/me-like/articles/">articles</a>
+                  <a class="dropdown-item" href="/me-like/blogposts/">blogposts</a>
                 </div>
               </li>
               <li class="nav-item dropdown ">
@@ -221,7 +222,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <footer class="fixed-bottom">
       <div class="container mt-0">
         &copy; Copyright 2025 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Words from <a href="https://www.thedictionaryofobscuresorrows.com/" target="_blank">Dictionary of Obscure Sorrows</a>.
-Last updated: December 01, 2025.
+Last updated: December 20, 2025.
       </div>
     </footer>
 
