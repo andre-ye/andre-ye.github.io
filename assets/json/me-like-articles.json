@@ -398,10 +398,31 @@
                     "year": 2011,
                     "commentary": "Swanton reads Nietzsche's 'immoralism' and 'egoism' as articulating virtues of the 'mature egoist' -- someone who has overcome immature egoism (ressentiment, self-deception, reactive self-assertion) in favor of genuine self-affirmation and creative engagement with the world. Setting aside questions of fidelity to Nietzsche's texts, I find this a compelling moral outlook: a rejection of both slavish self-denial and petty self-aggrandizement in favor of something like joyful, active, honest self-cultivation.",
                     "link": "https://www.cambridge.org/core/books/abs/nietzsches-on-the-genealogy-of-morality/nietzsche-and-the-virtues-of-mature-egoism/7F4FAEEB715286707F9F5514400219A9"
+                },
+                {
+                    "title": "Re-engineering Philosophy for Limited Beings",
+                    "authors": "William C. Wimsatt",
+                    "year": 2007,
+                    "commentary": "",
+                    "link": ""
                 }
             ]
         },
-        
+
+
+        {
+            "title": "Philosophy of Science",
+            "description": "Works on the philosophy of science and scientific methodology.",
+            "papers": [
+                {
+                    "title": "Generative Models as a Complex Systems Science: How can we make sense of large language model behavior?",
+                    "authors": "Ari Holtzman, Peter West, Luke Zettlemoyer",
+                    "year": 2023,
+                    "commentary": "",
+                    "link": "https://arxiv.org/abs/2308.00189"
+                }
+            ]
+        },
 
         {
             "title": "Miscellaneous",
