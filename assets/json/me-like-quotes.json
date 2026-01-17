@@ -163,6 +163,18 @@
           {
             "text": "While with Fraenkel and Sono we witness the birth of the abstract ring concept, with Noether and Artin we see the birth of abstract ring theory. Noether and Artin made the abstract ring concept central in algebra by framing in an abstract setting the theorems which were its major inspirations. In this context they introduced and gave prominence to such fundamental algebraic notions as ideal (including one-sided ideal), module, and chain conditions—both ascending and descending. Ring theory now took its rightful place along the by then well established theories of groups and fields as one of the pillars of abstract algebra.",
             "author": "Isabelle Kleiner"
+          },
+          {
+            "text": "Programming languages are built around the variable---its operations, control and data structures. Since these are concepts common to all programming, general language must focus on their orderly development. While we owe a great debt to Turing for his simple model, which also focused on the important concepts, we do not hesitate to operate with more sophisticated machines and data than he found necessary. Programmers should never be satisfied with languages which permit them to program everything, but to program nothing of interest easily. Our progress, then, is measured by the balance we achieve between efficiency and generality. As the nature of our involvement with computation changes--and it does--the appropriate description of language changes; our emphasis shifts. I feel that our successor model will show such a change. Computer science is a restless infant and its progress depends as much on shifts in point of view as on the orderly development of our current concepts.",
+            "author": "Allan Perlis"
+          },
+          {
+            "text": "Beware of the Turing tar-pit in which everything is possible but nothing of interest is easy.",
+            "author": "Allan Perlis"
+          },
+          {
+            "text": "One can't proceed from the informal to the formal by formal means.",
+            "author": "Allan Perlis"
           }
         ]
       },
@@ -297,6 +309,26 @@
           {
             "text": "Everyday conversation is not necessarily a morally neutral activity and certain ways of describing people can be corrupting and wrong. A smart set of concepts may be a most efficient instrument of corruption. It is especially characteristic of normative words, both desirable and undesirable, to belong to sets or patterns without an appreciation of which they cannot be understood.",
             "author": "Iris Murdoch, The Sovereignty of Good"
+          },
+          {
+            "text": "What remains before us, then, is a basic asymmetry between first-person and third-person relations. A person can make reliable psychological ascriptions to himself immediately, without needing to observe what he says and does. And this capacity lies in the nature of the firstperson position itself; it is not a kind of access he may have to the mind of another person.",
+            "author": "Richard Moran"
+          },
+          {
+            "text": "The special features of first-person awareness cannot be understood by thinking of it purely in terms of epistemic access (whether quasiperceptual or not) to a special realm to which only one person has entry. Rather, we must think of it in terms of the special responsibilities the person has in virtue of the mental life in question being his own. In much the same way that his actions cannot be for him just part of the passing show, so his beliefs and other attitudes must be seen by him as expressive of his various and evolving relations to his environment, and not as a mere succession of representations (to which, for some reason, he is the only witness). And in both the case of actions and attitudes, self-consciousness makes a difference to what the person's responsibilities and capacities are, with respect to his involvement in their development. It is modeling self-consciousness on the theoretical awareness of objects that obscures the specifically first-person character of the phenomenon, whether or not this theoretical perspective takes the specific form of the perceptual model of introspection",
+            "author": "Richard Moran"
+          },
+          {
+            "text": "A person will not be wholehearted about his work just in virtue of his conceiving of himself that way, nor will his marriage be successful just in virtue of his interpretive say-so. The possibilities for self-deception and plain deception are all too familiar here. In some cases, some such \"positive\" interpretation of one's situation may well be a necessary constituent of the state in question, but it will never be sufficient. Thus, as far as the capacity for 'self-constitution' goes, it will always be easier to constitute oneself in compromising and undermining ways than to constitute oneself as unified and wholehearted",
+            "author": "Richard Moran"
+          },
+          {
+            "text": "Language is an instrument. Its concepts are instruments. Now perhaps one thinks that it can make no great difference which concepts we employ. As, after all, it is possible to do physics in feet and inches as well as in metres and centimetres; the difference is merely one of convenience. But even this is not true if, for instance, calculations in some system of measurement demand more time and trouble than is possible for us to give them. (§569) Concepts lead us to make investigations; are the expressions of our interest, and direct our interest. (§570)",
+            "author": "Ludwig Wittgenstein"
+          },
+          {
+            "text": "The mathematical Must is only another expression of the fact that mathematics forms concepts. And concepts help us to comprehend things. They correspond to a particular way of dealing with situations. Mathematics forms a network of norms.",
+            "author": "Ludwig Wittgenstein"
           }
         ]
       },
@@ -485,6 +517,26 @@
           {
             "text": "The methods for coming up with useful examples in mathematics... are even less clear than the methods for proving mathematical statements.",
             "author": "Gil Kalai"
+          },
+          {
+            "text": "All non-trivial abstractions, to some degree, are leaky.",
+            "author": "Joel Spolsky"
+          },
+          {
+            "text": "So the abstractions save us time working, but they don't save us time learning. And all this means that paradoxically, even as we have higher and higher level programming tools with better and better abstractions, becoming a proficient programmer is getting harder and harder.",
+            "author": "Joel Spolsky"
+          },
+          {
+            "text": "Does understanding the demonstration of a theorem consist in examining each of the syllogisms of which it is composed in succession, and being convinced that it is correct and conforms to the rules of the game? In the same way, does understanding a definition consist simply in recognizing that the meaning of all the terms employed is already known, and being convinced that it involves no contradiction? . . . Almost all are more exacting; they want to know not only whether all the syllogisms of a demonstration are correct, but why they are linked together in one order rather than in another. As long as they appear to them engendered by caprice, and not by an intelligence constantly conscious of the end to be attained, they do not think they have understood. (Book II, Chapter II, p. 118)",
+            "author": "Henri Poincaré"
+          },
+          {
+            "text": "Logic teaches us that on such and such a road we are sure of not meeting an obstacle; it does not tell us which is the road that leads to the desired end.",
+            "author": "Henri Poincaré"
+          },
+          {
+            "text": "Discovery consists precisely in not constructing useless combinations, but in constructing those that are useful, which are an infinitely small minority. Discovery is discernment, selection.",
+            "author": "Henri Poincaré"
           }
         ]
       }
