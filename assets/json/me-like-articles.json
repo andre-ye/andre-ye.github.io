@@ -171,6 +171,13 @@
                     "year": 2024,
                     "commentary": "Creates a DSL and program optimizer to apply LLMs to large/complex document processing. Provides a more structured and visible way to interact with LLMs on large text corpuses.",
                     "link": "https://arxiv.org/abs/2410.12189"
+                },
+                {
+                    "title": "Uncovering Gaps in How Humans and LLMs Interpret Subjective Language",
+                    "authors": "Erik Jones, Arjun Patrawala, Jacob Steinhardt",
+                    "year": 2025,
+                    "commentary": "A cool example of doing very concrete human supervision with complex concepts and with clear practical implications.",
+                    "link": "https://arxiv.org/abs/2503.04113"
                 }
             ]
         },
@@ -180,6 +187,13 @@
             "title": "Interpretability",
             "description": "Interesting works on understanding how complex models produce outputs and represent knowledge.",
             "papers": [
+                {
+                    "title": "The Mythos of Model Interpretability",
+                    "authors": "Zachary C. Lipton",
+                    "year": 2016,
+                    "commentary": "",
+                    "link": "https://arxiv.org/abs/1606.03490"
+                },
                 {
                     "title": "Finding Neurons in a Haystack: Case Studies with Sparse Probing",
                     "authors": "Wes Gurnee, Neel Nanda, Matthew Pauly, Katherine Harvey, Dmitrii Troitskii, Dimitris Bertsimas",
@@ -263,6 +277,13 @@
                     "year": 2025,
                     "commentary": "Identifies four cognitive behaviors (verification, backtracking, subgoal setting, backward chaining) that predict whether a model can self-improve via RL. The key finding is striking: it's the presence of reasoning behaviors, not answer correctness, that matters. Models exposed to training data with proper reasoning patterns -- even incorrect answers -- matched the improvement of models that had these behaviors naturally. A useful framing for thinking about what 'reasoning' actually is in these systems.",
                     "link": "https://arxiv.org/abs/2503.01307"
+                },
+                {
+                    "title": "Harnessing the Universal Geometry of Embeddings",
+                    "authors": "Rishi Jha, Collin Zhang, Vitaly Shmatikov, John X. Morris",
+                    "year": 2025,
+                    "commentary": "Presents an unsupervised method for translating embeddings across different vector spaces using a universal latent representation based on the Platonic Representation Hypothesis. Shows that embeddings maintain similarity across models with different architectures and training data, while also revealing security vulnerabilities in vector databases.",
+                    "link": "https://arxiv.org/pdf/2505.12540"
                 }
             ]
         },
@@ -335,6 +356,20 @@
                     "year": 2025,
                     "commentary": "A beautifully designed webpage that illustrates a 'fisheye' principle for building knowledge interfaces that expose users to the 'peripheral' context.",
                     "link": "https://wattenberger.com/thoughts/fish-eye"
+                },
+                {
+                    "title": "CollabLLM: From Passive Responders to Active Collaborators",
+                    "authors": "Shirley Wu, Michel Galley, Baolin Peng, Hao Cheng, Gavin Li, Yao Dou, Weixin Cai, James Zou, Jure Leskovec, Jianfeng Gao",
+                    "year": 2025,
+                    "commentary": "Uses multiturn-aware rewards to optimize for long-term conversation quality rather than just immediate responses. Shows that LLMs trained this way actively seek clarification and offer suggestions, achieving 18.5% higher task performance and 46.3% better interactivity. Outstanding Paper Award at ICML 2025.",
+                    "link": "https://arxiv.org/abs/2502.00640"
+                },
+                {
+                    "title": "Semantic Commit: Helping Users Update Intent Specifications for AI Memory at Scale",
+                    "authors": "Priyan Vaithilingam, Munyeong Kim, Frida-Cecilia Acosta-Parenteau, Daniel Lee, Amine Mhedhbi, Elena L. Glassman, Ian Arawjo",
+                    "year": 2025,
+                    "commentary": "",
+                    "link": "https://arxiv.org/abs/2504.09283"
                 }
             ]
         },
@@ -412,6 +447,13 @@
                     "year": 2007,
                     "commentary": "",
                     "link": ""
+                },
+                {
+                    "title": "The Professor of Parody",
+                    "authors": "Martha Nussbaum",
+                    "year": 1999,
+                    "commentary": "A critical analysis of Judith Butler's feminist theory and its influence on contemporary academic feminism.",
+                    "link": "https://perso.uclouvain.be/mylene.botbol/Recherche/GenreBioethique/Nussbaum_NRO.htm"
                 }
             ]
         },
@@ -448,6 +490,13 @@
                     "year": 2024,
                     "commentary": "Challenges the assumption that implicit measures are superior to self-reports in psychological research. Argues that self-reports demonstrate greater reliability, stronger predictive validity for both deliberate and spontaneous behaviors, and unmatched flexibility in exploring complex psychological constructs.",
                     "link": "https://www.nature.com/articles/s44159-024-00376-z"
+                },
+                {
+                    "title": "The Law of Leaky Abstractions",
+                    "authors": "Joel Spolsky",
+                    "year": 2002,
+                    "commentary": "",
+                    "link": "https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/"
                 }
             ]
         }
