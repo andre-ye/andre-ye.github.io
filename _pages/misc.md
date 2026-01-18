@@ -19,8 +19,8 @@ children:
       permalink: /misc/history-listed
     - title: Recreational Math
       permalink: /misc/recmath
-    - title: Reflections on 20
-      permalink: /misc/reflections-on-20
+    # - title: Reflections on 20
+    #   permalink: /misc/reflections-on-20
     # - title: Mini-Cambridge
     #   permalink: /misc/mini-cambridge
     # - title: Basic Propositions

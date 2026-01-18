@@ -1,10 +1,10 @@
 ---
 layout: page
 title: articles
-permalink: /me-like/articles/
+permalink: /things-i-like/articles/
 nav: false
 dropdown: true
-parent: me like
+parent: things I like
 nav_order: 2
 ---
 

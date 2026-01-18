@@ -1,20 +1,7 @@
 - title: Education
-  type: time_table
+  type: list
   contents:
-    - title: B.A., Philosophy with Honors
-      institution: University of Washington
-      year: ’21 - ’25
-      description:
-        - 4.0 GPA
-        - Relevant coursework - logic, phenomenology, philosophy of race & feminism, social & political epistemology
-        - Early Entrance Program, Robinson Center (entered university at 14)
-        - Minors - Mathematics (focus in abstract/modern algebra), Russian Language
-    - title: B.S., Computer Science
-      institution: University of Washington
-      year: ’21 - ’25
-      description:
-        - 4.0 GPA
-        - Relevant coursework -- discrete math, data structures, algorithms
+    - "<b>B.A., Philosophy with Honors</b> and <b>B.S., Computer Science</b>, University of Washington ('21 - '25). 4.0 GPA. Early Entrance Program, Robinson Center (entered university at 14). Minors in Mathematics (focus in abstract/modern algebra) and Russian Language."
 
 - title: Research
   type: time_table

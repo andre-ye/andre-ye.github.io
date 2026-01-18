@@ -1,10 +1,10 @@
 ---
 layout: page
 title: quotes
-permalink: /me-like/quotes/
+permalink: /things-i-like/quotes/
 nav: false
 dropdown: true
-parent: me like
+parent: things I like
 nav_order: 1
 ---
 

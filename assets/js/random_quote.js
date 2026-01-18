@@ -12,11 +12,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 randomQuoteElement.innerHTML = `"${selectedQuote.quote}"`;
                 randomQuoteAuthorElement.innerHTML = `— ${selectedQuote.author}`;
+
+                // Reposition nav panels after quote loads
+                if (typeof window.positionNavPanels === 'function') {
+                    setTimeout(window.positionNavPanels, 100);
+                }
             })
             .catch(error => {
                 console.error('Error loading quotes:', error);
                 randomQuoteElement.textContent = '"The task is not to see what no one else has seen, but to think what nobody else has thought about that which everybody sees."';
                 randomQuoteAuthorElement.textContent = '— Arthur Schopenhauer';
+
+                // Reposition nav panels after fallback quote loads
+                if (typeof window.positionNavPanels === 'function') {
+                    setTimeout(window.positionNavPanels, 100);
+                }
             });
     }
 });

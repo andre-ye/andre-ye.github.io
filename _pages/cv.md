@@ -6,152 +6,81 @@ nav: true
 nav_order: 2
 ---
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Load CS papers
-    fetch('/assets/json/cs_papers.json')
-        .then(response => response.json())
-        .then(papers => {
-            const container = document.getElementById('cs-papers-container');
-            papers.forEach(paper => {
-                const paperDiv = createPaperElement(paper, false);
-                container.appendChild(paperDiv);
-            });
-        })
-        .catch(error => console.error('Error loading CS papers:', error));
-
-    // Load Philosophy papers
-    fetch('/assets/json/philosophy_papers.json')
-        .then(response => response.json())
-        .then(papers => {
-            const container = document.getElementById('philosophy-papers-container');
-            papers.forEach(paper => {
-                const paperDiv = createPaperElement(paper, true);
-                container.appendChild(paperDiv);
-            });
-        })
-        .catch(error => console.error('Error loading philosophy papers:', error));
-
-    function createPaperElement(paper, isPhilosophy) {
-        const paperDiv = document.createElement('div');
-        paperDiv.className = 'paper-item-compact';
-        
-        let authorText = paper.authors.map(author => 
-            author.includes('Andre Ye') ? `<strong>${author}</strong>` : author
-        ).join(', ');
-
-        // Create icon links
-        let iconLinksHtml = '';
-        if (paper.paper_link) {
-            iconLinksHtml += `
-                <div class="icon-link" data-tooltip="Paper Link">
-                    <a href="${paper.paper_link}" target="_blank">
-                        <i class="fas fa-file-alt"></i>
-                    </a>
-                </div>`;
-        }
-        if (paper.slides_link) {
-            iconLinksHtml += `
-                <div class="icon-link" data-tooltip="Slides">
-                    <a href="${paper.slides_link}" target="_blank">
-                        <i class="fas fa-file-powerpoint"></i>
-                    </a>
-                </div>`;
-        }
-        if (paper.poster_link) {
-            iconLinksHtml += `
-                <div class="icon-link" data-tooltip="Poster">
-                    <a href="${paper.poster_link}" target="_blank">
-                        <i class="fas fa-image"></i>
-                    </a>
-                </div>`;
-        }
-        if (paper.presentation_link) {
-            iconLinksHtml += `
-                <div class="icon-link" data-tooltip="Presentation">
-                    <a href="${paper.presentation_link}" target="_blank">
-                        <i class="fas fa-play-circle"></i>
-                    </a>
-                </div>`;
-        }
-
-        let awardHtml = paper.award ? `<div class="paper-award-compact">${paper.award}</div>` : '';
-        
-        let imageHtml = '';
-        if (paper.image_url) {
-            imageHtml = `<div class="paper-image-large"><img src="${paper.image_url}" alt="${paper.title}"></div>`;
-        }
-
-        paperDiv.innerHTML = `
-            <div class="paper-content-wrapper">
-                ${imageHtml}
-                <div class="paper-main-content">
-                    <div class="paper-title-compact">${paper.title}</div>
-                    <div class="paper-authors-compact">${authorText}</div>
-                    <div class="paper-venue-compact">${paper.conference_full} (${paper.conference_abbrev}) ${paper.conference_year}</div>
-                    ${awardHtml}
-                </div>
-                <div class="paper-icon-links">
-                    ${iconLinksHtml}
-                </div>
-            </div>
-        `;
-        
-        return paperDiv;
-    }
-});
-</script>
-
-<!-- Personal Blurb Space -->
 I am a first-year PhD student at MIT EECS, advised by [Mitchell Gordon](https://mgordon.me/){:target="_blank"}.
 I received by bachelor's in Computer Science (BS) and Philosophy (BA w/ honors) with minors in mathematics and history from the University of Washington.
 In undergrad, I was very fortunate to be advised by [Amy Zhang](https://homes.cs.washington.edu/~axz/){:target="_blank"} and [Ranjay Krishna](https://www.ranjaykrishna.com/index.html){:target="_blank"} in CS and [Rose Novick](https://www.rosenovick.com/){:target="_blank"} in philosophy.
 I was also mentored by [Jared Moore](https://jaredmoore.org/){:target="_blank"}, [Quan Ze (Jim) Chen](https://cqz.name/){:target="_blank"}, [Sebastin Santy](https://sebastinsanty.com/){:target="_blank"}, [Matt Wallingford](https://mattwallingford.github.io/){:target="_blank"}, [Carina Fourie](https://phil.washington.edu/people/carina-fourie){:target="_blank"}, and others.
 
-<!-- CV Links -->
 <div style="text-align: center; margin: 2rem 0;">
-<a href="/assets/pdf/Ye-Resume-Updated.pdf" target="_blank" style="display: inline-block; margin-right: 1rem; margin-bottom: 0.5rem; padding: 0.5rem 1rem; background-color: var(--global-theme-color); color: var(--global-hover-text-color); text-decoration: none; border-radius: 5px; font-size: 0.9rem; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--global-hover-color)'; this.style.boxShadow='0 0 10px rgba(255, 68, 68, 0.5)';" onmouseout="this.style.backgroundColor='var(--global-theme-color)'; this.style.boxShadow='none';">CV PDF</a>
-<a href="/assets/pdf/phd-sop.pdf" target="_blank" style="display: inline-block; margin-bottom: 0.5rem; padding: 0.5rem 1rem; background-color: var(--global-theme-color); color: var(--global-hover-text-color); text-decoration: none; border-radius: 5px; font-size: 0.9rem; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--global-hover-color)'; this.style.boxShadow='0 0 10px rgba(255, 68, 68, 0.5)';" onmouseout="this.style.backgroundColor='var(--global-theme-color)'; this.style.boxShadow='none';">PhD Statement of Purpose</a>
+<a href="/assets/pdf/Ye-Resume-Updated.pdf" target="_blank" class="bubble-link">CV PDF</a>
+<a href="/assets/pdf/phd-sop.pdf" target="_blank" class="bubble-link">PhD Statement of Purpose</a>
+<a href="/work/cs/" class="bubble-link">CS Papers</a>
+<a href="/work/philosophy/" class="bubble-link">Philosophy Papers</a>
 </div>
 
-<!-- Computer Science Publications -->
-<div class="cv-section">
-<h2>CS Work</h2>
-<div id="cs-papers-container"></div>
-</div>
-
-<!-- Philosophy Work -->
-<div class="cv-section">
-<h2>Philosophy Writings</h2>
-<div id="philosophy-papers-container"></div>
-</div>
-
-<!-- Education -->
 <div class="cv-section">
 <h2>Education</h2>
 
 <div class="education-item">
-<div class="item-title">Ph.D., Computer Science — Massachusetts Institute of Technology, 2025-?</div>
+<div class="item-title">Ph.D., Computer Science — Massachusetts Institute of Technology, 2025–?</div>
 </div>
 
 <div class="education-item">
-<div class="item-title">B.A., Philosophy with Honors — University of Washington, 2021-2025</div>
+<div class="item-title">B.A., Philosophy with Honors — University of Washington, 2021–2025</div>
 <div class="item-details">Minor in History.</div>
 </div>
 
 <div class="education-item">
-<div class="item-title">B.S., Computer Science — University of Washington, 2021-2025</div>
+<div class="item-title">B.S., Computer Science — University of Washington, 2021–2025</div>
 <div class="item-details">Minor in Mathematics.</div>
 </div>
 
 <div class="education-item">
 <div class="item-title">Early Entrance Program — Robinson Center, University of Washington</div>
-<div class="item-details">Admission to university at 14</div>
+<div class="item-details">Admission to university at 14.</div>
 </div>
 
 </div>
 
-<!-- News -->
+<div class="cv-section">
+<h2>Recognition & Scholarships</h2>
+
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-year">2025</div>
+<div class="timeline-content">
+• Fellow, Paul and Daisy Soros Fellowship for New Americans<br>
+• Awardee, NSF Graduate Research Fellowship Program<br>
+• Fellow, Ashar Aziz Presidential Fellowship (MIT)<br>
+• Finalist, Hertz Foundation Fellowship<br>
+• Gonfalonier (Banner Carrier) for the College of Arts and Sciences, 150th University of Washington Commencement<br>
+• UW College of Arts and Sciences Dean's Medal (for the Social Sciences)<br>
+• UW CSE Outstanding Senior<br>
+• UW Philosophy Department Outstanding Graduating Senior<br>
+• UW CSE Best Senior Thesis Award (submitted by co-first author Andrew Shaw)
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-year">2024</div>
+<div class="timeline-content">
+• UW Philosophy Department Outstanding Undergraduate Scholar
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-year">2023</div>
+<div class="timeline-content">
+• CRA Outstanding Undergraduate Researcher Finalist<br>
+• Mary Gates Research Scholar<br>
+• Phi Beta Kappa Scholar<br>
+• Philosophy Department Honors
+</div>
+</div>
+</div>
+
+</div>
+
 <div class="cv-section">
 <h2>News</h2>
 
@@ -217,76 +146,33 @@ I was also mentored by [Jared Moore](https://jaredmoore.org/){:target="_blank"},
 
 </div>
 
-<!-- Recognition & Scholarships Timeline -->
-<div class="cv-section">
-<h2>Recognition & Scholarships</h2>
-
-<div class="timeline">
-<div class="timeline-item">
-<div class="timeline-year">2025</div>
-<div class="timeline-content">
-• Fellow, Paul and Daisy Soros Fellowship for New Americans<br>
-• Awardee, NSF Graduate Research Fellowship Program<br>
-• Fellow, Ashar Aziz Presidential Fellowship (MIT)<br>
-• Finalist, Hertz Foundation Fellowship<br>
-• Gonfalonier (Banner Carrier) for the College of Arts and Sciences, 150th University of Washington Commencement<br>
-• UW College of Arts and Sciences Dean's Medal (for the Social Sciences)<br>
-• UW CSE Outstanding Senior<br>
-• UW Philosophy Department Outstanding Graduating Senior<br>
-• UW CSE Best Senior Thesis Award (submitted by co-first author Andrew Shaw)
-</div>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-year">2024</div>
-<div class="timeline-content">
-• UW Philosophy Department Outstanding Undergraduate Scholar
-</div>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-year">2023</div>
-<div class="timeline-content">
-• CRA Outstanding Undergraduate Researcher Finalist<br>
-• Mary Gates Research Scholar<br>
-• Phi Beta Kappa Scholar<br>
-• Philosophy Department Honors
-</div>
-</div>
-</div>
-
-</div>
-
-<!-- Teaching -->
 <div class="cv-section">
 <h2>Teaching</h2>
 
 <div class="teaching-item">
 <div class="item-title">Teaching Assistant, CSE [160, 163, 311]</div>
-<div class="item-institution">Allen School of CSE, University of Washington, 2022-2025</div>
+<div class="item-institution">Allen School of CSE, University of Washington, 2022–2025</div>
 <div class="item-details">Intro and intermediate Python programming, discrete math for CS. 7 quarters.</div>
 </div>
 
 <div class="teaching-item">
 <div class="item-title">Teaching Assistant, English Composition and Literary Analysis</div>
-<div class="item-institution">Robinson Center, University of Washington, 2022-2024</div>
+<div class="item-institution">Robinson Center, University of Washington, 2022–2024</div>
 </div>
 
 <div class="teaching-item">
 <div class="item-title">Teaching Assistant, Introduction to Machine Learning</div>
-<div class="item-institution">The Coding School, 2022-2023</div>
+<div class="item-institution">The Coding School, 2022–2023</div>
 </div>
 
 </div>
 
-
-<!-- Academic Service -->
 <div class="cv-section">
 <h2>Academic Service & Volunteering</h2>
 
 <div class="service-item">
 <div class="item-title">Co-Webmaster</div>
-<div class="item-institution">MIT HCI Group, 2025-2026</div>
+<div class="item-institution">MIT HCI Group, 2025–2026</div>
 <div class="item-details">
 <a href="https://hci.csail.mit.edu/" target="_blank">https://hci.csail.mit.edu/</a>
 </div>
@@ -314,13 +200,12 @@ I was also mentored by [Jared Moore](https://jaredmoore.org/){:target="_blank"},
 <div class="item-title">Marketing Manager</div>
 <div class="item-institution">Vivek for Redmond City Council, Summer 2025</div>
 <div class="item-details">
-Managed social media presence and produced social media content for Vivek Prakriya's compaign runnning for Redmond City Council seat no. 2.
+Managed social media presence and produced social media content for Vivek Prakriya's campaign running for Redmond City Council seat no. 2.
 </div>
 </div>
 
 </div>
 
-<!-- Other Publications -->
 <div class="cv-section">
 <h2>Books</h2>
 
@@ -360,7 +245,6 @@ Managed social media presence and produced social media content for Vivek Prakri
 
 </div>
 
-<!-- Fun Projects -->
 <div class="cv-section">
 <h2>Misc. Work</h2>
 

@@ -1,7 +1,7 @@
 // Dynamic Navigation Panel for Quotes Page
 document.addEventListener('DOMContentLoaded', function() {
     // Only run on quotes page
-    if (!window.location.pathname.includes('/me-like/quotes')) return;
+    if (!window.location.pathname.includes('/things-i-like/quotes')) return;
     
     // Fetch quotes data and build navigation
     fetch('/assets/json/me-like-quotes.json')

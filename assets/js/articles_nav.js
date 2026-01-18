@@ -1,7 +1,7 @@
 // Dynamic Navigation Panel for Articles Page
 document.addEventListener('DOMContentLoaded', function() {
     // Only run on articles page
-    if (!window.location.pathname.includes('/me-like/articles')) return;
+    if (!window.location.pathname.includes('/things-i-like/articles')) return;
     
     // Fetch articles data and build navigation
     fetch('/assets/json/me-like-articles.json')
