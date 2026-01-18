@@ -73,6 +73,13 @@
                     "year": 2025,
                     "commentary": "Argues that human-AI collaborations represent a continuation of our basic nature to build hybrid thinking systems that fluidly incorporate non-biological resources. Discusses 'extended cognitive hygiene' as essential for critically evaluating what we incorporate into our digitally extended minds.",
                     "link": "https://www.nature.com/articles/s41467-025-59906-9"
+                },
+                {
+                    "title": "Generative Models as a Complex Systems Science: How can we make sense of large language model behavior?",
+                    "authors": "Ari Holtzman, Peter West, Luke Zettlemoyer",
+                    "year": 2023,
+                    "commentary": "",
+                    "link": "https://arxiv.org/abs/2308.00189"
                 }
             ]
         },
@@ -81,6 +88,13 @@
             "title": "AI Tools for Human Knowledge",
             "description": "These tools leverage the properties of AI to help us know more.",
             "papers": [
+                {
+                    "title": "LegalDiscourse: Interpreting When Laws Apply and Who They Affect",
+                    "authors": "Joel Niklaus, Simon Rüegger, Elliott Ash",
+                    "year": 2024,
+                    "commentary": "Builds a domain-specific taxonomy for annotating legal texts and uses it to help journalists understand legal language. The spirit of this kind of work -- building custom ontologies and using them to make specialized domains more accessible -- seems important even as LLMs are now clearly way better than the ones used in this paper.",
+                    "link": "https://aclanthology.org/2024.naacl-long.472.pdf"
+                },
                 {
                     "title": "Sparse Autoencoders for Hypothesis Generation",
                     "authors": "Rajiv Movva, Kenny Peng, Nikhil Garg, Jon Kleinberg, Emma Pierson",
@@ -370,6 +384,13 @@
                     "year": 2025,
                     "commentary": "",
                     "link": "https://arxiv.org/abs/2504.09283"
+                },
+                {
+                    "title": "Antagonistic AI",
+                    "authors": "Alice Cai, Ian Arawjo, Elena L. Glassman",
+                    "year": 2024,
+                    "commentary": "One of my favorite papers and definitely a model for how to write good papers I think.",
+                    "link": "https://arxiv.org/abs/2402.07350"
                 }
             ]
         },
@@ -454,21 +475,6 @@
                     "year": 1999,
                     "commentary": "A critical analysis of Judith Butler's feminist theory and its influence on contemporary academic feminism.",
                     "link": "https://perso.uclouvain.be/mylene.botbol/Recherche/GenreBioethique/Nussbaum_NRO.htm"
-                }
-            ]
-        },
-
-
-        {
-            "title": "Philosophy of Science",
-            "description": "Works on the philosophy of science and scientific methodology.",
-            "papers": [
-                {
-                    "title": "Generative Models as a Complex Systems Science: How can we make sense of large language model behavior?",
-                    "authors": "Ari Holtzman, Peter West, Luke Zettlemoyer",
-                    "year": 2023,
-                    "commentary": "",
-                    "link": "https://arxiv.org/abs/2308.00189"
                 }
             ]
         },

@@ -58,6 +58,9 @@
     <!-- Quotes Navigation Script -->
     <script src="/assets/js/quotes_nav.js"></script>
 
+    <!-- Tone.js for Mini Piano -->
+    <script src="https://cdn.jsdelivr.net/npm/tone@14.8.49/build/Tone.js"></script>
+
   </head>
 
   <!-- Body -->
@@ -88,18 +91,22 @@
               
 
               <!-- Other pages -->
-              <li class="nav-item ">
-                <a class="nav-link" href="/agenda/">agenda</a>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">work</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/work/agenda/">agenda</a>
+                  <a class="dropdown-item" href="/work/cs/">cs</a>
+                  <a class="dropdown-item" href="/work/philosophy/">philosophy</a>
+                </div>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/cv/">cv</a>
               </li>
               <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">me like</a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">things I like</a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/me-like/quotes/">quotes</a>
-                  <a class="dropdown-item" href="/me-like/articles/">articles</a>
-                  <a class="dropdown-item" href="/me-like/blogposts/">blogposts</a>
+                  <a class="dropdown-item" href="/things-i-like/quotes/">quotes</a>
+                  <a class="dropdown-item" href="/things-i-like/articles/">articles</a>
                 </div>
               </li>
               <li class="nav-item dropdown ">
@@ -107,7 +114,6 @@
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="/misc/history-listed">History, Listed</a>
                   <a class="dropdown-item" href="/misc/recmath">Recreational Math</a>
-                  <a class="dropdown-item" href="/misc/reflections-on-20">Reflections on 20</a>
                 </div>
               </li>
 </ul>
@@ -158,24 +164,50 @@ Also: articles on winning the <a href="https://www.washington.edu/uaa/2025/04/09
     <div class="fixed-quote-box">
       <p id="random-quote" class="quote-text"></p>
       <p id="random-quote-author" class="quote-author"></p>
-      <p class="quote-source">from <a href="/me-like/quotes/">me like</a></p>
+      <p class="quote-source">from <a href="/things-i-like/quotes/">things I like</a></p>
       <p class="bubble-instructions">press <kbd>e</kbd> to toggle word bubbles<br>press <kbd>m</kbd> to show meaning</p>
     </div>
     
 
-    <!-- Fixed Image Box (exclude from about page) -->
+    <!-- Fixed Image Box with Piano (exclude from about page) -->
     
     <div class="fixed-image-box">
       <img id="fixed-ai-image" class="ai-image" src="" alt="Random AI image from Better Images of AI">
       <p class="image-caption">from <a href="https://betterimagesofai.org/images" target="_blank" rel="external nofollow noopener">Better Images of AI</a></p>
+
+      <!-- Piano inside image box -->
+      
+      <div class="piano-keyboard" id="piano-keyboard">
+        <div class="piano-key" data-note="C" data-key="a"></div>
+        <div class="piano-key" data-note="D" data-key="s"></div>
+        <div class="piano-key" data-note="E" data-key="d"></div>
+        <div class="piano-key" data-note="F" data-key="f"></div>
+        <div class="piano-key" data-note="G" data-key="g"></div>
+        <div class="piano-key" data-note="A" data-key="h"></div>
+        <div class="piano-key" data-note="B" data-key="j"></div>
+        <div class="piano-key" data-note="C5" data-key="k"></div>
+        <div class="piano-key black" data-note="C#" data-key="w"></div>
+        <div class="piano-key black" data-note="D#" data-key="e"></div>
+        <div class="piano-key black" data-note="F#" data-key="t"></div>
+        <div class="piano-key black" data-note="G#" data-key="y"></div>
+        <div class="piano-key black" data-note="A#" data-key="u"></div>
+      </div>
+      
     </div>
     
+
+    <!-- Mute Button (all pages) -->
+    <div id="piano-mute-button" title="Mute/Unmute ambient piano">♪</div>
+
+    <!-- Bottom bar for cats -->
+    <div class="cats-bottom-bar"></div>
 
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2026 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Words from <a href="https://www.thedictionaryofobscuresorrows.com/" target="_blank" rel="external nofollow noopener">Dictionary of Obscure Sorrows</a>.
-Last updated: January 17, 2026.
+Last updated: January 18, 2026.
+        Ambient piano powered by <a href="https://tonejs.github.io/" target="_blank" rel="external nofollow noopener">Tone.js</a>.
       </div>
     </footer>
 
@@ -317,5 +349,15 @@ Last updated: January 17, 2026.
     
     <!-- AI Page transitions script -->
     <script src="/assets/js/ai_page_transitions.js"></script>
+
+    <!-- Mini Piano scripts -->
+    <script src="/assets/js/mini_piano.js"></script>
+    <script src="/assets/js/ambient_player.js"></script>
+
+    <!-- Cats at bottom with paper bubbles -->
+    <script src="/assets/js/cats_at_bottom.js"></script>
+
+    <!-- Position nav panels below quote box -->
+    <script src="/assets/js/nav_panel_position.js"></script>
   </body>
 </html>

@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Announcement_7 | Andre  Ye</title>
+    <title>philosophy writings | Andre  Ye</title>
     <meta name="author" content="Andre  Ye">
     <meta name="description" content="Webpage for Andre Ye
 ">
@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A4%94&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://andre-ye.github.io/news/announcement_7/">
+    <link rel="canonical" href="https://andre-ye.github.io/work/philosophy/">
 
     <!-- Dark Mode -->
     
@@ -133,27 +133,141 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- _layouts/post.html -->
+        <!-- page.html -->
+        <div class="post">
 
-<div class="post">
+          <header class="post-header">
+            <h1 class="post-title">philosophy writings</h1>
+            <p class="post-description"></p>
+          </header>
 
-  <header class="post-header">
-    <h1 class="post-title">Announcement_7</h1>
-    <p class="post-meta">August 7, 2023</p>
-    <p class="post-tags">
-      <a href="//blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
+          <article>
+            <style>
+.paper-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-    </p>
-  </header>
+.paper-list li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
 
-  <article class="post-content">
-    
-    <div id="markdown-content">
-      <p>My paper on <a href="https://andre-ye.github.io/assets/pdf/HCOMP_CC_Sub.pdf" target="_blank">Confidence Contours</a> mentored by Jim Chen and Amy Zhang has been accepted into AAAI <a href="https://www.humancomputation.com/" target="_blank" rel="external nofollow noopener">HCOMP’23</a> in Delft, Netherlands!</p>
+.paper-list li:last-child {
+  border-bottom: none;
+}
 
-    </div>
-  </article>
-</div>
+.paper-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.paper-title a {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.paper-title a:hover {
+  color: var(--global-theme-color);
+}
+
+.paper-authors {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.25rem;
+}
+
+.paper-venue {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  font-style: italic;
+}
+
+.paper-award {
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.paper-links {
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.paper-links a {
+  margin-right: 0.75rem;
+  color: var(--global-theme-color);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('/assets/json/philosophy_papers.json')
+        .then(response => response.json())
+        .then(papers => {
+            const container = document.getElementById('philosophy-papers-list');
+            papers.forEach(paper => {
+                const li = document.createElement('li');
+
+                let authorText = paper.authors.map(author =>
+                    author.includes('Andre Ye') ? `<strong>${author}</strong>` : author
+                ).join(', ');
+
+                let linksHtml = '';
+                if (paper.paper_link) linksHtml += `<a href="${paper.paper_link}" target="_blank">paper</a>`;
+                if (paper.slides_link) linksHtml += `<a href="${paper.slides_link}" target="_blank">slides</a>`;
+                if (paper.poster_link) linksHtml += `<a href="${paper.poster_link}" target="_blank">poster</a>`;
+                if (paper.presentation_link) linksHtml += `<a href="${paper.presentation_link}" target="_blank">presentation</a>`;
+
+                let awardHtml = paper.award ? `<div class="paper-award">${paper.award}</div>` : '';
+
+                li.innerHTML = `
+                    <div class="paper-title"><a href="${paper.paper_link || '#'}" target="_blank">${paper.title}</a></div>
+                    <div class="paper-authors">${authorText}</div>
+                    <div class="paper-venue">${paper.conference_full} (${paper.conference_abbrev}) ${paper.conference_year}</div>
+                    ${awardHtml}
+                    <div class="paper-links">${linksHtml}</div>
+                `;
+
+                container.appendChild(li);
+            });
+        })
+        .catch(error => console.error('Error loading philosophy papers:', error));
+});
+</script>
+
+<ul class="paper-list" id="philosophy-papers-list"></ul>
+
+          </article>
+
+        </div>
+
+        <style>
+          details {
+            user-select: none;
+          }
+
+          details>summary span.icon {
+            width: 24px;
+            height: 10px;
+            transition: all 0.3s;
+            margin-left: auto;
+          }
+
+          details[open] summary span.icon {
+            transform: rotate(180deg);
+          }
+
+          summary {
+            display: flex;
+            cursor: pointer;
+          }
+
+          summary::-webkit-details-marker {
+            display: none;
+          }
+        </style>
 
       
     </div>
