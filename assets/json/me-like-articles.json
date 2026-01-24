@@ -90,7 +90,7 @@
             "papers": [
                 {
                     "title": "LegalDiscourse: Interpreting When Laws Apply and Who They Affect",
-                    "authors": "Joel Niklaus, Simon Rüegger, Elliott Ash",
+                    "authors": "Alexander Spangher, Zihan Xue, Te-Lin Wu, Mark Hansen, Jonathan May",
                     "year": 2024,
                     "commentary": "Builds a domain-specific taxonomy for annotating legal texts and uses it to help journalists understand legal language. The spirit of this kind of work -- building custom ontologies and using them to make specialized domains more accessible -- seems important even as LLMs are now clearly way better than the ones used in this paper.",
                     "link": "https://aclanthology.org/2024.naacl-long.472.pdf"
@@ -298,6 +298,13 @@
                     "year": 2025,
                     "commentary": "Presents an unsupervised method for translating embeddings across different vector spaces using a universal latent representation based on the Platonic Representation Hypothesis. Shows that embeddings maintain similarity across models with different architectures and training data, while also revealing security vulnerabilities in vector databases.",
                     "link": "https://arxiv.org/pdf/2505.12540"
+                },
+                {
+                    "title": "Questioning Representational Optimism in Deep Learning: The Fractured Entangled Representation Hypothesis",
+                    "authors": "Akarsh Kumar, Jeff Clune, Joel Lehman, Kenneth O. Stanley",
+                    "year": 2025,
+                    "commentary": "",
+                    "link": "https://arxiv.org/pdf/2505.11581"
                 }
             ]
         },
@@ -437,7 +444,7 @@
                 {
                     "title": "Why Isn't There More Progress in Philosophy?",
                     "authors": "David J. Chalmers",
-                    "year": 2011,
+                    "year": 2015,
                     "commentary": "Asks an interesting question and gives some helpful directions to start thinking about what progress means in philosophy and how 'premise deniability' might be a relevant factor.",
                     "link": "https://consc.net/papers/progress.pdf"
                 },

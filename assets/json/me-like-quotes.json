@@ -179,6 +179,14 @@
           {
             "text": "Eliminate the term human error. Instead, talk about communication and interaction: what we call an error is usually bad communication or interaction. When people collaborate with one another, the word error is never used to characterize another person's utterance. That's because each person is trying to understand and respond to the other, and when something is not understood or seems inappropriate, it is questioned, clarified, and the collaboration continues. Why can't the interaction between a person and a machine be thought of as collaboration? Machines are not people. They can't communicate and understand the same way we do. This means that their designers have a special obligation to ensure that the behavior of machines is understandable to the people who interact with them. True collaboration requires each party to make some effort to accommodate and understand the other. When we collaborate with machines, it is people who must do all the accommodation. Why shouldn't the machine be more friendly? The machine should accept normal human behavior, but just as people often subconsciously assess the accuracy of things being said, machines should judge the quality of information given it, in this case to help its operators avoid grievous errors because of simple slips",
             "author": "Don Norman"
+          },
+          {
+            "text": "People have now begun to realize that not all problems are linguistic in character, and that it is high time that we paid more attention to the way in which data are stored in the computer, that is, to data structures. In his Turing lecture given last year, Alan Perlis drew attention to this subject. At the present time, choosing a programming language is equivalent to choosing a data structure, and if that data structure does not fit the data you want to manipulate then it is too bad. It would, in a sense, be more logical first to choose a data structure appropriate to the problem and then look around for, or construct with a kit of tools provided, a language suitable for manipulating that data structure.",
+            "author": "Maurice Wilkes"
+          },
+          {
+            "text": "The fundamental importance of data structures may be illustrated by considering the problem of designing a single language that would be the preferred language either for a purely arithmetic job or for a job in symbol manipulation. Attempts to produce such a language have been disappointing. The difficulty is that the data structures required for efficient implementation in the two cases are entirely different. Perhaps we should recognize this difficulty as a fundamental one, and abandon the quest for an omnibus language which will be all things to all men.",
+            "author": "Maurice Wilkes"
           }
         ]
       },
@@ -327,11 +335,23 @@
             "author": "Richard Moran"
           },
           {
+            "text": "When I deliberate about something, the conclusion of my deliberation settles the question for me only in virtue of my attitude toward this activity, not in virtue of what I may believe about its effect on me. The aim and conclusion is the binding of oneself to a certain course of action (or proposition), not the production of a state of mind that I might then treat as (further) empirical evidence about how I should proceed.",
+            "author": "Richard Moran"
+          },
+          {
+            "text": "One must see one's deliberation as the expression and development of one's belief and will, not as an activity one pursues in the hope that it will have some influence on one's eventual belief and will.",
+            "author": "Richard Moran"
+          },
+          {
             "text": "Language is an instrument. Its concepts are instruments. Now perhaps one thinks that it can make no great difference which concepts we employ. As, after all, it is possible to do physics in feet and inches as well as in metres and centimetres; the difference is merely one of convenience. But even this is not true if, for instance, calculations in some system of measurement demand more time and trouble than is possible for us to give them. (§569) Concepts lead us to make investigations; are the expressions of our interest, and direct our interest. (§570)",
             "author": "Ludwig Wittgenstein"
           },
           {
             "text": "The mathematical Must is only another expression of the fact that mathematics forms concepts. And concepts help us to comprehend things. They correspond to a particular way of dealing with situations. Mathematics forms a network of norms.",
+            "author": "Ludwig Wittgenstein"
+          },
+          {
+            "text": "Don't regard a hesitant assertion as an assertion of hesitancy.",
             "author": "Ludwig Wittgenstein"
           }
         ]
