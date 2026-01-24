@@ -137,6 +137,11 @@
   &.muted {
     opacity: 0.5;
   }
+
+  // Hide on mobile (piano is hidden, so mute button is useless)
+  @media (max-width: 767px) {
+    display: none !important;
+  }
 }
 
 // Dark mode adjustments - even more red glow
