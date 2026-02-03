@@ -367,6 +367,16 @@
       muteButton.classList.toggle('muted', isMuted);
       muteButton.innerHTML = isMuted ? '🔇' : '♪';
     }
+
+    // Stop/start the continuous noise generators
+    if (isMuted) {
+      if (instruments.vinyl) instruments.vinyl.stop();
+      if (instruments.texture) instruments.texture.stop();
+    } else {
+      if (instruments.vinyl) instruments.vinyl.start();
+      if (instruments.texture) instruments.texture.start();
+    }
+
     saveState();
     if (!isMuted && currentNotes.length > 0 && Tone.Transport.state !== 'started') {
       Tone.Transport.start();
