@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <footer class="fixed-bottom">
       <div class="container mt-0">
         &copy; Copyright 2026 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Words from <a href="https://www.thedictionaryofobscuresorrows.com/" target="_blank">Dictionary of Obscure Sorrows</a>.
-Last updated: January 24, 2026.
+Last updated: February 03, 2026.
         Ambient piano powered by <a href="https://tonejs.github.io/" target="_blank">Tone.js</a>.
       </div>
     </footer>
