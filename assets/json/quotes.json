@@ -302,5 +302,33 @@
   {
     "quote": "A lot of A.I.'s choices make sense when you understand that it's constantly tickling the Simpsons. The A.I. is trying to write well. It knows that good writing involves subtlety: things that are said quietly or not at all, things that are halfway present and left for the reader to draw out themselves. So to reproduce the effect, it screams at the top of its voice about how absolutely everything in sight is shadowy, subtle and quiet. Good writing is complex. A tapestry is also complex, so A.I. tends to describe everything as a kind of highly elaborate textile. Everything that isn't a ghost is usually woven.",
     "author": "Sam Kriss, \"Why Does AI Write Like That\" (NYT)"
+  },
+  {
+    "quote": "These examples illustrate a properly careful application of the intuition behind Morgan's Canon: rather than hastily inferring complex cognition or defaulting to the simplest possible explanation, researchers should consider the broader evidential context and non-cognitive sources of behavioral abilities that accommodate environmental heterogeneity.",
+    "author": "Ben Baker & Sonia Roberts, \"Understanding Agent Complexity Through Affordances\""
+  },
+  {
+    "quote": "The process of experience is accordingly understood as being both the process of applying determinate conceptually contentful norms in judgment and intentional action and the process of instituting those determinate conceptually contentful norms. Regarded retrospectively, that process of determination is one of discovery. It is the gradual, progressive finding out what the content has been all along: what norm implicitly governed and governs applications of the concept in judgment. Regarded prospectively, that same process of determination is one of invention. It is the gradual, progressive fixing of the content: making a partially indeterminate content ever more determinate by applying the concept in novel circumstances. Because he thinks of determinateness in this way, Hegel rejects the possibility of conveying the content of a concept by defining it. As a matter of deep pragmatist semantic principle, the only way to understand the content of a determinate concept, he thinks, is by rationally reconstructing an expressively progressive history of the process of determining it. Judgments (and endorsements of practical maxims) are still, as the tradition had it, taken to be applications of concepts. But concepts are now understood as 'functions of judgments.' That is, they are understood in terms of their functional role in determining what one makes oneself responsible for or commits oneself to in judging. At the center of what one is responsible for is having reasons for judging or acting as one does. Concepts are rules that determine what counts as a reason for (or against) applying them, and what applying them counts as a reason for (or against). In Kant's usage, 'discursive' means 'of or pertaining to the use of concepts.' Discursive beings live and move and have their being in a normative space of reasons. Discursive activity is the application of concepts, which is undertaking doxastic and practical responsibilities or commitments by binding oneself by rules in the form of concepts.",
+    "author": "Robert Brandom on Hegel"
+  },
+  {
+    "quote": "All transcendental constitution is social institution.",
+    "author": "John Haugeland"
+  },
+  {
+    "quote": "Recollection retrospectively rationally reconstructs a course of experience as expressively progressive: as the gradual emergence into greater explicitness of facts and intentions exhibited as having normatively governed and guided the process by which we come to know the world and our doings as they are in themselves.",
+    "author": "Robert Brandom"
+  },
+  {
+    "quote": "Self-consciousness in Hegel's sense is practical awareness of oneself as such a recognitively constituted subject of normative statuses. It is accordingly a social achievement and a social status. Not only is it not the turning on of a Cartesian inner light; it is not even something that principally happens between the ears of the individual so constituted. This structure is not just one instance, but the paradigm of the relations between particulars, universals, and individuals.",
+    "author": "Robert Brandom"
+  },
+  {
+    "quote": "That modern insight into the role we play in instituting norms threatens to undercut practical and theoretical appreciation of their normative force or bindingness, however. This is what Hegel calls 'alienation.' He sees it as the characteristic pathology of modern structures of normativity. If we make the norms, if they are up to us, how can we understand ourselves as genuinely bound by them? What is required to overcome alienation is practically and theoretically to balance the modern insight into the attitude-dependence of normative statuses with a reappropriation of the traditional insight into the status-dependence of normative attitudes.",
+    "author": "Robert Brandom"
+  },
+  {
+    "quote": "Let me make an arbitrary distinction between science and engineering by saying that science is concerned with what is possible while engineering is concerned with choosing, from among the many possible ways, one that meets a number of often poorly stated economic and practical objectives. We call the field 'computer science' but I believe that it would be more accurately labeled 'computer engineering' were not this too likely to be misunderstood. So much of what we do is not a question of can it be done as it is a question of finding a practical way. It is not usually a question of can there exist a monitor system, algorithm, scheduler, or compiler, rather it is a question of finding a practical working one with a reasonable expenditure of time and effort. While I would not change the name from 'computer science' to 'computer engineering,' I would like to see far more of a practical, engineering flavor in what we teach than I usually find in course outlines.",
+    "author": "Richard Hamming"
   }
 ]

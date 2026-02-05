@@ -80,6 +80,13 @@
                     "year": 2023,
                     "commentary": "",
                     "link": "https://arxiv.org/abs/2308.00189"
+                },
+                {
+                    "title": "Building AIs that do human-like philosophy",
+                    "authors": "Joe Carlsmith",
+                    "year": 2026,
+                    "commentary": "I think Carlsmith articulates some good points to think about in a particular kind of 'AI that does human-like philosophy' -- namely, the ability to do 'level-1' philosophy in applying philosophical thinking to 'out-of-distribution' samples (as opposed to 'level-2+' philosophy which interrogates the aims of philosophical inquiry itself). I think it is clear how that would be important in a future where we give AI lots of responsibility and power, although this is also not a future that we have to choose.",
+                    "link": "https://joecarlsmith.com/2026/01/29/building-ais-that-do-human-like-philosophy"
                 }
             ]
         },
@@ -433,6 +440,13 @@
                     "year": 2025,
                     "commentary": "",
                     "link": "https://www.youtube.com/watch?v=Uxr_HrbN1MQ"
+                },
+                {
+                    "title": "One Man's View of Computer Science",
+                    "authors": "Richard Hamming",
+                    "year": 1968,
+                    "commentary": "Hamming's 1968 Turing Award lecture arguing for more of a practical, engineering flavor in computer science education.",
+                    "link": "https://dl.acm.org/doi/pdf/10.1145/1283920.1283923"
                 }
             ]
         },
@@ -510,6 +524,20 @@
                     "year": 2002,
                     "commentary": "",
                     "link": "https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/"
+                },
+                {
+                    "title": "The Mythology Of Conscious AI",
+                    "authors": "Anil Seth",
+                    "year": 2026,
+                    "commentary": "There's the powerful idea that everything in AI is changing exponentially. Whether it's raw compute as indexed by Moore's Law, or the new capabilities available with each new iteration of the big tech foundation models, things surely are changing quickly. Exponential growth has the psychologically destabilizing property that what's ahead seems impossibly steep, and what's behind seems irrelevantly flat. Crucially, things seem this way wherever you are on the curve — that's what makes it exponential. Because of this, it's tempting to feel like we are always on the cusp of a major transition, and what could be more major than the creation of real artificial consciousness? But on an exponential curve, every point is an inflection point. ... The cartoon dreams of a silicon rapture, with its tropes of mind uploading, of disembodied eternal existence and of cloud-based reunions with other chosen ones, is a regression to the Cartesian soul. Computers, or more precisely computations, are, after all, immortal, and the sacrament of the algorithm promises a purist rationality, untainted by the body (despite plentiful evidence linking reason to emotion). But these are likely to be empty dreams, delivering not posthuman paradise but silicon oblivion. What really matters is not this kind of soul. Not any disembodied human-exceptionalist undying essence of you or of me. Perhaps what makes us us harks even further back, to Ancient Greece and to the plains of India, where our innermost essence arises as an inchoate feeling of just being alive — more breath than thought and more meat than machine. The sociologist Sherry Turkle once said that technology can make us forget what we know about life. It's about time we started to remember.",
+                    "link": "https://www.noemamag.com/the-mythology-of-conscious-ai/"
+                },
+                {
+                    "title": "The Behavior of Ethicists",
+                    "authors": "Eric Schwitzgebel, Joshua Rust",
+                    "year": 2014,
+                    "commentary": "Both just funny and quite interesting work in experimental philosophy.",
+                    "link": "https://faculty.ucr.edu/~eschwitz/SchwitzPapers/BehEth-140123a.pdf"
                 }
             ]
         }
