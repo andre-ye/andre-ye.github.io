@@ -16,20 +16,21 @@
   const FRAME_INTERVAL = 50; // Faster animation speed
   const CAT_LIFESPAN = 60000; // Each cat stays for 1 minute
   const ROTATION_INTERVAL = 20000; // Rotate one cat every 20 seconds
-  const CAT_STATE_VERSION = 2; // Increment when styles change to reset cached state
+  const CAT_STATE_VERSION = 3; // Increment when styles change to reset cached state
 
-  // Different cat styles - dramatic color filter + size variation
+  // Different cat styles - uniform size (36px), varied vivid colors
+  const CAT_SIZE = 36;
   const CAT_STYLES = [
-    { filter: 'brightness(0.3) contrast(1.2)', size: 32, name: 'black' },  // Dark/black cat
-    { filter: 'brightness(1.4) saturate(0.3)', size: 40, name: 'white' },  // Light/white cat
-    { filter: 'hue-rotate(200deg) saturate(3) brightness(1.3)', size: 28, name: 'blue' },  // Vivid blue
-    { filter: 'hue-rotate(100deg) saturate(3) brightness(1.2)', size: 36, name: 'green' },  // Vivid green
-    { filter: 'hue-rotate(280deg) saturate(3) brightness(1.3)', size: 30, name: 'purple' },  // Vivid purple
-    { filter: 'hue-rotate(20deg) saturate(4) brightness(1.3)', size: 42, name: 'orange' },  // Vivid orange
-    { filter: 'hue-rotate(330deg) saturate(3) brightness(1.2)', size: 34, name: 'pink' },  // Vivid pink
-    { filter: 'sepia(1) saturate(3) brightness(1.1)', size: 38, name: 'golden' },  // Golden/sepia
-    { filter: 'hue-rotate(180deg) saturate(3) brightness(1.4)', size: 26, name: 'cyan' },  // Vivid cyan
-    { filter: 'grayscale(1) brightness(1.2) contrast(1.3)', size: 35, name: 'gray' },  // True grayscale
+    { filter: 'brightness(0.2) contrast(1.3)', name: 'black' },  // Very dark/black cat
+    { filter: 'hue-rotate(200deg) saturate(4) brightness(1.2)', name: 'blue' },  // Vivid blue
+    { filter: 'hue-rotate(100deg) saturate(4) brightness(1.1)', name: 'green' },  // Vivid green
+    { filter: 'hue-rotate(280deg) saturate(4) brightness(1.2)', name: 'purple' },  // Vivid purple
+    { filter: 'hue-rotate(20deg) saturate(5) brightness(1.2)', name: 'orange' },  // Vivid orange
+    { filter: 'hue-rotate(330deg) saturate(4) brightness(1.1)', name: 'pink' },  // Vivid pink
+    { filter: 'sepia(1) saturate(4) brightness(1.0)', name: 'golden' },  // Golden/sepia
+    { filter: 'hue-rotate(180deg) saturate(4) brightness(1.3)', name: 'cyan' },  // Vivid cyan
+    { filter: 'hue-rotate(0deg) saturate(5) brightness(1.0)', name: 'red' },  // Red cat
+    { filter: 'hue-rotate(60deg) saturate(4) brightness(1.1)', name: 'yellow' },  // Yellow cat
   ];
 
   let cats = [];
@@ -87,7 +88,7 @@
     }
     usedStyleIndices.add(styleIndex);
     const style = CAT_STYLES[styleIndex];
-    return { filter: style.filter, size: style.size, index: styleIndex, name: style.name };
+    return { filter: style.filter, size: CAT_SIZE, index: styleIndex, name: style.name };
   }
 
   function createBubble(cat, paper) {
@@ -157,6 +158,7 @@
 
     // Mark cat for removal
     cat.removing = true;
+    cat.fullyExited = false;
     cat.bubble = null;
 
     // Scamper away
@@ -164,11 +166,23 @@
     cat.targetX = scamperDirection > 0 ? window.innerWidth + 50 : -50;
     cat.speed = 8; // Moderately fast scamper
 
-    // After scampering, remove and replace
+    // Poll until cat has fully exited, then remove and replace
+    const checkExited = setInterval(() => {
+      if (cat.fullyExited) {
+        clearInterval(checkExited);
+        removeCat(cat);
+        spawnCat();
+      }
+    }, 100);
+
+    // Safety timeout
     setTimeout(() => {
-      removeCat(cat);
-      spawnCat();
-    }, 2000);
+      clearInterval(checkExited);
+      if (cats.includes(cat)) {
+        removeCat(cat);
+        spawnCat();
+      }
+    }, 5000);
   }
 
   function updateBubblePosition(cat) {
@@ -281,6 +295,11 @@
         updateBubblePosition(cat);
       }
       cat.frameCount += 1;
+
+      // Check if cat has fully exited the screen
+      if (cat.posX < -cat.size || cat.posX > window.innerWidth + cat.size) {
+        cat.fullyExited = true;
+      }
       return;
     }
 
@@ -404,14 +423,29 @@
       oldestCat.targetX = distToLeft < distToRight ? -50 : window.innerWidth + 50;
       oldestCat.speed = 4 + Math.random() * 2;
       oldestCat.removing = true;
+      oldestCat.fullyExited = false;
 
-      // Remove after exit and spawn new cat
-      setTimeout(() => {
-        removeCat(oldestCat);
-        if (catsEnabled && cats.length < NUM_CATS) {
-          spawnCatFromEdge();
+      // Poll until cat has fully exited, then remove and spawn new
+      const checkExited = setInterval(() => {
+        if (oldestCat.fullyExited) {
+          clearInterval(checkExited);
+          removeCat(oldestCat);
+          if (catsEnabled && cats.length < NUM_CATS) {
+            spawnCatFromEdge();
+          }
         }
-      }, 2500);
+      }, 100);
+
+      // Safety timeout
+      setTimeout(() => {
+        clearInterval(checkExited);
+        if (cats.includes(oldestCat)) {
+          removeCat(oldestCat);
+          if (catsEnabled && cats.length < NUM_CATS) {
+            spawnCatFromEdge();
+          }
+        }
+      }, 5000);
     }
   }
 
@@ -438,12 +472,23 @@
       cat.targetX = distToLeft < distToRight ? -50 : window.innerWidth + 50;
       cat.speed = 4 + Math.random() * 2; // Fast scamper
       cat.removing = true;
+      cat.fullyExited = false;
     });
 
-    // Remove cats after they've had time to exit
+    // Poll until all cats have fully exited, then remove them
+    const checkAllExited = setInterval(() => {
+      const allExited = cats.every(cat => cat.fullyExited);
+      if (allExited || cats.length === 0) {
+        clearInterval(checkAllExited);
+        removeAllCats();
+      }
+    }, 100);
+
+    // Safety timeout - remove after 5 seconds max
     setTimeout(() => {
+      clearInterval(checkAllExited);
       removeAllCats();
-    }, 2500);
+    }, 5000);
   }
 
   function spawnCatFromEdge() {
@@ -538,7 +583,7 @@
     btn.id = 'cats-toggle-btn';
     btn.style.cssText = `
       position: fixed;
-      bottom: 140px;
+      bottom: 80px;
       left: 20px;
       width: 50px;
       height: 50px;
@@ -667,7 +712,7 @@
       if (savedCat.styleIndex !== undefined && savedCat.styleIndex < CAT_STYLES.length) {
         usedStyleIndices.add(savedCat.styleIndex);
         const style = CAT_STYLES[savedCat.styleIndex];
-        styleData = { filter: style.filter, size: style.size, index: savedCat.styleIndex, name: style.name };
+        styleData = { filter: style.filter, size: CAT_SIZE, index: savedCat.styleIndex, name: style.name };
       } else {
         styleData = getUnusedStyle();
       }
