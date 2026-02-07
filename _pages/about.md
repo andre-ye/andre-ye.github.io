@@ -20,14 +20,13 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page 
 ---
 
-I am an MIT EECS PhD student, PD Soros Fellow, and NSF GRFP Fellow working in **human-AI interaction**, advised by [Mitchell Gordon](https://mgordon.me/){:target="_blank"}.
-I want to build **AI concept tools** that help us *define* and *collaborate* on concepts (personal, ethical, political, scientific, ...) in the form of neologisms , metaphors, connections, graphs, and more.
-I want to find AI-readable formats and operations for representing (trans-?)humanist concepts --- with wacky, creative, speculative human-AI interactions.
-My philosophical interests are in philosophies that center the structuring role of concepts in life and thought, e.g. Deleuze, Foucault, Sellars.
+I am an MIT EECS PhD student, PD Soros Fellow, and NSF GRFP Fellow working in **human-AI interaction**, advised by [Mitchell Gordon](https://mgordon.me/){:target="_blank"}. I want to build **AI concept tools** that help us *define*, *develop*, and *collaborate* on humanistic concepts (personal, social, ethical, political, scientific, …) in the form of neologisms, metaphors, connections, graphs, and more beyond the chat interface. I have philosophical interests in work that centers the structuring role of concepts in life and thinking, from Deleuze to Foucault to Brandom.
+
+I am currently working on a framework enabling humans to better understand and intervene on the intermediate decisions that LLMs rely on in "solving" complex open-ended tasks (specifically, in philosophy, AI alignment, and poetry). Stay tuned!
+In the past, I have explored [what philosophers think](https://arxiv.org/abs/2404.04516){:target="_blank"} about improving LLMs, how the ["woke Gemini"](https://www.axios.com/2024/02/23/google-gemini-images-stereotypes-controversy){:target="_blank"} controversy could [instruct us in more critical creative practices](https://arxiv.org/abs/2502.15242){:target="_blank"}, and other ideas in [computer science](/work/cs/) and [philosophy](/work/philosophy/).
+Find what I'm thinking about for now and the future [here](/work/agenda/).
 
 My email is `andreye [at] mit [dot] edu`.
-
-Please see my <a href="/work/agenda/" class="bubble-link">agenda</a> and my <a href="/cv/" class="bubble-link">CV</a>!
 
 <br>
 

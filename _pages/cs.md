@@ -25,6 +25,7 @@ nav_order: 2
 }
 
 .paper-title {
+  font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
 }
@@ -40,13 +41,11 @@ nav_order: 2
 
 .paper-authors {
   font-size: 0.9rem;
-  color: var(--global-text-color-light);
   margin-bottom: 0.25rem;
 }
 
 .paper-venue {
-  font-size: 0.85rem;
-  color: var(--global-text-color-light);
+  font-size: 0.9rem;
   font-style: italic;
 }
 
@@ -56,7 +55,7 @@ nav_order: 2
 }
 
 .paper-links {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   margin-top: 0.25rem;
 }
 
@@ -113,6 +112,51 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <ul class="paper-list" id="cs-papers-list"></ul>
 
-<div class="section-header">Other Writing</div>
+<div class="section-header">Other Writing & Projects</div>
 
-<a href="https://ryanboldi.github.io/detour-blog-final/" target="_blank" class="bubble-link">The Detour Advantage -- A Blog</a> --- with Ryan Bahlous-Boldi
+<ul class="paper-list">
+<li>
+<div class="paper-title"><a href="https://ryanboldi.github.io/detour-blog-final/" target="_blank">The Detour Advantage</a></div>
+<div class="paper-authors"><strong>Andre Ye</strong>, Ryan Bahlous-Boldi</div>
+<div class="paper-venue">Blog</div>
+<div class="paper-links"><a href="https://ryanboldi.github.io/detour-blog-final/" target="_blank">blog</a></div>
+</li>
+
+<li>
+<div class="paper-title"><a href="/assets/pdf/SIGBOVIK_2023.pdf" target="_blank">AyahuascaNet: Rigorously Investigating Hallucination in Large Language Models with Hardcore Psychedelic Drugs</a></div>
+<div class="paper-venue">SIGBOVIK 2023</div>
+<div class="paper-links"><a href="/assets/pdf/SIGBOVIK_2023.pdf" target="_blank">paper</a><a href="/assets/pdf/AyahuascaNet.pdf" target="_blank">talk slides</a><a href="https://x.com/deepfates/status/1752052061863387374" target="_blank">viral tweet</a></div>
+</li>
+
+<li>
+<div class="paper-title"><a href="/assets/pdf/Epoch_SIGBOVIK_2024.pdf" target="_blank">How does the AI community pronounce 'epoch'? A semirigorous sociolinguistic survey</a></div>
+<div class="paper-venue">SIGBOVIK 2024</div>
+<div class="paper-links"><a href="/assets/pdf/Epoch_SIGBOVIK_2024.pdf" target="_blank">paper</a></div>
+</li>
+
+<li>
+<div class="paper-title"><a href="/assets/pdf/Table_SIGBOVIK_2024.pdf" target="_blank">ITF;)LM: Innocuous Table Formatting ;) with Language Models</a></div>
+<div class="paper-venue">SIGBOVIK 2024</div>
+<div class="paper-links"><a href="/assets/pdf/Table_SIGBOVIK_2024.pdf" target="_blank">paper</a></div>
+</li>
+
+<li>
+<div class="paper-title"><a href="https://andre-ye.github.io/mobiod-streams/" target="_blank">Mobiod Streams</a></div>
+<div class="paper-venue">Digital Art</div>
+<div class="paper-links"><a href="https://andre-ye.github.io/mobiod-streams/" target="_blank">interactive art</a></div>
+</li>
+
+<li>
+<div class="paper-title"><a href="/assets/pdf/podocyte_seg.pdf" target="_blank">A Novel Approach to Segment Specialized Annotations in Electron Microscopy Images of Glomerular Podocytes</a></div>
+<div class="paper-authors">David Smerkous, <strong>Andre Ye</strong>, Behzad Najafian</div>
+<div class="paper-venue">Najafian Lab for Kidney Pathology, UW Medicine</div>
+<div class="paper-links"><a href="/assets/pdf/podocyte_seg.pdf" target="_blank">poster</a></div>
+</li>
+
+<li>
+<div class="paper-title"><a href="/assets/pdf/emergent_language.pdf" target="_blank">Emergent Language: Independent AI Development of a Language-Like Syntax</a></div>
+<div class="paper-authors">Alec Bunn, Amelia Johnson, <strong>Andre Ye</strong>, Yegor Kuznetzov, Eric Xia</div>
+<div class="paper-venue">Interactive Intelligence Research Group, Paul G. Allen School</div>
+<div class="paper-links"><a href="/assets/pdf/emergent_language.pdf" target="_blank">poster</a></div>
+</li>
+</ul>

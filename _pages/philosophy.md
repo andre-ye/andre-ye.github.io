@@ -25,6 +25,7 @@ nav_order: 3
 }
 
 .paper-title {
+  font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
 }
@@ -40,13 +41,11 @@ nav_order: 3
 
 .paper-authors {
   font-size: 0.9rem;
-  color: var(--global-text-color-light);
   margin-bottom: 0.25rem;
 }
 
 .paper-venue {
-  font-size: 0.85rem;
-  color: var(--global-text-color-light);
+  font-size: 0.9rem;
   font-style: italic;
 }
 
@@ -56,7 +55,7 @@ nav_order: 3
 }
 
 .paper-links {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   margin-top: 0.25rem;
 }
 

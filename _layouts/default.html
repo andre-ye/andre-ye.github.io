@@ -62,29 +62,13 @@
       <img id="fixed-ai-image" class="ai-image" src="" alt="Random AI image from Better Images of AI" />
       <p class="image-caption">from <a href="https://betterimagesofai.org/images" target="_blank">Better Images of AI</a></p>
 
-      <!-- Piano inside image box -->
-      {% unless page.hide_piano %}
-      <div class="piano-keyboard" id="piano-keyboard">
-        <div class="piano-key" data-note="C" data-key="a"></div>
-        <div class="piano-key" data-note="D" data-key="s"></div>
-        <div class="piano-key" data-note="E" data-key="d"></div>
-        <div class="piano-key" data-note="F" data-key="f"></div>
-        <div class="piano-key" data-note="G" data-key="g"></div>
-        <div class="piano-key" data-note="A" data-key="h"></div>
-        <div class="piano-key" data-note="B" data-key="j"></div>
-        <div class="piano-key" data-note="C5" data-key="k"></div>
-        <div class="piano-key black" data-note="C#" data-key="w"></div>
-        <div class="piano-key black" data-note="D#" data-key="e"></div>
-        <div class="piano-key black" data-note="F#" data-key="t"></div>
-        <div class="piano-key black" data-note="G#" data-key="y"></div>
-        <div class="piano-key black" data-note="A#" data-key="u"></div>
-      </div>
-      {% endunless %}
+      <!-- Piano inside image box - TEMPORARILY DISABLED -->
     </div>
     {% endunless %}{% endunless %}
 
-    <!-- Mute Button (all pages) -->
+    {% comment %} Mute Button - TEMPORARILY DISABLED
     <div id="piano-mute-button" title="Mute/Unmute ambient piano">♪</div>
+    {% endcomment %}
 
     <!-- Bottom bar for cats -->
     <div class="cats-bottom-bar"></div>
@@ -120,9 +104,10 @@
     <!-- AI Page transitions script -->
     <script src="{{ '/assets/js/ai_page_transitions.js' | relative_url }}"></script>
 
-    <!-- Mini Piano scripts -->
+    {% comment %} Mini Piano scripts - TEMPORARILY DISABLED
     <script src="{{ '/assets/js/mini_piano.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/ambient_player.js' | relative_url }}"></script>
+    {% endcomment %}
 
     <!-- Cats at bottom with paper bubbles -->
     <script src="{{ '/assets/js/cats_at_bottom.js' | relative_url }}"></script>
