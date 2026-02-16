@@ -10,13 +10,24 @@
   </head>
 
   <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}" data-baseurl="{{ site.baseurl }}">
+
+    <script>
+      window.__baseurl = (document.body && document.body.getAttribute('data-baseurl')) || '';
+      window.getBase = function() { return (window.__baseurl || '').replace(/\/$/, ''); };
+      window.getAssetPath = function(path) {
+        var b = (typeof window.getBase === 'function' ? window.getBase() : '');
+        return (b ? '/' + b : '') + (path.charAt(0) === '/' ? path : '/' + path);
+      };
+    </script>
+    <!-- Skip to main content (visible when focused) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Header -->
     {%- include header.html %}
 
     <!-- Content -->
-    <div class="container mt-5">
+    <main id="main-content" class="container mt-5">
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == "left" %}
         <div class="row">
@@ -44,26 +55,26 @@
       {% else %}
         {{ content }}
       {% endif %}
-    </div>
+    </main>
 
     <!-- Fixed Quote Box -->
     {% unless page.hide_quote_margins %}
-    <div class="fixed-quote-box">
+    <aside class="fixed-quote-box" aria-label="Random quote">
       <p id="random-quote" class="quote-text"></p>
       <p id="random-quote-author" class="quote-author"></p>
       <p class="quote-source">from <a href="/things-i-like/quotes/">things I like</a></p>
       <p class="bubble-instructions">press <kbd>e</kbd> to toggle word bubbles<br>press <kbd>m</kbd> to show meaning</p>
-    </div>
+    </aside>
     {% endunless %}
 
     <!-- Fixed Image Box with Piano (exclude from about page) -->
     {% unless page.permalink == '/' %}{% unless page.hide_art_widget %}
-    <div class="fixed-image-box">
-      <img id="fixed-ai-image" class="ai-image" src="" alt="Random AI image from Better Images of AI" />
-      <p class="image-caption">from <a href="https://betterimagesofai.org/images" target="_blank">Better Images of AI</a></p>
+    <aside class="fixed-image-box" aria-label="AI image from Better Images of AI">
+      <img id="fixed-ai-image" class="ai-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Random AI image from Better Images of AI" />
+      <p class="image-caption">from <a href="https://betterimagesofai.org/images" target="_blank" rel="noopener noreferrer">Better Images of AI</a></p>
 
       <!-- Piano inside image box - TEMPORARILY DISABLED -->
-    </div>
+    </aside>
     {% endunless %}{% endunless %}
 
     {% comment %} Mute Button - TEMPORARILY DISABLED
@@ -79,6 +90,9 @@
     <!-- JavaScripts -->
     {% include scripts/jquery.html %}
     {% include scripts/bootstrap.html %}
+    <script defer src="{{ '/assets/js/random_quote.js' | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/nav_panel.js' | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/quotes_nav.js' | relative_url }}"></script>
     {% include scripts/masonry.html %}
     {% include scripts/misc.html %}
     {% include scripts/badges.html %}
@@ -86,6 +100,7 @@
     {% include scripts/analytics.html %}
     {% include scripts/progressBar.html %}
     
+    <script src="{{ '/assets/js/utils.js' | relative_url }}"></script>
     <!-- Hourly AI Image System - loads first to provide synchronized images -->
     <script src="{{ '/assets/js/hourly_ai_image.js' | relative_url }}"></script>
     

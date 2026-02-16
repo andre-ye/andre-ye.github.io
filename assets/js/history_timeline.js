@@ -1,16 +1,10 @@
 // Interactive History Timeline Visualization
 document.addEventListener('DOMContentLoaded', function() {
     // Only run on history-listed page
-    console.log('Current path:', window.location.pathname);
     if (!window.location.pathname.includes('/misc/history-listed')) {
-        console.log('Not on history-listed page, skipping');
         return;
     }
-    console.log('On history-listed page, initializing timeline');
-    
-    // Safety check - don't run if there's no timeline container
     if (!document.getElementById('timeline-container')) {
-        console.log('Timeline container not found, skipping timeline initialization');
         return;
     }
     
@@ -18,7 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let timelineContainer = null;
     
     // Fetch history data and build timeline
-    fetch('/assets/json/history.json')
+    var historyUrl = (typeof window.getAssetPath === 'function' ? window.getAssetPath('/assets/json/history.json') : '/assets/json/history.json');
+    fetch(historyUrl)
         .then(response => response.json())
         .then(data => {
             historyData = data;

@@ -4,9 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     async function loadPapers() {
         try {
             // Load both CS and philosophy papers
+            var base = typeof window.getAssetPath === 'function' ? window.getAssetPath : function(p) { return p; };
             const [csResponse, philResponse] = await Promise.all([
-                fetch('/assets/json/cs_papers.json'),
-                fetch('/assets/json/philosophy_papers.json')
+                fetch(base('/assets/json/cs_papers.json')),
+                fetch(base('/assets/json/philosophy_papers.json'))
             ]);
 
             const csPapers = await csResponse.json();

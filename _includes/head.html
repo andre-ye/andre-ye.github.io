@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@{{ site.mdb.version }}/css/mdb.min.css" integrity="{{ site.mdb.integrity.css }}" crossorigin="anonymous" />
 
     <!-- Bootstrap Table -->
-    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
 
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@{{ site.fontawesome.version }}/css/all.min.css" integrity="{{ site.fontawesome.integrity }}" crossorigin="anonymous">
@@ -38,14 +38,7 @@
     <script src="{{ '/assets/js/dark_mode.js' | relative_url }}"></script>
     {% endif %}
 
-    <!-- Random Quote Script -->
-    <script src="{{ '/assets/js/random_quote.js' | relative_url }}"></script>
-    
-    <!-- Navigation Panel Script -->
-    <script src="{{ '/assets/js/nav_panel.js' | relative_url }}"></script>
-    
-    <!-- Quotes Navigation Script -->
-    <script src="{{ '/assets/js/quotes_nav.js' | relative_url }}"></script>
+    {% comment %} Random quote, nav_panel, quotes_nav moved to end of body (default.html) for non-blocking load {% endcomment %}
 
     {% comment %} Tone.js for Mini Piano - TEMPORARILY DISABLED
     <script src="https://cdn.jsdelivr.net/npm/tone@14.8.49/build/Tone.js"></script>

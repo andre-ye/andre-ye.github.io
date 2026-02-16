@@ -35,12 +35,10 @@
         'Wheel of Progress 3200x1800.png'
     ];
     
-    // Seeded random function for consistent results within the same hour
-    function seededRandom(seed) {
-        const x = Math.sin(seed) * 10000;
-        return x - Math.floor(x);
-    }
-    
+    var seededRandom = (typeof window.seededRandomFromNumber === 'function')
+        ? window.seededRandomFromNumber
+        : function(seed) { var x = Math.sin(seed) * 10000; return x - Math.floor(x); };
+
     // Get current hour seed (changes every hour)
     function getCurrentHourSeed() {
         const now = new Date();
@@ -61,9 +59,10 @@
         const imageIndex = Math.floor(randomValue * aiImages.length);
         const selectedImage = aiImages[imageIndex];
         
+        var root = (typeof window.getAssetPath === 'function' ? window.getAssetPath('/assets/better-ai-imgs/') : '/assets/better-ai-imgs/');
         return {
             filename: selectedImage,
-            path: '/assets/better-ai-imgs/' + encodeURIComponent(selectedImage),
+            path: root + encodeURIComponent(selectedImage),
             alt: 'AI image from Better Images of AI'
         };
     }
@@ -80,7 +79,7 @@
             if (cachedHour !== currentHour || !cachedImage) {
                 cachedImage = getCurrentHourImage();
                 cachedHour = currentHour;
-                console.log(`Selected AI image for hour ${currentHour}: ${cachedImage.filename}`);
+                if (window.DEBUG) console.log('Selected AI image for hour ' + currentHour + ':', cachedImage.filename);
             }
             return cachedImage;
         },
@@ -117,7 +116,7 @@
         }
     };
     
-    // Log system initialization
-    console.log('Hourly AI Image system initialized. Current image:', window.HourlyAIImage.getCurrentImage().filename);
-    
+    if (window.DEBUG) {
+        console.log('Hourly AI Image system initialized. Current image:', window.HourlyAIImage.getCurrentImage().filename);
+    }
 })();

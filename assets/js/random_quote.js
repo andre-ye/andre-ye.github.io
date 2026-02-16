@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const randomQuoteAuthorElement = document.getElementById('random-quote-author');
     
     if (randomQuoteElement && randomQuoteAuthorElement) {
-        fetch('/assets/json/quotes.json')
+        var quotesUrl = (typeof window.getAssetPath === 'function' ? window.getAssetPath('/assets/json/quotes.json') : '/assets/json/quotes.json');
+        fetch(quotesUrl)
             .then(response => response.json())
             .then(quotes => {
                 const randomIndex = Math.floor(Math.random() * quotes.length);

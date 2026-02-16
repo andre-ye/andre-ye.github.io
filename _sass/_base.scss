@@ -2,6 +2,24 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+// Skip to main content link (visible on focus for keyboard/screen reader)
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 10000;
+  padding: 0.5rem 1rem;
+  background: var(--global-theme-color, #ff4444);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  &:focus {
+    left: 0;
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+}
+
 // LaTeX font (Computer Modern) - easily toggle by adding/removing 'latex-font' class from <html>
 // Using Latin Modern, the modern digital version of Computer Modern
 @import url('https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css');
@@ -2005,6 +2023,25 @@ blockquote {
   }
 }
 
+// Profile above title
+.profile.profile-above-title {
+  width: 180px;
+  margin: 0 0 1rem;
+  display: block;
+  float: none;
+
+  img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 15px rgba(255, 68, 68, 0.4));
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: drop-shadow(0 0 25px rgba(255, 68, 68, 0.6));
+    }
+  }
+}
+
 .profile.float-right {
   margin-left: 1rem;
 }
@@ -2013,52 +2050,8 @@ blockquote {
   margin-right: 1rem;
 }
 
-// Fixed profile for about/home page only
-.post .profile.float-left {
-  @media (min-width: 1200px) {
-    position: fixed !important;
-    left: calc((100vw - 800px) / 2 - 350px);
-    top: 120px;
-    width: 280px;
-    margin-right: 0;
-    z-index: 900;
-  }
-
-  img {
-    @media (min-width: 1200px) {
-      width: 100%;
-      height: auto;
-      filter: drop-shadow(0 0 15px rgba(255, 68, 68, 0.4));
-      transition: filter 0.3s ease;
-
-      &:hover {
-        filter: drop-shadow(0 0 25px rgba(255, 68, 68, 0.6));
-      }
-    }
-  }
-}
-
-// Mobile profile - centered and properly sized
-@media (max-width: 767px) {
-  .profile.float-left,
-  .profile.float-right {
-    float: none !important;
-    width: 50% !important;
-    max-width: 200px;
-    margin: 0 auto 1.5rem !important;
-    display: block;
-  }
-
-  .post .profile.float-left {
-    float: none !important;
-    width: 50% !important;
-    max-width: 200px;
-    margin: 0 auto 1.5rem !important;
-  }
-}
-
 @media (min-width: 576px) {
-  .profile {
+  .profile:not(.profile-above-title) {
     width: 30%;
 
     .address {

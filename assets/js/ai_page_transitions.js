@@ -217,7 +217,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Fallback to old random method if hourly system not loaded
             const randomIndex = Math.floor(Math.random() * aiImages.length);
             const imageName = aiImages[randomIndex];
-            return `/assets/better-ai-imgs/${encodeURIComponent(imageName)}`;
+            var root = (typeof window.getAssetPath === 'function' ? window.getAssetPath('/assets/better-ai-imgs/') : '/assets/better-ai-imgs/');
+            return root + encodeURIComponent(imageName);
         }
     }
     

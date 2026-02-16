@@ -88,15 +88,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 ).join(', ');
 
                 let linksHtml = '';
-                if (paper.paper_link) linksHtml += `<a href="${paper.paper_link}" target="_blank">paper</a>`;
-                if (paper.slides_link) linksHtml += `<a href="${paper.slides_link}" target="_blank">slides</a>`;
-                if (paper.poster_link) linksHtml += `<a href="${paper.poster_link}" target="_blank">poster</a>`;
-                if (paper.presentation_link) linksHtml += `<a href="${paper.presentation_link}" target="_blank">presentation</a>`;
+                if (paper.paper_link) linksHtml += `<a href="${paper.paper_link}" target="_blank" rel="noopener noreferrer">paper</a>`;
+                if (paper.slides_link) linksHtml += `<a href="${paper.slides_link}" target="_blank" rel="noopener noreferrer">slides</a>`;
+                if (paper.poster_link) linksHtml += `<a href="${paper.poster_link}" target="_blank" rel="noopener noreferrer">poster</a>`;
+                if (paper.presentation_link) linksHtml += `<a href="${paper.presentation_link}" target="_blank" rel="noopener noreferrer">presentation</a>`;
 
                 let awardHtml = paper.award ? `<div class="paper-award">${paper.award}</div>` : '';
 
                 li.innerHTML = `
-                    <div class="paper-title"><a href="${paper.paper_link || '#'}" target="_blank">${paper.title}</a></div>
+                    <div class="paper-title"><a href="${paper.paper_link || '#'}" target="_blank" rel="noopener noreferrer">${paper.title}</a></div>
                     <div class="paper-authors">${authorText}</div>
                     <div class="paper-venue">${paper.conference_full} (${paper.conference_abbrev}) ${paper.conference_year}</div>
                     ${awardHtml}
@@ -116,47 +116,47 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <ul class="paper-list">
 <li>
-<div class="paper-title"><a href="https://ryanboldi.github.io/detour-blog-final/" target="_blank">The Detour Advantage</a></div>
+<div class="paper-title"><a href="https://ryanboldi.github.io/detour-blog-final/" target="_blank" rel="noopener noreferrer">The Detour Advantage</a></div>
 <div class="paper-authors"><strong>Andre Ye</strong>, Ryan Bahlous-Boldi</div>
 <div class="paper-venue">Blog</div>
-<div class="paper-links"><a href="https://ryanboldi.github.io/detour-blog-final/" target="_blank">blog</a></div>
+<div class="paper-links"><a href="https://ryanboldi.github.io/detour-blog-final/" target="_blank" rel="noopener noreferrer">blog</a></div>
 </li>
 
 <li>
-<div class="paper-title"><a href="/assets/pdf/SIGBOVIK_2023.pdf" target="_blank">AyahuascaNet: Rigorously Investigating Hallucination in Large Language Models with Hardcore Psychedelic Drugs</a></div>
+<div class="paper-title"><a href="/assets/pdf/SIGBOVIK_2023.pdf" target="_blank" rel="noopener noreferrer">AyahuascaNet: Rigorously Investigating Hallucination in Large Language Models with Hardcore Psychedelic Drugs</a></div>
 <div class="paper-venue">SIGBOVIK 2023</div>
-<div class="paper-links"><a href="/assets/pdf/SIGBOVIK_2023.pdf" target="_blank">paper</a><a href="/assets/pdf/AyahuascaNet.pdf" target="_blank">talk slides</a><a href="https://x.com/deepfates/status/1752052061863387374" target="_blank">viral tweet</a></div>
+<div class="paper-links"><a href="/assets/pdf/SIGBOVIK_2023.pdf" target="_blank" rel="noopener noreferrer">paper</a><a href="/assets/pdf/AyahuascaNet.pdf" target="_blank" rel="noopener noreferrer">talk slides</a><a href="https://x.com/deepfates/status/1752052061863387374" target="_blank" rel="noopener noreferrer">viral tweet</a></div>
 </li>
 
 <li>
-<div class="paper-title"><a href="/assets/pdf/Epoch_SIGBOVIK_2024.pdf" target="_blank">How does the AI community pronounce 'epoch'? A semirigorous sociolinguistic survey</a></div>
+<div class="paper-title"><a href="/assets/pdf/Epoch_SIGBOVIK_2024.pdf" target="_blank" rel="noopener noreferrer">How does the AI community pronounce 'epoch'? A semirigorous sociolinguistic survey</a></div>
 <div class="paper-venue">SIGBOVIK 2024</div>
-<div class="paper-links"><a href="/assets/pdf/Epoch_SIGBOVIK_2024.pdf" target="_blank">paper</a></div>
+<div class="paper-links"><a href="/assets/pdf/Epoch_SIGBOVIK_2024.pdf" target="_blank" rel="noopener noreferrer">paper</a></div>
 </li>
 
 <li>
-<div class="paper-title"><a href="/assets/pdf/Table_SIGBOVIK_2024.pdf" target="_blank">ITF;)LM: Innocuous Table Formatting ;) with Language Models</a></div>
+<div class="paper-title"><a href="/assets/pdf/Table_SIGBOVIK_2024.pdf" target="_blank" rel="noopener noreferrer">ITF;)LM: Innocuous Table Formatting ;) with Language Models</a></div>
 <div class="paper-venue">SIGBOVIK 2024</div>
-<div class="paper-links"><a href="/assets/pdf/Table_SIGBOVIK_2024.pdf" target="_blank">paper</a></div>
+<div class="paper-links"><a href="/assets/pdf/Table_SIGBOVIK_2024.pdf" target="_blank" rel="noopener noreferrer">paper</a></div>
 </li>
 
 <li>
-<div class="paper-title"><a href="https://andre-ye.github.io/mobiod-streams/" target="_blank">Mobiod Streams</a></div>
+<div class="paper-title"><a href="https://andre-ye.github.io/mobiod-streams/" target="_blank" rel="noopener noreferrer">Mobiod Streams</a></div>
 <div class="paper-venue">Digital Art</div>
-<div class="paper-links"><a href="https://andre-ye.github.io/mobiod-streams/" target="_blank">interactive art</a></div>
+<div class="paper-links"><a href="https://andre-ye.github.io/mobiod-streams/" target="_blank" rel="noopener noreferrer">interactive art</a></div>
 </li>
 
 <li>
-<div class="paper-title"><a href="/assets/pdf/podocyte_seg.pdf" target="_blank">A Novel Approach to Segment Specialized Annotations in Electron Microscopy Images of Glomerular Podocytes</a></div>
+<div class="paper-title"><a href="/assets/pdf/podocyte_seg.pdf" target="_blank" rel="noopener noreferrer">A Novel Approach to Segment Specialized Annotations in Electron Microscopy Images of Glomerular Podocytes</a></div>
 <div class="paper-authors">David Smerkous, <strong>Andre Ye</strong>, Behzad Najafian</div>
 <div class="paper-venue">Najafian Lab for Kidney Pathology, UW Medicine</div>
-<div class="paper-links"><a href="/assets/pdf/podocyte_seg.pdf" target="_blank">poster</a></div>
+<div class="paper-links"><a href="/assets/pdf/podocyte_seg.pdf" target="_blank" rel="noopener noreferrer">poster</a></div>
 </li>
 
 <li>
-<div class="paper-title"><a href="/assets/pdf/emergent_language.pdf" target="_blank">Emergent Language: Independent AI Development of a Language-Like Syntax</a></div>
+<div class="paper-title"><a href="/assets/pdf/emergent_language.pdf" target="_blank" rel="noopener noreferrer">Emergent Language: Independent AI Development of a Language-Like Syntax</a></div>
 <div class="paper-authors">Alec Bunn, Amelia Johnson, <strong>Andre Ye</strong>, Yegor Kuznetzov, Eric Xia</div>
 <div class="paper-venue">Interactive Intelligence Research Group, Paul G. Allen School</div>
-<div class="paper-links"><a href="/assets/pdf/emergent_language.pdf" target="_blank">poster</a></div>
+<div class="paper-links"><a href="/assets/pdf/emergent_language.pdf" target="_blank" rel="noopener noreferrer">poster</a></div>
 </li>
 </ul>

@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!window.location.pathname.includes('/things-i-like/quotes')) return;
     
     // Fetch quotes data and build navigation
-    fetch('/assets/json/me-like-quotes.json')
+    var quotesDataUrl = (typeof window.getAssetPath === 'function' ? window.getAssetPath('/assets/json/me-like-quotes.json') : '/assets/json/me-like-quotes.json');
+    fetch(quotesDataUrl)
         .then(response => response.json())
         .then(data => {
             // Apply daily randomization to categories and quotes

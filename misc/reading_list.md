@@ -10,14 +10,14 @@ nav: false
 ### Philosophy
 
 Essays and Articles
-- ["Paperless Philosophy as a Philosophical Method"](https://philpapers.org/archive/BOUPPA.pdf){:target="_blank"}, David Bourget
-- ["Situated Knowledges"](https://www.jstor.org/stable/3178066){:target="_blank"}, Donna Haraway
-- ["Symposium: Vision and Choice in Morality"](https://www.jstor.org/stable/4106662){:target="_blank"}, Iris Murdoch
-- ["How Not to Solve Ethical Problems"](https://kuscholarworks.ku.edu/bitstream/handle/1808/12397/How%20Not%20to%20Solve%20Ethical%20Problems-1983.pdf){:target="_blank"}, Hilary Putnam
-- ["Performative Utterances"](https://www.uvm.edu/~lderosse/courses/lang/Austin(1979).pdf){:target="_blank"}, J.L. Austin
-- ["Philosophy: Who Needs It?"](https://www.stephenhicks.org/wp-content/uploads/2018/12/Philosophy-Who-Needs-It-text.pdf){:target="_blank"}, Ayn Rand
-- ["How to Defend Society from Science"](https://anarcosurrealisti.noblogs.org/files/2010/10/Feyerabend-Paul-How-to-defend-society-against-science.pdf){:target="_blank"}, Paul Feyerabend
-- ["Ghost in a rhetorical machine"](https://joinreboot.org/p/ghost-in-a-rhetorical-machine){:target="_blank"}, Zhanpei Fang
+- ["Paperless Philosophy as a Philosophical Method"](https://philpapers.org/archive/BOUPPA.pdf){:target="_blank" rel="noopener noreferrer"}, David Bourget
+- ["Situated Knowledges"](https://www.jstor.org/stable/3178066){:target="_blank" rel="noopener noreferrer"}, Donna Haraway
+- ["Symposium: Vision and Choice in Morality"](https://www.jstor.org/stable/4106662){:target="_blank" rel="noopener noreferrer"}, Iris Murdoch
+- ["How Not to Solve Ethical Problems"](https://kuscholarworks.ku.edu/bitstream/handle/1808/12397/How%20Not%20to%20Solve%20Ethical%20Problems-1983.pdf){:target="_blank" rel="noopener noreferrer"}, Hilary Putnam
+- ["Performative Utterances"](https://www.uvm.edu/~lderosse/courses/lang/Austin(1979).pdf){:target="_blank" rel="noopener noreferrer"}, J.L. Austin
+- ["Philosophy: Who Needs It?"](https://www.stephenhicks.org/wp-content/uploads/2018/12/Philosophy-Who-Needs-It-text.pdf){:target="_blank" rel="noopener noreferrer"}, Ayn Rand
+- ["How to Defend Society from Science"](https://anarcosurrealisti.noblogs.org/files/2010/10/Feyerabend-Paul-How-to-defend-society-against-science.pdf){:target="_blank" rel="noopener noreferrer"}, Paul Feyerabend
+- ["Ghost in a rhetorical machine"](https://joinreboot.org/p/ghost-in-a-rhetorical-machine){:target="_blank" rel="noopener noreferrer"}, Zhanpei Fang
 
 Books
 - *What is Philosophy?*, Deleuze and Guattari
@@ -30,27 +30,27 @@ Books
 
 ### Computer Science
 
-- ["Intention is All You Need"](https://advait.org/files/sarkar_2024_intention.pdf){:target="_blank"}
-- ["Beyond Personhood: Agency, Accountability, and the Limits of Anthropomorphic Ethical Analysis"](https://arxiv.org/pdf/2404.13861){:target="_blank"}
-- ["To Live in Their Utopia: Why Algorithmic Systems Create Absurd Outcomes"](https://ali-alkhatib.com/papers/chi/utopia/utopia.pdf){:target="_blank"}
-- ["Antagonistic AI"](https://arxiv.org/pdf/2402.07350.pdf){:target="_blank"}
-- ["The Lottery Ticket Hypothesis"](https://arxiv.org/pdf/1803.03635.pdf){:target="_blank"}
-- ["What's Hidden in a Randomly Weighted Neural Network?"](https://arxiv.org/pdf/1911.13299.pdf){:target="_blank"}
-- ["Moving Beyond 'Algorithmic Bias is a Data Problem'"](https://www.cell.com/patterns/fulltext/S2666-3899(21)00061-1){:target="_blank"}
-- ["On the Measure of Intelligence"](https://arxiv.org/abs/1911.01547){:target="_blank"}
-- ["Computing Machinery and Intelligence"](https://academic.oup.com/mind/article/LIX/236/433/986238){:target="_blank"}
-- ["The Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html){:target="_blank"}
-- ["Human-Centered Computing is All You Need"](https://arxiv.org/pdf/2405.03699){:target="_blank"}
-- ["The Platonic Representation Hypothesis"](https://arxiv.org/pdf/2405.07987){:target="_blank"}
-- ["From Examples to Rules: Machine Learning's Type of Authority"](https://journals.sagepub.com/doi/10.1177/20539517231188725){:target="_blank"}
-- ["Enough With “Human-AI Collaboration"](https://arxiv.org/pdf/2306.01615){:target="_blank"}
+- ["Intention is All You Need"](https://advait.org/files/sarkar_2024_intention.pdf){:target="_blank" rel="noopener noreferrer"}
+- ["Beyond Personhood: Agency, Accountability, and the Limits of Anthropomorphic Ethical Analysis"](https://arxiv.org/pdf/2404.13861){:target="_blank" rel="noopener noreferrer"}
+- ["To Live in Their Utopia: Why Algorithmic Systems Create Absurd Outcomes"](https://ali-alkhatib.com/papers/chi/utopia/utopia.pdf){:target="_blank" rel="noopener noreferrer"}
+- ["Antagonistic AI"](https://arxiv.org/pdf/2402.07350.pdf){:target="_blank" rel="noopener noreferrer"}
+- ["The Lottery Ticket Hypothesis"](https://arxiv.org/pdf/1803.03635.pdf){:target="_blank" rel="noopener noreferrer"}
+- ["What's Hidden in a Randomly Weighted Neural Network?"](https://arxiv.org/pdf/1911.13299.pdf){:target="_blank" rel="noopener noreferrer"}
+- ["Moving Beyond 'Algorithmic Bias is a Data Problem'"](https://www.cell.com/patterns/fulltext/S2666-3899(21)00061-1){:target="_blank" rel="noopener noreferrer"}
+- ["On the Measure of Intelligence"](https://arxiv.org/abs/1911.01547){:target="_blank" rel="noopener noreferrer"}
+- ["Computing Machinery and Intelligence"](https://academic.oup.com/mind/article/LIX/236/433/986238){:target="_blank" rel="noopener noreferrer"}
+- ["The Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html){:target="_blank" rel="noopener noreferrer"}
+- ["Human-Centered Computing is All You Need"](https://arxiv.org/pdf/2405.03699){:target="_blank" rel="noopener noreferrer"}
+- ["The Platonic Representation Hypothesis"](https://arxiv.org/pdf/2405.07987){:target="_blank" rel="noopener noreferrer"}
+- ["From Examples to Rules: Machine Learning's Type of Authority"](https://journals.sagepub.com/doi/10.1177/20539517231188725){:target="_blank" rel="noopener noreferrer"}
+- ["Enough With “Human-AI Collaboration"](https://arxiv.org/pdf/2306.01615){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
 ### History
-- ["The Problematic Greek Miracle"](https://muse.jhu.edu/article/791990/summary){:target="_blank"}, Reviel Netz
-- ["Reinventing a Region (1955-22): Visions of the Middle East"](https://www.cambridge.org/core/journals/israel-law-review/article/reinventing-a-region-191522-visions-of-the-middle-east-in-legal-and-diplomatic-texts-leading-to-the-palestine-mandate/82D514EAEB3D893837FC79001AD7D807){:target="_blank"}, Karin Loevy
-- ["Against forgetting: An interview with Eyal Sivan"](https://www.aljazeera.com/opinions/2012/11/12/against-forgetting-an-interview-with-eyal-sivan/){:target="_blank"}, Eyal Sivan
+- ["The Problematic Greek Miracle"](https://muse.jhu.edu/article/791990/summary){:target="_blank" rel="noopener noreferrer"}, Reviel Netz
+- ["Reinventing a Region (1955-22): Visions of the Middle East"](https://www.cambridge.org/core/journals/israel-law-review/article/reinventing-a-region-191522-visions-of-the-middle-east-in-legal-and-diplomatic-texts-leading-to-the-palestine-mandate/82D514EAEB3D893837FC79001AD7D807){:target="_blank" rel="noopener noreferrer"}, Karin Loevy
+- ["Against forgetting: An interview with Eyal Sivan"](https://www.aljazeera.com/opinions/2012/11/12/against-forgetting-an-interview-with-eyal-sivan/){:target="_blank" rel="noopener noreferrer"}, Eyal Sivan
 
 ---
 

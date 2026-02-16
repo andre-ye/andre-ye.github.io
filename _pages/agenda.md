@@ -9,13 +9,13 @@ nav_order: 1
 ---
 
 Some of the ideas I have been mulling on.
-Please see <a href="https://andre-ye.org/assets/pdf/phd-sop.pdf" target="_blank" class="bubble-link">PhD SOP</a> for one aspect of my interests, and <a href="https://andre-ye.org/things-i-like/articles/" target="_blank" class="bubble-link">great articles I've been reading</a>.
+Please see <a href="https://andre-ye.org/assets/pdf/phd-sop.pdf" target="_blank" rel="noopener noreferrer" class="bubble-link">PhD SOP</a> for one aspect of my interests, and <a href="https://andre-ye.org/things-i-like/articles/" target="_blank" rel="noopener noreferrer" class="bubble-link">great articles I've been reading</a>.
 
 ---
 
 ### Rewards and Judgments on Qualitative AI Work
 
-As AI ventures into domains like creative writing, journalism, and philosophy, I am struck by the sense that although we cannot entirely formalize the correctness of a piece of AI work, we still can judge AI work as "better" or "worse" (of course, possibly with [more complex descriptors](https://www.nytimes.com/2025/12/03/magazine/chatbot-writing-style.html){:target="_blank"}). In fact, much of the work of literary critics, philosophers, and essayists in general is to reflexively critique and develop an understanding of the normative form of the essay in their domain, to gesture at these senses of better and worse. What does this look like for AI? What is the role that humans will play in co-producing AI that writes *really well*?
+As AI ventures into domains like creative writing, journalism, and philosophy, I am struck by the sense that although we cannot entirely formalize the correctness of a piece of AI work, we still can judge AI work as "better" or "worse" (of course, possibly with [more complex descriptors](https://www.nytimes.com/2025/12/03/magazine/chatbot-writing-style.html){:target="_blank" rel="noopener noreferrer"}). In fact, much of the work of literary critics, philosophers, and essayists in general is to reflexively critique and develop an understanding of the normative form of the essay in their domain, to gesture at these senses of better and worse. What does this look like for AI? What is the role that humans will play in co-producing AI that writes *really well*?
 
 ---
 
@@ -37,7 +37,7 @@ Is there a future where we write "constitutions" for AI not in terms of human la
 
 Machine concept definition is about finding the right kinds of constructs and tools for better human-machine communication.
 
-Related/inspiring work: [We Can't Understand AI Using our Existing Vocabulary](https://openreview.net/pdf?id=asQJx56NqB){:target="_blank"} (Hewitt, Geirhos, Kim 2025); [Backpack Language Models](https://arxiv.org/abs/2305.16765){:target="_blank"} (Hewitt, Thickstun, Manning, Liang 2023).
+Related/inspiring work: [We Can't Understand AI Using our Existing Vocabulary](https://openreview.net/pdf?id=asQJx56NqB){:target="_blank" rel="noopener noreferrer"} (Hewitt, Geirhos, Kim 2025); [Backpack Language Models](https://arxiv.org/abs/2305.16765){:target="_blank" rel="noopener noreferrer"} (Hewitt, Thickstun, Manning, Liang 2023).
 
 ---
 
@@ -53,7 +53,7 @@ One can also imagine that many of the natural language operations studied in NLP
 
 ### An Ontology for Everyone
 
-LLMs are increasingly good at annotating data according to even highly custom and complex ontologies -- schemas for taxonomizing things, their relations, their attributes, etc. Previously the people who hosted the data we cared about had control over the ontology by which we encountered it. Some ontology-building is highly interesting, e.g. [LegalDiscourse](https://aclanthology.org/2024.naacl-long.472.pdf){:target="_blank"} (Niklaus, Rüegger, Ash 2024), which builds a domain-specific taxonomy for annotating legal texts and then uses it to help journalists. But maybe we can do better. Maybe one role for a human is in figuring out what kind of ontology is useful for them to learn the things they want to learn, and to both iterate upon and implement this ontology with LLMs.
+LLMs are increasingly good at annotating data according to even highly custom and complex ontologies -- schemas for taxonomizing things, their relations, their attributes, etc. Previously the people who hosted the data we cared about had control over the ontology by which we encountered it. Some ontology-building is highly interesting, e.g. [LegalDiscourse](https://aclanthology.org/2024.naacl-long.472.pdf){:target="_blank" rel="noopener noreferrer"} (Niklaus, Rüegger, Ash 2024), which builds a domain-specific taxonomy for annotating legal texts and then uses it to help journalists. But maybe we can do better. Maybe one role for a human is in figuring out what kind of ontology is useful for them to learn the things they want to learn, and to both iterate upon and implement this ontology with LLMs.
 
 ---
 

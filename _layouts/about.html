@@ -5,15 +5,8 @@ layout: default
 <!-- about.html -->
       <div class="post">
         <header class="post-header">
-          <h1 class="post-title">
-           {% if site.title == "blank" -%}<span class="name-andre">{{ site.first_name }}</span> {{ site.middle_name }} <span class="name-ye">{{ site.last_name }}</span>{%- else -%}{{ site.title }}{%- endif %}
-          </h1>
-          <p class="desc">{{ page.subtitle }}</p>
-        </header>
-
-        <article>
           {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
+          <div class="profile profile-above-title">
             {%- if page.profile.image %}
               {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
 
@@ -28,39 +21,25 @@ layout: default
               class=profile_image_class
               alt=page.profile.image -%}
             {% endif -%}
-            {%- if page.profile.address %}
-            <div class="address">
-              {{ page.profile.address }}
-            </div>
-            {%- endif %}
-
-            <!-- Piano below profile picture - TEMPORARILY DISABLED -->
           </div>
           {%- endif %}
+          <h1 class="post-title">
+           {% if site.title == "blank" -%}<span class="name-andre">{{ site.first_name }}</span> {{ site.middle_name }} <span class="name-ye">{{ site.last_name }}</span>{%- else -%}{{ site.title }}{%- endif %}
+          </h1>
+          <p class="desc">{{ page.subtitle }}</p>
+        </header>
+
+        <article>
 
           <div class="clearfix">
             {{ content }}
           </div>
 
-          <!-- Papers Carousel -->
-          <div class="papers-section">
-            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-              <h2 style="text-align: left; margin: 0;">papers</h2>
-              <a href="/cv/" class="bubble-link-small">See more in CV</a>
-            </div>
-            <div class="papers-carousel-container">
-              <div class="papers-carousel scrollable" id="papers-carousel">
-                <!-- Papers will be loaded here by JavaScript -->
-              </div>
-            </div>
-          </div>
-          
-          <hr class="random-section-divider">
 
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
-            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-              <h2 style="text-align: left; margin: 0;">news</h2>
+            <div class="about-news-header">
+              <h2 class="about-news-title">news</h2>
               <a href="{{ '/news/' | relative_url }}" class="bubble-link-small">See all news</a>
             </div>
             {%- include news.html limit=true %}
@@ -85,4 +64,3 @@ layout: default
 
 </div>
 
-<script src="{{ '/assets/js/papers_carousel.js' | relative_url }}"></script>

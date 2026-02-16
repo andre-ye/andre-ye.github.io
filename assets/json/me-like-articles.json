@@ -87,6 +87,20 @@
                     "year": 2026,
                     "commentary": "I think Carlsmith articulates some good points to think about in a particular kind of 'AI that does human-like philosophy' -- namely, the ability to do 'level-1' philosophy in applying philosophical thinking to 'out-of-distribution' samples (as opposed to 'level-2+' philosophy which interrogates the aims of philosophical inquiry itself). I think it is clear how that would be important in a future where we give AI lots of responsibility and power, although this is also not a future that we have to choose.",
                     "link": "https://joecarlsmith.com/2026/01/29/building-ais-that-do-human-like-philosophy"
+                },
+                {
+                    "title": "The Art of Wanting",
+                    "authors": "David Bau",
+                    "year": 2026,
+                    "commentary": "",
+                    "link": "https://davidbau.com/archives/2026/01/17/the_art_of_wanting.html"
+                },
+                {
+                    "title": "Probabilistic Modelling is Sufficient for Causal Inference",
+                    "authors": "Bruno Mlodozeniec, David Krueger, Richard E. Turner",
+                    "year": 2025,
+                    "commentary": "Addresses the claim that statistics can only derive associative knowledge, not causal knowledge, by showing that if you write down the probabilities of everything in the system -- including 'different worlds' with and without causal intervention -- then causal inference reduces to standard probabilistic modeling.",
+                    "link": "https://arxiv.org/pdf/2512.23408"
                 }
             ]
         },
@@ -312,6 +326,13 @@
                     "year": 2025,
                     "commentary": "",
                     "link": "https://arxiv.org/pdf/2505.11581"
+                },
+                {
+                    "title": "FIRE: Frobenius-Isometry Reinitialization for Balancing the Stability-Plasticity Tradeoff",
+                    "authors": "Isaac Han, Sangyeon Park, Seungwon Oh, Donghu Kim, Hojoon Lee, Kyung-Joong Kim",
+                    "year": 2026,
+                    "commentary": "",
+                    "link": "https://arxiv.org/pdf/2602.08040"
                 }
             ]
         },
@@ -400,11 +421,32 @@
                     "link": "https://arxiv.org/abs/2504.09283"
                 },
                 {
+                    "title": "Home-Cooked Software and Barefoot Developers",
+                    "authors": "Maggie Appleton",
+                    "year": 2024,
+                    "commentary": "Beautifully illustrated and thought-provoking talk about software that is 'home-cooked' -- not industrially produced like in a restaurant or factory, but made for a few people you care about to use. Introduces the concept of 'barefoot developers' (inspired by barefoot doctors in 1960s China) as a middle ground between professional developers and end users who don't want to code. Most people don't care about coding and don't want to, so we need barefoot developers. LLMs can help barefoot developers make more home-cooked software.",
+                    "link": "https://maggieappleton.com/home-cooked-software"
+                },
+                {
                     "title": "Antagonistic AI",
                     "authors": "Alice Cai, Ian Arawjo, Elena L. Glassman",
                     "year": 2024,
                     "commentary": "One of my favorite papers and definitely a model for how to write good papers I think.",
                     "link": "https://arxiv.org/abs/2402.07350"
+                },
+                {
+                    "title": "Full-Stack Alignment: Co-Aligning AI and Institutions with Thick Models of Value",
+                    "authors": "Joe Edelman, Tan Zhi-Xuan, Ryan Lowe, Oliver Klingefjord, David Duvenaud, Jakob Foerster, Iason Gabriel, et al.",
+                    "year": 2025,
+                    "commentary": "The most exciting vision on AI alignment I've read in a while.",
+                    "link": "https://arxiv.org/pdf/2512.03399"
+                },
+                {
+                    "title": "Who's in Charge? Disempowerment Patterns in Real-World LLM Usage",
+                    "authors": "Mrinank Sharma, Miles McCain, Raymond Douglas, David Duvenaud",
+                    "year": 2025,
+                    "commentary": "A nuanced operationalization of 'situational disempowerment' evaluated on a large corpus of Claude conversations. They also find that users tend to prefer model responses that lead to situational disempowerment -- people seem to like being told what to do, especially when they turn to AI for guidance -- which suggests that preference-based training may skew model behavior towards disempowering users.",
+                    "link": "https://arxiv.org/pdf/2601.19062"
                 }
             ]
         },
@@ -474,6 +516,13 @@
                     "authors": "Ivan Illich",
                     "year": 1973,
                     "commentary": "An ambitious yet informed vision for what it would mean and cost for us to have *convivial* tools -- tools that we can make and shape our own lives for joy and purpose.",
+                    "link": ""
+                },
+                {
+                    "title": "People need not only to obtain things; they need above all the freedom to make things among which they can live, to give shape to them according to their own tastes, and to put them to use in caring for and about others.",
+                    "authors": "Ivan Illich",
+                    "year": 1973,
+                    "commentary": "",
                     "link": ""
                 },
                 {

@@ -6,14 +6,14 @@ nav: true
 nav_order: 2
 ---
 
-I am a first-year PhD student at MIT EECS, advised by [Mitchell Gordon](https://mgordon.me/){:target="_blank"}.
+I am a first-year PhD student at MIT EECS, advised by [Mitchell Gordon](https://mgordon.me/){:target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"}.
 I received by bachelor's in Computer Science (BS) and Philosophy (BA w/ honors) with minors in mathematics and history from the University of Washington.
-In undergrad, I was very fortunate to be advised by [Amy Zhang](https://homes.cs.washington.edu/~axz/){:target="_blank"} and [Ranjay Krishna](https://www.ranjaykrishna.com/index.html){:target="_blank"} in CS and [Rose Novick](https://www.rosenovick.com/){:target="_blank"} in philosophy.
-I was also mentored by [Jared Moore](https://jaredmoore.org/){:target="_blank"}, [Quan Ze (Jim) Chen](https://cqz.name/){:target="_blank"}, [Sebastin Santy](https://sebastinsanty.com/){:target="_blank"}, [Matt Wallingford](https://mattwallingford.github.io/){:target="_blank"}, [Carina Fourie](https://phil.washington.edu/people/carina-fourie){:target="_blank"}, and others.
+In undergrad, I was very fortunate to be advised by [Amy Zhang](https://homes.cs.washington.edu/~axz/){:target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"} and [Ranjay Krishna](https://www.ranjaykrishna.com/index.html){:target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"} in CS and [Rose Novick](https://www.rosenovick.com/){:target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"} in philosophy.
+I was also mentored by [Jared Moore](https://jaredmoore.org/){:target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"}, [Quan Ze (Jim) Chen](https://cqz.name/){:target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"}, [Sebastin Santy](https://sebastinsanty.com/){:target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"}, [Matt Wallingford](https://mattwallingford.github.io/){:target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"}, [Carina Fourie](https://phil.washington.edu/people/carina-fourie){:target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"}, and others.
 
 <div style="text-align: center; margin: 2rem 0;">
-<a href="/assets/pdf/Ye-Resume-Updated.pdf" target="_blank" class="bubble-link">CV PDF</a>
-<a href="/assets/pdf/phd-sop.pdf" target="_blank" class="bubble-link">PhD Statement of Purpose</a>
+<a href="/assets/pdf/Ye-Resume-Updated.pdf" target="_blank" rel="noopener noreferrer" class="bubble-link">CV PDF</a>
+<a href="/assets/pdf/phd-sop.pdf" target="_blank" rel="noopener noreferrer" class="bubble-link">PhD Statement of Purpose</a>
 <a href="/work/cs/" class="bubble-link">CS Papers</a>
 <a href="/work/philosophy/" class="bubble-link">Philosophy Papers</a>
 </div>
@@ -21,23 +21,11 @@ I was also mentored by [Jared Moore](https://jaredmoore.org/){:target="_blank"},
 <div class="cv-section">
 <h2>Education</h2>
 
-<div class="education-item">
-<div class="item-title">Ph.D., Computer Science — Massachusetts Institute of Technology, 2025–?</div>
-</div>
-
-<div class="education-item">
-<div class="item-title">B.A., Philosophy with Honors — University of Washington, 2021–2025</div>
-<div class="item-details">Minor in History.</div>
-</div>
-
-<div class="education-item">
-<div class="item-title">B.S., Computer Science — University of Washington, 2021–2025</div>
-<div class="item-details">Minor in Mathematics.</div>
-</div>
-
-<div class="education-item">
-<div class="item-title">Early Entrance Program — Robinson Center, University of Washington</div>
-<div class="item-details">Admission to university at 14.</div>
+<div class="timeline-content">
+• <strong>Ph.D., Computer Science</strong> — Massachusetts Institute of Technology, 2025–?<br>
+• <strong>B.A., Philosophy with Honors</strong> — University of Washington, 2021–2025. Minor in History.<br>
+• <strong>B.S., Computer Science</strong> — University of Washington, 2021–2025. Minor in Mathematics.<br>
+• <strong>Early Entrance Program</strong> — Robinson Center, University of Washington. Admission to university at 14.
 </div>
 
 </div>
@@ -93,7 +81,7 @@ I was also mentored by [Jared Moore](https://jaredmoore.org/){:target="_blank"},
 <div class="news-venue">University of Washington Office of Undergraduate Academic Affairs</div>
 </div>
 <div class="news-icon-link">
-<a href="https://www.washington.edu/uaa/undergrad-researcher-questions-the-ai-answer/" target="_blank" title="Read Article">
+<a href="https://www.washington.edu/uaa/undergrad-researcher-questions-the-ai-answer/" target="_blank" rel="noopener noreferrer" title="Read Article">
 <i class="fas fa-external-link-alt"></i>
 </a>
 </div>
@@ -108,7 +96,7 @@ I was also mentored by [Jared Moore](https://jaredmoore.org/){:target="_blank"},
 <div class="news-venue">University of Washington Office of Undergraduate Academic Affairs</div>
 </div>
 <div class="news-icon-link">
-<a href="https://www.washington.edu/uaa/2025/04/09/uw-undergraduate-earns-fellowship-for-graduate-study/" target="_blank" title="Read Article">
+<a href="https://www.washington.edu/uaa/2025/04/09/uw-undergraduate-earns-fellowship-for-graduate-study/" target="_blank" rel="noopener noreferrer" title="Read Article">
 <i class="fas fa-external-link-alt"></i>
 </a>
 </div>
@@ -123,7 +111,7 @@ I was also mentored by [Jared Moore](https://jaredmoore.org/){:target="_blank"},
 <div class="news-venue">University of Washington College of Arts and Sciences</div>
 </div>
 <div class="news-icon-link">
-<a href="https://artsci.washington.edu/news/2025-06/2025-deans-medalists-energized-inspiring" target="_blank" title="Read Article">
+<a href="https://artsci.washington.edu/news/2025-06/2025-deans-medalists-energized-inspiring" target="_blank" rel="noopener noreferrer" title="Read Article">
 <i class="fas fa-external-link-alt"></i>
 </a>
 </div>
@@ -138,7 +126,22 @@ I was also mentored by [Jared Moore](https://jaredmoore.org/){:target="_blank"},
 <div class="news-venue">University of Washington Allen School News</div>
 </div>
 <div class="news-icon-link">
-<a href="https://news.cs.washington.edu/2024/06/28/for-these-nationally-recognized-allen-school-undergraduates-research-impact-is-its-own-reward/" target="_blank" title="Read Article">
+<a href="https://news.cs.washington.edu/2024/06/28/for-these-nationally-recognized-allen-school-undergraduates-research-impact-is-its-own-reward/" target="_blank" rel="noopener noreferrer" title="Read Article">
+<i class="fas fa-external-link-alt"></i>
+</a>
+</div>
+</div>
+
+<div class="news-item-with-photo">
+<div class="news-photo">
+<img src="/assets/thumbnails/csail-day-in-the-life.jpg" alt="News photo">
+</div>
+<div class="news-content">
+<div class="news-title">A Day in the Life of a CSAIL PhD Student</div>
+<div class="news-venue">MIT CSAIL Instagram</div>
+</div>
+<div class="news-icon-link">
+<a href="https://www.instagram.com/reel/DUoAaOwAJl2/?igsh=c3Bmbng5Ymx1NGY=" target="_blank" rel="noopener noreferrer" title="Watch Reel">
 <i class="fas fa-external-link-alt"></i>
 </a>
 </div>
@@ -174,7 +177,7 @@ I was also mentored by [Jared Moore](https://jaredmoore.org/){:target="_blank"},
 <div class="item-title">Co-Webmaster</div>
 <div class="item-institution">MIT HCI Group, 2025–2026</div>
 <div class="item-details">
-<a href="https://hci.csail.mit.edu/" target="_blank">https://hci.csail.mit.edu/</a>
+<a href="https://hci.csail.mit.edu/" target="_blank" rel="noopener noreferrer">https://hci.csail.mit.edu/</a>
 </div>
 </div>
 
@@ -218,7 +221,7 @@ Managed social media presence and produced social media content for Vivek Prakri
 </div>
 <div class="paper-icon-links">
 <div class="icon-link" data-tooltip="SpringerLink">
-<a href="https://link.springer.com/book/10.1007/978-1-4842-7413-2" target="_blank">
+<a href="https://link.springer.com/book/10.1007/978-1-4842-7413-2" target="_blank" rel="noopener noreferrer">
 <i class="fas fa-external-link-alt"></i>
 </a>
 </div>
@@ -235,7 +238,7 @@ Managed social media presence and produced social media content for Vivek Prakri
 </div>
 <div class="paper-icon-links">
 <div class="icon-link" data-tooltip="SpringerLink">
-<a href="https://link.springer.com/book/10.1007/978-1-4842-8692-0" target="_blank">
+<a href="https://link.springer.com/book/10.1007/978-1-4842-8692-0" target="_blank" rel="noopener noreferrer">
 <i class="fas fa-external-link-alt"></i>
 </a>
 </div>

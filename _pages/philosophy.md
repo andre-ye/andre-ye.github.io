@@ -79,15 +79,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 ).join(', ');
 
                 let linksHtml = '';
-                if (paper.paper_link) linksHtml += `<a href="${paper.paper_link}" target="_blank">paper</a>`;
-                if (paper.slides_link) linksHtml += `<a href="${paper.slides_link}" target="_blank">slides</a>`;
-                if (paper.poster_link) linksHtml += `<a href="${paper.poster_link}" target="_blank">poster</a>`;
-                if (paper.presentation_link) linksHtml += `<a href="${paper.presentation_link}" target="_blank">presentation</a>`;
+                if (paper.paper_link) linksHtml += `<a href="${paper.paper_link}" target="_blank" rel="noopener noreferrer">paper</a>`;
+                if (paper.slides_link) linksHtml += `<a href="${paper.slides_link}" target="_blank" rel="noopener noreferrer">slides</a>`;
+                if (paper.poster_link) linksHtml += `<a href="${paper.poster_link}" target="_blank" rel="noopener noreferrer">poster</a>`;
+                if (paper.presentation_link) linksHtml += `<a href="${paper.presentation_link}" target="_blank" rel="noopener noreferrer">presentation</a>`;
 
                 let awardHtml = paper.award ? `<div class="paper-award">${paper.award}</div>` : '';
 
                 li.innerHTML = `
-                    <div class="paper-title"><a href="${paper.paper_link || '#'}" target="_blank">${paper.title}</a></div>
+                    <div class="paper-title"><a href="${paper.paper_link || '#'}" target="_blank" rel="noopener noreferrer">${paper.title}</a></div>
                     <div class="paper-authors">${authorText}</div>
                     <div class="paper-venue">${paper.conference_full} (${paper.conference_abbrev}) ${paper.conference_year}</div>
                     ${awardHtml}
