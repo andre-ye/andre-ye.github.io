@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
 
     <!-- Bootstrap Table -->
-    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
 
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
@@ -48,21 +48,25 @@
     <script src="/assets/js/dark_mode.js"></script>
     
 
-    <!-- Random Quote Script -->
-    <script src="/assets/js/random_quote.js"></script>
     
-    <!-- Navigation Panel Script -->
-    <script src="/assets/js/nav_panel.js"></script>
-    
-    <!-- Quotes Navigation Script -->
-    <script src="/assets/js/quotes_nav.js"></script>
 
     
 
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body class="fixed-top-nav " data-baseurl="/">
+
+    <script>
+      window.__baseurl = (document.body && document.body.getAttribute('data-baseurl')) || '';
+      window.getBase = function() { return (window.__baseurl || '').replace(/\/$/, ''); };
+      window.getAssetPath = function(path) {
+        var b = (typeof window.getBase === 'function' ? window.getBase() : '');
+        return (b ? '/' + b : '') + (path.charAt(0) === '/' ? path : '/' + path);
+      };
+    </script>
+    <!-- Skip to main content (visible when focused) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Header -->
     <header>
@@ -90,8 +94,8 @@
 
               <!-- Other pages -->
               <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">work</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-30" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">work</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown-30">
                   <a class="dropdown-item" href="/work/agenda/">agenda</a>
                   <a class="dropdown-item" href="/work/cs/">cs</a>
                   <a class="dropdown-item" href="/work/philosophy/">philosophy</a>
@@ -101,15 +105,15 @@
                 <a class="nav-link" href="/cv/">cv</a>
               </li>
               <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">things I like</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-35" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">things I like</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown-35">
                   <a class="dropdown-item" href="/things-i-like/quotes/">quotes</a>
                   <a class="dropdown-item" href="/things-i-like/articles/">articles</a>
                 </div>
               </li>
               <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">misc</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-36" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">misc</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown-36">
                   <a class="dropdown-item" href="/misc/history-listed">History, Listed</a>
                   <a class="dropdown-item" href="/misc/recmath">Recreational Math</a>
                 </div>
@@ -120,7 +124,7 @@
       </nav>
 
       <!-- Scrolling Progress Bar -->
-      <progress id="progress" value="0">
+      <progress id="progress" value="0" aria-hidden="true">
         <div class="progress-container">
           <span class="progress-bar"></span>
         </div>
@@ -129,7 +133,7 @@
 
 
     <!-- Content -->
-    <div class="container mt-5">
+    <main id="main-content" class="container mt-5">
       
         <!-- page.html -->
         <div class="post">
@@ -145,21 +149,21 @@
 <p>Essays and Articles</p>
 <ul>
   <li>
-<a href="https://philpapers.org/archive/BOUPPA.pdf" target="_blank" rel="external nofollow noopener">“Paperless Philosophy as a Philosophical Method”</a>, David Bourget</li>
+<a href="https://philpapers.org/archive/BOUPPA.pdf" target="_blank" rel="noopener noreferrer">“Paperless Philosophy as a Philosophical Method”</a>, David Bourget</li>
   <li>
-<a href="https://www.jstor.org/stable/3178066" target="_blank" rel="external nofollow noopener">“Situated Knowledges”</a>, Donna Haraway</li>
+<a href="https://www.jstor.org/stable/3178066" target="_blank" rel="noopener noreferrer">“Situated Knowledges”</a>, Donna Haraway</li>
   <li>
-<a href="https://www.jstor.org/stable/4106662" target="_blank" rel="external nofollow noopener">“Symposium: Vision and Choice in Morality”</a>, Iris Murdoch</li>
+<a href="https://www.jstor.org/stable/4106662" target="_blank" rel="noopener noreferrer">“Symposium: Vision and Choice in Morality”</a>, Iris Murdoch</li>
   <li>
-<a href="https://kuscholarworks.ku.edu/bitstream/handle/1808/12397/How%20Not%20to%20Solve%20Ethical%20Problems-1983.pdf" target="_blank" rel="external nofollow noopener">“How Not to Solve Ethical Problems”</a>, Hilary Putnam</li>
+<a href="https://kuscholarworks.ku.edu/bitstream/handle/1808/12397/How%20Not%20to%20Solve%20Ethical%20Problems-1983.pdf" target="_blank" rel="noopener noreferrer">“How Not to Solve Ethical Problems”</a>, Hilary Putnam</li>
   <li>
-<a href="https://www.uvm.edu/~lderosse/courses/lang/Austin(1979).pdf" target="_blank" rel="external nofollow noopener">“Performative Utterances”</a>, J.L. Austin</li>
+<a href="https://www.uvm.edu/~lderosse/courses/lang/Austin(1979).pdf" target="_blank" rel="noopener noreferrer">“Performative Utterances”</a>, J.L. Austin</li>
   <li>
-<a href="https://www.stephenhicks.org/wp-content/uploads/2018/12/Philosophy-Who-Needs-It-text.pdf" target="_blank" rel="external nofollow noopener">“Philosophy: Who Needs It?”</a>, Ayn Rand</li>
+<a href="https://www.stephenhicks.org/wp-content/uploads/2018/12/Philosophy-Who-Needs-It-text.pdf" target="_blank" rel="noopener noreferrer">“Philosophy: Who Needs It?”</a>, Ayn Rand</li>
   <li>
-<a href="https://anarcosurrealisti.noblogs.org/files/2010/10/Feyerabend-Paul-How-to-defend-society-against-science.pdf" target="_blank" rel="external nofollow noopener">“How to Defend Society from Science”</a>, Paul Feyerabend</li>
+<a href="https://anarcosurrealisti.noblogs.org/files/2010/10/Feyerabend-Paul-How-to-defend-society-against-science.pdf" target="_blank" rel="noopener noreferrer">“How to Defend Society from Science”</a>, Paul Feyerabend</li>
   <li>
-<a href="https://joinreboot.org/p/ghost-in-a-rhetorical-machine" target="_blank" rel="external nofollow noopener">“Ghost in a rhetorical machine”</a>, Zhanpei Fang</li>
+<a href="https://joinreboot.org/p/ghost-in-a-rhetorical-machine" target="_blank" rel="noopener noreferrer">“Ghost in a rhetorical machine”</a>, Zhanpei Fang</li>
 </ul>
 
 <p>Books</p>
@@ -181,20 +185,20 @@
 <h3 id="computer-science">Computer Science</h3>
 
 <ul>
-  <li><a href="https://advait.org/files/sarkar_2024_intention.pdf" target="_blank" rel="external nofollow noopener">“Intention is All You Need”</a></li>
-  <li><a href="https://arxiv.org/pdf/2404.13861" target="_blank" rel="external nofollow noopener">“Beyond Personhood: Agency, Accountability, and the Limits of Anthropomorphic Ethical Analysis”</a></li>
-  <li><a href="https://ali-alkhatib.com/papers/chi/utopia/utopia.pdf" target="_blank" rel="external nofollow noopener">“To Live in Their Utopia: Why Algorithmic Systems Create Absurd Outcomes”</a></li>
-  <li><a href="https://arxiv.org/pdf/2402.07350.pdf" target="_blank" rel="external nofollow noopener">“Antagonistic AI”</a></li>
-  <li><a href="https://arxiv.org/pdf/1803.03635.pdf" target="_blank" rel="external nofollow noopener">“The Lottery Ticket Hypothesis”</a></li>
-  <li><a href="https://arxiv.org/pdf/1911.13299.pdf" target="_blank" rel="external nofollow noopener">“What’s Hidden in a Randomly Weighted Neural Network?”</a></li>
-  <li><a href="https://www.cell.com/patterns/fulltext/S2666-3899(21)00061-1" target="_blank" rel="external nofollow noopener">“Moving Beyond ‘Algorithmic Bias is a Data Problem’”</a></li>
-  <li><a href="https://arxiv.org/abs/1911.01547" target="_blank" rel="external nofollow noopener">“On the Measure of Intelligence”</a></li>
-  <li><a href="https://academic.oup.com/mind/article/LIX/236/433/986238" target="_blank" rel="external nofollow noopener">“Computing Machinery and Intelligence”</a></li>
-  <li><a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html" target="_blank" rel="external nofollow noopener">“The Bitter Lesson”</a></li>
-  <li><a href="https://arxiv.org/pdf/2405.03699" target="_blank" rel="external nofollow noopener">“Human-Centered Computing is All You Need”</a></li>
-  <li><a href="https://arxiv.org/pdf/2405.07987" target="_blank" rel="external nofollow noopener">“The Platonic Representation Hypothesis”</a></li>
-  <li><a href="https://journals.sagepub.com/doi/10.1177/20539517231188725" target="_blank" rel="external nofollow noopener">“From Examples to Rules: Machine Learning’s Type of Authority”</a></li>
-  <li><a href="https://arxiv.org/pdf/2306.01615" target="_blank" rel="external nofollow noopener">“Enough With “Human-AI Collaboration”</a></li>
+  <li><a href="https://advait.org/files/sarkar_2024_intention.pdf" target="_blank" rel="noopener noreferrer">“Intention is All You Need”</a></li>
+  <li><a href="https://arxiv.org/pdf/2404.13861" target="_blank" rel="noopener noreferrer">“Beyond Personhood: Agency, Accountability, and the Limits of Anthropomorphic Ethical Analysis”</a></li>
+  <li><a href="https://ali-alkhatib.com/papers/chi/utopia/utopia.pdf" target="_blank" rel="noopener noreferrer">“To Live in Their Utopia: Why Algorithmic Systems Create Absurd Outcomes”</a></li>
+  <li><a href="https://arxiv.org/pdf/2402.07350.pdf" target="_blank" rel="noopener noreferrer">“Antagonistic AI”</a></li>
+  <li><a href="https://arxiv.org/pdf/1803.03635.pdf" target="_blank" rel="noopener noreferrer">“The Lottery Ticket Hypothesis”</a></li>
+  <li><a href="https://arxiv.org/pdf/1911.13299.pdf" target="_blank" rel="noopener noreferrer">“What’s Hidden in a Randomly Weighted Neural Network?”</a></li>
+  <li><a href="https://www.cell.com/patterns/fulltext/S2666-3899(21)00061-1" target="_blank" rel="noopener noreferrer">“Moving Beyond ‘Algorithmic Bias is a Data Problem’”</a></li>
+  <li><a href="https://arxiv.org/abs/1911.01547" target="_blank" rel="noopener noreferrer">“On the Measure of Intelligence”</a></li>
+  <li><a href="https://academic.oup.com/mind/article/LIX/236/433/986238" target="_blank" rel="noopener noreferrer">“Computing Machinery and Intelligence”</a></li>
+  <li><a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html" target="_blank" rel="noopener noreferrer">“The Bitter Lesson”</a></li>
+  <li><a href="https://arxiv.org/pdf/2405.03699" target="_blank" rel="noopener noreferrer">“Human-Centered Computing is All You Need”</a></li>
+  <li><a href="https://arxiv.org/pdf/2405.07987" target="_blank" rel="noopener noreferrer">“The Platonic Representation Hypothesis”</a></li>
+  <li><a href="https://journals.sagepub.com/doi/10.1177/20539517231188725" target="_blank" rel="noopener noreferrer">“From Examples to Rules: Machine Learning’s Type of Authority”</a></li>
+  <li><a href="https://arxiv.org/pdf/2306.01615" target="_blank" rel="noopener noreferrer">“Enough With “Human-AI Collaboration”</a></li>
 </ul>
 
 <hr>
@@ -202,11 +206,11 @@
 <h3 id="history">History</h3>
 <ul>
   <li>
-<a href="https://muse.jhu.edu/article/791990/summary" target="_blank" rel="external nofollow noopener">“The Problematic Greek Miracle”</a>, Reviel Netz</li>
+<a href="https://muse.jhu.edu/article/791990/summary" target="_blank" rel="noopener noreferrer">“The Problematic Greek Miracle”</a>, Reviel Netz</li>
   <li>
-<a href="https://www.cambridge.org/core/journals/israel-law-review/article/reinventing-a-region-191522-visions-of-the-middle-east-in-legal-and-diplomatic-texts-leading-to-the-palestine-mandate/82D514EAEB3D893837FC79001AD7D807" target="_blank" rel="external nofollow noopener">“Reinventing a Region (1955-22): Visions of the Middle East”</a>, Karin Loevy</li>
+<a href="https://www.cambridge.org/core/journals/israel-law-review/article/reinventing-a-region-191522-visions-of-the-middle-east-in-legal-and-diplomatic-texts-leading-to-the-palestine-mandate/82D514EAEB3D893837FC79001AD7D807" target="_blank" rel="noopener noreferrer">“Reinventing a Region (1955-22): Visions of the Middle East”</a>, Karin Loevy</li>
   <li>
-<a href="https://www.aljazeera.com/opinions/2012/11/12/against-forgetting-an-interview-with-eyal-sivan/" target="_blank" rel="external nofollow noopener">“Against forgetting: An interview with Eyal Sivan”</a>, Eyal Sivan</li>
+<a href="https://www.aljazeera.com/opinions/2012/11/12/against-forgetting-an-interview-with-eyal-sivan/" target="_blank" rel="noopener noreferrer">“Against forgetting: An interview with Eyal Sivan”</a>, Eyal Sivan</li>
 </ul>
 
 <hr>
@@ -289,26 +293,26 @@
         </style>
 
       
-    </div>
+    </main>
 
     <!-- Fixed Quote Box -->
     
-    <div class="fixed-quote-box">
+    <aside class="fixed-quote-box" aria-label="Random quote">
       <p id="random-quote" class="quote-text"></p>
       <p id="random-quote-author" class="quote-author"></p>
       <p class="quote-source">from <a href="/things-i-like/quotes/">things I like</a></p>
       <p class="bubble-instructions">press <kbd>e</kbd> to toggle word bubbles<br>press <kbd>m</kbd> to show meaning</p>
-    </div>
+    </aside>
     
 
     <!-- Fixed Image Box with Piano (exclude from about page) -->
     
-    <div class="fixed-image-box">
-      <img id="fixed-ai-image" class="ai-image" src="" alt="Random AI image from Better Images of AI">
-      <p class="image-caption">from <a href="https://betterimagesofai.org/images" target="_blank" rel="external nofollow noopener">Better Images of AI</a></p>
+    <aside class="fixed-image-box" aria-label="AI image from Better Images of AI">
+      <img id="fixed-ai-image" class="ai-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Random AI image from Better Images of AI">
+      <p class="image-caption">from <a href="https://betterimagesofai.org/images" target="_blank" rel="noopener noreferrer">Better Images of AI</a></p>
 
       <!-- Piano inside image box - TEMPORARILY DISABLED -->
-    </div>
+    </aside>
     
 
     
@@ -319,8 +323,8 @@
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2026 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Words from <a href="https://www.thedictionaryofobscuresorrows.com/" target="_blank" rel="external nofollow noopener">Dictionary of Obscure Sorrows</a>.
-Last updated: February 07, 2026.
+        © Copyright 2026 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="noopener noreferrer" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>. Words from <a href="https://www.thedictionaryofobscuresorrows.com/" target="_blank" rel="noopener noreferrer">Dictionary of Obscure Sorrows</a>.
+Last updated: February 16, 2026.
         
       </div>
     </footer>
@@ -329,10 +333,13 @@ Last updated: February 07, 2026.
     <!-- jQuery -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <!-- Bootsrap & MDB scripts -->
+    <!-- Bootstrap & MDB scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
 
+    <script defer src="/assets/js/random_quote.js"></script>
+    <script defer src="/assets/js/nav_panel.js"></script>
+    <script defer src="/assets/js/quotes_nav.js"></script>
     <!-- Masonry & imagesLoaded -->
   <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
@@ -420,7 +427,7 @@ Last updated: February 07, 2026.
   function initializeProgressElement() {
     let navbarHeight = $("#navbar").outerHeight(true);
     $("body").css({ "padding-top": navbarHeight });
-    $("progress-container").css({ "padding-top": navbarHeight });
+    $(".progress-container").css({ "padding-top": navbarHeight });
     progressBar.css({ top: navbarHeight });
     progressBar.attr({
       max: getDistanceToScroll(),
@@ -446,6 +453,7 @@ Last updated: February 07, 2026.
 </script>
 
     
+    <script src="/assets/js/utils.js"></script>
     <!-- Hourly AI Image System - loads first to provide synchronized images -->
     <script src="/assets/js/hourly_ai_image.js"></script>
     

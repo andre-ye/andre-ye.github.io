@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!window.location.pathname.includes('/things-i-like/articles')) return;
     
     // Fetch articles data and build navigation
-    fetch('/assets/json/me-like-articles.json')
+    var articlesUrl = (typeof window.getAssetPath === 'function' ? window.getAssetPath('/assets/json/me-like-articles.json') : '/assets/json/me-like-articles.json');
+    fetch(articlesUrl)
         .then(response => response.json())
         .then(data => {
             // Apply daily randomization to categories and papers

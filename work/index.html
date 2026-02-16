@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
 
     <!-- Bootstrap Table -->
-    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
 
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
@@ -49,21 +49,25 @@
     <script src="/assets/js/dark_mode.js"></script>
     
 
-    <!-- Random Quote Script -->
-    <script src="/assets/js/random_quote.js"></script>
     
-    <!-- Navigation Panel Script -->
-    <script src="/assets/js/nav_panel.js"></script>
-    
-    <!-- Quotes Navigation Script -->
-    <script src="/assets/js/quotes_nav.js"></script>
 
     
 
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body class="fixed-top-nav " data-baseurl="/">
+
+    <script>
+      window.__baseurl = (document.body && document.body.getAttribute('data-baseurl')) || '';
+      window.getBase = function() { return (window.__baseurl || '').replace(/\/$/, ''); };
+      window.getAssetPath = function(path) {
+        var b = (typeof window.getBase === 'function' ? window.getBase() : '');
+        return (b ? '/' + b : '') + (path.charAt(0) === '/' ? path : '/' + path);
+      };
+    </script>
+    <!-- Skip to main content (visible when focused) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Header -->
     <header>
@@ -91,8 +95,8 @@
 
               <!-- Other pages -->
               <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">work<span class="sr-only">(current)</span></a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-30" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">work<span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown-30">
                   <a class="dropdown-item" href="/work/agenda/">agenda</a>
                   <a class="dropdown-item" href="/work/cs/">cs</a>
                   <a class="dropdown-item" href="/work/philosophy/">philosophy</a>
@@ -102,15 +106,15 @@
                 <a class="nav-link" href="/cv/">cv</a>
               </li>
               <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">things I like</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-35" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">things I like</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown-35">
                   <a class="dropdown-item" href="/things-i-like/quotes/">quotes</a>
                   <a class="dropdown-item" href="/things-i-like/articles/">articles</a>
                 </div>
               </li>
               <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">misc</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-36" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">misc</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown-36">
                   <a class="dropdown-item" href="/misc/history-listed">History, Listed</a>
                   <a class="dropdown-item" href="/misc/recmath">Recreational Math</a>
                 </div>
@@ -121,7 +125,7 @@
       </nav>
 
       <!-- Scrolling Progress Bar -->
-      <progress id="progress" value="0">
+      <progress id="progress" value="0" aria-hidden="true">
         <div class="progress-container">
           <span class="progress-bar"></span>
         </div>
@@ -130,7 +134,7 @@
 
 
     <!-- Content -->
-    <div class="container mt-5">
+    <main id="main-content" class="container mt-5">
       
         <!-- page.html -->
         <div class="post">
@@ -180,26 +184,26 @@
         </style>
 
       
-    </div>
+    </main>
 
     <!-- Fixed Quote Box -->
     
-    <div class="fixed-quote-box">
+    <aside class="fixed-quote-box" aria-label="Random quote">
       <p id="random-quote" class="quote-text"></p>
       <p id="random-quote-author" class="quote-author"></p>
       <p class="quote-source">from <a href="/things-i-like/quotes/">things I like</a></p>
       <p class="bubble-instructions">press <kbd>e</kbd> to toggle word bubbles<br>press <kbd>m</kbd> to show meaning</p>
-    </div>
+    </aside>
     
 
     <!-- Fixed Image Box with Piano (exclude from about page) -->
     
-    <div class="fixed-image-box">
-      <img id="fixed-ai-image" class="ai-image" src="" alt="Random AI image from Better Images of AI">
-      <p class="image-caption">from <a href="https://betterimagesofai.org/images" target="_blank" rel="external nofollow noopener">Better Images of AI</a></p>
+    <aside class="fixed-image-box" aria-label="AI image from Better Images of AI">
+      <img id="fixed-ai-image" class="ai-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Random AI image from Better Images of AI">
+      <p class="image-caption">from <a href="https://betterimagesofai.org/images" target="_blank" rel="noopener noreferrer">Better Images of AI</a></p>
 
       <!-- Piano inside image box - TEMPORARILY DISABLED -->
-    </div>
+    </aside>
     
 
     
@@ -210,8 +214,8 @@
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2026 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Words from <a href="https://www.thedictionaryofobscuresorrows.com/" target="_blank" rel="external nofollow noopener">Dictionary of Obscure Sorrows</a>.
-Last updated: February 07, 2026.
+        © Copyright 2026 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="noopener noreferrer" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>. Words from <a href="https://www.thedictionaryofobscuresorrows.com/" target="_blank" rel="noopener noreferrer">Dictionary of Obscure Sorrows</a>.
+Last updated: February 16, 2026.
         
       </div>
     </footer>
@@ -220,10 +224,13 @@ Last updated: February 07, 2026.
     <!-- jQuery -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <!-- Bootsrap & MDB scripts -->
+    <!-- Bootstrap & MDB scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
 
+    <script defer src="/assets/js/random_quote.js"></script>
+    <script defer src="/assets/js/nav_panel.js"></script>
+    <script defer src="/assets/js/quotes_nav.js"></script>
     <!-- Masonry & imagesLoaded -->
   <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
@@ -311,7 +318,7 @@ Last updated: February 07, 2026.
   function initializeProgressElement() {
     let navbarHeight = $("#navbar").outerHeight(true);
     $("body").css({ "padding-top": navbarHeight });
-    $("progress-container").css({ "padding-top": navbarHeight });
+    $(".progress-container").css({ "padding-top": navbarHeight });
     progressBar.css({ top: navbarHeight });
     progressBar.attr({
       max: getDistanceToScroll(),
@@ -337,6 +344,7 @@ Last updated: February 07, 2026.
 </script>
 
     
+    <script src="/assets/js/utils.js"></script>
     <!-- Hourly AI Image System - loads first to provide synchronized images -->
     <script src="/assets/js/hourly_ai_image.js"></script>
     

@@ -67,6 +67,23 @@ body.sticky-bottom-footer {
 /*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 10000;
+  padding: 0.5rem 1rem;
+  background: var(--global-theme-color, #ff4444);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.skip-link:focus {
+  left: 0;
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
 html.latex-font body, html.latex-font p, html.latex-font li, html.latex-font span, html.latex-font div, html.latex-font td, html.latex-font th, html.latex-font blockquote, html.latex-font a, html.latex-font label, html.latex-font input, html.latex-font textarea, html.latex-font select, html.latex-font button {
   font-family: "Computer Modern Serif", "Latin Modern Roman", "CMU Serif", Georgia, serif !important;
 }
@@ -1730,6 +1747,22 @@ blockquote {
   margin: 0;
 }
 
+.profile.profile-above-title {
+  width: 180px;
+  margin: 0 0 1rem;
+  display: block;
+  float: none;
+}
+.profile.profile-above-title img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 15px rgba(255, 68, 68, 0.4));
+  transition: filter 0.3s ease;
+}
+.profile.profile-above-title img:hover {
+  filter: drop-shadow(0 0 25px rgba(255, 68, 68, 0.6));
+}
+
 .profile.float-right {
   margin-left: 1rem;
 }
@@ -1738,49 +1771,11 @@ blockquote {
   margin-right: 1rem;
 }
 
-@media (min-width: 1200px) {
-  .post .profile.float-left {
-    position: fixed !important;
-    left: calc((100vw - 800px) / 2 - 350px);
-    top: 120px;
-    width: 280px;
-    margin-right: 0;
-    z-index: 900;
-  }
-}
-@media (min-width: 1200px) {
-  .post .profile.float-left img {
-    width: 100%;
-    height: auto;
-    filter: drop-shadow(0 0 15px rgba(255, 68, 68, 0.4));
-    transition: filter 0.3s ease;
-  }
-  .post .profile.float-left img:hover {
-    filter: drop-shadow(0 0 25px rgba(255, 68, 68, 0.6));
-  }
-}
-
-@media (max-width: 767px) {
-  .profile.float-left,
-  .profile.float-right {
-    float: none !important;
-    width: 50% !important;
-    max-width: 200px;
-    margin: 0 auto 1.5rem !important;
-    display: block;
-  }
-  .post .profile.float-left {
-    float: none !important;
-    width: 50% !important;
-    max-width: 200px;
-    margin: 0 auto 1.5rem !important;
-  }
-}
 @media (min-width: 576px) {
-  .profile {
+  .profile:not(.profile-above-title) {
     width: 30%;
   }
-  .profile .address p {
+  .profile:not(.profile-above-title) .address p {
     display: block;
   }
 }
@@ -2877,7 +2872,7 @@ html[data-theme=dark] .piano-key.black:active, html[data-theme=dark] .piano-key.
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 68, 68, 0.9);
 }
 
-/* Papers Carousel Styles */
+/* Papers Carousel, bubble links, compact CV paper styles */
 .papers-section {
   margin: 2rem 0;
 }
@@ -3031,7 +3026,6 @@ html[data-theme=dark] .piano-key.black:active, html[data-theme=dark] .piano-key.
     display: none;
   }
 }
-/* Paper card link icon */
 .paper-card .paper-card-inner {
   position: relative;
 }
@@ -3059,7 +3053,6 @@ html[data-theme=dark] .piano-key.black:active, html[data-theme=dark] .piano-key.
   transform: scale(1.1);
 }
 
-/* Bubble link styles */
 .bubble-link {
   display: inline-block;
   color: var(--global-theme-color) !important;
@@ -3096,7 +3089,6 @@ html[data-theme=dark] .piano-key.black:active, html[data-theme=dark] .piano-key.
   box-shadow: 0 2px 6px rgba(255, 68, 68, 0.2);
 }
 
-/* Compact CV Paper Styles */
 .paper-item-compact {
   margin-bottom: 1rem;
   padding: 1rem;
@@ -3220,7 +3212,18 @@ html[data-theme=dark] .piano-key.black:active, html[data-theme=dark] .piano-key.
     transform: translateY(-50%) translateX(0);
   }
 }
-/* News section with photos */
+/* News section with photos, about page news header, education */
+.about-news-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.about-news-header .about-news-title {
+  text-align: left;
+  margin: 0;
+}
+
 .news-item-with-photo {
   display: flex;
   gap: 1rem;
@@ -3284,7 +3287,6 @@ html[data-theme=dark] .piano-key.black:active, html[data-theme=dark] .piano-key.
   transform: scale(1.1);
 }
 
-/* Education section styling */
 .education-item .item-title {
   color: var(--global-text-color) !important;
   font-weight: 500;

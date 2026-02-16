@@ -5,9 +5,7 @@
   // Don't show on mobile
   if (window.innerWidth < 768) return;
 
-  const isReducedMotion =
-    window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
-    window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+  const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (isReducedMotion) return;
 
@@ -58,9 +56,11 @@
     ],
   };
 
+  var assetPath = typeof window.getAssetPath === 'function' ? window.getAssetPath : function(p) { return p; };
+
   async function loadPapers() {
     try {
-      const response = await fetch('/assets/json/me-like-articles.json');
+      const response = await fetch(assetPath('/assets/json/me-like-articles.json'));
       const data = await response.json();
       papers = data.categories.flatMap(category =>
         category.papers.map(paper => ({
@@ -232,7 +232,7 @@
     cat.el.style.bottom = `${FOOTER_HEIGHT}px`; // Feet on top of footer
     cat.el.style.pointerEvents = "none";
     cat.el.style.imageRendering = "pixelated";
-    cat.el.style.backgroundImage = 'url(/assets/img/oneko.gif)';
+    cat.el.style.backgroundImage = 'url(' + assetPath('/assets/img/oneko.gif') + ')';
     cat.el.style.backgroundSize = `${cat.size * 8}px ${cat.size * 4}px`; // Scale sprite sheet
     cat.el.style.filter = cat.styleFilter;
     cat.el.style.zIndex = 1000;
@@ -529,7 +529,7 @@
     cat.el.style.bottom = `${FOOTER_HEIGHT}px`;
     cat.el.style.pointerEvents = "none";
     cat.el.style.imageRendering = "pixelated";
-    cat.el.style.backgroundImage = 'url(/assets/img/oneko.gif)';
+    cat.el.style.backgroundImage = 'url(' + assetPath('/assets/img/oneko.gif') + ')';
     cat.el.style.backgroundSize = `${cat.size * 8}px ${cat.size * 4}px`; // Scale sprite sheet
     cat.el.style.filter = cat.styleFilter;
     cat.el.style.zIndex = 1000;
@@ -744,7 +744,7 @@
       cat.el.style.bottom = `${FOOTER_HEIGHT}px`;
       cat.el.style.pointerEvents = "none";
       cat.el.style.imageRendering = "pixelated";
-      cat.el.style.backgroundImage = 'url(/assets/img/oneko.gif)';
+      cat.el.style.backgroundImage = 'url(' + assetPath('/assets/img/oneko.gif') + ')';
       cat.el.style.backgroundSize = `${cat.size * 8}px ${cat.size * 4}px`;
       cat.el.style.filter = cat.styleFilter;
       cat.el.style.zIndex = 1000;

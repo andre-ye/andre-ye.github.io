@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function setHourlyImage(imageElement) {
         if (imageElement && window.HourlyAIImage) {
             window.HourlyAIImage.setImageElement(imageElement);
-            console.log('Set hourly AI image for element:', imageElement.id || 'unnamed');
+            if (window.DEBUG) console.log('Set hourly AI image for element:', imageElement.id || 'unnamed');
         }
     }
 
@@ -26,11 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // Set image for fixed left margin box (other pages)
         const fixedImageElement = document.getElementById('fixed-ai-image');
         setHourlyImage(fixedImageElement);
-        
+
         // Set image for 404 page
         const image404Element = document.getElementById('404-ai-image');
         setHourlyImage(image404Element);
-        
-        console.log('All AI images set to hourly synchronized image:', window.HourlyAIImage.getCurrentImageFilename());
+        if (window.DEBUG) console.log('All AI images set to hourly synchronized image:', window.HourlyAIImage.getCurrentImageFilename());
     });
 });

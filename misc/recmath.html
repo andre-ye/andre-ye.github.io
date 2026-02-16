@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
 
     <!-- Bootstrap Table -->
-    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
 
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
@@ -49,21 +49,25 @@
     <script src="/assets/js/dark_mode.js"></script>
     
 
-    <!-- Random Quote Script -->
-    <script src="/assets/js/random_quote.js"></script>
     
-    <!-- Navigation Panel Script -->
-    <script src="/assets/js/nav_panel.js"></script>
-    
-    <!-- Quotes Navigation Script -->
-    <script src="/assets/js/quotes_nav.js"></script>
 
     
 
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body class="fixed-top-nav " data-baseurl="/">
+
+    <script>
+      window.__baseurl = (document.body && document.body.getAttribute('data-baseurl')) || '';
+      window.getBase = function() { return (window.__baseurl || '').replace(/\/$/, ''); };
+      window.getAssetPath = function(path) {
+        var b = (typeof window.getBase === 'function' ? window.getBase() : '');
+        return (b ? '/' + b : '') + (path.charAt(0) === '/' ? path : '/' + path);
+      };
+    </script>
+    <!-- Skip to main content (visible when focused) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Header -->
     <header>
@@ -91,8 +95,8 @@
 
               <!-- Other pages -->
               <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">work</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-30" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">work</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown-30">
                   <a class="dropdown-item" href="/work/agenda/">agenda</a>
                   <a class="dropdown-item" href="/work/cs/">cs</a>
                   <a class="dropdown-item" href="/work/philosophy/">philosophy</a>
@@ -102,15 +106,15 @@
                 <a class="nav-link" href="/cv/">cv</a>
               </li>
               <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">things I like</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-35" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">things I like</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown-35">
                   <a class="dropdown-item" href="/things-i-like/quotes/">quotes</a>
                   <a class="dropdown-item" href="/things-i-like/articles/">articles</a>
                 </div>
               </li>
               <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">misc</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-36" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">misc</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown-36">
                   <a class="dropdown-item" href="/misc/history-listed">History, Listed</a>
                   <a class="dropdown-item" href="/misc/recmath">Recreational Math</a>
                 </div>
@@ -121,7 +125,7 @@
       </nav>
 
       <!-- Scrolling Progress Bar -->
-      <progress id="progress" value="0">
+      <progress id="progress" value="0" aria-hidden="true">
         <div class="progress-container">
           <span class="progress-bar"></span>
         </div>
@@ -130,7 +134,7 @@
 
 
     <!-- Content -->
-    <div class="container mt-5">
+    <main id="main-content" class="container mt-5">
       
         <!-- page.html -->
         <div class="post">
@@ -203,7 +207,7 @@ There may be mistakes or simplifications in the following.
   <li>
 <strong>Cayley’s Theorem as an instance of the Yoneda Lemma.</strong> Let \(F: \text{Grp} \to \text{Set}\) be the forgetful functor which maps each group to its “underlying set” but removes group structure. Cayley’s theorem gives a map \(G \to \text{Aut}(F(G))\), where \(\text{Aut}(F(G))\) is the automorphism group of the underlying set of \(G\) (i.e., \(S(G)\)). The Yoneda lemma states more broadly that objects in any category \(\mathcal{C}\) can be embedded into the category of functors \(\text{Set}^{\mathcal{C}^\text{op}}\). Specifically, this is the category of contravariant functors from \(\mathcal{C}^\text{op}\) to sets. For each object \(C \in \mathcal{C}\), the functor \(F\) assigns a set \(F(C)\), and for each morphism \(f : C \to D\) in \(\mathcal{C}\), the functor assigns a function \(F(f) : F(D) \to F(C)\) (reversing the direction of the morphism). We can first interpret \(G\) as a category with a single object \(\cdot\) where morphisms \(\text{Hom}(\cdot, \cdot)\) correspond to elements of \(G\); the functor \(F : G^\text{op} \to \text{Set}\) assigns \(\cdot\) to \(G\)’s underlying set, with each morphism \(g \in \text{Hom}(\cdot, \cdot)\) mapped to \(F(g) : G \to G\), defined by left multiplication: \(F(g)(x) = gx\); now the action of \(G\) on \(F(\cdot) = G\) is interpreted as a functor \(F\) in \(\text{Set}^{G^\text{op}}\).</li>
   <li>
-<a href="https://www.youtube.com/watch?v=BipvGD-LCjU" target="_blank" rel="external nofollow noopener">“Finite Simple Group of Order Two”</a> ❤️</li>
+<a href="https://www.youtube.com/watch?v=BipvGD-LCjU" target="_blank" rel="noopener noreferrer">“Finite Simple Group of Order Two”</a> ❤️</li>
   <li>
 <strong>Noetherian rings</strong> are rings where any ascending chain of ideals in \(R\), \(I_1 \subseteq I_2 \subseteq \ldots\), stabilizes eventually such that there exists some \(n\) where \(I_n = I_{n+1} = ...\). Examples of Noetherian rings include all fields, integers, polynomial rings over fields, and finite rings. There are many interesting properties of Noetherian rings.
     <ul>
@@ -219,7 +223,7 @@ There may be mistakes or simplifications in the following.
   <li>
 <strong>Inverse Galois problem.</strong> (Unsolved for &gt;200 years.) Is every finite group the Galois group of a Galois extension of \(\mathbb{Q}\)? (A Galois extension is a field extension that is normal and separable; “normal” means that it is the complete splitting field of a separable polynomial, and “separable” means that the minimal polynomial of every element in the extension has distinct roots.)</li>
   <li>
-<strong>The opposite of a set is a boolean algebra</strong> (in a categorical-theoretic sense). If the category \(\text{Set}\) has sets as objects and functions \(f: X \to Y\) mapping every element of set \(X\) to an element of set \(Y\) as morphisms, then the opposite category \(\text{Set}^{op}\) has sets as objects and maps \(g: Y \to X\) where \(g(y) = x\) iff \(f(x) = y\). Naturally, \(g\) should map <em>elements</em> of \(Y\) to <em>subsets</em> of \(X\), since functions can map multiple elements in the domain to one element in the codomain. To ensure compposition, however, both the domain and codomain of \(g\) should be sets of sets, as to map subsets of \(Y\) to subsets of \(X\). The specific structure of the objects in \(\text{Set}^{op}\), which are sets of sets, forms a boolean algebra where conjunction and disjunction are intersection and union. This <a href="https://www.youtube.com/watch?app=desktop&amp;v=SrltwGJAiCM&amp;t=0s" target="_blank" rel="external nofollow noopener">video</a> describes this better.</li>
+<strong>The opposite of a set is a boolean algebra</strong> (in a categorical-theoretic sense). If the category \(\text{Set}\) has sets as objects and functions \(f: X \to Y\) mapping every element of set \(X\) to an element of set \(Y\) as morphisms, then the opposite category \(\text{Set}^{op}\) has sets as objects and maps \(g: Y \to X\) where \(g(y) = x\) iff \(f(x) = y\). Naturally, \(g\) should map <em>elements</em> of \(Y\) to <em>subsets</em> of \(X\), since functions can map multiple elements in the domain to one element in the codomain. To ensure compposition, however, both the domain and codomain of \(g\) should be sets of sets, as to map subsets of \(Y\) to subsets of \(X\). The specific structure of the objects in \(\text{Set}^{op}\), which are sets of sets, forms a boolean algebra where conjunction and disjunction are intersection and union. This <a href="https://www.youtube.com/watch?app=desktop&amp;v=SrltwGJAiCM&amp;t=0s" target="_blank" rel="noopener noreferrer">video</a> describes this better.</li>
   <li>
 <strong>Branching Programs.</strong> Every function \(f : \{0, 1\}^n \to \{0, 1\}\) can be computed by a branching program of width 5 and length \(O(4^d)\).</li>
   <li>
@@ -229,7 +233,7 @@ There may be mistakes or simplifications in the following.
   <li>
 <strong>Matrix product checking.</strong> To check if \(A \times B = C\) for three \(n \times n\) matrices \(A, B, C\), randomly sample \(r \in \{0, 1\}^n\) and check if \(ABr = Cr\) repeatedly. This randomized algorithm takes only \(O(n^2)\) time and has exponentially decreasing error rate.</li>
   <li>
-<strong>NP-completeness proofs.</strong> I think that many proofs for a problem’s (especially graph problems) NP-completeness by demonstrating dependence on CircuitSAT or 3SAT are really nifty. Here is a great <a href="https://homes.cs.washington.edu/~anuprao/pubs/CSE431sp2021/lecture7.pdf" target="_blank" rel="external nofollow noopener">resource</a> for some of these proofs.</li>
+<strong>NP-completeness proofs.</strong> I think that many proofs for a problem’s (especially graph problems) NP-completeness by demonstrating dependence on CircuitSAT or 3SAT are really nifty. Here is a great <a href="https://homes.cs.washington.edu/~anuprao/pubs/CSE431sp2021/lecture7.pdf" target="_blank" rel="noopener noreferrer">resource</a> for some of these proofs.</li>
   <li>
 <strong>A complication for proving \(P ?= NP\).</strong> There exists an oracle \(A\) such that \(P^A = NP^A\), and an oracle \(B\) such that \(P^B \neq NP^B\). Therefore any proof on \(P ?= NP\) may not work in relativized worlds where access to both is permitted, whereas other familiar proofs to relativize.</li>
   <li>
@@ -240,7 +244,7 @@ There may be mistakes or simplifications in the following.
 <strong>A joke.</strong> \(e^{i \frac{pi}{2}} \cdot 8 = \infty\)</li>
   <li>
 <strong>Perfect secrecy theorem.</strong> A cryptosystem has perfect secrecy if the ciphertext reveals no information about the plaintext. Formally, for any plaintext \(M\) and ciphertext \(C\): \(P(M \vert C) = P(M)\). If a cryptosystem has perfect secrecy, then the key space must be at least as large as the message space, making perfect secrecy an impractical goal for cryptosystems.</li>
-  <li><a href="https://accu.org/journals/overload/20/109/lewin_1915/" target="_blank" rel="external nofollow noopener"><strong>All about XOR</strong></a></li>
+  <li><a href="https://accu.org/journals/overload/20/109/lewin_1915/" target="_blank" rel="noopener noreferrer"><strong>All about XOR</strong></a></li>
   <li>
 <strong>Twin prime gaps.</strong> There are infinitely many prime pairs with a gap less than 246.</li>
   <li>
@@ -265,7 +269,7 @@ There may be mistakes or simplifications in the following.
 <strong>Abelian groups and modules.</strong> A module is like a vector space but over rings rather than fields. There is a 1-1 correspondence between modules over the integer ring and abelian groups.</li>
   <li>
 <strong>Artin-Schreier Theorem (Ordered Fields and Formal Reality).</strong> A field \(F\) admits a total ordering compatible with its algebraic structure if and only if \(F\) is formally real. A field \(F\) is formally real if and only if \(-1\) cannot be expressed as a sum of squares of nonzero elements in \(F\). Equivalently, for any \(a_1, a_2, \ldots, a_n \in F\) with each \(a_i \neq 0\), we have \(\sum_{i=1}^n a_i^2 \neq -1\).</li>
-  <li><a href="https://www.lesswrong.com/posts/no5jDTut5Byjqb4j5/six-and-a-half-intuitions-for-kl-divergence" target="_blank" rel="external nofollow noopener"><strong>Six intuitions for KL-divergence</strong></a></li>
+  <li><a href="https://www.lesswrong.com/posts/no5jDTut5Byjqb4j5/six-and-a-half-intuitions-for-kl-divergence" target="_blank" rel="noopener noreferrer"><strong>Six intuitions for KL-divergence</strong></a></li>
 </ul>
 
 <p>“Starting from the empty set, perform a few operations, like forming the set of all subsets. Before long you have a magnifi cent structure in which you can embed the real numbers, complex numbers, quaterions, Hilbert spaces, infi nite-dimensional differentiable manifolds, and anything else you like.” – Reuben Harsh</p>
@@ -280,7 +284,7 @@ There may be mistakes or simplifications in the following.
 – Nicholas Bourbaki</p>
 
 <p>“The methods for coming up with useful examples in mathematics… are even less clear than the methods for proving mathematical statements.”
-– Gil Kalai, <a href="https://www.youtube.com/watch?v=Uxr_HrbN1MQ" target="_blank" rel="external nofollow noopener">Examples in Mathematics</a></p>
+– Gil Kalai, <a href="https://www.youtube.com/watch?v=Uxr_HrbN1MQ" target="_blank" rel="noopener noreferrer">Examples in Mathematics</a></p>
 
           </article>
 
@@ -313,26 +317,26 @@ There may be mistakes or simplifications in the following.
         </style>
 
       
-    </div>
+    </main>
 
     <!-- Fixed Quote Box -->
     
-    <div class="fixed-quote-box">
+    <aside class="fixed-quote-box" aria-label="Random quote">
       <p id="random-quote" class="quote-text"></p>
       <p id="random-quote-author" class="quote-author"></p>
       <p class="quote-source">from <a href="/things-i-like/quotes/">things I like</a></p>
       <p class="bubble-instructions">press <kbd>e</kbd> to toggle word bubbles<br>press <kbd>m</kbd> to show meaning</p>
-    </div>
+    </aside>
     
 
     <!-- Fixed Image Box with Piano (exclude from about page) -->
     
-    <div class="fixed-image-box">
-      <img id="fixed-ai-image" class="ai-image" src="" alt="Random AI image from Better Images of AI">
-      <p class="image-caption">from <a href="https://betterimagesofai.org/images" target="_blank" rel="external nofollow noopener">Better Images of AI</a></p>
+    <aside class="fixed-image-box" aria-label="AI image from Better Images of AI">
+      <img id="fixed-ai-image" class="ai-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Random AI image from Better Images of AI">
+      <p class="image-caption">from <a href="https://betterimagesofai.org/images" target="_blank" rel="noopener noreferrer">Better Images of AI</a></p>
 
       <!-- Piano inside image box - TEMPORARILY DISABLED -->
-    </div>
+    </aside>
     
 
     
@@ -343,8 +347,8 @@ There may be mistakes or simplifications in the following.
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2026 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Words from <a href="https://www.thedictionaryofobscuresorrows.com/" target="_blank" rel="external nofollow noopener">Dictionary of Obscure Sorrows</a>.
-Last updated: February 07, 2026.
+        © Copyright 2026 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="noopener noreferrer" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>. Words from <a href="https://www.thedictionaryofobscuresorrows.com/" target="_blank" rel="noopener noreferrer">Dictionary of Obscure Sorrows</a>.
+Last updated: February 16, 2026.
         
       </div>
     </footer>
@@ -353,10 +357,13 @@ Last updated: February 07, 2026.
     <!-- jQuery -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <!-- Bootsrap & MDB scripts -->
+    <!-- Bootstrap & MDB scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
 
+    <script defer src="/assets/js/random_quote.js"></script>
+    <script defer src="/assets/js/nav_panel.js"></script>
+    <script defer src="/assets/js/quotes_nav.js"></script>
     <!-- Masonry & imagesLoaded -->
   <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
@@ -444,7 +451,7 @@ Last updated: February 07, 2026.
   function initializeProgressElement() {
     let navbarHeight = $("#navbar").outerHeight(true);
     $("body").css({ "padding-top": navbarHeight });
-    $("progress-container").css({ "padding-top": navbarHeight });
+    $(".progress-container").css({ "padding-top": navbarHeight });
     progressBar.css({ top: navbarHeight });
     progressBar.attr({
       max: getDistanceToScroll(),
@@ -470,6 +477,7 @@ Last updated: February 07, 2026.
 </script>
 
     
+    <script src="/assets/js/utils.js"></script>
     <!-- Hourly AI Image System - loads first to provide synchronized images -->
     <script src="/assets/js/hourly_ai_image.js"></script>
     

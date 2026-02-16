@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Load words data (skip on certain pages)
     if (!shouldSkipBubbles) {
-        fetch('/assets/json/words.json')
+        var wordsUrl = (typeof window.getAssetPath === 'function' ? window.getAssetPath('/assets/json/words.json') : '/assets/json/words.json');
+        fetch(wordsUrl)
             .then(response => response.json())
             .then(data => {
                 wordsData = data;
@@ -76,23 +77,21 @@ document.addEventListener('DOMContentLoaded', function() {
                String(est.getDate()).padStart(2, '0');
     }
     
-    // Simple seeded random number generator
-    function seededRandom(seed) {
-        let hash = 0;
-        for (let i = 0; i < seed.length; i++) {
-            const char = seed.charCodeAt(i);
-            hash = ((hash << 5) - hash) + char;
-            hash = hash & hash; // Convert to 32-bit integer
-        }
-        
-        // Use the hash as seed for a simple linear congruential generator
-        let x = Math.abs(hash);
-        return function() {
-            x = (x * 9301 + 49297) % 233280;
-            return x / 233280;
+    var seededRandom = (typeof window.seededRandomFromString === 'function')
+        ? window.seededRandomFromString
+        : function(seed) {
+            var hash = 0;
+            for (var i = 0; i < seed.length; i++) {
+                hash = ((hash << 5) - hash) + seed.charCodeAt(i);
+                hash = hash & hash;
+            }
+            var x = Math.abs(hash);
+            return function() {
+                x = (x * 9301 + 49297) % 233280;
+                return x / 233280;
+            };
         };
-    }
-    
+
     // Function to select daily word based on EST date
     function selectDailyWord() {
         if (wordsData.length > 0) {
@@ -101,9 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const index = Math.floor(rng() * wordsData.length);
             currentWord = wordsData[index];
             wordBubble.textContent = currentWord.word;
-            
-            // Debug: log the date seed and selected word
-            console.log('Daily word for', dateSeed, ':', currentWord.word);
+            if (window.DEBUG) console.log('Daily word for', dateSeed, ':', currentWord.word);
         }
     }
     

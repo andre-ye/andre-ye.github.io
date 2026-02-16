@@ -896,6 +896,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Create animated plane for imminent arrivals (within 2 minutes)
     function createImminentArrivalPlane(flightData) {
+        var planeImgUrl = (typeof window.getAssetPath === 'function' ? window.getAssetPath('/assets/img/Hand-painted Side View.png') : '/assets/img/Hand-painted Side View.png');
         const planeContainer = document.createElement('div');
         planeContainer.className = 'imminent-arrival-plane-container';
         
@@ -906,7 +907,7 @@ document.addEventListener('DOMContentLoaded', function() {
             position: absolute;
             width: 50px;
             height: 35px;
-            background-image: url('/assets/img/Hand-painted Side View.png');
+            background-image: url('${planeImgUrl}');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
@@ -1001,13 +1002,14 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
             
             // Create the plane element
+            var planeImgUrl = (typeof window.getAssetPath === 'function' ? window.getAssetPath('/assets/img/Hand-painted Side View.png') : '/assets/img/Hand-painted Side View.png');
             const planeElement = document.createElement('div');
             planeElement.className = 'weather-plane';
             planeElement.style.cssText = `
                 position: relative;
                 width: 55px;
                 height: 38px;
-                background-image: url('/assets/img/Hand-painted Side View.png');
+                background-image: url('${planeImgUrl}');
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
