@@ -2,9 +2,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Only run on articles page
     if (!window.location.pathname.includes('/things-i-like/articles')) return;
-    
+
+    document.getElementById('articles-content').innerHTML = '<p style="color:yellow;">DEBUG: Script running, fetching data...</p>';
+
     // Fetch articles data and build navigation
     var articlesUrl = (typeof window.getAssetPath === 'function' ? window.getAssetPath('/assets/json/me-like-articles.json') : '/assets/json/me-like-articles.json');
+    document.getElementById('articles-content').innerHTML += '<p style="color:yellow;">DEBUG: Fetching from ' + articlesUrl + '</p>';
     fetch(articlesUrl)
         .then(response => response.json())
         .then(data => {
@@ -16,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => {
             console.error('Error loading articles data:', error);
+            document.getElementById('articles-content').innerHTML = '<p style="color:red;">DEBUG: Error loading articles: ' + error.message + '</p>';
         });
 });
 

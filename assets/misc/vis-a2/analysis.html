@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 2</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+	<style>
+		figure { max-width: 100%; }
+		figure img { max-width: 75%; height: auto; display: block; margin-left: auto; margin-right: auto; }
+		.data-limits { background: #ffcccc; border: 1px solid #e88; border-radius: 4px; padding: 0.75em 1em; margin: 1em 0; }
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 2</small>
+			Exploratory Data Analysis
+		</h1>
+
+		<p>
+			<strong>Andre Ye</strong>, <em>andreye@mit.edu</em>
+		</p>
+	</header>
+	<main>
+		<section>
+			<h2>Subtheme: Speculation</h2>
+			<p>The background readings keep returning to one question: <em>Who is this city being built for?</em> I use Boston's residential sales data to explore that, looking at the geography of prices, who's flipping properties, and who owns what.</p>
+
+			<h3>Overall Analysis Questions</h3>
+			<ol>
+				<li>How do prices and sales activity vary across Boston over time, and does the geography of expensive vs. affordable areas line up with what the Globe and MAPC describe?</li>
+				<li>How common are flipping and entity buying, and where do they show up? MAPC's "Homes for Profit" report and the transfer-fee debate both focus on investor flips and corporate ownership, so I looked at where those concentrate geographically.</li>
+				<li>Who's actually doing the flipping? Policy discussions often target "investors" broadly, but I wanted to check whether flippers are mostly corporate entities or ordinary individuals.</li>
+				<li>Where does multi-property ownership concentrate? The Globe and the subtheme both raise concerns about absentee ownership ("safety-deposit boxes in the sky"), so I looked for proxies in the data.</li>
+			</ol>
+
+			<div class="data-limits">
+				<strong>Limits applied to all figures:</strong>
+				<ul style="margin: 0.5em 0 0 1.2em; padding: 0;">
+					<li><strong>Residential:</strong> Only residential usecodes (1–4 family, condo, apartment, accessory, etc.). Commercial, industrial, vacant land, and other non-dwelling codes are dropped.</li>
+					<li><strong>Price cap:</strong> Price-based figures cap at $5M so a handful of extremes (and likely errors above $50M) don't drive the scale; that drops about 3% of residential sales.</li>
+				</ul>
+			</div>
+
+		</section>
+
+		<section>
+			<h2>Discoveries & Insights</h2>
+
+			<figure>
+				<img src="figures/01_data_overview.png" alt="Three stacked time-series panels: sales volume, median price, and % flips and % entity buyers." />
+				<figcaption>
+				Three panels showing sales per year, median sale price, and the share of flips (resale within two years) and entity buyers (LLCs, trusts, or businesses). Sales volume stays fairly steady but dips in recent years, while the median price climbs sharply. Boston has gotten a lot more expensive. Flipping and entity buying both jump around 2010 and stay elevated afterward. The broad picture over time is rising prices paired with noticeably more speculation-related activity from 2010 onward.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<div style="text-align: center; margin-bottom: 0.5em;">
+					<label for="mapYearSlider">Year: <span id="mapYearLabel">2020</span></label>
+					<input type="range" id="mapYearSlider" min="2000" max="2022" value="2020" style="max-width: 300px; margin-left: 0.5em;" />
+					<label style="margin-left: 1em;"><input type="checkbox" id="mapYearAutoplay" /> Auto-play (0.25s/year)</label>
+				</div>
+				<img id="mapYearImg" src="figures/map_by_year/02_map_price_2020.png" alt="Map of sale locations in Boston region colored by price for the selected year." />
+				<figcaption>
+				Each cell is colored by median sale price (top) or max sale price (bottom), on a shared log scale across years. Use the slider or auto-play to step through 2000–2022. In the early 2000s, Back Bay and Downtown were already expensive at the top end, but citywide medians were much lower. Over time prices rise everywhere: Back Bay, Downtown, and the northern part of South Boston become consistently expensive; the Fenway and southern South Boston stay a bit lower but are still high. The North End jumps noticeably around 2015, and the Seaport lights up in the last few years. The takeaway is that price growth has been broad. There's no clean line between the high-end neighborhoods and the rest, because expensive and more affordable cells are mixed together across the city.
+				</figcaption>
+			</figure>
+			<script>
+				(function () {
+					var slider = document.getElementById('mapYearSlider');
+					var label = document.getElementById('mapYearLabel');
+					var img = document.getElementById('mapYearImg');
+					var autoplay = document.getElementById('mapYearAutoplay');
+					var intervalId = null;
+					function update() {
+						var y = slider.value;
+						label.textContent = y;
+						img.src = 'figures/map_by_year/02_map_price_' + y + '.png';
+						img.alt = 'Map of sale locations in Boston region colored by price for ' + y + '.';
+					}
+					slider.addEventListener('input', update);
+					autoplay.addEventListener('change', function () {
+						if (autoplay.checked) {
+							intervalId = setInterval(function () {
+								var y = parseInt(slider.value, 10) + 1;
+								if (y > 2022) y = 2000;
+								slider.value = y;
+								update();
+							}, 250);
+						} else {
+							if (intervalId) clearInterval(intervalId);
+							intervalId = null;
+						}
+					});
+				})();
+			</script>
+
+			<figure>
+				<img src="figures/05_map_speculation_all_years.png" alt="Map of Boston: flip rate and entity buyer share per grid cell (2000–2022 aggregated)." />
+				<figcaption>
+				Same grid, now aggregated over all years (2000–2022). The top panel shows the share of sales that are flips in each cell; the bottom shows the share of buyers that are entities (LLCs, trusts, or corporations). Flipping is spread across the city, with the Fenway being a bit of an exception. Some patches have heavy entity ownership, but interestingly, many high-flip areas don't have much entity presence at all, which raises the question of who's actually doing the flipping.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="figures/09_non_investor_flippers.png" alt="Overlapping density (distribution) plots of purchase price: non-investor flippers vs non-flippers." />
+				<figcaption>
+				It turns out most flipping isn't done by entities or institutional investors. It's individuals classified as non-investors who aren't LLCs, trusts, or corporations. I narrowed down to just that group and compared purchase prices for those who flipped versus those who didn't. Only about 3.2% of non-investor purchases are flips (1,133 out of 35,683). I used a density plot so the two distributions are visually comparable despite the big size difference. Flippers tend to buy at slightly higher prices than non-flippers, but not dramatically so. They look more like wealthier individuals than large-scale investors.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="figures/11_flips_entity_vs_non_entity.png" alt="Two panels: number of flips over time by investor type for entity buyers (top) and non-entity buyers (bottom)." />
+				<figcaption>
+				This breaks down flip counts over time by investor type, with entity buyers on top and non-entity buyers on the bottom. Each line represents a different investor category (non-investor, small, medium, large, institutional). The bottom panel tells the story: non-entities account for the bulk of flipping activity, and within that group, non-investors contribute the most. There's also a striking spike around 2010–2014 that has been slowly tapering off since.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="figures/10_map_multi_property.png" alt="Map of Boston: share of purchases by multi-property owners (tot_owned ≥ 2) per grid cell." />
+				<figcaption>
+				As a last angle, this map shows where multi-property buyers (those owning two or more properties) concentrate, using the same grid and aggregating all years. It complements the entity map above as another rough proxy for absentee or investment ownership. A few pockets show high rates of multi-property buying, but most of the city has lower rates and looks more residential. A couple of caveats worth noting: the data don't include owner-occupancy or vacancy information, so entity status and multi-property ownership are the best proxies I have for absentee ownership. And the <code>tot_owned</code> field only counts properties within this dataset, so it undercounts anyone who owns properties elsewhere.
+				</figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<h2>Summary</h2>
+
+			<p>The readings ask who this city is being built for. The data don't answer that directly, but they paint a suggestive picture: prices have risen across the board, flipping is real but moderate, and most of it is done by individuals rather than institutional or corporate buyers.</p>
+			<p>Median prices have climbed steadily, and both flipping and entity buying stepped up around 2010. Geographically, price growth has been broad. Back Bay, Downtown, and northern South Boston are consistently expensive, while the Fenway and southern South Boston are a bit lower but still high. There's no clean dividing line; expensive and more affordable pockets are mixed throughout the city. Flipping is similarly widespread, but many high-flip areas don't have heavy entity presence, which prompted a closer look at who's behind it.</p>
+			<p>The answer, mostly, is ordinary non-investor individuals. Only about 3.2% of non-investor purchases are flips, and those flippers buy at slightly higher prices than non-flippers, but the gap is modest. They look more like people with means than large-scale investors. The time-series view tells the same story: non-entities make up the majority of flips in every year. Multi-property ownership offers one more lens on absenteeism and clusters in the core and some suburbs. Overall, speculation in this data is real but modest, and it's driven more by wealthier individuals than by institutional or corporate players.</p>
+		</section>
+	</main>
+</body>
+</html>
