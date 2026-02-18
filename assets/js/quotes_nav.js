@@ -1,4 +1,5 @@
 // Dynamic Navigation Panel for Quotes Page
+(function() {
 document.addEventListener('DOMContentLoaded', function() {
     // Only run on quotes page
     if (!window.location.pathname.includes('/things-i-like/quotes')) return;
@@ -223,3 +224,7 @@ function refreshRandomQuote() {
         quoteAuthorElement.textContent = randomQuote.author;
     }
 }
+
+// Expose for onclick handler
+window.refreshRandomQuote = refreshRandomQuote;
+})();
