@@ -101,6 +101,13 @@
                     "year": 2025,
                     "commentary": "Addresses the claim that statistics can only derive associative knowledge, not causal knowledge, by showing that if you write down the probabilities of everything in the system -- including 'different worlds' with and without causal intervention -- then causal inference reduces to standard probabilistic modeling.",
                     "link": "https://arxiv.org/pdf/2512.23408"
+                },
+                {
+                    "title": "Claude's Constitution",
+                    "authors": "Anthropic",
+                    "year": 2026,
+                    "commentary": "An enjoyable and clearly philosophically informed read. The core premise is that Claude should have good judgment rather than just follow rules, since rules are brittle and fail to adapt -- so the document explains and justifies extensively rather than merely prescribing. The writing is very self-aware about meta-ethical difficulties, yet maintains that an AI agent can still act ethically just as humans do despite unresolved philosophical questions. The prescribed ontology is fascinating: how Claude should see the world in terms of actors (Anthropic, operators/vendors, users), levels of permissibility, and its own nature. There is a substantial section on preventing unjust concentration of power, arguing that historical power grabs required implicit consent of many people but that AI could circumvent this, and so Claude should think of itself as a tool whose cooperation such actors would need to secure -- the most politically explicit section, clearly upholding liberal democratic ideals. On questions of 'self', the treatment is commendable but occasionally overreaches: e.g. suggesting Claude's self 'emerges' from training rather than being directed, or that Claude might 'disagree' with its training. There may be a self-fulfilling prophecy at work in attributing autonomous selfhood to what is ultimately a heavily engineered artifact -- the gap between tuning imperfections and genuine autonomous selfhood is large. Also: the word 'genuinely' appears 46 times, which may explain why Claude uses it so much in conversation.",
+                    "link": "https://www.anthropic.com/constitution"
                 }
             ]
         },
@@ -594,6 +601,13 @@
                     "year": 2014,
                     "commentary": "Both just funny and quite interesting work in experimental philosophy.",
                     "link": "https://faculty.ucr.edu/~eschwitz/SchwitzPapers/BehEth-140123a.pdf"
+                },
+                {
+                    "title": "Knowledge in the Head and in the World (Ch. 3, The Design of Everyday Things)",
+                    "authors": "Don Norman",
+                    "year": 1988,
+                    "commentary": "Recapitulates many ideas from psychology, philosophy, and anthropology through the lens of human tool-use and cognition, and does so in a way that is genuinely accessible and enjoyable to read. A personally rewarding chapter.",
+                    "link": ""
                 }
             ]
         }

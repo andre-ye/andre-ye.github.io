@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+	<style>
+		figure.full-bleed {
+			width: 100vw;
+			max-width: 100vw;
+			margin-inline: calc(-50vw + 50%);
+			box-sizing: border-box;
+		}
+		figure.full-bleed img {
+			width: 100%;
+			display: block;
+		}
+		figure.sketch-half img {
+			width: 50%;
+			display: block;
+		}
+		figure.sketch-three-quarter img {
+			width: 75%;
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 3</small>
+			Visualization Critique & Redesign
+		</h1>
+
+		<p>
+			<strong>Andre Ye</strong> -- <em>andreye@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Reading & Critique</h2>
+
+			<figure>
+				<img src="covid-spiral.png" alt="" />
+			</figure>
+
+			<p>
+				Insights about the data/visualization:
+			</p>
+
+			<ul>
+				<li>There were big bulges of cases centered around January 2021 and September 2021, but a shockingly low amount around June 2021.</li>
+				<li>The bulge narrows again around November 2021 but then seems to widen dramatically around January 2022.</li>
+				<li>Comparing the same time period year after year, sometimes it is the same, sometimes it is less, etc.--there is not a clear pattern. Following the spiral of time, we do get a sense of how the case count fluctuates: rising and falling, bulging and sagging.</li>
+			</ul>
+
+			<p>
+				Design Critique:
+			</p>
+
+			<p>
+				The spiral form has clear strengths: it places the same calendar month near itself across years, so we naturally compare, say, July 2020 with July 2021, and it may have been chosen to make it easier to follow local trends than a single long timeline would. That said, one can question whether COVID is meaningfully “seasonal” in a way that justifies this layout--the spiral may simply be a compact way to show detail. More troubling are four perceptual issues. First, the encoding is meant to be read radially: width in each slice is the quantity. In practice, it is easy to read the shape as a whole and to judge width in a vertical (or other) direction instead of along the radius. That mismatch can make some bulges look larger or smaller than they are, so the viewer may get a misleading sense of relative case levels. Second, because each successive year sits on a larger ring, the same radial width corresponds to a greater arc length and more filled area in 2021 than in 2020--so a bulge in the outer ring can appear more significant even when the encoded case count is the same. Third, mapping the visual size to actual numbers is difficult. The legend gives a reference length, but it is shown vertically while the chart is radial and at many angles, so we can only roughly judge “under 150k,” “over 150k,” or “around 150k.” If the aim is for readers to grasp absolute levels, not just relative change, the design places a heavy burden on the reader. Fourth, as an artifact of the spiral layout, the whole chart feels lopsided and left-heavy, since the radial axes are shorter on the right side. The article was titled &ldquo;Here&rsquo;s When We Expect Omicron to Peak,&rdquo; so most people reading this graphic are trying to understand Omicron. The chart doesn&rsquo;t say which bulge is Omicron or when it might peak. You see a big widening at the end and guess that&rsquo;s it, and that cases are shooting up--but whether it&rsquo;s going to keep going or when it might turn around is left completely to the reader.
+			</p>
+		</section>
+
+		<section>
+			<h2>Visualization Sketches</h2>
+
+			<figure class="sketch-half">
+				<img src="sketch1.png" alt="Sketch 1" />
+				<figcaption>
+          New US COVID-19 cases, 2020-2022. Shows the distribution of new US COVID-19 cases vertically through time. In the next sketch I wanted to explore keeping the spiral&rsquo;s seasonal (month-by-month) structure but encoding magnitude as distance from a fixed axis instead of bulge width, to see if that would give a clearer quantitative read.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 1:
+			</p>
+
+			<ul>
+				<li>This is an unwrapped version of the spiral: the same distribution is shown on both sides so viewers still get a sense of the &ldquo;bulges&rdquo; in case counts without the spatial biases of the spiral layout (e.g., outer rings appearing larger, radial width being misread).</li>
+				<li>Reading downward tracks time clearly; the explosion of cases starting in January 2022 is easy to see, and the 150k axes give a direct quantitative sense of how large each bulge is.</li>
+				<li>Weaknesses: reading top-to-bottom may feel unintuitive to some, and the symmetric double-ended area might read as redundant rather than helpful depending on whether the mirroring aids comparison or adds clutter.</li>
+				<li>In the next sketch I wanted to explore keeping the spiral&rsquo;s seasonal structure but encoding magnitude as distance from a fixed axis instead of bulge width.</li>
+			</ul>
+
+			<figure class="sketch-three-quarter">
+				<img src="sketch2.png" alt="Sketch 2" />
+				<figcaption>
+          New US COVID-19 cases by time of year, 2020–2022. Radial plot: angle is month (Jan, Apr, Jul, Oct), distance from center is case count (100k and 200k marked). The path moves outward when cases are higher, staying inside a ~100k &ldquo;bubble&rdquo; for much of 2020–2021 and breaking out past 200k in 2022. In the next sketch I wanted to move away from radial encodings to a conventional faceted line chart by year, to see if side-by-side panels would make cross-year comparison and peak identification easier.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 2:
+			</p>
+
+			<ul>
+				<li>I wanted to try something within the spiral framework: the spiral&rsquo;s month-by-month (seasonal) structure is kept, but the radial axis is held constant so that distance from the origin encodes case count instead of bulge width--giving a time-parametrized path around a &ldquo;clock&rdquo; that moves farther from the center when cases are higher.</li>
+				<li>This gives a clearer quantitative read: for most of 2020 and 2021 we stay inside a ~100k cases/day &ldquo;bubble,&rdquo; then break out past 200k in 2022, so the bubble metaphor is both visible and interpretable.</li>
+				<li>Weaknesses: when the path crosses over itself the graph can be confusing, and the radial design still suffers from some of the perceptual issues in the original critique (e.g., judging distance and angle), even though it improves on the bulge-size encoding.</li>
+				<li>In the next sketch I wanted to move away from radial encodings to a faceted line chart by year to see if side-by-side panels would make comparison easier.</li>
+			</ul>
+
+			<figure class="sketch-three-quarter">
+				<img src="sketch3.png" alt="Sketch 3" />
+				<figcaption>
+          New US COVID-19 cases, 2020 and 2021. Faceted line charts--one panel per year--with shared axes (Jan, Apr, Jul, Oct). Annotations mark the 7-day average and peaks in each year. For the final design I wanted to synthesize a single continuous timeline with a wave-based narrative and cumulative context, building on the clarity of the line chart while tying the story to when each wave (including Omicron) peaked and what share of the population had been confirmed as a case by then.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 3:
+			</p>
+
+			<ul>
+				<li>The design facets the data into separate line charts by year (e.g., 2020 and 2021), so you can compare each year more directly instead of following one long timeline.</li>
+				<li>Annotations call out the peaks to help readers understand when and where case counts spike in each period.</li>
+				<li>Limitations: the break between years can feel jarring, and comparing case counts at the same calendar date across years is still awkward because you have to align and compare vertical heights across panels.</li>
+				<li>For the final design I wanted to try a single continuous timeline with a wave-based narrative and cumulative context, building on the clarity of a line chart.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Final Visualization Design</h2>
+
+			<figure class="full-bleed">
+				<img src="covid-viz-04-log.png" alt="New COVID-19 cases in the United States by wave, 7-day average, with cumulative share of U.S. population with confirmed cases at each wave end." />
+				<figcaption>
+					New COVID-19 cases in the United States, 7-day centered average, with wave periods and cumulative percent of U.S. population with confirmed cases at each wave end (pie charts). The x-axis dates are the start and end of each wave. Wave periods are defined using CDC and epidemiological sources: early waves from <a href="https://www.cdc.gov/mmwr/volumes/71/wr/mm7106a4.htm">CDC MMWR on SARS-CoV-2 variant predominance (Delta, Omicron)</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/variants/variant-classifications.html">CDC variant classifications</a>; Delta predominance (e.g., July–October 2021) and Omicron (December 2021–February 2022) per <a href="https://www.cdc.gov/mmwr/volumes/71/wr/mm7106e2.htm">CDC MMWR on clinical outcomes during Delta and Omicron periods</a>.
+				</figcaption>
+			</figure>
+
+		</section>
+
+		<section>
+			<h2>Final Writeup</h2>
+
+			<p>
+        I ended up starting fresh rather than building directly on my sketches: I didn&rsquo;t feel the sketched directions were strong enough, and I&rsquo;d become convinced that something radial probably wouldn&rsquo;t be effective for this data. I also didn&rsquo;t like faceting by year, since a sense of continuity across time felt very important. So I opted for a more standard timeline with additional annotations to support a more detailed understanding. With that in mind, I wanted to convey that new COVID-19 cases were clearly structured in waves. I used the provided COVID_US_cases.csv for case counts, plus external data from the CDC to determine when each wave occurred, and labeled the wave periods clearly in the visual. Beyond showing trends (e.g., Omicron is really high; wave 3 is higher than waves 1, 2, and 4), I wanted to give weight to what the numbers actually meant, so I added cumulative pie charts after each wave showing the cumulative number of confirmed cases as a percentage of the U.S. population at that time. That framing makes it striking that after Omicron the cumulative share was 23.5%--not the same as saying 23.5% of the population was infected, since some people were infected more than once and there is underreporting, but it is striking to think that at some point about 1 in 4 people had been a &ldquo;new case.&rdquo; You get a clearer sense of the cumulative impact of each wave while still tracing daily new cases, which would be harder if we only plotted cumulative totals. I shaded the area below the curve to emphasize that new cases are a flow (a differential), and I added more axis ticks at 150k and 200k and below so that the range where most waves sit is easier to read.
+      </p>
+
+			<p>
+        I think the final design addresses much of my original critique. By avoiding a radial representation, viewers get a more accurate sense of the relative size of peaks and dips and of trends over time, as well as both specific numbers and cumulative impact. Presenting the data in terms of waves also helps ground the story. I did face some tensions: for example, I debated using a log scale for the y-axis because the Omicron peak is so much higher than the others, but I kept a linear scale and relied on higher-resolution grid lines at lower y-values so the trends of the smaller waves are still readable. The shaded area (or the cumulative mass of cases) only really makes sense with a linear scale rather than a log scale. Another choice was the x-axis ticks: I had originally used a regularly spaced interval, but once I was structuring the chart around waves, I realized people would care more about when each wave started and ended, so I set the dates to those wave boundaries instead. It&rsquo;s a slightly unconventional choice not to have evenly spaced ticks, but I think it worked out well. For the cumulative representation, I debated a few options: plotting the cumulative curve would be hard to compare and would require a different axis; bars for cumulative cases after each wave would still encode in vertical position, which is already used for new cases. I used pie charts as a separate encoding that doesn&rsquo;t compete with the vertical axis and avoids dual-axis issues. The design downplays fine-grained daily variation and may obscure other kinds of patterns by framing the data through the lens of waves.
+      </p>
+		</section>
+	</main>
+</body>
+</html>
