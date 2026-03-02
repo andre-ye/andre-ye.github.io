@@ -298,6 +298,13 @@
                     "year": 2016,
                     "commentary": "",
                     "link": "https://arxiv.org/abs/1606.03490"
+                },
+                {
+                    "title": "Learning a Generative Meta-Model of LLM Activations",
+                    "authors": "Grace Luo, Jiahai Feng, Trevor Darrell, Alec Radford, Jacob Steinhardt",
+                    "year": 2026,
+                    "commentary": "",
+                    "link": "https://arxiv.org/pdf/2602.06964"
                 }
             ]
         },
