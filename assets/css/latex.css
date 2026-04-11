@@ -1,0 +1,1605 @@
+@charset "UTF-8";
+/*******************************************************************************
+ * Variables used throughout the theme.
+ * To adjust anything, simply edit the variables below and rebuild the theme.
+ ******************************************************************************/
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 10000;
+  padding: 0.5rem 1rem;
+  background: var(--global-theme-color, #1a1a1a);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.skip-link:focus {
+  left: 0;
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+html.latex-font body, html.latex-font p, html.latex-font li, html.latex-font span, html.latex-font div, html.latex-font td, html.latex-font th, html.latex-font blockquote, html.latex-font a, html.latex-font label, html.latex-font input, html.latex-font textarea, html.latex-font select, html.latex-font button {
+  font-family: "Gelasio", "Palatino Linotype", "Book Antiqua", Palatino, "URW Palladio L", Georgia, "Times New Roman", serif !important;
+}
+html.latex-font h1, html.latex-font h2, html.latex-font h3, html.latex-font h4, html.latex-font h5, html.latex-font h6 {
+  font-family: "Gelasio", "Palatino Linotype", "Book Antiqua", Palatino, "URW Palladio L", Georgia, "Times New Roman", serif !important;
+}
+html.latex-font em, html.latex-font i:not(.fas):not(.fab):not(.far):not(.fal):not(.ai) {
+  font-family: "Gelasio", "Palatino Linotype", "Book Antiqua", Palatino, "URW Palladio L", Georgia, "Times New Roman", serif !important;
+  font-style: italic;
+}
+html.latex-font strong, html.latex-font b {
+  font-family: "Gelasio", "Palatino Linotype", "Book Antiqua", Palatino, "URW Palladio L", Georgia, "Times New Roman", serif !important;
+  font-weight: bold;
+}
+html.latex-font code, html.latex-font pre {
+  font-family: "Inconsolata", Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
+html.latex-font p, html.latex-font li, html.latex-font blockquote, html.latex-font td, html.latex-font th {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+html.latex-font .post-content p, html.latex-font .post-content li, html.latex-font article p, html.latex-font article li, html.latex-font main p, html.latex-font main li {
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+@media (max-width: 576px) {
+  html.latex-font p, html.latex-font li, html.latex-font blockquote, html.latex-font td, html.latex-font th {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  html.latex-font .post-content p, html.latex-font .post-content li, html.latex-font article p, html.latex-font article li, html.latex-font main p, html.latex-font main li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+}
+html.latex-font nav, html.latex-font .navbar, html.latex-font .nav-link, html.latex-font .dropdown-item {
+  font-family: "Gelasio", "Palatino Linotype", "Book Antiqua", Palatino, "URW Palladio L", Georgia, "Times New Roman", serif !important;
+}
+html.latex-font .fas, html.latex-font .fab, html.latex-font .far, html.latex-font .fal, html.latex-font .fa {
+  font-family: "Font Awesome 6 Free", "Font Awesome 5 Free" !important;
+}
+html.latex-font .fab {
+  font-family: "Font Awesome 6 Brands", "Font Awesome 5 Brands" !important;
+}
+html.latex-font .ai {
+  font-family: "Academicons" !important;
+}
+
+/* Shared LaTeX document palette (shell + embed) */
+html.latex-single {
+  /* Pastel vocabulary for semantic accent hooks (--site-accent-*) */
+  --site-pastel-0-bg: #ebe4f7;
+  --site-pastel-0-fg: #453264;
+  --site-pastel-0-border: rgba(69, 50, 100, 0.22);
+  --site-pastel-1-bg: #d8f0e4;
+  --site-pastel-1-fg: #1a5238;
+  --site-pastel-1-border: rgba(26, 82, 56, 0.2);
+  --site-pastel-2-bg: #fde8dc;
+  --site-pastel-2-fg: #6b3a26;
+  --site-pastel-2-border: rgba(107, 58, 38, 0.22);
+  --site-pastel-3-bg: #dcecf9;
+  --site-pastel-3-fg: #2a4f6e;
+  --site-pastel-3-border: rgba(42, 79, 110, 0.2);
+  --site-pastel-4-bg: #faf1cf;
+  --site-pastel-4-fg: #5c4f1a;
+  --site-pastel-4-border: rgba(92, 79, 26, 0.22);
+  --site-pastel-5-bg: #fce3ec;
+  --site-pastel-5-fg: #722f47;
+  --site-pastel-5-border: rgba(114, 47, 71, 0.2);
+  --site-pastel-6-bg: #d7f3f3;
+  --site-pastel-6-fg: #1a565c;
+  --site-pastel-6-border: rgba(26, 86, 92, 0.2);
+  --site-pastel-7-bg: #ffe9cc;
+  --site-pastel-7-fg: #6b4018;
+  --site-pastel-7-border: rgba(107, 64, 24, 0.22);
+  /* Semantic hooks */
+  --site-accent-primary: var(--site-pastel-3-fg);
+  --site-accent-primary-soft: var(--site-pastel-3-bg);
+  --site-accent-warm: var(--site-pastel-2-fg);
+  --site-accent-warm-soft: var(--site-pastel-2-bg);
+  --global-bg-color: #fafafa;
+  --global-text-color: #1a1a1a;
+  --global-text-color-light: #555;
+  --global-theme-color: #1a1a1a;
+  --global-hover-color: #333;
+  --global-divider-color: #ccc;
+  --global-card-bg-color: #fff;
+  --global-bold-color: #000;
+  --global-code-bg-color: rgba(0, 0, 0, 0.06);
+}
+
+html.latex-embed {
+  /* Pastel vocabulary for semantic accent hooks (--site-accent-*) */
+  --site-pastel-0-bg: #ebe4f7;
+  --site-pastel-0-fg: #453264;
+  --site-pastel-0-border: rgba(69, 50, 100, 0.22);
+  --site-pastel-1-bg: #d8f0e4;
+  --site-pastel-1-fg: #1a5238;
+  --site-pastel-1-border: rgba(26, 82, 56, 0.2);
+  --site-pastel-2-bg: #fde8dc;
+  --site-pastel-2-fg: #6b3a26;
+  --site-pastel-2-border: rgba(107, 58, 38, 0.22);
+  --site-pastel-3-bg: #dcecf9;
+  --site-pastel-3-fg: #2a4f6e;
+  --site-pastel-3-border: rgba(42, 79, 110, 0.2);
+  --site-pastel-4-bg: #faf1cf;
+  --site-pastel-4-fg: #5c4f1a;
+  --site-pastel-4-border: rgba(92, 79, 26, 0.22);
+  --site-pastel-5-bg: #fce3ec;
+  --site-pastel-5-fg: #722f47;
+  --site-pastel-5-border: rgba(114, 47, 71, 0.2);
+  --site-pastel-6-bg: #d7f3f3;
+  --site-pastel-6-fg: #1a565c;
+  --site-pastel-6-border: rgba(26, 86, 92, 0.2);
+  --site-pastel-7-bg: #ffe9cc;
+  --site-pastel-7-fg: #6b4018;
+  --site-pastel-7-border: rgba(107, 64, 24, 0.22);
+  /* Semantic hooks */
+  --site-accent-primary: var(--site-pastel-3-fg);
+  --site-accent-primary-soft: var(--site-pastel-3-bg);
+  --site-accent-warm: var(--site-pastel-2-fg);
+  --site-accent-warm-soft: var(--site-pastel-2-bg);
+  --global-bg-color: #fafafa;
+  --global-text-color: #1a1a1a;
+  --global-text-color-light: #555;
+  --global-theme-color: #1a1a1a;
+  --global-hover-color: #333;
+  --global-divider-color: #ccc;
+  --global-card-bg-color: #fff;
+  --global-code-bg-color: rgba(0, 0, 0, 0.06);
+}
+
+/*******************************************************************************
+ * LaTeX single-page shell: split layout, header marquee, iframe
+ ******************************************************************************/
+/* Page fixed - no scroll; panels scroll independently */
+html.latex-single,
+html.latex-single body.latex-single-body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Remove all red from text - selection, shadows, backgrounds */
+html.latex-single ::selection {
+  background: rgba(0, 0, 0, 0.15);
+  color: inherit;
+}
+
+html.latex-single * {
+  text-shadow: none !important;
+}
+
+html.latex-single a,
+html.latex-single a:hover,
+html.latex-single strong,
+html.latex-single h1, html.latex-single h2, html.latex-single h3,
+html.latex-single h4, html.latex-single h5, html.latex-single h6 {
+  text-shadow: none !important;
+}
+
+html.latex-single code,
+html.latex-single pre {
+  background-color: rgba(0, 0, 0, 0.06) !important;
+  color: var(--global-text-color) !important;
+}
+
+/* Override any red-tinted backgrounds from base theme */
+html.latex-single .news a,
+html.latex-single .paper-item,
+html.latex-single .quote-item,
+html.latex-single .article-item,
+html.latex-single .timeline-event-marker,
+html.latex-single .nav-item.active::before {
+  color: var(--global-text-color) !important;
+}
+
+html.latex-single.latex-split-dragging body {
+  cursor: col-resize !important;
+}
+
+/* Let mouse events pass through iframe during divider drag (fixes right-drag) */
+html.latex-single.latex-split-dragging .latex-iframe {
+  pointer-events: none !important;
+}
+
+.latex-single-body {
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.latex-header {
+  flex-shrink: 0;
+  border-bottom: 2px solid var(--global-divider-color);
+  padding: 0.5rem 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.latex-header-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.latex-header-track {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  color: var(--global-text-color-light);
+  line-height: 1.4;
+  min-height: 1.5em;
+  position: relative;
+  z-index: 1;
+}
+.latex-header-track[hidden] {
+  display: none;
+}
+.latex-header-track:hover .latex-header-track-inner, .latex-header-track.latex-header-track-paused .latex-header-track-inner {
+  animation-play-state: paused;
+}
+
+.latex-header-track-inner {
+  display: inline-block;
+  will-change: transform;
+}
+
+.latex-header-paper-link {
+  font-size: inherit;
+  color: var(--global-text-color-light);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.latex-header-paper-link:hover {
+  color: var(--global-text-color);
+}
+
+@keyframes latex-marquee-quotes {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes latex-marquee-papers {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.latex-single .latex-header-track-inner {
+    animation: none !important;
+  }
+}
+.latex-document-title {
+  font-size: 1.65rem;
+  font-weight: 600;
+  margin: 0 0 1.25rem 0;
+  color: var(--global-text-color);
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/*
+ * Home hero: must stay ONE typographic line. Flex + flex-wrap + wide min-width
+ * on the rotating span caused separate flex lines (name / suffix / cursor).
+ * Inner .latex-site-hero-line is inline-block + nowrap so nothing can wrap apart.
+ */
+html.latex-single h1.latex-site-hero-title {
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: center;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  /* Do not use flex here — two flex items = two lines when the panel is narrow */
+}
+
+html.latex-single h1.latex-site-hero-title .latex-site-hero-line {
+  display: inline-block;
+  white-space: nowrap !important;
+  max-width: none;
+  text-align: center;
+  vertical-align: top;
+}
+
+/* Inherit nowrap through tagline (some resets set white-space on em/span) */
+html.latex-single h1.latex-site-hero-title .latex-site-hero-line,
+html.latex-single h1.latex-site-hero-title .latex-site-hero-line * {
+  white-space: nowrap !important;
+}
+
+/* Hero name: crimson marker highlight only (same idea as essay link markers, not a link) */
+html.latex-single .latex-site-hero-name {
+  display: inline-block;
+  vertical-align: baseline;
+  font-weight: 700;
+  font-style: normal;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, transparent 8%, rgba(185, 22, 46, 0.52) 8%, rgba(185, 22, 46, 0.52) 90%, transparent 90%);
+  background-repeat: repeat-x;
+  background-size: 100% 100%;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0.06em 0.12em;
+  margin: 0 -0.12em;
+  border-radius: 40% 55% 48% 62%/52% 44% 58% 50%;
+}
+
+.latex-site-hero-suffix {
+  font-style: normal;
+  font-weight: 400;
+  display: inline;
+}
+
+.latex-site-hero-prep {
+  font-style: inherit;
+}
+
+.latex-site-hero-rotating {
+  font-style: inherit;
+  display: inline;
+}
+
+.latex-site-hero-cursor {
+  display: inline-block;
+  width: 0.12em;
+  min-width: 2px;
+  height: 1.05em;
+  margin-left: 1px;
+  vertical-align: -0.12em;
+  background: currentColor;
+  animation: latex-hero-cursor-blink 1s steps(1, end) infinite;
+}
+
+@keyframes latex-hero-cursor-blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.latex-single .latex-site-hero-cursor {
+    animation: none;
+    opacity: 1;
+  }
+}
+.latex-doc-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+  color: var(--global-text-color);
+  letter-spacing: 0.02em;
+}
+
+.latex-doc-subtitle {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  margin: 0;
+}
+
+/* Split panel layout - fills entire window, edge to edge */
+.latex-split-main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  position: relative;
+}
+
+/* Left panel - main script/narrative, document-like */
+.latex-left-panel {
+  flex: 0 0 var(--latex-split-pos, 50%);
+  width: var(--latex-split-pos, 50%);
+  max-width: 85%;
+  min-width: 20%;
+  padding: 1.5rem 1.25rem;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.latex-split-divider {
+  flex: 0 0 2px;
+  width: 2px;
+  background: var(--global-divider-color);
+  cursor: col-resize !important;
+  position: relative;
+  z-index: 5;
+}
+
+.latex-left-content {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+.latex-left-content p {
+  margin-bottom: 1.25rem;
+}
+.latex-left-content .latex-section {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 2rem 0 0.75rem 0;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  letter-spacing: 0.02em;
+  color: var(--global-text-color);
+}
+.latex-left-content .latex-section:first-child {
+  margin-top: 0;
+}
+.latex-left-content .latex-subsection {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem 0;
+  color: var(--global-text-color);
+}
+.latex-left-content .latex-pill {
+  display: inline;
+  padding: 0.15em 0.5em;
+  margin: 0 0.1em;
+  border: 1px solid var(--global-text-color);
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  background: transparent;
+  color: var(--global-text-color);
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+.latex-left-content .latex-pill:hover {
+  background: var(--global-text-color);
+  color: var(--global-bg-color);
+}
+.latex-left-content a.latex-pill {
+  cursor: pointer;
+}
+.latex-left-content h1, .latex-left-content h2, .latex-left-content h3, .latex-left-content h4 {
+  color: var(--global-text-color);
+  font-weight: 600;
+}
+.latex-left-content a:not(.latex-pill) {
+  color: var(--global-text-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.latex-left-content a:not(.latex-pill):hover {
+  color: var(--site-accent-primary, var(--global-hover-color));
+}
+.latex-left-content strong {
+  color: var(--global-text-color);
+}
+.latex-left-content img {
+  max-width: 100%;
+  filter: none;
+}
+.latex-left-content .latex-about-meta {
+  margin-top: 2.25rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: var(--global-text-color);
+}
+.latex-left-content .latex-about-meta p {
+  margin: 0 0 1rem 0;
+}
+.latex-left-content .latex-about-meta p:last-child {
+  margin-bottom: 0;
+}
+
+/* Right panel - content viewer; browser chrome is full-bleed, padding only on content area */
+.latex-right-panel {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  overflow-y: auto;
+  min-height: 0;
+  background: var(--global-card-bg-color);
+  border-left: 1px solid var(--global-divider-color);
+  display: flex;
+  flex-direction: column;
+}
+.latex-right-panel.latex-iframe-mode {
+  overflow: hidden;
+}
+
+.latex-right-panel:not(.latex-iframe-mode) .latex-right-panel-panels {
+  padding: 2rem 2.75rem;
+  box-sizing: border-box;
+}
+
+.latex-right-panel-inner {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.latex-right-panel-inner:not(.latex-toolbar-visible) .latex-browser-chrome {
+  display: none !important;
+}
+
+.latex-right-panel.latex-iframe-mode .latex-right-panel-inner {
+  padding: 0;
+  overflow: hidden;
+}
+
+.latex-right-panel-panels {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.latex-default-panel {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1;
+  min-height: 0;
+  padding: 0 !important;
+  overflow-y: auto;
+}
+.latex-default-panel[hidden] {
+  display: none !important;
+}
+
+.latex-default-top {
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+.latex-default-video {
+  width: 100%;
+  max-height: 45vh;
+  display: block;
+  object-fit: contain;
+}
+
+.latex-default-video-caption {
+  font-size: clamp(7px, 0.44rem, 9px) !important;
+  font-style: italic;
+  color: var(--global-text-color);
+  margin: 0.2rem 0 1rem 0;
+  padding: 0 0 0.2em 0;
+  line-height: 1.5;
+  display: block;
+  max-width: 100%;
+  overflow: visible;
+}
+.latex-default-video-caption a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.latex-default-video-caption a:hover {
+  color: var(--global-hover-color);
+}
+
+.latex-default-bottom {
+  flex: 1;
+  min-height: 0;
+}
+
+.latex-quick-links {
+  margin-top: 1.15rem;
+}
+
+/* One line with body copy: “Quick links · a · b · …” */
+.latex-quick-links-row {
+  margin: 0;
+  padding: 0;
+  font-size: 1.05rem; /* match .latex-left-content body */
+  line-height: 1.65;
+  font-weight: 400;
+  color: var(--global-text-color);
+}
+
+.latex-quick-links-leading {
+  font-size: inherit;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--global-text-color);
+}
+
+.latex-quick-links-sep {
+  display: inline;
+  color: var(--global-text-color-light);
+  padding: 0 0.4rem;
+  user-select: none;
+  font-weight: 400;
+  font-size: inherit;
+}
+
+a.latex-quick-link {
+  color: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+a.latex-quick-link:hover {
+  color: var(--global-hover-color);
+}
+
+.latex-panel-content {
+  animation: latex-fade-in 0.2s ease;
+}
+
+/* Preview chrome: title dots + folder-style tabs (attached to page like Chrome) */
+.latex-browser-chrome {
+  flex-shrink: 0;
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: var(--global-bg-color);
+  pointer-events: auto;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+.latex-browser-titlebar {
+  display: flex;
+  align-items: center;
+  min-height: 1.35rem;
+  padding: 0.45rem 0.85rem 0.3rem;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.02);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.latex-browser-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.latex-browser-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: inset 0 0 0 0.5px rgba(0, 0, 0, 0.12);
+}
+
+.latex-browser-dot-close {
+  background: #ff5f57;
+}
+
+.latex-browser-dot-min {
+  background: #febc2e;
+}
+
+.latex-browser-dot-max {
+  background: #28c840;
+}
+
+/* Tab strip: muted track + bottom rule; tabs overlap rule so active tab “connects” to content */
+.latex-browser-tab-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.35rem;
+  padding: 0.35rem 0.5rem 0 0.65rem;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.045);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.latex-browser-tabs-scroll {
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  mask-image: linear-gradient(to right, #000 90%, transparent 100%);
+  scrollbar-width: thin;
+}
+.latex-browser-tabs-scroll::-webkit-scrollbar {
+  height: 3px;
+}
+.latex-browser-tabs-scroll::-webkit-scrollbar-thumb {
+  background: var(--global-divider-color);
+  border-radius: 3px;
+}
+
+.latex-browser-tabs {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.12rem;
+  padding: 0;
+  min-height: 0;
+}
+
+.latex-browser-tab {
+  --latex-tab-radius: 9px;
+  position: relative;
+  z-index: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  max-width: 12.5rem;
+  min-height: 2.15rem;
+  padding: 0.4rem 0.65rem 0.52rem;
+  margin-bottom: -1px;
+  border: 1px solid var(--global-divider-color);
+  border-bottom: none;
+  border-radius: var(--latex-tab-radius) var(--latex-tab-radius) 0 0;
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--global-text-color-light);
+  font-family: inherit;
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, z-index 0s;
+}
+.latex-browser-tab[aria-selected=true] {
+  z-index: 2;
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  border-color: var(--global-divider-color);
+  border-bottom: 1px solid var(--global-card-bg-color);
+  font-weight: 600;
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.04);
+}
+.latex-browser-tab:hover:not([aria-selected=true]) {
+  color: var(--global-text-color);
+  background: rgba(0, 0, 0, 0.09);
+  z-index: 1;
+}
+.latex-browser-tab.latex-browser-tab--pinned {
+  max-width: 5.75rem;
+}
+.latex-browser-tab.latex-browser-tab--start {
+  border-style: dashed;
+  background: rgba(0, 0, 0, 0.03);
+}
+.latex-browser-tab.latex-browser-tab--start[aria-selected=true] {
+  border-style: solid;
+  background: var(--global-card-bg-color);
+}
+
+.latex-browser-tab-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
+.latex-browser-tab-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  padding: 0;
+  margin: 0 -0.08rem 0 0;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  font-size: 0.9rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.55;
+  flex-shrink: 0;
+  transition: opacity 0.12s, background 0.12s;
+}
+.latex-browser-tab-close:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.latex-browser-row-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  flex-shrink: 0;
+  margin-bottom: 0.42rem;
+  padding-left: 0.15rem;
+}
+
+.latex-browser-row-action {
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  padding: 0.35rem 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--global-text-color-light);
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+.latex-browser-row-action:hover:not(.latex-browser-open-external--dimmed) {
+  color: var(--global-text-color);
+  background: rgba(0, 0, 0, 0.06);
+}
+
+a.latex-browser-row-action {
+  display: inline-flex;
+  align-items: center;
+}
+
+.latex-browser-open-external--dimmed {
+  opacity: 0.32;
+  pointer-events: none;
+  cursor: default;
+}
+
+/* Iframe panel for external links */
+.latex-iframe-panel {
+  position: relative;
+  display: flex !important;
+}
+.latex-iframe-panel[hidden] {
+  display: none !important;
+}
+.latex-iframe-panel {
+  flex: 1;
+  min-height: 0;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.latex-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  z-index: 0;
+}
+
+@keyframes latex-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*******************************************************************************
+ * LaTeX right-panel lists, agenda blocks, optional news/social/footer
+ ******************************************************************************/
+.latex-panel-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: 0.03em;
+}
+
+.latex-panel-intro {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: var(--global-text-color-light);
+}
+
+.latex-panel-section-header {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 2.25rem 0 0.75rem 0;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  letter-spacing: 0.01em;
+}
+
+/* Paper list - reference/bibliography style */
+.latex-paper-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.latex-paper-list li {
+  margin-bottom: 1.35rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  line-height: 1.6;
+}
+.latex-paper-list li:last-child {
+  border-bottom: none;
+}
+
+.latex-paper-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.latex-paper-title a {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+.latex-paper-title a:hover {
+  text-decoration: underline;
+}
+
+.latex-paper-authors {
+  font-size: 0.88rem;
+  margin-bottom: 0.2rem;
+}
+
+.latex-paper-venue {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--global-text-color-light);
+}
+
+.latex-paper-award {
+  font-size: 0.82rem;
+  margin-top: 0.25rem;
+}
+
+.latex-paper-links {
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+}
+.latex-paper-links a {
+  margin-right: 0.85rem;
+  color: var(--global-text-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.latex-paper-links a:hover {
+  color: var(--global-hover-color);
+}
+
+/* Agenda sections - paper-like */
+.latex-agenda-section {
+  margin-bottom: 2.25rem;
+}
+.latex-agenda-section h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.6rem 0;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  letter-spacing: 0.01em;
+}
+.latex-agenda-section p {
+  font-size: 0.98rem;
+  line-height: 1.8;
+  margin: 0 0 0.6rem 0;
+}
+
+/* News and social in left panel */
+.latex-news-section,
+.latex-social-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+.latex-news-section .latex-section,
+.latex-social-section .latex-section {
+  margin-top: 0;
+}
+.latex-news-section a,
+.latex-social-section a {
+  color: var(--global-text-color);
+}
+
+/* Footer */
+.latex-footer {
+  flex-shrink: 0;
+  border-top: 1px solid var(--global-divider-color);
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+}
+.latex-footer a {
+  color: var(--global-text-color);
+}
+
+.latex-footer-inner {
+  width: 100%;
+}
+
+/*******************************************************************************
+ * Standalone / iframe LaTeX document pages (layout: latex_embed)
+ ******************************************************************************/
+/* Right-panel preview iframe: document body only, no site mini-nav */
+html.latex-embed.latex-embed--in-iframe .latex-doc-nav {
+  display: none !important;
+}
+
+html.latex-embed.latex-embed--in-iframe .skip-link {
+  display: none !important;
+}
+
+html.latex-embed .latex-doc-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 1rem;
+  margin: 0 auto 1.25rem;
+  padding: 0 2.75rem;
+  max-width: 42em;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
+
+html.latex-embed .latex-doc-nav-link {
+  color: var(--global-text-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+html.latex-embed .latex-doc-nav-link:hover {
+  color: var(--global-hover-color);
+  border-bottom-color: var(--global-divider-color);
+}
+
+/* Kramdown / jekyll-toc style tables of contents */
+html.latex-embed #markdown-toc,
+html.latex-embed #toc,
+html.latex-embed .section-nav {
+  margin: 0 auto 1.5rem;
+  padding: 0.75rem 1rem;
+  max-width: 42em;
+  border: 1px solid var(--global-divider-color);
+  background: rgba(0, 0, 0, 0.02);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+html.latex-embed #markdown-toc ul,
+html.latex-embed #toc ul,
+html.latex-embed .section-nav ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.25rem;
+}
+
+html.latex-embed body {
+  margin: 0;
+  padding: 2rem 2.75rem;
+  font-family: "Gelasio", "Palatino Linotype", "Book Antiqua", Palatino, "URW Palladio L", Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--global-text-color);
+  background: var(--global-bg-color);
+  cursor: default;
+  max-width: 42em;
+}
+
+html.latex-embed a {
+  color: var(--global-text-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+html.latex-embed a:hover {
+  color: var(--site-accent-primary, var(--global-hover-color));
+}
+
+html.latex-embed .bubble-link {
+  color: var(--global-text-color);
+  text-decoration: underline;
+}
+
+html.latex-embed .latex-embed-doc-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: 0.03em;
+}
+
+html.latex-embed h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem 0;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  letter-spacing: 0.02em;
+}
+
+html.latex-embed h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 2rem 0 0.5rem 0;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  letter-spacing: 0.01em;
+}
+
+html.latex-embed h2:first-child {
+  margin-top: 0;
+}
+
+html.latex-embed h3 {
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.4rem 0;
+}
+
+html.latex-embed ::selection {
+  background: rgba(0, 0, 0, 0.15);
+  color: inherit;
+}
+
+html.latex-embed .paper-list li,
+html.latex-embed .section-header {
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+/* CV in embed - paper-like sections */
+html.latex-embed .cv-section {
+  margin: 2rem 0;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+html.latex-embed .cv-section h2 {
+  margin-top: 0;
+}
+
+/* layout: page (nested under latex_embed) */
+html.latex-embed .post {
+  margin: 0;
+}
+
+html.latex-embed .post-header {
+  margin-bottom: 1.5rem;
+}
+
+html.latex-embed .post-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.03em;
+  color: var(--global-text-color);
+}
+
+html.latex-embed .post-description {
+  text-align: center;
+  color: var(--global-text-color-light);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+html.latex-embed .post article {
+  margin-top: 0;
+}
+
+html.latex-embed details {
+  user-select: none;
+}
+
+html.latex-embed details > summary span.icon {
+  width: 24px;
+  height: 10px;
+  transition: all 0.3s;
+  margin-left: auto;
+}
+
+html.latex-embed details[open] summary span.icon {
+  transform: rotate(180deg);
+}
+
+html.latex-embed summary {
+  display: flex;
+  cursor: pointer;
+}
+
+html.latex-embed summary::-webkit-details-marker {
+  display: none;
+}
+
+/*******************************************************************************
+ * Quotes page (layout: latex_embed + quotes_nav.js) — restrained, paper-like
+ ******************************************************************************/
+html.latex-embed .random-quote-section {
+  margin: 0 0 2.75rem;
+}
+
+html.latex-embed .random-quote-box {
+  position: relative;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.02);
+  box-shadow: none;
+  overflow: visible;
+}
+html.latex-embed .random-quote-box::before {
+  display: none;
+}
+
+html.latex-embed .random-quote-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.5rem 0.9rem;
+  background: transparent;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+html.latex-embed .random-quote-header h3 {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--global-text-color-light);
+}
+
+html.latex-embed .refresh-quote-btn {
+  flex-shrink: 0;
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--global-text-color);
+  background: transparent;
+  border: 1px solid var(--global-divider-color);
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+html.latex-embed .refresh-quote-btn:hover {
+  border-color: var(--global-text-color-light);
+  background: rgba(0, 0, 0, 0.04);
+}
+html.latex-embed .refresh-quote-btn:focus-visible {
+  outline: 2px solid var(--global-text-color-light);
+  outline-offset: 2px;
+}
+
+html.latex-embed .random-quote-content {
+  padding: 1.15rem 1rem 1.35rem;
+  min-height: 0;
+  max-height: none;
+  overflow: visible;
+}
+
+html.latex-embed .random-quote-text {
+  font-size: 1.05rem;
+  line-height: 1.72;
+  font-style: italic;
+  color: var(--global-text-color);
+  margin: 0 0 1rem;
+}
+
+html.latex-embed .random-quote-author {
+  font-size: 0.86rem;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  color: var(--global-text-color-light);
+  text-align: left;
+  margin: 0;
+}
+html.latex-embed .random-quote-author::before {
+  content: "— ";
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+html.latex-embed hr.random-section-divider {
+  border: none;
+  height: 0;
+  margin: 0 0 2.5rem;
+  padding: 0;
+  border-top: 1px solid var(--global-divider-color);
+  background: none;
+  opacity: 1;
+}
+
+/* Category blocks: section titles like a journal, no cards */
+html.latex-embed .quotes-section {
+  margin: 2.75rem 0 3.25rem;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+}
+html.latex-embed .quotes-section::before {
+  display: none;
+}
+html.latex-embed .quotes-section:first-of-type {
+  margin-top: 0;
+}
+
+html.latex-embed .quotes-section-header {
+  margin: 0 0 0.5rem;
+  padding: 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--global-text-color-light);
+  border: none;
+  text-shadow: none;
+}
+html.latex-embed .quotes-section-header::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 1px;
+  margin-top: 0.55rem;
+  background: var(--global-divider-color);
+}
+
+html.latex-embed .quotes-section-description-inline {
+  margin: 0 0 1.5rem;
+  padding: 0;
+  max-width: 38em;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  font-style: italic;
+  color: var(--global-text-color-light);
+}
+
+html.latex-embed .quotes-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html.latex-embed .quote-item {
+  margin: 0;
+  padding: 1.25rem 0 1.35rem 1rem;
+  border: none;
+  border-radius: 0;
+  border-left: 2px solid rgba(0, 0, 0, 0.07);
+  border-bottom: 1px solid var(--global-divider-color);
+  background: transparent;
+  box-shadow: none;
+  transition: border-left-color 0.18s ease, background 0.18s ease;
+}
+html.latex-embed .quote-item:last-child {
+  border-bottom: none;
+}
+html.latex-embed .quote-item:hover {
+  border-left-color: rgba(0, 0, 0, 0.18);
+  background: rgba(0, 0, 0, 0.015);
+}
+
+html.latex-embed .quote-item .quote-text {
+  margin: 0 0 0.85rem;
+  padding: 0;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--global-text-color);
+  position: relative;
+}
+html.latex-embed .quote-item .quote-text::before, html.latex-embed .quote-item .quote-text::after {
+  display: none;
+}
+
+html.latex-embed .quote-item .quote-author {
+  margin: 0;
+  font-size: 0.86rem;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  color: var(--global-text-color-light);
+  text-align: left;
+}
+html.latex-embed .quote-item .quote-author::before {
+  content: "— ";
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* Section navigator: typographic, unobtrusive */
+html.latex-embed .quotes-nav-panel {
+  position: fixed;
+  right: max(1rem, (100vw - 42em) / 2 - 11rem);
+  top: 6.5rem;
+  width: 9.5rem;
+  max-height: min(42vh, 20rem);
+  overflow-y: auto;
+  z-index: 50;
+  padding: 0;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 2px;
+  opacity: 1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  pointer-events: auto;
+}
+html.latex-embed .quotes-nav-panel > * {
+  max-height: none;
+  overflow: visible;
+  background: transparent;
+}
+html.latex-embed .quotes-nav-panel .quotes-nav-header {
+  padding: 0.45rem 0.65rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--global-text-color-light);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+html.latex-embed .quotes-nav-panel .quotes-nav-items {
+  padding: 0.2rem 0;
+}
+html.latex-embed .quotes-nav-panel .quotes-nav-item {
+  display: block;
+  padding: 0.35rem 0.65rem 0.35rem 0.75rem;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  color: var(--global-text-color-light);
+  text-decoration: none;
+  border: none;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+html.latex-embed .quotes-nav-panel .quotes-nav-item:hover {
+  color: var(--global-text-color);
+  background: rgba(0, 0, 0, 0.03);
+}
+html.latex-embed .quotes-nav-panel .quotes-nav-item.active {
+  color: var(--global-text-color);
+  background: rgba(0, 0, 0, 0.04);
+  font-weight: 600;
+}
+html.latex-embed .quotes-nav-panel .quotes-nav-item.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--global-text-color-light);
+}
+
+html.latex-embed .quotes-nav-item {
+  position: relative;
+}
+
+@media (max-width: 56rem) {
+  html.latex-embed .quotes-nav-panel {
+    display: none;
+  }
+}
+/*******************************************************************************
+ * Marker-style link highlights (latex_marker_links.js decorates in-page links)
+ ******************************************************************************/
+@keyframes latex-marker-wriggle {
+  0%, 100% {
+    transform: rotate(-0.55deg) skewX(-0.35deg) translateY(0.4px);
+    filter: brightness(0.97) saturate(1.05);
+  }
+  22% {
+    transform: rotate(0.4deg) skewX(0.4deg) translateY(-0.35px);
+    filter: brightness(0.96) saturate(1.06);
+  }
+  48% {
+    transform: rotate(-0.3deg) skewX(0.15deg) translateY(0.25px);
+    filter: brightness(0.98) saturate(1.04);
+  }
+  72% {
+    transform: rotate(0.5deg) skewX(-0.3deg) translateY(-0.2px);
+    filter: brightness(0.97) saturate(1.05);
+  }
+}
+/* All layouts (Bootstrap / distill / etc.): theme keeps normal link color unless overridden below */
+a.latex-marker-link {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  transform-origin: 50% 72%;
+  text-decoration: none !important;
+  text-underline-offset: unset !important;
+  background-image: linear-gradient(to bottom, transparent var(--marker-top-stop, 8%), var(--marker-color, rgba(238, 215, 120, 0.55)) var(--marker-top-stop, 8%), var(--marker-color, rgba(238, 215, 120, 0.55)) var(--marker-bot-stop, 90%), transparent var(--marker-bot-stop, 90%));
+  background-repeat: repeat-x;
+  background-size: 100% 100%;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: var(--marker-pad-y, 0.06em) var(--marker-pad-x, 0.12em);
+  margin: 0 calc(-1 * var(--marker-pad-x, 0.12em));
+  border-radius: var(--marker-br1, 40%) var(--marker-br2, 55%) var(--marker-br3, 48%) var(--marker-br4, 62%)/var(--marker-br5, 52%) var(--marker-br6, 44%) var(--marker-br7, 58%) var(--marker-br8, 50%);
+  transition: filter 0.15s ease, opacity 0.15s ease, transform 0.2s ease;
+}
+
+a.latex-marker-link:hover {
+  animation: latex-marker-wriggle 3.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a.latex-marker-link {
+    transition: filter 0.15s ease, opacity 0.15s ease;
+  }
+  a.latex-marker-link:hover {
+    animation: none;
+    transform: none;
+    filter: brightness(0.97) saturate(1.05);
+  }
+}
+a.latex-marker-link:focus-visible {
+  outline: 2px solid rgba(0, 0, 0, 0.35);
+  outline-offset: 2px;
+}
+
+/* LaTeX document surfaces: prose-colored links */
+html.latex-single .latex-left-content a.latex-marker-link,
+html.latex-single .latex-default-panel a.latex-marker-link,
+html.latex-embed .latex-embed-content a.latex-marker-link {
+  color: inherit;
+}
+
+html.latex-embed .latex-embed-content a.latex-marker-link:hover {
+  color: var(--global-text-color);
+}
+
+html.latex-single .latex-left-content a.latex-marker-link:hover,
+html.latex-single .latex-default-panel a.latex-marker-link:hover {
+  color: var(--global-hover-color);
+}
+
+html.latex-single .latex-left-content a.latex-marker-link:focus-visible,
+html.latex-single .latex-default-panel a.latex-marker-link:focus-visible,
+html.latex-embed .latex-embed-content a.latex-marker-link:focus-visible {
+  outline-color: var(--global-text-color-light);
+}
+
+figure.highlight {
+  margin: 0 0 1rem;
+}
+
+pre {
+  color: var(--global-theme-color);
+  background-color: var(--global-code-bg-color);
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+pre pre,
+pre code {
+  background-color: transparent;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+code {
+  color: var(--global-theme-color);
+  background-color: var(--global-code-bg-color);
+  border-radius: 3px;
+  padding: 3px 3px;
+}
+
+/*# sourceMappingURL=latex.css.map */
