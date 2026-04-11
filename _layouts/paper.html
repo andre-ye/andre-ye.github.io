@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andre Ye</title>
+  <meta name="description" content="Andre Ye — MIT EECS PhD student working on human-AI interaction and AI for philosophy.">
+  <meta property="og:title" content="Andre Ye">
+  <meta property="og:description" content="MIT EECS PhD student working on human-AI interaction and AI for philosophy. NSF GRFP and PD Soros Fellow.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Andre Ye">
+  <meta name="twitter:description" content="MIT EECS PhD student working on human-AI interaction and AI for philosophy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --paper-pad-x: 4.2rem;
+      --paper-bg: #fdfaf4;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+      font-size: 17px;
+      line-height: 1.7;
+      background: #2a1040; /* fallback while canvas loads */
+    }
+
+    /* ─── Paper wrapper ─── */
+    .paper-outer {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 5rem 0 6rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* Relative container so canvas can bleed beyond bounds */
+    #paper-host {
+      position: relative;
+    }
+
+    /* Canvas painted behind content — JS sizes and positions it */
+    #paper-canvas {
+      position: absolute;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Content sits above canvas.
+       Background is solid so text is always readable.
+       Canvas adds physics-driven edge bowing, corner curls, and shadow
+       in the BLEED zone outside this div's bounds. */
+    .paper-sheet {
+      position: relative;
+      z-index: 1;
+      background: var(--paper-bg);
+      padding: 3.8rem var(--paper-pad-x);
+      /* Static shadow as fallback (canvas shadow extends outside bounds) */
+      box-shadow:
+        0 2px 6px rgba(0,0,0,0.07),
+        0 8px 24px rgba(0,0,0,0.09),
+        0 24px 64px rgba(0,0,0,0.08);
+    }
+
+    /* ─── Typography ─── */
+    .paper-sheet h1 {
+      font-size: 2.1rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      margin-bottom: 1.4rem;
+      color: #1a1208;
+    }
+
+    .paper-sheet h2 {
+      font-size: 1.18rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      color: #2a1a08;
+      margin-bottom: 0.2rem;
+    }
+
+    .paper-sheet h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #3a2210;
+      margin: 1.4rem 0 0.5rem;
+    }
+
+    .paper-sheet p {
+      color: #2d1e0e;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .paper-sheet a {
+      color: #7a3518;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    .paper-sheet a:hover {
+      color: #b04010;
+    }
+
+    .paper-sheet strong {
+      font-weight: 600;
+    }
+
+    .paper-sheet code {
+      font-family: 'Courier New', monospace;
+      font-size: 0.88em;
+      background: rgba(0,0,0,0.05);
+      padding: 0.1em 0.35em;
+      border-radius: 2px;
+    }
+
+    /* ─── Hero ─── */
+    .paper-hero {
+      margin-bottom: 2.2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+    }
+
+    .paper-hero-name {
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: #1a1208;
+      margin-bottom: 0.1rem;
+      line-height: 1.1;
+    }
+
+    .paper-hero-sub {
+      font-size: 0.95rem;
+      color: #7a5a30;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+
+    .paper-hero-bio {
+      font-size: 1.0rem;
+      color: #2d1e0e;
+      line-height: 1.75;
+      margin-bottom: 1.2rem;
+    }
+
+    .paper-hero-bio p { margin-bottom: 0.8rem; }
+
+    .paper-contact {
+      font-size: 0.92rem;
+      color: #5a3a18;
+      margin-top: 1.2rem;
+    }
+
+    .paper-social {
+      display: flex;
+      gap: 1.2rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .paper-social a {
+      font-size: 0.88rem;
+      color: #7a4520;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(122,69,32,0.3);
+      padding-bottom: 1px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .paper-social a:hover {
+      color: #c04818;
+      border-color: #c04818;
+    }
+
+    /* ─── Fold Sections ─── */
+    .fold-section {
+      margin-bottom: 0.2rem;
+    }
+
+    .fold-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 0;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      position: relative;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .fold-header:hover .fold-title {
+      color: #7a3518;
+    }
+
+    .fold-title {
+      font-size: 1.12rem;
+      font-weight: 600;
+      color: #2a1a08;
+      letter-spacing: 0.01em;
+      transition: color 0.2s;
+    }
+
+    .fold-right {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .fold-arrow {
+      font-size: 0.75rem;
+      color: #9a6a40;
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      display: inline-block;
+    }
+
+    .fold-section.open .fold-arrow {
+      transform: rotate(180deg);
+    }
+
+    /* Dog-ear corner indicator */
+    .fold-corner {
+      width: 18px;
+      height: 18px;
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .fold-corner::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 18px 18px 0 0;
+      border-color: rgba(180, 90, 30, 0.20) transparent transparent transparent;
+      transition: border-width 0.3s ease, opacity 0.3s;
+    }
+
+    .fold-section.open .fold-corner::before {
+      border-width: 0;
+      opacity: 0;
+    }
+
+    /* Body with smooth height animation */
+    .fold-body {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .fold-section.open .fold-body {
+      grid-template-rows: 1fr;
+    }
+
+    .fold-body-inner {
+      overflow: hidden;
+    }
+
+    .fold-content {
+      padding: 1.4rem 0 1rem;
+    }
+
+    /* ─── CV Styles ─── */
+    .cv-section { margin-bottom: 1.8rem; }
+    .cv-section h2 { margin-bottom: 0.8rem; }
+
+    .timeline { margin-left: 0; }
+    .timeline-item { display: flex; gap: 1.2rem; margin-bottom: 0.6rem; }
+    .timeline-year { font-size: 0.88rem; color: #6a4018; min-width: 36px; padding-top: 0.15rem; font-style: italic; }
+    .timeline-content { font-size: 0.93rem; color: #2d1e0e; line-height: 1.6; }
+
+    .teaching-item, .service-item { margin-bottom: 1rem; }
+    .item-title { font-weight: 600; font-size: 0.93rem; color: #2a1a08; }
+    .item-institution { font-size: 0.88rem; color: #6a4a20; font-style: italic; }
+    .item-details { font-size: 0.88rem; color: #4a3010; margin-top: 0.2rem; }
+
+    .cv-links { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1rem 0; }
+    .cv-link-btn {
+      font-size: 0.85rem;
+      padding: 0.3rem 0.8rem;
+      border: 1px solid rgba(120,60,20,0.3);
+      color: #7a3518;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: background 0.2s, border-color 0.2s;
+      font-family: inherit;
+    }
+    .cv-link-btn:hover {
+      background: rgba(120,60,20,0.06);
+      border-color: rgba(120,60,20,0.5);
+      color: #7a3518;
+    }
+
+    .news-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      margin-bottom: 0.9rem;
+      font-size: 0.9rem;
+    }
+    .news-item-text { flex: 1; }
+    .news-title-text { font-weight: 500; color: #2a1a08; }
+    .news-venue { font-size: 0.83rem; color: #7a5a30; font-style: italic; }
+
+    /* ─── Papers List ─── */
+    .paper-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .paper-list li {
+      margin-bottom: 1.2rem;
+      padding-bottom: 1.1rem;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      font-size: 0.92rem;
+    }
+
+    .paper-list li:last-child { border-bottom: none; }
+
+    .paper-item-title {
+      font-weight: 600;
+      color: #2a1a08;
+      margin-bottom: 0.2rem;
+    }
+
+    .paper-item-title a {
+      color: #2a1a08;
+      text-decoration: none;
+    }
+
+    .paper-item-title a:hover {
+      color: #7a3518;
+      text-decoration: underline;
+    }
+
+    .paper-item-authors { color: #5a3a18; font-size: 0.86rem; margin-bottom: 0.15rem; }
+    .paper-item-venue { color: #8a6040; font-size: 0.84rem; font-style: italic; }
+    .paper-item-award { font-size: 0.82rem; color: #7a3518; margin-top: 0.2rem; }
+
+    .paper-item-links { font-size: 0.83rem; margin-top: 0.3rem; }
+    .paper-item-links a { margin-right: 0.8rem; color: #7a3518; }
+
+    .subsection-header {
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #9a6a40;
+      margin: 1.4rem 0 0.7rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    /* ─── Quotes ─── */
+    .quotes-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .quote-item {
+      margin-bottom: 1.4rem;
+      padding-bottom: 1.2rem;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .quote-item:last-child { border-bottom: none; }
+
+    .quote-text {
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #2d1e0e;
+      line-height: 1.7;
+      margin-bottom: 0.35rem;
+    }
+
+    .quote-author {
+      font-size: 0.83rem;
+      color: #8a6040;
+    }
+
+    /* ─── Articles ─── */
+    .articles-category { margin-bottom: 1.8rem; }
+
+    .articles-category-title {
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #9a6a40;
+      margin-bottom: 0.7rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .article-item {
+      margin-bottom: 0.9rem;
+      font-size: 0.91rem;
+      line-height: 1.5;
+    }
+
+    .article-item-title a {
+      font-weight: 500;
+      color: #2a1a08;
+      text-decoration: none;
+    }
+
+    .article-item-title a:hover {
+      color: #7a3518;
+      text-decoration: underline;
+    }
+
+    .article-item-meta {
+      font-size: 0.83rem;
+      color: #8a6040;
+    }
+
+    .article-item-commentary {
+      font-size: 0.85rem;
+      color: #5a3a18;
+      font-style: italic;
+      margin-top: 0.15rem;
+    }
+
+    /* ─── Agenda ─── */
+    .agenda-item {
+      margin-bottom: 1.8rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .agenda-item:last-child { border-bottom: none; }
+
+    .agenda-item h3 {
+      font-size: 1.0rem;
+      font-weight: 600;
+      color: #2a1a08;
+      margin-bottom: 0.5rem;
+      margin-top: 0;
+    }
+
+    .agenda-item p {
+      font-size: 0.92rem;
+      color: #3a2210;
+      line-height: 1.7;
+      margin-bottom: 0.6rem;
+    }
+
+    /* ─── Loading state ─── */
+    .loading-text {
+      color: #6a4820;
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+
+    /* ─── Sticky note background ─── */
+    #bg-canvas-wrapper {
+      position: fixed;
+      inset: 0;
+      pointer-events: auto;
+      z-index: 0;
+    }
+    #bg-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: auto;
+    }
+
+    /* ─── Falling paper scraps ─── */
+
+    #paper-scraps-canvas,
+    #paper-scraps-front-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    #paper-scraps-canvas       { z-index: 5;  }
+    #paper-scraps-front-canvas { z-index: 15; }
+
+    @media (max-width: 1060px) {
+      #paper-scraps-canvas,
+      #paper-scraps-front-canvas { display: none; }
+    }
+
+    /* ─── Name row ─── */
+    .name-row {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+      margin-bottom: 3rem;
+    }
+
+    .name-email {
+      font-size: 0.82rem;
+      color: #6a4820;
+      margin-top: 0.1rem;
+    }
+
+    .paper-hero-name {
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: #1a1208;
+      line-height: 1.1;
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Brush highlight on name — multiple strokes injected by JS */
+    .name-brush {
+      position: absolute;
+      left: -0.22em;
+      right: -0.22em;
+      mix-blend-mode: multiply;
+      pointer-events: none;
+      /* filter is set per-stroke in JS (brush-main / brush-wide / brush-dry) */
+    }
+
+    /* ─── Underlined single letter ─── */
+    .letter-u {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      font-style: inherit;
+    }
+
+    /* ─── Rip buttons ─── */
+    .rip-btn {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      color: #5a2a0a;
+      transition: color 0.18s;
+      display: inline;
+      position: relative;
+      z-index: 3;
+      /* Allow wrapping across lines like a regular link */
+      white-space: normal;
+      word-break: normal;
+      overflow-wrap: normal;
+      -webkit-tap-highlight-color: transparent;
+    }
+    /* Suppress the default focus outline (blue flash on click).
+     * :focus-visible keeps the amber outline for keyboard users. */
+    .rip-btn:focus { outline: none; }
+    .rip-btn::before { content: '\5B\5B'; color: #7a4a18; font-style: normal; }
+    .rip-btn::after  { content: '\5D\5D'; color: #7a4a18; font-style: normal; }
+    .rip-btn:hover   { color: #3a1800; }
+    .rip-btn.active {
+      color: #3a1800;
+      transform: translateY(1px);
+      filter: brightness(0.88);
+    }
+    .rip-btn.active::before,
+    .rip-btn.active::after { color: #6a3a10; }
+
+    /* Focus-visible styles — warm amber ring, on-theme */
+    .rip-btn:focus-visible { outline: 2px dotted #b08040; outline-offset: 2px; }
+    .rip-glue-btn:focus-visible { outline: 2px dotted #b08040; outline-offset: 3px; border-radius: 50%; }
+    .rip-link-btn:focus-visible { outline: 2px dotted #b08040; outline-offset: 2px; }
+
+    /* Brush highlight span — injected by JS.
+     * filter, left, right, top, bottom, border-radius are all set per-stroke
+     * in paper_page.js so that each layer has a genuinely distinct brush shape. */
+    .rip-brush {
+      position: absolute;
+      background: var(--brush-col, #c8bfae);
+      mix-blend-mode: multiply;
+      pointer-events: none;
+      transition: background 0.2s;
+    }
+    /* .rip-btn brushes are now paragraph-anchored (siblings of the button,
+     * not children), so hover state is toggled via JS in initRipButtons.
+     * The .brushed-text and .paper-hero-name spans still use child brushes
+     * — for those, the descendant selector still applies. */
+    .brushed-text:hover .rip-brush,
+    .rip-brush.hover {
+      background: var(--brush-hover-col, #b0a898);
+    }
+    /* Paragraph-anchored brush spans sit BEHIND the button text and bracket
+     * pseudo-elements (z-index 3 via .rip-btn) — see stacking notes in JS. */
+    .rip-brush-anchored {
+      z-index: 2;
+    }
+
+    /* Inline brushed text (non-interactive) */
+    .brushed-text {
+      position: relative;
+      display: inline;
+    }
+
+    /* Glue/link icons — sticky at the top of the panel content, but
+     * reserving ZERO vertical layout space. Trick: the wrap is
+     * position:sticky with height:0, so it stays in normal flow (required
+     * for sticky to work) but takes no vertical room. The icons inside are
+     * absolutely positioned and overflow the 0-height wrap, appearing at
+     * the top-right of the visible scroll area. As the user scrolls, the
+     * sticky wrap (and its overflowing children) follow the visible top. */
+    .rip-glue-wrap {
+      position: sticky;
+      top: 0.4rem;
+      height: 0;
+      margin: 0;
+      padding: 0;
+      z-index: 4;
+      pointer-events: none;
+    }
+    .rip-glue-wrap > .rip-glue-btn,
+    .rip-glue-wrap > .rip-link-btn {
+      position: absolute;
+      top: 0;
+      right: 0.6rem;
+      pointer-events: auto;
+    }
+    .rip-glue-wrap > .rip-link-btn {
+      right: 2.6rem;
+    }
+    .rip-glue-btn {
+      pointer-events: all;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      opacity: 1;
+      transition: transform 0.18s;
+      display: block;
+      line-height: 1;
+      min-width: 28px;
+      min-height: 28px;
+    }
+    .rip-glue-btn:hover { transform: scale(1.12); }
+
+    /* Persistent tear — lives as a sibling before the panel, always present
+       after the first rip. Same positioning strategy as .rip-sweep-line so
+       sweep → persistent tear transition is pixel-identical.
+       top:-13px shifts rendering 13px up: the SVG spans from 13px above the
+       paragraph boundary to 13px below it, with the tear line (at y=13
+       inside the 26px SVG) landing exactly at the boundary. Half the SVG is
+       in trigger p's bottom margin (safe), half is in next p's top margin or
+       the panel's top padding (also safe). NO text overlap in any state. */
+    .rip-persistent-tear {
+      overflow: visible;
+      pointer-events: none;
+      height: 0;
+      position: relative;
+      top: -22px;
+      margin: 0;
+      padding: 0;
+      margin-left: calc(-1 * var(--paper-pad-x));
+      margin-right: calc(-1 * var(--paper-pad-x));
+      z-index: 1;
+    }
+
+    /* Legacy: keep .rip-glued-line as an alias in case anything references it */
+    .rip-glued-line {
+      overflow: visible;
+      pointer-events: none;
+      height: 0;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      margin-left: calc(-1 * var(--paper-pad-x));
+      margin-right: calc(-1 * var(--paper-pad-x));
+    }
+    /* Seal animation div — same geometry as sweep, used during gluing */
+    .rip-seal-line {
+      overflow: visible;
+      pointer-events: none;
+      height: 0;
+      position: relative;
+      z-index: 5;
+      margin: 0;
+      padding: 0;
+      margin-left: calc(-1 * var(--paper-pad-x));
+      margin-right: calc(-1 * var(--paper-pad-x));
+    }
+
+    /* Tear sweep container — injected by JS before panel opens.
+     * height:0 so it takes no layout space. SVG overflows via overflow:visible.
+     * top:-13px shifts the rendering so the tear line (at y=13 inside the
+     * 26px SVG) lands EXACTLY at the paragraph boundary. This means the tear
+     * sits half-above (in trigger p's bottom margin) and half-below (in next
+     * p's top margin or the panel's top padding). No text overlap ever. */
+    .rip-sweep-line {
+      overflow: visible;
+      pointer-events: none;
+      height: 0;
+      position: relative;
+      top: -22px;
+      z-index: 1;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      z-index: 5;
+      margin-left: calc(-1 * var(--paper-pad-x));
+      margin-right: calc(-1 * var(--paper-pad-x));
+    }
+
+    /* ─── Rip panels ─── */
+    .rip-panel {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.52s cubic-bezier(0.4, 0, 0.2, 1);
+      margin-left: calc(-1 * var(--paper-pad-x));
+      margin-right: calc(-1 * var(--paper-pad-x));
+      position: relative;
+      z-index: 0;
+    }
+    /* When the panel is open (or closing), extend the cream content background
+     * ~13px ABOVE the panel's actual top edge. This meets the tear line (which
+     * is shifted up 22px via top:-22) with no gap of page color between the
+     * tear and the cream. The tear's transparent area below the tear line
+     * reveals this cream strip through the SVG overflow.
+     * The `.closing` class keeps the strip visible throughout the close
+     * animation — otherwise the cream would vanish instantly on click while
+     * the panel is still collapsing, leaving the tear floating awkwardly. */
+    .rip-panel.open::before,
+    .rip-panel.closing::before {
+      content: '';
+      position: absolute;
+      top: -13px;
+      left: 0;
+      right: 0;
+      height: 13px;
+      background: #f3ede0;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .rip-panel.open {
+      grid-template-rows: 1fr;
+    }
+    .rip-panel-inner {
+      overflow: hidden;
+    }
+
+    .rip-edge {
+      display: block;
+      width: 100%;
+      line-height: 0;
+      position: relative;
+      z-index: 2;
+    }
+    /* .rip-edge-top is no longer used — the persistent tear replaces it.
+       Hide it entirely so it doesn't affect layout. */
+    .rip-edge-top  { display: none; }
+    .rip-edge-bottom { margin-top: -14px; }
+
+    .rip-panel-content {
+      background: #f3ede0;
+      padding: 1.6rem var(--paper-pad-x) 1.4rem;
+      position: relative;
+      z-index: 1;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+
+    .rip-panel-content::after {
+      content: '';
+      position: sticky;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2rem;
+      display: block;
+      background: linear-gradient(to bottom, transparent, #f3ede0);
+      pointer-events: none;
+      margin-top: -2rem;
+    }
+
+    /* Cast shadows from torn paper pieces onto content below/above.
+       drop-shadow respects the actual SVG alpha shape (not just the bounding box). */
+    .rip-edge-top {
+      filter:
+        drop-shadow(0  4px  8px rgba(12,5,1,0.18))
+        drop-shadow(0  8px 18px rgba(12,5,1,0.10));
+    }
+    .rip-edge-bottom {
+      filter:
+        drop-shadow(0 -3px  7px rgba(12,5,1,0.10))
+        drop-shadow(0 -6px 14px rgba(12,5,1,0.06));
+    }
+
+    /* Ensure paragraphs inside panels have correct spacing */
+    .rip-panel-content p { margin-bottom: 0.85rem; }
+    .rip-panel-content p:last-child { margin-bottom: 0; }
+    .rip-panel-content a { color: #7a3518; }
+    .rip-panel-content a:hover { color: #b04010; }
+
+    /* Header at the top of every opened panel, repeating the trigger button's text
+     * with the same brush-highlight treatment so readers know which button opened it. */
+    .rip-panel-header {
+      margin-bottom: 1rem;
+      padding-bottom: 0.7rem;
+      border-bottom: 1px solid rgba(120,70,20,0.12);
+    }
+    .rip-panel-header-text {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #5a2a0a;
+      letter-spacing: 0.01em;
+      position: relative;
+      display: inline;
+    }
+
+    /* Link-copy button — full brightness, sized to match the wax-seal glue
+     * button so they read as a pair in the top-right corner of panels. */
+    .rip-link-btn {
+      display: block;
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      opacity: 1;
+      transition: transform 0.18s;
+      line-height: 1;
+      min-width: 28px;
+      min-height: 28px;
+    }
+    .rip-link-btn:hover { transform: scale(1.12); }
+    .rip-link-btn svg { display: block; }
+
+    /* "Link copied" toast */
+    .rip-toast {
+      position: fixed;
+      bottom: 1.4rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      background: rgba(40,20,5,0.88);
+      color: #f5ead8;
+      font-size: 0.8rem;
+      padding: 0.45rem 1rem;
+      border-radius: 4px;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.18s, transform 0.18s;
+      z-index: 9999;
+      white-space: nowrap;
+    }
+    .rip-toast.visible {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* Floating TOC (quotes + articles panels) */
+    .rip-panel-toc {
+      float: right;
+      clear: right;
+      margin: 0 0 0.8rem 1.2rem;
+      background: rgba(243,237,224,0.92);
+      border: 1px solid rgba(120,70,20,0.18);
+      border-radius: 4px;
+      padding: 0.55rem 0.75rem 0.6rem;
+      font-size: 0.78rem;
+      box-shadow: 0 1px 6px rgba(30,10,2,0.10);
+      max-width: 9rem;
+      line-height: 1.55;
+    }
+    .rip-panel-toc-label {
+      font-weight: 600;
+      color: #5a3a18;
+      margin-bottom: 0.3rem;
+      font-size: 0.76rem;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    .rip-panel-toc-link {
+      display: block;
+      color: #7a3518;
+      text-decoration: none;
+      padding: 0.08rem 0;
+      font-size: 0.77rem;
+      opacity: 0.8;
+      transition: opacity 0.12s;
+    }
+    .rip-panel-toc-link:hover { opacity: 1; text-decoration: underline; }
+
+    /* Quotes categories */
+    .quotes-category { margin-bottom: 1.6rem; }
+    .quotes-category-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #2a1a08;
+      margin-bottom: 0.25rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid rgba(120,70,20,0.15);
+    }
+    .quotes-category-desc {
+      font-size: 0.81rem;
+      color: #7a5a30;
+      font-style: italic;
+      margin-bottom: 0.6rem;
+      line-height: 1.5;
+    }
+    .quotes-category-list { list-style: none; padding: 0; margin: 0; }
+    .quotes-category-list .quote-item { margin-bottom: 0.8rem; }
+
+    /* (Buttons inside .rip-glue-wrap get position:absolute via the
+     * sticky-zero-height pattern declared above. Don't override here.) */
+
+    /* Rip paper item (for papers inside rip panels) */
+    .rip-paper-item { font-size: 0.92rem; }
+    .rip-paper-title { font-weight: 600; color: #2a1a08; margin-bottom: 0.2rem; }
+    .rip-paper-title a { color: #2a1a08; text-decoration: none; }
+    .rip-paper-title a:hover { color: #7a3518; text-decoration: underline; }
+    .rip-paper-authors { color: #5a3a18; font-size: 0.86rem; margin-bottom: 0.1rem; }
+    .rip-paper-venue { color: #8a6040; font-size: 0.84rem; font-style: italic; margin-bottom: 0.1rem; }
+    .rip-paper-links { font-size: 0.83rem; margin-top: 0.35rem; }
+    .rip-paper-links a { color: #7a3518; margin-right: 0.8rem; }
+
+    /* ─── Corner media (pfp + video) ─── */
+    #corner-media {
+      position: absolute;
+      top: 1.6rem;
+      right: 1.6rem;
+      display: flex;
+      align-items: stretch;
+      gap: 0.45rem;
+      height: 120px;
+      z-index: 5;
+    }
+    .corner-media-item {
+      position: relative;
+      height: 100%;
+    }
+    #corner-pfp,
+    #corner-video {
+      height: 100%;
+      width: auto;
+      display: block;
+      object-fit: cover;
+    }
+    /* Hover caption: appears at the bottom of the image, no dimming.
+     * Sits OUTSIDE the image box so the image itself stays at full opacity. */
+    .corner-media-caption {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin-top: 0.35rem;
+      font-size: 0.75rem;
+      color: #5a3a18;
+      font-style: italic;
+      line-height: 1.3;
+      text-align: right;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.18s;
+      z-index: 6;
+    }
+    .corner-media-caption a {
+      color: #7a3518;
+      text-decoration: underline;
+      pointer-events: auto;
+    }
+    .corner-media-caption a:hover { color: #b04010; }
+    .corner-media-item:hover .corner-media-caption {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 740px) {
+      :root { --paper-pad-x: 2rem; }
+      .paper-outer {
+        padding: 2rem 0.8rem 3rem;
+        padding-left: max(0.8rem, env(safe-area-inset-left));
+        padding-right: max(0.8rem, env(safe-area-inset-right));
+        padding-top: max(2rem, env(safe-area-inset-top));
+        padding-bottom: max(3rem, env(safe-area-inset-bottom));
+      }
+      .paper-sheet { padding: 2.4rem var(--paper-pad-x); }
+      .paper-hero-name { font-size: 1.9rem; }
+      .rip-btn { padding: 0.3em 0.45em; line-height: 1.75; }
+      .rip-glue-btn { min-width: 36px; min-height: 36px; }
+      .rip-link-btn { min-width: 36px; min-height: 36px; }
+      .rip-panel-toc {
+        float: none;
+        max-width: none;
+        margin: 0 0 1rem 0;
+      }
+      .rip-panel-content {
+        font-size: 0.96rem;
+        max-height: 70vh;               /* fallback for older browsers */
+        max-height: min(70vh, 70svh);   /* iOS URL-bar safe */
+        scroll-margin-top: 1rem;
+      }
+      #bg-canvas-wrapper,
+      #paper-canvas { display: none; }
+      .corner-media-item--video { display: none; }
+      #corner-media {
+        top: 0.9rem;
+        right: 0.9rem;
+        height: 72px;
+      }
+      .corner-media-caption { display: none; }
+    }
+
+    @media (max-width: 420px) {
+      :root { --paper-pad-x: 1.5rem; }
+      /* Use longhand padding with safe-area insets — a shorthand `padding`
+       * here would wipe out the safe-area-inset-* overrides set in the
+       * 740px block, which matters most on notched iPhones (390/375px). */
+      .paper-outer {
+        padding-top: max(1.4rem, env(safe-area-inset-top));
+        padding-right: max(0.4rem, env(safe-area-inset-right));
+        padding-bottom: max(2rem, env(safe-area-inset-bottom));
+        padding-left: max(0.4rem, env(safe-area-inset-left));
+      }
+      .paper-sheet { padding: 1.8rem var(--paper-pad-x); }
+      .paper-hero-name { font-size: 1.7rem; }
+      #corner-media { height: 60px; top: 0.7rem; right: 0.7rem; }
+    }
+
+    @media (hover: none) {
+      .rip-btn:hover { color: inherit; }
+      .rip-btn:hover .rip-brush { background: var(--brush-col, #c8bfae); }
+      .rip-glue-btn:hover { transform: none; }
+      .rip-link-btn:hover { transform: none; }
+      .corner-media-item:hover .corner-media-caption { opacity: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      .rip-panel { transition: none !important; }
+      .rip-panel-inner { transition: none !important; }
+      #paper-scraps-canvas, #paper-scraps-front-canvas { display: none !important; }
+      #corner-video { display: none !important; }
+      #bg-canvas-wrapper { display: none !important; }
+      html { scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+<body>
+  <!-- SVG filters for brush-highlight roughness -->
+  <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+    <defs>
+      <!-- Button / inline brush highlight (subtle) -->
+      <filter id="rough-highlight" x="-12%" y="-70%" width="124%" height="240%" color-interpolation-filters="sRGB">
+        <feTurbulence type="turbulence" baseFrequency="0.006 0.20" numOctaves="4" seed="6" result="warp"/>
+        <feDisplacementMap in="SourceGraphic" in2="warp" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+      <!-- Soft Gaussian blur for the diffuse shadow under torn paper edges.
+           Wide bbox so the blur isn't clipped at the edges. -->
+      <filter id="tear-shadow-soft" x="-50%" y="-200%" width="200%" height="500%" color-interpolation-filters="sRGB">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="2.4"/>
+      </filter>
+      <!-- Brush filters — three distinct displacement profiles, one per stroke layer -->
+      <!-- Main: mid-weight centre mark, fractal noise, moderate displacement -->
+      <filter id="brush-main" x="-4%" y="-80%" width="108%" height="260%" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency="0.022 0.10" numOctaves="3" seed="23" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+      <!-- Wide smear: low frequency → long sweeping distortions, like a wide flat brush -->
+      <filter id="brush-wide" x="-5%" y="-90%" width="110%" height="280%" color-interpolation-filters="sRGB">
+        <feTurbulence type="turbulence" baseFrequency="0.009 0.048" numOctaves="3" seed="57" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+      <!-- Dry brush: high frequency → tight hairy edges, split-bristle texture -->
+      <filter id="brush-dry" x="-4%" y="-100%" width="108%" height="300%" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency="0.065 0.24" numOctaves="3" seed="81" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+      <!-- Legacy alias used by name-brush spans -->
+      <filter id="name-brush-filter" x="-10%" y="-80%" width="120%" height="260%" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency="0.022 0.10" numOctaves="5" seed="23" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="13" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+  <div id="bg-canvas-wrapper"><canvas id="bg-canvas" aria-hidden="true"></canvas></div>
+  <canvas id="paper-scraps-canvas" aria-hidden="true"></canvas>
+  <canvas id="paper-scraps-front-canvas" aria-hidden="true"></canvas>
+
+  <div class="paper-outer">
+    <div id="paper-host">
+      <canvas id="paper-canvas" aria-hidden="true"></canvas>
+
+      <div id="corner-media">
+        <div class="corner-media-item">
+          <img id="corner-pfp" src="{{ '/assets/img/pfp.jpg' | relative_url }}" alt="Andre Ye">
+          <div class="corner-media-caption">Taken by my friend <a href="https://www.linkedin.com/in/arunasr/" target="_blank" rel="noopener noreferrer">Aruna Srivastava</a></div>
+        </div>
+        <div class="corner-media-item corner-media-item--video">
+          <video id="corner-video" src="{{ '/assets/gallery/final-video-loop.mp4' | relative_url }}"
+                 autoplay loop muted playsinline></video>
+          <div class="corner-media-caption">Produced by Jayden Becles for <a href="https://www.washington.edu/uaa/undergrad-researcher-questions-the-ai-answer/" target="_blank" rel="noopener noreferrer">this article</a></div>
+        </div>
+      </div>
+      <div class="paper-sheet">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ '/assets/js/paper_page.js' | relative_url }}"></script>
+</body>
+</html>

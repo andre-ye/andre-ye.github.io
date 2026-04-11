@@ -1,5 +1,21 @@
 [
   {
+    "id": "conceptual-multiverse",
+    "title": "Navigating the Conceptual Multiverse",
+    "authors": ["Andre Ye", "Jenny Y. Huang", "Alicia X. Guo", "Rose Novick", "Tamara Broderick", "Mitchell Gordon"],
+    "authors_abbreviated": "Ye, Huang, Guo, Novick, Broderick, Gordon",
+    "conference_full": "In submission",
+    "conference_abbrev": "",
+    "conference_year": 2026,
+    "date": "2026-04-01",
+    "image_url": null,
+    "paper_link": null,
+    "slides_link": null,
+    "poster_link": null,
+    "presentation_link": null,
+    "award": null
+  },
+  {
     "id": "agonistic-image-generation",
     "title": "Agonistic Image Generation: Unsettling the Hegemony of Intention",
     "authors": ["Andrew Shaw*", "Andre Ye*", "Ranjay Krishna", "Amy X. Zhang"],
@@ -26,7 +42,7 @@
     "date": "2025-06-15",
     "image_url": "/assets/thumbnails/linguistic-cultural-variation.png",
     "paper_link": "https://arxiv.org/abs/2310.14356",
-    "slides_link": "https://docs.google.com/presentation/d/10c61-Nep6oZuO1l7jStpekaF1E4vfnpVpXPx-bxpPTg/edit?usp=sharing",
+    "slides_link": null,
     "poster_link": null,
     "presentation_link": "/assets/pdf/RAIVN-presentation-11_28.pdf",
     "award": null
