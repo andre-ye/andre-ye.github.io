@@ -5,6 +5,13 @@
             "description": "These papers stake out general positions and visions which I find compelling or at least useful to think about. (I don't necessarily agree with all the papers below.)",
             "papers": [
                 {
+                    "title": "Why books don't work",
+                    "authors": "Andy Matuschak",
+                    "year": 2019,
+                    "commentary": "",
+                    "link": "https://andymatuschak.org/books/"
+                },
+                {
                     "title": "We Can't Understand AI Using our Existing Vocabulary",
                     "authors": "John Hewitt, Robert Geirhos, Been Kim",
                     "year": 2025,
@@ -461,6 +468,20 @@
                     "year": 2025,
                     "commentary": "A nuanced operationalization of 'situational disempowerment' evaluated on a large corpus of Claude conversations. They also find that users tend to prefer model responses that lead to situational disempowerment -- people seem to like being told what to do, especially when they turn to AI for guidance -- which suggests that preference-based training may skew model behavior towards disempowering users.",
                     "link": "https://arxiv.org/pdf/2601.19062"
+                },
+                {
+                    "title": "What are human values, and how do we align AI to them?",
+                    "authors": "Oliver Klingefjord, Ryan Lowe, Joe Edelman",
+                    "year": 2024,
+                    "commentary": "The best justified and demonstrated system for value elicitation I have seen so far.",
+                    "link": "https://arxiv.org/pdf/2404.10636"
+                },
+                {
+                    "title": "Texterial: A Text-as-Material Interaction Paradigm for LLM-Mediated Writing",
+                    "authors": "Jocelyn Shen, Nicolai Marquardt, Hugo Romat, Ken Hinckley, Nathalie Riche, Fanny Chevalier",
+                    "year": 2026,
+                    "commentary": "",
+                    "link": "https://arxiv.org/pdf/2603.00452"
                 }
             ]
         },
@@ -530,13 +551,6 @@
                     "authors": "Ivan Illich",
                     "year": 1973,
                     "commentary": "An ambitious yet informed vision for what it would mean and cost for us to have *convivial* tools -- tools that we can make and shape our own lives for joy and purpose.",
-                    "link": ""
-                },
-                {
-                    "title": "People need not only to obtain things; they need above all the freedom to make things among which they can live, to give shape to them according to their own tastes, and to put them to use in caring for and about others.",
-                    "authors": "Ivan Illich",
-                    "year": 1973,
-                    "commentary": "",
                     "link": ""
                 },
                 {

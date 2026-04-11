@@ -1,452 +1,1328 @@
 <!DOCTYPE html>
-<html lang="en" class="latex-font">
-
-  <!-- Head -->
-  <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
-    
-
-    <!-- Standard metadata -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Andre  Ye</title>
-    <meta name="author" content="Andre  Ye">
-    <meta name="description" content="Webpage for Andre Ye
-">
-    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
-
-
-    <!-- Bootstrap & MDB -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
-
-    <!-- Bootstrap Table -->
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
-
-    <!-- Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
-
-    <!-- Code Syntax Highlighting -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
-
-    
-
-    <!-- Styles -->
-    
-    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A4%94&lt;/text&gt;&lt;/svg&gt;">
-    
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://andre-ye.github.io/">
-
-    <!-- Dark Mode -->
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
-
-    <script src="/assets/js/theme.js"></script>
-    <script src="/assets/js/dark_mode.js"></script>
-    
-
-    
-
-    
-
-  </head>
-
-  <!-- Body -->
-  <body class="fixed-top-nav " data-baseurl="/">
-
-    <script>
-      window.__baseurl = (document.body && document.body.getAttribute('data-baseurl')) || '';
-      window.getBase = function() { return (window.__baseurl || '').replace(/\/$/, ''); };
-      window.getAssetPath = function(path) {
-        var b = (typeof window.getBase === 'function' ? window.getBase() : '');
-        return (b ? '/' + b : '') + (path.charAt(0) === '/' ? path : '/' + path);
-      };
-    </script>
-    <!-- Skip to main content (visible when focused) -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <!-- Header -->
-    <header>
-
-      <!-- Nav Bar -->
-      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
-        <div class="container">
-          
-          <!-- Navbar Toggle -->
-          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar top-bar"></span>
-            <span class="icon-bar middle-bar"></span>
-            <span class="icon-bar bottom-bar"></span>
-          </button>
-
-          <div class="collapse navbar-collapse text-right" id="navbarNav">
-            <ul class="navbar-nav ml-auto flex-nowrap">
-
-              <!-- About -->
-              <li class="nav-item active">
-                <a class="nav-link" href="/">about<span class="sr-only">(current)</span></a>
-              </li>
-              
-
-              <!-- Other pages -->
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-29" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">work</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown-29">
-                  <a class="dropdown-item" href="/work/agenda/">agenda</a>
-                  <a class="dropdown-item" href="/work/cs/">cs</a>
-                  <a class="dropdown-item" href="/work/philosophy/">philosophy</a>
-                </div>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/cv/">cv</a>
-              </li>
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-34" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">things I like</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown-34">
-                  <a class="dropdown-item" href="/things-i-like/quotes/">quotes</a>
-                  <a class="dropdown-item" href="/things-i-like/articles/">articles</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-35" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">misc</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown-35">
-                  <a class="dropdown-item" href="/misc/history-listed">History, Listed</a>
-                  <a class="dropdown-item" href="/misc/recmath">Recreational Math</a>
-                </div>
-              </li>
-</ul>
-          </div>
-        </div>
-      </nav>
-
-      <!-- Scrolling Progress Bar -->
-      <progress id="progress" value="0" aria-hidden="true">
-        <div class="progress-container">
-          <span class="progress-bar"></span>
-        </div>
-      </progress>
-    </header>
-
-
-    <!-- Content -->
-    <main id="main-content" class="container mt-5">
-      
-        <!-- about.html -->
-      <div class="post">
-        <header class="post-header">
-          <div class="profile profile-above-title">
-
-              <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/pfp-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/pfp-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/pfp-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/pfp.jpg" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="pfp.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-</div>
-          <h1 class="post-title">
-           <span class="name-andre">Andre</span>  <span class="name-ye">Ye</span>
-          </h1>
-          <p class="desc"></p>
-        </header>
-
-        <article>
-
-          <div class="clearfix">
-            <p>I am an MIT EECS PhD student, PD Soros Fellow, and NSF GRFP Fellow working in <strong>human-AI interaction</strong>, advised by <a href="https://mgordon.me/" target="_blank" rel="noopener noreferrer">Mitchell Gordon</a>. I want to build <strong>AI concept tools</strong> that help us <em>define</em>, <em>develop</em>, and <em>collaborate</em> on humanistic concepts (personal, social, ethical, political, scientific, …) in the form of neologisms, metaphors, connections, graphs, and more beyond the chat interface. I have philosophical interests in work that centers the structuring role of concepts in life and thinking, from Deleuze to Foucault to Brandom.</p>
-
-<p>I am currently working on a framework enabling humans to better understand and intervene on the intermediate decisions that LLMs rely on in “solving” complex open-ended tasks (specifically, in philosophy, AI alignment, and poetry). Stay tuned!
-In the past, I have explored <a href="https://arxiv.org/abs/2404.04516" target="_blank" rel="noopener noreferrer">what philosophers think</a> about improving LLMs, how the <a href="https://www.axios.com/2024/02/23/google-gemini-images-stereotypes-controversy" target="_blank" rel="noopener noreferrer">“woke Gemini”</a> controversy could <a href="https://arxiv.org/abs/2502.15242" target="_blank" rel="noopener noreferrer">instruct us in more critical creative practices</a>, and other ideas in <a href="/work/cs/">computer science</a> and <a href="/work/philosophy/">philosophy</a>.
-Find what I’m thinking about for now and the future <a href="/work/agenda/">here</a>.</p>
-
-<p>My email is <code class="language-plaintext highlighter-rouge">andreye [at] mit [dot] edu</code>.</p>
-
-<p><br></p>
-
-<center>
-<img id="random-ai-image" src="" width="100%">
-</center>
-<div style="height: 20px;"></div>
-<p><small>
-  This is a randomly chosen image from <a href="https://betterimagesofai.org/images" target="_blank" rel="noopener noreferrer">Better Images of AI</a>, an excellent project which seeks to supplement and challenge dominant visualization of AI as a Terminator-robot-agent by emphasizing how people, data, labor, resources, and ideas go into making AI.
-</small></p>
-
-<hr class="random-section-divider">
-
-<center>
-<a href="https://info.flagcounter.com/42Y6" rel="external nofollow noopener" target="_blank"><img src="https://s11.flagcounter.com/count2/42Y6/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0" style="display: none;"></a>
-</center>
-
-          </div>
-
-
-          <!-- News -->
-          <div class="about-news-header">
-              <h2 class="about-news-title">news</h2>
-              <a href="/news/" class="bubble-link-small">See all news</a>
-            </div>          <div class="news">
-            <div class="table-responsive" style="max-height: 60vw">
-              <table class="table table-sm table-borderless">
-              
-                <tr>
-                  <th scope="row">Jun 14, 2025</th>
-                  <td>
-                    I’ve officially <a href="https://www.instagram.com/p/DK6Mzcuuy0X/" target="_blank" rel="external nofollow noopener">graduated</a> from the University of Washington with a BS in Computer Science and a BA in Philosophy (Honors).
-I <a href="https://www.instagram.com/p/DK6JxAAOQ-6/" target="_blank" rel="external nofollow noopener">served as the gonfalnier</a> (banner carrier) for the College of Arts and Sciences at UW’s 150th Commencement!
-I also received the CSE Outstanding Graduating Senior award at the Allen School Graduation.
-I’m very excited to start my next chapter this fall at MIT!
-
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Jun 6, 2025</th>
-                  <td>
-                    An <a href="https://www.washington.edu/uaa/undergrad-researcher-questions-the-ai-answer/" target="_blank" rel="external nofollow noopener">article</a> by the Undergraduate Academic Affairs office was written about my work!
-Also: articles on winning the <a href="https://www.washington.edu/uaa/2025/04/09/uw-undergraduate-earns-fellowship-for-graduate-study" target="_blank" rel="external nofollow noopener">PD Soros fellowship</a> and the <a href="https://artsci.washington.edu/news/2025-06/2025-deans-medalists-energized-inspiring" target="_blank" rel="external nofollow noopener">Dean’s Medal</a>
-
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Apr 20, 2025</th>
-                  <td>
-                    Our paper on <a href="https://arxiv.org/abs/2502.15242" target="_blank" rel="external nofollow noopener">Agonistic Image Generation</a> has been accepted to the ACM Conference on Fairness, Accountability, and Transparency (FAccT) 2025! See you in Athens!
-
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Apr 9, 2025</th>
-                  <td>
-                    I am a <a href="https://pdsoros.org/meet-the-class-of-2025/" target="_blank" rel="external nofollow noopener">Paul &amp; Daisy Soros fellow</a>!
-I am very grateful to the Paul &amp; Daisy Soros Fellowships for New Americans for this opportunity.
-This was covered in a <a href="https://www.washington.edu/uaa/2025/04/09/uw-undergraduate-earns-fellowship-for-graduate-study/" target="_blank" rel="external nofollow noopener">UW Undergraduate Affairs</a> news post.
-
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Jun 28, 2024</th>
-                  <td>
-                    My work has been covered in an Allen School <a href="https://news.cs.washington.edu/2024/06/28/for-these-nationally-recognized-allen-school-undergraduates-research-impact-is-its-own-reward/" target="_blank" rel="external nofollow noopener">news post</a>!
-
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </div>
-
-          <hr class="random-section-divider">
-
-          <!-- Social -->
-            <div class="social">
-              <div class="contact-icons">
-                <a href="https://www.linkedin.com/in/andreye" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://medium.com/@andreye" title="Medium" rel="external nofollow noopener" target="_blank"><i class="fab fa-medium"></i></a>
-            <a href="https://instagram.com/andre.ye.0" title="Instagram" rel="external nofollow noopener" target="_blank"><i class="fab fa-instagram"></i></a>
-            
-
-              </div>
-
-              <div class="contact-note">
-                
-              </div>
-
-            </div>
-        </article>
-
-</div>
-
-
-      
-    </main>
-
-    <!-- Fixed Quote Box -->
-    
-    <aside class="fixed-quote-box" aria-label="Random quote">
-      <p id="random-quote" class="quote-text"></p>
-      <p id="random-quote-author" class="quote-author"></p>
-      <p class="quote-source">from <a href="/things-i-like/quotes/">things I like</a></p>
-      <p class="bubble-instructions">press <kbd>e</kbd> to toggle word bubbles<br>press <kbd>m</kbd> to show meaning</p>
-    </aside>
-    
-
-    <!-- Fixed Image Box with Piano (exclude from about page) -->
-    
-
-    
-
-    <!-- Bottom bar for cats -->
-    <div class="cats-bottom-bar"></div>
-
-    <!-- Footer -->    
-    <footer class="fixed-bottom">
-      <div class="container mt-0">
-        © Copyright 2026 Andre  Ye. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="noopener noreferrer" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>. Words from <a href="https://www.thedictionaryofobscuresorrows.com/" target="_blank" rel="noopener noreferrer">Dictionary of Obscure Sorrows</a>.
-Last updated: March 02, 2026.
-        
-      </div>
-    </footer>
-
-    <!-- JavaScripts -->
-    <!-- jQuery -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap & MDB scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
-
-    <script defer src="/assets/js/random_quote.js"></script>
-    <script defer src="/assets/js/nav_panel.js"></script>
-    <script defer src="/assets/js/quotes_nav.js"></script>
-    <!-- Masonry & imagesLoaded -->
-  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
-    
-  <!-- Medium Zoom JS -->
-  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
-  <script defer src="/assets/js/zoom.js"></script>
-
-  <!-- Bootstrap Table -->
-  <script defer src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.js"></script>
-
-  <!-- Load Common JS -->
-  <script src="/assets/js/no_defer.js"></script>
-  <script defer src="/assets/js/common.js"></script>
-  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
-
-    
-  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-  <script async src="https://badge.dimensions.ai/badge.js"></script>
-
-    <!-- MathJax -->
-  <script type="text/javascript">
-    window.MathJax = {
-      tex: {
-        tags: 'ams'
-      }
-    };
-  </script>
-  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
-  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-
-    
-    
-
-<!-- Scrolling Progress Bar -->
-<script type="text/javascript">
-  /*
-   * This JavaScript code has been adapted from the article 
-   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
-   * published on the website https://css-tricks.com on the 7th of May, 2014.
-   * Couple of changes were made to the original code to make it compatible 
-   * with the `al-foio` theme.
-   */
-  const progressBar = $("#progress");
-  /*
-   * We set up the bar after all elements are done loading.
-   * In some cases, if the images in the page are larger than the intended
-   * size they'll have on the page, they'll be resized via CSS to accomodate
-   * the desired size. This mistake, however, breaks the computations as the
-   * scroll size is computed as soon as the elements finish loading.
-   * To account for this, a minimal delay was introduced before computing the
-   * values.
-   */
-  window.onload = function () {
-    setTimeout(progressBarSetup, 50);
-  };
-  /*
-   * We set up the bar according to the browser.
-   * If the browser supports the progress element we use that.
-   * Otherwise, we resize the bar thru CSS styling
-   */
-  function progressBarSetup() {
-    if ("max" in document.createElement("progress")) {
-      initializeProgressElement();
-      $(document).on("scroll", function() {
-        progressBar.attr({ value: getCurrentScrollPosition() });
-      });
-      $(window).on("resize", initializeProgressElement);
-    } else {
-      resizeProgressBar();
-      $(document).on("scroll", resizeProgressBar);
-      $(window).on("resize", resizeProgressBar);
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andre Ye</title>
+  <meta name="description" content="Andre Ye — MIT EECS PhD student working on human-AI interaction and AI for philosophy.">
+  <meta property="og:title" content="Andre Ye">
+  <meta property="og:description" content="MIT EECS PhD student working on human-AI interaction and AI for philosophy. NSF GRFP and PD Soros Fellow.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Andre Ye">
+  <meta name="twitter:description" content="MIT EECS PhD student working on human-AI interaction and AI for philosophy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --paper-pad-x: 4.2rem;
+      --paper-bg: #fdfaf4;
     }
-  }
-  /*
-   * The vertical scroll position is the same as the number of pixels that
-   * are hidden from view above the scrollable area. Thus, a value > 0 is
-   * how much the user has scrolled from the top
-   */
-  function getCurrentScrollPosition() {
-    return $(window).scrollTop();
-  }
 
-  function initializeProgressElement() {
-    let navbarHeight = $("#navbar").outerHeight(true);
-    $("body").css({ "padding-top": navbarHeight });
-    $(".progress-container").css({ "padding-top": navbarHeight });
-    progressBar.css({ top: navbarHeight });
-    progressBar.attr({
-      max: getDistanceToScroll(),
-      value: getCurrentScrollPosition(),
-    });
-  }
-  /*
-   * The offset between the html document height and the browser viewport
-   * height will be greater than zero if vertical scroll is possible.
-   * This is the distance the user can scroll
-   */
-  function getDistanceToScroll() {
-    return $(document).height() - $(window).height();
-  }
+    html {
+      scroll-behavior: smooth;
+    }
 
-  function resizeProgressBar() {
-    progressBar.css({ width: getWidthPercentage() + "%" });
-  }
-  // The scroll ratio equals the percentage to resize the bar
-  function getWidthPercentage() {
-    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
-  }
-</script>
+    body {
+      min-height: 100vh;
+      font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+      font-size: 17px;
+      line-height: 1.7;
+      background: #2a1040; /* fallback while canvas loads */
+    }
 
-    
-    <script src="/assets/js/utils.js"></script>
-    <!-- Hourly AI Image System - loads first to provide synchronized images -->
-    <script src="/assets/js/hourly_ai_image.js"></script>
-    
-    <!-- Random AI Image selector - uses hourly synchronized system -->
-    <script src="/assets/js/random_ai_image.js"></script>
-    
-    <!-- Custom cursor script -->
-    <script src="/assets/js/custom_cursor.js"></script>
-    
-    <!-- Info button script -->
-    <script src="/assets/js/info_button.js"></script>
-    
-    <!-- Weather widget scripts -->
-    <script src="/assets/js/weather_widget.js"></script>
-    
-    <!-- AI Page transitions script -->
-    <script src="/assets/js/ai_page_transitions.js"></script>
+    /* ─── Paper wrapper ─── */
+    .paper-outer {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 5rem 0 6rem;
+      position: relative;
+      z-index: 10;
+    }
 
-    
+    /* Relative container so canvas can bleed beyond bounds */
+    #paper-host {
+      position: relative;
+    }
 
-    <!-- Cats at bottom with paper bubbles -->
-    <script src="/assets/js/cats_at_bottom.js"></script>
+    /* Canvas painted behind content — JS sizes and positions it */
+    #paper-canvas {
+      position: absolute;
+      pointer-events: none;
+      z-index: 0;
+    }
 
-    <!-- Position nav panels below quote box -->
-    <script src="/assets/js/nav_panel_position.js"></script>
-  </body>
+    /* Content sits above canvas.
+       Background is solid so text is always readable.
+       Canvas adds physics-driven edge bowing, corner curls, and shadow
+       in the BLEED zone outside this div's bounds. */
+    .paper-sheet {
+      position: relative;
+      z-index: 1;
+      background: var(--paper-bg);
+      padding: 3.8rem var(--paper-pad-x);
+      /* Static shadow as fallback (canvas shadow extends outside bounds) */
+      box-shadow:
+        0 2px 6px rgba(0,0,0,0.07),
+        0 8px 24px rgba(0,0,0,0.09),
+        0 24px 64px rgba(0,0,0,0.08);
+    }
+
+    /* ─── Typography ─── */
+    .paper-sheet h1 {
+      font-size: 2.1rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      margin-bottom: 1.4rem;
+      color: #1a1208;
+    }
+
+    .paper-sheet h2 {
+      font-size: 1.18rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      color: #2a1a08;
+      margin-bottom: 0.2rem;
+    }
+
+    .paper-sheet h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #3a2210;
+      margin: 1.4rem 0 0.5rem;
+    }
+
+    .paper-sheet p {
+      color: #2d1e0e;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .paper-sheet a {
+      color: #7a3518;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    .paper-sheet a:hover {
+      color: #b04010;
+    }
+
+    .paper-sheet strong {
+      font-weight: 600;
+    }
+
+    .paper-sheet code {
+      font-family: 'Courier New', monospace;
+      font-size: 0.88em;
+      background: rgba(0,0,0,0.05);
+      padding: 0.1em 0.35em;
+      border-radius: 2px;
+    }
+
+    /* ─── Hero ─── */
+    .paper-hero {
+      margin-bottom: 2.2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+    }
+
+    .paper-hero-name {
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: #1a1208;
+      margin-bottom: 0.1rem;
+      line-height: 1.1;
+    }
+
+    .paper-hero-sub {
+      font-size: 0.95rem;
+      color: #7a5a30;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+
+    .paper-hero-bio {
+      font-size: 1.0rem;
+      color: #2d1e0e;
+      line-height: 1.75;
+      margin-bottom: 1.2rem;
+    }
+
+    .paper-hero-bio p { margin-bottom: 0.8rem; }
+
+    .paper-contact {
+      font-size: 0.92rem;
+      color: #5a3a18;
+      margin-top: 1.2rem;
+    }
+
+    .paper-social {
+      display: flex;
+      gap: 1.2rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .paper-social a {
+      font-size: 0.88rem;
+      color: #7a4520;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(122,69,32,0.3);
+      padding-bottom: 1px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .paper-social a:hover {
+      color: #c04818;
+      border-color: #c04818;
+    }
+
+    /* ─── Fold Sections ─── */
+    .fold-section {
+      margin-bottom: 0.2rem;
+    }
+
+    .fold-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 0;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      position: relative;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .fold-header:hover .fold-title {
+      color: #7a3518;
+    }
+
+    .fold-title {
+      font-size: 1.12rem;
+      font-weight: 600;
+      color: #2a1a08;
+      letter-spacing: 0.01em;
+      transition: color 0.2s;
+    }
+
+    .fold-right {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .fold-arrow {
+      font-size: 0.75rem;
+      color: #9a6a40;
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      display: inline-block;
+    }
+
+    .fold-section.open .fold-arrow {
+      transform: rotate(180deg);
+    }
+
+    /* Dog-ear corner indicator */
+    .fold-corner {
+      width: 18px;
+      height: 18px;
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .fold-corner::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 18px 18px 0 0;
+      border-color: rgba(180, 90, 30, 0.20) transparent transparent transparent;
+      transition: border-width 0.3s ease, opacity 0.3s;
+    }
+
+    .fold-section.open .fold-corner::before {
+      border-width: 0;
+      opacity: 0;
+    }
+
+    /* Body with smooth height animation */
+    .fold-body {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .fold-section.open .fold-body {
+      grid-template-rows: 1fr;
+    }
+
+    .fold-body-inner {
+      overflow: hidden;
+    }
+
+    .fold-content {
+      padding: 1.4rem 0 1rem;
+    }
+
+    /* ─── CV Styles ─── */
+    .cv-section { margin-bottom: 1.8rem; }
+    .cv-section h2 { margin-bottom: 0.8rem; }
+
+    .timeline { margin-left: 0; }
+    .timeline-item { display: flex; gap: 1.2rem; margin-bottom: 0.6rem; }
+    .timeline-year { font-size: 0.88rem; color: #6a4018; min-width: 36px; padding-top: 0.15rem; font-style: italic; }
+    .timeline-content { font-size: 0.93rem; color: #2d1e0e; line-height: 1.6; }
+
+    .teaching-item, .service-item { margin-bottom: 1rem; }
+    .item-title { font-weight: 600; font-size: 0.93rem; color: #2a1a08; }
+    .item-institution { font-size: 0.88rem; color: #6a4a20; font-style: italic; }
+    .item-details { font-size: 0.88rem; color: #4a3010; margin-top: 0.2rem; }
+
+    .cv-links { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1rem 0; }
+    .cv-link-btn {
+      font-size: 0.85rem;
+      padding: 0.3rem 0.8rem;
+      border: 1px solid rgba(120,60,20,0.3);
+      color: #7a3518;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: background 0.2s, border-color 0.2s;
+      font-family: inherit;
+    }
+    .cv-link-btn:hover {
+      background: rgba(120,60,20,0.06);
+      border-color: rgba(120,60,20,0.5);
+      color: #7a3518;
+    }
+
+    .news-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      margin-bottom: 0.9rem;
+      font-size: 0.9rem;
+    }
+    .news-item-text { flex: 1; }
+    .news-title-text { font-weight: 500; color: #2a1a08; }
+    .news-venue { font-size: 0.83rem; color: #7a5a30; font-style: italic; }
+
+    /* ─── Papers List ─── */
+    .paper-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .paper-list li {
+      margin-bottom: 1.2rem;
+      padding-bottom: 1.1rem;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      font-size: 0.92rem;
+    }
+
+    .paper-list li:last-child { border-bottom: none; }
+
+    .paper-item-title {
+      font-weight: 600;
+      color: #2a1a08;
+      margin-bottom: 0.2rem;
+    }
+
+    .paper-item-title a {
+      color: #2a1a08;
+      text-decoration: none;
+    }
+
+    .paper-item-title a:hover {
+      color: #7a3518;
+      text-decoration: underline;
+    }
+
+    .paper-item-authors { color: #5a3a18; font-size: 0.86rem; margin-bottom: 0.15rem; }
+    .paper-item-venue { color: #8a6040; font-size: 0.84rem; font-style: italic; }
+    .paper-item-award { font-size: 0.82rem; color: #7a3518; margin-top: 0.2rem; }
+
+    .paper-item-links { font-size: 0.83rem; margin-top: 0.3rem; }
+    .paper-item-links a { margin-right: 0.8rem; color: #7a3518; }
+
+    .subsection-header {
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #9a6a40;
+      margin: 1.4rem 0 0.7rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    /* ─── Quotes ─── */
+    .quotes-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .quote-item {
+      margin-bottom: 1.4rem;
+      padding-bottom: 1.2rem;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .quote-item:last-child { border-bottom: none; }
+
+    .quote-text {
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #2d1e0e;
+      line-height: 1.7;
+      margin-bottom: 0.35rem;
+    }
+
+    .quote-author {
+      font-size: 0.83rem;
+      color: #8a6040;
+    }
+
+    /* ─── Articles ─── */
+    .articles-category { margin-bottom: 1.8rem; }
+
+    .articles-category-title {
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #9a6a40;
+      margin-bottom: 0.7rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .article-item {
+      margin-bottom: 0.9rem;
+      font-size: 0.91rem;
+      line-height: 1.5;
+    }
+
+    .article-item-title a {
+      font-weight: 500;
+      color: #2a1a08;
+      text-decoration: none;
+    }
+
+    .article-item-title a:hover {
+      color: #7a3518;
+      text-decoration: underline;
+    }
+
+    .article-item-meta {
+      font-size: 0.83rem;
+      color: #8a6040;
+    }
+
+    .article-item-commentary {
+      font-size: 0.85rem;
+      color: #5a3a18;
+      font-style: italic;
+      margin-top: 0.15rem;
+    }
+
+    /* ─── Agenda ─── */
+    .agenda-item {
+      margin-bottom: 1.8rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .agenda-item:last-child { border-bottom: none; }
+
+    .agenda-item h3 {
+      font-size: 1.0rem;
+      font-weight: 600;
+      color: #2a1a08;
+      margin-bottom: 0.5rem;
+      margin-top: 0;
+    }
+
+    .agenda-item p {
+      font-size: 0.92rem;
+      color: #3a2210;
+      line-height: 1.7;
+      margin-bottom: 0.6rem;
+    }
+
+    /* ─── Loading state ─── */
+    .loading-text {
+      color: #6a4820;
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+
+    /* ─── Sticky note background ─── */
+    #bg-canvas-wrapper {
+      position: fixed;
+      inset: 0;
+      pointer-events: auto;
+      z-index: 0;
+    }
+    #bg-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: auto;
+    }
+
+    /* ─── Falling paper scraps ─── */
+
+    #paper-scraps-canvas,
+    #paper-scraps-front-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    #paper-scraps-canvas       { z-index: 5;  }
+    #paper-scraps-front-canvas { z-index: 15; }
+
+    @media (max-width: 1060px) {
+      #paper-scraps-canvas,
+      #paper-scraps-front-canvas { display: none; }
+    }
+
+    /* ─── Name row ─── */
+    .name-row {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+      margin-bottom: 3rem;
+    }
+
+    .name-email {
+      font-size: 0.82rem;
+      color: #6a4820;
+      margin-top: 0.1rem;
+    }
+
+    .paper-hero-name {
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: #1a1208;
+      line-height: 1.1;
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Brush highlight on name — multiple strokes injected by JS */
+    .name-brush {
+      position: absolute;
+      left: -0.22em;
+      right: -0.22em;
+      mix-blend-mode: multiply;
+      pointer-events: none;
+      /* filter is set per-stroke in JS (brush-main / brush-wide / brush-dry) */
+    }
+
+    /* ─── Underlined single letter ─── */
+    .letter-u {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      font-style: inherit;
+    }
+
+    /* ─── Rip buttons ─── */
+    .rip-btn {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      color: #5a2a0a;
+      transition: color 0.18s;
+      display: inline;
+      position: relative;
+      z-index: 3;
+      /* Allow wrapping across lines like a regular link */
+      white-space: normal;
+      word-break: normal;
+      overflow-wrap: normal;
+      -webkit-tap-highlight-color: transparent;
+    }
+    /* Suppress the default focus outline (blue flash on click).
+     * :focus-visible keeps the amber outline for keyboard users. */
+    .rip-btn:focus { outline: none; }
+    .rip-btn::before { content: '\5B\5B'; color: #7a4a18; font-style: normal; }
+    .rip-btn::after  { content: '\5D\5D'; color: #7a4a18; font-style: normal; }
+    .rip-btn:hover   { color: #3a1800; }
+    .rip-btn.active {
+      color: #3a1800;
+      transform: translateY(1px);
+      filter: brightness(0.88);
+    }
+    .rip-btn.active::before,
+    .rip-btn.active::after { color: #6a3a10; }
+
+    /* Focus-visible styles — warm amber ring, on-theme */
+    .rip-btn:focus-visible { outline: 2px dotted #b08040; outline-offset: 2px; }
+    .rip-glue-btn:focus-visible { outline: 2px dotted #b08040; outline-offset: 3px; border-radius: 50%; }
+    .rip-link-btn:focus-visible { outline: 2px dotted #b08040; outline-offset: 2px; }
+
+    /* Brush highlight span — injected by JS.
+     * filter, left, right, top, bottom, border-radius are all set per-stroke
+     * in paper_page.js so that each layer has a genuinely distinct brush shape. */
+    .rip-brush {
+      position: absolute;
+      background: var(--brush-col, #c8bfae);
+      mix-blend-mode: multiply;
+      pointer-events: none;
+      transition: background 0.2s;
+    }
+    /* .rip-btn brushes are now paragraph-anchored (siblings of the button,
+     * not children), so hover state is toggled via JS in initRipButtons.
+     * The .brushed-text and .paper-hero-name spans still use child brushes
+     * — for those, the descendant selector still applies. */
+    .brushed-text:hover .rip-brush,
+    .rip-brush.hover {
+      background: var(--brush-hover-col, #b0a898);
+    }
+    /* Paragraph-anchored brush spans sit BEHIND the button text and bracket
+     * pseudo-elements (z-index 3 via .rip-btn) — see stacking notes in JS. */
+    .rip-brush-anchored {
+      z-index: 2;
+    }
+
+    /* Inline brushed text (non-interactive) */
+    .brushed-text {
+      position: relative;
+      display: inline;
+    }
+
+    /* Glue/link icons — sticky at the top of the panel content, but
+     * reserving ZERO vertical layout space. Trick: the wrap is
+     * position:sticky with height:0, so it stays in normal flow (required
+     * for sticky to work) but takes no vertical room. The icons inside are
+     * absolutely positioned and overflow the 0-height wrap, appearing at
+     * the top-right of the visible scroll area. As the user scrolls, the
+     * sticky wrap (and its overflowing children) follow the visible top. */
+    .rip-glue-wrap {
+      position: sticky;
+      top: 0.4rem;
+      height: 0;
+      margin: 0;
+      padding: 0;
+      z-index: 4;
+      pointer-events: none;
+    }
+    .rip-glue-wrap > .rip-glue-btn,
+    .rip-glue-wrap > .rip-link-btn {
+      position: absolute;
+      top: 0;
+      right: 0.6rem;
+      pointer-events: auto;
+    }
+    .rip-glue-wrap > .rip-link-btn {
+      right: 2.6rem;
+    }
+    .rip-glue-btn {
+      pointer-events: all;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      opacity: 1;
+      transition: transform 0.18s;
+      display: block;
+      line-height: 1;
+      min-width: 28px;
+      min-height: 28px;
+    }
+    .rip-glue-btn:hover { transform: scale(1.12); }
+
+    /* Persistent tear — lives as a sibling before the panel, always present
+       after the first rip. Same positioning strategy as .rip-sweep-line so
+       sweep → persistent tear transition is pixel-identical.
+       top:-13px shifts rendering 13px up: the SVG spans from 13px above the
+       paragraph boundary to 13px below it, with the tear line (at y=13
+       inside the 26px SVG) landing exactly at the boundary. Half the SVG is
+       in trigger p's bottom margin (safe), half is in next p's top margin or
+       the panel's top padding (also safe). NO text overlap in any state. */
+    .rip-persistent-tear {
+      overflow: visible;
+      pointer-events: none;
+      height: 0;
+      position: relative;
+      top: -22px;
+      margin: 0;
+      padding: 0;
+      margin-left: calc(-1 * var(--paper-pad-x));
+      margin-right: calc(-1 * var(--paper-pad-x));
+      z-index: 1;
+    }
+
+    /* Legacy: keep .rip-glued-line as an alias in case anything references it */
+    .rip-glued-line {
+      overflow: visible;
+      pointer-events: none;
+      height: 0;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      margin-left: calc(-1 * var(--paper-pad-x));
+      margin-right: calc(-1 * var(--paper-pad-x));
+    }
+    /* Seal animation div — same geometry as sweep, used during gluing */
+    .rip-seal-line {
+      overflow: visible;
+      pointer-events: none;
+      height: 0;
+      position: relative;
+      z-index: 5;
+      margin: 0;
+      padding: 0;
+      margin-left: calc(-1 * var(--paper-pad-x));
+      margin-right: calc(-1 * var(--paper-pad-x));
+    }
+
+    /* Tear sweep container — injected by JS before panel opens.
+     * height:0 so it takes no layout space. SVG overflows via overflow:visible.
+     * top:-13px shifts the rendering so the tear line (at y=13 inside the
+     * 26px SVG) lands EXACTLY at the paragraph boundary. This means the tear
+     * sits half-above (in trigger p's bottom margin) and half-below (in next
+     * p's top margin or the panel's top padding). No text overlap ever. */
+    .rip-sweep-line {
+      overflow: visible;
+      pointer-events: none;
+      height: 0;
+      position: relative;
+      top: -22px;
+      z-index: 1;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      z-index: 5;
+      margin-left: calc(-1 * var(--paper-pad-x));
+      margin-right: calc(-1 * var(--paper-pad-x));
+    }
+
+    /* ─── Rip panels ─── */
+    .rip-panel {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.52s cubic-bezier(0.4, 0, 0.2, 1);
+      margin-left: calc(-1 * var(--paper-pad-x));
+      margin-right: calc(-1 * var(--paper-pad-x));
+      position: relative;
+      z-index: 0;
+    }
+    /* When the panel is open (or closing), extend the cream content background
+     * ~13px ABOVE the panel's actual top edge. This meets the tear line (which
+     * is shifted up 22px via top:-22) with no gap of page color between the
+     * tear and the cream. The tear's transparent area below the tear line
+     * reveals this cream strip through the SVG overflow.
+     * The `.closing` class keeps the strip visible throughout the close
+     * animation — otherwise the cream would vanish instantly on click while
+     * the panel is still collapsing, leaving the tear floating awkwardly. */
+    .rip-panel.open::before,
+    .rip-panel.closing::before {
+      content: '';
+      position: absolute;
+      top: -13px;
+      left: 0;
+      right: 0;
+      height: 13px;
+      background: #f3ede0;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .rip-panel.open {
+      grid-template-rows: 1fr;
+    }
+    .rip-panel-inner {
+      overflow: hidden;
+    }
+
+    .rip-edge {
+      display: block;
+      width: 100%;
+      line-height: 0;
+      position: relative;
+      z-index: 2;
+    }
+    /* .rip-edge-top is no longer used — the persistent tear replaces it.
+       Hide it entirely so it doesn't affect layout. */
+    .rip-edge-top  { display: none; }
+    .rip-edge-bottom { margin-top: -14px; }
+
+    .rip-panel-content {
+      background: #f3ede0;
+      padding: 1.6rem var(--paper-pad-x) 1.4rem;
+      position: relative;
+      z-index: 1;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+
+    .rip-panel-content::after {
+      content: '';
+      position: sticky;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2rem;
+      display: block;
+      background: linear-gradient(to bottom, transparent, #f3ede0);
+      pointer-events: none;
+      margin-top: -2rem;
+    }
+
+    /* Cast shadows from torn paper pieces onto content below/above.
+       drop-shadow respects the actual SVG alpha shape (not just the bounding box). */
+    .rip-edge-top {
+      filter:
+        drop-shadow(0  4px  8px rgba(12,5,1,0.18))
+        drop-shadow(0  8px 18px rgba(12,5,1,0.10));
+    }
+    .rip-edge-bottom {
+      filter:
+        drop-shadow(0 -3px  7px rgba(12,5,1,0.10))
+        drop-shadow(0 -6px 14px rgba(12,5,1,0.06));
+    }
+
+    /* Ensure paragraphs inside panels have correct spacing */
+    .rip-panel-content p { margin-bottom: 0.85rem; }
+    .rip-panel-content p:last-child { margin-bottom: 0; }
+    .rip-panel-content a { color: #7a3518; }
+    .rip-panel-content a:hover { color: #b04010; }
+
+    /* Header at the top of every opened panel, repeating the trigger button's text
+     * with the same brush-highlight treatment so readers know which button opened it. */
+    .rip-panel-header {
+      margin-bottom: 1rem;
+      padding-bottom: 0.7rem;
+      border-bottom: 1px solid rgba(120,70,20,0.12);
+    }
+    .rip-panel-header-text {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #5a2a0a;
+      letter-spacing: 0.01em;
+      position: relative;
+      display: inline;
+    }
+
+    /* Link-copy button — full brightness, sized to match the wax-seal glue
+     * button so they read as a pair in the top-right corner of panels. */
+    .rip-link-btn {
+      display: block;
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      opacity: 1;
+      transition: transform 0.18s;
+      line-height: 1;
+      min-width: 28px;
+      min-height: 28px;
+    }
+    .rip-link-btn:hover { transform: scale(1.12); }
+    .rip-link-btn svg { display: block; }
+
+    /* "Link copied" toast */
+    .rip-toast {
+      position: fixed;
+      bottom: 1.4rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      background: rgba(40,20,5,0.88);
+      color: #f5ead8;
+      font-size: 0.8rem;
+      padding: 0.45rem 1rem;
+      border-radius: 4px;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.18s, transform 0.18s;
+      z-index: 9999;
+      white-space: nowrap;
+    }
+    .rip-toast.visible {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* Floating TOC (quotes + articles panels) */
+    .rip-panel-toc {
+      float: right;
+      clear: right;
+      margin: 0 0 0.8rem 1.2rem;
+      background: rgba(243,237,224,0.92);
+      border: 1px solid rgba(120,70,20,0.18);
+      border-radius: 4px;
+      padding: 0.55rem 0.75rem 0.6rem;
+      font-size: 0.78rem;
+      box-shadow: 0 1px 6px rgba(30,10,2,0.10);
+      max-width: 9rem;
+      line-height: 1.55;
+    }
+    .rip-panel-toc-label {
+      font-weight: 600;
+      color: #5a3a18;
+      margin-bottom: 0.3rem;
+      font-size: 0.76rem;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    .rip-panel-toc-link {
+      display: block;
+      color: #7a3518;
+      text-decoration: none;
+      padding: 0.08rem 0;
+      font-size: 0.77rem;
+      opacity: 0.8;
+      transition: opacity 0.12s;
+    }
+    .rip-panel-toc-link:hover { opacity: 1; text-decoration: underline; }
+
+    /* Quotes categories */
+    .quotes-category { margin-bottom: 1.6rem; }
+    .quotes-category-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #2a1a08;
+      margin-bottom: 0.25rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid rgba(120,70,20,0.15);
+    }
+    .quotes-category-desc {
+      font-size: 0.81rem;
+      color: #7a5a30;
+      font-style: italic;
+      margin-bottom: 0.6rem;
+      line-height: 1.5;
+    }
+    .quotes-category-list { list-style: none; padding: 0; margin: 0; }
+    .quotes-category-list .quote-item { margin-bottom: 0.8rem; }
+
+    /* (Buttons inside .rip-glue-wrap get position:absolute via the
+     * sticky-zero-height pattern declared above. Don't override here.) */
+
+    /* Rip paper item (for papers inside rip panels) */
+    .rip-paper-item { font-size: 0.92rem; }
+    .rip-paper-title { font-weight: 600; color: #2a1a08; margin-bottom: 0.2rem; }
+    .rip-paper-title a { color: #2a1a08; text-decoration: none; }
+    .rip-paper-title a:hover { color: #7a3518; text-decoration: underline; }
+    .rip-paper-authors { color: #5a3a18; font-size: 0.86rem; margin-bottom: 0.1rem; }
+    .rip-paper-venue { color: #8a6040; font-size: 0.84rem; font-style: italic; margin-bottom: 0.1rem; }
+    .rip-paper-links { font-size: 0.83rem; margin-top: 0.35rem; }
+    .rip-paper-links a { color: #7a3518; margin-right: 0.8rem; }
+
+    /* ─── Corner media (pfp + video) ─── */
+    #corner-media {
+      position: absolute;
+      top: 1.6rem;
+      right: 1.6rem;
+      display: flex;
+      align-items: stretch;
+      gap: 0.45rem;
+      height: 120px;
+      z-index: 5;
+    }
+    .corner-media-item {
+      position: relative;
+      height: 100%;
+    }
+    #corner-pfp,
+    #corner-video {
+      height: 100%;
+      width: auto;
+      display: block;
+      object-fit: cover;
+    }
+    /* Hover caption: appears at the bottom of the image, no dimming.
+     * Sits OUTSIDE the image box so the image itself stays at full opacity. */
+    .corner-media-caption {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin-top: 0.35rem;
+      font-size: 0.75rem;
+      color: #5a3a18;
+      font-style: italic;
+      line-height: 1.3;
+      text-align: right;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.18s;
+      z-index: 6;
+    }
+    .corner-media-caption a {
+      color: #7a3518;
+      text-decoration: underline;
+      pointer-events: auto;
+    }
+    .corner-media-caption a:hover { color: #b04010; }
+    .corner-media-item:hover .corner-media-caption {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 740px) {
+      :root { --paper-pad-x: 2rem; }
+      .paper-outer {
+        padding: 2rem 0.8rem 3rem;
+        padding-left: max(0.8rem, env(safe-area-inset-left));
+        padding-right: max(0.8rem, env(safe-area-inset-right));
+        padding-top: max(2rem, env(safe-area-inset-top));
+        padding-bottom: max(3rem, env(safe-area-inset-bottom));
+      }
+      .paper-sheet { padding: 2.4rem var(--paper-pad-x); }
+      .paper-hero-name { font-size: 1.9rem; }
+      .rip-btn { padding: 0.3em 0.45em; line-height: 1.75; }
+      .rip-glue-btn { min-width: 36px; min-height: 36px; }
+      .rip-link-btn { min-width: 36px; min-height: 36px; }
+      .rip-panel-toc {
+        float: none;
+        max-width: none;
+        margin: 0 0 1rem 0;
+      }
+      .rip-panel-content {
+        font-size: 0.96rem;
+        max-height: 70vh;               /* fallback for older browsers */
+        max-height: min(70vh, 70svh);   /* iOS URL-bar safe */
+        scroll-margin-top: 1rem;
+      }
+      #bg-canvas-wrapper,
+      #paper-canvas { display: none; }
+      .corner-media-item--video { display: none; }
+      #corner-media {
+        top: 0.9rem;
+        right: 0.9rem;
+        height: 72px;
+      }
+      .corner-media-caption { display: none; }
+    }
+
+    @media (max-width: 420px) {
+      :root { --paper-pad-x: 1.5rem; }
+      /* Use longhand padding with safe-area insets — a shorthand `padding`
+       * here would wipe out the safe-area-inset-* overrides set in the
+       * 740px block, which matters most on notched iPhones (390/375px). */
+      .paper-outer {
+        padding-top: max(1.4rem, env(safe-area-inset-top));
+        padding-right: max(0.4rem, env(safe-area-inset-right));
+        padding-bottom: max(2rem, env(safe-area-inset-bottom));
+        padding-left: max(0.4rem, env(safe-area-inset-left));
+      }
+      .paper-sheet { padding: 1.8rem var(--paper-pad-x); }
+      .paper-hero-name { font-size: 1.7rem; }
+      #corner-media { height: 60px; top: 0.7rem; right: 0.7rem; }
+    }
+
+    @media (hover: none) {
+      .rip-btn:hover { color: inherit; }
+      .rip-btn:hover .rip-brush { background: var(--brush-col, #c8bfae); }
+      .rip-glue-btn:hover { transform: none; }
+      .rip-link-btn:hover { transform: none; }
+      .corner-media-item:hover .corner-media-caption { opacity: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      .rip-panel { transition: none !important; }
+      .rip-panel-inner { transition: none !important; }
+      #paper-scraps-canvas, #paper-scraps-front-canvas { display: none !important; }
+      #corner-video { display: none !important; }
+      #bg-canvas-wrapper { display: none !important; }
+      html { scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+<body>
+  <!-- SVG filters for brush-highlight roughness -->
+  <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+    <defs>
+      <!-- Button / inline brush highlight (subtle) -->
+      <filter id="rough-highlight" x="-12%" y="-70%" width="124%" height="240%" color-interpolation-filters="sRGB">
+        <feturbulence type="turbulence" basefrequency="0.006 0.20" numoctaves="4" seed="6" result="warp"></feturbulence>
+        <fedisplacementmap in="SourceGraphic" in2="warp" scale="5" xchannelselector="R" ychannelselector="G"></fedisplacementmap>
+      </filter>
+      <!-- Soft Gaussian blur for the diffuse shadow under torn paper edges.
+           Wide bbox so the blur isn't clipped at the edges. -->
+      <filter id="tear-shadow-soft" x="-50%" y="-200%" width="200%" height="500%" color-interpolation-filters="sRGB">
+        <fegaussianblur in="SourceGraphic" stddeviation="2.4"></fegaussianblur>
+      </filter>
+      <!-- Brush filters — three distinct displacement profiles, one per stroke layer -->
+      <!-- Main: mid-weight centre mark, fractal noise, moderate displacement -->
+      <filter id="brush-main" x="-4%" y="-80%" width="108%" height="260%" color-interpolation-filters="sRGB">
+        <feturbulence type="fractalNoise" basefrequency="0.022 0.10" numoctaves="3" seed="23" result="noise"></feturbulence>
+        <fedisplacementmap in="SourceGraphic" in2="noise" scale="6" xchannelselector="R" ychannelselector="G"></fedisplacementmap>
+      </filter>
+      <!-- Wide smear: low frequency → long sweeping distortions, like a wide flat brush -->
+      <filter id="brush-wide" x="-5%" y="-90%" width="110%" height="280%" color-interpolation-filters="sRGB">
+        <feturbulence type="turbulence" basefrequency="0.009 0.048" numoctaves="3" seed="57" result="noise"></feturbulence>
+        <fedisplacementmap in="SourceGraphic" in2="noise" scale="8" xchannelselector="R" ychannelselector="G"></fedisplacementmap>
+      </filter>
+      <!-- Dry brush: high frequency → tight hairy edges, split-bristle texture -->
+      <filter id="brush-dry" x="-4%" y="-100%" width="108%" height="300%" color-interpolation-filters="sRGB">
+        <feturbulence type="fractalNoise" basefrequency="0.065 0.24" numoctaves="3" seed="81" result="noise"></feturbulence>
+        <fedisplacementmap in="SourceGraphic" in2="noise" scale="4" xchannelselector="R" ychannelselector="G"></fedisplacementmap>
+      </filter>
+      <!-- Legacy alias used by name-brush spans -->
+      <filter id="name-brush-filter" x="-10%" y="-80%" width="120%" height="260%" color-interpolation-filters="sRGB">
+        <feturbulence type="fractalNoise" basefrequency="0.022 0.10" numoctaves="5" seed="23" result="noise"></feturbulence>
+        <fedisplacementmap in="SourceGraphic" in2="noise" scale="13" xchannelselector="R" ychannelselector="G"></fedisplacementmap>
+      </filter>
+    </defs>
+  </svg>
+  <div id="bg-canvas-wrapper"><canvas id="bg-canvas" aria-hidden="true"></canvas></div>
+  <canvas id="paper-scraps-canvas" aria-hidden="true"></canvas>
+  <canvas id="paper-scraps-front-canvas" aria-hidden="true"></canvas>
+
+  <div class="paper-outer">
+    <div id="paper-host">
+      <canvas id="paper-canvas" aria-hidden="true"></canvas>
+
+      <div id="corner-media">
+        <div class="corner-media-item">
+          <img id="corner-pfp" src="/assets/img/pfp.jpg" alt="Andre Ye">
+          <div class="corner-media-caption">Taken by my friend <a href="https://www.linkedin.com/in/arunasr/" target="_blank" rel="noopener noreferrer">Aruna Srivastava</a>
+</div>
+        </div>
+        <div class="corner-media-item corner-media-item--video">
+          <video id="corner-video" src="/assets/gallery/final-video-loop.mp4" autoplay loop muted playsinline></video>
+          <div class="corner-media-caption">Produced by Jayden Becles for <a href="https://www.washington.edu/uaa/undergrad-researcher-questions-the-ai-answer/" target="_blank" rel="noopener noreferrer">this article</a>
+</div>
+        </div>
+      </div>
+      <div class="paper-sheet">
+        <div class="name-row">
+  <span class="paper-hero-name">Andre Ye</span>
+  <span class="name-email">andreye@mit.edu</span>
+</div>
+
+<p>I am an MIT EECS PhD student working on human-AI interaction, advised by <a href="https://mgordon.me/" target="_blank" rel="noopener noreferrer">Mitchell Gordon</a>. I want to build AI that is <button class="rip-btn" data-rip="philosophy">better at <u class="letter-u"><strong>p</strong></u>hilosophy</button>, by which I mean better at aiding thoughtful human judgement about real problems in the world (e.g., in <u class="letter-u">P</u>hilosophy, law, politics, personal life). My work is supported by the NSF GRFP and PD Soros Fellowship.</p>
+
+<div class="rip-panel" id="rip-philosophy">
+  <div class="rip-panel-inner">
+    <div class="rip-edge rip-edge-top"></div>
+    <div class="rip-panel-content">
+      <p><strong>What am I interested in and what is my research vision?</strong></p>
+      <p>I am interested in <u class="letter-u">p</u>hilosophical problems. You could also approximately call them “open-ended” or “semi-structured” problems. I take <u class="letter-u">p</u>hilosophical problems to involve systematic inquiry into foundational and/or abstract questions dealing with values and interpretations, that we make progress on with human judgement. These include questions in the discipline of <u class="letter-u">P</u>hilosophy (e.g., are moral statements truth-apt? what is the basis for knowledge?), law (e.g., how should we interpret this case?), politics (e.g., what should my views on this political issue be? what political action should I take?), therapy &amp; personal life (e.g., how should we understand death? should I have children?), and AI Alignment (e.g. how do humans supervise AI that may become vastly more intelligent than us, possibly through other AIs?). Such problems also arise in science (e.g., how might this drug which fixes one issue with a patient create other issues that adversely affect their wellness? how do we make sense of the reproducability crisis in science?) and math (there are an infinite number of true mathematical statements, but which ones are the interesting ones?).</p>
+      <p>I think a key feature of <u class="letter-u">p</u>hilosophical problems is that human judgement is needed to make meaningful progress. As a thought experiment, imagine Dario’s “country of geniuses in a datacenter” running for a thousand years to prove (or disprove) a bunch of mathematical conjectures. It is conceivable that they will have made genuine progress at the end of these 1000 years (although they may also prove conjectures that they propose but we don’t think are that interesting or useful). Now imagine a “country of geniuses in a datacenter” running for a thousand years to discover “philosophical truths”. They come back to us humans and give us the list of truths they have discovered: 1. Humans actually don’t have free will, 2. ought implies can, 3. … I think this seems a little bit ridiculous, not because these AI geniuses may not be right, but because without my human judgement — my capacity to reflect upon and endorse statements that I take myself to be responsible for — these 1000 years of “multi-agent debate” don’t mean anything (to me, which is the point). (My language and thinking here is taken heavily from the philosophers Robert Brandom and Wilfred Sellars.)</p>
+      <p>Okay, so human judgement is essential to making progress on these open-ended questions. So let’s throw AI out of the window because it, in principle, lacks the capacity for this kind of judgement. No: judgement has a strong relationship with what philosopher Brian Cantwell Smith calls “reckoning” — a calculating prowess for uncovering patterns and reasoning out. Good judgement emerges from reflecting on the fruits of reckoning, or even doing reckoning ourselves. Great friends don’t tell us what to think, but rather help us see other ways of reckoning that we had not reckoned with before, and which we may judge to be ways of reckoning that we want to endorse. Now ideally everyone would have access to these kinds of friends, but we don’t, and even if we do, wouldn’t we want more?</p>
+      <p>To realize this vision, I think we need to give AI more conceptual structure. That is, we need to allow people and AI to collaborate on “shapes of thinking” — structures or scaffolds to set the terms and goals of inquiry into an open-ended question — and, with the iteratively developed endorsement of human judgement, realize what kinds of ideas those shapes of thinking will lead to. As AI models get better and better, they will better be able to realize the shapes of thinking that we judge to be worth pursuing.</p>
+    </div>
+    <div class="rip-edge rip-edge-bottom"></div>
+  </div>
+</div>
+
+<p>I recently proposed the <button class="rip-btn" data-rip="conceptual-multiverse">“conceptual multiverse”</button> as a better kind of AI output for open-ended questions like in philosophy or AI alignment, in which models represent, evaluate, and improve on how different conceptual decisions condition outputs.</p>
+
+<p>I’ve also thought about <button class="rip-btn" data-rip="help-philosophers">how language models can help Philosophers</button> and how the “woke Gemini controversy” could instruct us in <button class="rip-btn" data-rip="creative-practices">more critical creative practices</button>.</p>
+
+<p>See my <button class="rip-btn" data-rip="full-work">full list of publications</button>.</p>
+
+<div class="rip-panel" id="rip-conceptual-multiverse">
+  <div class="rip-panel-inner">
+    <div class="rip-edge rip-edge-top"></div>
+    <div class="rip-panel-content">
+      <p>Many of the open-ended questions we bring to AI involve a cascade of decisions that spills into a landscape of possibilities — how to frame the question, what to value, what assumptions to make — but we typically receive a single result, presented as if it were the only one. We have no way to know how much hinges on decisions we never saw. In data analysis, “multiverse analysis” addresses this by systematically varying these choices and reporting how the result changes. We ask: what would multiverse analysis look like for the kinds of value-laden, open-ended problems people are bringing to AI?</p>
+      <p>We introduce the <em>conceptual multiverse</em>: an interactive system that surfaces the conceptual decisions an AI’s answer depends on, and the alternatives each decision opens up. Instead of taking a single answer on faith, a person can navigate a tree of branch points — transparently inspecting, intervenably changing, and checking each step against the reasoning norms of the domain. We develop a verification framework that enforces properties of good decision structures (like unambiguity and completeness) calibrated by expert-level reasoning, and we represent the multiverse concretely as a Python program that agents can build, verify, and regenerate.</p>
+      <p>We calibrated and built the system in three domains — philosophy (an open-ended question), AI alignment (a sensitive user request), and poetry (a generation prompt) — and ran in-depth studies with 15 participants. Across all three, the conceptual multiverse helped participants develop a working map of the problem, surfacing thinking that uncontextualized answers would have left buried: philosophy students rewrote essays with sharper framings and reversed theses; alignment annotators moved from surface preferences to reasoning about user intent and harm; poets identified compositional patterns that clarified their taste. <em>arXiv and website coming soon!</em></p>
+    </div>
+    <div class="rip-edge rip-edge-bottom"></div>
+  </div>
+</div>
+
+<div class="rip-panel" id="rip-help-philosophers">
+  <div class="rip-panel-inner">
+    <div class="rip-edge rip-edge-top"></div>
+    <div class="rip-panel-content">
+      <div class="rip-paper-item">
+        <div class="rip-paper-title"><a href="https://arxiv.org/abs/2404.04516" target="_blank" rel="noopener noreferrer">Language Models as Critical Thinking Tools: A Case Study of Philosophers</a></div>
+        <div class="rip-paper-authors">
+<strong>Andre Ye</strong>, Jared Moore, Rose Novick, Amy X. Zhang</div>
+        <div class="rip-paper-venue">Conference on Language Modeling (COLM), 2024</div>
+        <p style="margin-top:0.7rem;font-size:0.9rem;">Current work in language models (LMs) helps us speed up or even skip thinking by accelerating and automating cognitive work. But can LMs help us with critical thinking — thinking in deeper, more reflective ways which challenge assumptions, clarify ideas, and engineer new concepts? We treat philosophy as a case study in critical thinking, and interview 21 professional philosophers about how they engage in critical thinking and on their experiences with LMs. We find that philosophers do not find LMs to be useful because they lack a sense of selfhood (memory, beliefs, consistency) and initiative (curiosity, proactivity). We propose the selfhood-initiative model for critical thinking tools to characterize this gap. Using the model, we formulate three roles LMs could play as critical thinking tools: the Interlocutor, the Monitor, and the Respondent. We hope that our work inspires LM researchers to further develop LMs as critical thinking tools and philosophers and other ‘critical thinkers’ to imagine intellectually substantive uses of LMs.</p>
+        <div class="rip-paper-links"><a href="https://arxiv.org/abs/2404.04516" target="_blank" rel="noopener noreferrer">paper</a></div>
+      </div>
+    </div>
+    <div class="rip-edge rip-edge-bottom"></div>
+  </div>
+</div>
+
+<div class="rip-panel" id="rip-creative-practices">
+  <div class="rip-panel-inner">
+    <div class="rip-edge rip-edge-top"></div>
+    <div class="rip-panel-content">
+      <div class="rip-paper-item">
+        <div class="rip-paper-title"><a href="https://arxiv.org/abs/2502.15242" target="_blank" rel="noopener noreferrer">Agonistic Image Generation: Unsettling the Hegemony of Intention</a></div>
+        <div class="rip-paper-authors">Andrew Shaw*, <strong>Andre Ye*</strong>, Ranjay Krishna, Amy X. Zhang</div>
+        <div class="rip-paper-venue">FAccT 2025  ·  <span style="color:#7a3518">🏆 UW CSE Best Senior Thesis</span>
+</div>
+        <p style="margin-top:0.7rem;font-size:0.9rem;">Current image generation paradigms prioritize actualizing user intention — “see what you intend” — but often neglect the sociopolitical dimensions of this process. However, it is increasingly evident that image generation is political, contributing to broader social struggles over visual meaning. This sociopolitical aspect was highlighted by the March 2024 Gemini controversy, where Gemini faced criticism for inappropriately injecting demographic diversity into user prompts. Although the developers sought to redress image generation’s sociopolitical dimension by introducing diversity “corrections,” their opaque imposition of a standard for “diversity” ultimately proved counterproductive. In this paper, we present an alternative approach: an image generation interface designed to embrace open negotiation along the sociopolitical dimensions of image creation. Grounded in the principles of agonistic pluralism (from the Greek <em>agon</em>, meaning struggle), our interface actively engages users with competing visual interpretations of their prompts. Through a lab study with 29 participants, we evaluate our agonistic interface on its ability to facilitate reflection — engagement with other perspectives and challenging dominant assumptions — a core principle that underpins agonistic contestation. We compare it to three existing paradigms: a standard interface, a Gemini-style interface that produces “diverse” images, and an intention-centric interface suggesting prompt refinements. Our findings demonstrate that the agonistic interface enhances reflection across multiple measures, but also that reflection depends on users perceiving the interface as both appropriate and empowering; introducing diversity without grounding it in relevant political contexts was perceived as inauthentic. Our results suggest that diversity and user intention should not be treated as opposing values to be balanced.</p>
+        <div class="rip-paper-links"><a href="https://arxiv.org/abs/2502.15242" target="_blank" rel="noopener noreferrer">paper</a></div>
+      </div>
+    </div>
+    <div class="rip-edge rip-edge-bottom"></div>
+  </div>
+</div>
+
+<div class="rip-panel" id="rip-full-work" data-rip-load="full-work">
+  <div class="rip-panel-inner">
+    <div class="rip-edge rip-edge-top"></div>
+    <div class="rip-panel-content">
+      <p class="loading-text" id="rip-cs-loading">Loading papers…</p>
+      <div class="subsection-header">Computer Science</div>
+      <ul class="paper-list" id="rip-cs-papers"></ul>
+      <div class="subsection-header" style="margin-top:1.4rem;">Philosophy</div>
+      <ul class="paper-list" id="rip-phil-papers"></ul>
+      <p class="loading-text" id="rip-phil-loading" style="display:none">Loading papers…</p>
+    </div>
+    <div class="rip-edge rip-edge-bottom"></div>
+  </div>
+</div>
+
+<p>I completed my BS in Computer Science, advised by <a href="https://homes.cs.washington.edu/~axz/" target="_blank" rel="noopener noreferrer">Amy Zhang</a> and <a href="https://ranjaykrishna.com/" target="_blank" rel="noopener noreferrer">Ranjay Krishna</a>, and my BA in Philosophy with Honors, advised by <a href="https://www.rosenovick.com/" target="_blank" rel="noopener noreferrer">Rose Novick</a>, at the University of Washington. For my work, I was recognized as an Allen School Outstanding Senior, Philosophy Department Outstanding Graduating Senior, Dean’s Medalist for the Social Sciences, and served as a banner carrier for the College of Arts and Sciences at the 150th UW Commencement, and <button class="rip-btn" data-rip="and-others">other recognition</button>. I was also covered by the <a href="https://www.washington.edu/uaa/undergrad-researcher-questions-the-ai-answer/" target="_blank" rel="noopener noreferrer">UW Office of Undergraduate Academic Affairs</a>.</p>
+
+<p>I got up to other stuff in undergrad <button class="rip-btn" data-rip="too">too</button>. I greatly appreciate the interdisciplinary environment I was allowed to play in at UW.</p>
+
+<p>I maintain a list of <button class="rip-btn" data-rip="quotes" data-rip-load="quotes">quotes</button> that stick with me in my readings. One of my favorites is this one by Deleuze: <em>“A concept is a brick. It can be used to build a courthouse of reason. Or it can be thrown through the window.”</em></p>
+
+<p>I also maintain a list of <button class="rip-btn" data-rip="articles" data-rip-load="articles">articles</button> that I think are especially interesting, thought-provoking, or good reading.</p>
+
+<p>Entirely for my intellectual edification, I like to learn enough math to understand what some <button class="rip-btn" data-rip="math">interesting mathematical theorems</button> say but not enough to know their proofs (it ruins the magic!).</p>
+
+<p>I also maintain a <button class="rip-btn" data-rip="history">timeline</button> to unify various historical events I have an interest in. It does the service of helping us realize how complex the world is, that so much barbarity, genius, strife, and goodness happen at the same time.</p>
+
+<p>In an effort to become a more interesting person, I am learning woodworking at the <a href="" target="_blank" rel="noopener noreferrer">MIT Hobby Shop</a> and guitar; enjoy playing piano, lifting, using my AMC Stubs membership with <a href="https://barish.me/" target="_blank" rel="noopener noreferrer">Barish Namazov</a>, and running along the Charles with <a href="https://ryanboldi.github.io/" target="_blank" rel="noopener noreferrer">Ryan Bahlous-Boldi</a>; and am currently reading <em>East of Eden</em> with <a href="https://schare.space/" target="_blank" rel="noopener noreferrer">Carmel Schare</a>, <em>A Spirit of Trust</em> with <a href="" target="_blank" rel="noopener noreferrer">Mark Pock</a>, <em>The Design of Everyday Things</em> with <a href="https://www.linkedin.com/in/kpanchap/" target="_blank" rel="noopener noreferrer">Krishna Panchapagesan</a>, and <em>Empire of AI</em> with <a href="https://www.linkedin.com/in/vivek-prakriya/" target="_blank" rel="noopener noreferrer">Vivek Prakriya</a>. Я тоже учу русский.</p>
+
+<div class="rip-panel" id="rip-and-others">
+  <div class="rip-panel-inner">
+    <div class="rip-edge rip-edge-top"></div>
+    <div class="rip-panel-content">
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-content">
+            <a href="https://www.washington.edu/uaa/2025/04/09/uw-undergraduate-earns-fellowship-for-graduate-study/" target="_blank" rel="noopener noreferrer">Fellow, Paul and Daisy Soros Fellowship for New Americans</a><br>
+            Awardee, NSF Graduate Research Fellowship Program<br>
+            Fellow, Ashar Aziz Presidential Fellowship (MIT)<br>
+            Finalist, Hertz Foundation Fellowship<br>
+            <a href="https://artsci.washington.edu/news/2025-06/2025-deans-medalists-energized-inspiring" target="_blank" rel="noopener noreferrer">UW College of Arts and Sciences Dean’s Medal (Social Sciences)</a><br>
+            Gonfalonier (Banner Carrier), College of Arts and Sciences, 150th UW Commencement<br>
+            UW CSE Outstanding Senior<br>
+            UW CSE Best Senior Thesis Award (submitted by co-author <a href="https://www.linkedin.com/in/andrew-b-shaw/" target="_blank" rel="noopener noreferrer">Andrew Shaw</a>)<br>
+            UW Philosophy Department Outstanding Graduating Senior
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-content">UW Philosophy Department Outstanding Undergraduate Scholar</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2023</div>
+          <div class="timeline-content">
+            <a href="https://news.cs.washington.edu/2024/06/28/for-these-nationally-recognized-allen-school-undergraduates-research-impact-is-its-own-reward/" target="_blank" rel="noopener noreferrer">CRA Outstanding Undergraduate Researcher Finalist</a><br>
+            Mary Gates Research Scholar<br>
+            Phi Beta Kappa Scholar
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rip-edge rip-edge-bottom"></div>
+  </div>
+</div>
+
+<div class="rip-panel" id="rip-too">
+  <div class="rip-panel-inner">
+    <div class="rip-edge rip-edge-top"></div>
+    <div class="rip-panel-content">
+      <p>I was also mentored by <a href="https://jaredmoore.org/" target="_blank" rel="noopener noreferrer">Jared Moore</a>, <a href="https://cqz.name/" target="_blank" rel="noopener noreferrer">Quan Ze (Jim) Chen</a>, <a href="https://sebastinsanty.com/" target="_blank" rel="noopener noreferrer">Sebastin Santy</a>, <a href="https://mattwallingford.github.io/" target="_blank" rel="noopener noreferrer">Matt Wallingford</a>, <a href="https://phil.washington.edu/people/carina-fourie" target="_blank" rel="noopener noreferrer">Carina Fourie</a>, and others.</p>
+      <p>I wrote two books on deep learning for Apress/Springer Nature: <a href="https://link.springer.com/book/10.1007/978-1-4842-7413-2" target="_blank" rel="noopener noreferrer"><em>Modern Deep Learning Design and Applications</em></a> (solo) and <a href="https://link.springer.com/book/10.1007/978-1-4842-8692-0" target="_blank" rel="noopener noreferrer"><em>Modern Deep Learning for Tabular Data</em></a> (with Andy Wang).</p>
+      <p>I was a TA for 7 quarters across intro Python programming (CSE 160), intermediate Python (CSE 163), and discrete math for CS (CSE 311). I also TA’d English Composition and Literary Analysis at the <a href="https://robinsoncenter.uw.edu/" target="_blank" rel="noopener noreferrer">Robinson Center</a>, and Introduction to Machine Learning at <a href="https://the-cs.org/" target="_blank" rel="noopener noreferrer">The Coding School</a>.</p>
+      <p>I entered university at 14 through the <a href="https://robinsoncenter.uw.edu/" target="_blank" rel="noopener noreferrer">Robinson Center Early Entrance Program</a>. My worldview was especially transformed during Transition School by <a href="https://www.linkedin.com/in/amanda-zink-346331164/" target="_blank" rel="noopener noreferrer">Amanda Zink</a> teaching English and <a href="https://smlr.rutgers.edu/about-smlr/faculty-and-staff-directory/michael-beyea-reagan" target="_blank" rel="noopener noreferrer">Michael Reagan</a> teaching History.</p>
+      <p>One of my close friends who also went through the Early Entrance Program with me is <a href="https://www.linkedin.com/in/vivek-prakriya/" target="_blank" rel="noopener noreferrer">Vivek Prakriya</a>, who is the youngest city councilmember to win a contested race in a city with over 75k people (Redmond, Washington).</p>
+      <p>I spent summer of 2022 at Deepgram working on speech transcription models, advised by <a href="https://deepgram.com/authors/andrew-seagraves" target="_blank" rel="noopener noreferrer">Andrew Seagraves</a>.</p>
+    </div>
+    <div class="rip-edge rip-edge-bottom"></div>
+  </div>
+</div>
+
+<div class="rip-panel" id="rip-quotes" data-rip-load="quotes">
+  <div class="rip-panel-inner">
+    <div class="rip-edge rip-edge-top"></div>
+    <div class="rip-panel-content">
+      <p style="font-size:0.88rem;color:#7a5a30;font-style:italic;margin-bottom:1.2rem;">An unorganized and growing archive of quotes, ideas, and works that influence or represent my thought. Order is randomized.</p>
+      <div class="quotes-list" id="rip-quotes-list">
+        <div class="loading-text">Loading quotes…</div>
+      </div>
+    </div>
+    <div class="rip-edge rip-edge-bottom"></div>
+  </div>
+</div>
+
+<div class="rip-panel" id="rip-articles" data-rip-load="articles">
+  <div class="rip-panel-inner">
+    <div class="rip-edge rip-edge-top"></div>
+    <div class="rip-panel-content">
+      <p style="font-size:0.88rem;color:#7a5a30;font-style:italic;margin-bottom:1.2rem;">Academic papers and articles that influence my research and thinking. By the way, clicking on one of the squares in the background takes you to a random article.</p>
+      <div id="rip-articles-list">
+        <div class="loading-text">Loading articles…</div>
+      </div>
+    </div>
+    <div class="rip-edge rip-edge-bottom"></div>
+  </div>
+</div>
+
+<div class="rip-panel" id="rip-math" data-rip-load="math">
+  <div class="rip-panel-inner">
+    <div class="rip-edge rip-edge-top"></div>
+    <div class="rip-panel-content">
+      <div id="rip-math-list"><div class="loading-text">Loading…</div></div>
+    </div>
+    <div class="rip-edge rip-edge-bottom"></div>
+  </div>
+</div>
+
+<div class="rip-panel" id="rip-history" data-rip-load="history">
+  <div class="rip-panel-inner">
+    <div class="rip-edge rip-edge-top"></div>
+    <div class="rip-panel-content">
+      <div id="rip-history-list"><div class="loading-text">Loading history…</div></div>
+    </div>
+    <div class="rip-edge rip-edge-bottom"></div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/js/paper_page.js"></script>
+</body>
 </html>

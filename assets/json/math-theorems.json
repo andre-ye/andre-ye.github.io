@@ -1,0 +1,211 @@
+{
+  "intro": "I enjoy recreational math. I am especially fascinated by topics in modern/abstract algebra, category theory, and unexpectedly powerful abstractions in general. Here is a collection of mathematical observations, results, and questions that I think are interesting. There may be mistakes or simplifications in the following. Some of these are taken from <em>Proofs from The Book</em>, which I was thoughtfully gifted by my friend <a href=\"https://search.asu.edu/profile/5335907\" target=\"_blank\" rel=\"noopener noreferrer\">Alec Bunny</a>.",
+  "items": [
+    {
+      "name": "Relating dimensionality to algebraic structure",
+      "body": "Every finite division ring is a field (Wedderburn's Little Theorem). A division ring is a set where every nonzero element has a multiplicative inverse, but multiplication need not be commutative (e.g., quaternions, matrix rings over division rings). Surprisingly, if the division ring is finite, then multiplication must commute, making it a field. The relationship between dimensionality and commutativity stems from the fact that higher-dimensional (infinite) structures provide enough \"room\" to accommodate noncommutative behavior, such as directional or rotational distinctions. In contrast, finite systems are constrained by their limited algebraic and combinatorial possibilities, forcing multiplication to be commutative."
+    },
+    {
+      "name": "Classification of finite-dimensional division algebras over ℝ",
+      "body": "The Frobenius-Peirce theorem (independently proven by Frobenius in 1878 and C.S. Peirce in 1881) states that the only finite-dimensional division algebras over the real numbers are: the real numbers themselves, the complex numbers, and the quaternions. This remarkable result shows that Hamilton's quaternions represent the highest-dimensional noncommutative division algebra over ℝ."
+    },
+    {
+      "name": "Structure of commutative algebras without nilpotents",
+      "body": "The Dedekind-Weierstrass theorem (proved in the 1860s, published in the 1880s) characterizes finite-dimensional commutative algebras over ℝ or ℂ that contain no nilpotent elements. Such algebras must be direct sums of copies of ℝ or ℂ, meaning both addition and multiplication operate componentwise. This result reveals the fundamental simplicity underlying commutative algebraic structures when nilpotent behavior is excluded."
+    },
+    {
+      "name": "Geometry of roots",
+      "body": "If $$P$$ is a nonconstant polynomial, then all roots of $$P$$'s derivative ($$P'$$) lie within the convex hull of the roots of $$P$$. (Gauss-Lucas Theorem)."
+    },
+    {
+      "name": "Infinitely many proofs for the infinitude of the primes",
+      "body": "Consider a sequence $$S$$ of integers such that the set of primes $$\\mathbb{P}_S$$ that divide some member of $$S$$ is infinite. Then, $$S$$ would provide its own proof for the infinitude of the primes. The Fermat numbers $$F_n = 2^{2^n} + 1$$ are an example of such a sequence. The set of all nonzero values $$\\{ p(n) : p(n) \\neq 0, n \\in \\mathbb{N} \\}$$ for some nonconstant polynomial $$p(x)$$ with integer coefficients (e.g., $$p(x) = x^2 + 1$$) is also such a \"proof for the infinitude of the primes\". Since there are infinitely many nonconstant polynomials, there are infinitely many such \"proofs\".<br><br><em>Bonus fun fact about primes:</em> There exists a real number $$\\theta$$ such that $$\\lfloor 2^\\theta \\rfloor$$, $$\\lfloor 2^{2^\\theta} \\rfloor$$, $$\\lfloor 2^{2^{2^\\theta}} \\rfloor$$, ... are all prime numbers."
+    },
+    {
+      "name": "Algebra and 5",
+      "body": "A set of cool facts about the number 5:<ul><li>There is no ring whose unit group is cyclic with order 5.</li><li>All groups of order 5 or less must be abelian.</li><li>There is no formula using radicals for the roots of a polynomial with degree 5 or higher.</li></ul>"
+    },
+    {
+      "name": "Galois' criterion",
+      "body": "A polynomial $$f(x)$$ over a field $$K$$ is solvable by radicals iff its Galois group $$\\text{Gal}(f / K)$$ is a solvable group, meaning it has a chain of subgroups where each is normal in the previous one and the corresponding quotient groups are abelian."
+    },
+    {
+      "name": "Reals as a vector space over the rationals",
+      "body": "The reals can be defined as the set of all Cauchy sequences of rationals, with addition and multiplication defined component-wise. This makes the reals a vector space (of infinite dimension) over the rationals. If the axiom of choice is true, then there exists a basis for this vector space."
+    },
+    {
+      "name": "Leibniz's proof for the derivative of a quadratic",
+      "body": "If $$x$$ changes by $$\\delta x$$, then $$y = x^2$$ should change by $$y + \\delta y = (x + \\delta x)^2 = x^2 + 2x\\delta x + (\\delta x)^2$$. Relabel $$\\delta x, \\delta y$$ as $$dx, dy$$ and as they become 'infinitely small', then $$(\\delta x)^2$$ gets infinitely smaller. Also subtract $$y = x^2$$. So we get $$dy = 2x dx$$, or $$dy/dx = 2x$$."
+    },
+    {
+      "name": "Interesting isomorphisms between rings and groups",
+      "body": "<ul><li>$$\\mathbb{R}[x]/(x^2 + 1) \\cong \\mathbb{C}$$.</li><li>The field $$K$$ of matrices with form $$\\begin{pmatrix} a & b \\\\ -b & a \\end{pmatrix}$$ is isomorphic to the field $$\\mathbb{C}$$.</li><li>$$\\mathbb{H} \\cong \\mathbb{C} \\times \\mathbb{C}$$ (where $$\\mathbb{H}$$ is the set of quaternions).</li><li>$$\\mathbb{R} / \\mathbb{Z} \\cong \\{ z \\in \\mathbb{C} : \\vert z \\vert = 1 \\}$$.</li></ul>"
+    },
+    {
+      "name": "Irreducibility of polynomials",
+      "body": "$$p(x)$$ is irreducible in $$F[x]$$ iff $$F[x]/(p(x))$$ is a field."
+    },
+    {
+      "name": "Isomorphism theorems across math",
+      "body": "<ul><li><strong>Rings:</strong> If $$\\phi: R \\to S$$ is a ring homomorphism, then $$\\ker(\\phi)$$ is an ideal of $$R$$ and $$R/\\ker(\\phi) \\cong \\text{im}(\\phi)$$.</li><li><strong>Groups:</strong> If $$\\phi: G \\to H$$ is a group homomorphism, then $$\\ker(\\phi)$$ is a normal subgroup of $$G$$ and $$G/\\ker(\\phi) \\cong \\text{im}(\\phi)$$.</li><li><strong>Topologies:</strong> If $$f: X \\to Y$$ is a continuous map, then $$X / \\sim \\cong \\text{im} f$$ where $$x \\sim y$$ iff $$f(x) = f(y)$$.</li></ul>"
+    },
+    {
+      "name": "Abelian groups",
+      "body": "Every group of order 5 or less is abelian."
+    },
+    {
+      "name": "Cayley's Theorem",
+      "body": "Every group is isomorphic to a subgroup of the symmetric group (permutations) on the group's elements. Cayley's theorem establishes that $$G$$ can linearly act on the vector space $$F^G$$ (functions from $$G$$ to $$F$$ where $$F$$ is a field), where the bases are indicator functions recognizing each element of $$g$$, and where the action of $$G$$ on $$F^G$$ permutes these basis functions. This makes $$G$$ a subgroup of $$\\text{GL}(F^G)$$ (invertible linear transformations of the vector space $$F^G$$). Now, we can construct a regular representation of $$G$$ in terms of matrices: let $$\\vert G \\vert = n$$, which is the dimension of the vector space $$F^G$$; each group element $$g$$ is representable by a permutation matrix $$M_g$$ which has exactly one $$1$$ in each row and column, where the position of the $$1$$ in the $$h$$th row corresponds to $$gh$$. This makes $$G$$ a subgroup of $$\\text{GL}(n, F)$$. We can also construct a group algebra $$F[G]$$ where $$F[G]$$ is the vector space over $$F$$ with basis given by elements of $$G$$. Cayley's theorem guarantees that $$F[G]$$ contains all representations of $$G$$."
+    },
+    {
+      "name": "Wedderburn-Artin Theorem",
+      "body": "Every semisimple ring $$R$$ is isomorphic to a direct sum of matrix rings over division rings. A ring is semisimple if it has no nontrivial two-sided nilpotent ideals, where an ideal $$I$$ in a ring $$R$$ is nontrivial if $$I \\neq \\{0\\}, R$$, nilpotent if there exists an integer $$n$$ such that $$I^n = \\{0\\}$$, and two-sided if $$I$$ is both a left and right ideal of $$R$$. For example, the following are semisimple rings: all fields, all division rings, $$\\text{Mat}_n(F)$$, $$F[G]$$ ($$F$$ has characteristic 0). A matrix ring $$\\text{Mat}_n(D)$$ is a ring of $$n \\times n$$ matrices, in this case over a division ring $$D$$, where every nonzero element has a multiplicative inverse (but not necessarily commutative, e.g. quaternions). A direct sum of rings $$R_1 \\oplus R_2 \\oplus \\ldots \\oplus R_n$$ is the set of tuples $$(r_1, r_2, \\ldots, r_n)$$ where each $$r_i$$ is in $$R_i$$, with addition and multiplication defined component-wise. The Wedderburn-Artin theorem gives us a complete structural description of semisimple rings and allows us to decompose group algebras $$F[G]$$ into irreducible representations of $$G$$ in the form of matrix rings over division rings."
+    },
+    {
+      "name": "Cayley's Theorem as an instance of the Yoneda Lemma",
+      "body": "Let $$F: \\text{Grp} \\to \\text{Set}$$ be the forgetful functor which maps each group to its \"underlying set\" but removes group structure. Cayley's theorem gives a map $$G \\to \\text{Aut}(F(G))$$, where $$\\text{Aut}(F(G))$$ is the automorphism group of the underlying set of $$G$$ (i.e., $$S(G)$$). The Yoneda lemma states more broadly that objects in any category $$\\mathcal{C}$$ can be embedded into the category of functors $$\\text{Set}^{\\mathcal{C}^\\text{op}}$$. Specifically, this is the category of contravariant functors from $$\\mathcal{C}^\\text{op}$$ to sets. For each object $$C \\in \\mathcal{C}$$, the functor $$F$$ assigns a set $$F(C)$$, and for each morphism $$f : C \\to D$$ in $$\\mathcal{C}$$, the functor assigns a function $$F(f) : F(D) \\to F(C)$$ (reversing the direction of the morphism). We can first interpret $$G$$ as a category with a single object $$\\cdot$$ where morphisms $$\\text{Hom}(\\cdot, \\cdot)$$ correspond to elements of $$G$$; the functor $$F : G^\\text{op} \\to \\text{Set}$$ assigns $$\\cdot$$ to $$G$$'s underlying set, with each morphism $$g \\in \\text{Hom}(\\cdot, \\cdot)$$ mapped to $$F(g) : G \\to G$$, defined by left multiplication: $$F(g)(x) = gx$$; now the action of $$G$$ on $$F(\\cdot) = G$$ is interpreted as a functor $$F$$ in $$\\text{Set}^{G^\\text{op}}$$."
+    },
+    {
+      "name": "Finite Simple Group of Order Two ❤️",
+      "body": "<a href=\"https://www.youtube.com/watch?v=BipvGD-LCjU\" target=\"_blank\" rel=\"noopener noreferrer\">A musical proof and tribute</a> to the finite simple group of order two."
+    },
+    {
+      "name": "Noetherian rings",
+      "body": "Rings where any ascending chain of ideals in $$R$$, $$I_1 \\subseteq I_2 \\subseteq \\ldots$$, stabilizes eventually such that there exists some $$n$$ where $$I_n = I_{n+1} = \\ldots$$. Examples of Noetherian rings include all fields, integers, polynomial rings over fields, and finite rings. There are many interesting properties of Noetherian rings.<ul><li><strong>Hilbert's Basis Theorem:</strong> If $$R$$ is Noetherian, then so is $$R[x]$$.</li><li><strong>Lasker-Noether Theorem:</strong> Every ideal $$I$$ in a Noetherian ring $$R$$ can be written as an intersection of finitely many primary ideals, where $$Q$$ is a primary ideal iff $$ab \\in Q$$ implies $$a \\in Q$$ or $$b^n \\in Q$$ for some $$n$$. This generalizes the decomposition of integers into prime factors to ideals in Noetherian rings.</li><li>Every Artinian ring is Noetherian, but not vice versa. An Artinian ring is a ring where any descending chain of ideals in $$R$$, $$I_1 \\supseteq I_2 \\supseteq \\ldots$$, stabilizes eventually such that there exists some $$n$$ where $$I_n = I_{n+1} = \\ldots$$. Examples of Artinian rings include fields, finite rings, semisimple rings, and $$\\mathbb{Z}/n\\mathbb{Z}$$. $$\\mathbb{Z}$$ is Noetherian but not Artinian.</li></ul>"
+    },
+    {
+      "name": "Finite abelian groups",
+      "body": "Every finite abelian group is isomorphic to a Cartesian product of cyclic groups of prime power order."
+    },
+    {
+      "name": "Finite groups",
+      "body": "Every finite group is isomorphic to the Galois group of a finite field extension of $$\\mathbb{Q}(x)$$, where $$\\mathbb{Q}(x)$$ is the field of rational functions in one variable (of the form $$p(x)/q(x)$$ for polynomials $$p, q$$ over the rationals) and a Galois group of a field extension $$K/F$$ is the group of automorphisms of $$K$$ that fix $$F$$. The same result holds for $$\\mathbb{C}(x)$$ instead of $$\\mathbb{Q}(x)$$."
+    },
+    {
+      "name": "Inverse Galois problem",
+      "body": "(Unsolved for >200 years.) Is every finite group the Galois group of a Galois extension of $$\\mathbb{Q}$$? (A Galois extension is a field extension that is normal and separable; \"normal\" means that it is the complete splitting field of a separable polynomial, and \"separable\" means that the minimal polynomial of every element in the extension has distinct roots.)"
+    },
+    {
+      "name": "The opposite of a set is a boolean algebra",
+      "body": "(In a categorical-theoretic sense.) If the category $$\\text{Set}$$ has sets as objects and functions $$f: X \\to Y$$ mapping every element of set $$X$$ to an element of set $$Y$$ as morphisms, then the opposite category $$\\text{Set}^{op}$$ has sets as objects and maps $$g: Y \\to X$$ where $$g(y) = x$$ iff $$f(x) = y$$. Naturally, $$g$$ should map <em>elements</em> of $$Y$$ to <em>subsets</em> of $$X$$, since functions can map multiple elements in the domain to one element in the codomain. To ensure composition, however, both the domain and codomain of $$g$$ should be sets of sets, as to map subsets of $$Y$$ to subsets of $$X$$. The specific structure of the objects in $$\\text{Set}^{op}$$, which are sets of sets, forms a boolean algebra where conjunction and disjunction are intersection and union. This <a href=\"https://www.youtube.com/watch?app=desktop&v=SrltwGJAiCM&t=0s\" target=\"_blank\" rel=\"noopener noreferrer\">video</a> describes this better."
+    },
+    {
+      "name": "Branching Programs",
+      "body": "Every function $$f : \\{0, 1\\}^n \\to \\{0, 1\\}$$ can be computed by a branching program of width 5 and length $$O(4^d)$$."
+    },
+    {
+      "name": "Time Hierarchy",
+      "body": "If $$r, t$$ are time-constructible functions satisfying $$r(n) \\log r(n) = o(t(n))$$, then $$\\text{DTIME}(r(n)) \\subsetneq \\text{DTIME}(t(n))$$."
+    },
+    {
+      "name": "Space Hierarchy",
+      "body": "If $$q, s$$ are space-constructible functions satisfying $$q(n) = o(s(n))$$, then $$\\text{DSPACE}(q(n)) \\subsetneq \\text{DSPACE}(s(n))$$."
+    },
+    {
+      "name": "Matrix product checking",
+      "body": "To check if $$A \\times B = C$$ for three $$n \\times n$$ matrices $$A, B, C$$, randomly sample $$r \\in \\{0, 1\\}^n$$ and check if $$ABr = Cr$$ repeatedly. This randomized algorithm takes only $$O(n^2)$$ time and has exponentially decreasing error rate."
+    },
+    {
+      "name": "NP-completeness proofs",
+      "body": "I think that many proofs for a problem's (especially graph problems) NP-completeness by demonstrating dependence on CircuitSAT or 3SAT are really nifty. Here is a great <a href=\"https://homes.cs.washington.edu/~anuprao/pubs/CSE431sp2021/lecture7.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">resource</a> for some of these proofs."
+    },
+    {
+      "name": "A complication for proving $$P \\stackrel{?}{=} NP$$",
+      "body": "There exists an oracle $$A$$ such that $$P^A = NP^A$$, and an oracle $$B$$ such that $$P^B \\neq NP^B$$. Therefore any proof on $$P \\stackrel{?}{=} NP$$ may not work in relativized worlds where access to both is permitted, whereas other familiar proofs do relativize."
+    },
+    {
+      "name": "The blind man",
+      "body": "A blind man is trying to buy a red rag and a blue rag. But he is not sure if the salesman is trying to trick him or not. The salesman could, for instance, give him two red rags or two blue rags. The blind man shuffles rags behind his back, but keeps track of the identities of each (so at first he doesn't know the true colors, but he knows which rag is which). He randomly pulls out a rag and asks the salesman what color it is. Then, he puts it behind his back and shuffles again, repeating this several times. If the salesman gives two conflicting answers for the same rag (e.g., calling it red one time and blue another time), then the blind man knows that he is lying. If, on the other hand, the salesman consistently calls one rag blue and the other rag red, then the blind man is sure that he indeed has one blue and one red rag. The moral of this story is that even a \"handicapped\" verifier can compute powerful functions with randomness and interaction."
+    },
+    {
+      "name": "A double-ended tight bound",
+      "body": "$$\\frac{1}{3} \\le \\frac{a^2 + b^2 + c^2}{(a + b + c)^2} \\le \\frac{1}{2}$$"
+    },
+    {
+      "name": "A joke",
+      "body": "$$e^{i \\frac{\\pi}{2}} \\cdot 8 = \\infty$$"
+    },
+    {
+      "name": "Perfect secrecy theorem",
+      "body": "A cryptosystem has perfect secrecy if the ciphertext reveals no information about the plaintext. Formally, for any plaintext $$M$$ and ciphertext $$C$$: $$P(M \\vert C) = P(M)$$. If a cryptosystem has perfect secrecy, then the key space must be at least as large as the message space, making perfect secrecy an impractical goal for cryptosystems."
+    },
+    {
+      "name": "All about XOR",
+      "body": "<a href=\"https://accu.org/journals/overload/20/109/lewin_1915/\" target=\"_blank\" rel=\"noopener noreferrer\">A great deep dive into the XOR operation</a>, its properties, and its uses across computer science."
+    },
+    {
+      "name": "Twin prime gaps",
+      "body": "There are infinitely many prime pairs with a gap less than 246."
+    },
+    {
+      "name": "Gershgorin Disk Theorem",
+      "body": "The eigenvalues of a matrix lie within the union of disks centered at the diagonal elements with radii equal to the sum of the absolute values of the off-diagonal elements in the corresponding row."
+    },
+    {
+      "name": "Neumann series (geometric series for matrices)",
+      "body": "$$(I - A)^{-1} = \\sum_{k=0}^{\\infty} A^k = I + A + A^2 + A^3 + \\cdots$$. Convergence condition: The spectral radius $$\\rho(A) < 1$$, where $$\\rho(A) = \\max\\{\\vert\\lambda\\vert : \\lambda \\text{ is an eigenvalue of } A\\}$$."
+    },
+    {
+      "name": "Quotienting \"inverses\" in vector spaces",
+      "body": "If $$V$$ is a vector space and $$U$$ is a subspace of $$V$$, then $$(V/U) \\times U \\cong V$$. This is very nice since you can't say the same thing about other algebraic structures like groups, rings, etc."
+    },
+    {
+      "name": "Riesz Representation Theorem",
+      "body": "Every linear functional on a Hilbert space behaves identically to the inner product with some fixed vector in the space. That is, for a space $$V$$ on the field $$F$$, every linear functional $$\\phi : V \\to F$$, $$\\forall v \\in V, \\phi(v) = \\langle v, u \\rangle$$ for a fixed $$u \\in V$$. There are some interesting unexpected implications of this. Consider the vector space of $$n$$-degree polynomials with real coefficients (for some fixed $$n$$), with the inner product of $$p(x)$$ and $$q(x)$$ defined as $$\\int_a^b p(x) q(x) dx$$ for some lower and upper bounds $$a$$ and $$b$$. Consider the functional $$\\phi(p) = p(c)$$ for some fixed $$c \\in [a, b]$$ (i.e., fixed point evaluation of a polynomial). Then, by the Riesz representation theorem, there is a unique fixed polynomial $$q(x)$$ such that for all polynomials $$p(x)$$ in the space, $$p(c) = \\int_a^b p(x) q(x) dx$$. Somehow, $$q(x)$$ is able to encode for ``selecting'' the point evaluation at $$c$$."
+    },
+    {
+      "name": "Vector spaces with guaranteed eigenvalues",
+      "body": "If $$V$$ is a complex vector space, it is guaranteed to have an eigenvalue. If $$V$$ is an odd-dimensional real vector space, it is guaranteed to have an eigenvalue too."
+    },
+    {
+      "name": "Schur's theorem",
+      "body": "Every operator on a finite-dimensional complex inner product space has an upper-triangular matrix with respect to some orthonormal basis."
+    },
+    {
+      "name": "Complex spectral theorem",
+      "body": "Suppose $$T$$ is a linear operator on a complex vector space. The following are equivalent: $$T$$ is normal (it commutes with its adjoint), $$T$$ has a diagonal matrix with respect to an orthonormal basis of $$V$$, $$V$$ has an orthonormal basis consisting of eigenvectors of $$T$$."
+    },
+    {
+      "name": "Generalized eigenspace decomposition",
+      "body": "Suppose $$T$$ is a linear operator on a complex vector space with $$\\lambda_1, ..., \\lambda_m$$ as distinct eigenvalues. Then $$V$$ is the direct sum of the generalized eigenspaces of $$T$$ (the nullspaces of $$(T - \\lambda_i I)^n$$ for some $$n$$) corresponding to each eigenvalue."
+    },
+    {
+      "name": "Hiding and Binding Commitments",
+      "body": "Suppose I want to make a bet with you on which country will win the FIFA world cup, but I don't want you to know my bet before the winner is known. If I just keep my bet secret and reveal it after the winner is known, I could be accused of changing my bet. Instead, I will choose a random string $$R$$ and concatenate my bet to the string and publish its hash. Then, after the winner is revealed, I will provide $$R$$ and my bet. It is hard for me to forge a different $$R$$ with a different country which will hash to the same value due to the second preimage resistance of hash functions, so I have committed to a bet, but it is hiding because you don't know what my bet is since you don't know the random string until I have revealed it."
+    },
+    {
+      "name": "Abelian groups and modules",
+      "body": "A module is like a vector space but over rings rather than fields. There is a 1-1 correspondence between modules over the integer ring and abelian groups."
+    },
+    {
+      "name": "Artin-Schreier Theorem (Ordered Fields and Formal Reality)",
+      "body": "A field $$F$$ admits a total ordering compatible with its algebraic structure if and only if $$F$$ is formally real. A field $$F$$ is formally real if and only if $$-1$$ cannot be expressed as a sum of squares of nonzero elements in $$F$$. Equivalently, for any $$a_1, a_2, \\ldots, a_n \\in F$$ with each $$a_i \\neq 0$$, we have $$\\sum_{i=1}^n a_i^2 \\neq -1$$."
+    },
+    {
+      "name": "Six intuitions for KL-divergence",
+      "body": "<a href=\"https://www.lesswrong.com/posts/no5jDTut5Byjqb4j5/six-and-a-half-intuitions-for-kl-divergence\" target=\"_blank\" rel=\"noopener noreferrer\">Six (and a half) intuitions for KL-divergence</a> — a great overview of one of the most important quantities in information theory."
+    }
+  ],
+  "quotes": [
+    {
+      "text": "Starting from the empty set, perform a few operations, like forming the set of all subsets. Before long you have a magnificent structure in which you can embed the real numbers, complex numbers, quaternions, Hilbert spaces, infinite-dimensional differentiable manifolds, and anything else you like.",
+      "author": "Reuben Hersh"
+    },
+    {
+      "text": "Transfinites and infinitesimals are two types of infinite number, which characterize degrees of infinity in different fashions. In effect, this means that contemporary mathematics has \"two distinct rigorous formulations of the calculus\": that of Weierstrass and Cantor, who eliminated infinitesimals, and that of Robinson, who rehabilitated and legitimized them. Both these endeavors, however, had their genesis in the imposition of the notion of infinitesimals as a problematic concept, which in turn gave rise to differing but related axiomatizations. Deleuze's claim is that the ontology of mathematics is poorly understood if it does not take into account the specificity of problematics.",
+      "author": "Daniel Smith"
+    },
+    {
+      "text": "Hilbert and de Broglie were as much politicians as scientists: they reestablished order.",
+      "author": "Deleuze and Guattari, A Thousand Plateaus"
+    },
+    {
+      "text": "...the axiomatic method is nothing but the 'Taylor System' — the 'scientific management' — of mathematics",
+      "author": "Nicholas Bourbaki"
+    },
+    {
+      "text": "The methods for coming up with useful examples in mathematics... are even less clear than the methods for proving mathematical statements.",
+      "author": "Gil Kalai, Examples in Mathematics"
+    }
+  ]
+}
