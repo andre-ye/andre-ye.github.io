@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: latex_embed
 title: agenda
+doc_title: Agenda
 permalink: /work/agenda/
 description:
 nav: false

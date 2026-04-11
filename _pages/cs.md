@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: latex_embed
 title: computer science papers
+doc_title: Computer Science
 permalink: /work/cs/
 nav: false
 parent: work
@@ -15,17 +16,16 @@ nav_order: 2
 }
 
 .paper-list li {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
+  margin-bottom: 1.35rem;
+  padding-bottom: 1.1rem;
   border-bottom: 1px solid var(--global-divider-color);
+  line-height: 1.6;
 }
 
-.paper-list li:last-child {
-  border-bottom: none;
-}
+.paper-list li:last-child { border-bottom: none; }
 
 .paper-title {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
 }
@@ -35,42 +35,32 @@ nav_order: 2
   text-decoration: none;
 }
 
-.paper-title a:hover {
-  color: var(--global-theme-color);
-}
+.paper-title a:hover { text-decoration: underline; }
 
-.paper-authors {
-  font-size: 0.9rem;
-  margin-bottom: 0.25rem;
-}
-
-.paper-venue {
-  font-size: 0.9rem;
-  font-style: italic;
-}
-
-.paper-award {
-  font-size: 0.85rem;
-  margin-top: 0.25rem;
-}
+.paper-authors { font-size: 0.88rem; margin-bottom: 0.2rem; }
+.paper-venue { font-size: 0.85rem; font-style: italic; color: var(--global-text-color-light); }
+.paper-award { font-size: 0.82rem; margin-top: 0.25rem; }
 
 .paper-links {
-  font-size: 0.9rem;
-  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
 }
 
 .paper-links a {
-  margin-right: 0.75rem;
-  color: var(--global-theme-color);
+  margin-right: 0.85rem;
+  color: var(--global-text-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .section-header {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
   font-weight: 600;
-  border-bottom: 2px solid var(--global-theme-color);
+  border-bottom: 1px solid var(--global-divider-color);
   padding-bottom: 0.25rem;
+  letter-spacing: 0.01em;
 }
 </style>
 

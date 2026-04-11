@@ -1,0 +1,144 @@
+/*******************************************************************************
+ * LaTeX right-panel lists, agenda blocks, optional news/social/footer
+ ******************************************************************************/
+
+.latex-panel-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: 0.03em;
+}
+
+.latex-panel-intro {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: var(--global-text-color-light);
+}
+
+.latex-panel-section-header {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 2.25rem 0 0.75rem 0;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  letter-spacing: 0.01em;
+}
+
+/* Paper list - reference/bibliography style */
+.latex-paper-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: 1.35rem;
+    padding-bottom: 1.1rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    line-height: 1.6;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.latex-paper-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+
+  a {
+    color: var(--global-text-color);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.latex-paper-authors {
+  font-size: 0.88rem;
+  margin-bottom: 0.2rem;
+}
+
+.latex-paper-venue {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--global-text-color-light);
+}
+
+.latex-paper-award {
+  font-size: 0.82rem;
+  margin-top: 0.25rem;
+}
+
+.latex-paper-links {
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+
+  a {
+    margin-right: 0.85rem;
+    color: var(--global-text-color);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+      color: var(--global-hover-color);
+    }
+  }
+}
+
+/* Agenda sections - paper-like */
+.latex-agenda-section {
+  margin-bottom: 2.25rem;
+
+  h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 0.6rem 0;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    letter-spacing: 0.01em;
+  }
+
+  p {
+    font-size: 0.98rem;
+    line-height: 1.8;
+    margin: 0 0 0.6rem 0;
+  }
+}
+
+/* News and social in left panel */
+.latex-news-section,
+.latex-social-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  .latex-section {
+    margin-top: 0;
+  }
+
+  a {
+    color: var(--global-text-color);
+  }
+}
+
+/* Footer */
+.latex-footer {
+  flex-shrink: 0;
+  border-top: 1px solid var(--global-divider-color);
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+
+  a {
+    color: var(--global-text-color);
+  }
+}
+
+.latex-footer-inner {
+  width: 100%;
+}

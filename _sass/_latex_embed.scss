@@ -1,0 +1,190 @@
+/*******************************************************************************
+ * Standalone / iframe LaTeX document pages (layout: latex_embed)
+ ******************************************************************************/
+
+/* Right-panel preview iframe: document body only, no site mini-nav */
+html.latex-embed.latex-embed--in-iframe .latex-doc-nav {
+  display: none !important;
+}
+
+html.latex-embed.latex-embed--in-iframe .skip-link {
+  display: none !important;
+}
+
+html.latex-embed .latex-doc-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 1rem;
+  margin: 0 auto 1.25rem;
+  padding: 0 2.75rem;
+  max-width: 42em;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
+
+html.latex-embed .latex-doc-nav-link {
+  color: var(--global-text-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+html.latex-embed .latex-doc-nav-link:hover {
+  color: var(--global-hover-color);
+  border-bottom-color: var(--global-divider-color);
+}
+
+/* Kramdown / jekyll-toc style tables of contents */
+html.latex-embed #markdown-toc,
+html.latex-embed #toc,
+html.latex-embed .section-nav {
+  margin: 0 auto 1.5rem;
+  padding: 0.75rem 1rem;
+  max-width: 42em;
+  border: 1px solid var(--global-divider-color);
+  background: rgba(0, 0, 0, 0.02);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+html.latex-embed #markdown-toc ul,
+html.latex-embed #toc ul,
+html.latex-embed .section-nav ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.25rem;
+}
+
+html.latex-embed body {
+  margin: 0;
+  padding: 2rem 2.75rem;
+  font-family: $latex-serif-font-stack;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--global-text-color);
+  background: var(--global-bg-color);
+  cursor: default;
+  max-width: 42em;
+}
+
+html.latex-embed a {
+  color: var(--global-text-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+html.latex-embed a:hover {
+  color: var(--site-accent-primary, var(--global-hover-color));
+}
+
+html.latex-embed .bubble-link {
+  color: var(--global-text-color);
+  text-decoration: underline;
+}
+
+html.latex-embed .latex-embed-doc-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: 0.03em;
+}
+
+html.latex-embed h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem 0;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  letter-spacing: 0.02em;
+}
+
+html.latex-embed h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 2rem 0 0.5rem 0;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  letter-spacing: 0.01em;
+}
+
+html.latex-embed h2:first-child { margin-top: 0; }
+
+html.latex-embed h3 {
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.4rem 0;
+}
+
+html.latex-embed ::selection {
+  background: rgba(0, 0, 0, 0.15);
+  color: inherit;
+}
+
+html.latex-embed .paper-list li,
+html.latex-embed .section-header {
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+/* CV in embed - paper-like sections */
+html.latex-embed .cv-section {
+  margin: 2rem 0;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+html.latex-embed .cv-section h2 {
+  margin-top: 0;
+}
+
+/* layout: page (nested under latex_embed) */
+html.latex-embed .post {
+  margin: 0;
+}
+
+html.latex-embed .post-header {
+  margin-bottom: 1.5rem;
+}
+
+html.latex-embed .post-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.03em;
+  color: var(--global-text-color);
+}
+
+html.latex-embed .post-description {
+  text-align: center;
+  color: var(--global-text-color-light);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+html.latex-embed .post article {
+  margin-top: 0;
+}
+
+html.latex-embed details {
+  user-select: none;
+}
+
+html.latex-embed details > summary span.icon {
+  width: 24px;
+  height: 10px;
+  transition: all 0.3s;
+  margin-left: auto;
+}
+
+html.latex-embed details[open] summary span.icon {
+  transform: rotate(180deg);
+}
+
+html.latex-embed summary {
+  display: flex;
+  cursor: pointer;
+}
+
+html.latex-embed summary::-webkit-details-marker {
+  display: none;
+}

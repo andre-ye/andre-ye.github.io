@@ -149,3 +149,16 @@ d-appendix {
     }
   }
 }
+
+/*******************************************************************************
+ * Distill template defaults use uppercase for header nav / appendix headings
+ ******************************************************************************/
+distill-header .nav a {
+  text-transform: none !important;
+}
+
+d-appendix h3,
+d-footnote-list > h3,
+d-citation-list > h3 {
+  text-transform: none !important;
+}

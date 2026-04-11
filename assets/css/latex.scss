@@ -1,0 +1,18 @@
+---
+# LaTeX document surfaces only (hub + embed + minimal default). Distill keeps main.css.
+---
+@charset "utf-8";
+
+$max-content-width: {{ site.max_width }};
+
+@import
+  "variables",
+  "latex_document_skin",
+  "latex/tokens",
+  "latex/shell",
+  "latex/panels",
+  "latex_embed",
+  "latex_quotes",
+  "latex_marker_links",
+  "latex_code_blocks"
+;

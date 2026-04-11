@@ -177,6 +177,11 @@
     var ctx = canvas.getContext('2d');
     var dpr = window.devicePixelRatio || 1;
 
+    /* Parallax factor: the sticky-note background scrolls at this fraction
+     * of the page scroll, so it visually lags behind the main content.
+     * 0.1 = strong lag (notes barely move); 0.5 = moderate; 1.0 = none. */
+    var PARALLAX = 0.25;
+
     // Load articles for sticky note links
     var noteArticles = [];
     fetch('/assets/json/me-like-articles.json')
@@ -502,8 +507,11 @@
     var HOVER_R2 = HOVER_R * HOVER_R;
 
     document.addEventListener('mousemove', function (e) {
+      // Notes are rendered with a parallax shift, so the "doc-space" Y for
+      // hit-testing is offset by `effectiveScrollY = scrollY * PARALLAX`,
+      // not raw scrollY.
       mouseX = e.clientX + window.scrollX;
-      mouseY = e.clientY + window.scrollY;
+      mouseY = e.clientY + (window.scrollY || 0) * PARALLAX;
       var dx = mouseX - lastMX, dy = mouseY - lastMY;
       mouseSpeed = Math.sqrt(dx * dx + dy * dy);
       lastMX = mouseX; lastMY = mouseY;
@@ -538,8 +546,8 @@
 
     function drawNote(n, t) {
       // Local variation: small, slow per-note ripple (subordinate to global sway)
-      var localWave = Math.sin(n.phase + n.x * 0.038 + n.y * 0.018 + t * n.freq1) * 0.030
-                    + Math.sin(n.phase * 0.7 - n.x * 0.022 + n.y * 0.032 + t * n.freq2) * 0.015;
+      var localWave = Math.sin(n.phase + n.x * 0.038 + n.y * 0.018 + t * n.freq1) * 0.060
+                    + Math.sin(n.phase * 0.7 - n.x * 0.022 + n.y * 0.032 + t * n.freq2) * 0.030;
       // Global sway dominates: all notes move collectively, slight per-note phase offset
       var sway = globalSway * (1.0 + 0.18 * Math.sin(n.phase));
       var rot  = n.baseRot + localWave + sway + n.hoverRot + n.rustlePos;
@@ -562,8 +570,10 @@
     }
 
     canvas.addEventListener('click', function(e) {
+      // Same parallax conversion as mousemove — clicks need to land where
+      // the user actually sees the note, not where it would be without parallax.
       var cx = e.clientX + (window.scrollX || window.pageXOffset || 0);
-      var cy = e.clientY + (window.scrollY || window.pageYOffset || 0);
+      var cy = e.clientY + ((window.scrollY || window.pageYOffset || 0) * PARALLAX);
       // Use the spatial hash (hovBuckets) — O(1) amortised vs full iteration.
       var bx = Math.floor(cx / HOVER_BUCKET);
       var by = Math.floor(cy / HOVER_BUCKET);
@@ -607,10 +617,16 @@
       /* Decay mouse speed so hover riffle fades naturally */
       mouseSpeed *= 0.88;
 
-      // Global sway — two very slow sine waves; dominates local variation for collective feel
-      globalSway = Math.sin(t * 0.28) * 0.052 + Math.sin(t * 0.17) * 0.028;
+      // Global sway — two very slow sine waves; dominates local variation
+      // for collective feel. Amplitudes bumped ~2x for more noticeable
+      // background swaying without changing the slow frequencies.
+      globalSway = Math.sin(t * 0.28) * 0.115 + Math.sin(t * 0.17) * 0.062;
 
-      var scrollY = window.scrollY || window.pageYOffset || 0;
+      var rawScrollY = window.scrollY || window.pageYOffset || 0;
+      // Parallax: notes are positioned in "doc space" but the effective
+      // viewport-to-doc offset is reduced by PARALLAX, so the background
+      // scrolls slower than the page.
+      var scrollY = rawScrollY * PARALLAX;
       var vw = window.innerWidth, vh = window.innerHeight;
 
       var K = 18, Cd = 4.5;
@@ -822,6 +838,13 @@
     var xMax = side === 'left' ? strictMax + overlap : strictMax;
     var w = rnd(72, 112);
     var bvy = rnd(28, 55);
+    // Parallax factor based on size + layer. Bigger papers feel closer
+    // (higher parallax = appear to move faster on scroll). Front-layer
+    // papers (over the main sheet) parallax > 1 (closer than the page);
+    // back-layer papers parallax < 1 (between page at 1.0 and the
+    // sticky-note background at 0.25).
+    var sizeNorm = (w - 72) / 40; // 0..1 over the size range
+    var parallax = inFront ? (1.05 + sizeNorm * 0.30) : (0.45 + sizeNorm * 0.40);
     return {
       baseX : rnd(strictMin, strictMax),
       baseXV: rnd(-6, 6),
@@ -844,6 +867,7 @@
       isSide: true,
       inFront: inFront,
       tumble: false,
+      parallax: parallax,
     };
   }
 
@@ -872,6 +896,9 @@
     var w = rnd(60, 115);
     var tumble = w < 75 && Math.random() < 0.55; // small papers can tumble
     var bvy = rnd(22, 52);
+    // 3D depth parallax — same scheme as makeParticle. See comments there.
+    var sizeNorm = (w - 60) / 55; // 0..1 over the size range
+    var parallax = inFront ? (1.05 + sizeNorm * 0.30) : (0.45 + sizeNorm * 0.40);
     return {
       baseX : x,
       baseXV: rnd(-9, 9),
@@ -896,6 +923,7 @@
       isSide: false,
       inFront: inFront,
       tumble: tumble,
+      parallax: parallax,
     };
   }
 
@@ -1031,7 +1059,7 @@
 
 
 
-  function drawParticle(ctx, p) {
+  function drawParticle(ctx, p, pScrollY) {
     var cosY  = Math.cos(p.angY);
     var cosX  = Math.cos(p.angX);
     var isBack = cosY < 0;
@@ -1042,7 +1070,10 @@
 
     ctx.save();
     if (p.alpha !== undefined && p.alpha < 1) ctx.globalAlpha = p.alpha;
-    ctx.translate(x, p.y);
+    // Translate to viewport y by subtracting per-particle effective scroll.
+    // This is the parallax in action: same p.y, different visual y based on
+    // how strongly the particle responds to scroll.
+    ctx.translate(x, p.y - (pScrollY || 0));
     ctx.rotate(tiltZ);
 
     var sx = Math.abs(cosY);
@@ -1217,25 +1248,20 @@
       ctx.clearRect(0, 0, vw, vh);
       ctxFront.clearRect(0, 0, vw, vh);
 
-      ctx.save();
-      ctx.translate(0, -scrollY);
-      ctxFront.save();
-      ctxFront.translate(0, -scrollY);
-
-      /* Canvas selection: assigned once at particle creation (p.inFront).
-       * inFront particles render over the paper; all others render behind it.
-       * This is static — no per-frame position check — so there is never
-       * a flicker when a particle drifts across the paper boundary. */
+      /* Per-particle parallax for 3D depth: each particle's effective
+       * scroll = scrollY * p.parallax. Bigger papers + front-layer get
+       * higher parallax (appear closer, move faster). This is computed
+       * per particle inside drawParticle, so there's no global ctx
+       * translate. The visibility check also uses the per-particle
+       * effective scroll. */
       for (var i = 0; i < particles.length; i++) {
         var p = particles[i];
         updateParticle(p, dt, docH);
-        if (p.y >= scrollY - 300 && p.y <= scrollY + vh + 300) {
-          drawParticle(p.inFront ? ctxFront : ctx, p);
+        var pScrollY = scrollY * p.parallax;
+        if (p.y >= pScrollY - 300 && p.y <= pScrollY + vh + 300) {
+          drawParticle(p.inFront ? ctxFront : ctx, p, pScrollY);
         }
       }
-
-      ctx.restore();
-      ctxFront.restore();
     };
   }
 
@@ -1883,16 +1909,15 @@
           glueWrap.appendChild(makeLinkBtn(ripId, showRipToast));
         }
 
-        // Insert glue wrap INSIDE the panel content (top-right margin) so
-        // it doesn't affect the tear line's vertical position. Insert as
-        // the FIRST child so that float:right + position:sticky keeps the
-        // icons pinned to the top of the visible scroll area.
-        var contentForGlue = panel.querySelector('.rip-panel-content');
-        if (contentForGlue) {
-          contentForGlue.insertBefore(glueWrap, contentForGlue.firstChild);
-        } else {
-          panel.parentNode.insertBefore(glueWrap, panel);
-        }
+        // Insert the glue wrap as a direct child of `.rip-panel` (NOT
+        // inside `.rip-panel-content`). The wrap is `position: absolute`
+        // relative to the panel, which has `position: relative` and no
+        // overflow clip — so the wrap can sit at the panel's actual right
+        // edge (= paper edge) and stays visually fixed as the user scrolls
+        // inside `.rip-panel-content` (because `.rip-panel` itself doesn't
+        // scroll). When the page scrolls, the panel moves with it, taking
+        // the wrap along automatically.
+        panel.appendChild(glueWrap);
         panel._glueWrap = glueWrap;
         glueBtn.addEventListener('click', function() {
           panel._glueWrap = null;
@@ -2696,6 +2721,37 @@
     });
   }
 
+  /* ─── Better Images of AI: deterministic daily picker (EST) ─── */
+  function initBetterAIofTheDay() {
+    var img = document.getElementById('better-ai-of-the-day-img');
+    if (!img) return;
+    fetch('/assets/json/better-ai-imgs.json')
+      .then(function(r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function(list) {
+        if (!list || !list.length) return;
+        // Today's date in America/New_York — same image for the whole EST day.
+        var dateStr;
+        try {
+          var fmt = new Intl.DateTimeFormat('en-CA', {
+            timeZone: 'America/New_York',
+            year: 'numeric', month: '2-digit', day: '2-digit'
+          });
+          dateStr = fmt.format(new Date());
+        } catch (e) {
+          dateStr = new Date().toISOString().slice(0, 10);
+        }
+        // Deterministic hash → index.
+        var hash = 0;
+        for (var i = 0; i < dateStr.length; i++) {
+          hash = (hash * 31 + dateStr.charCodeAt(i)) >>> 0;
+        }
+        var pick = list[hash % list.length];
+        img.src = '/assets/better-ai-imgs/' + encodeURIComponent(pick);
+        img.alt = 'Better Image of AI: ' + pick.replace(/\.(png|jpe?g)$/i, '');
+      })
+      .catch(function() { /* silent fail */ });
+  }
+
   /* ─── Single merged RAF loop (with per-tick throttling) ─── */
   function startMainLoop(ticks) {
     if (!ticks.length) return;
@@ -2776,6 +2832,7 @@
       _resizeTimer = setTimeout(fixMultiLineBrushes, 400);
     });
     initPhotoToggle();
+    initBetterAIofTheDay();
 
     if (window.innerWidth > 740) {
       var flutterTick = initPaperFlutter();

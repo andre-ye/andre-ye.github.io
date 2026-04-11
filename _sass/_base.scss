@@ -9,7 +9,7 @@
   top: 0;
   z-index: 10000;
   padding: 0.5rem 1rem;
-  background: var(--global-theme-color, #ff4444);
+  background: var(--global-theme-color, #888888);
   color: #fff;
   text-decoration: none;
   font-weight: 500;
@@ -20,34 +20,33 @@
   }
 }
 
-// LaTeX font (Computer Modern) - easily toggle by adding/removing 'latex-font' class from <html>
-// Using Latin Modern, the modern digital version of Computer Modern
-@import url('https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css');
+// Palatino-class typography — toggle with 'latex-font' on <html> (see $latex-serif-font-stack in variables)
+// Fonts load from head_latex_shell / head (Gelasio + Inconsolata via Google Fonts)
 
 html.latex-font {
   // Apply font family globally
   body, p, li, span, div, td, th, blockquote, a, label, input, textarea, select, button {
-    font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'CMU Serif', Georgia, serif !important;
+    font-family: $latex-serif-font-stack !important;
   }
 
   // Headings: apply font but preserve their original sizes
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'CMU Serif', Georgia, serif !important;
+    font-family: $latex-serif-font-stack !important;
   }
 
   // Italics - but NOT icon fonts (Font Awesome uses .fas, .fab, .far, .fal; Academicons uses .ai)
   em, i:not(.fas):not(.fab):not(.far):not(.fal):not(.ai) {
-    font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'CMU Serif', Georgia, serif !important;
+    font-family: $latex-serif-font-stack !important;
     font-style: italic;
   }
 
   strong, b {
-    font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'CMU Serif', Georgia, serif !important;
+    font-family: $latex-serif-font-stack !important;
     font-weight: bold;
   }
 
   code, pre {
-    font-family: 'Computer Modern Typewriter', 'Latin Modern Mono', monospace !important;
+    font-family: $latex-mono-font-stack !important;
   }
 
   // Body text sizing (not headings) - desktop
@@ -81,7 +80,7 @@ html.latex-font {
 
   // Ensure navigation and buttons look good
   nav, .navbar, .nav-link, .dropdown-item {
-    font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'CMU Serif', Georgia, serif !important;
+    font-family: $latex-serif-font-stack !important;
   }
 
   // Preserve icon font families - these need their original fonts to display icons
@@ -96,156 +95,151 @@ html.latex-font {
   }
 }
 
-// Custom cursor styling - only for devices with hover capability (not touch)
-@media (hover: hover) and (pointer: fine) {
-  * {
-    cursor: none;
-  }
+// Custom cursor: only when html.custom-cursor-active (set by custom_cursor.js when loaded).
+// Prevents invisible cursor on LaTeX layouts that load CSS but not the script.
+html.custom-cursor-active {
+  @media (hover: hover) and (pointer: fine) {
+    * {
+      cursor: none;
+    }
 
-  body {
-    cursor: none;
-  }
+    body {
+      cursor: none;
+    }
 
-  .custom-cursor {
-    position: fixed;
-    width: 12px;
-    height: 12px;
-    background-color: #ff4444;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
-    box-shadow:
-      0 0 10px rgba(255, 68, 68, 0.8),
-      0 0 20px rgba(255, 68, 68, 0.6),
-      0 0 30px rgba(255, 68, 68, 0.4);
-    transition: all 0.1s ease;
-  }
+    .custom-cursor {
+      position: fixed;
+      width: 12px;
+      height: 12px;
+      background-color: #888888;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      box-shadow:
+        0 0 10px rgba(0, 0, 0, 0.4),
+        0 0 20px rgba(0, 0, 0, 0.2),
+        0 0 30px rgba(0, 0, 0, 0.1);
+      transition: all 0.1s ease;
+    }
 
-  .custom-cursor.hover {
-    transform: translate(-50%, -50%) scale(1.5);
-    box-shadow:
-      0 0 15px rgba(255, 68, 68, 0.9),
-      0 0 30px rgba(255, 68, 68, 0.7),
-      0 0 45px rgba(255, 68, 68, 0.5);
-  }
+    .custom-cursor.hover {
+      transform: translate(-50%, -50%) scale(1.5);
+      box-shadow:
+        0 0 15px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(0, 0, 0, 0.3),
+        0 0 45px rgba(0, 0, 0, 0.2);
+    }
 
-  // Particle effects for cursor
-  .cursor-particle {
-    position: fixed;
-    width: 4px;
-    height: 4px;
-    background-color: #ff4444;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9998;
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
-
-  // Particle animation keyframes
-  @keyframes particle-diffuse {
-    0% {
+    .cursor-particle {
+      position: fixed;
+      width: 4px;
+      height: 4px;
+      background-color: #888888;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9998;
       opacity: 1;
-      transform: translate(-50%, -50%) scale(1);
+      transform: translate(-50%, -50%);
     }
-    100% {
+
+    @keyframes particle-diffuse {
+      0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.3);
+      }
+    }
+
+    .cursor-particle.diffusing {
+      animation: particle-diffuse 0.6s ease-out forwards;
+    }
+
+    a, button, input, textarea, select, [role="button"], [tabindex]:not([tabindex="-1"]) {
+      cursor: none !important;
+    }
+  }
+
+  @media (hover: none), (pointer: coarse) {
+    .custom-cursor,
+    .cursor-particle,
+    .cursor-word-bubble,
+    .cursor-meaning-bubble {
+      display: none !important;
+    }
+  }
+
+  .cursor-word-bubble {
+    position: fixed !important;
+    background: linear-gradient(135deg, rgba(80, 80, 80, 0.95) 0%, rgba(60, 60, 60, 0.85) 100%);
+    color: white;
+    padding: 0.5rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    pointer-events: none;
+    z-index: 9997;
+    opacity: 0.85;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s ease, transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:
+      0 6px 20px rgba(0, 0, 0, 0.3),
+      0 3px 8px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    white-space: nowrap;
+    min-width: 60px;
+    text-align: center;
+
+    &.hidden {
       opacity: 0;
-      transform: translate(-50%, -50%) scale(0.3);
+      transform: translate(-50%, -50%) scale(0.6);
+    }
+
+    &:hover {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.05);
     }
   }
 
-  .cursor-particle.diffusing {
-    animation: particle-diffuse 0.6s ease-out forwards;
-  }
-}
-
-// Hide custom cursor elements on touch devices
-@media (hover: none), (pointer: coarse) {
-  .custom-cursor,
-  .cursor-particle,
-  .cursor-word-bubble,
   .cursor-meaning-bubble {
-    display: none !important;
-  }
-}
+    position: fixed !important;
+    background: linear-gradient(135deg, rgba(68, 68, 68, 0.95) 0%, rgba(68, 68, 68, 0.85) 100%);
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 30px;
+    font-size: 0.65rem;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    pointer-events: none;
+    z-index: 9996;
+    opacity: 0.9;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s ease, transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:
+      0 4px 16px rgba(0, 0, 0, 0.3),
+      0 2px 6px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    white-space: normal;
+    max-width: 500px;
+    text-align: center;
+    line-height: 1.4;
 
-// Word bubble that follows cursor (simple circular bubble)
-.cursor-word-bubble {
-  position: fixed !important;
-  background: linear-gradient(135deg, rgba(255, 68, 68, 0.95) 0%, rgba(255, 68, 68, 0.85) 100%);
-  color: white;
-  padding: 0.5rem 0.8rem;
-  border-radius: 50px; // More rounded for bubble effect
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  pointer-events: none;
-  z-index: 9997;
-  opacity: 0.85;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.4s ease, transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 
-    0 6px 20px rgba(255, 68, 68, 0.4),
-    0 3px 8px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(6px);
-  white-space: nowrap;
-  min-width: 60px;
-  text-align: center;
-  
-  &.hidden {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.6);
-  }
-  
-  &:hover {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.05);
-  }
-}
+    &.hidden {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.6);
+    }
 
-// Meaning bubble (appears below word bubble)
-.cursor-meaning-bubble {
-  position: fixed !important;
-  background: linear-gradient(135deg, rgba(68, 68, 68, 0.95) 0%, rgba(68, 68, 68, 0.85) 100%);
-  color: white;
-  padding: 0.6rem 1rem;
-  border-radius: 30px;
-  font-size: 0.65rem;
-  font-weight: 400;
-  letter-spacing: 0.2px;
-  pointer-events: none;
-  z-index: 9996;
-  opacity: 0.9;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.4s ease, transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 
-    0 4px 16px rgba(0, 0, 0, 0.3),
-    0 2px 6px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(6px);
-  white-space: normal; // Allow wrapping for long meanings
-  max-width: 500px; // Wider to accommodate longer meanings
-  text-align: center;
-  line-height: 1.4;
-  
-  &.hidden {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.6);
-  }
-  
-  &:hover {
-    opacity: 1;
-  }
-}
-
-// Keep custom cursor on all elements - only for non-touch devices
-@media (hover: hover) and (pointer: fine) {
-  a, button, input, textarea, select, [role="button"], [tabindex]:not([tabindex="-1"]) {
-    cursor: none !important;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -257,9 +251,9 @@ html.latex-font {
   width: 100%;
   height: 100%;
   background: linear-gradient(135deg,
-    rgba(255, 68, 68, 0.6) 0%,
-    rgba(255, 68, 68, 0.4) 50%,
-    rgba(255, 68, 68, 0.6) 100%);
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.6) 100%);
   z-index: 10000;
   opacity: 0;
   visibility: hidden;
@@ -338,7 +332,7 @@ a {
 
   &:hover {
     transform: translateY(-1px);
-    text-shadow: 0 2px 4px rgba(255, 68, 68, 0.2);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -387,11 +381,11 @@ strong {
   color: var(--global-text-color);
 }
 
-// Dark Red Theme Enhancements
+// Theme heading styles
 h1, h2, h3, h4, h5, h6 {
   color: var(--global-theme-color);
   font-weight: 500;
-  text-shadow: 0 0 10px rgba(255, 68, 68, 0.3);
+  text-shadow: none;
 }
 
 // Reduce header sizes site-wide
@@ -409,15 +403,15 @@ h3 {
 
 strong, b {
   color: var(--global-bold-color);
-  text-shadow: 0 0 8px rgba(255, 68, 68, 0.2);
+  text-shadow: none;
 }
 
 img {
-  filter: drop-shadow(0 0 15px rgba(255, 68, 68, 0.4));
+  filter: none;
   transition: filter 0.3s ease;
   
   &:hover {
-    filter: drop-shadow(0 0 25px rgba(255, 68, 68, 0.6));
+    filter: none;
   }
 }
 
@@ -522,12 +516,12 @@ table {
     text-align: center;
     opacity: 0.9;
     font-style: italic;
-    border-top: 1px solid rgba(255, 68, 68, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
     padding-top: 0.5rem;
     
     kbd {
-      background: rgba(255, 68, 68, 0.1);
-      border: 1px solid rgba(255, 68, 68, 0.3);
+      background: rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(0, 0, 0, 0.2);
       border-radius: 3px;
       padding: 0.1rem 0.3rem;
       font-size: 0.55rem;
@@ -562,11 +556,11 @@ table {
     object-fit: cover;
     object-position: right center; // Show the right side of the image
     display: block;
-    filter: drop-shadow(0 0 8px rgba(255, 68, 68, 0.3));
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
     transition: filter 0.3s ease;
     
     &:hover {
-      filter: drop-shadow(0 0 15px rgba(255, 68, 68, 0.5));
+      filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.25));
     }
   }
 
@@ -631,12 +625,12 @@ table {
     
     &:hover {
       color: var(--global-theme-color);
-      background-color: rgba(255, 68, 68, 0.05);
+      background-color: rgba(0, 0, 0, 0.04);
     }
     
     &.active {
       color: var(--global-theme-color);
-      background-color: rgba(255, 68, 68, 0.08);
+      background-color: rgba(0, 0, 0, 0.05);
       
       &::before {
         content: '•';
@@ -701,7 +695,7 @@ table {
   background-color: var(--global-card-bg-color);
   border: 2px solid var(--global-theme-color);
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 68, 68, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   position: relative;
   overflow: hidden;
 
@@ -712,13 +706,13 @@ table {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(255, 68, 68, 0.05) 50%, transparent 70%);
+    background: linear-gradient(45deg, transparent 30%, rgba(0, 0, 0, 0.04) 50%, transparent 70%);
     pointer-events: none;
   }
 
   h2, h3 {
     color: var(--global-theme-color);
-    text-shadow: 0 0 10px rgba(255, 68, 68, 0.4);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 1.5rem;
     position: relative;
     z-index: 1;
@@ -728,7 +722,7 @@ table {
 .cv-blurb {
   margin: 2rem 0;
   padding: 1.5rem;
-  background: linear-gradient(135deg, var(--global-card-bg-color) 0%, rgba(255, 68, 68, 0.1) 100%);
+  background: linear-gradient(135deg, var(--global-card-bg-color) 0%, rgba(0, 0, 0, 0.06) 100%);
   border-left: 4px solid var(--global-theme-color);
   border-radius: 5px;
   font-style: italic;
@@ -738,7 +732,7 @@ table {
 .paper-item {
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background-color: rgba(255, 68, 68, 0.05);
+  background-color: rgba(0, 0, 0, 0.04);
   border-radius: 8px;
   border-left: 4px solid var(--global-theme-color);
   
@@ -789,7 +783,7 @@ table {
       
       &:hover {
         background-color: var(--global-hover-color);
-        box-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
       }
     }
   }
@@ -823,7 +817,7 @@ table {
       height: 0.8rem;
       background-color: var(--global-theme-color);
       border-radius: 50%;
-      box-shadow: 0 0 10px rgba(255, 68, 68, 0.6);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
     
     .timeline-year {
@@ -843,7 +837,7 @@ table {
 .education-item, .teaching-item, .service-item {
   margin-bottom: 1.5rem;
   padding: 1rem;
-  background-color: rgba(255, 68, 68, 0.03);
+  background-color: rgba(0, 0, 0, 0.03);
   border-radius: 5px;
   border-left: 3px solid var(--global-theme-color);
   
@@ -872,7 +866,7 @@ table {
   background-color: var(--global-card-bg-color);
   border: 2px solid var(--global-theme-color);
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 68, 68, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   position: relative;
   overflow: hidden;
 
@@ -883,13 +877,13 @@ table {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(255, 68, 68, 0.05) 50%, transparent 70%);
+    background: linear-gradient(45deg, transparent 30%, rgba(0, 0, 0, 0.04) 50%, transparent 70%);
     pointer-events: none;
   }
 
   .agenda-title {
     color: var(--global-theme-color);
-    text-shadow: 0 0 10px rgba(255, 68, 68, 0.4);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem;
     position: relative;
     z-index: 1;
@@ -910,7 +904,7 @@ table {
 
   .grabbag-header {
     color: var(--global-theme-color);
-    text-shadow: 0 0 10px rgba(255, 68, 68, 0.4);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
     font-weight: bold;
@@ -925,16 +919,16 @@ table {
 
   .grabbag-item {
     padding: 1rem;
-    background-color: rgba(255, 68, 68, 0.08);
+    background-color: rgba(0, 0, 0, 0.05);
     border-left: 4px solid var(--global-theme-color);
     border-radius: 5px;
     color: var(--global-text-color);
     transition: all 0.3s ease;
     
     &:hover {
-      background-color: rgba(255, 68, 68, 0.12);
+      background-color: rgba(0, 0, 0, 0.08);
       transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(255, 68, 68, 0.3);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
   }
 }
@@ -947,7 +941,7 @@ table {
     background-color: var(--global-card-bg-color);
     border: 2px dashed var(--global-theme-color);
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 68, 68, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     position: relative;
     
@@ -958,14 +952,14 @@ table {
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(45deg, transparent 30%, rgba(255, 68, 68, 0.03) 50%, transparent 70%);
+      background: linear-gradient(45deg, transparent 30%, rgba(0, 0, 0, 0.03) 50%, transparent 70%);
       pointer-events: none;
     }
     
     .random-quote-header {
-      background-color: rgba(255, 68, 68, 0.1);
+      background-color: rgba(0, 0, 0, 0.06);
       padding: 0.8rem 1.2rem;
-      border-bottom: 1px solid rgba(255, 68, 68, 0.2);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -988,7 +982,7 @@ table {
         color: var(--global-theme-color);
         
         &:hover {
-          background-color: rgba(255, 68, 68, 0.2);
+          background-color: rgba(0, 0, 0, 0.15);
           transform: rotate(180deg);
         }
       }
@@ -1039,7 +1033,7 @@ table {
   background-color: var(--global-card-bg-color);
   border: 2px solid var(--global-theme-color);
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 68, 68, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   position: relative;
   overflow: hidden;
 
@@ -1050,13 +1044,13 @@ table {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(255, 68, 68, 0.05) 50%, transparent 70%);
+    background: linear-gradient(45deg, transparent 30%, rgba(0, 0, 0, 0.04) 50%, transparent 70%);
     pointer-events: none;
   }
 
   .quotes-section-header {
     color: var(--global-theme-color);
-    text-shadow: 0 0 10px rgba(255, 68, 68, 0.4);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem;
     position: relative;
     z-index: 1;
@@ -1085,14 +1079,14 @@ table {
 
   .quote-item {
     padding: 1rem;
-    background-color: rgba(255, 68, 68, 0.08);
+    background-color: rgba(0, 0, 0, 0.05);
     border-left: 4px solid var(--global-theme-color);
     border-radius: 8px;
     transition: all 0.3s ease;
     position: relative;
 
     &:hover {
-      background-color: rgba(255, 68, 68, 0.15);
+      background-color: rgba(0, 0, 0, 0.1);
     }
 
     .quote-text {
@@ -1188,12 +1182,12 @@ table {
     
     &:hover {
       color: var(--global-theme-color);
-      background-color: rgba(255, 68, 68, 0.05);
+      background-color: rgba(0, 0, 0, 0.04);
     }
     
     &.active {
       color: var(--global-theme-color);
-      background-color: rgba(255, 68, 68, 0.08);
+      background-color: rgba(0, 0, 0, 0.05);
       
       &::before {
         content: '•';
@@ -1263,13 +1257,13 @@ table {
     line-height: 1.3;
     
     &:hover {
-      background-color: rgba(255, 68, 68, 0.1);
+      background-color: rgba(0, 0, 0, 0.06);
       color: var(--global-theme-color);
       transform: translateX(5px);
     }
     
     &.active {
-      background-color: rgba(255, 68, 68, 0.15);
+      background-color: rgba(0, 0, 0, 0.1);
       color: var(--global-theme-color);
       font-weight: bold;
       
@@ -1308,7 +1302,7 @@ table {
     background-color: var(--global-card-bg-color);
     border: 2px dashed var(--global-theme-color);
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 68, 68, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     position: relative;
     
@@ -1319,14 +1313,14 @@ table {
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(45deg, transparent 30%, rgba(255, 68, 68, 0.03) 50%, transparent 70%);
+      background: linear-gradient(45deg, transparent 30%, rgba(0, 0, 0, 0.03) 50%, transparent 70%);
       pointer-events: none;
     }
     
     .random-article-header {
-      background-color: rgba(255, 68, 68, 0.1);
+      background-color: rgba(0, 0, 0, 0.06);
       padding: 0.8rem 1.2rem;
-      border-bottom: 1px solid rgba(255, 68, 68, 0.2);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -1371,7 +1365,7 @@ table {
           color: var(--global-theme-color);
           
           &:hover {
-            background-color: rgba(255, 68, 68, 0.2);
+            background-color: rgba(0, 0, 0, 0.15);
             transform: rotate(180deg);
           }
         }
@@ -1416,7 +1410,7 @@ table {
   background-color: var(--global-card-bg-color);
   border: 2px solid var(--global-theme-color);
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 68, 68, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   position: relative;
   overflow: hidden;
   
@@ -1427,13 +1421,13 @@ table {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(255, 68, 68, 0.05) 50%, transparent 70%);
+    background: linear-gradient(45deg, transparent 30%, rgba(0, 0, 0, 0.04) 50%, transparent 70%);
     pointer-events: none;
   }
   
   .articles-section-header {
     color: var(--global-theme-color);
-    text-shadow: 0 0 10px rgba(255, 68, 68, 0.4);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem;
     position: relative;
     z-index: 1;
@@ -1461,7 +1455,7 @@ table {
   }
   
   .article-item {
-    background-color: rgba(255, 68, 68, 0.08);
+    background-color: rgba(0, 0, 0, 0.05);
     border-left: 4px solid var(--global-theme-color);
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -1470,7 +1464,7 @@ table {
     cursor: pointer;
 
     &:hover {
-      background-color: rgba(255, 68, 68, 0.15);
+      background-color: rgba(0, 0, 0, 0.1);
     }
     
     .article-compact-view {
@@ -1527,8 +1521,8 @@ table {
     
     .article-expanded-view {
       padding: 0 1rem 1rem;
-      border-top: 1px solid rgba(255, 68, 68, 0.2);
-      background-color: rgba(255, 68, 68, 0.05);
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
+      background-color: rgba(0, 0, 0, 0.04);
       
       .article-details {
         padding-top: 0.8rem;
@@ -1543,7 +1537,7 @@ table {
     
     &.expanded {
       .article-compact-view {
-        border-bottom: 1px solid rgba(255, 68, 68, 0.2);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
       }
     }
   }
@@ -1567,7 +1561,7 @@ table {
       width: 3px;
       background: linear-gradient(to bottom,
         var(--global-theme-color) 0%,
-        rgba(255, 68, 68, 0.7) 50%,
+        rgba(0, 0, 0, 0.35) 50%,
         var(--global-theme-color) 100%);
       border-radius: 1.5px;
       z-index: auto;
@@ -1622,7 +1616,7 @@ table {
         border-radius: 2px;
         background: linear-gradient(45deg,
           var(--global-theme-color) 0%,
-          rgba(255, 68, 68, 0.7) 50%,
+          rgba(0, 0, 0, 0.35) 50%,
           var(--global-theme-color) 100%);
       }
     }
@@ -1636,7 +1630,7 @@ table {
 
     &:hover .timeline-event-marker {
       transform: scale(1.5);
-      box-shadow: 0 0 0 3px var(--global-theme-color), 0 0 10px rgba(255, 68, 68, 0.5);
+      box-shadow: 0 0 0 3px var(--global-theme-color), 0 0 10px rgba(0, 0, 0, 0.25);
       animation: pulse 1.5s ease-in-out infinite;
     }
   }
@@ -1693,12 +1687,12 @@ table {
     
     &:hover {
       color: var(--global-theme-color);
-      background-color: rgba(255, 68, 68, 0.05);
+      background-color: rgba(0, 0, 0, 0.04);
     }
     
     &.active {
       color: var(--global-theme-color);
-      background-color: rgba(255, 68, 68, 0.08);
+      background-color: rgba(0, 0, 0, 0.05);
       
       &::before {
         content: '•';
@@ -1757,9 +1751,9 @@ table {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   
   &:hover {
-    background-color: rgba(255, 68, 68, 0.8);
+    background-color: rgba(80, 80, 80, 0.8);
     transform: translateX(-50%) translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 68, 68, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   }
   
   &:active {
@@ -2033,11 +2027,11 @@ blockquote {
   img {
     width: 100%;
     height: auto;
-    filter: drop-shadow(0 0 15px rgba(255, 68, 68, 0.4));
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.2));
     transition: filter 0.3s ease;
 
     &:hover {
-      filter: drop-shadow(0 0 25px rgba(255, 68, 68, 0.6));
+      filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.3));
     }
   }
 }
@@ -2085,6 +2079,11 @@ blockquote {
   background-color: var(--global-bg-color);
   opacity: 0.95;
   z-index: 1030;
+
+  .nav-link,
+  .dropdown-item {
+    text-transform: none !important;
+  }
 }
 
 .navbar .dropdown-menu {
@@ -2106,6 +2105,7 @@ blockquote {
 
 .dropdown-item {
   color: var(--global-text-color);
+  text-transform: none !important;
 
   &:hover {
     color: var(--global-hover-color);
@@ -3008,14 +3008,14 @@ nav[data-toggle="toc"] {
 
     &:hover,
     &:focus {
-      background-color: rgba(255, 68, 68, 0.1);
+      background-color: rgba(0, 0, 0, 0.06);
     }
   }
 
   // Mobile dropdown menus
   .navbar .dropdown-menu {
     border: none;
-    background-color: rgba(255, 68, 68, 0.05);
+    background-color: rgba(0, 0, 0, 0.04);
     border-radius: 4px;
     margin-left: 1rem;
     box-shadow: none;

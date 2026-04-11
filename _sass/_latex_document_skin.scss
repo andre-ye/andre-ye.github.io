@@ -1,0 +1,82 @@
+// Minimal skin for LaTeX layouts (skip-link + Palatino-class stack). Loaded by latex.css only.
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 10000;
+  padding: 0.5rem 1rem;
+  background: var(--global-theme-color, #1a1a1a);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  &:focus {
+    left: 0;
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+}
+
+html.latex-font {
+  body, p, li, span, div, td, th, blockquote, a, label, input, textarea, select, button {
+    font-family: $latex-serif-font-stack !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $latex-serif-font-stack !important;
+  }
+
+  em, i:not(.fas):not(.fab):not(.far):not(.fal):not(.ai) {
+    font-family: $latex-serif-font-stack !important;
+    font-style: italic;
+  }
+
+  strong, b {
+    font-family: $latex-serif-font-stack !important;
+    font-weight: bold;
+  }
+
+  code, pre {
+    font-family: $latex-mono-font-stack !important;
+  }
+
+  p, li, blockquote, td, th {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .post-content, article, main {
+    p, li {
+      font-size: 1.15rem;
+      line-height: 1.7;
+    }
+  }
+
+  @media (max-width: 576px) {
+    p, li, blockquote, td, th {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .post-content, article, main {
+      p, li {
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  nav, .navbar, .nav-link, .dropdown-item {
+    font-family: $latex-serif-font-stack !important;
+  }
+
+  .fas, .fab, .far, .fal, .fa {
+    font-family: "Font Awesome 6 Free", "Font Awesome 5 Free" !important;
+  }
+  .fab {
+    font-family: "Font Awesome 6 Brands", "Font Awesome 5 Brands" !important;
+  }
+  .ai {
+    font-family: "Academicons" !important;
+  }
+}

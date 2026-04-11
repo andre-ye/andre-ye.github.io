@@ -1,0 +1,10 @@
+# Minimal top bar on latex_embed / default (same links as IA spine)
+top_bar:
+  - label: Home
+    path: /
+  - label: Work
+    path: /work/
+  - label: Things I like
+    path: /things-i-like/
+  - label: Misc
+    path: /misc/

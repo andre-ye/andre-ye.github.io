@@ -1,0 +1,9 @@
+<script>
+  window.__baseurl = (document.body && document.body.getAttribute('data-baseurl')) || '';
+  window.getBase = function () { return (window.__baseurl || '').replace(/\/$/, ''); };
+  window.getAssetPath = function (path) {
+    var b = (typeof window.getBase === 'function' ? window.getBase() : '');
+    var p = (path && path.charAt(0) === '/') ? path : '/' + (path || '');
+    return b ? b + p : p;
+  };
+</script>

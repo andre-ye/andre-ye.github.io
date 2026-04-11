@@ -3,6 +3,14 @@
  * To adjust anything, simply edit the variables below and rebuild the theme.
  ******************************************************************************/
 
+// Palatino-class serif (matches COLM PDFs: tgpagella / mathpazo). On the web we
+// load Gelasio from Google Fonts; system Palatino/Palladio follow as fallbacks.
+$latex-serif-font-stack: 'Gelasio', 'Palatino Linotype', 'Book Antiqua', Palatino,
+  'URW Palladio L', Georgia, 'Times New Roman', serif;
+
+// Monospace like COLM’s inconsolata package
+$latex-mono-font-stack: 'Inconsolata', Consolas, 'Liberation Mono', 'Courier New',
+  monospace;
 
 // Colors
 $red-color:           #FF3636 !default;

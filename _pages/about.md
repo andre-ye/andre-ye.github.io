@@ -29,7 +29,7 @@ permalink: /
 
 <p>I&rsquo;ve also thought about <button class="rip-btn" data-rip="help-philosophers">how language models can help Philosophers</button> and how the &ldquo;woke Gemini controversy&rdquo; could instruct us in <button class="rip-btn" data-rip="creative-practices">more critical creative practices</button>.</p>
 
-<p>See my <button class="rip-btn" data-rip="full-work">full list of publications</button>.</p>
+<p>See my <button class="rip-btn" data-rip="full-work">full list of publications</button> and a <a href="/assets/pdf/ye-cv.pdf" target="_blank" rel="noopener noreferrer">pdf CV</a>.</p>
 
 <div class="rip-panel" id="rip-conceptual-multiverse">
   <div class="rip-panel-inner">
@@ -102,7 +102,9 @@ permalink: /
 
 <p>I also maintain a <button class="rip-btn" data-rip="history">timeline</button> to unify various historical events I have an interest in. It does the service of helping us realize how complex the world is, that so much barbarity, genius, strife, and goodness happen at the same time.</p>
 
-<p>In an effort to become a more interesting person, I am learning woodworking at the <a href="" target="_blank" rel="noopener noreferrer">MIT Hobby Shop</a> and guitar; enjoy playing piano, lifting, using my AMC Stubs membership with <a href="https://barish.me/" target="_blank" rel="noopener noreferrer">Barish Namazov</a>, and running along the Charles with <a href="https://ryanboldi.github.io/" target="_blank" rel="noopener noreferrer">Ryan Bahlous-Boldi</a>; and am currently reading <em>East of Eden</em> with <a href="https://schare.space/" target="_blank" rel="noopener noreferrer">Carmel Schare</a>, <em>A Spirit of Trust</em> with <a href="" target="_blank" rel="noopener noreferrer">Mark Pock</a>, <em>The Design of Everyday Things</em> with <a href="https://www.linkedin.com/in/kpanchap/" target="_blank" rel="noopener noreferrer">Krishna Panchapagesan</a>, and <em>Empire of AI</em> with <a href="https://www.linkedin.com/in/vivek-prakriya/" target="_blank" rel="noopener noreferrer">Vivek Prakriya</a>. Я тоже учу русский.</p>
+<p>In an effort to become a more interesting person, I am learning woodworking at the <a href="" target="_blank" rel="noopener noreferrer">MIT Hobby Shop</a> and guitar; enjoy playing piano, lifting, using my AMC Stubs membership with <a href="https://barish.me/" target="_blank" rel="noopener noreferrer">Barish Namazov</a>, and running along the Charles with <a href="https://ryanboldi.github.io/" target="_blank" rel="noopener noreferrer">Ryan Bahlous-Boldi</a>; and am currently reading <em>East of Eden</em> with <a href="https://schare.space/" target="_blank" rel="noopener noreferrer">Carmel Schare</a>, <em>A Spirit of Trust</em> with <a href="" target="_blank" rel="noopener noreferrer">Mark Pock</a>, <em>The Design of Everyday Things</em> with <a href="https://www.linkedin.com/in/kpanchap/" target="_blank" rel="noopener noreferrer">Krishna Panchapagesan</a>, and <em>Empire of AI</em> with <a href="https://www.linkedin.com/in/vivek-prakriya/" target="_blank" rel="noopener noreferrer">Vivek Prakriya</a>. Я тоже учу русский. My <a href="https://www.instagram.com/reel/DUoAaOwAJl2/" target="_blank" rel="noopener noreferrer">day in the life</a> was featured by MIT CSAIL.</p>
+
+<p>See also my <a href="phd-sop.pdf" target="_blank" rel="noopener noreferrer">PhD SOP</a>, my writing on what it means to <a href="https://gardenofideasuw.com/wp-content/uploads/2025/06/Autumn24-Volume-4-Issue-1.pdf" target="_blank" rel="noopener noreferrer">study philosophy</a> (p. 6), a <a href="/writing/files/south_of_eden.pdf" target="_blank" rel="noopener noreferrer">very short story</a>, my first published <a href="/writing/files/00144940.2022.pdf" target="_blank" rel="noopener noreferrer">research article</a> in literary analysis, my work on <a href="https://www.sigbovik.org/2023/proceedings.pdf" target="_blank" rel="noopener noreferrer">AyahuascaNet</a> (p. 27) which went <a href="https://x.com/deepfates/status/1752052061863387374" target="_blank" rel="noopener noreferrer">viral</a>, and how an (admittedly sloppy) blogpost I wrote when I was 14 led to an <a href="https://gowrishankar.info/blog/deep-learning-is-not-as-impressive-as-you-think-its-mere-interpolation/" target="_blank" rel="noopener noreferrer">ML Twitter controversy</a> involving Stephen Pinker, Yann Lecun, Francois Chollet, and others.</p>
 
 <div class="rip-panel" id="rip-and-others">
   <div class="rip-panel-inner">
@@ -149,7 +151,8 @@ permalink: /
       <p>I wrote two books on deep learning for Apress/Springer Nature: <a href="https://link.springer.com/book/10.1007/978-1-4842-7413-2" target="_blank" rel="noopener noreferrer"><em>Modern Deep Learning Design and Applications</em></a> (solo) and <a href="https://link.springer.com/book/10.1007/978-1-4842-8692-0" target="_blank" rel="noopener noreferrer"><em>Modern Deep Learning for Tabular Data</em></a> (with Andy Wang).</p>
       <p>I was a TA for 7 quarters across intro Python programming (CSE 160), intermediate Python (CSE 163), and discrete math for CS (CSE 311). I also TA&rsquo;d English Composition and Literary Analysis at the <a href="https://robinsoncenter.uw.edu/" target="_blank" rel="noopener noreferrer">Robinson Center</a>, and Introduction to Machine Learning at <a href="https://the-cs.org/" target="_blank" rel="noopener noreferrer">The Coding School</a>.</p>
       <p>I entered university at 14 through the <a href="https://robinsoncenter.uw.edu/" target="_blank" rel="noopener noreferrer">Robinson Center Early Entrance Program</a>. My worldview was especially transformed during Transition School by <a href="https://www.linkedin.com/in/amanda-zink-346331164/" target="_blank" rel="noopener noreferrer">Amanda Zink</a> teaching English and <a href="https://smlr.rutgers.edu/about-smlr/faculty-and-staff-directory/michael-beyea-reagan" target="_blank" rel="noopener noreferrer">Michael Reagan</a> teaching History.</p>
-      <p>One of my close friends who also went through the Early Entrance Program with me is <a href="https://www.linkedin.com/in/vivek-prakriya/" target="_blank" rel="noopener noreferrer">Vivek Prakriya</a>, who is the youngest city councilmember to win a contested race in a city with over 75k people (Redmond, Washington).</p>
+      <p>One of my close friends who also went through the Early Entrance Program with me is <a href="https://www.linkedin.com/in/vivek-prakriya/" target="_blank" rel="noopener noreferrer">Vivek Prakriya</a>, who is the youngest city councilmember to win a contested race in a city with over 75k people (Redmond, Washington). In Summer 2025 I managed social media for his campaign &mdash; running content for his run for Redmond City Council seat no. 2.</p>
+      <p>I have reviewed for CSCW, the NeurIPS Moral Psychology &amp; Moral Philosophy Workshop, and the ICML AI + HCI Workshop, and have served as a research panelist and student host at events for the Allen School and the Robinson Center.</p>
       <p>I spent summer of 2022 at Deepgram working on speech transcription models, advised by <a href="https://deepgram.com/authors/andrew-seagraves" target="_blank" rel="noopener noreferrer">Andrew Seagraves</a>.</p>
     </div>
     <div class="rip-edge rip-edge-bottom"></div>
@@ -202,3 +205,19 @@ permalink: /
     <div class="rip-edge rip-edge-bottom"></div>
   </div>
 </div>
+
+<p style="font-style:italic;color:#5a3a18;text-align:center;margin-top:3rem;line-height:1.7;">&ldquo;To everything there is a season, and a time to every purpose under Heaven; a time to be born and a time to die; a time to kill and a time to heal; a time to weep and a time to laugh; a time to love and a time to hate; a time for war and a time of peace.&rdquo;<br><span style="font-style:normal;font-size:0.85rem;color:#7a5a30;">Ecclesiastes 3:1&ndash;8</span></p>
+
+<figure id="better-ai-of-the-day" style="margin:3.5rem auto 1rem;text-align:center;max-width:560px;">
+  <img id="better-ai-of-the-day-img" alt="Better Image of AI" style="display:block;width:100%;height:auto;border-radius:3px;box-shadow:0 4px 18px rgba(30,10,2,0.18);">
+  <figcaption style="font-size:0.8rem;color:#7a5a30;font-style:italic;margin-top:0.7rem;line-height:1.55;text-align:center;">Taken from the <a href="https://betterimagesofai.org/" target="_blank" rel="noopener noreferrer">Better Images of AI</a> project, an excellent attempt to reimagine how AI can visually appear without falling into tropes of anthropomorphism, unembodied rationality, and immateriality.</figcaption>
+</figure>
+
+<p style="font-size:0.8rem;color:#7a5a30;font-style:italic;margin:1.2rem auto 0;max-width:560px;text-align:center;line-height:1.55;">In making this website, the brushstroke-like highlighting was inspired by <a href="https://ryanyen2.github.io/" target="_blank" rel="noopener noreferrer">Ryan Yen</a>'s website.<span class="mobile-only-note"> (By the way... this website looks cooler on desktop!)</span></p>
+
+<style>
+  .mobile-only-note { display: none; }
+  @media (max-width: 740px) {
+    .mobile-only-note { display: inline; }
+  }
+</style>

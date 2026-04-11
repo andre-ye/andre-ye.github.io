@@ -1,0 +1,297 @@
+/*******************************************************************************
+ * Quotes page (layout: latex_embed + quotes_nav.js) — restrained, paper-like
+ ******************************************************************************/
+
+html.latex-embed .random-quote-section {
+  margin: 0 0 2.75rem;
+}
+
+html.latex-embed .random-quote-box {
+  position: relative;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.02);
+  box-shadow: none;
+  overflow: visible;
+
+  &::before {
+    display: none;
+  }
+}
+
+html.latex-embed .random-quote-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.5rem 0.9rem;
+  background: transparent;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  h3 {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: normal;
+    text-transform: none;
+    color: var(--global-text-color-light);
+  }
+}
+
+html.latex-embed .refresh-quote-btn {
+  flex-shrink: 0;
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--global-text-color);
+  background: transparent;
+  border: 1px solid var(--global-divider-color);
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    border-color: var(--global-text-color-light);
+    background: rgba(0, 0, 0, 0.04);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-text-color-light);
+    outline-offset: 2px;
+  }
+}
+
+html.latex-embed .random-quote-content {
+  padding: 1.15rem 1rem 1.35rem;
+  min-height: 0;
+  max-height: none;
+  overflow: visible;
+}
+
+html.latex-embed .random-quote-text {
+  font-size: 1.05rem;
+  line-height: 1.72;
+  font-style: italic;
+  color: var(--global-text-color);
+  margin: 0 0 1rem;
+}
+
+html.latex-embed .random-quote-author {
+  font-size: 0.86rem;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  color: var(--global-text-color-light);
+  text-align: left;
+  margin: 0;
+
+  &::before {
+    content: '— ';
+    font-weight: 500;
+    opacity: 0.9;
+  }
+}
+
+html.latex-embed hr.random-section-divider {
+  border: none;
+  height: 0;
+  margin: 0 0 2.5rem;
+  padding: 0;
+  border-top: 1px solid var(--global-divider-color);
+  background: none;
+  opacity: 1;
+}
+
+/* Category blocks: section titles like a journal, no cards */
+html.latex-embed .quotes-section {
+  margin: 2.75rem 0 3.25rem;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+
+  &::before {
+    display: none;
+  }
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+html.latex-embed .quotes-section-header {
+  margin: 0 0 0.5rem;
+  padding: 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--global-text-color-light);
+  border: none;
+  text-shadow: none;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 2.5rem;
+    height: 1px;
+    margin-top: 0.55rem;
+    background: var(--global-divider-color);
+  }
+}
+
+html.latex-embed .quotes-section-description-inline {
+  margin: 0 0 1.5rem;
+  padding: 0;
+  max-width: 38em;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  font-style: italic;
+  color: var(--global-text-color-light);
+}
+
+html.latex-embed .quotes-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html.latex-embed .quote-item {
+  margin: 0;
+  padding: 1.25rem 0 1.35rem 1rem;
+  border: none;
+  border-radius: 0;
+  border-left: 2px solid rgba(0, 0, 0, 0.07);
+  border-bottom: 1px solid var(--global-divider-color);
+  background: transparent;
+  box-shadow: none;
+  transition: border-left-color 0.18s ease, background 0.18s ease;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    border-left-color: rgba(0, 0, 0, 0.18);
+    background: rgba(0, 0, 0, 0.015);
+  }
+}
+
+html.latex-embed .quote-item .quote-text {
+  margin: 0 0 0.85rem;
+  padding: 0;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--global-text-color);
+  position: relative;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+html.latex-embed .quote-item .quote-author {
+  margin: 0;
+  font-size: 0.86rem;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  color: var(--global-text-color-light);
+  text-align: left;
+
+  &::before {
+    content: '— ';
+    font-weight: 500;
+    opacity: 0.9;
+  }
+}
+
+/* Section navigator: typographic, unobtrusive */
+html.latex-embed .quotes-nav-panel {
+  position: fixed;
+  right: max(1rem, calc((100vw - 42em) / 2 - 11rem));
+  top: 6.5rem;
+  width: 9.5rem;
+  max-height: min(42vh, 20rem);
+  overflow-y: auto;
+  z-index: 50;
+  padding: 0;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 2px;
+  opacity: 1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  pointer-events: auto;
+
+  > * {
+    max-height: none;
+    overflow: visible;
+    background: transparent;
+  }
+
+  .quotes-nav-header {
+    padding: 0.45rem 0.65rem;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: normal;
+    text-transform: none;
+    color: var(--global-text-color-light);
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .quotes-nav-items {
+    padding: 0.2rem 0;
+  }
+
+  .quotes-nav-item {
+    display: block;
+    padding: 0.35rem 0.65rem 0.35rem 0.75rem;
+    font-size: 0.68rem;
+    line-height: 1.35;
+    color: var(--global-text-color-light);
+    text-decoration: none;
+    border: none;
+    transition: color 0.15s ease, background 0.15s ease;
+
+    &:hover {
+      color: var(--global-text-color);
+      background: rgba(0, 0, 0, 0.03);
+    }
+
+    &.active {
+      color: var(--global-text-color);
+      background: rgba(0, 0, 0, 0.04);
+      font-weight: 600;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: var(--global-text-color-light);
+      }
+    }
+  }
+}
+
+html.latex-embed .quotes-nav-item {
+  position: relative;
+}
+
+@media (max-width: 56rem) {
+  html.latex-embed .quotes-nav-panel {
+    display: none;
+  }
+}

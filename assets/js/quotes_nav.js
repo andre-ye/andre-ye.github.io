@@ -15,11 +15,36 @@ document.addEventListener('DOMContentLoaded', function() {
             createQuotesNavigation(data.categories);
             buildQuotesContent(shuffledData.categories);
             setupRandomQuoteBox(shuffledData.categories);
+            wireQuotesJsonDownload(shuffledData);
         })
         .catch(error => {
             console.error('Error loading quotes data:', error);
         });
 });
+
+function wireQuotesJsonDownload(displayData) {
+    var el = document.getElementById('quotes-download-json');
+    if (!el) return;
+    el.addEventListener('click', function (e) {
+        e.preventDefault();
+        try {
+            var body = JSON.stringify(displayData, null, 2);
+            var blob = new Blob([body], { type: 'application/json;charset=utf-8' });
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = 'me-like-quotes.json';
+            a.rel = 'noopener';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        } catch (err) {
+            console.error('Quotes JSON download failed:', err);
+            window.open(el.getAttribute('href'), '_blank', 'noopener,noreferrer');
+        }
+    });
+}
 
 // Seeded random number generator for consistent daily randomization
 function seededRandom(seed) {
@@ -160,8 +185,8 @@ function buildQuotesContent(categories) {
         <div class="random-quote-section">
             <div class="random-quote-box">
                 <div class="random-quote-header">
-                    <h3>Random Quote</h3>
-                    <button class="refresh-quote-btn" onclick="refreshRandomQuote()">🔄</button>
+                    <h3>At random</h3>
+                    <button type="button" class="refresh-quote-btn" onclick="refreshRandomQuote()" aria-label="Show another quote">Another</button>
                 </div>
                 <div class="random-quote-content">
                     <div class="random-quote-text"></div>
@@ -184,6 +209,10 @@ function buildQuotesContent(categories) {
             </div>
         </div>
     `).join('');
+
+    if (typeof window.latexMarkerLinksRefresh === 'function') {
+        window.latexMarkerLinksRefresh(quotesContainer);
+    }
 }
 
 function createSlug(text) {

@@ -1,0 +1,39 @@
+# Default URL for “new tab” in the right-panel browser (site-root relative)
+browser_home_path: /
+
+# Quick links in the latex_single default right panel (paths are site-root relative)
+quick_links:
+  - label: my agenda
+    path: /work/agenda/
+  - label: my computer science work
+    path: /work/cs/
+  - label: my philosophy work
+    path: /work/philosophy/
+  - label: my formal cv
+    path: /cv/
+  - label: my collection of quotes
+    path: /things-i-like/quotes/
+  - label: my collection of articles
+    path: /things-i-like/articles/
+  - label: recreational math
+    path: /misc/recmath
+  - label: history, listed
+    path: /misc/history-listed
+
+# Pills (data-latex-panel) open these paths in the preview iframe instead of legacy overlay panels
+panel_preview_paths:
+  cs: /work/cs/
+  philosophy: /work/philosophy/
+  agenda: /work/agenda/
+  things: /things-i-like/
+
+# Right-column panel fragments (still used if a pill id is missing from panel_preview_paths)
+panel_includes:
+  - id: cs
+    include: latex/panel_cs.html
+  - id: philosophy
+    include: latex/panel_philosophy.html
+  - id: agenda
+    include: latex/panel_agenda.html
+  - id: things
+    include: latex/panel_things.html

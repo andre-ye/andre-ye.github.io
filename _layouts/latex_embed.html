@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" class="latex-font latex-embed">
+
+<head>
+  {%- if page.redirect -%}
+  <meta http-equiv="refresh" content="3; url={{ site.baseurl }}/" />
+  {%- endif -%}
+  {% include head_latex_shell.html %}
+</head>
+
+<body data-baseurl="{{ site.baseurl }}">
+  {% include scripts/latex_iframe_chrome.html %}
+  {% include scripts/baseurl_boot.html %}
+  <script src="{{ '/assets/js/latex_embed_in_frame_links.js' | relative_url }}"></script>
+  {% assign docnav = site.data.site_nav %}
+  {% if docnav.top_bar.size > 0 %}
+  <nav class="latex-doc-nav" aria-label="Site sections">
+    {% for item in docnav.top_bar %}
+    <a class="latex-doc-nav-link" href="{{ item.path | relative_url }}">{{ item.label }}</a>
+    {% endfor %}
+  </nav>
+  {% endif %}
+  <main class="latex-embed-content">
+    {% unless page.layout == 'page' %}
+    <h1 class="latex-embed-doc-title">{% if page.doc_title %}{{ page.doc_title }}{% elsif page.title %}{{ page.title }}{% endif %}</h1>
+    {% endunless %}
+    {{ content }}
+  </main>
+  {% include scripts/mathjax.html %}
+  {% if page.permalink == '/things-i-like/quotes/' %}
+  <script src="{{ '/assets/js/quotes_nav.js' | relative_url }}"></script>
+  {% endif %}
+  {% if page.scripts %}
+    {% for script in page.scripts %}
+  <script src="{{ script | relative_url }}"></script>
+    {% endfor %}
+  {% endif %}
+  {% if page.bridge_parent %}
+  <script src="{{ '/assets/js/latex_embed_bridge.js' | relative_url }}"></script>
+  {% endif %}
+</body>
+
+</html>

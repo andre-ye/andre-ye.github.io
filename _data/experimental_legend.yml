@@ -1,0 +1,4 @@
+# Shared copy if you resurrect info_button.js or weather_widget.js from assets/js/legacy/
+keyboard_help: >-
+  A daily word from a dictionary of obscure sorrows can follow the cursor.
+  Press [m] for meaning, [e] to toggle the word bubble.

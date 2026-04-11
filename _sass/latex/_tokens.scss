@@ -1,0 +1,66 @@
+/* Shared LaTeX document palette (shell + embed) */
+@mixin latex-pastel-site-vars {
+  /* Pastel vocabulary for semantic accent hooks (--site-accent-*) */
+  --site-pastel-0-bg: #ebe4f7;
+  --site-pastel-0-fg: #453264;
+  --site-pastel-0-border: rgba(69, 50, 100, 0.22);
+
+  --site-pastel-1-bg: #d8f0e4;
+  --site-pastel-1-fg: #1a5238;
+  --site-pastel-1-border: rgba(26, 82, 56, 0.2);
+
+  --site-pastel-2-bg: #fde8dc;
+  --site-pastel-2-fg: #6b3a26;
+  --site-pastel-2-border: rgba(107, 58, 38, 0.22);
+
+  --site-pastel-3-bg: #dcecf9;
+  --site-pastel-3-fg: #2a4f6e;
+  --site-pastel-3-border: rgba(42, 79, 110, 0.2);
+
+  --site-pastel-4-bg: #faf1cf;
+  --site-pastel-4-fg: #5c4f1a;
+  --site-pastel-4-border: rgba(92, 79, 26, 0.22);
+
+  --site-pastel-5-bg: #fce3ec;
+  --site-pastel-5-fg: #722f47;
+  --site-pastel-5-border: rgba(114, 47, 71, 0.2);
+
+  --site-pastel-6-bg: #d7f3f3;
+  --site-pastel-6-fg: #1a565c;
+  --site-pastel-6-border: rgba(26, 86, 92, 0.2);
+
+  --site-pastel-7-bg: #ffe9cc;
+  --site-pastel-7-fg: #6b4018;
+  --site-pastel-7-border: rgba(107, 64, 24, 0.22);
+
+  /* Semantic hooks */
+  --site-accent-primary: var(--site-pastel-3-fg);
+  --site-accent-primary-soft: var(--site-pastel-3-bg);
+  --site-accent-warm: var(--site-pastel-2-fg);
+  --site-accent-warm-soft: var(--site-pastel-2-bg);
+}
+
+html.latex-single {
+  @include latex-pastel-site-vars;
+  --global-bg-color: #fafafa;
+  --global-text-color: #1a1a1a;
+  --global-text-color-light: #555;
+  --global-theme-color: #1a1a1a;
+  --global-hover-color: #333;
+  --global-divider-color: #ccc;
+  --global-card-bg-color: #fff;
+  --global-bold-color: #000;
+  --global-code-bg-color: rgba(0, 0, 0, 0.06);
+}
+
+html.latex-embed {
+  @include latex-pastel-site-vars;
+  --global-bg-color: #fafafa;
+  --global-text-color: #1a1a1a;
+  --global-text-color-light: #555;
+  --global-theme-color: #1a1a1a;
+  --global-hover-color: #333;
+  --global-divider-color: #ccc;
+  --global-card-bg-color: #fff;
+  --global-code-bg-color: rgba(0, 0, 0, 0.06);
+}

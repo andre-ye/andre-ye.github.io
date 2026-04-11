@@ -1,133 +1,31 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang }}" class="latex-font">
+<html lang="{{ site.lang }}" class="latex-font latex-embed">
 
-  <!-- Head -->
   <head>
   {%- if page.redirect -%}
     <meta http-equiv="refresh" content="3; url={{ site.baseurl }}/" />
   {%- endif -%}
-  {% include head.html %}
+  {% include head_latex_shell.html %}
   </head>
 
-  <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}" data-baseurl="{{ site.baseurl }}">
-
-    <script>
-      window.__baseurl = (document.body && document.body.getAttribute('data-baseurl')) || '';
-      window.getBase = function() { return (window.__baseurl || '').replace(/\/$/, ''); };
-      window.getAssetPath = function(path) {
-        var b = (typeof window.getBase === 'function' ? window.getBase() : '');
-        return (b ? '/' + b : '') + (path.charAt(0) === '/' ? path : '/' + path);
-      };
-    </script>
-    <!-- Skip to main content (visible when focused) -->
+  <body data-baseurl="{{ site.baseurl }}">
+    {% include scripts/latex_iframe_chrome.html %}
     <a href="#main-content" class="skip-link">Skip to main content</a>
+    {% include scripts/baseurl_boot.html %}
+    <script src="{{ '/assets/js/latex_embed_in_frame_links.js' | relative_url }}"></script>
+    {% assign docnav = site.data.site_nav %}
+    {% if docnav.top_bar.size > 0 %}
+    <nav class="latex-doc-nav" aria-label="Site sections">
+      {% for item in docnav.top_bar %}
+      <a class="latex-doc-nav-link" href="{{ item.path | relative_url }}">{{ item.label }}</a>
+      {% endfor %}
+    </nav>
+    {% endif %}
 
-    <!-- Header -->
-    {%- include header.html %}
-
-    <!-- Content -->
-    <main id="main-content" class="container mt-5">
-      {% if page.toc and page.toc.sidebar %}
-        {% if page.toc.sidebar == "left" %}
-        <div class="row">
-          <!-- sidebar on LEFT (only if explicitly set) -->
-          <div class="col-sm-3">
-            <nav id="toc-sidebar" class="sticky-top"></nav>
-          </div>
-          <!-- main content area -->
-          <div class="col-sm-9">
-            {{ content }}
-          </div>
-        </div>
-        {% else %}
-        <div class="row">
-          <!-- main content area -->
-          <div class="col-sm-9">
-            {{ content }}
-          </div>
-          <!-- sidebar on RIGHT (default) -->
-          <div class="col-sm-3">
-            <nav id="toc-sidebar" class="sticky-top"></nav>
-          </div>
-        </div>
-        {% endif %}
-      {% else %}
-        {{ content }}
-      {% endif %}
+    <main id="main-content" class="latex-embed-content">
+      {{ content }}
     </main>
 
-    <!-- Fixed Quote Box -->
-    {% unless page.hide_quote_margins %}
-    <aside class="fixed-quote-box" aria-label="Random quote">
-      <p id="random-quote" class="quote-text"></p>
-      <p id="random-quote-author" class="quote-author"></p>
-      <p class="quote-source">from <a href="/things-i-like/quotes/">things I like</a></p>
-      <p class="bubble-instructions">press <kbd>e</kbd> to toggle word bubbles<br>press <kbd>m</kbd> to show meaning</p>
-    </aside>
-    {% endunless %}
-
-    <!-- Fixed Image Box with Piano (exclude from about page) -->
-    {% unless page.permalink == '/' %}{% unless page.hide_art_widget %}
-    <aside class="fixed-image-box" aria-label="AI image from Better Images of AI">
-      <img id="fixed-ai-image" class="ai-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Random AI image from Better Images of AI" />
-      <p class="image-caption">from <a href="https://betterimagesofai.org/images" target="_blank" rel="noopener noreferrer">Better Images of AI</a></p>
-
-      <!-- Piano inside image box - TEMPORARILY DISABLED -->
-    </aside>
-    {% endunless %}{% endunless %}
-
-    {% comment %} Mute Button - TEMPORARILY DISABLED
-    <div id="piano-mute-button" title="Mute/Unmute ambient piano">♪</div>
-    {% endcomment %}
-
-    <!-- Bottom bar for cats -->
-    <div class="cats-bottom-bar"></div>
-
-    <!-- Footer -->
-    {%- include footer.html %}
-
-    <!-- JavaScripts -->
-    {% include scripts/jquery.html %}
-    {% include scripts/bootstrap.html %}
-    <script defer src="{{ '/assets/js/random_quote.js' | relative_url }}"></script>
-    <script defer src="{{ '/assets/js/nav_panel.js' | relative_url }}"></script>
-    <script defer src="{{ '/assets/js/quotes_nav.js' | relative_url }}"></script>
-    {% include scripts/masonry.html %}
-    {% include scripts/misc.html %}
-    {% include scripts/badges.html %}
     {% include scripts/mathjax.html %}
-    {% include scripts/analytics.html %}
-    {% include scripts/progressBar.html %}
-    
-    <script src="{{ '/assets/js/utils.js' | relative_url }}"></script>
-    <!-- Hourly AI Image System - loads first to provide synchronized images -->
-    <script src="{{ '/assets/js/hourly_ai_image.js' | relative_url }}"></script>
-    
-    <!-- Random AI Image selector - uses hourly synchronized system -->
-    <script src="{{ '/assets/js/random_ai_image.js' | relative_url }}"></script>
-    
-    <!-- Custom cursor script -->
-    <script src="{{ '/assets/js/custom_cursor.js' | relative_url }}"></script>
-    
-    <!-- Info button script -->
-    <script src="{{ '/assets/js/info_button.js' | relative_url }}"></script>
-    
-    <!-- Weather widget scripts -->
-    <script src="{{ '/assets/js/weather_widget.js' | relative_url }}"></script>
-    
-    <!-- AI Page transitions script -->
-    <script src="{{ '/assets/js/ai_page_transitions.js' | relative_url }}"></script>
-
-    {% comment %} Mini Piano scripts - TEMPORARILY DISABLED
-    <script src="{{ '/assets/js/mini_piano.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/ambient_player.js' | relative_url }}"></script>
-    {% endcomment %}
-
-    <!-- Cats at bottom with paper bubbles -->
-    <script src="{{ '/assets/js/cats_at_bottom.js' | relative_url }}"></script>
-
-    <!-- Position nav panels below quote box -->
-    <script src="{{ '/assets/js/nav_panel_position.js' | relative_url }}"></script>
   </body>
 </html>

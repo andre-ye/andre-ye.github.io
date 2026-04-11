@@ -1,22 +1,22 @@
 /*******************************************************************************
- * Dark Red Theme
+ * Dark Neutral Theme (no red)
  ******************************************************************************/
 
 :root {
-  --global-bg-color: #1a0a0a;
-  --global-code-bg-color: #2d1010;
-  --global-text-color: #e0d0d0;
-  --global-text-color-light: #b89696;
-  --global-theme-color: #cc3333;
-  --global-hover-color: #ff6666;
+  --global-bg-color: #141414;
+  --global-code-bg-color: #1e1e1e;
+  --global-text-color: #e0e0e0;
+  --global-text-color-light: #a0a0a0;
+  --global-theme-color: #888888;
+  --global-hover-color: #a0a0a0;
   --global-hover-text-color: #ffffff;
-  --global-footer-bg-color: #0d0505;
-  --global-footer-text-color: #c89090;
-  --global-footer-link-color: #cc3333;
-  --global-distill-app-color: #b89696;
-  --global-divider-color: #4a2020;
-  --global-card-bg-color: #2d1515;
-  --global-bold-color: #ff4444;
+  --global-footer-bg-color: #0a0a0a;
+  --global-footer-text-color: #a0a0a0;
+  --global-footer-link-color: #888888;
+  --global-distill-app-color: #a0a0a0;
+  --global-divider-color: #333333;
+  --global-card-bg-color: #1e1e1e;
+  --global-bold-color: #b0b0b0;
 
   .repo-img-dark {
     display: block;

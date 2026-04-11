@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: latex_embed
 permalink: /misc/history-listed
 title: History Flat-Listed
 description:

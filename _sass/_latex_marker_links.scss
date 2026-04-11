@@ -1,0 +1,92 @@
+/*******************************************************************************
+ * Marker-style link highlights (latex_marker_links.js decorates in-page links)
+ ******************************************************************************/
+
+@keyframes latex-marker-wriggle {
+  0%, 100% {
+    transform: rotate(-0.55deg) skewX(-0.35deg) translateY(0.4px);
+    filter: brightness(0.97) saturate(1.05);
+  }
+  22% {
+    transform: rotate(0.4deg) skewX(0.4deg) translateY(-0.35px);
+    filter: brightness(0.96) saturate(1.06);
+  }
+  48% {
+    transform: rotate(-0.3deg) skewX(0.15deg) translateY(0.25px);
+    filter: brightness(0.98) saturate(1.04);
+  }
+  72% {
+    transform: rotate(0.5deg) skewX(-0.3deg) translateY(-0.2px);
+    filter: brightness(0.97) saturate(1.05);
+  }
+}
+
+/* All layouts (Bootstrap / distill / etc.): theme keeps normal link color unless overridden below */
+a.latex-marker-link {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  transform-origin: 50% 72%;
+  text-decoration: none !important;
+  text-underline-offset: unset !important;
+  background-image: linear-gradient(
+    to bottom,
+    transparent var(--marker-top-stop, 8%),
+    var(--marker-color, rgba(238, 215, 120, 0.55)) var(--marker-top-stop, 8%),
+    var(--marker-color, rgba(238, 215, 120, 0.55)) var(--marker-bot-stop, 90%),
+    transparent var(--marker-bot-stop, 90%)
+  );
+  background-repeat: repeat-x;
+  background-size: 100% 100%;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: var(--marker-pad-y, 0.06em) var(--marker-pad-x, 0.12em);
+  margin: 0 calc(-1 * var(--marker-pad-x, 0.12em));
+  border-radius:
+    var(--marker-br1, 40%) var(--marker-br2, 55%) var(--marker-br3, 48%) var(--marker-br4, 62%) /
+    var(--marker-br5, 52%) var(--marker-br6, 44%) var(--marker-br7, 58%) var(--marker-br8, 50%);
+  transition: filter 0.15s ease, opacity 0.15s ease, transform 0.2s ease;
+}
+
+a.latex-marker-link:hover {
+  animation: latex-marker-wriggle 3.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a.latex-marker-link {
+    transition: filter 0.15s ease, opacity 0.15s ease;
+  }
+
+  a.latex-marker-link:hover {
+    animation: none;
+    transform: none;
+    filter: brightness(0.97) saturate(1.05);
+  }
+}
+
+a.latex-marker-link:focus-visible {
+  outline: 2px solid rgba(0, 0, 0, 0.35);
+  outline-offset: 2px;
+}
+
+/* LaTeX document surfaces: prose-colored links */
+html.latex-single .latex-left-content a.latex-marker-link,
+html.latex-single .latex-default-panel a.latex-marker-link,
+html.latex-embed .latex-embed-content a.latex-marker-link {
+  color: inherit;
+}
+
+html.latex-embed .latex-embed-content a.latex-marker-link:hover {
+  color: var(--global-text-color);
+}
+
+html.latex-single .latex-left-content a.latex-marker-link:hover,
+html.latex-single .latex-default-panel a.latex-marker-link:hover {
+  color: var(--global-hover-color);
+}
+
+html.latex-single .latex-left-content a.latex-marker-link:focus-visible,
+html.latex-single .latex-default-panel a.latex-marker-link:focus-visible,
+html.latex-embed .latex-embed-content a.latex-marker-link:focus-visible {
+  outline-color: var(--global-text-color-light);
+}

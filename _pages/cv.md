@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: latex_embed
 title: cv
+doc_title: Curriculum Vitae
 permalink: /cv/
 nav: true
 nav_order: 2

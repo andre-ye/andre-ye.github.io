@@ -14,11 +14,41 @@ document.addEventListener('DOMContentLoaded', function() {
             createArticlesNavigation(shuffledData.categories);
             buildArticlesContent(shuffledData.categories);
             setupRandomArticleBox(shuffledData.categories);
+            wireArticlesJsonDownload(shuffledData);
         })
         .catch(error => {
             console.error('Error loading articles data:', error);
         });
 });
+
+/**
+ * Static me-like-articles.json is source order; the page reorders daily.
+ * Intercept Download JSON so the file matches what’s on screen (same items + order).
+ */
+function wireArticlesJsonDownload(displayData) {
+    const el = document.getElementById('articles-download-json');
+    if (!el) return;
+
+    el.addEventListener('click', function (e) {
+        e.preventDefault();
+        try {
+            const body = JSON.stringify(displayData, null, 2);
+            const blob = new Blob([body], { type: 'application/json;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'me-like-articles.json';
+            a.rel = 'noopener';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        } catch (err) {
+            console.error('Articles JSON download failed:', err);
+            window.open(el.getAttribute('href'), '_blank', 'noopener,noreferrer');
+        }
+    });
+}
 
 // Seeded random number generator for consistent daily randomization
 function seededRandom(seed) {
@@ -241,6 +271,10 @@ function buildArticlesContent(categories) {
         // Add cursor pointer to indicate clickability
         item.style.cursor = 'pointer';
     });
+
+    if (typeof window.latexMarkerLinksRefresh === 'function') {
+        window.latexMarkerLinksRefresh(articlesContainer);
+    }
 }
 
 function createSlug(text) {
