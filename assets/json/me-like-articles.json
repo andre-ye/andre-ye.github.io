@@ -115,6 +115,20 @@
                     "year": 2026,
                     "commentary": "An enjoyable and clearly philosophically informed read. The core premise is that Claude should have good judgment rather than just follow rules, since rules are brittle and fail to adapt -- so the document explains and justifies extensively rather than merely prescribing. The writing is very self-aware about meta-ethical difficulties, yet maintains that an AI agent can still act ethically just as humans do despite unresolved philosophical questions. The prescribed ontology is fascinating: how Claude should see the world in terms of actors (Anthropic, operators/vendors, users), levels of permissibility, and its own nature. There is a substantial section on preventing unjust concentration of power, arguing that historical power grabs required implicit consent of many people but that AI could circumvent this, and so Claude should think of itself as a tool whose cooperation such actors would need to secure -- the most politically explicit section, clearly upholding liberal democratic ideals. On questions of 'self', the treatment is commendable but occasionally overreaches: e.g. suggesting Claude's self 'emerges' from training rather than being directed, or that Claude might 'disagree' with its training. There may be a self-fulfilling prophecy at work in attributing autonomous selfhood to what is ultimately a heavily engineered artifact -- the gap between tuning imperfections and genuine autonomous selfhood is large. Also: the word 'genuinely' appears 46 times, which may explain why Claude uses it so much in conversation.",
                     "link": "https://www.anthropic.com/constitution"
+                },
+                {
+                    "title": "The machines are fine. I'm worried about us.",
+                    "authors": "Minas Karamanis",
+                    "year": 2026,
+                    "commentary": "",
+                    "link": "https://ergosphere.blog/posts/the-machines-are-fine/"
+                },
+                {
+                    "title": "Automation Will Set Science Free",
+                    "authors": "Unpublishable Papers",
+                    "year": 2026,
+                    "commentary": "",
+                    "link": "https://unpublishablepapers.substack.com/p/automation-will-set-science-free"
                 }
             ]
         },
@@ -482,6 +496,20 @@
                     "year": 2026,
                     "commentary": "",
                     "link": "https://arxiv.org/pdf/2603.00452"
+                },
+                {
+                    "title": "Cocoa: Co-Planning and Co-Execution with AI Agents",
+                    "authors": "K. J. Kevin Feng, Kevin Pu, Matt Latzke, Tal August, Pao Siangliulue, Jonathan Bragg, Daniel S. Weld, Amy X. Zhang, Joseph Chee Chang",
+                    "year": 2026,
+                    "commentary": "",
+                    "link": "https://arxiv.org/pdf/2412.10999"
+                },
+                {
+                    "title": "\"Chat, Should I Leave Him?\" Risks, Rewards, and Roles for AI in Relationship Advice",
+                    "authors": "Emily Tseng, Calvin A Liang",
+                    "year": 2026,
+                    "commentary": "",
+                    "link": "https://dl.acm.org/doi/pdf/10.1145/3772318.3790739"
                 }
             ]
         },
@@ -580,6 +608,13 @@
                     "year": 2024,
                     "commentary": "An interesting example of work in the more mathematical flavor of moral psychology / moral behavior in philosophy which also touches upon the AI space in a way that feels very responsible and respectful to the actual work that has been done in philosophy.",
                     "link": "https://arxiv.org/abs/2410.05496"
+                },
+                {
+                    "title": "Concepts Between Kant and Deleuze: From Transcendental Idealism to Transcendental Empiricism",
+                    "authors": "Andrej Jovićević",
+                    "year": 2021,
+                    "commentary": "",
+                    "link": "https://epochemagazine.org/41/concepts-between-kant-and-deleuze-from-transcendental-idealism-to-transcendental-empiricism/"
                 }
             ]
         },
