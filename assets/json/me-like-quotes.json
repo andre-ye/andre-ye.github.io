@@ -199,6 +199,22 @@
           {
             "text": "The fundamental importance of data structures may be illustrated by considering the problem of designing a single language that would be the preferred language either for a purely arithmetic job or for a job in symbol manipulation. Attempts to produce such a language have been disappointing. The difficulty is that the data structures required for efficient implementation in the two cases are entirely different. Perhaps we should recognize this difficulty as a fundamental one, and abandon the quest for an omnibus language which will be all things to all men.",
             "author": "Maurice Wilkes"
+          },
+          {
+            "text": "But the real threat isn't either of those things. It's quieter, and more boring, and therefore more dangerous. The real threat is a slow, comfortable drift toward not understanding what you're doing. Not a dramatic collapse. Not Skynet. Just a generation of researchers who can produce results but can't produce understanding. Who know what buttons to press but not why those buttons exist. Who can get a paper through peer review but can't sit in a room with a colleague and explain, from the ground up, why the third term in their expansion has the sign that it does.",
+            "author": "Minas Karamanis, The Machines Are Fine"
+          },
+          {
+            "text": "In astrophysics, people are always the ends, never the means. When we hire a graduate student to work on a project, it should not be because we need that specific result. It should be because the student will benefit from doing that work. This sounds idealistic until you think about what astrophysics actually is. Nobody's life depends on the precise value of the Hubble constant. No policy changes if the age of the Universe turns out to be 13.77 billion years instead of 13.79. Unlike medicine, where a cure for Alzheimer's would be invaluable regardless of whether a human or an AI discovered it, astrophysics has no clinical output. The results, in a strict practical sense, don't matter. What matters is the process of getting them: the development and application of methods, the training of minds, the creation of people who know how to think about hard problems. If you hand that process to a machine, you haven't accelerated science. You've removed the only part of it that anyone actually needed.",
+            "author": "Minas Karamanis, The Machines Are Fine"
+          },
+          {
+            "text": "But serious questions remain. What happens if artificial intelligence becomes great at theory, too? Really, what I've described here is not true automation, but instead the distribution of empirical resources to a much broader subset of scientific thinkers. For the near future, this seems like the most plausible outcome. But it seems possible that we might someday get true automation — that artificial intelligence may take over the entirety of Einstein's hour. Whether that possibility should scare us or not depends on what we think science is for. The goal of literature, for example, is arguably to facilitate the experience of another human mind. Automating literature with large language models would therefore defeat the point of the entire enterprise.",
+            "author": "Unpublishable Papers, Automation Will Set Science Free"
+          },
+          {
+            "text": "No longer. Theoretical labor is the only game in town. That means scientific success will accrue to a new group of researchers: the seers. A seer understands that the purpose of science is the pursuit of knowledge, not self-actualization. So they pour their labors into picking out questions that will produce useful knowledge and building theoretical frameworks that refine and guide their efforts. They always know the stakes. Seers refuse to work on anything that lacks a clear theoretical purpose. To be clear, the most influential scientists have always been seers, at least partially. The problem is that any successful seer also needed to pair their theoretical labor with intense empirical efforts; they needed the soul of a seer in the body of an artisan.",
+            "author": "Unpublishable Papers, Automation Will Set Science Free"
           }
         ]
       },
@@ -365,6 +381,14 @@
           {
             "text": "Don't regard a hesitant assertion as an assertion of hesitancy.",
             "author": "Ludwig Wittgenstein"
+          },
+          {
+            "text": "The original commitment is not revealed by its incorrectness to be merely an appearance (wholly misleading)—but to be the appearance of a reality. It is genuinely an appearance of that reality: a way that reality shows up for consciousness. It is wrong, but it is not simply wrong. It is a path to the truth.",
+            "author": "Robert Brandom, A Spirit of Trust"
+          },
+          {
+            "text": "I take it that any understanding of Hegel (or Kant) must start with what he has to teach us about ordinary, ground-level empirical and practical experience—for him (as for Kant) a matter of applying what he calls \"determinate concepts.\" These are concepts like stick and straight, blue and sour. What he calls \"speculative\" or \"logical\" concepts are theoretical philosophical metaconcepts whose distinctive expressive role it is to make explicit features of the conceptual contents and use (the semantics and pragmatics) of those ground-level concepts. The Phenomenology is a story about the development of those higher-level concepts in terms of which his readers (\"phenomenological consciousness\") can be brought to comprehend discursive activity in general (\"phenomenal consciousness\"). The measure of our understanding of what he has to say on that topic lies principally in the sense we can use those metaconcepts to make of the whole constellation of conceptually articulated normative practice and institutions Hegel calls \"Spirit.\" That is why I have started my story with what I take it he wants us ultimately to understand about the \"experience of consciousness.\" This methodological approach is what in the Introduction to this work I called the strategy of \"semantic descent.\"",
+            "author": "Robert Brandom, A Spirit of Trust"
           }
         ]
       },
