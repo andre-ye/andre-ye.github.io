@@ -11,6 +11,8 @@ permalink: /
 
 <p>I am an MIT EECS PhD student working on human-AI interaction, advised by <a href="https://mgordon.me/" target="_blank" rel="noopener noreferrer">Mitchell Gordon</a>. I want to build AI that is <button class="rip-btn" data-rip="philosophy">better at <u class="letter-u"><strong>p</strong></u>hilosophy</button>, by which I mean better at aiding thoughtful human judgement about real problems in the world (e.g., in <u class="letter-u">P</u>hilosophy, law, politics, personal life). My work is supported by the NSF GRFP and PD Soros Fellowship.</p>
 
+<p><a href="https://andreiski.substack.com/p/ai-working-within-norms-ai-working?r=64i55i&amp;utm_campaign=post&amp;utm_medium=web&amp;triedRedirect=true" target="_blank" rel="noopener noreferrer">Read my blogpost</a>, &ldquo;AI Working within norms, AI working on norms,&rdquo; for a collection of some thoughts and one direction I am interested in.</p>
+
 <div class="rip-panel" id="rip-philosophy">
   <div class="rip-panel-inner">
     <div class="rip-edge rip-edge-top"></div>
