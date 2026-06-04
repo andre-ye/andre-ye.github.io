@@ -5,11 +5,25 @@
             "description": "These papers stake out general positions and visions which I find compelling or at least useful to think about. (I don't necessarily agree with all the papers below.)",
             "papers": [
                 {
+                    "title": "A bias against the present: Recurring sociotechnical oversights in HCI's cyclical visions of the future",
+                    "authors": "Jacob Ritchie, Jingyi Li",
+                    "year": 2026,
+                    "commentary": "",
+                    "link": "https://www.undonecs.org/2026/abstracts/UndoneCS26_abstract_48.pdf"
+                },
+                {
                     "title": "Why books don't work",
                     "authors": "Andy Matuschak",
                     "year": 2019,
                     "commentary": "",
                     "link": "https://andymatuschak.org/books/"
+                },
+                {
+                    "title": "H is for Human and How (Not) To Evaluate Qualitative Research in HCI",
+                    "authors": "Andy Crabtree",
+                    "year": 2024,
+                    "commentary": "",
+                    "link": "https://arxiv.org/pdf/2409.01302"
                 },
                 {
                     "title": "We Can't Understand AI Using our Existing Vocabulary",
@@ -129,6 +143,13 @@
                     "year": 2026,
                     "commentary": "",
                     "link": "https://unpublishablepapers.substack.com/p/automation-will-set-science-free"
+                },
+                {
+                    "title": "Fake thinking and real thinking",
+                    "authors": "Joe Carlsmith",
+                    "year": 2025,
+                    "commentary": "",
+                    "link": "https://joecarlsmith.com/2025/01/28/fake-thinking-and-real-thinking"
                 }
             ]
         },
@@ -326,6 +347,13 @@
                     "year": 2026,
                     "commentary": "",
                     "link": "https://arxiv.org/pdf/2602.06964"
+                },
+                {
+                    "title": "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations",
+                    "authors": "Kit Fraser-Taliente, Subhash Kantamneni, Euan Ong, et al.",
+                    "year": 2026,
+                    "commentary": "Trains a verbalizer/reconstructor pair so that an activation vector can be translated into natural language and then back into an activation that preserves model behavior. The natural-language description is therefore forced to carry the information actually used downstream, not just whatever description sounds plausible. Case studies on Claude Opus 4.6 surface internal reasoning that the model does not explicitly verbalize.",
+                    "link": "https://transformer-circuits.pub/2026/nla/index.html"
                 }
             ]
         },
@@ -392,6 +420,13 @@
             "title": "Human-AI Interaction",
             "description": "Interesting HCI-oriented work exploring how we can interact with AI or with other humans mediated by AI.",
             "papers": [
+                {
+                    "title": "DiscoverLLM: From Executing Intents to Discovering Them",
+                    "authors": "Tae Soo Kim, Yoonjoo Lee, Jaesang Yu, John Joon Young Chung, Juho Kim",
+                    "year": 2026,
+                    "commentary": "",
+                    "link": "https://arxiv.org/abs/2602.03429"
+                },
                 {
                     "title": "Embedding Comparator: Visualizing Differences in Global Structure and Local Neighborhoods via Small Multiples",
                     "authors": "Angie Boggust, Brandon Carter, Arvind Satyanarayan",
@@ -552,6 +587,13 @@
                     "year": 1968,
                     "commentary": "Hamming's 1968 Turing Award lecture arguing for more of a practical, engineering flavor in computer science education.",
                     "link": "https://dl.acm.org/doi/pdf/10.1145/1283920.1283923"
+                },
+                {
+                    "title": "The Fall of the Theorem Economy",
+                    "authors": "David Bessis",
+                    "year": 2026,
+                    "commentary": "",
+                    "link": "https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy"
                 }
             ]
         },
@@ -615,6 +657,13 @@
                     "year": 2021,
                     "commentary": "",
                     "link": "https://epochemagazine.org/41/concepts-between-kant-and-deleuze-from-transcendental-idealism-to-transcendental-empiricism/"
+                },
+                {
+                    "title": "Fake Thinking and Real Thinking",
+                    "authors": "Joe Carlsmith",
+                    "year": 2025,
+                    "commentary": "Distinguishes between thinking that stays in genuine contact with the world (grounded perception, solid concepts, open inquiry, willingness to be moved) and thinking that drifts into hollow abstraction, defensive reasoning, and rote processing of one's own maps. The contrast is useful for noticing when supposedly rigorous reasoning has lost its grip on the thing it claims to be about. Carlsmith argues this distinction matters more, not less, as AI accelerates and the temptation to sleep-walk through unprecedented change grows.",
+                    "link": "https://joecarlsmith.com/2025/01/28/fake-thinking-and-real-thinking/"
                 }
             ]
         },
