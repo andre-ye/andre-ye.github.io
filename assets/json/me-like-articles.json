@@ -421,6 +421,13 @@
             "description": "Interesting HCI-oriented work exploring how we can interact with AI or with other humans mediated by AI.",
             "papers": [
                 {
+                    "title": "Beyond One Output: Visualizing LLM Consistency",
+                    "authors": "Emily Reif",
+                    "year": 2025,
+                    "commentary": "",
+                    "link": "https://emilyreif.com/llm-consistency-vis/interactive_article/"
+                },
+                {
                     "title": "DiscoverLLM: From Executing Intents to Discovering Them",
                     "authors": "Tae Soo Kim, Yoonjoo Lee, Jaesang Yu, John Joon Young Chung, Juho Kim",
                     "year": 2026,
