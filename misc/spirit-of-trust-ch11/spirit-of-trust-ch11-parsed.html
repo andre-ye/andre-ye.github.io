@@ -38,8 +38,11 @@ aside{border-left:1px solid var(--rule);position:sticky;top:0;height:100vh;overf
         transform:translateY(100%);transition:transform .32s cubic-bezier(.4,0,.1,1);z-index:50;box-shadow:0 -8px 40px rgba(0,0,0,.14)}
   aside.open{transform:translateY(0)}
   .sheet-handle{display:block}
+  .sheet-close{display:flex}
 }
 .sheet-handle{display:none;width:2.6rem;height:.28rem;border-radius:9px;background:var(--ink-faint);opacity:.5;margin:.6rem auto .2rem}
+.sheet-close{display:none;position:absolute;top:.45rem;right:.6rem;z-index:2;width:2rem;height:2rem;align-items:center;justify-content:center;border:none;border-radius:50%;background:var(--panel);color:var(--ink-soft);font-size:1.45rem;line-height:1;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.14)}
+.sheet-close:active{background:var(--rule)}
 
 .kicker{font-size:.7rem;letter-spacing:.32em;text-transform:uppercase;color:var(--cond)}
 h1.title{font-weight:430;font-size:clamp(2rem,4.6vw,3rem);line-height:1.08;letter-spacing:-.012em;margin:.7rem 0 .3rem}
@@ -328,6 +331,7 @@ c( But is there any point to thinking of «expression:self-expression as self-ac
 
 <aside id="aside">
   <div class="sheet-handle" id="handle"></div>
+  <button class="sheet-close" id="sheetClose" aria-label="Close">×</button>
   <div class="aside-inner">
     <div class="index" id="indexView">
       <div class="panel-h">Type system — the color key</div>
@@ -459,13 +463,20 @@ function openEntity(id){
     r.innerHTML=`<span class="n">${isDef?"def":String(i+1).padStart(2,"0")}${isCoref?"·≈":""}</span>${snippet(el)}`;
     r.onclick=()=>{el.scrollIntoView({behavior:"smooth",block:"center"});el.classList.remove("pulse");void el.offsetWidth;el.classList.add("pulse");};
     box.appendChild(r);});
-  indexView.style.display="none";detailView.classList.add("show");aside.classList.add("open");aside.scrollTop=0;
+  indexView.style.display="none";detailView.classList.add("show");openSheet();aside.scrollTop=0;
 }
+function openSheet(){aside.classList.add("open");}
+function closeSheet(){aside.classList.remove("open");}
 function backToIndex(){detailView.classList.remove("show");indexView.style.display="";clearActive();}
 document.getElementById("backBtn").onclick=backToIndex;
 document.querySelectorAll(".ent[data-ent]").forEach(el=>el.onclick=()=>openEntity(el.dataset.ent));
-document.getElementById("handle").onclick=()=>aside.classList.remove("open");
-document.addEventListener("keydown",e=>{if(e.key==="Escape"){backToIndex();aside.classList.remove("open");}});
+document.getElementById("handle").onclick=closeSheet;
+document.getElementById("sheetClose").onclick=closeSheet;
+// tap anywhere outside the sheet (and not on an entity) dismisses it on mobile
+document.addEventListener("click",e=>{
+  if(window.innerWidth<=900 && aside.classList.contains("open") && !e.target.closest("#aside") && !e.target.closest(".ent")) closeSheet();
+});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){backToIndex();closeSheet();}});
 </script>
 </body>
 </html>
