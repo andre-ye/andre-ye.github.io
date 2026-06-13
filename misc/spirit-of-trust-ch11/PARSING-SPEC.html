@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parsing Spec — Reading Philosophy Like Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#fbfaf7;--panel:#f3f1ea;--ink:#1c1a17;--ink-soft:#54504a;--ink-faint:#8d8579;--rule:#e3ded2;
+  --cond:#c0392b;--quant:#1f7a3d;--modal:#0e7c86;--doctrine:#7b3fa0;--figure:#a8671b;--object:#2563a8;--relation:#0e857a;--property:#b3007a;--np:#b3007a;--vp:#2563a8;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"Newsreader",Georgia,serif;font-size:1.1rem;line-height:1.66;-webkit-font-smoothing:antialiased}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+.page{max-width:48rem;margin:0 auto;padding:4rem 1.6rem 8rem}
+.back{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cond);text-decoration:none;margin-bottom:2.4rem;border-bottom:1px solid color-mix(in srgb,var(--cond) 35%,transparent)}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--cond)}
+h1{font-weight:440;font-size:clamp(2rem,5vw,2.9rem);line-height:1.08;letter-spacing:-.015em;margin:.7rem 0 1.1rem}
+.lede{font-size:1.18rem;color:var(--ink-soft);line-height:1.6;border-bottom:1px solid var(--rule);padding-bottom:1.8rem;margin-bottom:2.4rem}
+h2{font-family:"Newsreader",serif;font-weight:500;font-size:1.5rem;margin:3rem 0 1rem;padding-top:1.4rem;border-top:2px solid var(--ink);display:flex;gap:.7rem;align-items:baseline}
+h2 .n{font-family:"IBM Plex Mono",monospace;font-size:.8rem;color:var(--cond);flex:none}
+h3{font-weight:600;font-size:1.12rem;margin:1.8rem 0 .6rem}
+p{margin:0 0 1rem}
+ul,ol{margin:0 0 1.1rem 1.3rem}li{margin:.32rem 0}
+a{color:var(--cond)}
+strong{font-weight:600}
+em{font-style:italic}
+code{font-family:"IBM Plex Mono",monospace;font-size:.86em;background:var(--panel);border:1px solid var(--rule);border-radius:3px;padding:.04em .32em}
+pre{background:#fff;border:1px solid var(--rule);border-left:3px solid var(--cond);border-radius:5px;padding:1rem 1.1rem;margin:0 0 1.3rem;overflow-x:auto;font-family:"IBM Plex Mono",monospace;font-size:.82rem;line-height:1.75}
+pre .c{color:var(--cond)}pre .q{color:var(--quant)}pre .m{color:var(--modal)}pre .np{color:var(--np)}pre .vp{color:var(--vp)}pre .e{color:var(--doctrine);font-style:italic}pre .g{color:var(--ink-faint)}
+blockquote{border-left:3px solid var(--rule);padding:.2rem 0 .2rem 1.2rem;margin:0 0 1.3rem;color:var(--ink-soft);font-style:italic}
+blockquote code,blockquote pre{font-style:normal}
+.callout{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.2rem;margin:0 0 1.3rem}
+.callout .h{font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--cond);margin-bottom:.4rem}
+table{border-collapse:collapse;width:100%;margin:0 0 1.3rem;font-size:.96rem}
+th,td{text-align:left;vertical-align:top;padding:.55rem .7rem;border-bottom:1px solid var(--rule)}
+th{font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);font-weight:500}
+.sw{display:inline-block;width:.8rem;height:.8rem;border-radius:3px;vertical-align:-1px;margin-right:.35rem}
+.ty{font-weight:600}
+.inv{font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;display:inline-block;border:1px solid;border-radius:3px;padding:.06em .4em;margin-right:.4rem}
+hr{border:none;border-top:1px solid var(--rule);margin:2.4rem 0}
+</style>
+</head>
+<body>
+<div class="page">
+  <a class="back" href="spirit-of-trust-ch11-parsed.html">← back to the parsed text</a>
+  <div class="kicker">Specification · v0.4</div>
+  <h1>Reading Philosophy Like Code</h1>
+  <p class="lede">A semantics for rendering dense philosophical prose as a <strong>typed, colored, bracketed structure</strong> that exposes its logical form. This is the contract handed to anyone — human or agent — parsing a passage: apply these rules by <em>reviewing every clause for its function</em>, never by surface word-matching.</p>
+
+  <div class="callout">
+    <div class="h">Two hard invariants</div>
+    <p style="margin:0"><span class="inv" style="color:var(--cond);border-color:var(--cond)">1 · text unchanged</span> Every character of the source appears once, unchanged — same words, order, punctuation, paragraphs. You only <em>add</em> brackets, type-prefixes, and entity/operator markers.<br>
+    <span class="inv" style="color:var(--quant);border-color:var(--quant);margin-top:.5rem">2 · brackets balance</span></p>
+  </div>
+
+  <h2><span class="n">§1</span> The core idea — typed constituents</h2>
+  <p>A sentence is decomposed <strong>recursively</strong> into nested constituents. Each constituent is a bracketed group with a <strong>type</strong>. The type colors the group's <strong>brackets</strong> and its own direct <strong>frame text</strong> (the connective / operator words that carry the logical form), while its nested children — the <strong>operands</strong> — carry their own types and colors.</p>
+  <blockquote><strong>Frame vs. operands.</strong> The <em>frame</em> is the functor — the words doing the logical work (“if … then …”, “is a consequence of”, “everything … is incompatible with …”). The <em>operands</em> are the contentful sub-phrases plugged in. Frame text takes the group color; each operand nests in its operand color. <strong>Parallel operands of one functor share one color.</strong></blockquote>
+  <p>Worked example (a universally-quantified relation):</p>
+  <p style="font-style:italic;color:var(--ink-soft)">for everything incompatible with being a mammal is incompatible with being a dog</p>
+  <pre><span class="c">c(for)</span> <span class="q">q(</span> everything incompatible with <span class="vp">v(being a mammal)</span> is incompatible with <span class="vp">v(being a dog)</span> <span class="q">)</span></pre>
+  <ul>
+    <li><code class="c">c(for)</code> — the causal connective, red.</li>
+    <li><span style="color:var(--quant)">The whole quantified statement is <strong>one green frame</strong></span>: brackets + the skeleton “everything incompatible with … is incompatible with …” are green. We do <strong>not</strong> spotlight the lone word “everything” — it is the subject of a green <em>frame</em>.</li>
+    <li><span style="color:var(--vp)">“being a mammal” and “being a dog”</span> are the two operands plugged into the relation — <strong>same color</strong> (blue).</li>
+  </ul>
+
+  <h3>Connectives are inline; constituents are bracketed</h3>
+  <p>A bare operator that <em>links</em> sibling constituents is rendered as <strong>inline colored text</strong> — it is <strong>never</strong> given its own bracket. Brackets enclose <strong>constituents</strong>: operands, and <em>frames</em> that contain their operands.</p>
+  <blockquote>Conceptual realism <strong>is a consequence of</strong> understanding the alethic modal articulation … <strong>as essential to</strong> their being …</blockquote>
+  <pre><span class="e">«cr:Conceptual realism»</span> <span class="c">`c:is a consequence of`</span> ( understanding <span class="np">n(the alethic modal articulation …)</span>
+                         <span class="c">`c:as essential to`</span> <span class="np">n(their being …)</span> )</pre>
+  <p>“is a consequence of” and “as essential to” <em>link</em> their operands, so they are inline red — <strong>not</strong> <code>c(as essential to)</code>. A bracket around a lone connective wrongly makes it look like a third sibling beside the two operands. By contrast, the “if”/“then” inside <code>c( if … , then … )</code> <em>is</em> colored frame-text, because that bracket encloses the whole conditional <em>constituent</em>, not a bare word.</p>
+  <div class="callout"><div class="h">the test</div><p style="margin:0">Does the bracket enclose <strong>operands</strong>? → keep it. Or just an <strong>operator word</strong>? → make it inline.</p></div>
+
+  <h3>Same level → same color</h3>
+  <p><strong>Coordinated operators at one level share one color; parallel operands at one level share one color.</strong> When a frame has two operator-parts separated by intervening content — <span style="color:var(--cond)">if</span> x <span style="color:var(--cond)">then</span> y, <span style="color:var(--quant)">not only</span> x <span style="color:var(--quant)">but</span> y, <span style="color:var(--quant)">both</span> x <span style="color:var(--quant)">and</span> y — every part takes the frame's one color, so the eye reads them as the two ends of a single bracket; the operands they bracket likewise share their one operand color. This falls out automatically (operator-parts are frame-text of one typed group; parallel operands are sibling groups of one type). A <em>solitary</em> operator has nothing to coordinate with — no pairing to enforce.</p>
+
+  <h2><span class="n">§2</span> Types &amp; colors</h2>
+  <table>
+    <tr><th>type</th><th>marks — by function</th></tr>
+    <tr><td class="ty" style="color:var(--cond)"><span class="sw" style="background:var(--cond)"></span>conditional / inference</td><td>conditionals (if…then) and inference/dependence relations <em>between contents</em>: because, for (causal), hence, so (= therefore), it follows that, is a consequence of, is a condition of, is essential to, precludes, induces, requires, entails, underwrites.</td></tr>
+    <tr><td class="ty" style="color:var(--quant)"><span class="sw" style="background:var(--quant)"></span>quantificational / scope</td><td>quantification/scope over a domain: every, all, no, nothing, none, any <em>when binding a domain</em>; not only…but also; only; except; without. Wrap the whole quantified statement, never the bare quantifier word.</td></tr>
+    <tr><td class="ty" style="color:var(--modal)"><span class="sw" style="background:var(--modal)"></span>modal</td><td>alethic modality: possible, impossible, necessary, contingent, can, could, would, must, may, potentially, anomic (= lawless).</td></tr>
+    <tr><td class="ty" style="color:var(--np)"><span class="sw" style="background:var(--np)"></span>content / noun clause</td><td>a contentful noun phrase or embedded <em>how/what/that</em> clause functioning as a unit — the “stuff” being related, vs. logical form: “how things are in themselves”, “what a fact is”.</td></tr>
+    <tr><td class="ty" style="color:var(--vp)"><span class="sw" style="background:var(--vp)"></span>predicate / operand</td><td>a predicate or clausal argument plugged into a frame: “being a mammal”, “Coda were a dog”, “bridge it or reunite the two sides”.</td></tr>
+    <tr><td class="ty" style="color:var(--doctrine)"><span class="sw" style="background:var(--doctrine)"></span>entity</td><td>a recurring <strong>developed concept</strong> — clickable, category-colored italic (see §4).</td></tr>
+    <tr><td class="ty" style="color:var(--ink-faint)"><span class="sw" style="background:var(--ink-faint)"></span>neutral</td><td>plain grouping, no special logical role — descriptive glue. Use freely; not everything is logical form.</td></tr>
+  </table>
+  <p>When a clause mixes types, pick the type of the <strong>dominant</strong> operation. “Nothing can be both a bivalve and a vertebrate” is fundamentally a <em>quantified exclusion</em> → green, even though “can” is modal. When a modal genuinely dominates (“it is impossible to exhibit … simultaneously”) → teal.</p>
+
+  <h2><span class="n">§3</span> Decomposition procedure — review <em>every</em> clause</h2>
+  <ol>
+    <li><strong>Find the main functor</strong> — what is the sentence fundamentally <em>doing</em>? conditional? inference/dependence? quantified statement? modal claim? plain predication?</li>
+    <li><strong>Wrap the logical core</strong> in a group of that type; its connective words become the group's colored frame-text.</li>
+    <li><strong>Identify the operands</strong> — the contentful arguments — and wrap each as a nested group of the right type (content, predicate, or a sub-frame if itself complex). <strong>Recurse.</strong></li>
+    <li><strong>Parallel operands share a color.</strong></li>
+    <li>Leave purely descriptive glue (“in this work”, “as sketched in Chapter 8”) neutral.</li>
+    <li>Mark <strong>entities</strong> wherever a developed concept appears, including coreferent/aliased forms (§4).</li>
+    <li>The author's own literal brackets fold into the parse as groups (<code>[begrifflich]</code>, <code>(so)</code>).</li>
+  </ol>
+  <div class="callout"><div class="h">anti-pattern</div><p style="margin:0">Do <strong>not</strong> color a word because it's “in the quantifier list.” If a quantifier/pronoun merely heads a noun phrase and scopes nothing interesting, color the <em>clause</em> it governs or leave it neutral. <strong>Function over form, always.</strong></p></div>
+
+  <h2><span class="n">§4</span> Entities &amp; coreference <span style="font-size:.7rem;color:var(--ink-faint);font-family:'IBM Plex Mono',monospace;letter-spacing:.12em">— FIRST priority</span></h2>
+  <ul>
+    <li>An <strong>entity</strong> is a concept the text <em>develops and reuses</em>: conceptual realism, objective idealism, material incompatibility, sense-dependence, the objective world, subjects.</li>
+    <li><strong>Not</strong> entities: proper names of people (Hegel, Kant) — unless used as a coined technical term (a deliberate “Hegel's sense of X”). Not generic words.</li>
+    <li><strong>Coreference is the heart of the task.</strong> Bind every surface form of one concept to one stable <code>id</code>: literal repeats; <strong>aliases / identity-renamings</strong> (“determinate negation” = material incompatibility; “mediation” = material consequence); and <strong>descriptions &amp; pronouns</strong> (“this doctrine”, “this view”, “him”) via <code>|coref</code>.</li>
+    <li>Each entity carries: <code>id</code>, <code>name</code>, <code>category</code> ∈ {doctrine, object, relation, property}, <code>gloss</code> (1–3 sentences), <code>aliases</code>. Mark the best <strong>defining</strong> mention with <code>|def</code>.</li>
+  </ul>
+
+  <h2><span class="n">§5</span> Relations <span style="font-size:.7rem;color:var(--ink-faint);font-family:'IBM Plex Mono',monospace;letter-spacing:.12em">— SECOND layer</span></h2>
+  <p>After entities are fixed, record typed relations <em>between</em> concepts. The most important are the author's <strong>identity claims</strong>, where two apparently-separate concepts are asserted to be the same thing.</p>
+  <table>
+    <tr><th>kind</th><th>glyph</th><th>meaning</th></tr>
+    <tr><td>identical</td><td class="mono">≡</td><td>the two are the same (“two ways of talking about the same thing”)</td></tr>
+    <tr><td>isform</td><td class="mono">≈</td><td>one just <em>is</em> the other under a different description</td></tr>
+    <tr><td>pair</td><td class="mono">＋</td><td>a constituting pair</td></tr>
+    <tr><td>consequence / requires / price</td><td class="mono">→ / ⊢</td><td>one is a condition / consequence / price of the other</td></tr>
+    <tr><td>contrast</td><td class="mono">⇋</td><td>opposed pair (sense- vs reference-dependence)</td></tr>
+    <tr><td>depends</td><td class="mono">↘</td><td>asymmetric dependence</td></tr>
+    <tr><td>arc</td><td class="mono">⇒</td><td>step in the chapter's argument</td></tr>
+  </table>
+  <p>Each relation: <code>{ a:id, kind, b:id, note:"short quote/justification" }</code>.</p>
+
+  <h2><span class="n">§6</span> DSL encoding</h2>
+  <p>Brackets <code>( ) [ ] { }</code> are interchangeable nesting brackets — choose glyphs for readability. A <strong>type prefix</strong> is a single letter immediately before an opening bracket, with whitespace (or another opener) before it; it colors the group's brackets <strong>and</strong> its direct frame text:</p>
+  <pre><span class="c">c(</span>   conditional / inference   <span class="g">(red)</span>
+<span class="q">q(</span>   quantificational / scope   <span class="g">(green)</span>
+<span class="m">m(</span>   modal                      <span class="g">(teal)</span>
+<span class="np">n(</span>   content / noun clause      <span class="g">(magenta)   [ @( alias ]</span>
+<span class="vp">v(</span>   predicate / operand        <span class="g">(blue)      [ &( alias ]</span>
+(    neutral                    <span class="g">(grey brackets, ink text)</span></pre>
+  <p><strong>Entities:</strong> <code>«id:surface text»</code> with optional final flag <code>|def</code> or <code>|coref</code>:</p>
+  <pre><span class="e">«cr:conceptual realism|def»</span>   <span class="e">«oi:this doctrine I called|coref»</span>   <span class="e">«world:nonmental world»</span></pre>
+  <p><strong>Inline operator</strong> — to tint a single linking connective without bracketing it (see §1): <code class="c">`c:word`</code> / <code class="q">`q:word`</code> / <code class="m">`m:word`</code>.</p>
+  <p>Reserved characters (the source prose contains none): <code>« » ` @ &amp;</code>. Everything else is literal text.</p>
+
+  <h2><span class="n">§7</span> What an agent returns</h2>
+  <p>Given a passage + the shared <strong>entity registry</strong> (existing ids, names, glosses) + this spec, return JSON:</p>
+  <pre>{
+  <span class="np">"dsl"</span>: <span class="g">"&lt;passage, encoded paragraph-by-paragraph; \n separates paragraphs&gt;"</span>,
+  <span class="np">"new_entities"</span>: [ { "id","name","category","gloss","aliases":[…] }, … ],
+  <span class="np">"new_relations"</span>: [ { "a","kind","b","note" }, … ]
+}</pre>
+  <ul>
+    <li>Reuse existing ids for any concept already in the registry; only add genuinely new ones.</li>
+    <li>Preserve paragraph boundaries (one logical line per source paragraph; <code>\n</code>-separated).</li>
+    <li>Verify both invariants before returning: text unchanged, brackets balanced.</li>
+  </ul>
+  <hr>
+  <a class="back" href="spirit-of-trust-ch11-parsed.html" style="margin:0">← back to the parsed text</a>
+</div>
+</body>
+</html>

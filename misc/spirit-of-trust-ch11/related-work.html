@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Related Work — Structure-Preserving Reading Augmentation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fbfaf7;--panel:#f3f1ea;--ink:#1c1a17;--ink-soft:#54504a;--ink-faint:#8d8579;--rule:#e3ded2;--cond:#c0392b;--quant:#1f7a3d;--modal:#0e7c86;--doctrine:#7b3fa0;--object:#2563a8}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"Newsreader",Georgia,serif;font-size:1.08rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+.page{max-width:52rem;margin:0 auto;padding:3.4rem 1.6rem 8rem}
+.back{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cond);text-decoration:none;margin-bottom:2rem;border-bottom:1px solid color-mix(in srgb,var(--cond) 35%,transparent)}
+.nav{font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.1em;color:var(--ink-faint);margin-bottom:2.2rem}
+.nav a{color:var(--cond);text-decoration:none}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--cond)}
+h1{font-weight:440;font-size:clamp(1.9rem,4.6vw,2.8rem);line-height:1.07;letter-spacing:-.015em;margin:.7rem 0 1rem}
+.lede{font-size:1.14rem;color:var(--ink-soft);line-height:1.55;margin-bottom:1.4rem}
+h2{font-weight:500;font-size:1.32rem;margin:2.6rem 0 .3rem;padding-top:1.2rem;border-top:2px solid var(--ink);display:flex;gap:.7rem;align-items:baseline}
+h2 .n{font-family:"IBM Plex Mono",monospace;font-size:.76rem;color:var(--cond);flex:none}
+.sub{color:var(--ink-faint);font-size:.9rem;font-style:italic;margin:.1rem 0 1rem}
+.gapbox{background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:1.3rem 1.5rem;margin:1.2rem 0}
+.gapbox h3{font-size:1rem;margin:0 0 .5rem}.gapbox p{font-size:.96rem;color:var(--ink-soft);margin:.4rem 0 0}
+.tag{font-family:"IBM Plex Mono",monospace;font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;padding:.1em .5em;border-radius:3px;margin-right:.5em;vertical-align:.1em}
+.tag.claimed{color:var(--ink-faint);border:1px solid var(--rule);background:#fff}
+.tag.open{color:var(--quant);border:1px solid var(--quant)}
+.tag.close{color:var(--cond);border:1px solid var(--cond)}
+.item{margin:0 0 .9rem;padding-left:1rem;border-left:2px solid var(--rule)}
+.item.star{border-left-color:var(--cond)}
+.item .nm{font-weight:600}.item .meta{color:var(--ink-faint);font-size:.8rem;font-family:"IBM Plex Mono",monospace}
+.item .rel{display:block;color:var(--ink-soft);font-size:.93rem;margin-top:.1rem}
+.item a{color:var(--cond);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--cond) 28%,transparent)}
+.contribution{background:#fff;border:1px solid var(--cond);border-radius:8px;padding:1.4rem 1.6rem;margin:1.6rem 0}
+.contribution h3{color:var(--cond);font-size:1.05rem;margin:0 0 .6rem}
+.contribution ol{margin:.4rem 0 0 1.2rem}.contribution li{margin:.4rem 0;font-size:.97rem}
+.caveats{background:var(--panel);border-left:3px solid var(--cond);border-radius:5px;padding:1rem 1.3rem;margin:1.4rem 0}
+.caveats h3{font-size:.95rem;margin:0 0 .4rem}.caveats li{font-size:.88rem;color:var(--ink-soft);margin:.3rem 0 .3rem 1.1rem}
+em{font-style:italic}strong{font-weight:600}
+.src{font-size:.76rem;color:var(--ink-faint);font-style:italic;margin-top:2.2rem;border-top:1px solid var(--rule);padding-top:1rem}
+</style>
+</head>
+<body>
+<div class="page">
+  <a class="back" href="spirit-of-trust-ch11-parsed.html">← back to the parsed text</a>
+  <div class="kicker">CHI-style related work · positioning draft</div>
+  <h1>Augmenting reading with structure, not summary</h1>
+  <p class="lede">A related-work map for an HCI framing: instead of <em>summarizing</em> a text (which automates the reader's schema-building and forfeits comprehension), an LLM <em>computes latent structure and renders it inline over the preserved words</em>. Compiled from seven parallel research passes. Companion to the <a href="prior-art.html" style="color:var(--cond)">notation / tools-for-thought prior art →</a>.</p>
+  <div class="nav">jump ▸ <a href="#motiv">why not summarize</a> · <a href="#close">closest prior art</a> · <a href="#augment">in-place augmentation</a> · <a href="#annot">active reading</a> · <a href="#argument">argument structure</a> · <a href="#sense">sensemaking</a> · <a href="#gap">the gap</a></div>
+
+  <h2 id="motiv"><span class="n">1</span> Why augment instead of summarize</h2>
+  <div class="sub">the empirical engine — summaries flatten understanding; effortful, scaffolded reading builds durable models</div>
+  <div class="item star"><span class="nm">Melumad &amp; Yun — AI summaries vs. reading sources</span> <span class="meta">· PNAS Nexus 2025</span><span class="rel">7 experiments, &gt;10,000 participants: LLM summaries yield <strong>shallower knowledge</strong> than reading the source. The strongest direct evidence that summarization flattens understanding.</span></div>
+  <div class="item star"><span class="nm">Lee, Sarkar, Tankelevitch et al. — GenAI &amp; critical thinking</span> <span class="meta">· CHI 2025</span><span class="rel">319 knowledge workers: higher AI confidence predicts <strong>less critical thinking and effort</strong> — trusting the output displaces the cognition augmentation tries to preserve.</span></div>
+  <div class="item"><span class="nm">Generation effect</span> <span class="meta">· Slamecka &amp; Graf 1978</span> &nbsp;·&nbsp; <span class="nm">Desirable difficulties</span> <span class="meta">· Bjork 1994/2011</span><span class="rel">Self-generated material is better retained; effortful processing beats fluent ease. Summaries forfeit the generation benefit; inline structure keeps you reading every word — a <em>productive</em> difficulty.</span></div>
+  <div class="item"><span class="nm">Cognitive offloading</span> <span class="meta">· Risko &amp; Gilbert, TiCS 2016</span> &nbsp;·&nbsp; <span class="nm">Cognitive forcing functions</span> <span class="meta">· Buçinca et al., CSCW 2021</span><span class="rel">People offload even when they shouldn't (miscalibrated); designed-in friction reduces over-reliance on AI. Justifies augmentation-not-automation (Engelbart 1962) as the stance.</span></div>
+
+  <h2 id="close"><span class="n">2</span> The closest prior art — and exactly where it stops</h2>
+  <div class="sub">the “preserve the text, overlay computed structure” move is already published — for single, fixed lenses</div>
+  <div class="item star"><span class="tag close">closest</span><span class="nm">GP-TSM — AI-resilient text rendering</span> <span class="meta">· Gu, Arawjo, Li, Kummerfeld, Glassman · CHI 2024</span><span class="rel"><strong>Almost the thesis in print:</strong> recursively grays out lower-priority words while keeping all original text legible; explicitly argues <em>against</em> summarization (omission/hallucination). Differs in lens: it does <em>saliency/emphasis</em>, not logical-role / coreference / argument structure — and isn't user-steerable to arbitrary lenses.</span></div>
+  <div class="item"><span class="nm">Scim — intelligent skimming</span> <span class="meta">· Fok et al. · IUI 2023</span><span class="rel">Toggleable highlighting of passages by <strong>rhetorical role</strong> (objective/novelty/method/result). Your model, but one fixed schema (scientific papers).</span></div>
+  <div class="item"><span class="nm">ScholarPhi</span> <span class="meta">· Head et al. · CHI 2021</span> &nbsp;·&nbsp; <span class="nm">CiteRead</span> <span class="meta">· IUI 2022</span> &nbsp;·&nbsp; <span class="nm">Qlarify</span> <span class="meta">· UIST 2024</span><span class="rel">In-place definitions of terms/symbols; citation context in the margin; recursively expandable abstracts (detail-on-demand — the inverse of summarization). Each overlays <em>one</em> kind of structure on preserved text.</span></div>
+  <div class="item"><span class="nm">The Semantic Reader Project</span> <span class="meta">· Lo et al. · CACM 2024</span><span class="rel">Umbrella for ~10 AI prototypes overlaying definitions/highlights/citations on legacy PDFs — the canonical “augment in place, don't replace” manifesto to anchor against.</span></div>
+  <div class="item"><span class="nm">LARF — Let AI Read First (dyslexia)</span> <span class="meta">· CHI 2025 (LBW)</span> &nbsp;·&nbsp; <span class="nm">Reading.help (EFL)</span> <span class="meta">· CHI 2026</span><span class="rel">Mark “important” content via highlight/bold without changing wording (N=150); on-demand grammar/semantics overlays for L2 readers. Structure-preserving emphasis/explanation — adjacent lenses, accessibility framing.</span></div>
+
+  <h2 id="augment"><span class="n">3</span> Active reading &amp; in-place annotation</h2>
+  <div class="sub">the four-decade foundation: marking the exact words (not extracting a gist) is what makes reading active</div>
+  <div class="item"><span class="nm">O'Hara &amp; Sellen — paper vs. on-line</span> <span class="meta">· CHI 1997</span><span class="rel">Paper's advantage comes from in-place annotation &amp; structure-extraction — the deficit digital overlays aim to restore.</span></div>
+  <div class="item"><span class="nm">Marshall — annotation studies</span> <span class="meta">· DL 1997 · Hypertext 1998</span><span class="rel">Theorizes annotation as turning an <em>authorial</em> structure into a shared <em>reading</em> structure laid on the exact words — nearly a thesis statement for the framing.</span></div>
+  <div class="item"><span class="nm">XLibris</span> <span class="meta">· Schilit et al. · CHI 1998</span> &nbsp;·&nbsp; <span class="nm">NB</span> <span class="meta">· Zyto et al. · CHI 2012</span> &nbsp;·&nbsp; <span class="nm">CommentSpace</span> <span class="meta">· Willett et al. · CHI 2011</span><span class="rel">Seminal active-reading machine; classroom-scale in-margin annotation valued over clean text; <strong>lightweight imposed structure</strong> (typed tags/links) measurably aids sensemaking — precedent for “computed structural annotation.”</span></div>
+  <div class="item"><span class="nm">Robust anchoring</span> <span class="meta">· Brush et al. · CHI 2001</span> &nbsp;·&nbsp; <span class="nm">AnchoredAI</span> <span class="meta">· 2025 (preprint)</span><span class="rel">Keeping marks attached to exact words across edits; LLM-anchored <em>inline</em> comments boost agency &amp; <strong>reduce over-reliance</strong> vs. a chat sidebar — but for <em>writing</em>, not reading.</span></div>
+
+  <h2 id="argument"><span class="n">4</span> Argument / rhetorical structure of prose</h2>
+  <div class="sub">well-served for scientific papers &amp; your-own-draft; open for arbitrary argumentative/humanities text</div>
+  <div class="item"><span class="nm">Argumentative Zoning</span> <span class="meta">· Teufel &amp; Moens · Comp. Linguistics 2002</span><span class="rel">Classifies each sentence by rhetorical/argumentative role — the NLP backbone for inline argument highlighting.</span></div>
+  <div class="item"><span class="nm">AcaWriter / AWA</span> <span class="meta">· Knight, Buckingham Shum et al. · JWR 2020</span> &nbsp;·&nbsp; <span class="nm">Mover</span> <span class="meta">· 2003</span><span class="rel">Highlight rhetorical moves in a text — but on the user's <em>own academic draft</em> for writing feedback, not on arbitrary published prose for reading.</span></div>
+  <div class="item"><span class="nm">Marvista</span> <span class="meta">· Chen et al. · TOCHI 2023</span> &nbsp;·&nbsp; <span class="nm">fallacy / persuasion-technique highlighting</span> <span class="meta">· NLP venues</span><span class="rel">Per-paragraph inline questions for news; tools tagging fallacies/persuasion tactics — but locked to a <em>fixed taxonomy</em>, not general structure.</span></div>
+  <div class="item"><span class="nm">ITSS — structure-strategy tutoring</span> <span class="meta">· Meyer, Wijekumar et al. · RCTs</span><span class="rel">Strong RCT evidence that teaching readers to detect/visualize text-structure patterns (cause/effect, compare/contrast) aids comprehension — but a fixed pattern set on instructional texts.</span></div>
+
+  <h2 id="sense"><span class="n">5</span> Sensemaking &amp; qualitative structuring</h2>
+  <div class="sub">the deepest theoretical hook — deep reading <em>is</em> schematization, and tools push it off to the side</div>
+  <div class="item star"><span class="nm">Sensemaking loop</span> <span class="meta">· Russell, Stefik, Pirolli &amp; Card · CHI 1993 · Pirolli &amp; Card 2005</span><span class="rel">Casts deep reading as encoding text into a <strong>schema</strong>, and names that “schematize” step as the costly, high-leverage transition to support. Your move: push schematization <em>back onto the verbatim text</em> instead of a side panel.</span></div>
+  <div class="item"><span class="nm">Jigsaw</span> <span class="meta">· Stasko et al. · VAST 2007</span> &nbsp;·&nbsp; <span class="nm">ForceSPIRE</span> <span class="meta">· Endert et al. · CHI 2012</span><span class="rel">Surface entity/relation structure &amp; learn it from reader gestures — but in <em>separate views</em>, not overlaid on the text.</span></div>
+  <div class="item"><span class="nm">Cody · PaTAT · CollabCoder</span> <span class="meta">· CHI 2021 / CHI 2023 / CHI 2024</span><span class="rel">Mark text spans into a coded structure while reading (AI-assisted) — but require a <strong>human-authored codebook</strong>; the LLM doesn't <em>propose</em> the schema.</span></div>
+  <div class="item"><span class="nm">brat</span> <span class="meta">· Stenetorp et al. · EACL 2012</span> &nbsp;·&nbsp; <span class="nm">rstWeb</span> <span class="meta">· Zeldes · NAACL 2016</span> &nbsp;·&nbsp; <span class="nm">Passages</span> <span class="meta">· Han et al. · CHI 2022</span><span class="rel">Render entity/relation/coreference &amp; RST structure <em>in place</em> — but hand-annotated, surface-level, and built as annotation editors, not reading tools. No verified HCI <em>reading</em> interface renders discourse/coreference structure for reading.</span></div>
+
+  <h2 id="gap"><span class="n">6</span> The gap → contribution</h2>
+  <div class="gapbox">
+    <p><span class="tag claimed">already claimed</span> “Preserve exact words, compute &amp; overlay structure” — GP-TSM, Scim, ScholarPhi, CiteRead, LARF — each for <strong>one fixed lens</strong> (saliency, rhetorical role, definitions, citations, importance).</p>
+    <p style="margin-top:.6rem"><span class="tag claimed">already claimed</span> Impose structure <em>from</em> reading — Cody/PaTAT/CollabCoder — but with a <strong>human-authored codebook</strong>, and rendered in a side view or as surface spans.</p>
+    <p style="margin-top:.6rem"><span class="tag open">open</span> A single LLM-driven <strong>reading-lens renderer</strong> where the structure is <strong>arbitrary &amp; on-demand</strong> (logical roles, coreference chains, inferential/argument structure), computed on <strong>any</strong> text (esp. humanities/argumentative prose with <em>no schema</em>), rendered <strong>in situ over unchanged words</strong>, and <strong>evaluated on comprehension depth / model-building</strong> against a summarization baseline.</p>
+  </div>
+  <div class="contribution">
+    <h3>Defensible contribution claim</h3>
+    <ol>
+      <li><strong>Concept:</strong> reframe LLM-for-reading from <em>compression</em> (summary) to <em>structure rendering</em> — and from <em>one fixed lens</em> to a <strong>general, declarative lens renderer</strong> (a parsing spec the LLM compiles onto arbitrary prose).</li>
+      <li><strong>System:</strong> in-situ, exact-text-preserving overlay of <em>latent logical/inferential structure</em> — the hard case being implicit-structure genres (philosophy) no schema-parser handles.</li>
+      <li><strong>Study:</strong> comprehension/transfer (not skimming speed), <em>plain text vs. summary vs. structure-rendered</em> — hypothesis: summaries win speed/recall, structure-rendering wins transfer &amp; “where the argument turns,” because the reader built the model.</li>
+    </ol>
+  </div>
+
+  <div class="caveats">
+    <h3>Caveats to stay honest about</h3>
+    <ul>
+      <li><strong>GP-TSM</strong> already owns “augment-not-summarize via rendering”; differentiate hard on <em>lens generality</em> + <em>logical/argument structure</em> + <em>evaluation target</em>, not on the premise.</li>
+      <li>Color-for-comprehension evidence is thin (Sarkar 2015 is about highlighting broadly; <strong>Bionic Reading failed</strong> its evals) — don't claim “color → faster”; claim “structure-preserving scaffolding → deeper model.”</li>
+      <li><strong>Anchoring</strong> (Brush; AnchoredAI) and <strong>“hidden state outside the text”</strong> (Potluck) are real design constraints — favor re-derivable structure over hand-maintained markup.</li>
+      <li>Several on-theme items are 2026 / preprint (AI Margin Notes, Reading.help) or non-HCI venues (education/psych) — venue-verify before formal citation.</li>
+    </ul>
+  </div>
+
+  <p class="src">Synthesized from seven parallel research agents (HCI augmented-reading · tools-for-thought/notation · argument-mapping · active-reading/annotation · argument/essay scaffolds · sensemaking/qualitative-coding · recent LLM reading-augmentation), each instructed to prefer primary sources and flag unverifiable claims. Venues/years are best-effort and should be checked against ACM DL / DBLP before citation.</p>
+  <a class="back" href="spirit-of-trust-ch11-parsed.html" style="margin:1.4rem 0 0">← back to the parsed text</a>
+</div>
+</body>
+</html>
