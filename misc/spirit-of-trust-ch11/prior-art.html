@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prior Art — Reading Philosophy Like Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#fbfaf7;--panel:#f3f1ea;--ink:#1c1a17;--ink-soft:#54504a;--ink-faint:#8d8579;--rule:#e3ded2;
+  --cond:#c0392b;--quant:#1f7a3d;--modal:#0e7c86;--doctrine:#7b3fa0;--object:#2563a8;--np:#b3007a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"Newsreader",Georgia,serif;font-size:1.1rem;line-height:1.62;-webkit-font-smoothing:antialiased}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+.page{max-width:50rem;margin:0 auto;padding:3.6rem 1.6rem 8rem}
+.back{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cond);text-decoration:none;margin-bottom:2.2rem;border-bottom:1px solid color-mix(in srgb,var(--cond) 35%,transparent)}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--cond)}
+h1{font-weight:440;font-size:clamp(2rem,5vw,3rem);line-height:1.06;letter-spacing:-.015em;margin:.7rem 0 1rem}
+.lede{font-size:1.16rem;color:var(--ink-soft);line-height:1.55;margin-bottom:1.6rem}
+.verdict{background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:1.4rem 1.5rem;margin:0 0 1rem}
+.verdict h2{border:none;margin:0 0 .6rem;padding:0;font-size:1.05rem}
+.verdict p{font-size:.96rem;color:var(--ink-soft);margin:.5rem 0 0}
+.verdict .tag{font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;padding:.1em .5em;border-radius:3px;margin-right:.5em;vertical-align:.12em}
+.tag.trod{color:var(--ink-faint);border:1px solid var(--rule);background:#fff}
+.tag.fresh{color:var(--quant);border:1px solid var(--quant)}
+h2{font-weight:500;font-size:1.4rem;margin:2.8rem 0 .4rem;padding-top:1.3rem;border-top:2px solid var(--ink);display:flex;gap:.7rem;align-items:baseline}
+h2 .n{font-family:"IBM Plex Mono",monospace;font-size:.78rem;color:var(--cond);flex:none}
+.sub{color:var(--ink-faint);font-size:.92rem;font-style:italic;margin:.1rem 0 1rem}
+.item{margin:0 0 1.05rem;padding-left:1rem;border-left:2px solid var(--rule)}
+.item .nm{font-weight:600}
+.item .meta{color:var(--ink-faint);font-size:.82rem}
+.item a{color:var(--cond);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--cond) 30%,transparent)}
+.item .rel{display:block;color:var(--ink-soft);font-size:.95rem;margin-top:.15rem}
+.item .rel b{color:var(--ink);font-weight:500}
+.flag{font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--cond);background:color-mix(in srgb,var(--cond) 7%,transparent);border-radius:3px;padding:0 .35em}
+.caveats{background:#fff;border:1px solid var(--rule);border-left:3px solid var(--cond);border-radius:5px;padding:1.1rem 1.3rem;margin:1.4rem 0}
+.caveats h3{font-size:.95rem;margin:0 0 .5rem}
+.caveats li{font-size:.9rem;color:var(--ink-soft);margin:.35rem 0 .35rem 1.1rem}
+.src{font-size:.78rem;color:var(--ink-faint);font-style:italic;margin-top:2.4rem;border-top:1px solid var(--rule);padding-top:1rem}
+em{font-style:italic}strong{font-weight:600}
+</style>
+</head>
+<body>
+<div class="page">
+  <a class="back" href="spirit-of-trust-ch11-parsed.html">← back to the parsed text</a>
+  <div class="kicker">Background · prior art survey</div>
+  <h1>Has this been done before?</h1>
+  <p class="lede">A survey of prior work behind the idea of <em>reading philosophy like code</em> — keeping the exact prose intact while overlaying logical-role color, nested typed brackets, and clickable concept-entities with coreference, find-all-references, jump-to-definition, and identity relations. Compiled from three parallel research passes across HCI / augmented-reading, tools-for-thought / notation, and argument-mapping literatures.</p>
+
+  <div class="verdict">
+    <h2>The short answer</h2>
+    <p><span class="tag trod">well-trodden</span>Nearly every <em>individual</em> ingredient has deep precedent. <b>Typed bracketing</b> is Montague semantics &amp; Frege made visual, and is what projectional editors (Hazel, MPS) do for code. <b>Concept-entities + backlinks</b> is Xanadu transclusion, Roam/Obsidian, NLP coreference — and, almost exactly, legal "defined-term" linkers. <b>Identity relations</b> are Peirce's lines of identity and DRT's discourse referents. The <b>inferential structure of philosophy</b> is the entire argument-mapping field.</p>
+    <p style="margin-top:.7rem"><span class="tag fresh">fresh</span>The <b>synthesis</b> is unattested: no tool found colors natural-language connectives/quantifiers/modals <em>by logical role</em>, and almost all close cousins either <em>author in</em> a restricted notation or <em>extract</em> the argument into a separate node-link diagram that <em>discards the prose</em>. Keeping the exact text and overlaying Montague-style typing + DRT-style coreference + IDE affordances <em>in situ, as a reading instrument</em>, is the original bet.</p>
+  </div>
+
+  <h2><span class="n">A</span> Historical notations for the logical skeleton</h2>
+  <div class="sub">the deep ancestors — drawing the structure of a judgment</div>
+  <div class="item"><span class="nm">Frege — Begriffsschrift</span> <span class="meta mono">· 1879 · <a href="https://plato.stanford.edu/entries/frege-logic/">SEP</a></span><span class="rel">2-D “concept-script” drawing negation, conditional &amp; quantification off a content stroke; replaces subject/predicate with <b>function/argument</b>. The origin of the idea your bracketing enacts — a judgment as a functor saturated by typed operands.</span></div>
+  <div class="item"><span class="nm">Montague Grammar / Semantics</span> <span class="meta mono">· 1970–73 · <a href="https://plato.stanford.edu/entries/montague-semantics/">SEP</a></span><span class="rel">Every constituent gets a semantic <b>type</b>; meanings combine by <b>function application</b> over typed lambda calculus. Your typed bracketing (frame + operands) is Montagovian function application made visual.</span></div>
+  <div class="item"><span class="nm">Discourse Representation Theory</span> <span class="meta mono">· Kamp 1981 · <a href="https://plato.stanford.edu/entries/discourse-representation-theory/">SEP</a></span><span class="rel">Discourse as nested <b>boxes</b> of persistent <b>discourse referents</b> that corefer <em>across sentences</em>. The direct ancestor of your cross-text concept-tracking; the box is its bracketed frame.</span></div>
+  <div class="item"><span class="nm">Peirce — Existential Graphs</span> <span class="meta mono">· c.1896 · <a href="https://plato.stanford.edu/entries/peirce-logic/">SEP</a></span><span class="rel">Diagrammatic logic where one individual is a continuous <b>line of identity</b> — prefiguring your identity links between two phrasings of the same concept.</span></div>
+  <div class="item"><span class="nm">Reed–Kellogg sentence diagrams</span> <span class="meta mono">· 1877 · <a href="https://en.wikipedia.org/wiki/Reed%E2%80%93Kellogg_sentence_diagram">wiki</a></span><span class="rel">Bracketing a sentence into nested labeled constituents on a visual frame — the literal analog ancestor of your decomposition, and the precursor of modern parse trees / displaCy.</span></div>
+
+  <h2><span class="n">B</span> Argument mapping &amp; CSAV</h2>
+  <div class="sub">the field that most directly visualizes the logic of philosophical prose — but as a <em>separate</em> diagram</div>
+  <div class="item"><span class="nm">Araucaria</span> <span class="meta mono">· Reed &amp; Rowe, 2001 · <a href="http://araucaria.arg.tech">arg.tech</a></span><span class="rel">Select a prose span, tag its argumentative role in place (stored as Argument Markup Language). <b>Exactly your move</b> — except it renders to a node diagram; you render the markup back as colored/bracketed prose.</span></div>
+  <div class="item"><span class="nm">Rationale</span> <span class="meta mono">· van Gelder / Austhink, 2006 · <a href="https://www.reasoninglab.com">reasoninglab</a></span><span class="rel">Argument maps with colored/shaped nodes (green reasons, red objections). The visual ancestor of your role-coloring; you inline the roles into running prose instead of extracting boxes.</span></div>
+  <div class="item"><span class="nm">Carneades</span> <span class="meta mono">· Gordon, Fraunhofer · <a href="https://carneades.github.io">github.io</a></span><span class="rel">Typed argument graphs with argumentation schemes &amp; statement-level acceptability — mirrors treating each concept as a first-class resolvable node.</span></div>
+  <div class="item"><span class="nm">Toulmin model</span> <span class="meta mono">· <em>The Uses of Argument</em>, 1958</span><span class="rel">Six labeled roles (claim, data, warrant, backing, qualifier, rebuttal) — the conceptual vocabulary behind annotating which clause is claim vs. warrant.</span></div>
+  <div class="item"><span class="nm">Kialo</span> <span class="meta mono">· <a href="https://www.kialo.com">kialo.com</a></span> &nbsp;·&nbsp; <span class="nm">Visualizing Argumentation</span> <span class="meta mono">· Kirschner et al., 2003</span><span class="rel">Kialo is a coarse sentence-level pro/con tree; the Springer volume coined “CSAV.” Your twist: keep the visualization <em>embedded in</em> the prose rather than replacing it. <span class="flag">caveat: van Gelder's ~0.8 SD gains are largely his own group's evidence</span></span></div>
+
+  <h2><span class="n">C</span> Augmented / active reading interfaces</h2>
+  <div class="sub">the closest spiritual ancestors for gloss + cross-reference over a document</div>
+  <div class="item"><span class="nm">ScholarPhi</span> <span class="meta mono">· Head et al., CHI 2021 · <a href="https://arxiv.org/abs/2009.14237">arXiv</a></span><span class="rel">Click a term/symbol for an in-context definition pulled from elsewhere in the doc, plus “show every use.” <b>Almost exactly your gloss + find-all-references + jump-to-definition</b> — but for nonce terms, with no logical typing or coreference.</span></div>
+  <div class="item"><span class="nm">Semantic Reader Project</span> <span class="meta mono">· Allen AI / UW, 2023 · <a href="https://arxiv.org/abs/2303.14334">arXiv</a></span><span class="rel">Umbrella effort for AI-augmented reading of scholarly PDFs — the canonical “augmented reading” program, aimed at citations/terms rather than logical structure.</span></div>
+  <div class="item"><span class="nm">Potluck</span> <span class="meta mono">· Ink &amp; Switch, 2022 · <a href="https://www.inkandswitch.com/potluck/">inkandswitch</a></span><span class="rel"><b>Nearest mechanism-level precedent:</b> recognizes structured entities inside freeform prose and attaches live behavior. You specialize this to logical roles &amp; coreference. <span class="flag">design warning: they dropped manual highlighting — it created “hidden state outside the text”</span></span></div>
+  <div class="item"><span class="nm">Explorable Explanations</span> <span class="meta mono">· Bret Victor, 2011 · <a href="https://worrydream.com/ExplorableExplanations/">worrydream</a></span> &nbsp;·&nbsp; <span class="nm">Threddy</span> <span class="meta mono">· UIST 2022</span><span class="rel">Victor's charter for “active reading”; Threddy is highlight-to-sidebar entity clipping. Both share your interaction shape; neither touches latent logical structure.</span></div>
+
+  <h2><span class="n">D</span> Tools for thought · projectional editors · notation</h2>
+  <div class="sub">the “like code / type system” lineage</div>
+  <div class="item"><span class="nm">Hazel</span> <span class="meta mono">· POPL 2017 · <a href="https://hazel.org/">hazel.org</a></span><span class="rel">A live environment over a bidirectionally <b>typed</b> calculus with “typed holes” — the closest formal precedent for “frame functor + typed operands,” where a hole is an operator awaiting typed arguments and the tree is always well-formed.</span></div>
+  <div class="item"><span class="nm">JetBrains MPS · Lamdu · Dion</span> <span class="meta mono">· <a href="https://en.wikipedia.org/wiki/JetBrains_MPS">projectional editing</a></span><span class="rel">Manipulate a typed AST directly and <em>project</em> it as surface notation. Existence proofs of your architecture — structure as source of truth, brackets/prose as projection — but for code.</span></div>
+  <div class="item"><span class="nm">Iverson — “Notation as a Tool of Thought”</span> <span class="meta mono">· Turing lecture, 1979 · <a href="https://www.eecg.utoronto.ca/~jzhu/csc326/readings/iverson.pdf">pdf</a></span><span class="rel">The foundational citation for the thesis that a well-designed notation changes how one reasons, not just how things are stored.</span></div>
+  <div class="item"><span class="nm">Matuschak &amp; Nielsen — Transformative Tools for Thought</span> <span class="meta mono">· 2019 · <a href="https://numinous.productions/ttft/">numinous</a></span> &nbsp;·&nbsp; <span class="nm">Subtext</span> <span class="meta mono">· Brander</span><span class="rel">The manifesto your slogan answers to; Subtext is the prose-side “notation as a tool of thought,” decomposing text into typed blocks.</span></div>
+  <div class="item"><span class="nm">Ink &amp; Switch — Embark &amp; Crosscut</span> <span class="meta mono">· 2023 · <a href="https://www.inkandswitch.com/crosscut/">inkandswitch</a></span><span class="rel">Embark's typed “mentions” = your clickable concept-entities; Crosscut's “meta ink” declares <b>equality/identity</b> between elements — the closest analogue to your typed identity relations (on sketches, and deliberately avoiding a type system).</span></div>
+
+  <h2><span class="n">E</span> Coloring by role — grammar &amp; logic</h2>
+  <div class="sub">the least-developed thread for prose, and the one you're mostly inventing</div>
+  <div class="item"><span class="nm">Montessori grammar symbols</span> <span class="meta mono">· <a href="https://www.montessori-theory.com/montessori-grammar-symbols/">ref</a></span><span class="rel">A fixed shape+color per part of speech (noun = black triangle, verb = red circle…). The closest historical precedent for a color-per-function legend; you generalize from parts of speech to <b>logical</b> roles.</span></div>
+  <div class="item"><span class="nm">Colourful Semantics</span> <span class="meta mono">· SLP / literacy tradition</span> &nbsp;·&nbsp; <span class="nm">POS prose highlighters</span> <span class="meta mono">· <a href="https://github.com/SichangHe/natural_syntax">natural_syntax</a></span><span class="rel">Color grammatical roles (blue subject, red verb) to reduce load. You go a level deeper — coloring logical/semantic role, not surface syntax. <span class="flag">efficacy is clinical/anecdotal, not RCT-backed</span></span></div>
+  <div class="item"><span class="nm">Syntax-highlighting evidence</span> <span class="meta mono">· Sarkar, PPIG 2015 · <a href="https://ppig.org/files/2015-PPIG-26th-Sarkar1.pdf">pdf</a></span><span class="rel">Eye-tracking found highlighting sped comprehension (~8s), shrinking with expertise — the closest peer-reviewed support. But it's about highlighting <em>broadly</em>; no study isolates role- or bracket-coloring. <span class="flag">there is also a “case against syntax highlighting,” and Bionic Reading failed its evaluations</span></span></div>
+
+  <h2><span class="n">F</span> Rainbow brackets &amp; code affordances for text</h2>
+  <div class="item"><span class="nm">rainbow-delimiters / VS Code Bracket Pair Colorization</span> <span class="meta mono">· <a href="https://code.visualstudio.com/blogs/2021/09/29/bracket-pair-colorization">2021</a></span><span class="rel">Depth-colored brackets, standard in every major editor; VS Code's incremental (2,3)-tree took a 42k-line update from &gt;10s to &lt;1ms — proven-cheap algorithms you can borrow directly. <span class="flag">the Fahlman ~1981 origin story is folklore, not primary-sourced</span></span></div>
+  <div class="item"><span class="nm">Pad++ / semantic zoom</span> <span class="meta mono">· UIST 1994</span> &nbsp;·&nbsp; <span class="nm">code folding &amp; outline views</span><span class="rel">Render simplified abstractions when zoomed out — the UI ancestor of folding a paragraph to its thesis (“zooming out” on argument structure).</span></div>
+
+  <h2><span class="n">G</span> Concept linking — backlinks &amp; defined terms</h2>
+  <div class="sub">your entity layer is essentially a solved product in two adjacent domains</div>
+  <div class="item"><span class="nm">Roam / Obsidian backlinks</span> <span class="meta mono">· 2019 · <a href="https://roamresearch.com">roam</a></span> &nbsp;·&nbsp; <span class="nm">Ted Nelson — Xanadu</span> <span class="meta mono">· transclusion, 1960s</span><span class="rel">“Unlinked References” = find-all-references; <code>[[link]]</code> = jump-to-definition for a named concept; transclusion is the deeper hypertext ancestor. Applying LSP-style go-to-definition to <em>prose concepts</em> specifically is still largely open. <span class="flag">Roam “40% faster” claims are unverified</span></span></div>
+  <div class="item"><span class="nm">Contract Tools · Definely Draft</span> <span class="meta mono">· <a href="https://papersoftware.com/contract-tools">papersoftware</a></span><span class="rel"><b>The single closest shipping implementation of your entity feature:</b> double-click a defined term to jump to its definition &amp; highlight every instance; Definely auto-generates a “Definitions Report” (≈ your references panel) — just for contracts. <span class="flag">a named “Legal Begriffsschrift” project appears not to exist</span></span></div>
+  <div class="item"><span class="nm">Coreference resolution + entity linking</span> <span class="meta mono">· <a href="https://web.stanford.edu/~jurafsky/slp3/26.pdf">Jurafsky &amp; Martin ch.26</a></span> &nbsp;·&nbsp; <span class="nm">brat</span> <span class="meta mono">· <a href="https://brat.nlplab.org/examples.html">nlplab</a></span><span class="rel">The automated version of your concept layer (cluster all mentions; link to a canonical entry) and the established way to <em>display</em> coreference chains — but brat is an annotation editor, and standard linking targets a fixed KB, not author-emergent concepts.</span></div>
+
+  <h2><span class="n">H</span> Controlled language &amp; proof rendering</h2>
+  <div class="item"><span class="nm">Attempto Controlled English</span> <span class="meta mono">· Univ. Zurich · <a href="https://attempto.ifi.uzh.ch/site/">attempto</a></span> &nbsp;·&nbsp; <span class="nm">Naproche</span> <span class="meta mono">· now in Isabelle</span><span class="rel">A precise English subset parsing to first-order logic; Naproche shows ordinary-looking math prose carrying a checkable structure. Closest in <em>premise</em> — but they require <b>writing in</b> a restricted language, the inverse of overlaying structure on <em>unrestricted</em> prose (the harder, open problem).</span></div>
+  <div class="item"><span class="nm">Carnap · Fitch-style proof layout</span> <span class="meta mono">· <a href="https://carnap.io">carnap.io</a></span><span class="rel">Renders proofs with nested scope lines &amp; per-line feedback — the proof-layout sibling of your nested typed brackets and colored operators.</span></div>
+
+  <div class="caveats">
+    <h3>Caveats the research flagged (kept honest)</h3>
+    <ul>
+      <li>Evidence that color-coding actually aids <em>comprehension</em> is thinner than it looks: the one solid HCI study (Sarkar 2015) covers syntax highlighting broadly, not role/bracket coloring; grammar-color research is clinical/anecdotal; <strong>Bionic Reading failed</strong> large eye-tracking evaluations. → evaluate empirically, don't assume.</li>
+      <li>Potluck abandoned manual entity-highlighting because it created <strong>“hidden state outside the text”</strong> — a direct warning for a markup layer like the DSL.</li>
+      <li>Argument-mapping efficacy (van Gelder ~0.8 SD) is largely the proponents' own evidence.</li>
+      <li>A few names floated in early searches don't check out: <strong>“Legal Begriffsschrift”</strong> (no such project), the <strong>Fahlman rainbow-parens</strong> origin (folklore), Roam's <strong>“40% faster”</strong> (unverified).</li>
+    </ul>
+  </div>
+
+  <p class="src">Compiled from three parallel research agents (HCI / augmented-reading · tools-for-thought / notation · argument-mapping / notation), each instructed to prefer primary sources and flag unverifiable claims. Links above are representative, not exhaustive.</p>
+  <a class="back" href="spirit-of-trust-ch11-parsed.html" style="margin:1.5rem 0 0">← back to the parsed text</a>
+</div>
+</body>
+</html>
