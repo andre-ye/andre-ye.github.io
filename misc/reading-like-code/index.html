@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading like code — the parser prompt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#fbfaf7; --panel:#f3f1ea; --ink:#1c1a17; --ink-soft:#54504a; --ink-faint:#8d8579;
+  --rule:#e3ded2; --cond:#c0392b;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:"Newsreader",Georgia,serif;
+  font-size:1.1rem;line-height:1.6;-webkit-font-smoothing:antialiased;
+  min-height:100vh;display:flex;align-items:center;justify-content:center;padding:6vh 5vw}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+.card{width:100%;max-width:46rem}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.32em;text-transform:uppercase;color:var(--cond)}
+h1{font-weight:430;font-size:clamp(1.8rem,4.4vw,2.6rem);line-height:1.1;letter-spacing:-.012em;margin:.7rem 0 .5rem}
+.lede{color:var(--ink-soft);font-size:1.04rem;max-width:38rem;margin-bottom:.4rem}
+.lede i{color:var(--ink)}
+.steps{font-size:.92rem;color:var(--ink-faint);margin:1rem 0 1.4rem;line-height:1.7}
+.steps b{color:var(--ink-soft);font-weight:500}
+.field{position:relative}
+textarea{width:100%;height:46vh;min-height:18rem;resize:vertical;
+  background:#fff;color:var(--ink-soft);border:1px solid var(--rule);border-radius:10px;
+  padding:1.1rem 1.2rem;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.74rem;line-height:1.55;
+  box-shadow:0 1px 3px rgba(0,0,0,.04) inset;outline:none}
+textarea:focus{border-color:var(--cond)}
+.bar{display:flex;align-items:center;gap:.9rem;margin-top:.9rem;flex-wrap:wrap}
+button.copy{all:unset;cursor:pointer;background:var(--ink);color:var(--paper);
+  font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  padding:.72rem 1.3rem;border-radius:8px;transition:.16s}
+button.copy:hover{background:var(--cond)}
+button.copy:active{transform:translateY(1px)}
+.meta{font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.1em;color:var(--ink-faint)}
+.foot{margin-top:1.6rem;font-size:.8rem;color:var(--ink-faint);line-height:1.6}
+.foot a{color:var(--cond);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--cond) 40%,transparent)}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="kicker">Reading like code</div>
+  <h1>The parser prompt</h1>
+  <p class="lede">Paste this into <i>Claude</i> (or any strong model), then drop in any dense piece of writing. It returns one self-contained HTML page that renders the <i>exact</i> text — never reworded — as a typed, colored, bracketed structure with a clickable concept index.</p>
+  <p class="steps">
+    <b>1.</b> Copy the prompt below. &nbsp; <b>2.</b> Replace <span class="mono">[[[ PASTE YOUR TEXT HERE ]]]</span> at the very end with your text. &nbsp; <b>3.</b> Send it. &nbsp; <b>4.</b> Save the model's reply as <span class="mono">.html</span> and open it.
+  </p>
+  <div class="field">
+    <textarea id="p" readonly spellcheck="false">You are going to turn a piece of writing into an interactive "reading like code" webpage: the EXACT original text, never reworded, but overlaid with a typed, colored, bracketed structure that exposes its logical and semantic form, plus a clickable concept index in a sidebar. Think of it as type-checking prose — coloring each span by the ROLE it plays, binding every recurring concept to one entity, and surfacing the relations between concepts.
+
+You will be given a TEXT (paste it below this prompt). Produce ONE self-contained HTML file, ready to open in a browser. Use the exact template at the bottom — fill only the marked slots; keep the CSS and JavaScript verbatim so the renderer works.
+
+════════════════════════════════════════════════════════════
+TWO HARD INVARIANTS (never violate these)
+════════════════════════════════════════════════════════════
+1. THE TEXT IS NEVER ALTERED. Every character of the source appears exactly once, unchanged — same words, same order, same punctuation, same paragraphs. You only ADD brackets, type-prefixes, and entity/operator markers around existing text. If you strip all markup back out, you must get the original text back character-for-character. Do not paraphrase, summarize, fix, modernize, or re-punctuate anything.
+2. BRACKETS BALANCE in every paragraph.
+
+If you cannot satisfy both, parse more shallowly — under-parsing is fine, altering text is not.
+
+════════════════════════════════════════════════════════════
+THE CORE IDEA — TYPED CONSTITUENTS
+════════════════════════════════════════════════════════════
+A sentence is decomposed RECURSIVELY into nested constituents. Each constituent is a bracketed group with a TYPE. A group's type colors:
+  • its BRACKETS, and
+  • its own direct FRAME TEXT — the connective / relational / operator words that express the logical form,
+while its nested children (the OPERANDS) carry their OWN types and colors.
+
+FRAME vs OPERANDS. The frame is the functor — the words doing the logical work ("if … then …", "is a consequence of", "everything … is incompatible with …"). The operands are the contentful sub-phrases plugged into the frame ("a gulf", "being a mammal"). Frame text takes the group's color; each operand is a nested group in its operand color.
+
+PARALLEL OPERANDS OF ONE FUNCTOR SHARE ONE COLOR. ("being a mammal" and "being a dog" are both arguments of the same relation → same color.)
+
+Color marks the ROLE a span plays in the structure, not which dictionary words it contains. The SAME word is a different type in different sentences. NO surface word-matching, NO heuristics — review every clause for its function.
+
+— Connectives are inline; constituents are bracketed —
+A bare operator that LINKS sibling constituents is rendered as INLINE colored text (the `x:word` form below) — it is NEVER given its own bracket. Brackets enclose CONSTITUENTS: operands, and frames that contain their operands.
+  Example: "Conceptual realism is a consequence of understanding X as essential to Y"
+  → «cr:Conceptual realism» `c:is a consequence of` ( understanding n(X) `c:as essential to` n(Y) )
+  "is a consequence of" and "as essential to" LINK their operands, so they are inline red, NOT c(as essential to). Wrapping a lone connective in a bracket wrongly makes it look like a third sibling alongside the two operands.
+  By contrast, the connective words INSIDE a frame (the "if"/"then" of c( if … , then … ), the "not only"/"but" of q( not only … , but … )) ARE that frame's colored frame-text, because the bracket there encloses the whole conditional/coordinate CONSTITUENT, not the bare word.
+  Test: does the bracket enclose operands (→ keep the typed group) or just an operator word (→ make it inline `x:word`)?
+
+— Same level → same color —
+Coordinated operators at one level share one color, and parallel operands at one level share one color. When a single frame has two-or-more operator-parts separated by intervening content — IF x THEN y, NOT ONLY x BUT y, BOTH x AND y, BETWEEN x AND y, EITHER x OR y — every part takes the frame's one color, so the eye reads them as the two ends of one bracket; the operands they bracket (x and y) share their one operand color. A SOLITARY operator has nothing to coordinate with, so it just takes its own color.
+
+════════════════════════════════════════════════════════════
+TYPES &amp; COLORS  (choose by FUNCTION)
+════════════════════════════════════════════════════════════
+  c  conditional / inference   RED     — conditionals (if…then) and inference/dependence relations BETWEEN contents: because, for (causal), hence, so (=therefore), it follows that, is a consequence of, is a condition of, is essential to, precludes, induces, requires, entails, underwrites. A red group wraps the whole inference + its connectives.
+  q  quantificational / scope  GREEN   — quantification/scope over a domain: every/all/no/nothing/none/any WHEN BINDING A DOMAIN, not only…but also, only, except, without (=absent/lacking). A green group wraps the QUANTIFIED STATEMENT (quantifier PLUS the skeleton it scopes), never the bare quantifier word alone.
+  m  modal                     TEAL    — alethic modality: possible, impossible, necessary, contingent, can, could, would, must, may, potentially, anomic (=lawless). A teal group wraps the modal claim.
+  n  content / noun clause     MAGENTA — a contentful noun phrase or embedded how/what/that content clause functioning as a unit — the "stuff" being related, as opposed to logical form: "how things are in themselves", "the alethic modal articulation of objective properties". (alias: @( ) )
+  v  predicate / operand       BLUE    — a predicate or clausal argument plugged into a frame: "being a mammal", "Coda were a dog", "bridge it or reunite the two sides". (alias: &amp;( ) )
+  (  neutral                   GREY brackets, plain ink text — plain grouping with no special logical role; descriptive glue ("in this work", "as sketched in Chapter 8"). Use freely; not everything is logical form.
+
+Mixed clauses — pick the type of the DOMINANT operation. "Nothing can be both a bivalve and a vertebrate" is fundamentally a quantified exclusion → green, even though "can" is modal. When a modal genuinely dominates ("it is impossible to exhibit the incompatible properties simultaneously") → teal.
+
+ANTI-PATTERN (do not do this): coloring an isolated word because it is "in the quantifier list." If a quantifier/pronoun merely heads a noun phrase and scopes nothing logically interesting in context, color the CLAUSE it governs or leave it neutral. Function over form, always. Likewise, do not spotlight the lone word "everything" as an operator — wrap the whole green frame.
+
+════════════════════════════════════════════════════════════
+DSL ENCODING
+════════════════════════════════════════════════════════════
+Brackets ( ) [ ] { } are interchangeable nesting brackets — pick glyphs for readability.
+
+GROUP TYPE PREFIX — a single letter IMMEDIATELY before an opening bracket, with whitespace (or another opener) before the letter. Colors the group's brackets AND its direct frame text:
+    c(  conditional/inference  red
+    q(  quantificational/scope green
+    m(  modal                  teal
+    n(  content/noun clause    magenta   [ @( is an alias ]
+    v(  predicate/operand      blue      [ &amp;( is an alias ]
+    (   neutral                grey brackets, ink text
+
+ENTITIES — wrap a recurring developed concept: «id:surface text», with optional final flag |def or |coref:
+    «cr:conceptual realism|def»     «oi:this doctrine|coref»     «world:nonmental world»
+  id is a stable kebab-case slug you assign per concept and REUSE for every mention. surface text is the exact words as they appear. |def marks the single best defining mention; |coref marks a non-literal mention (a description/pronoun/alias bound to the concept).
+
+INLINE OPERATOR — to tint a SINGLE connective word/phrase that links siblings, inside an otherwise neutral span (use this for the "connectives are inline" rule above):  `c:word`  `q:word`  `m:word`
+  e.g.  ( a property ) `c:precludes` ( the others )
+
+RESERVED CHARACTERS that must appear ONLY as markup (your source text must not contain them literally — if it does, that is the one allowed exception and you should avoid wrapping around them): « » ` @ &amp;  — everything else is literal text. (Note: a literal &amp; in the source is fine as plain text; just don't start a stray group with it.)
+
+The author's own literal parentheses/brackets in the source fold into the parse as groups (e.g. [begrifflich], (so), (say, about the melting point of copper)).
+
+════════════════════════════════════════════════════════════
+ENTITIES &amp; COREFERENCE  (do this FIRST, before relations)
+════════════════════════════════════════════════════════════
+An ENTITY is a concept the text DEVELOPS AND REUSES (e.g. conceptual realism, the intention, the deed, recognition).
+NOT entities: proper names of people (Hegel, Kant, Davidson) — UNLESS used as a coined technical term (e.g. a deliberate "Hegel's sense of X"). NOT generic words.
+
+COREFERENCE IS THE HEART OF THE TASK. Bind EVERY surface form of one concept to ONE stable id:
+  • literal repeats ("conceptual realism" … "conceptual realism"),
+  • aliases / identity-renamings ("determinate negation" = material incompatibility; "mediation" = material consequence),
+  • descriptions &amp; pronouns ("this doctrine", "this view", "this thesis", "it", "him") → mark with |coref.
+
+Each entity carries: id (slug), name, category ∈ {doctrine, object, relation, property, process, act}, gloss (1–3 sentences, accurate to the text), aliases (other surface forms INCLUDING paraphrase/description/pronoun forms that should corefer). Mark the single best defining mention with |def. Build ONE registry shared across the whole document so coreference is consistent everywhere. Expect anywhere from ~10 to ~60 concepts depending on the text's length and density.
+
+CATEGORY COLORS (entities render in italic, underlined, clickable, colored by category): doctrine=purple, object=blue, relation=teal, property=magenta, process=green, act=orange.
+
+════════════════════════════════════════════════════════════
+RELATIONS  (SECOND layer — only after entities are fixed)
+════════════════════════════════════════════════════════════
+Record typed relations BETWEEN concepts. The most important are the author's IDENTITY CLAIMS, where two apparently-separate concepts are asserted to be the same thing. Each relation is { a:id, k:kind, b:id, note:"short quote/justification" }. Kinds:
+    identical   ≡  author asserts the two are the same ("two ways of talking about the same thing")
+    isform      ≈  one concept just IS the other under a different description
+    pair        ＋ the two are a constituting pair
+    requires    →  a is a condition/requirement of b
+    consequence →  a is a consequence of b
+    price       ⊢  a is the price of b
+    contrast    ⇋  opposed pair (e.g. sense- vs reference-dependence)
+    depends     ↘  asymmetric dependence
+    arc         ⇒  a step in the argument
+
+════════════════════════════════════════════════════════════
+WORKED EXAMPLES
+════════════════════════════════════════════════════════════
+"for everything incompatible with being a mammal is incompatible with being a dog"
+  c(for) q( everything incompatible with v(being a mammal) is incompatible with v(being a dog) )
+  — c(for) the causal connective, red. The whole universally-quantified relational statement is ONE green frame (brackets + the skeleton "everything incompatible with … is incompatible with …" are green). v(being a mammal), v(being a dog) — the two operands, SAME blue.
+
+"An object's possessing one property precludes it from exhibiting some others, in the sense that it is impossible to exhibit the incompatible properties simultaneously."
+  ( An object's possessing one property ) `c:precludes` ( it from exhibiting some others ), in the sense that m( it is impossible to exhibit the incompatible properties simultaneously ).
+
+"This is the doctrine I called 'objective idealism.' According to this thesis, although there could be lawful connections even if there were no creatures to codify them, one cannot understand what laws are without appealing to the reasoning they support."
+  «oi:This is the doctrine I called "objective idealism."|def» According to «oi:this thesis|coref», c( q( although there could be «laws:lawful connections|coref» even if q(there were no creatures to codify them) ), it is not possible to understand n(what «laws:laws|coref» are) without appealing to n(the distinctive sort of reasoning they support) ).
+
+Notice: entities can sit inside typed groups; typed groups nest; a coref pronoun/description ("this thesis") binds to the same id as its definition; quantifier frames wrap the whole quantified clause, not the bare "although"/"every".
+
+════════════════════════════════════════════════════════════
+WHAT TO PRODUCE
+════════════════════════════════════════════════════════════
+Output the COMPLETE HTML file below, with these slots filled (everything else verbatim):
+
+  ‹TITLE›       — a short title for the piece.
+  ‹SUBTITLE›    — optional one-line descriptive subtitle (or remove the line).
+  ‹BYLINE›      — author / source, if known (or remove).
+  ‹ENTITIES›    — a JS object literal: { "id": {"name":..,"cat":..,"catLabel":..,"gloss":..,"aliases":[..]}, ... } for every concept. cat and catLabel are the same category string (one of doctrine/object/relation/property/process/act).
+  ‹ORDER›       — a JS array of all entity ids, in the order they should appear in the sidebar index (roughly order of first appearance).
+  ‹RELATIONS›   — a JS array of { "a":id, "k":kind, "b":id, "note":"…" }.
+  ‹SECTIONS›    — the parsed body. For each section (or just one block if the text is unsectioned): an &lt;h2 class="section"&gt; heading, then a &lt;script type="text/plain" class="dsl"&gt; block whose content is ONE LINE OF DSL PER SOURCE PARAGRAPH (paragraphs separated by single newlines). If the text has no sections, emit a single dsl block with all paragraphs, and you may drop the h2.
+
+Keep the original paragraphing exactly. Preserve curly quotes, em-dashes, and author brackets. Verify BOTH invariants before finishing: strip-markup-equals-original, and brackets balanced per paragraph.
+
+────────────────────────  TEMPLATE (fill the ‹…› slots; keep all CSS &amp; JS verbatim)  ────────────────────────
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;‹TITLE› · parsed&lt;/title&gt;
+&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+&lt;link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"&gt;
+&lt;style&gt;
+:root{
+  --paper:#fbfaf7; --panel:#f3f1ea;
+  --ink:#1c1a17; --ink-soft:#54504a; --ink-faint:#8d8579;
+  --rule:#e3ded2;
+  --cond:#c0392b; --quant:#1f7a3d; --modal:#0e7c86;
+  --doctrine:#7b3fa0; --figure:#a8671b; --object:#2563a8; --relation:#0e857a; --property:#b3007a;--process:#2f8f6b;--act:#c2683a;
+  --b1:#bca58a; --b2:#9c8f74; --b3:#b08968; --b4:#8f9b82; --b5:#a89180;
+  --np:#b3007a; --vp:#2563a8;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"Newsreader",Georgia,serif;font-size:1.12rem;line-height:2.02;-webkit-font-smoothing:antialiased;}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+.wrap{display:grid;grid-template-columns:minmax(0,1fr) 22rem;max-width:none;margin:0;}
+main{padding:4rem 4vw 8rem;max-width:none;}
+aside{border-left:1px solid var(--rule);position:sticky;top:0;height:100vh;overflow-y:auto;background:var(--panel);}
+@media(max-width:900px){
+  .wrap{grid-template-columns:1fr}
+  main{justify-self:center;padding:3rem 1.4rem 6rem}
+  aside{position:fixed;inset:auto 0 0 0;height:64vh;border-left:none;border-top:1px solid var(--rule);transform:translateY(100%);transition:transform .32s cubic-bezier(.4,0,.1,1);z-index:50;box-shadow:0 -8px 40px rgba(0,0,0,.14)}
+  aside.open{transform:translateY(0)}
+  .sheet-handle{display:block}
+  .sheet-close{display:flex}
+}
+.sheet-handle{display:none;width:2.6rem;height:.28rem;border-radius:9px;background:var(--ink-faint);opacity:.5;margin:.6rem auto .2rem}
+.sheet-close{display:none;position:absolute;top:.45rem;right:.6rem;z-index:2;width:2rem;height:2rem;align-items:center;justify-content:center;border:none;border-radius:50%;background:var(--panel);color:var(--ink-soft);font-size:1.45rem;line-height:1;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.14)}
+.sheet-close:active{background:var(--rule)}
+.kicker{font-size:.7rem;letter-spacing:.32em;text-transform:uppercase;color:var(--cond)}
+h1.title{font-weight:430;font-size:clamp(2rem,4.6vw,3rem);line-height:1.08;letter-spacing:-.012em;margin:.7rem 0 .3rem}
+.subhead{font-style:italic;color:var(--ink-faint);font-size:1.12rem;margin-bottom:1.4rem}
+.masthead{border-bottom:1px solid var(--rule);padding-bottom:1.6rem;margin-bottom:2rem}
+.byline{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin-top:1rem}
+h2.section{font-size:1.18rem;font-weight:500;margin:2.4rem 0 1.6rem;line-height:1.3;padding-top:1.4rem;border-top:2px solid var(--ink);display:flex;gap:.7rem;align-items:baseline}
+h2.section .rn{font-size:.74rem;color:var(--cond);flex:none;letter-spacing:.1em}
+.ln{margin-bottom:1.5rem;text-align:left;hyphens:none}
+.cond{color:var(--cond);font-weight:500}
+.quant{color:var(--quant);font-weight:500}
+.modal{color:var(--modal);font-weight:500}
+.brk{font-weight:600;font-family:"IBM Plex Mono",monospace;font-size:.82em;padding:0 .02em}
+.brk.bc{color:var(--cond)}.brk.bq{color:var(--quant)}.brk.bm{color:var(--modal)}
+.brk.bnp{color:var(--np)}.brk.bvp{color:var(--vp)}.brk.bn{color:var(--ink-faint);opacity:.65}
+.t-c{color:var(--cond)}.t-q{color:var(--quant)}.t-m{color:var(--modal)}
+.t-np{color:var(--np)}.t-vp{color:var(--vp)}.t-ink{color:var(--ink)}
+.np{color:var(--np)} .vp{color:var(--vp)}
+.ent{font-style:italic;cursor:pointer;color:var(--object);text-decoration:underline;text-decoration-style:dotted;text-decoration-thickness:.5px;text-underline-offset:2.5px;text-decoration-color:color-mix(in srgb,currentColor 45%,transparent);border-radius:2px;transition:background .15s;}
+.ent:hover{background:color-mix(in srgb,currentColor 14%,transparent)}
+.ent.doctrine{color:var(--doctrine)} .ent.figure{color:var(--figure)}
+.ent.object{color:var(--object)} .ent.relation{color:var(--relation)} .ent.property{color:var(--property)} .ent.process{color:var(--process)} .ent.act{color:var(--act)}
+.ent.coref{text-decoration-style:dashed;opacity:.92}
+.ent.active{background:color-mix(in srgb,currentColor 20%,transparent)!important;outline:1px solid color-mix(in srgb,currentColor 40%,transparent)}
+.ent.def::after{content:"§";font-size:.6em;vertical-align:.5em;color:var(--ink-faint);font-style:normal;margin-left:1px}
+@keyframes pulse{0%{background:color-mix(in srgb,var(--cond) 40%,transparent)}100%{background:transparent}}
+.pulse{animation:pulse 1.5s ease}
+.aside-inner{padding:1.6rem 1.5rem 4rem}
+.panel-h{font-family:"IBM Plex Mono",monospace;font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 .9rem}
+.legend{list-style:none;margin:0 0 1.4rem;font-size:.82rem;line-height:1.45}
+.legend li{display:flex;gap:.6rem;align-items:flex-start;padding:.26rem 0}
+.swatch{width:.85rem;height:.85rem;border-radius:3px;flex:none;margin-top:.18rem}
+.legend .nm{font-weight:600}.legend .ds{color:var(--ink-faint);font-size:.74rem}
+.brkkey{font-family:"IBM Plex Mono",monospace;font-size:.82rem;margin:0 0 1.4rem;color:var(--ink-faint)}
+.brkkey b{font-weight:600}
+.idx-h{display:flex;align-items:baseline;justify-content:space-between;border-top:1px solid var(--rule);padding-top:1.3rem;margin-top:.4rem}
+.ent-list{list-style:none;margin:.7rem 0 0}
+.ent-list li{padding:.2rem 0}
+.ent-list button{all:unset;cursor:pointer;font-family:"Newsreader",serif;font-style:italic;font-size:.92rem;display:flex;gap:.5rem;align-items:baseline;width:100%;border-radius:3px;padding:.12rem .3rem;transition:.12s}
+.ent-list button:hover{background:#fff}
+.ent-list .dot{width:.5rem;height:.5rem;border-radius:50%;flex:none;position:relative;top:-.12em}
+.ent-list .ct{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:.64rem;color:var(--ink-faint)}
+.detail{display:none}.detail.show{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.back{all:unset;cursor:pointer;font-family:"IBM Plex Mono",monospace;font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:1rem;display:inline-flex;gap:.4rem}
+.back:hover{color:var(--cond)}
+.detail .cat{font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase}
+.detail h3{font-style:italic;font-weight:500;font-size:1.5rem;line-height:1.2;margin:.3rem 0 .2rem}
+.detail .gloss{font-size:.92rem;color:var(--ink-soft);line-height:1.6;margin:.7rem 0 1.1rem}
+.detail .alias{font-size:.76rem;color:var(--ink-faint);margin-bottom:1rem}.detail .alias b{color:var(--ink-soft);font-weight:500}
+.rels-h,.refs-h{font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);border-top:1px solid var(--rule);padding-top:1rem;margin:0 0 .5rem}
+.rel{all:unset;cursor:pointer;display:grid;grid-template-columns:1.3rem 1fr;gap:.5rem;align-items:baseline;padding:.4rem .5rem;border-radius:4px;border:1px solid transparent;margin-bottom:.15rem;transition:.12s}
+.rel:hover{background:#fff;border-color:var(--rule)}
+.rel .glyph{font-family:"IBM Plex Mono",monospace;font-size:.95rem;text-align:center}
+.rel .rtxt{font-size:.82rem;line-height:1.4}
+.rel .rtarget{font-style:italic;font-weight:500}
+.rel .rkind{font-family:"IBM Plex Mono",monospace;font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);display:block;margin-bottom:.05rem}
+.rel .rnote{color:var(--ink-faint);font-size:.76rem}
+.refs-h{display:flex;justify-content:space-between}
+.ref{all:unset;cursor:pointer;display:block;font-size:.84rem;line-height:1.5;color:var(--ink-soft);padding:.5rem .55rem;border-radius:4px;border:1px solid transparent;transition:.12s;margin-bottom:.15rem}
+.ref:hover{background:#fff;border-color:var(--rule)}
+.ref mark{background:none;color:var(--ink);font-weight:600;font-style:italic}
+.ref .n{font-family:"IBM Plex Mono",monospace;font-size:.6rem;color:var(--ink-faint);margin-right:.45rem}
+.ref.is-def mark{color:var(--cond)}
+.hint{font-size:.74rem;color:var(--ink-faint);line-height:1.5;margin-top:1.4rem;font-style:italic}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="wrap"&gt;
+&lt;main&gt;
+  &lt;div class="masthead"&gt;
+    &lt;div class="kicker mono"&gt;‹BYLINE› · parsed&lt;/div&gt;
+    &lt;h1 class="title"&gt;‹TITLE›&lt;/h1&gt;
+    &lt;div class="subhead"&gt;‹SUBTITLE›&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- ‹SECTIONS› : repeat the following pair per section. For an unsectioned text, use one dsl block and you may omit the h2. --&gt;
+  &lt;h2 class="section"&gt;&lt;span class="rn mono"&gt;§ I&lt;/span&gt; ‹SECTION TITLE›&lt;/h2&gt;
+  &lt;script type="text/plain" class="dsl"&gt;
+‹ONE LINE OF DSL PER PARAGRAPH OF THIS SECTION›
+  &lt;/script&gt;
+  &lt;!-- end repeat --&gt;
+
+  &lt;div class="hint mono" style="font-style:normal;border-top:1px solid var(--rule);padding-top:1.2rem;margin-top:1.5rem"&gt;
+    Every sentence is bracketed by default. &lt;span style="color:var(--doctrine);font-style:italic"&gt;Colored italics&lt;/span&gt; = entities — click for gloss, relations &amp;amp; all references.
+  &lt;/div&gt;
+&lt;/main&gt;
+
+&lt;aside id="aside"&gt;
+  &lt;div class="sheet-handle" id="handle"&gt;&lt;/div&gt;
+  &lt;button class="sheet-close" id="sheetClose" aria-label="Close"&gt;×&lt;/button&gt;
+  &lt;div class="aside-inner"&gt;
+    &lt;div class="index" id="indexView"&gt;
+      &lt;div class="panel-h"&gt;Type system — the color key&lt;/div&gt;
+      &lt;ul class="legend"&gt;
+        &lt;li&gt;&lt;span class="swatch" style="background:var(--cond)"&gt;&lt;/span&gt;&lt;span&gt;&lt;span class="nm" style="color:var(--cond)"&gt;conditional / inference&lt;/span&gt;&lt;br&gt;&lt;span class="ds"&gt;if · then · for · because · precludes · even if&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class="swatch" style="background:var(--quant)"&gt;&lt;/span&gt;&lt;span&gt;&lt;span class="nm" style="color:var(--quant)"&gt;quantifier / scope&lt;/span&gt;&lt;br&gt;&lt;span class="ds"&gt;every · nothing · only · not only…but · without&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class="swatch" style="background:var(--modal)"&gt;&lt;/span&gt;&lt;span&gt;&lt;span class="nm" style="color:var(--modal)"&gt;alethic modal&lt;/span&gt;&lt;br&gt;&lt;span class="ds"&gt;possible · necessary · must · could · impossible&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div class="brkkey"&gt;
+        Brackets take the color of the operator that &lt;b&gt;governs&lt;/b&gt; the group —
+        &lt;b style="color:var(--cond)"&gt;[ if … ]&lt;/b&gt;, &lt;b style="color:var(--quant)"&gt;( every … )&lt;/b&gt;,
+        &lt;b style="color:var(--modal)"&gt;[ must … ]&lt;/b&gt;. A &lt;b style="color:var(--ink-faint)"&gt;( plain&amp;nbsp;grey )&lt;/b&gt; group has no operator.
+        &lt;b style="color:var(--np)"&gt;@( )&lt;/b&gt; noun/content · &lt;b style="color:var(--vp)"&gt;&amp;amp;( )&lt;/b&gt; predicate.
+      &lt;/div&gt;
+      &lt;div class="idx-h"&gt;&lt;span class="panel-h" style="margin:0"&gt;Entities in scope&lt;/span&gt;&lt;span class="mono" id="entCount" style="font-size:.64rem;color:var(--ink-faint)"&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;ul class="ent-list" id="entList"&gt;&lt;/ul&gt;
+      &lt;div class="hint"&gt;Coreference is live: a description or pronoun bound to its concept shows a dashed underline; click any entity to see every mention.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="detail" id="detailView"&gt;
+      &lt;button class="back mono" id="backBtn"&gt;← index&lt;/button&gt;
+      &lt;div class="cat" id="dCat"&gt;&lt;/div&gt;
+      &lt;h3 id="dName"&gt;&lt;/h3&gt;
+      &lt;div class="gloss" id="dGloss"&gt;&lt;/div&gt;
+      &lt;div class="alias" id="dAlias"&gt;&lt;/div&gt;
+      &lt;div id="dRelsWrap"&gt;&lt;div class="rels-h"&gt;Relations&lt;/div&gt;&lt;div id="dRels"&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div class="refs-h"&gt;&lt;span&gt;References&lt;/span&gt;&lt;span id="dRefCount" class="mono"&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;div id="dRefs"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/aside&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+const ENTITIES = ‹ENTITIES›;
+const ORDER = ‹ORDER›;
+const RELATIONS = ‹RELATIONS›;
+
+const RELKIND={identical:{glyph:"≡",label:"asserted identical"},isform:{glyph:"≈",label:"is the same claim as"},pair:{glyph:"＋",label:"paired with"},requires:{glyph:"→",label:"requires"},consequence:{glyph:"→",label:"is a consequence of"},price:{glyph:"⊢",label:"is the price of"},contrast:{glyph:"⇋",label:"contrasts with"},depends:{glyph:"↘",label:"depends on"},arc:{glyph:"⇒",label:"argument leads to"}};
+
+/* ---------- typed-constituent renderer ----------
+   A group type prefix colors the group's BRACKETS + its direct FRAME TEXT;
+   operands nest as their own colored groups. Types are authored, not guessed. */
+const OPEN={"(":")","[":"]","{":"}"};
+const PREFIX={c:{b:"bc",t:"t-c"},q:{b:"bq",t:"t-q"},m:{b:"bm",t:"t-m"},n:{b:"bnp",t:"t-np"},"@":{b:"bnp",t:"t-np"},v:{b:"bvp",t:"t-vp"},"&amp;":{b:"bvp",t:"t-vp"}};
+const BND=/[^A-Za-z0-9]/;
+const esc=s=&gt;s.replace(/[&amp;&lt;&gt;]/g,c=&gt;({"&amp;":"&amp;amp;","&lt;":"&amp;lt;","&gt;":"&amp;gt;"}[c]));
+function render(s){
+  s=s.replace(/\s+/g," ").trim();
+  const root={buf:[],b:null,t:"t-ink",open:null};
+  const stack=[root];
+  const top=()=&gt;stack[stack.length-1];
+  const emit=h=&gt;top().buf.push(h);
+  let i=0;
+  while(i&lt;s.length){
+    const c=s[i];
+    if(c==="«"){const j=s.indexOf("»",i);const body=s.slice(i+1,j);
+      const ci=body.indexOf(":");const id=body.slice(0,ci);let rest=body.slice(ci+1),flag="";
+      const pi=rest.indexOf("|");if(pi&gt;=0){flag=rest.slice(pi+1);rest=rest.slice(0,pi);}
+      if(ENTITIES[id]) emit(`&lt;span class="ent ${ENTITIES[id].cat}${flag==="coref"?" coref":""}" data-ent="${id}"${flag==="def"?" data-def":""}&gt;${esc(rest)}&lt;/span&gt;`);
+      else emit(esc(rest));
+      i=j+1;continue;}
+    if(c==="`"){const j=s.indexOf("`",i+1);const body=s.slice(i+1,j);const k=body.indexOf(":");
+      emit(`&lt;span class="${({c:"cond",q:"quant",m:"modal"})[body.slice(0,k)]}"&gt;${esc(body.slice(k+1))}&lt;/span&gt;`);i=j+1;continue;}
+    const prev=i&gt;0?s[i-1]:" ";
+    if(PREFIX[c]&amp;&amp;OPEN[s[i+1]]&amp;&amp;BND.test(prev)){const pf=PREFIX[c];
+      stack.push({buf:[],b:pf.b,t:pf.t,open:s[i+1]});i+=2;continue;}
+    if(OPEN[c]){stack.push({buf:[],b:"bn",t:"t-ink",open:c});i++;continue;}
+    if(c===")"||c==="]"||c==="}"){const f=stack.pop();
+      const inner=`&lt;span class="${f.t}"&gt;${f.buf.join("")}&lt;/span&gt;`;
+      emit(`&lt;span class="brk ${f.b}"&gt;${esc(f.open)}&lt;/span&gt;${inner}&lt;span class="brk ${f.b}"&gt;${esc(c)}&lt;/span&gt;`);i++;continue;}
+    let j=i;
+    while(j&lt;s.length){const ch=s[j];
+      if("«`@&amp;()[]{}".indexOf(ch)&gt;=0)break;
+      if(PREFIX[ch]&amp;&amp;OPEN[s[j+1]]&amp;&amp;BND.test(s[j-1]||" "))break;
+      j++;}
+    if(j===i){emit(esc(c));i++;continue;}
+    emit(esc(s.slice(i,j)));i=j;
+  }
+  return root.buf.join("");
+}
+document.querySelectorAll("script.dsl").forEach(block=&gt;{
+  const frag=document.createDocumentFragment();
+  block.textContent.trim().split("\n").map(l=&gt;l.trim()).filter(Boolean).forEach(line=&gt;{
+    const p=document.createElement("p");p.className="ln";p.innerHTML=render(line);frag.appendChild(p);
+  });
+  block.replaceWith(frag);
+});
+
+/* ---------- sidebar wiring ---------- */
+const aside=document.getElementById("aside"),indexView=document.getElementById("indexView"),detailView=document.getElementById("detailView");
+const occ={};
+document.querySelectorAll(".ent[data-ent]").forEach(el=&gt;{(occ[el.dataset.ent]=occ[el.dataset.ent]||[]).push(el);});
+const list=document.getElementById("entList");
+ORDER.forEach(id=&gt;{const e=ENTITIES[id];if(!e)return;const n=(occ[id]||[]).length;if(!n)return;
+  const li=document.createElement("li");const b=document.createElement("button");
+  b.innerHTML=`&lt;span class="dot" style="background:var(--${e.cat})"&gt;&lt;/span&gt;&lt;span style="color:var(--${e.cat})"&gt;${e.name}&lt;/span&gt;&lt;span class="ct"&gt;${n||"·"}&lt;/span&gt;`;
+  b.onclick=()=&gt;openEntity(id);li.appendChild(b);list.appendChild(li);});
+document.getElementById("entCount").textContent=Object.keys(occ).length+" concepts";
+
+function snippet(el){
+  const p=el.closest("p,h2")||el.parentElement;const r=document.createRange();r.setStart(p,0);r.setEndBefore(el);
+  const text=p.textContent.replace(/\s+/g," ");const before=r.toString().replace(/\s+/g," ");
+  const start=before.length,term=el.textContent,ctx=52;
+  const s=Math.max(0,start-ctx),e=Math.min(text.length,start+term.length+ctx);
+  return (s&gt;0?"… ":"")+esc(text.slice(s,start))+"&lt;mark&gt;"+esc(term)+"&lt;/mark&gt;"+esc(text.slice(start+term.length,e))+(e&lt;text.length?" …":"");
+}
+function clearActive(){document.querySelectorAll(".ent.active").forEach(e=&gt;e.classList.remove("active"));}
+function openEntity(id){
+  const e=ENTITIES[id],els=occ[id]||[];clearActive();els.forEach(el=&gt;el.classList.add("active"));
+  document.getElementById("dCat").textContent=e.catLabel;document.getElementById("dCat").style.color=`var(--${e.cat})`;
+  document.getElementById("dName").textContent=e.name;document.getElementById("dName").style.color=`var(--${e.cat})`;
+  document.getElementById("dGloss").textContent=e.gloss;
+  const al=document.getElementById("dAlias");
+  if(e.aliases&amp;&amp;e.aliases.length){al.style.display="";al.innerHTML="also appears as &amp;nbsp;"+e.aliases.map(a=&gt;`&lt;b&gt;${esc(a)}&lt;/b&gt;`).join(" · ");}else al.style.display="none";
+  const inv={consequence:"is required by",requires:"is required by",price:"requires (its price)",depends:"is depended on by",arc:"is reached from",identical:"asserted identical",isform:"is expressed as",pair:"paired with",contrast:"contrasts with"};
+  const relWrap=document.getElementById("dRelsWrap"),relBox=document.getElementById("dRels");relBox.innerHTML="";
+  const rels=[];RELATIONS.forEach(r=&gt;{if(r.a===id)rels.push({k:r.k,t:r.b,note:r.note,out:true});else if(r.b===id)rels.push({k:r.k,t:r.a,note:r.note,out:false});});
+  if(rels.length){relWrap.style.display="";rels.forEach(r=&gt;{const t=ENTITIES[r.t],kd=RELKIND[r.k];
+    const label=r.out?kd.label:(inv[r.k]||kd.label);const b=document.createElement("button");b.className="rel";
+    b.innerHTML=`&lt;span class="glyph" style="color:var(--${t.cat})"&gt;${kd.glyph}&lt;/span&gt;&lt;span class="rtxt"&gt;&lt;span class="rkind"&gt;${label}&lt;/span&gt;&lt;span class="rtarget" style="color:var(--${t.cat})"&gt;${t.name}&lt;/span&gt; &lt;span class="rnote"&gt;— ${r.note}&lt;/span&gt;&lt;/span&gt;`;
+    b.onclick=()=&gt;openEntity(r.t);relBox.appendChild(b);});}else relWrap.style.display="none";
+  document.getElementById("dRefCount").textContent=els.length+" in text";
+  const box=document.getElementById("dRefs");box.innerHTML="";
+  els.forEach((el,i)=&gt;{const isDef=el.hasAttribute("data-def"),isCoref=el.classList.contains("coref");
+    const r=document.createElement("button");r.className="ref"+(isDef?" is-def":"");
+    r.innerHTML=`&lt;span class="n"&gt;${isDef?"def":String(i+1).padStart(2,"0")}${isCoref?"·≈":""}&lt;/span&gt;${snippet(el)}`;
+    r.onclick=()=&gt;{el.scrollIntoView({behavior:"smooth",block:"center"});el.classList.remove("pulse");void el.offsetWidth;el.classList.add("pulse");};
+    box.appendChild(r);});
+  indexView.style.display="none";detailView.classList.add("show");openSheet();aside.scrollTop=0;
+}
+function openSheet(){aside.classList.add("open");}
+function closeSheet(){aside.classList.remove("open");}
+function backToIndex(){detailView.classList.remove("show");indexView.style.display="";clearActive();}
+document.getElementById("backBtn").onclick=backToIndex;
+document.querySelectorAll(".ent[data-ent]").forEach(el=&gt;el.onclick=()=&gt;openEntity(el.dataset.ent));
+document.getElementById("handle").onclick=closeSheet;
+document.getElementById("sheetClose").onclick=closeSheet;
+document.addEventListener("click",e=&gt;{
+  if(window.innerWidth&lt;=900 &amp;&amp; aside.classList.contains("open") &amp;&amp; !e.target.closest("#aside") &amp;&amp; !e.target.closest(".ent")) closeSheet();
+});
+document.addEventListener("keydown",e=&gt;{if(e.key==="Escape"){backToIndex();closeSheet();}});
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+────────────────────────  END TEMPLATE  ────────────────────────
+
+Now parse the following text and return the complete filled-in HTML file (and nothing else):
+
+[[[ PASTE YOUR TEXT HERE ]]]
+</textarea>
+  </div>
+  <div class="bar">
+    <button class="copy" id="copy">Copy prompt</button>
+    <span class="meta" id="meta"></span>
+  </div>
+  <p class="foot">Built for working through philosophy, theory, and other tightly-argued prose. See a finished example: <a href="../spirit-of-trust-ch11/spirit-of-trust-ch11-parsed.html">Brandom, <i>A Spirit of Trust</i>, ch. 11 &nearr;</a></p>
+</div>
+<script>
+const ta=document.getElementById("p"), btn=document.getElementById("copy"), meta=document.getElementById("meta");
+function words(s){return (s.trim().match(/\S+/g)||[]).length}
+meta.textContent=words(ta.value).toLocaleString()+" words \u00b7 ready to paste";
+btn.onclick=async()=>{
+  ta.select();
+  try{ await navigator.clipboard.writeText(ta.value); }
+  catch(e){ document.execCommand("copy"); }
+  const o=btn.textContent; btn.textContent="Copied \u2713";
+  window.getSelection().removeAllRanges();
+  setTimeout(()=>btn.textContent=o,1600);
+};
+</script>
+</body>
+</html>
