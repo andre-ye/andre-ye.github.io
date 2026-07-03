@@ -141,6 +141,10 @@
         "description": "Interesting quotes on computation, information, formalization, and humans from diverse sources.",
         "quotes": [
           {
+            "text": "By pushing computers into the background, embodied virtuality will make individuals more aware of the people on the other ends of their computer links. This development may reverse the unhealthy centripetal forces that conventional personal computers have introduced into life and the workplace. Even today, people holed up in windowless offices before glowing computer screens may not see their fellows for the better part of each day. And in virtual reality, the outside world and all its inhabitants effectively cease to exist. Ubiquitous computers, in contrast, reside in the human world and pose no barrier to personal interactions. If anything, the transparent connections that they offer between different locations and times may tend to bring communities closer together... Most important, ubiquitous computers will help overcome the problem of information overload. There is more information available at our fingertips during a walk in the woods than in any computer system, yet people find a walk among trees relaxing and computers frustrating. Machines that fit the human environment instead of forcing humans to enter theirs will make using a computer as refreshing as taking a walk in the woods.",
+            "author": "Mark Weiser, The Computer for the 21st Century"
+          },
+          {
             "text": "Bartlett et al. (2020) note “the phenomenon of benign overfitting is one of the key mysteries uncovered by deep learning methodology: deep neural networks seem to predict well, even with a perfect fit to noisy training data.” However, benign overfitting behaviour can be reproduced with other model classes, can be understood intuitively, and is described by rigorous frameworks for characterizing generalization that have existed for decades.",
             "author": "Andrew Gordon Wilson"
           },
