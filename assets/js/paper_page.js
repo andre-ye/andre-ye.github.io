@@ -2637,6 +2637,34 @@
       injectBrushStrokes(el, color, darkenHex(color, 0.18));
     });
 
+    // Social link row — fuller swashes than inline links so they read as buttons
+    var LINK_ROW_STROKES = [
+      { top: '0.22em', bottom: '0.14em', left: '-0.10em', right: '-0.12em',
+        opacity: 0.62, skew: -1.2, filter: 'url(#brush-main)', radius: '2px 4px' },
+      { top: '0.40em', bottom: '-0.06em', left: '-0.24em', right: '-0.30em',
+        opacity: 0.30, skew:  2.0, filter: 'url(#brush-wide)', radius: '5px 2px' },
+      { top: '0.02em', bottom: '0.36em', left: '-0.18em', right: '-0.04em',
+        opacity: 0.20, skew: -2.4, filter: 'url(#brush-dry)',  radius: '1px 4px' },
+    ];
+    document.querySelectorAll('.link-row a').forEach(function(el, i) {
+      var color = BRUSH_PALETTE[(i * 3 + 1) % BRUSH_PALETTE.length];
+      LINK_ROW_STROKES.forEach(function(s) {
+        var brush = document.createElement('span');
+        brush.className = 'rip-brush';
+        brush.style.top          = s.top;
+        brush.style.bottom       = s.bottom;
+        brush.style.left         = s.left;
+        brush.style.right        = s.right;
+        brush.style.opacity      = String(s.opacity);
+        brush.style.filter       = s.filter;
+        brush.style.borderRadius = s.radius;
+        brush.style.transform    = 'skewX(' + s.skew + 'deg)';
+        el.insertBefore(brush, el.firstChild);
+      });
+      el.style.setProperty('--brush-col',       color);
+      el.style.setProperty('--brush-hover-col', darkenHex(color, 0.2));
+    });
+
     // Inject three distinct brush strokes over the name — same filter system as links
     var nameEl = document.querySelector('.paper-hero-name');
     if (nameEl) {
