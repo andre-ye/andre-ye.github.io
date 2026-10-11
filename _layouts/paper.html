@@ -537,6 +537,56 @@
       /* filter is set per-stroke in JS (brush-main / brush-wide / brush-dry) */
     }
 
+    /* ─── Link row (Substack / Twitter) ───
+       Brush swashes injected by paper_page.js, same filters as .rip-btn. */
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem 1.5rem;
+      margin: 0.2rem 0 1.9rem;
+      padding-left: 0.2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .paper-sheet .link-row a {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45em;
+      padding: 0.1em 0.2em;
+      font-size: 0.98rem;
+      letter-spacing: 0.02em;
+      color: #4a2208;
+      text-decoration: none;
+      transition: color 0.18s, transform 0.2s cubic-bezier(.3,1.6,.5,1);
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .paper-sheet .link-row a:hover,
+    .paper-sheet .link-row a:focus-visible {
+      color: #2a0e02;
+      transform: translateY(-1px);
+      outline: none;
+    }
+    .link-row a:hover .rip-brush,
+    .link-row a:focus-visible .rip-brush {
+      background: var(--brush-hover-col, #b0a898);
+    }
+    .paper-sheet .link-row a:active { transform: translateY(0); }
+
+    .link-row i,
+    .link-row .link-icon {
+      font-size: 0.82em;
+      width: 0.95em;
+      height: 0.95em;
+      color: #6a3418;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .paper-sheet .link-row a { transition: none; }
+    }
+
     /* ─── Underlined single letter ─── */
     .letter-u {
       text-decoration: underline;
