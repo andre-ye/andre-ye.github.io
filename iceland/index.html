@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iceland Ring Road · Mar 17–24</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0f1c24;--muted:#5b6b75;--bg:#f4f7f8;--card:#fff;--ice:#2f7f9e;--aurora:#3fbf9a;--line:#e2e9ec}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+header{background:linear-gradient(160deg,#0b1d2a 0%,#12384a 55%,#1d6b6a 100%);color:#fff;padding:64px 20px 56px;text-align:center;position:relative;overflow:hidden}
+header:before{content:"";position:absolute;inset:-40% -10% auto;height:120%;background:radial-gradient(ellipse at 30% 60%,rgba(63,191,154,.35),transparent 60%),radial-gradient(ellipse at 75% 40%,rgba(120,90,220,.25),transparent 55%);filter:blur(20px)}
+header *{position:relative}
+h1{font-family:Fraunces,serif;font-size:clamp(2.2rem,6vw,3.6rem);margin:0 0 8px;letter-spacing:-.5px}
+.sub{opacity:.85;font-size:1.05rem}
+.pills{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:6px 12px;border-radius:999px;font-size:.9rem}
+main{max-width:920px;margin:0 auto;padding:28px 18px 60px}
+h2{font-family:Fraunces,serif;font-size:1.6rem;margin:36px 0 14px}
+.totals{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.tot{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.tot b{font-size:1.9rem;font-family:Fraunces,serif;display:block}
+.tot small{color:var(--muted)}
+.route{display:flex;flex-wrap:wrap;gap:6px;align-items:center;color:var(--muted);font-size:.95rem;margin-top:14px}
+.route span{background:#e7f1f4;color:var(--ice);padding:3px 10px;border-radius:8px;font-weight:500}
+.day{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:16px}
+.dhead{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.dhead h3{margin:0;font-size:1.15rem}
+.date{color:var(--ice);font-weight:600;font-size:.9rem;text-transform:uppercase;letter-spacing:.5px}
+.drive{color:var(--muted);font-size:.88rem}
+.plan{margin:8px 0 12px;color:#2a3a44}
+.stays{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.stay{border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:4px;background:#fbfdfd}
+.stay.pick{border-color:var(--aurora);box-shadow:0 0 0 2px rgba(63,191,154,.15)}
+.tag{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--aurora)}
+.tag.b{color:var(--ice)}
+.stay a{color:var(--ink);font-weight:600;text-decoration:none}.stay a:hover{text-decoration:underline}
+.meta{color:var(--muted);font-size:.85rem}
+.price{margin-top:auto;padding-top:8px;display:flex;justify-content:space-between;align-items:baseline}
+.price b{font-size:1.15rem}.price small{color:var(--muted)}
+.note{background:#fff8e6;border:1px solid #f3e0a8;border-radius:14px;padding:14px 16px;font-size:.92rem;color:#5a4a1a}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Iceland Ring Road</h1>
+  <div class="sub">Wed, March 17 to Wed, March 24, 2027 · 7 nights · 6 of us</div>
+  <div class="pills"><span class="pill">🚗 Full loop</span><span class="pill">♨️ Hot tubs most nights</span><span class="pill">🌌 Aurora season</span></div>
+</header>
+<main>
+  <h2>The cost per person</h2>
+  <div class="totals">
+    <div class="tot"><span class="tag">Cool route</span><b>~$801 / person</b><small>$4,806 total for 7 nights, staying at the green-outlined picks</small></div>
+    <div class="tot"><span class="tag b">Budget route</span><b>~$500 / person</b><small>$3,002 total for 7 nights, staying at the cheaper option each night</small></div>
+  </div>
+  <div class="route"><span>KEF</span>→<span>Golden Circle</span>→<span>Vík ×2</span>→<span>Höfn</span>→<span>East Fjords</span>→<span>Akureyri / Mývatn</span>→<span>Borgarnes</span>→<span>KEF</span></div>
+
+  <h2>Day by day</h2>
+  <div id="days"></div>
+
+  <div class="note"><b>Notes.</b> Airbnb prices are the totals it showed for 6 guests on Nov 15, 2026. They include fees, but taxes weren't confirmed, and prices change. March roads in the north and east can close because of weather, so check <a href="https://umferdin.is/en">umferdin.is</a> and <a href="https://en.vedur.is">vedur.is</a> each morning. Vík has a built-in buffer day. Rent a 4×4.</div>
+</main>
+<footer>Made for the crew ✈️</footer>
+<script>
+const R='https://www.airbnb.com/rooms/';
+const days=[
+ {d:'Wed 3/17',t:'Land and do the Golden Circle',drive:'~2.5 hrs total',p:'Pick up the car at KEF, then see Þingvellir, Geysir and Gullfoss. Soak in the hot tub at night.',
+  s:[{n:'Luxury villa in Laugarás, river view',u:R+'11886887?check_in=2027-03-17&check_out=2027-03-18&adults=6',m:'4 bedrooms · 8 beds · 2 baths · ★4.98 (330)',c:'Waterfront hot tub on the Golden Circle',p:946,pick:1},
+     {n:"Sisi's Cozy Farmhouse (near Hella)",u:R+'989259512830984367?check_in=2027-03-17&check_out=2027-03-18&adults=6',m:'4 bedrooms · 6 beds · 1 bath · ★4.92 (448)',c:'Renovated farmhouse with a garden',p:342}]},
+ {d:'Thu 3/18',t:'Waterfalls and the black-sand coast',drive:'~2 hrs',p:'See Seljalandsfoss (walk behind it), Skógafoss and Reynisfjara black-sand beach, then settle into Vík.',
+  s:[{n:'Hrifunes Nature Park cabin',u:R+'18942174?check_in=2027-03-18&check_out=2027-03-20&adults=6',m:'3 bedrooms · 6 beds · 1.5 baths · ★4.92 (250)',c:'Volcano views, hot tub and sauna',p:1582,pick:1,nights:2},
+     {n:"Valley Guesthouse, Disa's House",u:R+'34904134?check_in=2027-03-18&check_out=2027-03-20&adults=6',m:'3 bedrooms · 7 beds · 1 bath · ★4.91 (313)',c:'Secluded farm valley with mountain views',p:897,nights:2}]},
+ {d:'Fri 3/19',t:'Glacier day (and buffer)',drive:'short drives',p:'Do a Sólheimajökull glacier walk or an ice cave tour, then visit Dyrhólaey arch. This is a slow day and doubles as a weather buffer.',s:[]},
+ {d:'Sat 3/20',t:'Canyon, glaciers and Diamond Beach',drive:'~3 hrs',p:'Stop at Fjaðrárgljúfur canyon and Skaftafell, then the Jökulsárlón glacier lagoon and Diamond Beach, ending in Höfn for langoustine.',
+  s:[{n:'Gíslastaðir farm cottage',u:R+'2611203?check_in=2027-03-20&check_out=2027-03-21&adults=6',m:'3 bedrooms · 4 beds · 1 bath · ★4.94 (1,056)',c:'Farm stay with horses and mountain views',p:452,pick:1},
+     {n:'Guesthouse Dyngja, 5-bedroom house (Höfn)',u:R+'51141953?check_in=2027-03-20&check_out=2027-03-21&adults=6',m:'5 bedrooms · 8 beds · 2 baths · ★4.93 (29)',c:'Harbor-side house with a room for everyone',p:772}]},
+ {d:'Sun 3/21',t:'East Fjords coastal drive',drive:'~3.5 hrs',p:'Drive the winding fjord roads through tiny fishing villages to Egilsstaðir. Seyðisfjörður makes a pretty detour.',
+  s:[{n:'Cozy Birch Retreat with hot tub',u:R+'1572756438623888790?check_in=2027-03-21&check_out=2027-03-22&adults=6',m:'3 bedrooms · 3 beds · 1 bath · ★4.96 (80)',c:'Geothermal hot tub and fire pit',p:638,pick:1},
+     {n:'Aurora Private House by Finnsstaðir',u:R+'16925993?check_in=2027-03-21&check_out=2027-03-22&adults=6',m:'3 bedrooms · 5 beds · 2 baths · ★4.87 (165)',c:'Northern Lights viewing spot with valley views',p:371}]},
+ {d:'Mon 3/22',t:'Dettifoss and Mývatn',drive:'~3 hrs',p:'See Dettifoss, the Hverir steam vents and Mývatn Nature Baths, then go on to Akureyri.',
+  s:[{n:'Hideaway with fjord views (Akureyri)',u:R+'1669602619975764111?check_in=2027-03-22&check_out=2027-03-23&adults=6',m:'3 bedrooms · 6 beds · 1 bath · ★5.0 (42)',c:'Waterfront with a hot tub and sweeping fjord views',p:731,pick:1},
+     {n:'Geitafell, near Lake Mývatn',u:R+'19474692?check_in=2027-03-22&check_out=2027-03-23&adults=6',m:'4 bedrooms · 7 beds · 1.5 baths · ★4.91 (505)',c:'Countryside stay with a fire pit',p:516}]},
+ {d:'Tue 3/23',t:'Goðafoss and the long drive west',drive:'~4 hrs',p:'Stop at Goðafoss on the way out, then cut across the north to Borgarnes.',
+  s:[{n:'Stylish cottage with hot tub (Borgarnes)',u:R+'31197746?check_in=2027-03-23&check_out=2027-03-24&adults=6',m:'3 bedrooms · 7 beds · 1 bath · ★4.95 (293)',c:'Private hot tub with mountain views',p:457,pick:1},
+     {n:'House in lava (Bifröst)',u:R+'37988614?check_in=2027-03-23&check_out=2027-03-24&adults=6',m:'3 bedrooms · 3 beds · 1 bath · ★4.88 (466)',c:'House in a lava field with a jacuzzi',p:424}]},
+ {d:'Wed 3/24',t:'Back to KEF',drive:'~1.5 hrs',p:'Stop at Sky Lagoon or the Blue Lagoon on the way to the airport, then fly home.',s:[]}
+];
+const $=document.getElementById('days');
+days.forEach(x=>{
+ const stays=x.s.map(s=>`<div class="stay ${s.pick?'pick':''}"><span class="tag ${s.pick?'':'b'}">${s.pick?'Cool pick':'Budget option'}</span>
+ <a href="${s.u}" target="_blank" rel="noopener">${s.n} ↗</a><span class="meta">${s.m}</span><span class="meta">${s.c}</span>
+ <div class="price"><b>$${s.p.toLocaleString()}</b><small>${s.nights||1} night${(s.nights||1)>1?'s':''} · ~$${Math.round(s.p/6)}/person</small></div></div>`).join('');
+ $.insertAdjacentHTML('beforeend',`<div class="day"><div class="dhead"><div><div class="date">${x.d}</div><h3>${x.t}</h3></div><span class="drive">🚗 ${x.drive}</span></div>
+ <p class="plan">${x.p}</p>${stays?`<div class="stays">${stays}</div>`:''}</div>`);
+});
+</script>
+</body>
+</html>
